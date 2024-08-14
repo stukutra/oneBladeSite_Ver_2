@@ -1,0 +1,43 @@
+<div class="container">
+    <!-- Titolo Centrato -->
+    <div class="text-center mb-4">
+      <h2>Our Trusted Partners</h2>
+    </div>
+  
+    <div id="companyCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- First Carousel Item -->
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center">
+            <div class="logo-item" *ngFor="let logo of logos.slice(0, 4)">
+              <img [src]="logo.src" [alt]="logo.alt" class="d-block w-100" alt=""/>
+            </div>
+          </div>
+        </div>
+        <!-- Second Carousel Item -->
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <div class="logo-item" *ngFor="let logo of logos.slice(4, 8)">
+              <img [src]="logo.src" [alt]="logo.alt" class="d-block w-100" alt=""/>
+            </div>
+          </div>
+        </div>
+        <!-- Third Carousel Item (if needed) -->
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <div class="logo-item" *ngFor="let logo of logos.slice(8, 12)">
+              <img [src]="logo.src" [alt]="logo.alt" class="d-block w-100" alt=""/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#companyCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#companyCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>

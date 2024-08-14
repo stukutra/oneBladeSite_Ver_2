@@ -1,0 +1,118 @@
+// Colore della topbar
+$topbar-color: #9339bb;
+
+.navbar {
+  width: 100%;
+  background: linear-gradient(to right, rgba(50, 100, 245, 0.11) 62%, $topbar-color 86%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgba(52, 58, 64, 0.08);
+  z-index: 1000;
+  position: fixed; /* Rende la top bar fissa in cima */
+  top: 0;
+  left: 0;
+  padding-left: 0;
+  padding-right: 20px; /* Aggiunge spazio a destra per distanziare l'hamburger menu */
+  margin-left: 0;
+  margin-right: 0;
+  height: 60px; /* Imposta l'altezza della top bar */
+  display: flex;
+  align-items: center; /* Allinea gli elementi al centro verticalmente */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center; /* Allinea il logo e il testo al centro verticalmente */
+  height: 100%; /* Assicura che il contenitore del logo occupi tutta l'altezza della topbar */
+}
+
+.logo-container {
+  position: relative; /* Posizionamento relativo per gestire le immagini del logo */
+  height: 40px; /* Imposta l'altezza del contenitore del logo */
+}
+
+.logo {
+  position: absolute; /* Posizione assoluta per sovrapporre le immagini */
+  top: 0; /* Allinea il logo nella parte superiore del contenitore */
+  left: 0; /* Allinea il logo nella parte sinistra del contenitore */
+  height: 100%; /* Assicura che il logo occupi l'intera altezza del contenitore */
+  transition: opacity 0.5s ease; /* Aggiunge una transizione per l'hover */
+}
+
+.default-logo {
+  z-index: 1; /* Assicura che il logo di default sia sopra il logo hover */
+}
+
+.hover-logo {
+  opacity: 0; /* Nasconde il logo hover per default */
+  z-index: 2; /* Assicura che il logo hover sia sopra il logo di default al passaggio del mouse */
+}
+
+.logo-container:hover .default-logo {
+  opacity: 0; /* Nasconde il logo di default al passaggio del mouse */
+}
+
+.logo-container:hover .hover-logo {
+  opacity: 1; /* Mostra il logo hover al passaggio del mouse */
+}
+
+.navbar-nav {
+  margin-left: auto; /* Allinea il menu a destra */
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff; /* Colore del testo bianco */
+  font-size: 16px; /* Dimensione testo di default */
+  display: flex;
+  align-items: center;
+  cursor: pointer; /* Mostra la manina quando si passa sopra il menu */
+  transition: font-weight 0.3s ease;
+}
+
+.navbar-nav .nav-link i {
+  margin-right: 8px; /* Spazio tra l'icona e il testo */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffffff; /* Colore bianco al passaggio del mouse */
+  font-weight: bold; /* Testo grassetto al passaggio del mouse */
+}
+
+.navbar-nav .nav-item {
+  margin-left: 20px; /* Spazio tra i menu */
+}
+
+.navbar-toggler {
+  border: none; /* Rimuove il bordo di default dell'hamburger menu */
+  color: #ffffff; /* Colore bianco per l'icona */
+  margin-right: 20px; /* Distanza di 20px dal bordo destro */
+}
+
+// Specifiche per schermi piccoli (modalità hamburger)
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #ffffff;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra per dare profondità */
+    border-radius: 8px; /* Angoli arrotondati */
+    padding: 10px 0; /* Aggiunge padding interno */
+  }
+
+  .navbar-nav .nav-link {
+    color: #000000; /* Cambia il colore del testo a nero in modalità hamburger */
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #333333; /* Colore più scuro al passaggio del mouse in modalità hamburger */
+  }
+
+  .navbar-nav {
+    margin-right: 0;
+  }
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bold; /* Evidenzia il testo del menu attivo */
+}

@@ -1,0 +1,16 @@
+.carousel {
+    .carousel-inner {
+      .carousel-item {
+        img {
+          height: auto; /* Mantieni l'altezza proporzionale dell'immagine */
+          max-height: 400px; /* Imposta un'altezza massima per le immagini */
+          object-fit: cover; /* Assicurati che le immagini coprano l'intera area senza distorsioni */
+        }
+      }
+    }
+  
+    .carousel-control-prev,
+    .carousel-control-next {
+      filter: invert(100%); /* Colore dei controlli bianco per contrastare le immagini scure */
+    }
+  }

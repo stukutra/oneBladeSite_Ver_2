@@ -1,0 +1,12 @@
+<div class="app-container">
+  <!-- Top bar -->
+  <app-top-bar></app-top-bar>
+
+  <!-- Main content area -->
+  <div class="content" [@fadeAnimation]="getRouteAnimationState(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div>
+
+  <!-- Footer -->
+  <app-footer></app-footer>
+</div>

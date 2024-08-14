@@ -1,0 +1,57 @@
+/* Ensure the container does not have horizontal overflow */
+.carousel-inner {
+    overflow: hidden;
+  }
+  
+  /* Adjust the width of each logo item */
+  .logo-item {
+    flex: 1;
+    max-width: 33.33%; /* Adjust this value if you want 3 items per slide */
+    padding: 0 10px; /* Spacing between logos */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+  }
+  
+  /* Ensure the images fit within their containers */
+  .carousel-inner img {
+    width: 100%;
+    height: auto; /* Adjusts the height of the image to maintain aspect ratio */
+  }
+  
+  /* Adjust the carousel controls */
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%; /* Set width for navigation arrows */
+    height: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(147, 57, 187, 0); /* Background color of the arrows */
+    border: none;
+    
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #9339bb; /* Color of the arrow icons */
+    border-radius: 100%;
+  }
+  
+  /* Adjust arrow icons to be visible and not overlap with logos */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-size: 50%, 50%; /* Adjust arrow icon size */
+  }
+  
+  /* Ensure there is enough padding around the carousel items */
+  .carousel-item {
+    padding: 0 20px; /* Space between items to avoid overlap with arrows */
+  }
+
+  .text-center {
+    text-align: center; /* Assicura che il testo sia centrato */
+  }
+  
+  .text-center h2 {
+    font-size: 1.75rem; /* Dimensione del font del titolo */
+    color: #9339bb; /* Colore del titolo, uguale ai colori del tema */
+    margin-bottom: 20px; /* Spazio sotto il titolo */
+  }

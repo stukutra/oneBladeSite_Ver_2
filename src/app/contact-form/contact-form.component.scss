@@ -1,0 +1,81 @@
+// Colore della topbar
+$topbar-color: #9339bb;
+
+.description-box {
+  background-color: #ffffff;
+  color: #333;
+  padding: 20px; /* Ridotto il padding per rendere la form più compatta */
+  border: 1px solid #9339bb40; /* Bordo leggermente trasparente */
+  border-radius: 12px; /* Angoli più arrotondati */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Ombra più pronunciata */
+  max-width: 800px; /* Imposta una larghezza massima per adattare due colonne */
+  margin: 40px auto; /* Margine superiore e inferiore per centratura orizzontale */
+}
+
+.box-title {
+  font-size: 28px; /* Dimensione del font aumentata per il titolo */
+  margin-bottom: 15px; /* Spazio sotto il titolo */
+  color: $topbar-color; /* Colore del titolo */
+}
+
+.contact-form {
+  display: grid;
+}
+
+.contact-form .form-label {
+  text-align: left; /* Allinea le etichette a sinistra */
+  display: block; /* Assicura che le etichette occupino una nuova riga */
+  font-weight: normal; /* Rimuove il grassetto dalle etichette */
+  margin-bottom: 0.5rem; /* Spazio sotto le etichette */
+}
+
+.contact-form .form-control,
+.contact-form .form-select {
+  font-size: 15px; /* Dimensione del font per una lettura più facile */
+  padding: 0.5rem 0.75rem; /* Padding per gli input e il select */
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+  border-color: $topbar-color; /* Colore del bordo in focus per abbinare la topbar */
+  box-shadow: 0 0 0 0.25rem rgba(147, 57, 187, 0.25); /* Ombra del bordo in focus */
+}
+
+.contact-form .text-danger {
+  font-size: 13px; /* Dimensione del font leggermente aumentata per i messaggi di errore */
+  color: $topbar-color; /* Colore dei messaggi di errore */
+}
+
+.contact-form .form-control.ng-invalid.ng-touched,
+.contact-form .form-select.ng-invalid.ng-touched {
+  border-color: $topbar-color; /* Colore del bordo per i campi non validi */
+}
+
+.contact-form .btn-primary {
+  background-color: $topbar-color; /* Colore dello sfondo del pulsante */
+  border-color: $topbar-color; /* Colore del bordo del pulsante */
+  color: #ffffff; /* Colore del testo del pulsante */
+  padding: 0.5rem 1rem; /* Padding per un pulsante più grande e cliccabile */
+  font-size: 16px; /* Dimensione del font del pulsante */
+}
+
+.contact-form .btn-primary:hover {
+  background-color: darken($topbar-color, 10%); /* Colore dello sfondo del pulsante al passaggio del mouse */
+  border-color: darken($topbar-color, 10%); /* Colore del bordo del pulsante al passaggio del mouse */
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between; /* Spazia tra il pulsante di reset e il pulsante di invio */
+  margin-top: 20px; /* Spazio sopra i pulsanti */
+}
+
+.reset-button-container {
+  flex: 1; /* Occupa lo spazio rimanente */
+}
+
+.send-button-container {
+  flex: 1; /* Occupa lo spazio rimanente */
+  display: flex;
+  justify-content: flex-end; /* Allinea il pulsante di invio a destra */
+}

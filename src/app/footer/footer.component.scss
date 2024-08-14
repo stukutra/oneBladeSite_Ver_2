@@ -1,0 +1,57 @@
+.footer-wrapper {
+    position: relative;
+    width: 100%;
+    background: linear-gradient(to right, rgba(50, 100, 245, 0.1098039216) 62%, #9339bb 86%); /* Colore di sfondo con gradiente */
+    color: #000000; /* Colore del testo nero */
+    text-align: center;
+    padding: 20px 0; /* Spaziatura interna */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3); /* Ombra che va verso l'alto */
+  }
+  
+  .footer-logo {
+    max-width: 150px; /* Imposta una larghezza massima per il logo */
+    margin-bottom: 10px; /* Spazio tra il logo e il testo */
+    filter: drop-shadow(0 0 10px rgba(50, 100, 245, 0.7)) /* Ombra blu */
+            drop-shadow(0 0 10px rgba(147, 57, 187, 0.7)); /* Ombra viola */
+  }
+  
+  .footer-content {
+    z-index: 10;
+  }
+  
+  .footer-content p {
+    margin: 0;
+    font-size: 14px;
+    margin-bottom: 10px; /* Spazio tra il testo e i link */
+  }
+  
+  .footer-links {
+    margin-top: 10px; /* Spazio sopra i link */
+    transition: font-weight 0.3s ease;
+  }
+  
+  .footer-link {
+    color: #000000; /* Colore dei link neri */
+    text-decoration: none; /* Rimuove la sottolineatura dai link */
+    margin: 0 10px; /* Spazio tra i link */
+    font-size: 14px;
+    display: inline-block;
+    transition: color 0.3s ease; /* Transizione del colore al passaggio del mouse */
+  }
+  
+  .footer-link:hover {
+    color: rgba(0, 0, 0, 0.8); /* Colore dei link al passaggio del mouse */
+  }
+  
+  .footer-link.active {
+    font-weight: bold; /* Evidenzia il testo del menu attivo */
+  }
+  
+  /* Stile specifico per il link LinkedIn */
+  .footer-link i.bi-linkedin {
+    color: #0077b5; /* Colore dell'icona LinkedIn */
+  }
+  
+  .footer-link:hover i.bi-linkedin {
+    color: darken(#0077b5, 10%); /* Colore più scuro al passaggio del mouse */
+  }
