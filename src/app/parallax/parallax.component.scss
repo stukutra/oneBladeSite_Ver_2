@@ -1,0 +1,42 @@
+.parallax-container {
+    position: relative;
+    height: 500px; /* Altezza del parallax */
+    overflow: hidden; /* Nasconde la parte fuori dal contenitore */
+    background-color: rgba(0, 0, 0, 0.5); /* Colore di sfondo per la trasparenza */
+  }
+  
+  .parallax-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/slide/Slide_1.jpg'); /* Sostituisci con il percorso dell'immagine */
+    background-size: cover;
+    background-attachment: fixed; /* Effetto parallax */
+    background-position: center;
+    opacity: 0.3; /* Riduce la visibilità dell'immagine */
+    z-index: 0;
+  }
+  
+  .parallax-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff; /* Colore del testo */
+    text-align: center;
+    z-index: 1; /* Assicura che il contenuto sia sopra l'immagine */
+    padding: 0 20px; /* Spaziatura per il contenuto */
+  }
+  
+  .parallax-content h1,
+  .parallax-content p {
+    margin: 0;
+    font-size: 2rem; /* Dimensione del font per il titolo */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Effetto glow per il testo */
+  }
+  
+  .parallax-content p {
+    font-size: 1.2rem; /* Dimensione del font per il sottotitolo */
+  }

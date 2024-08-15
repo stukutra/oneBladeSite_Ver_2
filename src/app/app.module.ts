@@ -16,6 +16,8 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { RecruitmentComponent } from './recruitment/recruitment.component';
 import { YourTeamComponent } from './your-team/your-team.component';
 import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
+import { ParallaxComponent } from './parallax/parallax.component';
+import { CircularImageTextComponent } from './circular-image-text/circular-image-text.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { ImageCarouselComponent } from './image-carousel/image-carousel.componen
     ContactFormComponent,
     RecruitmentComponent,
     YourTeamComponent,
-    ImageCarouselComponent
+    ImageCarouselComponent,
+    ParallaxComponent,
+    CircularImageTextComponent
   ],
   imports: [
     BrowserModule,
