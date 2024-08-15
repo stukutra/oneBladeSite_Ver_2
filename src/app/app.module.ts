@@ -18,6 +18,7 @@ import { YourTeamComponent } from './your-team/your-team.component';
 import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
 import { ParallaxComponent } from './parallax/parallax.component';
 import { CircularImageTextComponent } from './circular-image-text/circular-image-text.component';
+import { FullBackgroundComponent } from './full-background/full-background.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { CircularImageTextComponent } from './circular-image-text/circular-image
     YourTeamComponent,
     ImageCarouselComponent,
     ParallaxComponent,
-    CircularImageTextComponent
+    CircularImageTextComponent,
+    FullBackgroundComponent
   ],
   imports: [
     BrowserModule,
