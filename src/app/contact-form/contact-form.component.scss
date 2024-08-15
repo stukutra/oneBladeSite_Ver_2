@@ -1,62 +1,108 @@
 // Colore della topbar
 $topbar-color: #9339bb;
 
+// Box di descrizione
 .description-box {
   background-color: #ffffff;
   color: #333;
-  padding: 20px; /* Ridotto il padding per rendere la form più compatta */
-  // border: 1px solid #9339bb40; /* Bordo leggermente trasparente */
-  // border-radius: 12px; /* Angoli più arrotondati */
-  // box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Ombra più pronunciata */
+  padding: 20px; /* Ridotto il padding per rendere il modulo più compatto */
   max-width: 800px; /* Imposta una larghezza massima per adattare due colonne */
   margin: 40px auto; /* Margine superiore e inferiore per centratura orizzontale */
 }
 
+// Titolo del box
 .box-title {
   font-size: 28px; /* Dimensione del font aumentata per il titolo */
   margin-bottom: 15px; /* Spazio sotto il titolo */
   color: $topbar-color; /* Colore del titolo */
 }
 
+// Modulo di contatto
 .contact-form {
   display: grid;
+  gap: 1rem; /* Spazio tra gli elementi del modulo */
 }
 
-.contact-form .form-label {
-  text-align: left; /* Allinea le etichette a sinistra */
-  display: block; /* Assicura che le etichette occupino una nuova riga */
-  font-weight: normal; /* Rimuove il grassetto dalle etichette */
-  margin-bottom: 0.5rem; /* Spazio sotto le etichette */
+// Gruppo di form
+.contact-form .form-group {
+  position: relative;
 }
 
+// Input e selettori
 .contact-form .form-control,
-.contact-form .form-select {
-  font-size: 15px; /* Dimensione del font per una lettura più facile */
+.contact-form .form-select,
+.contact-form .file-input {
+  border: none; /* Rimuove il bordo boxato */
+  border-bottom: 2px solid #ccc; /* Solo la linea di sotto */
+  border-radius: 0; /* Rimuove gli angoli arrotondati */
   padding: 0.5rem 0.75rem; /* Padding per gli input e il select */
+  font-size: 15px; /* Dimensione del font per una lettura più facile */
+  box-shadow: none; /* Rimuove l'ombra */
+  transition: border-color 0.3s ease; /* Aggiunge una transizione al colore del bordo */
 }
 
 .contact-form .form-control:focus,
-.contact-form .form-select:focus {
+.contact-form .form-select:focus,
+.contact-form .file-input:focus {
   border-color: $topbar-color; /* Colore del bordo in focus per abbinare la topbar */
-  box-shadow: 0 0 0 0.25rem rgba(147, 57, 187, 0.25); /* Ombra del bordo in focus */
+  outline: none; /* Rimuove il contorno predefinito */
 }
 
+// Placeholder
+.contact-form .form-control::placeholder,
+.contact-form .form-select::placeholder,
+.contact-form .file-input::placeholder {
+  color: #aaa; /* Colore del placeholder */
+}
+
+// Asterischi per i campi obbligatori
+.contact-form .form-label.required::after {
+  content: "*";
+  color: $topbar-color; /* Colore dell'asterisco obbligatorio */
+  font-size: 0.75rem; /* Dimensione dell'asterisco più piccola */
+  position: absolute;
+  right: -1.5rem; /* Posizione a destra rispetto all'etichetta */
+  top: 0; /* Allinea verticalmente con il testo dell'etichetta */
+}
+
+// Messaggi di errore
 .contact-form .text-danger {
-  font-size: 13px; /* Dimensione del font leggermente aumentata per i messaggi di errore */
-  color: $topbar-color; /* Colore dei messaggi di errore */
+  font-size: 0.75rem; /* Dimensione del font più piccola per i messaggi di errore */
+  color: $topbar-color; /* Colore dei messaggi di errore uguale ai pulsanti */
 }
 
-.contact-form .form-control.ng-invalid.ng-touched,
-.contact-form .form-select.ng-invalid.ng-touched {
-  border-color: $topbar-color; /* Colore del bordo per i campi non validi */
+// Input file
+.contact-form .form-control[type="file"] {
+  border: 2px solid #ccc; /* Bordo dell'input file */
+  border-radius: 4px; /* Angoli arrotondati per l'input file */
+  padding: 0.5rem 0.75rem; /* Padding per l'input file */
+  background-color: #fff; /* Colore di sfondo dell'input file */
+  color: #333; /* Colore del testo dell'input file */
+  display: flex; /* Flex per allineare correttamente il bottone */
 }
 
+.contact-form .form-control[type="file"]::file-selector-button {
+  background-color: $topbar-color; /* Colore di sfondo del bottone di selezione file */
+  border: none; /* Rimuove il bordo del bottone */
+  color: #fff; /* Colore del testo del bottone */
+  padding: 0.5rem 1rem; /* Padding per il bottone di selezione file */
+  border-radius: 4px; /* Angoli arrotondati per il bottone */
+  font-size: 15px; /* Dimensione del font del bottone */
+  cursor: pointer; /* Cambia il cursore quando si passa sopra il bottone */
+}
+
+.contact-form .form-control[type="file"]::file-selector-button:hover {
+  background-color: darken($topbar-color, 10%); /* Colore di sfondo al passaggio del mouse */
+}
+
+// Pulsanti
 .contact-form .btn-primary {
   background-color: $topbar-color; /* Colore dello sfondo del pulsante */
   border-color: $topbar-color; /* Colore del bordo del pulsante */
   color: #ffffff; /* Colore del testo del pulsante */
   padding: 0.5rem 1rem; /* Padding per un pulsante più grande e cliccabile */
   font-size: 16px; /* Dimensione del font del pulsante */
+  border-radius: 4px; /* Aggiunge angoli arrotondati al pulsante */
 }
 
 .contact-form .btn-primary:hover {
@@ -64,18 +110,9 @@ $topbar-color: #9339bb;
   border-color: darken($topbar-color, 10%); /* Colore del bordo del pulsante al passaggio del mouse */
 }
 
+// Riga dei pulsanti
 .button-row {
   display: flex;
-  justify-content: space-between; /* Spazia tra il pulsante di reset e il pulsante di invio */
+  justify-content: flex-end; /* Allinea i pulsanti a destra */
   margin-top: 20px; /* Spazio sopra i pulsanti */
-}
-
-.reset-button-container {
-  flex: 1; /* Occupa lo spazio rimanente */
-}
-
-.send-button-container {
-  flex: 1; /* Occupa lo spazio rimanente */
-  display: flex;
-  justify-content: flex-end; /* Allinea il pulsante di invio a destra */
 }
