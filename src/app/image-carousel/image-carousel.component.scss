@@ -1,16 +1,45 @@
-.carousel {
+  .carousel {
     .carousel-inner {
+      position: relative;
+
       .carousel-item {
+        position: relative;
+
         img {
-          height: auto; /* Mantieni l'altezza proporzionale dell'immagine */
-          max-height: 400px; /* Imposta un'altezza massima per le immagini */
-          object-fit: cover; /* Assicurati che le immagini coprano l'intera area senza distorsioni */
+          height: auto;
+          max-height: 400px;
+          object-fit: cover;
+        }
+
+        .carousel-caption-overlay {
+          position: absolute;
+          top: 50%;
+          left: 200px;
+          /* Distanza dal lato sinistro dell'immagine */
+          transform: translateY(-50%);
+          /* Centra verticalmente il testo */
+          color: #ffffff;
+          text-align: left;
+
+          h2.carousel-title {
+            font-size: 2rem;
+            /* Dimensione del titolo */
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            /* Grassetto per il titolo */
+          }
+
+          p.carousel-subtitle {
+            font-size: 1.25rem;
+            /* Dimensione del sottotitolo */
+            margin: 0;
+          }
         }
       }
     }
-  
+
     .carousel-control-prev,
     .carousel-control-next {
-      filter: invert(100%); /* Colore dei controlli bianco per contrastare le immagini scure */
+      filter: invert(100%);
     }
   }
