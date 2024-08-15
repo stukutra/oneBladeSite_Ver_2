@@ -1,5 +1,9 @@
 // Colore della topbar
 $topbar-color: #9339bb;
+$button-text-color: #ffffff;
+$button-border-color: $topbar-color;
+$button-hover-bg-color: $topbar-color;
+$button-hover-text-color: $button-text-color;
 
 // Box di descrizione
 .description-box {
@@ -74,19 +78,20 @@ $topbar-color: #9339bb;
 // Input file
 .contact-form .form-control[type="file"] {
   border: 2px solid #ccc; /* Bordo dell'input file */
-  border-radius: 4px; /* Angoli arrotondati per l'input file */
+  border-radius: 8px; /* Angoli arrotondati per l'input file */
   padding: 0.5rem 0.75rem; /* Padding per l'input file */
   background-color: #fff; /* Colore di sfondo dell'input file */
   color: #333; /* Colore del testo dell'input file */
   display: flex; /* Flex per allineare correttamente il bottone */
 }
 
+// Bottone di selezione file
 .contact-form .form-control[type="file"]::file-selector-button {
   background-color: $topbar-color; /* Colore di sfondo del bottone di selezione file */
   border: none; /* Rimuove il bordo del bottone */
   color: #fff; /* Colore del testo del bottone */
   padding: 0.5rem 1rem; /* Padding per il bottone di selezione file */
-  border-radius: 4px; /* Angoli arrotondati per il bottone */
+  border-radius: 8px; /* Angoli arrotondati per il bottone */
   font-size: 15px; /* Dimensione del font del bottone */
   cursor: pointer; /* Cambia il cursore quando si passa sopra il bottone */
 }
@@ -97,17 +102,18 @@ $topbar-color: #9339bb;
 
 // Pulsanti
 .contact-form .btn-primary {
-  background-color: $topbar-color; /* Colore dello sfondo del pulsante */
-  border-color: $topbar-color; /* Colore del bordo del pulsante */
-  color: #ffffff; /* Colore del testo del pulsante */
+  background-color: transparent; /* Sfondo trasparente per il pulsante */
+  border: 2px solid $topbar-color; /* Bordo colorato */
+  color: $topbar-color; /* Colore del testo del pulsante */
   padding: 0.5rem 1rem; /* Padding per un pulsante più grande e cliccabile */
   font-size: 16px; /* Dimensione del font del pulsante */
-  border-radius: 4px; /* Aggiunge angoli arrotondati al pulsante */
+  border-radius: 12px; /* Angoli arrotondati per il pulsante */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transizione per effetto hover */
 }
 
 .contact-form .btn-primary:hover {
-  background-color: darken($topbar-color, 10%); /* Colore dello sfondo del pulsante al passaggio del mouse */
-  border-color: darken($topbar-color, 10%); /* Colore del bordo del pulsante al passaggio del mouse */
+  background-color: $topbar-color; /* Colore dello sfondo del pulsante al passaggio del mouse */
+  color: #ffffff; /* Colore del testo del pulsante al passaggio del mouse */
 }
 
 // Riga dei pulsanti
