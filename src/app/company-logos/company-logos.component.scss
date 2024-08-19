@@ -46,12 +46,16 @@
     padding: 0 20px; /* Space between items to avoid overlap with arrows */
   }
 
-  .text-center {
-    text-align: center; /* Assicura che il testo sia centrato */
-  }
+
   
   .text-center h2 {
     font-size: 1.75rem; /* Dimensione del font del titolo */
     color: #9339bb; /* Colore del titolo, uguale ai colori del tema */
     margin-bottom: 20px; /* Spazio sotto il titolo */
+  }
+
+  .box-text {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
   }

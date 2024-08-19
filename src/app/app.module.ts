@@ -19,6 +19,7 @@ import { ImageCarouselComponent } from './image-carousel/image-carousel.componen
 import { ParallaxComponent } from './parallax/parallax.component';
 import { CircularImageTextComponent } from './circular-image-text/circular-image-text.component';
 import { FullBackgroundComponent } from './full-background/full-background.component';
+import { AppContactAziendeComponent } from './app-contact-aziende/app-contact-aziende.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { FullBackgroundComponent } from './full-background/full-background.compo
     ImageCarouselComponent,
     ParallaxComponent,
     CircularImageTextComponent,
-    FullBackgroundComponent
+    FullBackgroundComponent,
+    AppContactAziendeComponent
   ],
   imports: [
     BrowserModule,

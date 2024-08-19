@@ -10,11 +10,11 @@ $topbar-color: #9339bb;
   position: fixed; /* Rende la top bar fissa in cima */
   top: 0;
   left: 0;
-  padding-left: 0;
+  padding-left: 30px;
   padding-right: 20px; /* Aggiunge spazio a destra per distanziare l'hamburger menu */
   margin-left: 0;
   margin-right: 0;
-  height: 60px; /* Imposta l'altezza della top bar */
+  height: 140px; /* Imposta l'altezza della top bar */
   display: flex;
   align-items: center; /* Allinea gli elementi al centro verticalmente */
 }
@@ -27,7 +27,7 @@ $topbar-color: #9339bb;
 
 .logo-container {
   position: relative; /* Posizionamento relativo per gestire le immagini del logo */
-  height: 40px; /* Imposta l'altezza del contenitore del logo */
+  height: 140px; /* Imposta l'altezza del contenitore del logo */
 }
 
 .logo {
