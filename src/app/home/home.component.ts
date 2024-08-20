@@ -18,4 +18,11 @@ export class HomeComponent {
     { src: 'assets/logo3.png', alt: 'Logo 3' },
     // Aggiungi altri loghi qui
   ];
+
+
+  showChat = false;
+
+  toggleChat() {
+    this.showChat = !this.showChat;
+  }
 }
