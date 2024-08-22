@@ -20,9 +20,9 @@ import { RouterOutlet } from '@angular/router';
     ])
   ]
 })
-export class AppComponent {
-  title = 'your-app';
 
+export class AppComponent {
+  title = 'oneBlade';
   getRouteAnimationState(outlet: RouterOutlet) {
     return outlet.isActivated ? outlet.activatedRouteData['animation'] : '';
   }

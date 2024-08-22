@@ -12,6 +12,9 @@ $button-hover-text-color: $button-text-color;
   padding: 20px; /* Ridotto il padding per rendere il modulo più compatto */
   max-width: 800px; /* Imposta una larghezza massima per adattare due colonne */
   margin: 40px auto; /* Margine superiore e inferiore per centratura orizzontale */
+  margin: 40px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 // Titolo del box
