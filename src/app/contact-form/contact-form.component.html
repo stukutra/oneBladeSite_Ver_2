@@ -4,7 +4,6 @@
     <h5 class="box-title">Sei un libero professionista? </h5>
     <h6 class="mb-4">Se cerchi nuove opportunità di collaborazione unisciti al nostro team e lavora con noi.</h6>
     <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" (reset)="onReset()" novalidate class="contact-form">
-      
       <div class="mb-3 form-group">
         <input
           type="text"
@@ -14,10 +13,10 @@
           [(ngModel)]="model.name"
           #name="ngModel"
           required
-          placeholder="Name and surname"
+          placeholder="Nome e cognome"
         />
         <div *ngIf="name.invalid && (name.dirty || name.touched)" class="text-danger">
-          <div *ngIf="name.errors?.['required']">Name is required.</div>
+          <div *ngIf="name.errors?.['required']">Il nome è un campo richiesto</div>
         </div>
       </div>
 
@@ -30,10 +29,10 @@
           [(ngModel)]="model.telephone"
           #telephone="ngModel"
           required
-          placeholder="Telephone"
+          placeholder="Cellulare"
         />
         <div *ngIf="telephone.invalid && (telephone.dirty || telephone.touched)" class="text-danger">
-          <div *ngIf="telephone.errors?.['required']">Telephone is required.</div>
+          <div *ngIf="telephone.errors?.['required']">Il telefono è un campo richiesto</div>
         </div>
       </div>
 
@@ -50,8 +49,8 @@
           placeholder="Email"
         />
         <div *ngIf="email.invalid && (email.dirty || email.touched)" class="text-danger">
-          <div *ngIf="email.errors?.['required']">Email is required.</div>
-          <div *ngIf="email.errors?.['email']">Invalid email address.</div>
+          <div *ngIf="email.errors?.['required']">L'email è un campo richiesto</div>
+          <div *ngIf="email.errors?.['email']">Email non valida</div>
         </div>
       </div>
 
@@ -68,14 +67,14 @@
           placeholder="Partita IVA"
         />
         <div *ngIf="vat.invalid && (vat.dirty || vat.touched)" class="text-danger">
-          <div *ngIf="vat.errors?.['required']">Partita IVA is required.</div>
-          <div *ngIf="vat.errors?.['pattern']">Partita IVA must be 11 digits long.</div>
+          <div *ngIf="vat.errors?.['required']">La partita IVA è un campo richiesto</div>
+          <div *ngIf="vat.errors?.['pattern']">La partita IVA non è valida</div>
         </div>
       </div>
 
       <div class="mb-3 form-group">
         <select id="applicationType" name="applicationType" class="form-select" [(ngModel)]="model.applicationType" #applicationType="ngModel" required>
-          <option value="">Select a role</option>
+          <option value="">Seleziona un ruolo</option>
           <option value="softwareDevelopment">Developer</option>
           <option value="itSystemAdministrator">System Administrator</option>
           <option value="itDevOps">DevOps</option>
@@ -86,7 +85,7 @@
           <option value="itDesignUIUX">Design UI/UX</option>
         </select>
         <div *ngIf="applicationType.invalid && (applicationType.dirty || applicationType.touched)" class="text-danger">
-          <div *ngIf="applicationType.errors?.['required']">Type of Role is required.</div>
+          <div *ngIf="applicationType.errors?.['required']">Il ruolo è un campo richiesto</div>
         </div>
       </div>
 
@@ -99,12 +98,12 @@
           (change)="onFileChange($event)"
           required
         />
-        <small class="form-text text-muted">File must not exceed 3 MB.</small>
+        <small class="form-text text-muted">Il file supera l dimensione di 3 MB.</small>
         <div *ngIf="fileError" class="text-danger">
           {{ fileError }}
         </div>
         <div *ngIf="pdfRequired && !model.file" class="text-danger">
-          File upload is required.
+          Il file è richiesto
         </div>
       </div>
 
