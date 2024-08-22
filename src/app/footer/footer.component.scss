@@ -1,12 +1,36 @@
+// Variabili
+$footer-bg-gradient-color-1: rgba(79, 107, 243, 0.2); // Blu chiaro con trasparenza
+$footer-bg-gradient-color-2: rgba(62, 60, 207, 0.5); // Blu scuro con trasparenza
+$footer-bg-gradient-color-3: rgba(155, 52, 177, 0.21); // Viola con trasparenza
+$footer-bg-gradient-color-4: rgba(207, 44, 148, 0.76); // Magenta con trasparenza
+$footer-bg-gradient-color-5: #ffffff; // Bianco
+$footer-box-shadow-color-1: rgba(255, 255, 255, 0.1); // Ombra leggera bianca
+$footer-box-shadow-color-2: rgba(0, 0, 0, 0.3); // Ombra scura verso l'alto
+$footer-text-color: #000000; // Colore del testo
+$footer-logo-max-width: 150px; // Larghezza massima del logo
+$footer-margin-bottom: 15px; // Spazio sotto il logo e testo
+$footer-font-size: 16px; // Dimensione del font
+$footer-link-color: #ffffff; // Colore dei link
+$footer-link-hover-color: rgba(0, 0, 0, 0.8); // Colore dei link al passaggio del mouse
+$footer-link-spacing: 0 15px; // Spazio tra i link
+$footer-link-transition: 0.3s ease; // Transizione per i link
+$footer-linkedin-color: #0077b5; // Colore dell'icona LinkedIn
+
 .footer-wrapper {
   position: relative;
   width: 100%;
-  background: linear-gradient(to right, rgba(50, 100, 245, 0.1098039216) 62%, #9339bb 86%); /* Colore di sfondo con gradiente */
-  color: #000000; /* Colore del testo nero */
+  background: linear-gradient(45deg, 
+                              $footer-bg-gradient-color-1, 
+                              $footer-bg-gradient-color-2, 
+                              $footer-bg-gradient-color-3, 
+                              $footer-bg-gradient-color-4, 
+                              $footer-bg-gradient-color-5);
+  box-shadow: 0 4px 6px $footer-box-shadow-color-1;
+  color: $footer-text-color; /* Colore del testo */
   text-align: center;
   padding: 0; /* Rimuove il padding predefinito */
   height: 400px; /* Altezza fissa del footer */
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3); /* Ombra che va verso l'alto */
+  box-shadow: 0 -4px 8px $footer-box-shadow-color-2; /* Ombra che va verso l'alto */
   display: flex; /* Usa Flexbox per un layout flessibile */
   flex-direction: column; /* Colonna per gli elementi del footer */
   align-items: center; /* Allinea gli elementi al centro orizzontalmente */
@@ -14,9 +38,8 @@
 }
 
 .footer-logo {
-  max-width: 150px; /* Imposta una larghezza massima per il logo */
-  margin-bottom: 15px; /* Spazio tra il logo e il testo */
- 
+  max-width: $footer-logo-max-width; /* Imposta una larghezza massima per il logo */
+  margin-bottom: $footer-margin-bottom; /* Spazio tra il logo e il testo */
 }
 
 .footer-content {
@@ -25,26 +48,26 @@
 
 .footer-content p {
   margin: 0;
-  font-size: 16px; /* Dimensione del font aumentata per una migliore leggibilità */
-  margin-bottom: 15px; /* Spazio tra il testo e i link */
+  font-size: $footer-font-size; /* Dimensione del font aumentata per una migliore leggibilità */
+  margin-bottom: $footer-margin-bottom; /* Spazio tra il testo e i link */
 }
 
 .footer-links {
-  margin-top: 15px; /* Spazio sopra i link */
-  transition: font-weight 0.3s ease;
+  margin-top: $footer-margin-bottom; /* Spazio sopra i link */
+  transition: font-weight $footer-link-transition;
 }
 
 .footer-link {
-  color: #000000; /* Colore dei link neri */
+  color: $footer-link-color; /* Colore dei link */
   text-decoration: none; /* Rimuove la sottolineatura dai link */
-  margin: 0 15px; /* Spazio tra i link */
-  font-size: 16px; /* Dimensione del font dei link aumentata */
+  margin: $footer-link-spacing; /* Spazio tra i link */
+  font-size: $footer-font-size; /* Dimensione del font dei link aumentata */
   display: inline-block;
-  transition: color 0.3s ease; /* Transizione del colore al passaggio del mouse */
+  transition: color $footer-link-transition; /* Transizione del colore al passaggio del mouse */
 }
 
 .footer-link:hover {
-  color: rgba(0, 0, 0, 0.8); /* Colore dei link al passaggio del mouse */
+  color: $footer-link-hover-color; /* Colore dei link al passaggio del mouse */
 }
 
 .footer-link.active {
@@ -53,9 +76,9 @@
 
 /* Stile specifico per il link LinkedIn */
 .footer-link i.bi-linkedin {
-  color: #0077b5; /* Colore dell'icona LinkedIn */
+  color: $footer-linkedin-color; /* Colore dell'icona LinkedIn */
 }
 
 .footer-link:hover i.bi-linkedin {
-  color: darken(#0077b5, 10%); /* Colore più scuro al passaggio del mouse */
+  color: darken($footer-linkedin-color, 10%); /* Colore più scuro al passaggio del mouse */
 }

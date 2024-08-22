@@ -1,11 +1,33 @@
-// Colore della topbar
+// Variabili
 $topbar-color: #9339bb;
+$gradient-color-1: rgba(79, 107, 243, 0.2); // Blu chiaro con trasparenza
+$gradient-color-2: #3e3ccf80; // Blu scuro con trasparenza
+$gradient-color-3: #9b34b1ba; // Viola con trasparenza
+$gradient-color-4: #cf2c94c2; // Magenta con trasparenza
+$gradient-color-5: #ffffff; // Bianco
+$box-shadow-color: rgba(255, 255, 255, 1); // Ombra bianca
+$border-color: rgba(52, 58, 64, 0.08); // Colore del bordo
+$nav-link-color: #ffffff; // Colore del testo nel menu
+$nav-link-hover-color: #ffffff; // Colore del testo al passaggio del mouse
+$nav-link-hover-weight: bold; // Grassetto al passaggio del mouse
+$nav-item-margin-left: 20px; // Margine tra i menu
+$navbar-toggler-color: #ffffff; // Colore dell'hamburger menu
+$navbar-collapse-bg: #ffffff; // Background in modalità hamburger
+$navbar-collapse-shadow: rgba(0, 0, 0, 0.2); // Ombra in modalità hamburger
+$navbar-collapse-link-color: #000000; // Colore dei link in modalità hamburger
+$navbar-collapse-link-hover-color: #333333; // Colore dei link al passaggio del mouse in modalità hamburger
+$active-link-weight: bold; // Grassetto per il link attivo
 
 .navbar {
   width: 100%;
-  background: linear-gradient(to right, rgba(50, 100, 245, 0.11) 62%, $topbar-color 86%);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-bottom: 2px solid rgba(52, 58, 64, 0.08);
+  background: linear-gradient(45deg, 
+                              $gradient-color-1, 
+                              $gradient-color-2, 
+                              $gradient-color-3, 
+                              $gradient-color-4, 
+                              $gradient-color-5);
+  box-shadow: 1px -2px 9px $box-shadow-color;
+  border-bottom: 2px solid $border-color;
   z-index: 1000;
   position: fixed; /* Rende la top bar fissa in cima */
   top: 0;
@@ -60,7 +82,7 @@ $topbar-color: #9339bb;
 }
 
 .navbar-nav .nav-link {
-  color: #ffffff; /* Colore del testo bianco */
+  color: $nav-link-color; /* Colore del testo */
   font-size: 16px; /* Dimensione testo di default */
   display: flex;
   align-items: center;
@@ -73,17 +95,17 @@ $topbar-color: #9339bb;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #ffffff; /* Colore bianco al passaggio del mouse */
-  font-weight: bold; /* Testo grassetto al passaggio del mouse */
+  color: $nav-link-hover-color; /* Colore bianco al passaggio del mouse */
+  font-weight: $nav-link-hover-weight; /* Testo grassetto al passaggio del mouse */
 }
 
 .navbar-nav .nav-item {
-  margin-left: 20px; /* Spazio tra i menu */
+  margin-left: $nav-item-margin-left; /* Spazio tra i menu */
 }
 
 .navbar-toggler {
   border: none; /* Rimuove il bordo di default dell'hamburger menu */
-  color: #ffffff; /* Colore bianco per l'icona */
+  color: $navbar-toggler-color; /* Colore bianco per l'icona */
   margin-right: 20px; /* Distanza di 20px dal bordo destro */
 }
 
@@ -93,19 +115,19 @@ $topbar-color: #9339bb;
     position: absolute;
     top: 60px;
     right: 20px;
-    background-color: #ffffff;
+    background-color: $navbar-collapse-bg;
     width: 200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra per dare profondità */
+    box-shadow: 0 4px 8px $navbar-collapse-shadow; /* Ombra per dare profondità */
     border-radius: 8px; /* Angoli arrotondati */
     padding: 10px 0; /* Aggiunge padding interno */
   }
 
   .navbar-nav .nav-link {
-    color: #000000; /* Cambia il colore del testo a nero in modalità hamburger */
+    color: $navbar-collapse-link-color; /* Cambia il colore del testo a nero in modalità hamburger */
   }
 
   .navbar-nav .nav-link:hover {
-    color: #333333; /* Colore più scuro al passaggio del mouse in modalità hamburger */
+    color: $navbar-collapse-link-hover-color; /* Colore più scuro al passaggio del mouse in modalità hamburger */
   }
 
   .navbar-nav {
@@ -114,5 +136,5 @@ $topbar-color: #9339bb;
 }
 
 .navbar-nav .nav-link.active {
-  font-weight: bold; /* Evidenzia il testo del menu attivo */
+  font-weight: $active-link-weight; /* Evidenzia il testo del menu attivo */
 }
