@@ -41,13 +41,13 @@
     border: none; /* Rimuove il bordo di default */
     
     &:hover {
-      background: rgba(255, 255, 255, 0.1); /* Sfondo bianco leggermente trasparente al passaggio del mouse */
+      background: rgba(255, 255, 255, 0.4); /* Sfondo bianco leggermente trasparente al passaggio del mouse */
     }
 
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
       background-image: none; /* Rimuove l'immagine di sfondo predefinita */
-      color: #ffffff; /* Colore delle frecce */
+      color: #000000; /* Colore delle frecce */
       font-size: 2rem; /* Dimensione delle frecce */
       filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8)); /* Effetto di glow bianco */
     }
@@ -60,4 +60,9 @@
       content: '›'; /* Simbolo per freccia successiva */
     }
   }
+}
+
+
+.text-on-white{
+  color:#4933a0;
 }
