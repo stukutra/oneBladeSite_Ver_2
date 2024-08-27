@@ -7,7 +7,8 @@ $tab-inactive-color: #6c757d; // Colore del testo per i tab non attivi
 $tab-hover-bg: lighten($tab-inactive-bg, 10%); // Colore di sfondo dei tab al passaggio del mouse
 
 .nav-tabs .nav-link {
-    color:$topbar-color
+    color:$topbar-color;
+    font-size: larger;
 }
 
 
