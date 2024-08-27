@@ -1,59 +1,62 @@
-/* Ensure the container does not have horizontal overflow */
+// Variabili
+$carousel-control-width: 5%;
+$carousel-control-height: 50%;
+$carousel-control-bg-color: rgba(147, 57, 187, 0); // Trasparente
+$carousel-control-icon-bg-color: #9339bb;
+$carousel-control-icon-size: 50%;
+$carousel-item-padding: 20px;
+$logo-item-max-width: 33.33%; // Tre elementi per slide
+$logo-item-padding: 10px;
+$box-text-font-size: 16px;
+$box-text-line-height: 1.5;
+$title-font-size: 1.75rem;
+$title-color: #b302ff;
+
 .carousel-inner {
-    overflow: hidden;
-  }
-  
-  /* Adjust the width of each logo item */
-  .logo-item {
-    flex: 1;
-    max-width: 33.33%; /* Adjust this value if you want 3 items per slide */
-    padding: 0 10px; /* Spacing between logos */
-    box-sizing: border-box; /* Ensure padding is included in the width */
-  }
-  
-  /* Ensure the images fit within their containers */
-  .carousel-inner img {
-    width: 100%;
-    height: auto; /* Adjusts the height of the image to maintain aspect ratio */
-  }
-  
-  /* Adjust the carousel controls */
-  .carousel-control-prev,
-  .carousel-control-next {
-    width: 5%; /* Set width for navigation arrows */
-    height: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(147, 57, 187, 0); /* Background color of the arrows */
-    border: none;
-    
-  }
-  
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    background-color: #9339bb; /* Color of the arrow icons */
-    border-radius: 100%;
-  }
-  
-  /* Adjust arrow icons to be visible and not overlap with logos */
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    background-size: 50%, 50%; /* Adjust arrow icon size */
-  }
-  
-  /* Ensure there is enough padding around the carousel items */
-  .carousel-item {
-    padding: 0 20px; /* Space between items to avoid overlap with arrows */
-  }
+  overflow: hidden; /* Assicurati che il contenitore non abbia overflow orizzontale */
+}
 
-  .text-center h2 {
-    font-size: 1.75rem; /* Dimensione del font del titolo */
-    color: #9339bb; /* Colore del titolo, uguale ai colori del tema */
-    margin-bottom: 20px; /* Spazio sotto il titolo */
-  }
+.logo-item {
+  flex: 1;
+  max-width: $logo-item-max-width; /* Imposta la larghezza massima per ciascun elemento logo */
+  padding: 0 $logo-item-padding; /* Spaziatura tra i loghi */
+  box-sizing: border-box; /* Assicurati che il padding sia incluso nella larghezza */
+}
 
-  .box-text {
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: justify;
-  }
+.carousel-inner img {
+  width: 100%;
+  height: auto; /* Adatta l'altezza dell'immagine per mantenere il rapporto di aspetto */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: $carousel-control-width; /* Imposta la larghezza per le frecce di navigazione */
+  height: $carousel-control-height;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: $carousel-control-bg-color; /* Colore di sfondo delle frecce */
+  border: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: $carousel-control-icon-bg-color; /* Colore delle icone delle frecce */
+  border-radius: 100%;
+  background-size: $carousel-control-icon-size; /* Imposta la dimensione dell'icona */
+}
+
+.carousel-item {
+  padding: 0 $carousel-item-padding; /* Spazio tra gli elementi per evitare sovrapposizione con le frecce */
+}
+
+.text-center h2 {
+  font-size: $title-font-size; /* Dimensione del font del titolo */
+  color: $title-color; /* Colore del titolo, uguale ai colori del tema */
+  margin-bottom: 20px; /* Spazio sotto il titolo */
+}
+
+.box-text {
+  font-size: $box-text-font-size;
+  line-height: $box-text-line-height;
+  text-align: justify;
+}
