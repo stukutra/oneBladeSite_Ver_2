@@ -1,0 +1,50 @@
+// Variabili
+$topbar-color: #9339bb; // Colore primario del sito
+$tab-active-bg: #ffffff; // Colore di sfondo del tab attivo
+$tab-inactive-bg: #f8f9fa; // Colore di sfondo dei tab non attivi
+$tab-border-color: #9339bb; // Colore del bordo dei tab
+$tab-inactive-color: #6c757d; // Colore del testo per i tab non attivi
+$tab-hover-bg: lighten($tab-inactive-bg, 10%); // Colore di sfondo dei tab al passaggio del mouse
+
+.nav-tabs .nav-link {
+    color:$topbar-color
+}
+
+
+// Stile per le tabs
+.rounded-tabs {
+  border-radius: 0.5rem; // Angoli arrotondati per il contenitore dei tab
+  overflow: hidden; // Nasconde l'overflow per mantenere la rotondità
+  .nav {
+    border: 1px solid $tab-border-color; // Bordo attorno ai tab
+    border-radius: 0.5rem 0.5rem 0 0; // Angoli superiori arrotondati del contenitore dei tab
+    .nav-link {
+      border: 1px solid transparent;
+      border-radius: 0; // Nessun arrotondamento sugli angoli dei link
+      color: $tab-inactive-color; // Colore del testo dei tab non attivi
+      background-color: $tab-inactive-bg; // Colore di sfondo dei tab non attivi
+      transition: background-color 0.3s ease, color 0.3s ease;
+      &.active {
+        background-color: $tab-active-bg; // Colore di sfondo del tab attivo
+        color: $topbar-color; // Colore del testo del tab attivo
+        border-color: $tab-border-color; // Colore del bordo del tab attivo
+        border-radius: 0.5rem 0.5rem 0 0; // Angoli superiori arrotondati
+        z-index: 1; // Mantiene il tab attivo sopra gli altri
+      }
+      &:hover {
+        background-color: $tab-hover-bg; // Colore di sfondo al passaggio del mouse
+      }
+    }
+  }
+}
+
+// Stile per il contenuto delle tabs
+.rounded-content {
+  .tab-content {
+    border-radius: 0 0 0.5rem 0.5rem; // Angoli inferiori arrotondati per il contenuto
+    padding: 20px; // Spazio interno per il contenuto
+    background-color: #ffffff; // Sfondo del contenuto
+    box-shadow: none; // Nessuna ombra per il contenuto
+    border-top: 1px solid $tab-border-color; // Bordo superiore per separare il contenuto dai tab
+  }
+}
