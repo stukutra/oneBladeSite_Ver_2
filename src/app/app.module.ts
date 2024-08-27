@@ -19,6 +19,7 @@ import { ParallaxComponent } from './parallax/parallax.component';
 import { RecruitmentComponent } from './recruitment/recruitment.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { YourTeamComponent } from './your-team/your-team.component';
+import { ContactFormAziendaComponent } from './contact-form-azienda/contact-form-azienda.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { YourTeamComponent } from './your-team/your-team.component';
     ParallaxComponent,
     CircularImageTextComponent,
     FullBackgroundComponent,
-    AppContactAziendeComponent
+    AppContactAziendeComponent,
+    ContactFormAziendaComponent
   ],
   imports: [
     BrowserModule,
