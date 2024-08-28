@@ -125,3 +125,22 @@ $button-hover-text-color: $button-text-color;
   justify-content: flex-end; /* Allinea i pulsanti a destra */
   margin-top: 20px; /* Spazio sopra i pulsanti */
 }
+
+
+.custom-btn {
+  background-color: #9339bb; /* Cambia con il colore principale del sito */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #a80aec; /* Cambia il colore al passaggio del mouse */
+}
+
+.custom-btn:focus {
+  box-shadow: 0 0 5px #aa4fd1;
+}
