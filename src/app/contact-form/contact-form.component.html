@@ -1,9 +1,9 @@
 <!-- contact-form.component.html -->
 <div class="container">
   <div class="description-box">
-    <h5 class="box-title">Sei un libero professionista? </h5>
+    <h5 class="box-title">Sei un libero professionista?</h5>
     <h6 class="mb-4">Se cerchi nuove opportunità di collaborazione unisciti al nostro team e lavora con noi.</h6>
-    <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" (reset)="onReset()" novalidate class="contact-form">
+    <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" novalidate class="contact-form">
       <div class="mb-3 form-group">
         <input
           type="text"
@@ -102,9 +102,9 @@
         <div *ngIf="fileError" class="text-danger">
           {{ fileError }}
         </div>
-        <div *ngIf="pdfRequired && !model.file" class="text-danger">
+        <!-- <div *ngIf="pdfRequired && !model.file" class="text-danger">
           Il file è richiesto
-        </div>
+        </div> -->
       </div>
 
       <div class="button-row">
