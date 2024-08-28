@@ -47,6 +47,7 @@ export class ContactFormComponent {
     formData.append('vat', this.model.vat);
     formData.append('applicationType', this.model.applicationType);
     formData.append('file', this.model.file);
+    formData.append('api_key', '7F3kH#r8!wL5tVxZ2Q9p^nGjR@cM1dP6');
    
     this.http.post('https://www.oneblade.it/sendEmail.php', formData).subscribe(
       (response: any) => {

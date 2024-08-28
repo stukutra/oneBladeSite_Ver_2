@@ -8,8 +8,19 @@ header("Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-W
 $to = "info@oneblade.it";
 $subject = "Invio dati per Recruitment";
 
+// Chiave API che deve essere inviata con la richiesta
+$api_key = "7F3kH#r8!wL5tVxZ2Q9p^nGjR@cM1dP6";
+
 // Controllo che i dati siano stati inviati tramite POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Verifica della chiave API
+    $received_api_key = isset($_POST['api_key']) ? $_POST['api_key'] : '';
+
+    if ($received_api_key !== $api_key) {
+        echo json_encode(["status" => "error", "message" => "Autenticazione fallita."]);
+        exit();
+    }
+
     // Ricevi i dati dal form
     $name = isset($_POST['name']) ? $_POST['name'] : '';
     $telephone = isset($_POST['telephone']) ? $_POST['telephone'] : '';
@@ -72,4 +83,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
     echo json_encode(["status" => "error", "message" => "Richiesta non valida."]);
 }
+
 ?>
