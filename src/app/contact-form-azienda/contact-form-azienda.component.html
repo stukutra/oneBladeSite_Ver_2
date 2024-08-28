@@ -1,79 +1,136 @@
 <!-- contact-form.component.html -->
 <div class="container">
     <div class="description-box">
-        <h5 class="box-title">Sei un'azienda e cerchi uno staff? </h5>
-        <h6 class="mb-4">Se cerchi nuove opportunità di collaborazione unisciti al nostro team e lavora con noi.</h6>
-        <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" novalidate class="contact-form">
-            <div class="mb-3 form-group">
-                <input type="text" id="name" name="name" class="form-control" [(ngModel)]="model.name" #name="ngModel"
-                    required placeholder="Nome e cognome" />
-                <div *ngIf="name.invalid && (name.dirty || name.touched)" class="text-danger">
-                    <div *ngIf="name.errors?.['required']">Il nome è un campo richiesto</div>
-                </div>
-            </div>
-
-            <div class="mb-3 form-group">
-                <input type="text" id="telephone" name="telephone" class="form-control" [(ngModel)]="model.telephone"
-                    #telephone="ngModel" required placeholder="Cellulare" />
-                <div *ngIf="telephone.invalid && (telephone.dirty || telephone.touched)" class="text-danger">
-                    <div *ngIf="telephone.errors?.['required']">Il telefono è un campo richiesto</div>
-                </div>
-            </div>
-
-            <div class="mb-3 form-group">
-                <input type="email" id="email" name="email" class="form-control" [(ngModel)]="model.email"
-                    #email="ngModel" required email placeholder="Email" />
-                <div *ngIf="email.invalid && (email.dirty || email.touched)" class="text-danger">
-                    <div *ngIf="email.errors?.['required']">L'email è un campo richiesto</div>
-                    <div *ngIf="email.errors?.['email']">Email non valida</div>
-                </div>
-            </div>
-
-            <div class="mb-3 form-group">
-                <input type="text" id="vat" name="vat" class="form-control" [(ngModel)]="model.vat" #vat="ngModel"
-                    required pattern="^[0-9]{11}$" placeholder="Partita IVA" />
-                <div *ngIf="vat.invalid && (vat.dirty || vat.touched)" class="text-danger">
-                    <div *ngIf="vat.errors?.['required']">La partita IVA è un campo richiesto</div>
-                    <div *ngIf="vat.errors?.['pattern']">La partita IVA non è valida</div>
-                </div>
-            </div>
-
-            <div class="mb-3 form-group">
-                <select id="applicationType" name="applicationType" class="form-select"
-                    [(ngModel)]="model.applicationType" #applicationType="ngModel" required>
-                    <option value="">Seleziona un ruolo</option>
-                    <option value="softwareDevelopment">Developer</option>
-                    <option value="itSystemAdministrator">System Administrator</option>
-                    <option value="itDevOps">DevOps</option>
-                    <option value="itFunctionalAnalyst">Functional Analyst</option>
-                    <option value="itDataEngineer">Data Engineer</option>
-                    <option value="itDataScientist">Data Scientist</option>
-                    <option value="itQATester">QA Tester</option>
-                    <option value="itDesignUIUX">Design UI/UX</option>
-                </select>
-                <div *ngIf="applicationType.invalid && (applicationType.dirty || applicationType.touched)"
-                    class="text-danger">
-                    <div *ngIf="applicationType.errors?.['required']">Il ruolo è un campo richiesto</div>
-                </div>
-            </div>
-
-            <div class="mb-3 form-group">
-                <input type="file" id="pdf" name="pdf" class="form-control file-input" (change)="onFileChange($event)"
-                    required />
-                <small class="form-text text-muted">Il file supera l dimensione di 3 MB.</small>
-                <div *ngIf="fileError" class="text-danger">
-                    {{ fileError }}
-                </div>
-                <div *ngIf="pdfRequired && !model.file" class="text-danger">
-                    Il file è richiesto
-                </div>
-            </div>
-
-            <div class="button-row">
-                <div class="send-button-container">
-                    <button type="submit" class="btn btn-primary">Invia la tua candidatura</button>
-                </div>
-            </div>
-        </form>
+      <h5 class="box-title">Sei un'azienda in cerca di un team completo o di un gruppo selezionato di sviluppatori?</h5>
+      <h6 class="mb-4">Se hai bisogno di supporto nello sviluppo dei tuoi software, contattami: insieme valuteremo la soluzione migliore per soddisfare le tue esigenze.</h6>
+      <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" novalidate class="contact-form">
+        <div class="mb-3 form-group">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-control"
+            [(ngModel)]="model.name"
+            #name="ngModel"
+            required
+            placeholder="Nome e cognome"
+          />
+          <div *ngIf="name.invalid && (name.dirty || name.touched)" class="text-danger">
+            <div *ngIf="name.errors?.['required']">Il nome è un campo richiesto</div>
+          </div>
+        </div>
+  
+        <div class="mb-3 form-group">
+          <input
+            type="text"
+            id="telephone"
+            name="telephone"
+            class="form-control"
+            [(ngModel)]="model.telephone"
+            #telephone="ngModel"
+            required
+            placeholder="Cellulare"
+          />
+          <div *ngIf="telephone.invalid && (telephone.dirty || telephone.touched)" class="text-danger">
+            <div *ngIf="telephone.errors?.['required']">Il telefono è un campo richiesto</div>
+          </div>
+        </div>
+  
+        <div class="mb-3 form-group">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            [(ngModel)]="model.email"
+            #email="ngModel"
+            required
+            email
+            placeholder="Email"
+          />
+          <div *ngIf="email.invalid && (email.dirty || email.touched)" class="text-danger">
+            <div *ngIf="email.errors?.['required']">L'email è un campo richiesto</div>
+            <div *ngIf="email.errors?.['email']">Email non valida</div>
+          </div>
+        </div>
+  
+        <div class="mb-3 form-group">
+          <input
+            type="text"
+            id="vat"
+            name="vat"
+            class="form-control"
+            [(ngModel)]="model.vat"
+            #vat="ngModel"
+            required
+            pattern="^[0-9]{11}$"
+            placeholder="Partita IVA"
+          />
+          <div *ngIf="vat.invalid && (vat.dirty || vat.touched)" class="text-danger">
+            <div *ngIf="vat.errors?.['required']">La partita IVA è un campo richiesto</div>
+            <div *ngIf="vat.errors?.['pattern']">La partita IVA non è valida</div>
+          </div>
+        </div>
+  
+        <div class="mb-3 form-group">
+          <select id="applicationType" name="applicationType" class="form-select" [(ngModel)]="model.applicationType" #applicationType="ngModel" required>
+            <option value="">Cosa stai cercando?</option>
+            <option value="Software Development">Developer</option>
+            <option value="System Administrator">System Administrator</option>
+            <option value="DevOps">DevOps</option>
+            <option value="Functional Analyst">Functional Analyst</option>
+            <option value="Data Engineer">Data Engineer</option>
+            <option value="Data Scientist">Data Scientist</option>
+            <option value="QA Tester">QA Tester</option>
+            <option value="Design UI/UX">Design UI/UX</option>
+          </select>
+          <div *ngIf="applicationType.invalid && (applicationType.dirty || applicationType.touched)" class="text-danger">
+            <div *ngIf="applicationType.errors?.['required']">Il ruolo è un campo richiesto</div>
+          </div>
+        </div>  
+        <div class="button-row">
+          <div class="send-button-container">
+            <button type="submit" class="btn btn-primary"  [disabled]="contactForm.invalid">Invia la tua richiesta</button>
+          </div>
+        </div>
+      </form>
     </div>
-</div>
+  </div>
+  
+  
+  <!-- Modale per il messaggio di successo -->
+  <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">  <!-- Aggiungi modal-dialog-centered -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="successModalLabel">Invio riuscito</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          {{ successMessage }}
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary custom-btn" data-bs-dismiss="modal">Chiudi</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modale per il messaggio di errore -->
+  <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">  <!-- Aggiungi modal-dialog-centered -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="errorModalLabel">Errore di invio</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          {{ errorMessage }}
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger custom-btn" data-bs-dismiss="modal">Chiudi</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

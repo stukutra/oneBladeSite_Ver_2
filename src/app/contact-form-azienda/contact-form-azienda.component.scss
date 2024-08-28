@@ -1,33 +1,43 @@
-// Colore della topbar
-$topbar-color: #9339bb;
-$button-text-color: #ffffff;
-$button-border-color: $topbar-color;
-$button-hover-bg-color: $topbar-color;
-$button-hover-text-color: $button-text-color;
+// Variabili generali
+$topbar-color: #9339bb; // Colore primario del sito
+$button-text-color: #ffffff; // Colore del testo del pulsante
+$button-border-color: $topbar-color; // Colore del bordo del pulsante
+$button-hover-bg-color: darken($topbar-color, 10%); // Colore di sfondo del pulsante al passaggio del mouse
+$button-hover-text-color: $button-text-color; // Colore del testo del pulsante al passaggio del mouse
+$input-border-color: #ccc; // Colore del bordo degli input
+$input-focus-border-color: $topbar-color; // Colore del bordo degli input al focus
+$input-placeholder-color: #aaa; // Colore del placeholder
+$error-text-color: $topbar-color; // Colore dei messaggi di errore
+$file-input-border-radius: 8px; // Raggio dell'angolo per l'input file
+$file-button-bg-color: $topbar-color; // Colore di sfondo del bottone di selezione file
+$file-button-hover-bg-color: darken($topbar-color, 10%); // Colore di sfondo al passaggio del mouse sul bottone di selezione file
+$box-shadow-color: rgba(0, 0, 0, 0.1); // Colore dell'ombra del box
+$custom-btn-bg-color: #9339bb; // Colore di sfondo del pulsante personalizzato
+$custom-btn-hover-bg-color: #a80aec; // Colore di sfondo del pulsante personalizzato al passaggio del mouse
+$custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsante personalizzato
 
 // Box di descrizione
 .description-box {
   background-color: #ffffff;
   color: #333;
-  padding: 20px; /* Ridotto il padding per rendere il modulo più compatto */
-  max-width: 800px; /* Imposta una larghezza massima per adattare due colonne */
-  margin: 40px auto; /* Margine superiore e inferiore per centratura orizzontale */
+  padding: 20px;
+  max-width: 800px;
   margin: 40px auto;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px $box-shadow-color;
 }
 
 // Titolo del box
 .box-title {
-  font-size: 28px; /* Dimensione del font aumentata per il titolo */
-  margin-bottom: 15px; /* Spazio sotto il titolo */
-  color: $topbar-color; /* Colore del titolo */
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: $topbar-color;
 }
 
 // Modulo di contatto
 .contact-form {
   display: grid;
-  gap: 1rem; /* Spazio tra gli elementi del modulo */
+  gap: 1rem;
 }
 
 // Gruppo di form
@@ -39,89 +49,108 @@ $button-hover-text-color: $button-text-color;
 .contact-form .form-control,
 .contact-form .form-select,
 .contact-form .file-input {
-  border: none; /* Rimuove il bordo boxato */
-  border-bottom: 2px solid #ccc; /* Solo la linea di sotto */
-  border-radius: 0; /* Rimuove gli angoli arrotondati */
-  padding: 0.5rem 0.75rem; /* Padding per gli input e il select */
-  font-size: 15px; /* Dimensione del font per una lettura più facile */
-  box-shadow: none; /* Rimuove l'ombra */
-  transition: border-color 0.3s ease; /* Aggiunge una transizione al colore del bordo */
+  border: none;
+  border-bottom: 2px solid $input-border-color;
+  border-radius: 0;
+  padding: 0.5rem 0.75rem;
+  font-size: 15px;
+  box-shadow: none;
+  transition: border-color 0.3s ease;
 }
 
 .contact-form .form-control:focus,
 .contact-form .form-select:focus,
 .contact-form .file-input:focus {
-  border-color: $topbar-color; /* Colore del bordo in focus per abbinare la topbar */
-  outline: none; /* Rimuove il contorno predefinito */
+  border-color: $input-focus-border-color;
+  outline: none;
 }
 
 // Placeholder
 .contact-form .form-control::placeholder,
 .contact-form .form-select::placeholder,
 .contact-form .file-input::placeholder {
-  color: #aaa; /* Colore del placeholder */
+  color: $input-placeholder-color;
 }
 
 // Asterischi per i campi obbligatori
 .contact-form .form-label.required::after {
   content: "*";
-  color: $topbar-color; /* Colore dell'asterisco obbligatorio */
-  font-size: 0.75rem; /* Dimensione dell'asterisco più piccola */
+  color: $topbar-color;
+  font-size: 0.75rem;
   position: absolute;
-  right: -1.5rem; /* Posizione a destra rispetto all'etichetta */
-  top: 0; /* Allinea verticalmente con il testo dell'etichetta */
+  right: -1.5rem;
+  top: 0;
 }
 
 // Messaggi di errore
 .contact-form .text-danger {
-  font-size: 0.75rem; /* Dimensione del font più piccola per i messaggi di errore */
-  color: $topbar-color; /* Colore dei messaggi di errore uguale ai pulsanti */
+  font-size: 0.75rem;
+  color: $error-text-color;
 }
 
 // Input file
 .contact-form .form-control[type="file"] {
-  border: 2px solid #ccc; /* Bordo dell'input file */
-  border-radius: 8px; /* Angoli arrotondati per l'input file */
-  padding: 0.5rem 0.75rem; /* Padding per l'input file */
-  background-color: #fff; /* Colore di sfondo dell'input file */
-  color: #333; /* Colore del testo dell'input file */
-  display: flex; /* Flex per allineare correttamente il bottone */
+  border: 2px solid $input-border-color;
+  border-radius: $file-input-border-radius;
+  padding: 0.5rem 0.75rem;
+  background-color: #fff;
+  color: #333;
+  display: flex;
 }
 
 // Bottone di selezione file
 .contact-form .form-control[type="file"]::file-selector-button {
-  background-color: $topbar-color; /* Colore di sfondo del bottone di selezione file */
-  border: none; /* Rimuove il bordo del bottone */
-  color: #fff; /* Colore del testo del bottone */
-  padding: 0.5rem 1rem; /* Padding per il bottone di selezione file */
-  border-radius: 8px; /* Angoli arrotondati per il bottone */
-  font-size: 15px; /* Dimensione del font del bottone */
-  cursor: pointer; /* Cambia il cursore quando si passa sopra il bottone */
+  background-color: $file-button-bg-color;
+  border: none;
+  color: $button-text-color;
+  padding: 0.5rem 1rem;
+  border-radius: $file-input-border-radius;
+  font-size: 15px;
+  cursor: pointer;
 }
 
 .contact-form .form-control[type="file"]::file-selector-button:hover {
-  background-color: darken($topbar-color, 10%); /* Colore di sfondo al passaggio del mouse */
+  background-color: $file-button-hover-bg-color;
 }
 
 // Pulsanti
 .contact-form .btn-primary {
-  background-color: transparent; /* Sfondo trasparente per il pulsante */
-  border: 2px solid $topbar-color; /* Bordo colorato */
-  color: $topbar-color; /* Colore del testo del pulsante */
-  padding: 0.5rem 1rem; /* Padding per un pulsante più grande e cliccabile */
-  font-size: 16px; /* Dimensione del font del pulsante */
-  border-radius: 12px; /* Angoli arrotondati per il pulsante */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Transizione per effetto hover */
+  background-color: transparent;
+  border: 2px solid $button-border-color;
+  color: $button-border-color;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  border-radius: 12px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .contact-form .btn-primary:hover {
-  background-color: $topbar-color; /* Colore dello sfondo del pulsante al passaggio del mouse */
-  color: #ffffff; /* Colore del testo del pulsante al passaggio del mouse */
+  background-color: $button-hover-bg-color;
+  color: $button-hover-text-color;
 }
 
 // Riga dei pulsanti
 .button-row {
   display: flex;
-  justify-content: flex-end; /* Allinea i pulsanti a destra */
-  margin-top: 20px; /* Spazio sopra i pulsanti */
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+// Pulsante personalizzato
+.custom-btn {
+  background-color: $custom-btn-bg-color;
+  color: $button-text-color;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: $custom-btn-hover-bg-color;
+}
+
+.custom-btn:focus {
+  box-shadow: 0 0 5px $custom-btn-focus-shadow-color;
 }

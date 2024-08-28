@@ -98,7 +98,7 @@
           (change)="onFileChange($event)"
           required
         />
-        <small class="form-text text-muted">Il file supera l dimensione di 3 MB.</small>
+        <small class="form-text">Il file non può superare i 2MB</small>
         <div *ngIf="fileError" class="text-danger">
           {{ fileError }}
         </div>
