@@ -36,10 +36,11 @@ export class ContactFormComponent {
   onSubmit(form: NgForm) {
     if (form.invalid || !this.model.file) {
       this.errorMessage = 'Per favore, compila tutti i campi richiesti e carica un file valido.';
+      this.fileError = this.model.file ? null : 'Il file è richiesto';
       this.showModal('errorModal');  // Mostra la modale di errore
       return;
     }
-
+  
     const formData = new FormData();
     formData.append('name', this.model.name);
     formData.append('telephone', this.model.telephone);
@@ -48,12 +49,13 @@ export class ContactFormComponent {
     formData.append('applicationType', this.model.applicationType);
     formData.append('file', this.model.file);
     formData.append('api_key', '7F3kH#r8!wL5tVxZ2Q9p^nGjR@cM1dP6');
-   
+  
     this.http.post('https://www.oneblade.it/sendEmail.php', formData).subscribe(
       (response: any) => {
         if (response.status === 'success') {
           this.successMessage = 'La tua candidatura è stata inviata con successo!';
           this.errorMessage = null;
+          this.fileError = null;  // Cancella il messaggio di errore del file
           this.resetForm(form);  // Resetta il form
           this.showModal('successModal');  // Mostra la modale di successo
         } else {

@@ -102,14 +102,14 @@
         <div *ngIf="fileError" class="text-danger">
           {{ fileError }}
         </div>
-        <div *ngIf="!model.file" class="text-danger">
+        <div *ngIf="!model.file && (contactForm.submitted || fileError)" class="text-danger">
           Il file è richiesto
         </div>
       </div>
 
       <div class="button-row">
         <div class="send-button-container">
-          <button type="submit" class="btn btn-primary">Invia la tua candidatura</button>
+          <button type="submit" class="btn btn-primary"  [disabled]="contactForm.invalid || !model.file">Invia la tua candidatura</button>
         </div>
       </div>
     </form>
