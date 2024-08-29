@@ -65,7 +65,7 @@ export class ContactFormComponent {
           this.showModal('errorModal');  // Mostra la modale di errore
         }
       },
-      (error) => {
+      (error: any) => {
         this.errorMessage = 'Si è verificato un errore durante la comunicazione con il server.';
         this.successMessage = null;
         this.showModal('errorModal');  // Mostra la modale di errore
