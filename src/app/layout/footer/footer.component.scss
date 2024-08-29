@@ -44,7 +44,7 @@ $footer-linkedin-color: #0077b5; // Colore dell'icona LinkedIn
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../../assets/sfumature.png') no-repeat center center;
+  background: url('../../../assets/sfumature.png') no-repeat center center;
   background-size: cover; /* Assicura che l'immagine copra il contenitore */
   transform: scaleX(-1); /* Mirroring orizzontale dell'immagine */
   z-index: -1; /* Porta il pseudo-elemento dietro gli altri contenuti */

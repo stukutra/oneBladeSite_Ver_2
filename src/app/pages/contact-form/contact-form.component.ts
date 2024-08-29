@@ -20,7 +20,11 @@ export class ContactFormComponent {
   successMessage: string | null = null;
   errorMessage: string | null = null;
 
-  constructor(private http: HttpClient) {}
+  isModalVisible: boolean = false;
+  modalTitle: string = 'Titolo della Modale';
+  modalContent: string = 'Questo è il contenuto della modale.';
+
+  constructor(private http: HttpClient) { }
 
   onFileChange(event: any) {
     const file = event.target.files[0];
@@ -40,7 +44,7 @@ export class ContactFormComponent {
       this.showModal('errorModal');  // Mostra la modale di errore
       return;
     }
-  
+
     const formData = new FormData();
     formData.append('name', this.model.name);
     formData.append('telephone', this.model.telephone);
@@ -49,7 +53,7 @@ export class ContactFormComponent {
     formData.append('applicationType', this.model.applicationType);
     formData.append('file', this.model.file);
     formData.append('api_key', '7F3kH#r8!wL5tVxZ2Q9p^nGjR@cM1dP6');
-  
+
     this.http.post('https://www.oneblade.it/sendEmail.php', formData).subscribe(
       (response: any) => {
         if (response.status === 'success') {
@@ -57,7 +61,7 @@ export class ContactFormComponent {
           this.errorMessage = null;
           this.fileError = null;  // Cancella il messaggio di errore del file
           this.resetForm(form);  // Resetta il form
-          this.showModal('successModal');  // Mostra la modale di successo
+          //this.showModal('successModal');  // Mostra la modale di successo
         } else {
           this.errorMessage = response.message || 'Si è verificato un errore durante l\'invio della candidatura.';
           this.successMessage = null;
@@ -84,11 +88,21 @@ export class ContactFormComponent {
       fileInput.value = '';
     }
   }
-  showModal(modalId: string) {
-    const modalElement = document.getElementById(modalId);
-    if (modalElement) {
-      const modal = new (window as any).bootstrap.Modal(modalElement);
-      modal.show();
-    }
+  showModal(modalId: string): void {
+    setTimeout(() => {
+      const modalElement = document.getElementById(modalId) as HTMLElement | null;
+
+      if (modalElement) {
+        try {
+          // Utilizzo di `window.bootstrap.Modal` per inizializzare la modale dopo il ritardo
+          const modal = new (window as any).bootstrap.Modal(modalElement);
+          modal.show();
+        } catch (error) {
+          console.error('Errore nell\'inizializzazione della modale:', error);
+        }
+      } else {
+        console.error(`Elemento con id "${modalId}" non trovato nel DOM.`);
+      }
+    }, 100); // Ritardo di 100ms, puoi aumentarlo se necessario
   }
 }

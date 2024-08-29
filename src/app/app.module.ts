@@ -4,18 +4,18 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
-import { CompanyDescriptionComponent } from './company-description/company-description.component';
-import { CompanyLogosComponent } from './company-logos/company-logos.component';
-import { ContactFormAziendaComponent } from './contact-form-azienda/contact-form-azienda.component';
-import { ContactFormComponent } from './contact-form/contact-form.component';
-import { FooterComponent } from './footer/footer.component';
+import { CompanyDescriptionComponent } from './pages/company-description/company-description.component';
+import { CompanyLogosComponent } from './pages/company-logos/company-logos.component';
+import { ContactFormAziendaComponent } from './pages/contact-form-azienda/contact-form-azienda.component';
+import { ContactFormComponent } from './pages/contact-form/contact-form.component';
+import { FooterComponent } from './layout/footer/footer.component';
 import { FormsModule } from '@angular/forms';
-import { FullBackgroundComponent } from './full-background/full-background.component';
-import { HomeComponent } from './home/home.component';
+import { FullBackgroundComponent } from './pages/full-background/full-background.component';
+import { HomeComponent } from './layout/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
-import { ParallaxComponent } from './parallax/parallax.component';
-import { TopBarComponent } from './top-bar/top-bar.component';
+import { ImageCarouselComponent } from './pages/image-carousel/image-carousel.component';
+import { ParallaxComponent } from './pages/parallax/parallax.component';
+import { TopBarComponent } from './layout/top-bar/top-bar.component';
 
 @NgModule({
   declarations: [
