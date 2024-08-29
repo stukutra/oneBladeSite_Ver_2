@@ -18,11 +18,7 @@ export class ContactFormComponent {
   };
   fileError: string | null = null;
   successMessage: string | null = null;
-  errorMessage: string | null = null;
-
-  isModalVisible: boolean = false;
-  modalTitle: string = 'Titolo della Modale';
-  modalContent: string = 'Questo è il contenuto della modale.';
+  errorMessage: string | null = null;  
 
   constructor(private http: HttpClient) { }
 
@@ -61,6 +57,7 @@ export class ContactFormComponent {
           this.errorMessage = null;
           this.fileError = null;  // Cancella il messaggio di errore del file
           this.resetForm(form);  // Resetta il form
+          //////NON RIESCO A FAR APRIRE LA MODALE
           //this.showModal('successModal');  // Mostra la modale di successo
         } else {
           this.errorMessage = response.message || 'Si è verificato un errore durante l\'invio della candidatura.';
@@ -88,21 +85,12 @@ export class ContactFormComponent {
       fileInput.value = '';
     }
   }
-  showModal(modalId: string): void {
-    setTimeout(() => {
-      const modalElement = document.getElementById(modalId) as HTMLElement | null;
 
-      if (modalElement) {
-        try {
-          // Utilizzo di `window.bootstrap.Modal` per inizializzare la modale dopo il ritardo
-          const modal = new (window as any).bootstrap.Modal(modalElement);
-          modal.show();
-        } catch (error) {
-          console.error('Errore nell\'inizializzazione della modale:', error);
-        }
-      } else {
-        console.error(`Elemento con id "${modalId}" non trovato nel DOM.`);
-      }
-    }, 100); // Ritardo di 100ms, puoi aumentarlo se necessario
+  showModal(modalId: string): void {
+    const modalElement = document.getElementById(modalId) as HTMLElement | null;
+    if (modalElement) {
+      const modal = new (window as any).bootstrap.Modal(modalElement);
+      modal.show();
+    }
   }
 }
