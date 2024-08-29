@@ -1,54 +1,86 @@
-/* home.component.scss */
-.mySwiper {
-    padding: 0 50px; // Padding per evitare la sovrapposizione delle frecce
-  }
-  
-  .logo {
-    height: 50px; // Altezza dei loghi
-  }
+// Definizione delle variabili
+$padding-horizontal-large: 50px;
+$logo-height: 50px;
 
-/* styles.css */
+$chat-icon-bottom: 20px;
+$chat-icon-right: 20px;
+$chat-icon-z-index: 1000;
+$chat-icon-color: #25D366;
+$chat-icon-font-size: 2rem;
+
+$chat-bubble-bottom: 80px;
+$chat-bubble-width: 300px;
+$chat-bubble-bg-color: #fff;
+$chat-bubble-border-color: #ccc;
+$chat-bubble-border-radius: 10px;
+$chat-bubble-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+$chat-bubble-z-index: 1000;
+
+$chat-header-padding: 10px;
+$chat-header-border-bottom-color: #ddd;
+$chat-header-bg-color: $chat-icon-color;
+$chat-header-text-color: #fff;
+$chat-header-border-radius-top: 10px;
+
+$operator-icon-size: 30px;
+$operator-icon-border-radius: 50%;
+$operator-icon-margin-right: 10px;
+
+$close-chat-font-size: 1.2rem;
+$close-chat-text-color: $chat-header-text-color;
+
+$chat-body-padding: 10px;
+
+// home.component.scss
+.mySwiper {
+  padding: 0 $padding-horizontal-large; // Padding per evitare la sovrapposizione delle frecce
+}
+
+.logo {
+  height: $logo-height; // Altezza dei loghi
+}
+
+// styles.css
 .chat-icon {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
+  bottom: $chat-icon-bottom;
+  right: $chat-icon-right;
+  z-index: $chat-icon-z-index;
   cursor: pointer;
 }
 
 .chat-icon i {
-  font-size: 2rem;
-  color: #25D366;
+  font-size: $chat-icon-font-size;
+  color: $chat-icon-color;
 }
 
 .chat-bubble {
   position: fixed;
-  bottom: 80px; /* Spaziatura sopra l'icona della chat */
-  right: 20px;
-  width: 300px;
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  z-index: 1000;
+  bottom: $chat-bubble-bottom; // Spaziatura sopra l'icona della chat
+  right: $chat-icon-right;
+  width: $chat-bubble-width;
+  background-color: $chat-bubble-bg-color;
+  border: 1px solid $chat-bubble-border-color;
+  border-radius: $chat-bubble-border-radius;
+  box-shadow: $chat-bubble-box-shadow;
+  z-index: $chat-bubble-z-index;
 }
 
 .chat-header {
   display: flex;
   align-items: center;
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-  background-color: #25D366;
-  color: white;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  padding: $chat-header-padding;
+  border-bottom: 1px solid $chat-header-border-bottom-color;
+  background-color: $chat-header-bg-color;
+  color: $chat-header-text-color;
+  border-radius: $chat-header-border-radius-top $chat-header-border-radius-top 0 0;
 }
 
 .operator-icon {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin-right: 10px;
+  width: $operator-icon-size;
+  height: $operator-icon-size;
+  border-radius: $operator-icon-border-radius;
+  margin-right: $operator-icon-margin-right;
 }
 
 .operator-name {
@@ -58,11 +90,11 @@
 .close-chat {
   background: none;
   border: none;
-  color: white;
-  font-size: 1.2rem;
+  color: $close-chat-text-color;
+  font-size: $close-chat-font-size;
   cursor: pointer;
 }
 
 .chat-body {
-  padding: 10px;
+  padding: $chat-body-padding;
 }

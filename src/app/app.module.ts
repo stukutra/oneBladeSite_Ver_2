@@ -10,7 +10,6 @@ import { ContactFormAziendaComponent } from './pages/contact-form-azienda/contac
 import { ContactFormComponent } from './pages/contact-form/contact-form.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { FormsModule } from '@angular/forms';
-import { FullBackgroundComponent } from './pages/full-background/full-background.component';
 import { HomeComponent } from './layout/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ImageCarouselComponent } from './pages/image-carousel/image-carousel.component';
@@ -28,7 +27,6 @@ import { TopBarComponent } from './layout/top-bar/top-bar.component';
     ContactFormComponent,
     ImageCarouselComponent,
     ParallaxComponent,
-    FullBackgroundComponent,
     ContactFormAziendaComponent
   ],
   imports: [
