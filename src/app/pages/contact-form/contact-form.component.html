@@ -117,38 +117,12 @@
 </div>
 
 
-<!-- Modale per il messaggio di successo -->
-<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">  <!-- Aggiungi modal-dialog-centered -->
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="successModalLabel">Invio riuscito</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        {{ successMessage }}
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary custom-btn" data-bs-dismiss="modal">Chiudi</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modale per il messaggio di errore -->
-<div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">  <!-- Aggiungi modal-dialog-centered -->
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="errorModalLabel">Errore di invio</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        {{ errorMessage }}
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger custom-btn" data-bs-dismiss="modal">Chiudi</button>
-      </div>
-    </div>
+<!-- Modale personalizzata -->
+<div class="custom-modal" *ngIf="isModalVisible">
+  <div class="custom-modal-content">
+    <span class="custom-modal-close" (click)="closeModal()">&times;</span>
+    <h5>{{ modalTitle }}</h5>
+    <p>{{ modalMessage }}</p>
+    <button class="btn btn-primary custom-btn" (click)="closeModal()">Chiudi</button>
   </div>
 </div>

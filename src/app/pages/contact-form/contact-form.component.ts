@@ -19,6 +19,9 @@ export class ContactFormComponent {
   fileError: string | null = null;
   successMessage: string | null = null;
   errorMessage: string | null = null;  
+  isModalVisible: boolean = false;
+  modalTitle: string = '';
+  modalMessage: string = '';
 
   constructor(private http: HttpClient) { }
 
@@ -37,7 +40,7 @@ export class ContactFormComponent {
     if (form.invalid || !this.model.file) {
       this.errorMessage = 'Per favore, compila tutti i campi richiesti e carica un file valido.';
       this.fileError = this.model.file ? null : 'Il file è richiesto';
-      this.showModal('errorModal');  // Mostra la modale di errore
+      this.showModal('Errore', this.errorMessage);
       return;
     }
 
@@ -52,23 +55,17 @@ export class ContactFormComponent {
 
     this.http.post('https://www.oneblade.it/sendEmail.php', formData).subscribe(
       (response: any) => {
+        console.log('Server response:', response);  //
         if (response.status === 'success') {
-          this.successMessage = 'La tua candidatura è stata inviata con successo!';
-          this.errorMessage = null;
-          this.fileError = null;  // Cancella il messaggio di errore del file
-          this.resetForm(form);  // Resetta il form
-          //////NON RIESCO A FAR APRIRE LA MODALE
-          //this.showModal('successModal');  // Mostra la modale di successo
+          this.showModal('Successo', 'La tua candidatura è stata inviata con successo!');
+          this.resetForm(form);
         } else {
-          this.errorMessage = response.message || 'Si è verificato un errore durante l\'invio della candidatura.';
-          this.successMessage = null;
-          this.showModal('errorModal');  // Mostra la modale di errore
+          this.showModal('Errore', response.message || 'Si è verificato un errore.');
         }
       },
       (error: any) => {
-        this.errorMessage = 'Si è verificato un errore durante la comunicazione con il server.';
-        this.successMessage = null;
-        this.showModal('errorModal');  // Mostra la modale di errore
+        console.error('Error during the request:', error);  // Debug per vedere l'errore
+        this.showModal('Errore', 'Si è verificato un errore durante la comunicazione con il server.');
       }
     );
   }
@@ -86,11 +83,13 @@ export class ContactFormComponent {
     }
   }
 
-  showModal(modalId: string): void {
-    const modalElement = document.getElementById(modalId) as HTMLElement | null;
-    if (modalElement) {
-      const modal = new (window as any).bootstrap.Modal(modalElement);
-      modal.show();
-    }
+  showModal(title: string, message: string): void {
+    this.modalTitle = title;
+    this.modalMessage = message;
+    this.isModalVisible = true;
+  }
+
+  closeModal(): void {
+    this.isModalVisible = false;
   }
 }
