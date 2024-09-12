@@ -4,29 +4,36 @@
 
     .carousel-item {
       position: relative;
+      transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+      will-change: transform;
+      opacity: 0; // Inizialmente nasconde l'elemento
+      &.active {
+        opacity: 1; // Mostra l'elemento attivo
+      }
 
       img {
         height: auto;
         max-height: 400px;
         object-fit: cover;
+        width: 100%; // Assicura che le immagini si adattino alla larghezza del contenitore
       }
 
       .carousel-caption-overlay {
         position: absolute;
         top: 50%;
-        left: 150px; /* Distanza dal lato sinistro dell'immagine */
-        transform: translateY(-50%); /* Centra verticalmente il testo */
+        left: 150px; // Distanza dal lato sinistro dell'immagine
+        transform: translateY(-50%); // Centra verticalmente il testo
         color: #ffffff;
         text-align: left;
 
         h2.carousel-title {
-          font-size: 2rem; /* Dimensione del titolo */
+          font-size: 2rem; // Dimensione del titolo
           margin-bottom: 0.5rem;
-          font-weight: bold; /* Grassetto per il titolo */
+          font-weight: bold; // Grassetto per il titolo
         }
 
         p.carousel-subtitle {
-          font-size: 1.25rem; /* Dimensione del sottotitolo */
+          font-size: 1.25rem; // Dimensione del sottotitolo
           margin: 0;
         }
       }
@@ -35,34 +42,33 @@
 
   .carousel-control-prev,
   .carousel-control-next {
-    width: 5%; /* Dimensione delle frecce */
-    height: 100%; /* Altezza delle frecce */
-    background: none; /* Rimuove lo sfondo delle frecce */
-    border: none; /* Rimuove il bordo di default */
-    
+    width: 5%; // Dimensione delle frecce
+    height: 100%; // Altezza delle frecce
+    background: none; // Rimuove lo sfondo delle frecce
+    border: none; // Rimuove il bordo di default
+
     &:hover {
-      background: rgba(255, 255, 255, 0.4); /* Sfondo bianco leggermente trasparente al passaggio del mouse */
+      background: rgba(255, 255, 255, 0.4); // Sfondo bianco leggermente trasparente al passaggio del mouse
     }
 
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
-      background-image: none; /* Rimuove l'immagine di sfondo predefinita */
-      color: #000000; /* Colore delle frecce */
-      font-size: 2rem; /* Dimensione delle frecce */
-      filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8)); /* Effetto di glow bianco */
+      background-image: none; // Rimuove l'immagine di sfondo predefinita
+      color: #000000; // Colore delle frecce
+      font-size: 2rem; // Dimensione delle frecce
+      filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8)); // Effetto di glow bianco
     }
 
     .carousel-control-prev-icon::before {
-      content: '‹'; /* Simbolo per freccia precedente */
+      content: '‹'; // Simbolo per freccia precedente
     }
 
     .carousel-control-next-icon::before {
-      content: '›'; /* Simbolo per freccia successiva */
+      content: '›'; // Simbolo per freccia successiva
     }
   }
 }
 
-
-.text-on-white{
-  color:#4933a0;
+.text-on-white {
+  color: #4933a0;
 }
