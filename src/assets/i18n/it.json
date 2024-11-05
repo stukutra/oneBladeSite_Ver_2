@@ -1,3 +1,28 @@
 {
-    "Sviluppiamo": "Sviluppiamo il tuo software"
-}
+    "NAV": {
+      "DEVELOPMENT": "Sviluppiamo il tuo software",
+      "TALENT": "Talent acquisition"
+    },
+    "CONTENT": {
+      "DEVELOPMENT": {
+        "TITLE": "Sviluppiamo il tuo software",
+        "INTRO": "Siamo qui per aiutarti a realizzare progetti software completamente su misura per le tue esigenze specifiche e i tuoi obiettivi strategici. La nostra missione è quella di costruire team altamente qualificati e dedicati, capaci di affrontare progetti di medie e grandi dimensioni con competenza e professionalità.",
+        "SUBTITLE_DEVELOPERS": "Sviluppatori e professionisti",
+        "BODY_DEVELOPERS": "Per raggiungere questo obiettivo, mettiamo insieme gruppi di esperti selezionati con cura nel corso degli anni. Ogni membro del nostro team è un consulente specializzato con un background comprovato e una profonda esperienza nel settore. Abbiamo investito tempo e risorse nella selezione e nella formazione di questi professionisti, garantendo che rispondano esattamente alle tue esigenze tecniche e funzionali.",
+        "SUBTITLE_APPROACH": "L'approccio",
+        "BODY_APPROACH": "Il nostro approccio si basa su una comprensione dettagliata delle tue necessità e dei tuoi obiettivi. Collaboriamo strettamente con te per definire i requisiti del progetto e progettare soluzioni che siano perfettamente allineate con le tue aspettative. I team che formiamo lavorano con impegno e dedizione, assicurando un processo di sviluppo fluido e senza intoppi.",
+        "SUBTITLE_REMOTE": "Tutto da remoto",
+        "BODY_REMOTE": "Inoltre, siamo in grado di gestire tutto il processo di sviluppo software completamente da remoto, offrendo così una flessibilità operativa senza pari. Questa modalità di lavoro non solo consente di adattarsi rapidamente ai cambiamenti e alle nuove esigenze, ma ti permette anche di accedere ai migliori talenti globali senza limitazioni geografiche.",
+        "SUMMARY": "In sintesi, il nostro servizio ti offre una soluzione integrata e su misura, con team di esperti altamente qualificati che lavorano in sinergia per garantire risultati di alta qualità e una gestione del progetto fluida e adattabile. La nostra capacità di operare completamente in modalità remota ti offre la libertà di concentrarti sulle tue priorità strategiche, sapendo che il tuo progetto software è nelle mani di professionisti esperti e dedicati."
+      },
+      "TALENT": {
+        "TITLE": "Talent acquisition",
+        "INTRO": "Il nostro servizio di talent acquisition è progettato per mettere in contatto i professionisti con i migliori progetti IT disponibili sul mercato. Ma la nostra offerta va ben oltre la semplice selezione di candidati: ci impegniamo a comprendere in profondità le esigenze specifiche di ogni progetto, per garantire che il talento che proponiamo non solo soddisfi, ma superi le aspettative.",
+        "BODY_ANALYSIS": "Per fare ciò, adottiamo un approccio personalizzato e analitico. Iniziamo con una valutazione dettagliata dei requisiti del progetto e delle competenze richieste. Questo processo ci consente di identificare e selezionare i professionisti più adatti, che possiedano non solo le qualifiche tecniche necessarie, ma anche la capacità di adattarsi e contribuire efficacemente al contesto del progetto.",
+        "BODY_CANDIDATES": "Ogni candidato che consideriamo per le vostre esigenze è sottoposto a rigorosi test interni e valutazioni approfondite. Questi test sono progettati per garantire che il personale selezionato operi secondo standard elevati di qualità e professionalità. Ciò ci permette di assicurare che ogni talento non solo rispetti i requisiti tecnici, ma sia anche in grado di integrarsi bene nel team e contribuire al successo complessivo del progetto.",
+        "BODY_NETWORK": "Inoltre, la nostra esperienza nel settore ci consente di mantenere una rete di professionisti altamente qualificati e aggiornati con le ultime tendenze e tecnologie nel campo IT. Questo ci permette di rispondere con rapidità e precisione alle esigenze dei nostri clienti, fornendo soluzioni di talent acquisition che sono sia tempestive che di alta qualità.",
+        "SUMMARY": "In sintesi, il nostro servizio di talent acquisition è progettato per garantire che ogni progetto IT possa beneficiare delle competenze più adatte e dei talenti più qualificati disponibili, contribuendo così al successo e all’eccellenza dei risultati finali."
+      }
+    }
+  }
+  

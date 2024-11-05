@@ -12,8 +12,8 @@ export class TopBarComponent {
   isMenuOpen: boolean = false;
 
   constructor(private router: Router,private translate: TranslateService) {
-    this.translate.addLangs(['en', 'it']);
-    this.translate.setDefaultLang('en');
+    this.translate.addLangs(['en', 'it', 'es']);
+    this.translate.setDefaultLang('it');
   }
 
   @HostListener('document:click', ['$event'])
