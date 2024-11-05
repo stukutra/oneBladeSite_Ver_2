@@ -128,9 +128,19 @@ $gradient-color-5: #ffffff;
 }
 
 .navbar-toggler {
-  border: none;
-  color: $navbar-toggler-color;
-  margin-right: 20px;
+  border: none; // Rimuove il bordo di default
+  outline: none; // Rimuove il contorno esterno al focus
+  box-shadow: none; // Rimuove eventuali ombre applicate
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &:active {
+    outline: none;
+    box-shadow: none;
+  }
 }
 
 @media (max-width: 991.98px) {
