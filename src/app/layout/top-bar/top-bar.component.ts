@@ -1,4 +1,4 @@
-import { Component, HostListener} from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -11,7 +11,7 @@ export class TopBarComponent {
 
   isMenuOpen: boolean = false;
 
-  constructor(private router: Router,private translate: TranslateService) {
+  constructor(private router: Router, private translate: TranslateService) {
     this.translate.addLangs(['en', 'it', 'es']);
     this.translate.setDefaultLang('it');
   }

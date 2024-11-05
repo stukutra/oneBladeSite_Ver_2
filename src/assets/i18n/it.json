@@ -23,6 +23,30 @@
         "BODY_NETWORK": "Inoltre, la nostra esperienza nel settore ci consente di mantenere una rete di professionisti altamente qualificati e aggiornati con le ultime tendenze e tecnologie nel campo IT. Questo ci permette di rispondere con rapidità e precisione alle esigenze dei nostri clienti, fornendo soluzioni di talent acquisition che sono sia tempestive che di alta qualità.",
         "SUMMARY": "In sintesi, il nostro servizio di talent acquisition è progettato per garantire che ogni progetto IT possa beneficiare delle competenze più adatte e dei talenti più qualificati disponibili, contribuendo così al successo e all’eccellenza dei risultati finali."
       }
+    },
+    "FORM": {
+      "TITLE": "Sei un'azienda in cerca di un team completo o di un gruppo selezionato di sviluppatori?",
+      "SUBTITLE": "Se hai bisogno di supporto nello sviluppo dei tuoi software, contattami: insieme valuteremo la soluzione migliore per soddisfare le tue esigenze.",
+      "PLACEHOLDERS": {
+        "NAME": "Nome e cognome",
+        "TELEPHONE": "Cellulare",
+        "EMAIL": "Email",
+        "VAT": "Partita IVA",
+        "APPLICATION_TYPE": "Cosa stai cercando?"
+      },
+      "VALIDATION": {
+        "NAME_REQUIRED": "Il nome è un campo richiesto",
+        "TELEPHONE_REQUIRED": "Il telefono è un campo richiesto",
+        "EMAIL_REQUIRED": "L'email è un campo richiesto",
+        "EMAIL_INVALID": "Email non valida",
+        "VAT_REQUIRED": "La partita IVA è un campo richiesto",
+        "VAT_INVALID": "La partita IVA non è valida",
+        "ROLE_REQUIRED": "Il ruolo è un campo richiesto"
+      },
+      "BUTTON_SUBMIT": "Invia la tua richiesta",
+      "SUCCESS_MESSAGE_TITLE": "Invio riuscito",
+      "ERROR_MESSAGE_TITLE": "Errore di invio",
+      "MODAL_CLOSE": "Chiudi"
     }
   }
   

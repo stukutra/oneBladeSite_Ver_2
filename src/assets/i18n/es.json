@@ -23,6 +23,30 @@
         "BODY_NETWORK": "Además, nuestra experiencia en el sector nos permite mantener una red de profesionales altamente cualificados y actualizados con las últimas tendencias y tecnologías en el campo de TI. Esto nos permite responder de manera rápida y precisa a las necesidades de nuestros clientes, proporcionando soluciones de adquisición de talento que son tanto oportunas como de alta calidad.",
         "SUMMARY": "En resumen, nuestro servicio de adquisición de talento está diseñado para garantizar que cada proyecto de TI pueda beneficiarse de las habilidades más adecuadas y de los talentos más cualificados disponibles, contribuyendo así al éxito y a la excelencia de los resultados finales."
       }
+    },
+    "FORM": {
+      "TITLE": "¿Eres una empresa en busca de un equipo completo o un grupo seleccionado de desarrolladores?",
+      "SUBTITLE": "Si necesitas apoyo en el desarrollo de tu software, contáctame: juntos evaluaremos la mejor solución para satisfacer tus necesidades.",
+      "PLACEHOLDERS": {
+        "NAME": "Nombre completo",
+        "TELEPHONE": "Teléfono",
+        "EMAIL": "Correo electrónico",
+        "VAT": "Número de IVA",
+        "APPLICATION_TYPE": "¿Qué estás buscando?"
+      },
+      "VALIDATION": {
+        "NAME_REQUIRED": "El nombre es un campo obligatorio",
+        "TELEPHONE_REQUIRED": "El teléfono es un campo obligatorio",
+        "EMAIL_REQUIRED": "El correo electrónico es un campo obligatorio",
+        "EMAIL_INVALID": "Correo electrónico no válido",
+        "VAT_REQUIRED": "El número de IVA es un campo obligatorio",
+        "VAT_INVALID": "Número de IVA no válido",
+        "ROLE_REQUIRED": "El rol es un campo obligatorio"
+      },
+      "BUTTON_SUBMIT": "Enviar tu solicitud",
+      "SUCCESS_MESSAGE_TITLE": "Envío exitoso",
+      "ERROR_MESSAGE_TITLE": "Error de envío",
+      "MODAL_CLOSE": "Cerrar"
     }
   }
   

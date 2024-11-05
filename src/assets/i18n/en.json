@@ -23,6 +23,30 @@
         "BODY_NETWORK": "Additionally, our industry experience allows us to maintain a network of highly qualified professionals updated with the latest trends and technologies in the IT field. This enables us to respond quickly and accurately to our clients' needs, providing talent acquisition solutions that are both timely and high-quality.",
         "SUMMARY": "In short, our talent acquisition service is designed to ensure that every IT project can benefit from the most suitable skills and the highest quality talents available, thus contributing to the success and excellence of the final outcomes."
       }
+    },
+    "FORM": {
+      "TITLE": "Are you a company looking for a complete team or a selected group of developers?",
+      "SUBTITLE": "If you need support in developing your software, contact me: together we will find the best solution to meet your needs.",
+      "PLACEHOLDERS": {
+        "NAME": "Full name",
+        "TELEPHONE": "Phone",
+        "EMAIL": "Email",
+        "VAT": "VAT Number",
+        "APPLICATION_TYPE": "What are you looking for?"
+      },
+      "VALIDATION": {
+        "NAME_REQUIRED": "Name is a required field",
+        "TELEPHONE_REQUIRED": "Phone is a required field",
+        "EMAIL_REQUIRED": "Email is a required field",
+        "EMAIL_INVALID": "Invalid email",
+        "VAT_REQUIRED": "VAT number is a required field",
+        "VAT_INVALID": "Invalid VAT number",
+        "ROLE_REQUIRED": "Role is a required field"
+      },
+      "BUTTON_SUBMIT": "Submit your request",
+      "SUCCESS_MESSAGE_TITLE": "Submission successful",
+      "ERROR_MESSAGE_TITLE": "Submission error",
+      "MODAL_CLOSE": "Close"
     }
   }
   
