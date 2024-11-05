@@ -185,3 +185,53 @@ $gradient-color-5: #ffffff;
 .navbar-nav .nav-link.active {
   font-weight: $active-link-weight;
 }
+
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%); // Parte fuori schermo a sinistra
+    opacity: 0; // Invisibile all'inizio
+  }
+  50% {
+    opacity: 1; // Gradualmente diventa visibile
+  }
+  100% {
+    transform: translateX(0); // Posizione finale
+    opacity: 1; // Completamente visibile
+  }
+}
+
+@keyframes lightEffect {
+  0%, 100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.7); // Effetto di luce delicato
+  }
+}
+
+.logo-container {
+  position: relative;
+  height: 140px;
+
+  .default-logo {
+    z-index: 1;
+    animation: slideIn 1.5s ease-out forwards, lightEffect 5s infinite 1.5s; 
+    // Prima l'animazione di slideIn, poi quella di lightEffect dopo 1.5s
+  }
+
+  .hover-logo {
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.5s ease;
+  }
+
+  &:hover .default-logo {
+    opacity: 0;
+  }
+
+  &:hover .hover-logo {
+    opacity: 1;
+  }
+}
+
