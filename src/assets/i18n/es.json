@@ -1,52 +1,69 @@
 {
     "NAV": {
-      "DEVELOPMENT": "Desarrollamos tu software",
-      "TALENT": "Adquisición de talento"
+        "DEVELOPMENT": "Desarrollamos tu software",
+        "TALENT": "Adquisición de talento"
     },
     "CONTENT": {
-      "DEVELOPMENT": {
-        "TITLE": "Desarrollamos tu software",
-        "INTRO": "Estamos aquí para ayudarte a crear proyectos de software totalmente personalizados para tus necesidades específicas y objetivos estratégicos. Nuestra misión es construir equipos altamente cualificados y dedicados, capaces de manejar proyectos de tamaño medio y grande con competencia y profesionalismo.",
-        "SUBTITLE_DEVELOPERS": "Desarrolladores y profesionales",
-        "BODY_DEVELOPERS": "Para lograr este objetivo, reunimos grupos de expertos cuidadosamente seleccionados a lo largo de los años. Cada miembro de nuestro equipo es un consultor especializado con una trayectoria comprobada y una amplia experiencia en el sector. Hemos invertido tiempo y recursos en la selección y formación de estos profesionales, garantizando que cumplan con tus necesidades técnicas y funcionales.",
-        "SUBTITLE_APPROACH": "Nuestro enfoque",
-        "BODY_APPROACH": "Nuestro enfoque se basa en una comprensión detallada de tus necesidades y objetivos. Colaboramos estrechamente contigo para definir los requisitos del proyecto y diseñar soluciones que estén perfectamente alineadas con tus expectativas. Los equipos que formamos trabajan con compromiso y dedicación, asegurando un proceso de desarrollo fluido y sin contratiempos.",
-        "SUBTITLE_REMOTE": "Totalmente remoto",
-        "BODY_REMOTE": "Además, somos capaces de gestionar todo el proceso de desarrollo de software de forma completamente remota, ofreciendo así una flexibilidad operativa sin igual. Este modo de trabajo no solo permite adaptarse rápidamente a los cambios y nuevas necesidades, sino que también te permite acceder a los mejores talentos globales sin limitaciones geográficas.",
-        "SUMMARY": "En resumen, nuestro servicio te ofrece una solución integrada y personalizada, con equipos de expertos altamente cualificados que trabajan en sinergia para garantizar resultados de alta calidad y una gestión de proyectos fluida y adaptable. Nuestra capacidad para operar completamente en modo remoto te ofrece la libertad de concentrarte en tus prioridades estratégicas, sabiendo que tu proyecto de software está en manos de profesionales dedicados y experimentados."
-      },
-      "TALENT": {
-        "TITLE": "Adquisición de talento",
-        "INTRO": "Nuestro servicio de adquisición de talento está diseñado para conectar a los profesionales con los mejores proyectos de TI disponibles en el mercado. Pero nuestra oferta va mucho más allá de la simple selección de candidatos: nos comprometemos a comprender profundamente las necesidades específicas de cada proyecto, para garantizar que el talento que proponemos no solo cumpla, sino que supere las expectativas.",
-        "BODY_ANALYSIS": "Para lograr esto, adoptamos un enfoque personalizado y analítico. Comenzamos con una evaluación detallada de los requisitos del proyecto y las habilidades necesarias. Este proceso nos permite identificar y seleccionar a los profesionales más adecuados, que posean no solo las cualificaciones técnicas requeridas, sino también la capacidad de adaptarse y contribuir eficazmente al contexto del proyecto.",
-        "BODY_CANDIDATES": "Cada candidato que consideramos para tus necesidades es sometido a rigurosas pruebas internas y evaluaciones en profundidad. Estas pruebas están diseñadas para garantizar que el personal seleccionado opere de acuerdo con altos estándares de calidad y profesionalismo. Esto nos permite asegurar que cada talento no solo cumpla con los requisitos técnicos, sino que también se integre bien en el equipo y contribuya al éxito general del proyecto.",
-        "BODY_NETWORK": "Además, nuestra experiencia en el sector nos permite mantener una red de profesionales altamente cualificados y actualizados con las últimas tendencias y tecnologías en el campo de TI. Esto nos permite responder de manera rápida y precisa a las necesidades de nuestros clientes, proporcionando soluciones de adquisición de talento que son tanto oportunas como de alta calidad.",
-        "SUMMARY": "En resumen, nuestro servicio de adquisición de talento está diseñado para garantizar que cada proyecto de TI pueda beneficiarse de las habilidades más adecuadas y de los talentos más cualificados disponibles, contribuyendo así al éxito y a la excelencia de los resultados finales."
-      }
+        "DEVELOPMENT": {
+            "TITLE": "Desarrollamos tu software",
+            "INTRO": "Estamos aquí para ayudarte a crear proyectos de software totalmente personalizados para tus necesidades específicas y objetivos estratégicos. Nuestra misión es construir equipos altamente cualificados y dedicados, capaces de manejar proyectos de tamaño medio y grande con competencia y profesionalismo.",
+            "SUBTITLE_DEVELOPERS": "Desarrolladores y profesionales",
+            "BODY_DEVELOPERS": "Para lograr este objetivo, reunimos grupos de expertos cuidadosamente seleccionados a lo largo de los años. Cada miembro de nuestro equipo es un consultor especializado con una trayectoria comprobada y una amplia experiencia en el sector. Hemos invertido tiempo y recursos en la selección y formación de estos profesionales, garantizando que cumplan con tus necesidades técnicas y funcionales.",
+            "SUBTITLE_APPROACH": "Nuestro enfoque",
+            "BODY_APPROACH": "Nuestro enfoque se basa en una comprensión detallada de tus necesidades y objetivos. Colaboramos estrechamente contigo para definir los requisitos del proyecto y diseñar soluciones que estén perfectamente alineadas con tus expectativas. Los equipos que formamos trabajan con compromiso y dedicación, asegurando un proceso de desarrollo fluido y sin contratiempos.",
+            "SUBTITLE_REMOTE": "Totalmente remoto",
+            "BODY_REMOTE": "Además, somos capaces de gestionar todo el proceso de desarrollo de software de forma completamente remota, ofreciendo así una flexibilidad operativa sin igual. Este modo de trabajo no solo permite adaptarse rápidamente a los cambios y nuevas necesidades, sino que también te permite acceder a los mejores talentos globales sin limitaciones geográficas.",
+            "SUMMARY": "En resumen, nuestro servicio te ofrece una solución integrada y personalizada, con equipos de expertos altamente cualificados que trabajan en sinergia para garantizar resultados de alta calidad y una gestión de proyectos fluida y adaptable. Nuestra capacidad para operar completamente en modo remoto te ofrece la libertad de concentrarte en tus prioridades estratégicas, sabiendo que tu proyecto de software está en manos de profesionales dedicados y experimentados."
+        },
+        "TALENT": {
+            "TITLE": "Adquisición de talento",
+            "INTRO": "Nuestro servicio de adquisición de talento está diseñado para conectar a los profesionales con los mejores proyectos de TI disponibles en el mercado. Pero nuestra oferta va mucho más allá de la simple selección de candidatos: nos comprometemos a comprender profundamente las necesidades específicas de cada proyecto, para garantizar que el talento que proponemos no solo cumpla, sino que supere las expectativas.",
+            "BODY_ANALYSIS": "Para lograr esto, adoptamos un enfoque personalizado y analítico. Comenzamos con una evaluación detallada de los requisitos del proyecto y las habilidades necesarias. Este proceso nos permite identificar y seleccionar a los profesionales más adecuados, que posean no solo las cualificaciones técnicas requeridas, sino también la capacidad de adaptarse y contribuir eficazmente al contexto del proyecto.",
+            "BODY_CANDIDATES": "Cada candidato que consideramos para tus necesidades es sometido a rigurosas pruebas internas y evaluaciones en profundidad. Estas pruebas están diseñadas para garantizar que el personal seleccionado opere de acuerdo con altos estándares de calidad y profesionalismo. Esto nos permite asegurar que cada talento no solo cumpla con los requisitos técnicos, sino que también se integre bien en el equipo y contribuya al éxito general del proyecto.",
+            "BODY_NETWORK": "Además, nuestra experiencia en el sector nos permite mantener una red de profesionales altamente cualificados y actualizados con las últimas tendencias y tecnologías en el campo de TI. Esto nos permite responder de manera rápida y precisa a las necesidades de nuestros clientes, proporcionando soluciones de adquisición de talento que son tanto oportunas como de alta calidad.",
+            "SUMMARY": "En resumen, nuestro servicio de adquisición de talento está diseñado para garantizar que cada proyecto de TI pueda beneficiarse de las habilidades más adecuadas y de los talentos más cualificados disponibles, contribuyendo así al éxito y a la excelencia de los resultados finales."
+        }
     },
     "FORM": {
-      "TITLE": "¿Eres una empresa en busca de un equipo completo o un grupo seleccionado de desarrolladores?",
-      "SUBTITLE": "Si necesitas apoyo en el desarrollo de tu software, contáctame: juntos evaluaremos la mejor solución para satisfacer tus necesidades.",
-      "PLACEHOLDERS": {
-        "NAME": "Nombre completo",
-        "TELEPHONE": "Teléfono",
-        "EMAIL": "Correo electrónico",
-        "VAT": "Número de IVA",
-        "APPLICATION_TYPE": "¿Qué estás buscando?"
-      },
-      "VALIDATION": {
-        "NAME_REQUIRED": "El nombre es un campo obligatorio",
-        "TELEPHONE_REQUIRED": "El teléfono es un campo obligatorio",
-        "EMAIL_REQUIRED": "El correo electrónico es un campo obligatorio",
-        "EMAIL_INVALID": "Correo electrónico no válido",
-        "VAT_REQUIRED": "El número de IVA es un campo obligatorio",
-        "VAT_INVALID": "Número de IVA no válido",
-        "ROLE_REQUIRED": "El rol es un campo obligatorio"
-      },
-      "BUTTON_SUBMIT": "Enviar tu solicitud",
-      "SUCCESS_MESSAGE_TITLE": "Envío exitoso",
-      "ERROR_MESSAGE_TITLE": "Error de envío",
-      "MODAL_CLOSE": "Cerrar"
+        "TITLE": "¿Eres una empresa en busca de un equipo completo o un grupo seleccionado de desarrolladores?",
+        "SUBTITLE": "Si necesitas apoyo en el desarrollo de tu software, contáctame: juntos evaluaremos la mejor solución para satisfacer tus necesidades.",
+        "PLACEHOLDERS": {
+            "NAME": "Nombre completo",
+            "TELEPHONE": "Teléfono",
+            "EMAIL": "Correo electrónico",
+            "VAT": "Número de IVA",
+            "APPLICATION_TYPE": "¿Qué estás buscando?"
+        },
+        "VALIDATION": {
+            "NAME_REQUIRED": "El nombre es un campo obligatorio",
+            "TELEPHONE_REQUIRED": "El teléfono es un campo obligatorio",
+            "EMAIL_REQUIRED": "El correo electrónico es un campo obligatorio",
+            "EMAIL_INVALID": "Correo electrónico no válido",
+            "VAT_REQUIRED": "El número de IVA es un campo obligatorio",
+            "VAT_INVALID": "Número de IVA no válido",
+            "ROLE_REQUIRED": "El rol es un campo obligatorio"
+        },
+        "BUTTON_SUBMIT": "Enviar tu solicitud",
+        "SUCCESS_MESSAGE_TITLE": "Envío exitoso",
+        "ERROR_MESSAGE_TITLE": "Error de envío",
+        "MODAL_CLOSE": "Cerrar"
+    },
+    "CAROUSEL": {
+        "SLIDE_1": {
+            "TITLE": "Adquisición de Talento",
+            "SUBTITLE": "Nuestra fortaleza es encontrar tu mejor opción"
+        },
+        "SLIDE_2": {
+            "TITLE": "Del concepto a la creación",
+            "SUBTITLE": "Software que supera las expectativas"
+        },
+        "SLIDE_3": {
+            "TITLE": "Talento e Innovación en Perfecta Armonía",
+            "SUBTITLE": "Seleccionamos los mejores talentos para desarrollar software que transforma el futuro."
+        }
+    },
+    "PARALLAX": {
+        "TITLE": "Talento Sobresaliente, Software Excepcional",
+        "SUBTITLE": "Conectamos a los mejores profesionales con el software que impulsa el cambio."
     }
-  }
-  
+}

@@ -1,52 +1,69 @@
 {
     "NAV": {
-      "DEVELOPMENT": "We develop your software",
-      "TALENT": "Talent acquisition"
+        "DEVELOPMENT": "We develop your software",
+        "TALENT": "Talent acquisition"
     },
     "CONTENT": {
-      "DEVELOPMENT": {
-        "TITLE": "We develop your software",
-        "INTRO": "We are here to help you create fully customized software projects tailored to your specific needs and strategic goals. Our mission is to build highly skilled and dedicated teams capable of handling medium and large projects with expertise and professionalism.",
-        "SUBTITLE_DEVELOPERS": "Developers and professionals",
-        "BODY_DEVELOPERS": "To achieve this goal, we carefully assemble groups of experts selected over the years. Each team member is a specialized consultant with a proven background and extensive experience in the field. We have invested time and resources in selecting and training these professionals to ensure they meet your technical and functional needs.",
-        "SUBTITLE_APPROACH": "Our approach",
-        "BODY_APPROACH": "Our approach is based on a detailed understanding of your needs and goals. We work closely with you to define project requirements and design solutions that align perfectly with your expectations. The teams we form work with commitment and dedication, ensuring a smooth and seamless development process.",
-        "SUBTITLE_REMOTE": "Fully remote",
-        "BODY_REMOTE": "Additionally, we are able to manage the entire software development process remotely, offering unparalleled operational flexibility. This mode of work not only allows us to adapt quickly to changes and new needs but also gives you access to the best global talents without geographical limitations.",
-        "SUMMARY": "In short, our service offers you an integrated and customized solution, with highly qualified expert teams working together to ensure high-quality results and a smooth and adaptable project management experience. Our ability to operate fully remotely gives you the freedom to focus on your strategic priorities, knowing that your software project is in the hands of dedicated and experienced professionals."
-      },
-      "TALENT": {
-        "TITLE": "Talent acquisition",
-        "INTRO": "Our talent acquisition service is designed to connect professionals with the best IT projects available on the market. But our offer goes far beyond simple candidate selection: we strive to deeply understand the specific needs of each project to ensure that the talent we propose not only meets but exceeds expectations.",
-        "BODY_ANALYSIS": "To achieve this, we adopt a personalized and analytical approach. We start with a detailed assessment of the project requirements and necessary skills. This process allows us to identify and select the most suitable professionals, who possess not only the required technical qualifications but also the ability to adapt and contribute effectively to the project context.",
-        "BODY_CANDIDATES": "Each candidate we consider for your needs undergoes rigorous internal tests and in-depth evaluations. These tests are designed to ensure that selected personnel operate according to high standards of quality and professionalism. This allows us to guarantee that every talent not only meets the technical requirements but also integrates well within the team and contributes to the overall success of the project.",
-        "BODY_NETWORK": "Additionally, our industry experience allows us to maintain a network of highly qualified professionals updated with the latest trends and technologies in the IT field. This enables us to respond quickly and accurately to our clients' needs, providing talent acquisition solutions that are both timely and high-quality.",
-        "SUMMARY": "In short, our talent acquisition service is designed to ensure that every IT project can benefit from the most suitable skills and the highest quality talents available, thus contributing to the success and excellence of the final outcomes."
-      }
+        "DEVELOPMENT": {
+            "TITLE": "We develop your software",
+            "INTRO": "We are here to help you create fully customized software projects tailored to your specific needs and strategic goals. Our mission is to build highly skilled and dedicated teams capable of handling medium and large projects with expertise and professionalism.",
+            "SUBTITLE_DEVELOPERS": "Developers and professionals",
+            "BODY_DEVELOPERS": "To achieve this goal, we carefully assemble groups of experts selected over the years. Each team member is a specialized consultant with a proven background and extensive experience in the field. We have invested time and resources in selecting and training these professionals to ensure they meet your technical and functional needs.",
+            "SUBTITLE_APPROACH": "Our approach",
+            "BODY_APPROACH": "Our approach is based on a detailed understanding of your needs and goals. We work closely with you to define project requirements and design solutions that align perfectly with your expectations. The teams we form work with commitment and dedication, ensuring a smooth and seamless development process.",
+            "SUBTITLE_REMOTE": "Fully remote",
+            "BODY_REMOTE": "Additionally, we are able to manage the entire software development process remotely, offering unparalleled operational flexibility. This mode of work not only allows us to adapt quickly to changes and new needs but also gives you access to the best global talents without geographical limitations.",
+            "SUMMARY": "In short, our service offers you an integrated and customized solution, with highly qualified expert teams working together to ensure high-quality results and a smooth and adaptable project management experience. Our ability to operate fully remotely gives you the freedom to focus on your strategic priorities, knowing that your software project is in the hands of dedicated and experienced professionals."
+        },
+        "TALENT": {
+            "TITLE": "Talent acquisition",
+            "INTRO": "Our talent acquisition service is designed to connect professionals with the best IT projects available on the market. But our offer goes far beyond simple candidate selection: we strive to deeply understand the specific needs of each project to ensure that the talent we propose not only meets but exceeds expectations.",
+            "BODY_ANALYSIS": "To achieve this, we adopt a personalized and analytical approach. We start with a detailed assessment of the project requirements and necessary skills. This process allows us to identify and select the most suitable professionals, who possess not only the required technical qualifications but also the ability to adapt and contribute effectively to the project context.",
+            "BODY_CANDIDATES": "Each candidate we consider for your needs undergoes rigorous internal tests and in-depth evaluations. These tests are designed to ensure that selected personnel operate according to high standards of quality and professionalism. This allows us to guarantee that every talent not only meets the technical requirements but also integrates well within the team and contributes to the overall success of the project.",
+            "BODY_NETWORK": "Additionally, our industry experience allows us to maintain a network of highly qualified professionals updated with the latest trends and technologies in the IT field. This enables us to respond quickly and accurately to our clients' needs, providing talent acquisition solutions that are both timely and high-quality.",
+            "SUMMARY": "In short, our talent acquisition service is designed to ensure that every IT project can benefit from the most suitable skills and the highest quality talents available, thus contributing to the success and excellence of the final outcomes."
+        }
     },
     "FORM": {
-      "TITLE": "Are you a company looking for a complete team or a selected group of developers?",
-      "SUBTITLE": "If you need support in developing your software, contact me: together we will find the best solution to meet your needs.",
-      "PLACEHOLDERS": {
-        "NAME": "Full name",
-        "TELEPHONE": "Phone",
-        "EMAIL": "Email",
-        "VAT": "VAT Number",
-        "APPLICATION_TYPE": "What are you looking for?"
-      },
-      "VALIDATION": {
-        "NAME_REQUIRED": "Name is a required field",
-        "TELEPHONE_REQUIRED": "Phone is a required field",
-        "EMAIL_REQUIRED": "Email is a required field",
-        "EMAIL_INVALID": "Invalid email",
-        "VAT_REQUIRED": "VAT number is a required field",
-        "VAT_INVALID": "Invalid VAT number",
-        "ROLE_REQUIRED": "Role is a required field"
-      },
-      "BUTTON_SUBMIT": "Submit your request",
-      "SUCCESS_MESSAGE_TITLE": "Submission successful",
-      "ERROR_MESSAGE_TITLE": "Submission error",
-      "MODAL_CLOSE": "Close"
+        "TITLE": "Are you a company looking for a complete team or a selected group of developers?",
+        "SUBTITLE": "If you need support in developing your software, contact me: together we will find the best solution to meet your needs.",
+        "PLACEHOLDERS": {
+            "NAME": "Full name",
+            "TELEPHONE": "Phone",
+            "EMAIL": "Email",
+            "VAT": "VAT Number",
+            "APPLICATION_TYPE": "What are you looking for?"
+        },
+        "VALIDATION": {
+            "NAME_REQUIRED": "Name is a required field",
+            "TELEPHONE_REQUIRED": "Phone is a required field",
+            "EMAIL_REQUIRED": "Email is a required field",
+            "EMAIL_INVALID": "Invalid email",
+            "VAT_REQUIRED": "VAT number is a required field",
+            "VAT_INVALID": "Invalid VAT number",
+            "ROLE_REQUIRED": "Role is a required field"
+        },
+        "BUTTON_SUBMIT": "Submit your request",
+        "SUCCESS_MESSAGE_TITLE": "Submission successful",
+        "ERROR_MESSAGE_TITLE": "Submission error",
+        "MODAL_CLOSE": "Close"
+    },
+    "CAROUSEL": {
+        "SLIDE_1": {
+            "TITLE": "Talent Acquisition",
+            "SUBTITLE": "Our strength is finding your best fit"
+        },
+        "SLIDE_2": {
+            "TITLE": "From Concept to Creation",
+            "SUBTITLE": "Software that exceeds expectations"
+        },
+        "SLIDE_3": {
+            "TITLE": "Talent and Innovation in Perfect Harmony",
+            "SUBTITLE": "We select the best talent to develop software that shapes the future."
+        }
+    },
+    "PARALLAX": {
+        "TITLE": "Outstanding Talent, Exceptional Software",
+        "SUBTITLE": "We connect the best professionals to software that drives change."
     }
-  }
-  
+}
