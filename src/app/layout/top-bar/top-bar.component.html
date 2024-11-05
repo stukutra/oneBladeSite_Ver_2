@@ -5,16 +5,24 @@
       <img src="../../assets/logo.png" alt="Logo Hover" class="logo hover-logo">
     </div>
   </a>
+
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <i class="bi bi-list"></i>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
+  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMenu()">
+<i class="bi bi-list"></i>
+</button>
+
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link linkedin-link" href="https://www.linkedin.com/in/guidosalzano/" target="_blank">
           <i class="bi bi-linkedin"></i> LinkedIn
         </a>
+      </li>
+      <li class="nav-item">
+        <select class="form-select language-select" (change)="changeLanguage($event)" aria-label="Select Language">
+          <option value="en">English</option>
+          <option value="it">Italiano</option>
+        </select>
       </li>
     </ul>
   </div>

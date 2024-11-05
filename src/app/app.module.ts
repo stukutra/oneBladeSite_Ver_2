@@ -15,6 +15,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { ImageCarouselComponent } from './pages/image-carousel/image-carousel.component';
 import { ParallaxComponent } from './pages/parallax/parallax.component';
 import { TopBarComponent } from './layout/top-bar/top-bar.component';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient } from '@angular/common/http';
+
+// Funzione di factory per il TranslateLoader
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
+
 
 @NgModule({
   declarations: [
@@ -31,10 +40,17 @@ import { TopBarComponent } from './layout/top-bar/top-bar.component';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule, // Aggiungi BrowserAnimationsModule
+    BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   schemas: [NO_ERRORS_SCHEMA],
   providers: [],
