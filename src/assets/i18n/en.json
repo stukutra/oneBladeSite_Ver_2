@@ -25,14 +25,15 @@
         }
     },
     "FORM": {
-        "TITLE": "Are you a company looking for a complete team or a selected group of developers?",
-        "SUBTITLE": "If you need support in developing your software, contact me: together we will find the best solution to meet your needs.",
+        "TITLE": "Are you a freelancer?",
+        "SUBTITLE": "If you are looking for new collaboration opportunities, join our team and work with us.",
         "PLACEHOLDERS": {
             "NAME": "Full name",
             "TELEPHONE": "Phone",
             "EMAIL": "Email",
             "VAT": "VAT Number",
-            "APPLICATION_TYPE": "What are you looking for?"
+            "APPLICATION_TYPE": "Select a role",
+            "FILE": "File must not exceed 2MB"
         },
         "VALIDATION": {
             "NAME_REQUIRED": "Name is a required field",
@@ -41,12 +42,17 @@
             "EMAIL_INVALID": "Invalid email",
             "VAT_REQUIRED": "VAT number is a required field",
             "VAT_INVALID": "Invalid VAT number",
-            "ROLE_REQUIRED": "Role is a required field"
+            "ROLE_REQUIRED": "Role is a required field",
+            "FILE_REQUIRED": "File is required"
         },
-        "BUTTON_SUBMIT": "Submit your request",
-        "SUCCESS_MESSAGE_TITLE": "Submission successful",
-        "ERROR_MESSAGE_TITLE": "Submission error",
-        "MODAL_CLOSE": "Close"
+        "BUTTON_SUBMIT": "Submit your application",
+        "MODAL": {
+            "TITLE_SUCCESS": "Submission Successful",
+            "TITLE_ERROR": "Submission Error",
+            "MESSAGE_SUCCESS": "Your application has been successfully submitted.",
+            "MESSAGE_ERROR": "An error occurred during submission. Please try again.",
+            "CLOSE": "Close"
+        }
     },
     "CAROUSEL": {
         "SLIDE_1": {

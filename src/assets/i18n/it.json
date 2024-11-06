@@ -25,14 +25,15 @@
         }
     },
     "FORM": {
-        "TITLE": "Sei un'azienda in cerca di un team completo o di un gruppo selezionato di sviluppatori?",
-        "SUBTITLE": "Se hai bisogno di supporto nello sviluppo dei tuoi software, contattami: insieme valuteremo la soluzione migliore per soddisfare le tue esigenze.",
+        "TITLE": "Sei un libero professionista?",
+        "SUBTITLE": "Se cerchi nuove opportunità di collaborazione unisciti al nostro team e lavora con noi.",
         "PLACEHOLDERS": {
             "NAME": "Nome e cognome",
             "TELEPHONE": "Cellulare",
             "EMAIL": "Email",
             "VAT": "Partita IVA",
-            "APPLICATION_TYPE": "Cosa stai cercando?"
+            "APPLICATION_TYPE": "Seleziona un ruolo",
+            "FILE": "Il file non può superare i 2MB"
         },
         "VALIDATION": {
             "NAME_REQUIRED": "Il nome è un campo richiesto",
@@ -41,12 +42,17 @@
             "EMAIL_INVALID": "Email non valida",
             "VAT_REQUIRED": "La partita IVA è un campo richiesto",
             "VAT_INVALID": "La partita IVA non è valida",
-            "ROLE_REQUIRED": "Il ruolo è un campo richiesto"
+            "ROLE_REQUIRED": "Il ruolo è un campo richiesto",
+            "FILE_REQUIRED": "Il file è richiesto"
         },
-        "BUTTON_SUBMIT": "Invia la tua richiesta",
-        "SUCCESS_MESSAGE_TITLE": "Invio riuscito",
-        "ERROR_MESSAGE_TITLE": "Errore di invio",
-        "MODAL_CLOSE": "Chiudi"
+        "BUTTON_SUBMIT": "Invia la tua candidatura",
+        "MODAL": {
+            "TITLE_SUCCESS": "Invio riuscito",
+            "TITLE_ERROR": "Errore di invio",
+            "MESSAGE_SUCCESS": "La tua candidatura è stata inviata con successo.",
+            "MESSAGE_ERROR": "Si è verificato un errore durante l'invio. Riprova.",
+            "CLOSE": "Chiudi"
+        }
     },
     "CAROUSEL": {
         "SLIDE_1": {

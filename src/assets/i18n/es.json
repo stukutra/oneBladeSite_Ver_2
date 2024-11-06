@@ -25,14 +25,15 @@
         }
     },
     "FORM": {
-        "TITLE": "¿Eres una empresa en busca de un equipo completo o un grupo seleccionado de desarrolladores?",
-        "SUBTITLE": "Si necesitas apoyo en el desarrollo de tu software, contáctame: juntos evaluaremos la mejor solución para satisfacer tus necesidades.",
+        "TITLE": "¿Eres un profesional autónomo?",
+        "SUBTITLE": "Si buscas nuevas oportunidades de colaboración, únete a nuestro equipo y trabaja con nosotros.",
         "PLACEHOLDERS": {
             "NAME": "Nombre completo",
             "TELEPHONE": "Teléfono",
             "EMAIL": "Correo electrónico",
             "VAT": "Número de IVA",
-            "APPLICATION_TYPE": "¿Qué estás buscando?"
+            "APPLICATION_TYPE": "Selecciona un rol",
+            "FILE": "El archivo no puede exceder de 2MB"
         },
         "VALIDATION": {
             "NAME_REQUIRED": "El nombre es un campo obligatorio",
@@ -41,12 +42,17 @@
             "EMAIL_INVALID": "Correo electrónico no válido",
             "VAT_REQUIRED": "El número de IVA es un campo obligatorio",
             "VAT_INVALID": "Número de IVA no válido",
-            "ROLE_REQUIRED": "El rol es un campo obligatorio"
+            "ROLE_REQUIRED": "El rol es un campo obligatorio",
+            "FILE_REQUIRED": "El archivo es obligatorio"
         },
-        "BUTTON_SUBMIT": "Enviar tu solicitud",
-        "SUCCESS_MESSAGE_TITLE": "Envío exitoso",
-        "ERROR_MESSAGE_TITLE": "Error de envío",
-        "MODAL_CLOSE": "Cerrar"
+        "BUTTON_SUBMIT": "Envía tu solicitud",
+        "MODAL": {
+            "TITLE_SUCCESS": "Envío Exitoso",
+            "TITLE_ERROR": "Error de Envío",
+            "MESSAGE_SUCCESS": "Tu solicitud ha sido enviada con éxito.",
+            "MESSAGE_ERROR": "Ocurrió un error durante el envío. Por favor, inténtalo de nuevo.",
+            "CLOSE": "Cerrar"
+        }
     },
     "CAROUSEL": {
         "SLIDE_1": {

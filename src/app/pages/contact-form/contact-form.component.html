@@ -1,8 +1,7 @@
-<!-- contact-form.component.html -->
 <div class="container">
   <div class="description-box">
-    <h5 class="box-title">Sei un libero professionista?</h5>
-    <h6 class="mb-4">Se cerchi nuove opportunità di collaborazione unisciti al nostro team e lavora con noi.</h6>
+    <h5 class="box-title">{{ 'FORM.TITLE' | translate }}</h5>
+    <h6 class="mb-4">{{ 'FORM.SUBTITLE' | translate }}</h6>
     <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" novalidate class="contact-form">
       <div class="mb-3 form-group">
         <input
@@ -13,10 +12,10 @@
           [(ngModel)]="model.name"
           #name="ngModel"
           required
-          placeholder="Nome e cognome"
+          placeholder="{{ 'FORM.PLACEHOLDERS.NAME' | translate }}"
         />
         <div *ngIf="name.invalid && (name.dirty || name.touched)" class="text-danger">
-          <div *ngIf="name.errors?.['required']">Il nome è un campo richiesto</div>
+          <div *ngIf="name.errors?.['required']">{{ 'FORM.VALIDATION.NAME_REQUIRED' | translate }}</div>
         </div>
       </div>
 
@@ -29,10 +28,10 @@
           [(ngModel)]="model.telephone"
           #telephone="ngModel"
           required
-          placeholder="Cellulare"
+          placeholder="{{ 'FORM.PLACEHOLDERS.TELEPHONE' | translate }}"
         />
         <div *ngIf="telephone.invalid && (telephone.dirty || telephone.touched)" class="text-danger">
-          <div *ngIf="telephone.errors?.['required']">Il telefono è un campo richiesto</div>
+          <div *ngIf="telephone.errors?.['required']">{{ 'FORM.VALIDATION.TELEPHONE_REQUIRED' | translate }}</div>
         </div>
       </div>
 
@@ -46,11 +45,11 @@
           #email="ngModel"
           required
           email
-          placeholder="Email"
+          placeholder="{{ 'FORM.PLACEHOLDERS.EMAIL' | translate }}"
         />
         <div *ngIf="email.invalid && (email.dirty || email.touched)" class="text-danger">
-          <div *ngIf="email.errors?.['required']">L'email è un campo richiesto</div>
-          <div *ngIf="email.errors?.['email']">Email non valida</div>
+          <div *ngIf="email.errors?.['required']">{{ 'FORM.VALIDATION.EMAIL_REQUIRED' | translate }}</div>
+          <div *ngIf="email.errors?.['email']">{{ 'FORM.VALIDATION.EMAIL_INVALID' | translate }}</div>
         </div>
       </div>
 
@@ -64,17 +63,17 @@
           #vat="ngModel"
           required
           pattern="^[0-9]{11}$"
-          placeholder="Partita IVA"
+          placeholder="{{ 'FORM.PLACEHOLDERS.VAT' | translate }}"
         />
         <div *ngIf="vat.invalid && (vat.dirty || vat.touched)" class="text-danger">
-          <div *ngIf="vat.errors?.['required']">La partita IVA è un campo richiesto</div>
-          <div *ngIf="vat.errors?.['pattern']">La partita IVA non è valida</div>
+          <div *ngIf="vat.errors?.['required']">{{ 'FORM.VALIDATION.VAT_REQUIRED' | translate }}</div>
+          <div *ngIf="vat.errors?.['pattern']">{{ 'FORM.VALIDATION.VAT_INVALID' | translate }}</div>
         </div>
       </div>
 
       <div class="mb-3 form-group">
         <select id="applicationType" name="applicationType" class="form-select" [(ngModel)]="model.applicationType" #applicationType="ngModel" required>
-          <option value="">Seleziona un ruolo</option>
+          <option value="">{{ 'FORM.PLACEHOLDERS.APPLICATION_TYPE' | translate }}</option>
           <option value="Software Development">Developer</option>
           <option value="System Administrator">System Administrator</option>
           <option value="DevOps">DevOps</option>
@@ -85,7 +84,7 @@
           <option value="Design UI/UX">Design UI/UX</option>
         </select>
         <div *ngIf="applicationType.invalid && (applicationType.dirty || applicationType.touched)" class="text-danger">
-          <div *ngIf="applicationType.errors?.['required']">Il ruolo è un campo richiesto</div>
+          <div *ngIf="applicationType.errors?.['required']">{{ 'FORM.VALIDATION.ROLE_REQUIRED' | translate }}</div>
         </div>
       </div>
 
@@ -98,24 +97,23 @@
           (change)="onFileChange($event)"
           required
         />
-        <small class="form-text">Il file non può superare i 2MB</small>
+        <small class="form-text">{{ 'FORM.PLACEHOLDERS.FILE' | translate }}</small>
         <div *ngIf="fileError" class="text-danger">
           {{ fileError }}
         </div>
         <div *ngIf="!model.file && (contactForm.submitted || fileError)" class="text-danger">
-          Il file è richiesto
+          {{ 'FORM.VALIDATION.FILE_REQUIRED' | translate }}
         </div>
       </div>
 
       <div class="button-row">
         <div class="send-button-container">
-          <button type="submit" class="btn btn-primary"  [disabled]="contactForm.invalid || !model.file">Invia la tua candidatura</button>
+          <button type="submit" class="btn btn-primary" [disabled]="contactForm.invalid || !model.file">{{ 'FORM.BUTTON_SUBMIT' | translate }}</button>
         </div>
       </div>
     </form>
   </div>
 </div>
-
 
 <!-- Modale personalizzata -->
 <div class="custom-modal" *ngIf="isModalVisible">
@@ -123,6 +121,6 @@
     <span class="custom-modal-close" (click)="closeModal()">&times;</span>
     <h5>{{ modalTitle }}</h5>
     <p>{{ modalMessage }}</p>
-    <button class="btn btn-primary custom-btn" (click)="closeModal()">Chiudi</button>
+    <button class="btn btn-primary custom-btn" (click)="closeModal()">{{ 'FORM.MODAL.CLOSE' | translate }}</button>
   </div>
 </div>
