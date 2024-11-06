@@ -114,6 +114,11 @@ $gradient-color-5: #ffffff;
   margin-left: $nav-item-margin-left;
 }
 
+.language-icon {
+  color: $nav-link-color;
+  font-size: 1.2em; // Modifica la dimensione dell'icona in base alle tue preferenze
+}
+
 .language-select {
   background: none;
   border: none;
@@ -121,10 +126,23 @@ $gradient-color-5: #ffffff;
   font-size: 16px;
   padding: 5px;
   cursor: pointer;
+  outline: none;
+  box-shadow: none;
 }
 
 .language-select option {
   color: black;
+}
+
+@media (max-width: 991.98px) {
+  .language-icon {
+    color: $navbar-collapse-link-color; // Cambia colore in modalità mobile
+  }
+  .language-select {
+    color: $navbar-collapse-link-color;
+    background: none;
+    border: none;
+  }
 }
 
 .navbar-toggler {
