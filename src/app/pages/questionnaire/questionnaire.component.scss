@@ -1,0 +1,119 @@
+.description-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box-title {
+    color: #9339bb;
+    font-size: 1.5rem;
+}
+
+.step-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.step {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.step.completed {
+    background-color: #28a745;
+}
+
+.step.current {
+    background-color: #9339bb;
+}
+
+.question-box {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.question-text {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option-item {
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.custom-radio {
+    position: relative;
+    margin-right: 10px;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #9339bb; /* Bordo personalizzato */
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+.custom-radio:checked {
+    background-color: #9339bb; /* Colore del pallino interno */
+}
+
+.custom-radio:checked::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff; /* Colore del pallino centrale */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-check-input:checked + .form-check-label {
+    color: #9339bb; /* Colore del testo selezionato */
+}
+
+.button-container {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.custom-btn {
+    background-color: #9339bb;
+    border: none;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: darken(#9339bb, 10%);
+    }
+}
+
+.report-section {
+    .text-success { color: #28a745; }
+    .text-danger { color: #dc3545; }
+}

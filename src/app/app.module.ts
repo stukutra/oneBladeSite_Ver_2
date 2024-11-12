@@ -18,6 +18,7 @@ import { TopBarComponent } from './layout/top-bar/top-bar.component';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient } from '@angular/common/http';
+import { QuestionnaireComponent } from './pages/questionnaire/questionnaire.component';
 
 // Funzione di factory per il TranslateLoader
 export function HttpLoaderFactory(http: HttpClient) {
@@ -36,7 +37,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactFormComponent,
     ImageCarouselComponent,
     ParallaxComponent,
-    ContactFormAziendaComponent
+    ContactFormAziendaComponent,
+    QuestionnaireComponent
   ],
   imports: [
     BrowserModule,

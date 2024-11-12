@@ -1,0 +1,25 @@
+[
+    {
+      "question": "Cos'è l'ereditarietà in programmazione a oggetti?",
+      "options": [
+        "Una tecnica per copiare classi esistenti",
+        "Una relazione tra classi che permette di riutilizzare codice",
+        "Un modo per dichiarare variabili",
+        "Una modalità per scrivere codice non ripetitivo"
+      ],
+      "correctAnswer": 1,
+      "explanation": "L'ereditarietà è un concetto di riutilizzo del codice e modellazione."
+    },
+    {
+      "question": "Cos'è l'incapsulamento?",
+      "options": [
+        "Nascondere lo stato interno di un oggetto",
+        "Un tipo speciale di classe",
+        "Una tecnica per creare istanze multiple",
+        "Un tipo di variabile"
+      ],
+      "correctAnswer": 0,
+      "explanation": "L'incapsulamento è il meccanismo di nascondere i dettagli di implementazione."
+    }
+  ]
+  
