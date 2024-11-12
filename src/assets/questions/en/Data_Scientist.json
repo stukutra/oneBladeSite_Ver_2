@@ -1,0 +1,178 @@
+[
+    {
+        "question": "What is clustering?",
+        "options": [
+            "An algorithm to classify data",
+            "An unsupervised data analysis technique",
+            "A method to predict future trends",
+            "A system to monitor the network"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Clustering is an unsupervised data analysis technique that attempts to group data into similar categories."
+    },
+    {
+        "question": "What is regression analysis?",
+        "options": [
+            "An algorithm to classify data",
+            "A supervised data analysis technique that tries to predict a dependent variable",
+            "A method to visualize data",
+            "A system to monitor the network"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Regression analysis is a supervised data analysis technique that tries to predict a dependent variable based on other independent variables."
+    },
+    {
+        "question": "What is a decision tree?",
+        "options": [
+            "An algorithm to classify data",
+            "An unsupervised data analysis technique that attempts to group data into similar categories",
+            "A method to visualize data",
+            "A system to monitor the network"
+        ],
+        "correctAnswer": 0,
+        "explanation": "A decision tree is an algorithm to classify data that uses a decision structure to predict the output based on inputs."
+    },
+    {
+        "question": "What is random forest?",
+        "options": [
+            "An algorithm to classify data",
+            "An unsupervised data analysis technique that attempts to group data into similar categories",
+            "A method to visualize data",
+            "A system to monitor the network"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Random forest is an algorithm to classify data that uses a combination of decision trees to predict the output based on inputs."
+    },
+    {
+        "question": "What is gradient boosting?",
+        "options": [
+            "An algorithm to classify data",
+            "An unsupervised data analysis technique that attempts to group data into similar categories",
+            "A method to visualize data",
+            "A system to monitor the network"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Gradient boosting is an algorithm to classify data that uses a combination of decision trees to predict the output based on inputs."
+    },
+    {
+        "question": "What is k-means clustering?",
+        "options": [
+            "An algorithm to classify data",
+            "An unsupervised data analysis technique that attempts to group data into similar categories",
+            "A method to visualize data",
+            "A system to monitor the network"
+        ],
+        "correctAnswer": 1,
+        "explanation": "K-means clustering is an unsupervised data analysis technique that attempts to group data into similar categories."
+    },
+    {
+        "question": "What is PCA?",
+        "options": [
+            "An algorithm to classify data",
+            "An unsupervised data analysis technique that attempts to group data into similar categories",
+            "A method to visualize data",
+            "A system to monitor the network"
+        ],
+        "correctAnswer": 2,
+        "explanation": "PCA is a data visualization method that uses dimensionality reduction to extract the most important features."
+    },
+    {
+        "question": "What is t-SNE?",
+        "options": [
+            "An algorithm to classify data",
+            "An unsupervised data analysis technique that attempts to group data into similar categories",
+            "A method to visualize data",
+            "A system to monitor the network"
+        ],
+        "correctAnswer": 2,
+        "explanation": "t-SNE is a data visualization method that uses dimensionality reduction to extract the most important features."
+    },
+    {
+        "question": "What is a neural network?",
+        "options": [
+            "An algorithm to classify data",
+            "An unsupervised data analysis technique that attempts to group data into similar categories",
+            "A method to visualize data",
+            "A system to monitor the network"
+        ],
+        "correctAnswer": 0,
+        "explanation": "A neural network is an algorithm to classify data that uses a neural network structure to predict output based on inputs."
+    },
+    {
+        "question": "What is a convolutional neural network?",
+        "options": [
+            "An algorithm to classify data",
+            "An unsupervised data analysis technique that attempts to group data into similar categories",
+            "A method to visualize data",
+            "A system to monitor the network"
+        ],
+        "correctAnswer": 0,
+        "explanation": "A convolutional neural network is an algorithm to classify data that uses a convolutional neural network structure to predict output based on inputs."
+    },
+    {
+        "question": "What is a recurrent neural network?",
+        "options": [
+            "An algorithm to classify data",
+            "An unsupervised data analysis technique that attempts to group data into similar categories",
+            "A method to visualize data",
+            "A system to monitor the network"
+        ],
+        "correctAnswer": 0,
+        "explanation": "A recurrent neural network is an algorithm to classify data that uses a recurrent neural network structure to predict output based on inputs."
+    },
+    {
+        "question": "What is an autoencoder?",
+        "options": [
+            "An algorithm to classify data",
+            "An unsupervised data analysis technique that attempts to group data into similar categories",
+            "A method to visualize data",
+            "A system to monitor the network"
+        ],
+        "correctAnswer": 2,
+        "explanation": "An autoencoder is a data visualization method that uses dimensionality reduction to extract the most important features."
+    },
+    {
+        "question": "What is a generative adversarial network?",
+        "options": [
+            "An algorithm to classify data",
+            "An unsupervised data analysis technique that attempts to group data into similar categories",
+            "A method to visualize data",
+            "A system to monitor the network"
+        ],
+        "correctAnswer": 0,
+        "explanation": "A generative adversarial network is an algorithm to classify data that uses a neural network structure with two components: the generator and the discriminator."
+    },
+    {
+        "question": "What is transfer learning?",
+        "options": [
+            "An algorithm to classify data",
+            "An unsupervised data analysis technique that attempts to group data into similar categories",
+            "A method to visualize data",
+            "A system to monitor the network"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Transfer learning is an algorithm that uses a pre-trained neural network structure on a specific problem and adapts it to a new problem."
+    },
+    {
+        "question": "What is reinforcement learning?",
+        "options": [
+            "An algorithm to classify data",
+            "An unsupervised data analysis technique that attempts to group data into similar categories",
+            "A method to visualize data",
+            "A system to monitor the network"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Reinforcement learning is an algorithm that uses a neural network structure to learn to make decisions based on rewards or punishments received."
+    },
+    {
+        "question": "What is deep learning?",
+        "options": [
+            "An algorithm to classify data",
+            "An unsupervised data analysis technique that attempts to group data into similar categories",
+            "A method to visualize data",
+            "A system to monitor the network"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Deep learning is an algorithm that uses a deep neural network structure to learn to make decisions based on data."
+    }
+]

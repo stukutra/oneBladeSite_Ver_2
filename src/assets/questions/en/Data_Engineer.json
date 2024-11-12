@@ -1,0 +1,222 @@
+[
+    {
+        "question": "What is the most common type of database?",
+        "options": [
+            "NoSQL",
+            "Relational",
+            "Graph",
+            "Time Series"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The Relational Database Management System (RDBMS) is the most common type of database."
+    },
+    {
+        "question": "What is a data cluster?",
+        "options": [
+            "A group of shared computers",
+            "A technique to reduce data redundancy",
+            "A set of nodes working together to manage data",
+            "A type of database"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A data cluster is a set of nodes working together to manage data."
+    },
+    {
+        "question": "What is the purpose of data governance?",
+        "options": [
+            "To manage data security",
+            "To optimize data access",
+            "To improve data quality and integrity",
+            "To reduce storage costs"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Data governance is the process of managing and controlling information to ensure it is accurate, complete, and secure."
+    },
+    {
+        "question": "What is a Data Lake?",
+        "options": [
+            "A type of database",
+            "A data analysis platform",
+            "A repository of large amounts of unstructured data",
+            "A backup management system"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A Data Lake is a repository of large amounts of unstructured data that can be used for analysis and machine learning."
+    },
+    {
+        "question": "What is the purpose of data quality?",
+        "options": [
+            "To ensure data security",
+            "To improve query speed",
+            "To reduce storage costs",
+            "To ensure data is accurate and complete"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Data quality is the process of ensuring that data is accurate, complete, and consistent."
+    },
+    {
+        "question": "What is a data pipeline?",
+        "options": [
+            "A workflow for data analysis",
+            "A technique to reduce data redundancy",
+            "A process for extracting, transforming, and loading (ETL) data",
+            "A type of database"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A data pipeline is a process that takes input data, processes it, and loads it in a usable format."
+    },
+    {
+        "question": "What is the purpose of database normalization?",
+        "options": [
+            "To simplify the database structure",
+            "To increase data security",
+            "To eliminate redundancy and improve data integrity",
+            "To optimize query speed"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Normalization eliminates redundancy and improves data integrity in databases."
+    },
+    {
+        "question": "What is a Data Scientist?",
+        "options": [
+            "A professional who manages data",
+            "A programmer specialized in machine learning",
+            "A statistician focused on data analysis",
+            "A cybersecurity expert"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A Data Scientist is a professional who uses analysis and visualization techniques to extract insights from data."
+    },
+    {
+        "question": "What is the purpose of data visualization?",
+        "options": [
+            "To present data analysis results",
+            "To manage data security",
+            "To optimize data access",
+            "To reduce storage costs"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Data visualization is the process of presenting data analysis results clearly and in an easy-to-interpret way."
+    },
+    {
+        "question": "What is a database schema?",
+        "options": [
+            "A type of database",
+            "A technique to reduce data redundancy",
+            "The organizational structure of the database",
+            "The language used to create the database"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The schema of a database is the organizational structure that defines how data is stored and related."
+    },
+    {
+        "question": "What is the purpose of data aggregation?",
+        "options": [
+            "To reduce storage costs",
+            "To improve data access",
+            "To aggregate data for more meaningful insights",
+            "To manage data security"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Data aggregation is the process of aggregating and analyzing data to obtain more meaningful information."
+    },
+    {
+        "question": "What is a Data Mart?",
+        "options": [
+            "A type of database",
+            "A data analysis platform",
+            "A repository of large amounts of structured data",
+            "A backup management system"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A Data Mart is a repository of structured data that has been pre-processed and is ready for use."
+    },
+    {
+        "question": "What is the purpose of data governance?",
+        "options": [
+            "To manage data security",
+            "To improve data access",
+            "To ensure data is accurate and complete",
+            "To define policies for data usage"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Data governance is the process of defining policies for data usage, management, and security."
+    },
+    {
+        "question": "What is a Data Warehouse?",
+        "options": [
+            "A type of database",
+            "A data analysis platform",
+            "A repository of large amounts of structured data",
+            "A backup management system"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A Data Warehouse is a repository of structured data that has been pre-processed and is ready for use."
+    },
+    {
+        "question": "What is the purpose of data integration?",
+        "options": [
+            "To manage data security",
+            "To improve data access",
+            "To ensure data is accurate and complete",
+            "To unify data from different sources"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Data integration is the process of unifying data from different sources in a consistent and usable manner."
+    },
+    {
+        "question": "What is a Data Lake?",
+        "options": [
+            "A type of database",
+            "A data analysis platform",
+            "A repository of large amounts of unstructured data",
+            "A backup management system"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A Data Lake is a repository of large amounts of unstructured data that can be used for analysis and machine learning."
+    },
+    {
+        "question": "What is the purpose of data storytelling?",
+        "options": [
+            "To present data analysis results",
+            "To manage data security",
+            "To optimize data access",
+            "To reduce storage costs"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Data storytelling is the process of presenting data analysis results clearly and in an easy-to-interpret way."
+    },
+    {
+        "question": "What is a Data Engineer?",
+        "options": [
+            "A professional who manages data",
+            "A programmer specialized in machine learning",
+            "A statistician focused on data analysis",
+            "A cybersecurity expert"
+        ],
+        "correctAnswer": 0,
+        "explanation": "A Data Engineer is a professional who manages and develops infrastructure for data utilization and management."
+    },
+    {
+        "question": "What is the purpose of data cataloging?",
+        "options": [
+            "To manage data security",
+            "To improve data access",
+            "To ensure data is accurate and complete",
+            "To create a catalog of all available data"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Data cataloging is the process of creating a catalog of all available data with information about its origin, structure, and usage."
+    },
+    {
+        "question": "What is a Data Architect?",
+        "options": [
+            "A professional who manages data",
+            "A programmer specialized in machine learning",
+            "A statistician focused on data analysis",
+            "A cybersecurity expert"
+        ],
+        "correctAnswer": 0,
+        "explanation": "A Data Architect is a professional who designs and develops infrastructure for data utilization and management."
+    }
+]
