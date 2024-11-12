@@ -107,7 +107,7 @@
       </div>
 
       <div class="button-row">
-        <button type="button" class="btn btn-primary open-questionnaire-btn" (click)="openQuestionnaireModal()">Apri Questionario</button>
+        <button type="button" class="btn btn-primary open-questionnaire-btn" (click)="openQuestionnaireModal()">Vuoi inviarci un breve test?</button>
         <button type="submit" class="btn btn-primary submit-btn" [disabled]="contactForm.invalid || !model.file">{{ 'FORM.BUTTON_SUBMIT' | translate }}</button>
       </div>
     </form>
@@ -128,7 +128,6 @@
 <div class="custom-modal" *ngIf="isModalVisible">
   <div class="custom-modal-content">
     <span class="custom-modal-close" (click)="closeModal()">&times;</span>
-    
     <!-- Inserisci qui il componente del questionario -->
     <app-questionnaire></app-questionnaire>
   </div>
