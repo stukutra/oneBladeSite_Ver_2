@@ -3,20 +3,50 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .box-title {
     color: #9339bb;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .step-container {
+    position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.progress-bar {
+    position: absolute;
+    top: 50%;
+    left: 20px; /* Inizia esattamente dal primo step */
+    right: 20px; /* Termina esattamente all'ultimo step */
+    height: 4px;
+    background-color: #ddd;
+    z-index: 0;
+    transform: translateY(-50%);
+}
+
+.progress-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #9339bb;
+    width: calc((100% - 40px) / 4 * var(--completed-steps));
+    transition: width 0.3s ease;
 }
 
 .step {
+    position: relative;
+    z-index: 1;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -39,28 +69,31 @@
 .question-box {
     text-align: center;
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 .question-text {
     font-weight: bold;
     display: block;
     margin-bottom: 20px;
+    font-size: 1.2rem;
 }
 
 .options-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .option-item {
     text-align: left;
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     margin: 10px 0;
     display: flex;
     align-items: center;
+    font-size: 1rem;
 }
 
 .custom-radio {
@@ -69,14 +102,14 @@
     appearance: none;
     width: 16px;
     height: 16px;
-    border: 2px solid #9339bb; /* Bordo personalizzato */
+    border: 2px solid #9339bb;
     border-radius: 50%;
     outline: none;
     cursor: pointer;
 }
 
 .custom-radio:checked {
-    background-color: #9339bb; /* Colore del pallino interno */
+    background-color: #9339bb;
 }
 
 .custom-radio:checked::before {
@@ -86,13 +119,13 @@
     left: 50%;
     width: 8px;
     height: 8px;
-    background-color: #ffffff; /* Colore del pallino centrale */
+    background-color: #ffffff;
     border-radius: 50%;
     transform: translate(-50%, -50%);
 }
 
 .form-check-input:checked + .form-check-label {
-    color: #9339bb; /* Colore del testo selezionato */
+    color: #9339bb;
 }
 
 .button-container {

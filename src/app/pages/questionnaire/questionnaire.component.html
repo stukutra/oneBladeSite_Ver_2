@@ -3,11 +3,13 @@
 
     <!-- Step Line per il progresso -->
     <div class="step-container">
-      <div *ngFor="let question of displayedQuestions; let i = index" class="step" 
-           [class.completed]="i < currentQuestionIndex" 
-           [class.current]="i === currentQuestionIndex">
-        {{ i + 1 }}
-      </div>
+        <div class="progress-bar"></div>
+        <div *ngFor="let question of displayedQuestions; let i = index" 
+             class="step" 
+             [class.completed]="isCompleted(i)" 
+             [class.current]="i === currentQuestionIndex && !reportGenerated">
+            {{ i + 1 }}
+        </div>
     </div>
 
     <!-- Sezione delle domande -->
