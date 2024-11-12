@@ -1,57 +1,178 @@
 [
     {
-        "question": "Qual è lo scopo principale dell'analisi dei dati?",
-        "options": [
-            "Creare siti web",
-            "Analizzare i dati per ottenere insights utili",
-            "Monitorare le prestazioni del sistema",
-            "Progettare l'interfaccia utente"
-        ],
-        "correctAnswer": 1,
-        "explanation": "L'analisi dei dati mira a ottenere informazioni utili per prendere decisioni basate sui dati."
-    },
+        "question":  "Cos'è il clustering?",
+        "options":  [ 
+            "Un algoritmo per classificare i dati", 
+            "Una tecnica di analisi dei dati non supervisionata", 
+            "Un metodo per prevedere le tendenze future", 
+            "Un sistema per monitorare la rete" 
+        ], 
+        "correctAnswer": 1, 
+        "explanation":  "Il clustering è una tecnica di analisi dei dati non supervisionata che cerca di raggruppare i dati in categorie simili." 
+    }, 
     {
-        "question": "Cos'è il machine learning?",
-        "options": [
-            "Una tecnica di programmazione web",
-            "Una forma di intelligenza artificiale che permette ai computer di imparare dai dati",
-            "Un sistema per monitorare la rete",
-            "Un programma per ottimizzare le prestazioni del computer"
-        ],
-        "correctAnswer": 1,
-        "explanation": "Il machine learning consente ai computer di imparare dai dati senza essere esplicitamente programmati."
-    },
+        "question":  "Cos'è il regression analysis?",
+        "options":  [ 
+            "Un algoritmo per classificare i dati", 
+            "Una tecnica di analisi dei dati supervisionata che cerca di prevedere una variabile dipendente", 
+            "Un metodo per visualizzare i dati", 
+            "Un sistema per monitorare la rete" 
+        ], 
+        "correctAnswer": 1, 
+        "explanation":  "Il regression analysis è una tecnica di analisi dei dati supervisionata che cerca di prevedere una variabile dipendente sulla base delle altre variabili indipendenti." 
+    }, 
     {
-        "question": "Quale linguaggio è comunemente usato per l'analisi dei dati?",
-        "options": [
-            "Java",
-            "C++",
-            "Python",
-            "PHP"
-        ],
-        "correctAnswer": 2,
-        "explanation": "Python è comunemente usato nell'analisi dei dati per le sue librerie specializzate."
-    },
+        "question":  "Cos'è il decision tree?",
+        "options":  [ 
+            "Un algoritmo per classificare i dati", 
+            "Una tecnica di analisi dei dati non supervisionata che cerca di raggruppare i dati in categorie simili", 
+            "Un metodo per visualizzare i dati", 
+            "Un sistema per monitorare la rete" 
+        ], 
+        "correctAnswer": 0, 
+        "explanation":  "Il decision tree è un algoritmo per classificare i dati che utilizza una struttura di decisione per prevedere l'output sulla base delle input." 
+    }, 
     {
-        "question": "Cos'è una rete neurale?",
-        "options": [
-            "Un tipo di database",
-            "Un modello matematico ispirato al cervello umano usato nel machine learning",
-            "Un protocollo di rete",
-            "Una tecnica di programmazione web"
-        ],
-        "correctAnswer": 1,
-        "explanation": "Le reti neurali sono modelli matematici ispirati al cervello umano, usati per apprendere dai dati."
-    },
+        "question":  "Cos'è il random forest?",
+        "options":  [ 
+            "Un algoritmo per classificare i dati", 
+            "Una tecnica di analisi dei dati non supervisionata che cerca di raggruppare i dati in categorie simili", 
+            "Un metodo per visualizzare i dati", 
+            "Un sistema per monitorare la rete" 
+        ], 
+        "correctAnswer": 0, 
+        "explanation":  "Il random forest è un algoritmo per classificare i dati che utilizza una combinazione di decision tree per prevedere l'output sulla base delle input." 
+    }, 
     {
-        "question": "Cos'è un modello predittivo?",
-        "options": [
-            "Un modello che descrive le relazioni tra entità",
-            "Un modello che cerca di prevedere risultati futuri",
-            "Un modello che si concentra sulla struttura del database",
-            "Un modello per creare interfacce utente"
-        ],
-        "correctAnswer": 1,
-        "explanation": "Un modello predittivo cerca di fare previsioni basate sui dati storici."
+        "question":  "Cos'è il gradient boosting?",
+        "options":  [ 
+            "Un algoritmo per classificare i dati", 
+            "Una tecnica di analisi dei dati non supervisionata che cerca di raggruppare i dati in categorie simili", 
+            "Un metodo per visualizzare i dati", 
+            "Un sistema per monitorare la rete" 
+        ], 
+        "correctAnswer": 0, 
+        "explanation":  "Il gradient boosting è un algoritmo per classificare i dati che utilizza una combinazione di decision tree per prevedere l'output sulla base delle input." 
+    }, 
+    {
+        "question":  "Cos'è il k-means clustering?",
+        "options":  [ 
+            "Un algoritmo per classificare i dati", 
+            "Una tecnica di analisi dei dati non supervisionata che cerca di raggruppare i dati in categorie simili", 
+            "Un metodo per visualizzare i dati", 
+            "Un sistema per monitorare la rete" 
+        ], 
+        "correctAnswer": 1, 
+        "explanation":  "Il k-means clustering è una tecnica di analisi dei dati non supervisionata che cerca di raggruppare i dati in categorie simili." 
+    }, 
+    {
+        "question":  "Cos'è il PCA?",
+        "options":  [ 
+            "Un algoritmo per classificare i dati", 
+            "Una tecnica di analisi dei dati non supervisionata che cerca di raggruppare i dati in categorie simili", 
+            "Un metodo per visualizzare i dati", 
+            "Un sistema per monitorare la rete" 
+        ], 
+        "correctAnswer": 2, 
+        "explanation":  "Il PCA è un metodo per visualizzare i dati che utilizza una tecnica di riduzione delle dimensioni per estrarre le caratteristiche più importanti." 
+    }, 
+    {
+        "question":  "Cos'è il t-SNE?",
+        "options":  [ 
+            "Un algoritmo per classificare i dati", 
+            "Una tecnica di analisi dei dati non supervisionata che cerca di raggruppare i dati in categorie simili", 
+            "Un metodo per visualizzare i dati", 
+            "Un sistema per monitorare la rete" 
+        ], 
+        "correctAnswer": 2, 
+        "explanation":  "Il t-SNE è un metodo per visualizzare i dati che utilizza una tecnica di riduzione delle dimensioni per estrarre le caratteristiche più importanti." 
+    }, 
+    {
+        "question":  "Cos'è il neural network?",
+        "options":  [ 
+            "Un algoritmo per classificare i dati", 
+            "Una tecnica di analisi dei dati non supervisionata che cerca di raggruppare i dati in categorie simili", 
+            "Un metodo per visualizzare i dati", 
+            "Un sistema per monitorare la rete" 
+        ], 
+        "correctAnswer": 0, 
+        "explanation":  "Il neural network è un algoritmo per classificare i dati che utilizza una struttura di reti neuronali per prevedere l'output sulla base delle input." 
+    }, 
+    {
+        "question":  "Cos'è il convolutional neural network?",
+        "options":  [ 
+            "Un algoritmo per classificare i dati", 
+            "Una tecnica di analisi dei dati non supervisionata che cerca di raggruppare i dati in categorie simili", 
+            "Un metodo per visualizzare i dati", 
+            "Un sistema per monitorare la rete" 
+        ], 
+        "correctAnswer": 0, 
+        "explanation":  "Il convolutional neural network è un algoritmo per classificare i dati che utilizza una struttura di reti neuronali convolutive per prevedere l'output sulla base delle input." 
+    }, 
+    {
+        "question":  "Cos'è il recurrent neural network?",
+        "options":  [ 
+            "Un algoritmo per classificare i dati", 
+            "Una tecnica di analisi dei dati non supervisionata che cerca di raggruppare i dati in categorie simili", 
+            "Un metodo per visualizzare i dati", 
+            "Un sistema per monitorare la rete" 
+        ], 
+        "correctAnswer": 0, 
+        "explanation":  "Il recurrent neural network è un algoritmo per classificare i dati che utilizza una struttura di reti neuronali ricorsive per prevedere l'output sulla base delle input." 
+    }, 
+    {
+        "question":  "Cos'è il autoencoder?",
+        "options":  [ 
+            "Un algoritmo per classificare i dati", 
+            "Una tecnica di analisi dei dati non supervisionata che cerca di raggruppare i dati in categorie simili", 
+            "Un metodo per visualizzare i dati", 
+            "Un sistema per monitorare la rete" 
+        ], 
+        "correctAnswer": 2, 
+        "explanation":  "L'autoencoder è un metodo per visualizzare i dati che utilizza una tecnica di riduzione delle dimensioni per estrarre le caratteristiche più importanti." 
+    }, 
+    {
+        "question":  "Cos'è il generative adversarial network?",
+        "options":  [ 
+            "Un algoritmo per classificare i dati", 
+            "Una tecnica di analisi dei dati non supervisionata che cerca di raggruppare i dati in categorie simili", 
+            "Un metodo per visualizzare i dati", 
+            "Un sistema per monitorare la rete" 
+        ], 
+        "correctAnswer": 0, 
+        "explanation":  "Il generative adversarial network è un algoritmo per classificare i dati che utilizza una struttura di reti neuronali generate da due componenti: il generator e il discriminator." 
+    }, 
+    {
+        "question":  "Cos'è il transfer learning?",
+        "options":  [ 
+            "Un algoritmo per classificare i dati", 
+            "Una tecnica di analisi dei dati non supervisionata che cerca di raggruppare i dati in categorie simili", 
+            "Un metodo per visualizzare i dati", 
+            "Un sistema per monitorare la rete" 
+        ], 
+        "correctAnswer": 0, 
+        "explanation":  "Il transfer learning è un algoritmo che utilizza una struttura di reti neuronali pre-allenate su un problema specifico e l'adatta a un nuovo problema." 
+    }, 
+    {
+        "question":  "Cos'è il reinforcement learning?",
+        "options":  [ 
+            "Un algoritmo per classificare i dati", 
+            "Una tecnica di analisi dei dati non supervisionata che cerca di raggruppare i dati in categorie simili", 
+            "Un metodo per visualizzare i dati", 
+            "Un sistema per monitorare la rete" 
+        ], 
+        "correctAnswer": 0, 
+        "explanation":  "Il reinforcement learning è un algoritmo che utilizza una struttura di reti neuronali per imparare a prendere decisioni in base alle ricompense o punizioni ricevute." 
+    }, 
+    {
+        "question":  "Cos'è il deep learning?",
+        "options":  [ 
+            "Un algoritmo per classificare i dati", 
+            "Una tecnica di analisi dei dati non supervisionata che cerca di raggruppare i dati in categorie simili", 
+            "Un metodo per visualizzare i dati", 
+            "Un sistema per monitorare la rete" 
+        ], 
+        "correctAnswer": 0, 
+        "explanation":  "Il deep learning è un algoritmo che utilizza una struttura di reti neuronali profonde per imparare a prendere decisioni in base ai dati." 
     }
 ]

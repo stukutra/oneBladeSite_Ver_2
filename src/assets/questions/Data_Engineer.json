@@ -1,57 +1,222 @@
 [
     {
-        "question": "Qual è il ruolo principale di un Data Engineer?",
+        "question": "Qual è il tipo di database più comune?",
         "options": [
-            "Creare algoritmi di apprendimento automatico",
-            "Gestire e ottimizzare la pipeline dei dati",
-            "Costruire interfacce utente",
-            "Monitorare le prestazioni delle reti"
+            "NoSQL",
+            "Relational",
+            "Graph",
+            "Time Series"
         ],
         "correctAnswer": 1,
-        "explanation": "Il Data Engineer è responsabile della gestione e ottimizzazione della pipeline dei dati."
+        "explanation": "Il Relational Database Management System (RDBMS) è il tipo di database più comune."
     },
     {
-        "question": "Cos'è ETL?",
+        "question": "Cos'è un cluster di dati?",
         "options": [
-            "Un protocollo di rete",
-            "Una tecnica di sicurezza",
-            "Un processo per estrarre, trasformare e caricare dati",
-            "Un linguaggio di programmazione"
+            "Un gruppo di computer condivisi",
+            "Una tecnica per ridurre la ridondanza dei dati",
+            "Un insieme di nodi che lavorano insieme per gestire i dati",
+            "Un tipo di database"
         ],
         "correctAnswer": 2,
-        "explanation": "ETL è un processo per estrarre, trasformare e caricare i dati."
+        "explanation": "Un cluster di dati è un insieme di nodi che lavorano insieme per gestire i dati."
     },
     {
-        "question": "Quale linguaggio di programmazione è comunemente usato in Data Engineering?",
+        "question": "Qual è lo scopo della data governance?",
         "options": [
-            "JavaScript",
-            "Python",
-            "HTML",
-            "CSS"
-        ],
-        "correctAnswer": 1,
-        "explanation": "Python è ampiamente utilizzato in Data Engineering per la sua versatilità e librerie di dati."
-    },
-    {
-        "question": "Cos'è un data warehouse?",
-        "options": [
-            "Un server per memorizzare backup",
-            "Un luogo fisico per memorizzare dati",
-            "Un sistema per memorizzare e analizzare dati su larga scala",
-            "Una tecnica per criptare i dati"
+            "Gestire la sicurezza dei dati",
+            "Ottimizzare l'accesso ai dati",
+            "Migliorare la qualità e l'integrità dei dati",
+            "Ridurre i costi di storage"
         ],
         "correctAnswer": 2,
-        "explanation": "Un data warehouse è un sistema che consente di memorizzare e analizzare grandi quantità di dati."
+        "explanation": "La data governance è il processo di gestione e controllo delle informazioni per garantire che siano accurate, complete e sicure."
     },
     {
-        "question": "Qual è lo scopo della normalizzazione dei dati?",
+        "question": "Cos'è un Data Lake?",
         "options": [
+            "Un tipo di database",
+            "Una piattaforma di analisi dati",
+            "Un repository di grandi quantità di dati non strutturati",
+            "Un sistema per la gestione dei backup"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Un Data Lake è un repository di grandi quantità di dati non strutturati che possono essere utilizzati per l'analisi e il machine learning."
+    },
+    {
+        "question": "Qual è lo scopo della data quality?",
+        "options": [
+            "Garantire la sicurezza dei dati",
+            "Migliorare la velocità di query",
+            "Ridurre i costi di storage",
+            "Assicurarsi che i dati siano accurati e completi"
+        ],
+        "correctAnswer": 3,
+        "explanation": "La data quality è il processo di garantire che i dati siano accurate, complete e coerenti."
+    },
+    {
+        "question": "Cos'è un pipeline di dati?",
+        "options": [
+            "Un flusso di lavoro per l'analisi dei dati",
+            "Una tecnica per ridurre la ridondanza dei dati",
+            "Un processo per estrazione, trasformazione e caricamento (ETL) dei dati",
+            "Un tipo di database"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Un pipeline di dati è un processo che prende i dati in ingresso, li elabora e li carica in un formato utilizzabile."
+    },
+    {
+        "question": "Qual è lo scopo della normalizzazione dei database?",
+        "options": [
+            "Semplificare la struttura del database",
             "Aumentare la sicurezza dei dati",
             "Eliminare la ridondanza e migliorare l'integrità dei dati",
-            "Semplificare la struttura del database",
             "Ottimizzare la velocità di query"
         ],
+        "correctAnswer": 2,
+        "explanation": "La normalizzazione elimina la ridondanza e migliora l'integrità dei dati nei database."
+    },
+    {
+        "question": "Cos'è un Data Scientist?",
+        "options": [
+            "Un professionista che si occupa della gestione dei dati",
+            "Un programmatore specializzato in machine learning",
+            "Uno statistico che si occupa dell'analisi dei dati",
+            "Un esperto di sicurezza informatica"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Un Data Scientist è un professionista che utilizza tecniche di analisi e visualizzazione per trarre conoscenza dai dati."
+    },
+    {
+        "question": "Qual è lo scopo della data visualization?",
+        "options": [
+            "Presentare i risultati dell'analisi dei dati",
+            "Gestire la sicurezza dei dati",
+            "Ottimizzare l'accesso ai dati",
+            "Ridurre i costi di storage"
+        ],
         "correctAnswer": 1,
-        "explanation": "La normalizzazione riduce la ridondanza e migliora l'integrità dei dati nei database."
+        "explanation": "La data visualization è il processo di presentare i risultati dell'analisi dei dati in modo chiaro e facile da interpretare."
+    },
+    {
+        "question": "Cos'è un schema di database?",
+        "options": [
+            "Un tipo di database",
+            "Una tecnica per ridurre la ridondanza dei dati",
+            "La struttura organizzativa del database",
+            "Il linguaggio utilizzato per creare il database"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Lo schema di un database è la struttura organizzativa che definisce come i dati sono memorizzati e relazionati."
+    },
+    {
+        "question": "Qual è lo scopo della data aggregation?",
+        "options": [
+            "Ridurre i costi di storage",
+            "Migliorare l'accesso ai dati",
+            "Aggregare i dati per ottenere informazioni più significative",
+            "Gestire la sicurezza dei dati"
+        ],
+        "correctAnswer": 2,
+        "explanation": "La data aggregation è il processo di aggregazione e analisi dei dati per ottenere informazioni più significative."
+    },
+    {
+        "question": "Cos'è un Data Mart?",
+        "options": [
+            "Un tipo di database",
+            "Una piattaforma di analisi dati",
+            "Un repository di grandi quantità di dati strutturati",
+            "Un sistema per la gestione dei backup"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Un Data Mart è un repository di dati strutturati che sono stati pre-processati e sono pronti all'uso."
+    },
+    {
+        "question": "Qual è lo scopo della data governance?",
+        "options": [
+            "Gestire la sicurezza dei dati",
+            "Migliorare l'accesso ai dati",
+            "Assicurarsi che i dati siano accurati e completi",
+            "Definire le politiche per l'utilizzo dei dati"
+        ],
+        "correctAnswer": 3,
+        "explanation": "La data governance è il processo di definizione delle politiche per l'utilizzo, la gestione e la sicurezza dei dati."
+    },
+    {
+        "question": "Cos'è un Data Warehouse?",
+        "options": [
+            "Un tipo di database",
+            "Una piattaforma di analisi dati",
+            "Un repository di grandi quantità di dati strutturati",
+            "Un sistema per la gestione dei backup"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Un Data Warehouse è un repository di dati strutturati che sono stati pre-processati e sono pronti all'uso."
+    },
+    {
+        "question": "Qual è lo scopo della data integration?",
+        "options": [
+            "Gestire la sicurezza dei dati",
+            "Migliorare l'accesso ai dati",
+            "Assicurarsi che i dati siano accurati e completi",
+            "Unificare i dati da diverse fonti"
+        ],
+        "correctAnswer": 3,
+        "explanation": "La data integration è il processo di unificazione dei dati da diverse fonti in modo coerente e utilizzabile."
+    },
+    {
+        "question": "Cos'è un Data Lake?",
+        "options": [
+            "Un tipo di database",
+            "Una piattaforma di analisi dati",
+            "Un repository di grandi quantità di dati non strutturati",
+            "Un sistema per la gestione dei backup"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Un Data Lake è un repository di grandi quantità di dati non strutturati che possono essere utilizzati per l'analisi e il machine learning."
+    },
+    {
+        "question": "Qual è lo scopo della data storytelling?",
+        "options": [
+            "Presentare i risultati dell'analisi dei dati",
+            "Gestire la sicurezza dei dati",
+            "Ottimizzare l'accesso ai dati",
+            "Ridurre i costi di storage"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La data storytelling è il processo di presentare i risultati dell'analisi dei dati in modo chiaro e facile da interpretare."
+    },
+    {
+        "question": "Cos'è un Data Engineer?",
+        "options": [
+            "Un professionista che si occupa della gestione dei dati",
+            "Un programmatore specializzato in machine learning",
+            "Uno statistico che si occupa dell'analisi dei dati",
+            "Un esperto di sicurezza informatica"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Un Data Engineer è un professionista che si occupa della gestione e dello sviluppo delle infrastrutture per l'utilizzo e la gestione dei dati."
+    },
+    {
+        "question": "Qual è lo scopo della data cataloging?",
+        "options": [
+            "Gestire la sicurezza dei dati",
+            "Migliorare l'accesso ai dati",
+            "Assicurarsi che i dati siano accurati e completi",
+            "Creare un elenco di tutti i dati disponibili"
+        ],
+        "correctAnswer": 3,
+        "explanation": "La data cataloging è il processo di creazione di un elenco di tutti i dati disponibili, con informazioni sulla loro origine, struttura e utilizzo."
+    },
+    {
+        "question": "Cos'è un Data Architect?",
+        "options": [
+            "Un professionista che si occupa della gestione dei dati",
+            "Un programmatore specializzato in machine learning",
+            "Uno statistico che si occupa dell'analisi dei dati",
+            "Un esperto di sicurezza informatica"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Un Data Architect è un professionista che si occupa della progettazione e dello sviluppo delle infrastrutture per l'utilizzo e la gestione dei dati."
     }
 ]

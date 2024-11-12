@@ -1,0 +1,57 @@
+[
+    {
+        "question": "Qual è la differenza tra UI e UX?",
+        "options": [
+            "UI riguarda l'esperienza utente, UX riguarda l'interfaccia utente",
+            "UI riguarda l'interfaccia utente, UX riguarda l'esperienza utente",
+            "UI riguarda il codice, UX riguarda il design",
+            "Non c'è differenza tra UI e UX"
+        ],
+        "correctAnswer": 1,
+        "explanation": "UI si riferisce all'interfaccia utente, mentre UX si occupa dell'esperienza utente complessiva."
+    },
+    {
+        "question": "Cosa rappresenta un wireframe?",
+        "options": [
+            "Un prototipo completo del prodotto",
+            "Una mappa di navigazione del sito",
+            "Una bozza visiva della struttura di una pagina",
+            "Un modello tridimensionale dell'interfaccia"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Un wireframe è una bozza visiva che mostra la struttura di una pagina senza dettagli grafici."
+    },
+    {
+        "question": "Cos'è un test di usabilità?",
+        "options": [
+            "Un test per verificare la velocità di caricamento",
+            "Un test per raccogliere feedback dagli utenti sull'uso di un'interfaccia",
+            "Un test per verificare la sicurezza",
+            "Un test per garantire l'integrazione del software"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Il test di usabilità è un metodo per raccogliere feedback sull'usabilità di un'interfaccia."
+    },
+    {
+        "question": "Qual è lo scopo di una user persona?",
+        "options": [
+            "Rappresentare un potenziale utente target",
+            "Definire la struttura del codice",
+            "Creare un layout di pagina",
+            "Descrivere un bug nel sistema"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Una user persona rappresenta un profilo di un utente tipo per guidare le decisioni di design."
+    },
+    {
+        "question": "Cos'è il design responsive?",
+        "options": [
+            "Un design che risponde alle domande dell'utente",
+            "Un design che si adatta a diverse dimensioni di schermo",
+            "Un design per siti web statici",
+            "Un design che non cambia mai"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Il design responsive permette all'interfaccia di adattarsi a diversi dispositivi e risoluzioni di schermo."
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "question": "Qual è il ruolo principale di un QA Tester?",
+        "options": [
+            "Sviluppare nuove funzionalità",
+            "Garantire che il software soddisfi i requisiti e sia privo di bug",
+            "Gestire i server",
+            "Disegnare interfacce utente"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Il QA Tester verifica che il software sia conforme ai requisiti e privo di bug."
+    },
+    {
+        "question": "Cos'è un test case?",
+        "options": [
+            "Una descrizione dei passaggi necessari per verificare una funzionalità",
+            "Un documento che descrive i requisiti di un software",
+            "Un report sugli errori trovati",
+            "Una richiesta di modifica"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Un test case descrive i passaggi necessari per verificare una specifica funzionalità."
+    },
+    {
+        "question": "Cos'è il testing funzionale?",
+        "options": [
+            "Un test che verifica solo il design del software",
+            "Un test che verifica la funzionalità di un'applicazione rispetto ai requisiti",
+            "Un test delle prestazioni",
+            "Un test per verificare la compatibilità hardware"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Il testing funzionale verifica che l'applicazione funzioni come descritto nei requisiti."
+    },
+    {
+        "question": "Cos'è un bug report?",
+        "options": [
+            "Un documento che elenca i requisiti",
+            "Un report che descrive un problema o errore riscontrato",
+            "Un report di performance",
+            "Un documento di progettazione"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Il bug report documenta i dettagli di un problema riscontrato nel software."
+    },
+    {
+        "question": "Cos'è il test di regressione?",
+        "options": [
+            "Un test che verifica nuove funzionalità",
+            "Un test che verifica se le funzionalità precedenti funzionano ancora dopo una modifica",
+            "Un test di compatibilità hardware",
+            "Un test di sicurezza"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Il test di regressione assicura che le modifiche non abbiano introdotto nuovi errori."
+    }
+]
