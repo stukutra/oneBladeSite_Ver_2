@@ -1,0 +1,57 @@
+[
+    {
+        "question": "Qual è il ruolo di un analista funzionale?",
+        "options": [
+            "Scrivere codice per le applicazioni",
+            "Progettare l'infrastruttura IT",
+            "Analizzare e documentare i requisiti degli utenti",
+            "Gestire i backup dei sistemi"
+        ],
+        "correctAnswer": 2,
+        "explanation": "L'analista funzionale analizza e documenta i requisiti degli utenti."
+    },
+    {
+        "question": "Cos'è un requisito funzionale?",
+        "options": [
+            "Una caratteristica tecnica di un sistema",
+            "Un'esigenza dell'utente che descrive una funzione specifica",
+            "Un tipo di database",
+            "Un requisito non necessario"
+        ],
+        "correctAnswer": 1,
+        "explanation": "I requisiti funzionali descrivono specificamente le funzioni che il sistema deve svolgere."
+    },
+    {
+        "question": "Qual è lo scopo di un caso d'uso?",
+        "options": [
+            "Definire una struttura di database",
+            "Descrivere come un sistema interagisce con un utente",
+            "Testare un software",
+            "Gestire il progetto"
+        ],
+        "correctAnswer": 1,
+        "explanation": "I casi d'uso descrivono come un sistema interagisce con utenti e altri sistemi."
+    },
+    {
+        "question": "Cos'è un flusso di processo?",
+        "options": [
+            "Un diagramma che descrive i processi aziendali",
+            "Un codice per l'automazione",
+            "Un programma di monitoraggio",
+            "Un tipo di database"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Il flusso di processo rappresenta graficamente i processi aziendali."
+    },
+    {
+        "question": "Cosa fa un diagramma ER?",
+        "options": [
+            "Rappresenta le relazioni tra entità in un database",
+            "Mostra la struttura di una rete",
+            "Gestisce le versioni del software",
+            "Automatizza i flussi di lavoro"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Il diagramma ER (Entity-Relationship) rappresenta le relazioni tra entità nel database."
+    }
+]

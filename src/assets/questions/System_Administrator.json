@@ -1,0 +1,57 @@
+[
+    {
+        "question": "Qual è il principale ruolo di un amministratore di sistema?",
+        "options": [
+            "Progettare l'interfaccia utente",
+            "Gestire e mantenere i sistemi IT",
+            "Sviluppare applicazioni software",
+            "Creare contenuti multimediali"
+        ],
+        "correctAnswer": 1,
+        "explanation": "L'amministratore di sistema è responsabile della gestione e manutenzione dei sistemi IT."
+    },
+    {
+        "question": "Cos'è un server DNS?",
+        "options": [
+            "Un dispositivo che fornisce l'accesso a Internet",
+            "Un sistema per risolvere i nomi di dominio in indirizzi IP",
+            "Un tipo di firewall",
+            "Un'applicazione per monitorare la rete"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Il DNS traduce i nomi di dominio in indirizzi IP utilizzabili dai computer."
+    },
+    {
+        "question": "Qual è il comando per visualizzare la configurazione di rete su un sistema Linux?",
+        "options": [
+            "ping",
+            "netstat",
+            "ifconfig",
+            "ps"
+        ],
+        "correctAnswer": 2,
+        "explanation": "`ifconfig` visualizza la configurazione di rete sui sistemi Linux."
+    },
+    {
+        "question": "Cos'è un firewall?",
+        "options": [
+            "Un software per migliorare la velocità del computer",
+            "Un hardware per memorizzare dati",
+            "Un sistema per proteggere la rete dagli accessi non autorizzati",
+            "Un programma per progettare siti web"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Il firewall protegge la rete dagli accessi non autorizzati."
+    },
+    {
+        "question": "Quale protocollo è utilizzato per l'invio di email?",
+        "options": [
+            "HTTP",
+            "FTP",
+            "SMTP",
+            "IMAP"
+        ],
+        "correctAnswer": 2,
+        "explanation": "SMTP (Simple Mail Transfer Protocol) è usato per inviare email."
+    }
+]

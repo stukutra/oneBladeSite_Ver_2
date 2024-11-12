@@ -1,0 +1,57 @@
+[
+    {
+        "question": "Cos'è l'integrazione continua (CI)?",
+        "options": [
+            "Un metodo per testare il software",
+            "Un approccio per automatizzare la costruzione e il test del software",
+            "Un sistema per gestire i database",
+            "Un servizio di hosting cloud"
+        ],
+        "correctAnswer": 1,
+        "explanation": "L'integrazione continua (CI) automatizza la costruzione e il test del software per identificare rapidamente i problemi."
+    },
+    {
+        "question": "Qual è lo scopo di Docker?",
+        "options": [
+            "Creare backup del sistema",
+            "Virtualizzare l'infrastruttura",
+            "Containerizzare le applicazioni",
+            "Fornire supporto tecnico"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Docker è usato per containerizzare le applicazioni, facilitando il loro trasporto e distribuzione."
+    },
+    {
+        "question": "Cosa fa Kubernetes?",
+        "options": [
+            "Gestisce container Docker",
+            "Sviluppa applicazioni",
+            "Fornisce supporto tecnico",
+            "Automatizza le operazioni di sicurezza"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Kubernetes gestisce e orchestra i container, permettendo il deployment su larga scala."
+    },
+    {
+        "question": "Cos'è il monitoraggio continuo?",
+        "options": [
+            "Un processo per testare il software prima del deployment",
+            "Una tecnica per sviluppare software senza errori",
+            "Un'attività per monitorare continuamente le applicazioni in produzione",
+            "Un metodo per migliorare l'interfaccia utente"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Il monitoraggio continuo consente di individuare e risolvere rapidamente problemi nelle applicazioni in produzione."
+    },
+    {
+        "question": "Quale strumento è usato per il monitoraggio delle applicazioni?",
+        "options": [
+            "Git",
+            "Nagios",
+            "JIRA",
+            "Docker"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Nagios è uno strumento di monitoraggio ampiamente usato per applicazioni e infrastrutture IT."
+    }
+]

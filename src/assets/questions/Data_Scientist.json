@@ -1,0 +1,57 @@
+[
+    {
+        "question": "Qual è lo scopo principale dell'analisi dei dati?",
+        "options": [
+            "Creare siti web",
+            "Analizzare i dati per ottenere insights utili",
+            "Monitorare le prestazioni del sistema",
+            "Progettare l'interfaccia utente"
+        ],
+        "correctAnswer": 1,
+        "explanation": "L'analisi dei dati mira a ottenere informazioni utili per prendere decisioni basate sui dati."
+    },
+    {
+        "question": "Cos'è il machine learning?",
+        "options": [
+            "Una tecnica di programmazione web",
+            "Una forma di intelligenza artificiale che permette ai computer di imparare dai dati",
+            "Un sistema per monitorare la rete",
+            "Un programma per ottimizzare le prestazioni del computer"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Il machine learning consente ai computer di imparare dai dati senza essere esplicitamente programmati."
+    },
+    {
+        "question": "Quale linguaggio è comunemente usato per l'analisi dei dati?",
+        "options": [
+            "Java",
+            "C++",
+            "Python",
+            "PHP"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Python è comunemente usato nell'analisi dei dati per le sue librerie specializzate."
+    },
+    {
+        "question": "Cos'è una rete neurale?",
+        "options": [
+            "Un tipo di database",
+            "Un modello matematico ispirato al cervello umano usato nel machine learning",
+            "Un protocollo di rete",
+            "Una tecnica di programmazione web"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Le reti neurali sono modelli matematici ispirati al cervello umano, usati per apprendere dai dati."
+    },
+    {
+        "question": "Cos'è un modello predittivo?",
+        "options": [
+            "Un modello che descrive le relazioni tra entità",
+            "Un modello che cerca di prevedere risultati futuri",
+            "Un modello che si concentra sulla struttura del database",
+            "Un modello per creare interfacce utente"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Un modello predittivo cerca di fare previsioni basate sui dati storici."
+    }
+]

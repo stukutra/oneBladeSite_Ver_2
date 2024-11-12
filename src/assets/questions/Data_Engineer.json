@@ -1,0 +1,57 @@
+[
+    {
+        "question": "Qual è il ruolo principale di un Data Engineer?",
+        "options": [
+            "Creare algoritmi di apprendimento automatico",
+            "Gestire e ottimizzare la pipeline dei dati",
+            "Costruire interfacce utente",
+            "Monitorare le prestazioni delle reti"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Il Data Engineer è responsabile della gestione e ottimizzazione della pipeline dei dati."
+    },
+    {
+        "question": "Cos'è ETL?",
+        "options": [
+            "Un protocollo di rete",
+            "Una tecnica di sicurezza",
+            "Un processo per estrarre, trasformare e caricare dati",
+            "Un linguaggio di programmazione"
+        ],
+        "correctAnswer": 2,
+        "explanation": "ETL è un processo per estrarre, trasformare e caricare i dati."
+    },
+    {
+        "question": "Quale linguaggio di programmazione è comunemente usato in Data Engineering?",
+        "options": [
+            "JavaScript",
+            "Python",
+            "HTML",
+            "CSS"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Python è ampiamente utilizzato in Data Engineering per la sua versatilità e librerie di dati."
+    },
+    {
+        "question": "Cos'è un data warehouse?",
+        "options": [
+            "Un server per memorizzare backup",
+            "Un luogo fisico per memorizzare dati",
+            "Un sistema per memorizzare e analizzare dati su larga scala",
+            "Una tecnica per criptare i dati"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Un data warehouse è un sistema che consente di memorizzare e analizzare grandi quantità di dati."
+    },
+    {
+        "question": "Qual è lo scopo della normalizzazione dei dati?",
+        "options": [
+            "Aumentare la sicurezza dei dati",
+            "Eliminare la ridondanza e migliorare l'integrità dei dati",
+            "Semplificare la struttura del database",
+            "Ottimizzare la velocità di query"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La normalizzazione riduce la ridondanza e migliora l'integrità dei dati nei database."
+    }
+]

@@ -74,14 +74,14 @@
       <div class="mb-3 form-group">
         <select id="applicationType" name="applicationType" class="form-select" [(ngModel)]="model.applicationType" #applicationType="ngModel" required>
           <option value="">{{ 'FORM.PLACEHOLDERS.APPLICATION_TYPE' | translate }}</option>
-          <option value="Software Development">Developer</option>
-          <option value="System Administrator">System Administrator</option>
+          <option value="Software_Development">Developer</option>
+          <option value="System_Administrator">System Administrator</option>
           <option value="DevOps">DevOps</option>
-          <option value="Functional Analyst">Functional Analyst</option>
-          <option value="Data Engineer">Data Engineer</option>
-          <option value="Data Scientist">Data Scientist</option>
-          <option value="QA Tester">QA Tester</option>
-          <option value="Design UI/UX">Design UI/UX</option>
+          <option value="Functional_Analyst">Functional Analyst</option>
+          <option value="Data_Engineer">Data Engineer</option>
+          <option value="Data_Scientist">Data Scientist</option>
+          <option value="QA_Tester">QA Tester</option>
+          <option value="Design_UIUX">Design UI/UX</option>
         </select>
         <div *ngIf="applicationType.invalid && (applicationType.dirty || applicationType.touched)" class="text-danger">
           <div *ngIf="applicationType.errors?.['required']">{{ 'FORM.VALIDATION.ROLE_REQUIRED' | translate }}</div>
@@ -129,6 +129,6 @@
   <div class="custom-modal-content">
     <span class="custom-modal-close" (click)="closeModal()">&times;</span>
     <!-- Inserisci qui il componente del questionario -->
-    <app-questionnaire></app-questionnaire>
+    <app-questionnaire [role]="model.applicationType"></app-questionnaire>
   </div>
 </div>

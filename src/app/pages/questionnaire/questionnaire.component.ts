@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 interface Question {
   question: string;
@@ -14,6 +14,7 @@ interface Question {
   styleUrls: ['./questionnaire.component.scss']
 })
 export class QuestionnaireComponent implements OnInit {
+  @Input() role: string = '';
   questions: Question[] = [];
   displayedQuestions: Question[] = [];
   userAnswers: number[] = [];
@@ -25,9 +26,9 @@ export class QuestionnaireComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.http.get<Question[]>('/assets/questions.json').subscribe(data => {
-      this.questions = this.shuffle(data);
-      this.displayedQuestions = this.questions.slice(0, 5);
+    this.http.get<Question[]>(`/assets/questions/${this.role}.json`).subscribe(data => {
+      this.questions = this.shuffle(data); // Mescola le domande
+      this.displayedQuestions = this.questions.slice(0, 5); // Mostra solo 5 domande
       this.updateProgress();
     });
   }
