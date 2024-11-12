@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 interface Question {
   question: string;
@@ -22,16 +23,29 @@ export class QuestionnaireComponent implements OnInit {
   reportContent: string = '';
   userEmail: string = '';
   currentQuestionIndex: number = 0;
+  currentLanguage: string = '';
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient,private translate: TranslateService) {}
 
   ngOnInit(): void {
-    this.http.get<Question[]>(`/assets/questions/${this.role}.json`).subscribe(data => {
+    // Ottieni la lingua attualmente in uso o imposta 'it' come predefinito se è undefined
+    this.currentLanguage = this.translate.currentLang || 'it';
+
+    // Ascolta eventuali cambi di lingua
+    this.translate.onLangChange.subscribe((event) => {
+      this.currentLanguage = event.lang;
+    });
+
+    console.log(this.currentLanguage);
+    
+    // Carica il questionario nella lingua selezionata o in italiano per default
+    this.http.get<Question[]>(`/assets/questions/${this.currentLanguage}/${this.role}.json`).subscribe(data => {
       this.questions = this.shuffle(data); // Mescola le domande
       this.displayedQuestions = this.questions.slice(0, 5); // Mostra solo 5 domande
       this.updateProgress();
     });
   }
+
 
   shuffle(array: Question[]): Question[] {
     for (let i = array.length - 1; i > 0; i--) {
