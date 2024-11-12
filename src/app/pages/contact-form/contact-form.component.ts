@@ -92,4 +92,8 @@ export class ContactFormComponent {
   closeModal(): void {
     this.isModalVisible = false;
   }
+
+  openQuestionnaireModal() {
+    this.isModalVisible = true; // Mostra la modale del questionario
+  }
 }
