@@ -89,3 +89,24 @@ $footer-linkedin-color: #0077b5; // Colore dell'icona LinkedIn
 .footer-link:hover i.bi-linkedin {
   color: darken($footer-linkedin-color, 10%); /* Colore più scuro al passaggio del mouse */
 }
+
+
+@media (max-width: 768px) {
+  .footer-content p {
+    font-size: 0.9rem; // Riduce la dimensione del testo per tablet
+  }
+
+  .footer-link {
+    font-size: 0.9rem; // Riduce la dimensione dei link per tablet
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-content p {
+    font-size: 0.8rem; // Ancora più piccolo per smartphone
+  }
+
+  .footer-link {
+    font-size: 0.8rem; // Riduce ulteriormente la dimensione dei link per smartphone
+  }
+}
