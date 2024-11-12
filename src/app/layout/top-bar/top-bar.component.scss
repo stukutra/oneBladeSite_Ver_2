@@ -1,6 +1,6 @@
 // Variabili
 $topbar-color: #9339bb;
-$box-shadow-color: rgba(255, 255, 255, 1);
+$box-shadow-color: rgba(0, 0, 0, 1);
 $border-color: rgba(52, 58, 64, 0.08);
 $nav-link-color: #e6e3e3;
 $nav-link-hover-color: #ffffff;
@@ -41,7 +41,7 @@ $gradient-color-5: #ffffff;
   left: 0;
   width: 100%;
   height: 100%;  
-  background: linear-gradient(45deg, $gradient-color-1, $gradient-color-2, $gradient-color-3, $gradient-color-4, $gradient-color-5);
+  //background: linear-gradient(45deg, $gradient-color-1, $gradient-color-2, $gradient-color-3, $gradient-color-4, $gradient-color-5);
   background-size: cover;
   transform: scaleX(-1);
   z-index: -1;
@@ -72,18 +72,18 @@ $gradient-color-5: #ffffff;
   z-index: 1;
 }
 
-.hover-logo {
-  opacity: 0;
-  z-index: 2;
-}
+// .hover-logo {
+//   opacity: 0;
+//   z-index: 2;
+// }
 
-.logo-container:hover .default-logo {
-  opacity: 0;
-}
+// .logo-container:hover .default-logo {
+//   opacity: 0;
+// }
 
-.logo-container:hover .hover-logo {
-  opacity: 1;
-}
+// .logo-container:hover .hover-logo {
+//   opacity: 1;
+// }
 
 .navbar-nav {
   margin-left: auto;
@@ -92,7 +92,7 @@ $gradient-color-5: #ffffff;
 }
 
 .navbar-nav .nav-link {
-  color: $nav-link-color;
+  //color: $nav-link-color;
   font-size: 16px;
   display: flex;
   align-items: center;
@@ -105,24 +105,16 @@ $gradient-color-5: #ffffff;
   margin-right: 8px;
 }
 
-.navbar-nav .nav-link:hover {
-  color: $nav-link-hover-color;
-  font-weight: $nav-link-hover-weight;
-}
+
 
 .navbar-nav .nav-item {
   margin-left: $nav-item-margin-left;
 }
 
-.language-icon {
-  color: $nav-link-color;
-  font-size: 1.2em; // Modifica la dimensione dell'icona in base alle tue preferenze
-}
-
 .language-select {
   background: none;
   border: none;
-  color: $nav-link-color;
+  //color: $nav-link-color;
   font-size: 16px;
   padding: 5px;
   cursor: pointer;
@@ -234,22 +226,22 @@ $gradient-color-5: #ffffff;
 
   .default-logo {
     z-index: 1;
-    animation: slideIn 1.5s ease-out forwards, lightEffect 5s infinite 1.5s; 
+    animation: slideIn 1.5s ease-out forwards; 
     // Prima l'animazione di slideIn, poi quella di lightEffect dopo 1.5s
   }
 
-  .hover-logo {
-    opacity: 0;
-    z-index: 2;
-    transition: opacity 0.5s ease;
-  }
+  // .hover-logo {
+  //   opacity: 0;
+  //   z-index: 2;
+  //   transition: opacity 0.5s ease;
+  // }
 
-  &:hover .default-logo {
-    opacity: 0;
-  }
+  // &:hover .default-logo {
+  //   opacity: 0;
+  // }
 
-  &:hover .hover-logo {
-    opacity: 1;
-  }
+  // &:hover .hover-logo {
+  //   opacity: 1;
+  // }
 }
 

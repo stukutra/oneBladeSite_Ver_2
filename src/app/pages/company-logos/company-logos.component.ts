@@ -18,7 +18,16 @@ export class CompanyLogosComponent implements OnInit {
     { src: 'assets/loghiCompany/PosteItaliane.png', alt: 'Logo 9' },
     { src: 'assets/loghiCompany/Reply.png', alt: 'Logo 10' },
     { src: 'assets/loghiCompany/telecom.png', alt: 'Logo 11' },
-    { src: 'assets/loghiCompany/ThalesAlenia.png', alt: 'Logo 12' }
+    { src: 'assets/loghiCompany/ThalesAlenia.png', alt: 'Logo 12' },
+    { src: 'assets/loghiCompany/Accenture.png', alt: 'Logo 13' },
+    { src: 'assets/loghiCompany/Aruba.png', alt: 'Logo 14' },
+    { src: 'assets/loghiCompany/Avanade.png', alt: 'Logo 15' },
+    { src: 'assets/loghiCompany/Bulgari.png', alt: 'Logo 16' },
+    { src: 'assets/loghiCompany/EdenRed.png', alt: 'Logo 17' },
+    { src: 'assets/loghiCompany/Fincons.png', alt: 'Logo 18' },
+    { src: 'assets/loghiCompany/GSE.png', alt: 'Logo 19' },
+    { src: 'assets/loghiCompany/Hyntelo.png', alt: 'Logo 20' },
+    { src: 'assets/loghiCompany/Barilla.png', alt: 'Logo 22' }
   ];
 
   logosPerSlide: number = 4;
@@ -39,7 +48,7 @@ export class CompanyLogosComponent implements OnInit {
   private setLogosPerSlide() {
     const width = window.innerWidth;
     if (width >= 1200) {
-      this.logosPerSlide = 4;
+      this.logosPerSlide = 8;
     } else if (width >= 992) {
       this.logosPerSlide = 3;
     } else if (width >= 768) {

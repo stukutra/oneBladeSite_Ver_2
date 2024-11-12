@@ -19,14 +19,9 @@ $footer-linkedin-color: #0077b5; // Colore dell'icona LinkedIn
 .footer-wrapper {
   position: relative;
   width: 100%;
-  background: linear-gradient(45deg, 
-                              $footer-bg-gradient-color-1, 
-                              $footer-bg-gradient-color-2, 
-                              $footer-bg-gradient-color-3, 
-                              $footer-bg-gradient-color-4, 
-                              $footer-bg-gradient-color-5);
+  //background: linear-gradient(45deg, $footer-bg-gradient-color-1, $footer-bg-gradient-color-2, $footer-bg-gradient-color-3, $footer-bg-gradient-color-4, $footer-bg-gradient-color-5);
   box-shadow: 0 4px 6px $footer-box-shadow-color-1;
-  color: $footer-text-color; /* Colore del testo */
+  //color: $footer-text-color; /* Colore del testo */
   text-align: center;
   padding: 0; /* Rimuove il padding predefinito */
   height: 400px; /* Altezza fissa del footer */
@@ -44,7 +39,7 @@ $footer-linkedin-color: #0077b5; // Colore dell'icona LinkedIn
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../../../assets/sfumature.png') no-repeat center center;
+  //background: url('../../../assets/sfumature.png') no-repeat center center;
   background-size: cover; /* Assicura che l'immagine copra il contenitore */
   transform: scaleX(-1); /* Mirroring orizzontale dell'immagine */
   z-index: -1; /* Porta il pseudo-elemento dietro gli altri contenuti */
@@ -67,13 +62,10 @@ $footer-linkedin-color: #0077b5; // Colore dell'icona LinkedIn
   margin-bottom: $footer-margin-bottom; /* Spazio tra il testo e i link */
 }
 
-.footer-links {
+.footer-link {
   margin-top: $footer-margin-bottom; /* Spazio sopra i link */
   transition: font-weight $footer-link-transition;
-}
-
-.footer-link {
-  color: $footer-link-color; /* Colore dei link */
+  //color: $footer-link-color; /* Colore dei link */
   text-decoration: none; /* Rimuove la sottolineatura dai link */
   margin: $footer-link-spacing; /* Spazio tra i link */
   font-size: $footer-font-size; /* Dimensione del font dei link aumentata */
@@ -81,9 +73,9 @@ $footer-linkedin-color: #0077b5; // Colore dell'icona LinkedIn
   transition: color $footer-link-transition; /* Transizione del colore al passaggio del mouse */
 }
 
-.footer-link:hover {
-  color: $footer-link-hover-color; /* Colore dei link al passaggio del mouse */
-}
+// .footer-link:hover {
+//   color: $footer-link-hover-color; /* Colore dei link al passaggio del mouse */
+// }
 
 .footer-link.active {
   font-weight: bold; /* Evidenzia il testo del menu attivo */
