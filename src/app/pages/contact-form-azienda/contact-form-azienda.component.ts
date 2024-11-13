@@ -18,6 +18,7 @@ export class ContactFormAziendaComponent {
   fileError: string | null = null;
   successMessage: string | null = null;
   errorMessage: string | null = null;
+  isModalVisible: boolean = false;
 
   constructor(private http: HttpClient) {}
 
@@ -72,5 +73,13 @@ export class ContactFormAziendaComponent {
       const modal = new (window as any).bootstrap.Modal(modalElement);
       modal.show();
     }
+  }
+
+  closeModal(): void {
+    this.isModalVisible = false;
+  }
+
+  openQuestionnaireModal() {
+    this.isModalVisible = true; // Mostra la modale del questionario
   }
 }

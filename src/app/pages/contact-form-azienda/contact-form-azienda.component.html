@@ -91,6 +91,7 @@
 
       <div class="button-row">
         <div class="send-button-container">
+          <button type="button" class="btn btn-primary open-questionnaire-btn"  (click)="openQuestionnaireModal()">Vuoi inviarci un breve test?</button>
           <button type="submit" class="btn btn-primary" [disabled]="contactForm.invalid">{{ 'FORM.BUTTON_SUBMIT' | translate }}</button>
         </div>
       </div>
@@ -131,5 +132,16 @@
         <button type="button" class="btn btn-danger custom-btn" data-bs-dismiss="modal">{{ 'FORM.MODAL_CLOSE' | translate }}</button>
       </div>
     </div>
+  </div>
+</div>
+
+
+
+<!-- Modale del Questionario -->
+<div class="custom-modal" *ngIf="isModalVisible">
+  <div class="custom-modal-content">
+    <span class="custom-modal-close" (click)="closeModal()">&times;</span>
+    <!-- Inserisci qui il componente del questionario -->
+    <app-questionnaire [role]="model.applicationType"></app-questionnaire>
   </div>
 </div>
