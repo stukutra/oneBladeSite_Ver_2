@@ -1,18 +1,33 @@
+// Variabili riutilizzabili
+$background-color: #ffffff;
+$primary-color: #9339bb;
+$secondary-color: #a163bc;
+$shadow-color: rgba(0, 0, 0, 0.1);
+$border-radius: 8px;
+$font-color-white: #ffffff;
+$font-color-dark: #333;
+$transition-duration: 0.3s;
+$progress-background-color: #ddd;
+$text-color-error: #dc3545;
+$button-hover-darken: 10%;
+
+// Box di descrizione
 .description-box {
-    background-color: #ffffff;
+    background-color: $background-color;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: $border-radius;
     max-width: 800px;
     margin: 0 auto;
 }
 
+// Titolo del box
 .box-title {
-    color: #9339bb;
+    color: $primary-color;
     font-size: 1.5rem;
     text-align: center;
 }
 
+// Contenitore degli step di progresso
 .step-container {
     position: relative;
     display: flex;
@@ -25,10 +40,10 @@
 .progress-bar {
     position: absolute;
     top: 50%;
-    left: 20px; /* Inizia esattamente dal primo step */
-    right: 20px; /* Termina esattamente all'ultimo step */
+    left: 20px;
+    right: 20px;
     height: 4px;
-    background-color: #ddd;
+    background-color: $progress-background-color;
     z-index: 0;
     transform: translateY(-50%);
 }
@@ -39,33 +54,35 @@
     top: 0;
     left: 0;
     height: 100%;
-    background-color: #9339bb;
+    background-color: $primary-color;
     width: calc((100% - 40px) / 4 * var(--completed-steps));
-    transition: width 0.3s ease;
+    transition: width $transition-duration ease;
 }
 
+// Step di avanzamento
 .step {
     position: relative;
     z-index: 1;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #ddd;
+    background-color: $progress-background-color;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    color: #fff;
+    color: $font-color-white;
 }
 
 .step.completed {
-    background-color: #a163bc;
+    background-color: $secondary-color;
 }
 
 .step.current {
-    background-color: #9339bb;
+    background-color: $primary-color;
 }
 
+// Contenitore della domanda
 .question-box {
     text-align: center;
     margin: 0 auto;
@@ -79,6 +96,7 @@
     font-size: 1.2rem;
 }
 
+// Contenitore delle opzioni
 .options-container {
     display: flex;
     flex-direction: column;
@@ -96,20 +114,21 @@
     font-size: 1rem;
 }
 
+// Stile personalizzato per i radio button
 .custom-radio {
     position: relative;
     margin-right: 10px;
     appearance: none;
     width: 16px;
     height: 16px;
-    border: 2px solid #9339bb;
+    border: 2px solid $primary-color;
     border-radius: 50%;
     outline: none;
     cursor: pointer;
 }
 
 .custom-radio:checked {
-    background-color: #9339bb;
+    background-color: $primary-color;
 }
 
 .custom-radio:checked::before {
@@ -119,34 +138,41 @@
     left: 50%;
     width: 8px;
     height: 8px;
-    background-color: #ffffff;
+    background-color: $font-color-white;
     border-radius: 50%;
     transform: translate(-50%, -50%);
 }
 
 .form-check-input:checked + .form-check-label {
-    color: #9339bb;
+    color: $primary-color;
 }
 
+// Contenitore dei pulsanti
 .button-container {
     text-align: right;
     margin-top: 20px;
 }
 
+// Stile personalizzato per il pulsante
 .custom-btn {
-    background-color: #9339bb;
+    background-color: $primary-color;
     border: none;
-    color: #ffffff;
+    color: $font-color-white;
     padding: 0.5rem 1rem;
-    border-radius: 8px;
+    border-radius: $border-radius;
     cursor: pointer;
-    
+
     &:hover {
-        background-color: darken(#9339bb, 10%);
+        background-color: darken($primary-color, $button-hover-darken);
     }
 }
 
+// Sezione del report
 .report-section {
-    .text-success { color: #a163bc; }
-    .text-danger { color: #dc3545; }
+    .text-success {
+        color: $secondary-color;
+    }
+    .text-danger {
+        color: $text-color-error;
+    }
 }

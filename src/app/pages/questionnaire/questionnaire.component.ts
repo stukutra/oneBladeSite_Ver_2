@@ -1,5 +1,6 @@
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+
 import { HttpClient } from '@angular/common/http';
-import { Component, Input, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 interface Question {
@@ -16,16 +17,16 @@ interface Question {
 })
 export class QuestionnaireComponent implements OnInit {
   @Input() role: string = '';
+  @Output() closeModal = new EventEmitter<void>(); // Evento per chiudere la modale
   questions: Question[] = [];
   displayedQuestions: Question[] = [];
   userAnswers: number[] = [];
   reportGenerated: boolean = false;
   reportContent: string = '';
-  userEmail: string = '';
   currentQuestionIndex: number = 0;
   currentLanguage: string = '';
 
-  constructor(private http: HttpClient,private translate: TranslateService) {}
+  constructor(private http: HttpClient, private translate: TranslateService) {}
 
   ngOnInit(): void {
     // Ottieni la lingua attualmente in uso o imposta 'it' come predefinito se è undefined
@@ -36,8 +37,6 @@ export class QuestionnaireComponent implements OnInit {
       this.currentLanguage = event.lang;
     });
 
-    console.log(this.currentLanguage);
-    
     // Carica il questionario nella lingua selezionata o in italiano per default
     this.http.get<Question[]>(`/assets/questions/${this.currentLanguage}/${this.role}.json`).subscribe(data => {
       this.questions = this.shuffle(data); // Mescola le domande
@@ -45,7 +44,6 @@ export class QuestionnaireComponent implements OnInit {
       this.updateProgress();
     });
   }
-
 
   shuffle(array: Question[]): Question[] {
     for (let i = array.length - 1; i > 0; i--) {
@@ -85,12 +83,10 @@ export class QuestionnaireComponent implements OnInit {
       return `Domanda: ${question.question}\nRisposta: ${question.options[this.userAnswers[i]]}\nEsito: ${correct ? 'Corretta' : 'Errata'}\n${correct ? 'Motivazione: ' + question.explanation : ''}\n`;
     });
     this.reportContent = reportLines.join('\n\n');
+    localStorage.setItem('questionnaireReport', this.reportContent);
   }
 
-  sendReport(): void {
-    alert(`Report inviato a ${this.userEmail}`);
+  closeAfterMessage(): void {
+    this.closeModal.emit(); // Chiudi la modale subito dopo il messaggio di ringraziamento
   }
 }
-
-
-
