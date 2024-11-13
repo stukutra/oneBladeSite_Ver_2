@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 
 import { HttpClient } from '@angular/common/http';
 import { TranslateService } from '@ngx-translate/core';
@@ -15,34 +15,65 @@ interface Question {
   templateUrl: './questionnaire.component.html',
   styleUrls: ['./questionnaire.component.scss']
 })
-export class QuestionnaireComponent implements OnInit {
+export class QuestionnaireComponent implements OnInit, OnDestroy {
   @Input() role: string = '';
-  @Output() closeModal = new EventEmitter<void>(); // Evento per chiudere la modale
   questions: Question[] = [];
   displayedQuestions: Question[] = [];
   userAnswers: number[] = [];
   reportGenerated: boolean = false;
   reportContent: string = '';
+  userEmail: string = '';
   currentQuestionIndex: number = 0;
   currentLanguage: string = '';
+
+  // Timer variables
+  startTime: number = 0;
+  elapsedTime: number = 0;
+  formattedTime: string = '00:00';
+  timerInterval: any;
 
   constructor(private http: HttpClient, private translate: TranslateService) {}
 
   ngOnInit(): void {
-    // Ottieni la lingua attualmente in uso o imposta 'it' come predefinito se è undefined
+    // Imposta lingua
     this.currentLanguage = this.translate.currentLang || 'it';
-
-    // Ascolta eventuali cambi di lingua
     this.translate.onLangChange.subscribe((event) => {
       this.currentLanguage = event.lang;
     });
 
-    // Carica il questionario nella lingua selezionata o in italiano per default
+    // Carica domande
     this.http.get<Question[]>(`/assets/questions/${this.currentLanguage}/${this.role}.json`).subscribe(data => {
-      this.questions = this.shuffle(data); // Mescola le domande
-      this.displayedQuestions = this.questions.slice(0, 5); // Mostra solo 5 domande
+      this.questions = this.shuffle(data);
+      this.displayedQuestions = this.questions.slice(0, 5);
       this.updateProgress();
     });
+
+    // Avvia timer
+    this.startTimer();
+  }
+
+  ngOnDestroy(): void {
+    clearInterval(this.timerInterval);
+  }
+
+  // Funzioni del timer
+  startTimer(): void {
+    this.startTime = Date.now();
+    this.timerInterval = setInterval(() => {
+      this.elapsedTime = Date.now() - this.startTime;
+      this.formattedTime = this.formatTime(this.elapsedTime);
+    }, 1000);
+  }
+
+  stopTimer(): void {
+    clearInterval(this.timerInterval);
+  }
+
+  formatTime(ms: number): string {
+    const totalSeconds = Math.floor(ms / 1000);
+    const minutes = Math.floor(totalSeconds / 60).toString().padStart(2, '0');
+    const seconds = (totalSeconds % 60).toString().padStart(2, '0');
+    return `${minutes}:${seconds}`;
   }
 
   shuffle(array: Question[]): Question[] {
@@ -75,6 +106,7 @@ export class QuestionnaireComponent implements OnInit {
     this.reportGenerated = true;
     this.updateProgress();
     this.generateReport();
+    this.stopTimer(); // Ferma il timer
   }
 
   generateReport(): void {
@@ -83,10 +115,5 @@ export class QuestionnaireComponent implements OnInit {
       return `Domanda: ${question.question}\nRisposta: ${question.options[this.userAnswers[i]]}\nEsito: ${correct ? 'Corretta' : 'Errata'}\n${correct ? 'Motivazione: ' + question.explanation : ''}\n`;
     });
     this.reportContent = reportLines.join('\n\n');
-    localStorage.setItem('questionnaireReport', this.reportContent);
-  }
-
-  closeAfterMessage(): void {
-    this.closeModal.emit(); // Chiudi la modale subito dopo il messaggio di ringraziamento
   }
 }

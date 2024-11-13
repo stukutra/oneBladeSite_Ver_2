@@ -1,8 +1,12 @@
+<div class="timer-container">
+  <p>Tempo trascorso: {{ formattedTime }}</p>
+</div>
+
 <div class="container description-box">
   <h5 class="box-title">Questionario per {{ role }}</h5>
 
   <!-- Step Line per il progresso -->
-  <div class="step-container" *ngIf="!reportGenerated">
+  <div class="step-container">
     <div class="progress-bar"></div>
     <div *ngFor="let question of displayedQuestions; let i = index" class="step" [class.completed]="isCompleted(i)"
       [class.current]="i === currentQuestionIndex && !reportGenerated">
@@ -31,9 +35,9 @@
     </div>
   </form>
 
-  <!-- Sezione del messaggio di ringraziamento -->
-  <div *ngIf="reportGenerated" class="thank-you-message mt-4">
-    <h5>Grazie per aver completato il test!</h5>
-    <p>Il report delle risposte verrà inviato per email al momento dell'invio della candidatura.</p>
+  <!-- Sezione del report -->
+  <div *ngIf="reportGenerated" class="report-section mt-4">
+    <p>Il test è terminato in {{ formattedTime }}</p>
+    <p>Grazie per aver completato il questionario. Le risposte saranno inviate al momento della candidatura.</p>
   </div>
 </div>
