@@ -1,9 +1,10 @@
-<div class="timer-container">
-  <p>Tempo trascorso: {{ formattedTime }}</p>
-</div>
-
 <div class="container description-box">
   <h5 class="box-title">Questionario per {{ role }}</h5>
+
+  <!-- Timer -->
+  <div class="timer-container">
+    <p>Tempo trascorso: {{ formattedTime }}</p>
+  </div>
 
   <!-- Step Line per il progresso -->
   <div class="step-container">
@@ -39,5 +40,9 @@
   <div *ngIf="reportGenerated" class="report-section mt-4">
     <p>Il test è terminato in {{ formattedTime }}</p>
     <p>Grazie per aver completato il questionario. Le risposte saranno inviate al momento della candidatura.</p>
+    <p class="disclaimer">
+      <strong>Nota:</strong> Il presente test è puramente informativo e non influisce sulla possibilità di essere
+      contattato. I risultati non sono valutativi e servono solo a fornire maggiori informazioni.
+    </p>
   </div>
 </div>
