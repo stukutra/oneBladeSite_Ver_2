@@ -52,7 +52,10 @@
             "MESSAGE_SUCCESS": "Tu solicitud ha sido enviada con éxito.",
             "MESSAGE_ERROR": "Ocurrió un error durante el envío. Por favor, inténtalo de nuevo.",
             "CLOSE": "Cerrar"
-        }
+        },
+        "QUESTIONARIE": {
+            "TITLE": "¿Te gustaría enviarnos una prueba rápida?"
+          }
     },
     "CAROUSEL": {
         "SLIDE_1": {

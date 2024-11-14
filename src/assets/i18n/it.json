@@ -25,6 +25,9 @@
         }
     },
     "FORM": {
+        "QUESTIONARIE": {
+            "TITLE":"Vorresti inviarci un test veloce?"
+        },
         "TITLE": "Sei un libero professionista?",
         "SUBTITLE": "Se cerchi nuove opportunità di collaborazione unisciti al nostro team e lavora con noi.",
         "PLACEHOLDERS": {
