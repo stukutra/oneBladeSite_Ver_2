@@ -55,7 +55,9 @@
     },
     "QUESTIONARIE": {
       "TITLE": "Do you want to send us a short test?"
-    }
+    },
+    "TITLESOFTWARE": "Rely on us for comprehensive support in application development",
+    "SUBTITLESOFTWARE": "Does your team need a partner to accelerate software development?"
   },
   "CAROUSEL": {
     "SLIDE_1": {

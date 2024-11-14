@@ -26,7 +26,9 @@
     },
     "FORM": {
         "TITLE": "¿Eres un profesional autónomo?",
+        "TITLESOFTWARE": "Confía en nosotros para un soporte completo en el desarrollo de aplicaciones",
         "SUBTITLE": "Si buscas nuevas oportunidades de colaboración, únete a nuestro equipo y trabaja con nosotros.",
+        "SUBTITLESOFTWARE": "¿Tu equipo necesita un socio para acelerar el desarrollo de software?",
         "PLACEHOLDERS": {
             "NAME": "Nombre completo",
             "TELEPHONE": "Teléfono",
@@ -55,7 +57,7 @@
         },
         "QUESTIONARIE": {
             "TITLE": "¿Te gustaría enviarnos una prueba rápida?"
-          }
+        }
     },
     "CAROUSEL": {
         "SLIDE_1": {

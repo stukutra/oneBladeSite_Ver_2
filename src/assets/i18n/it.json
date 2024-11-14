@@ -29,6 +29,8 @@
             "TITLE":"Vorresti inviarci un test veloce?"
         },
         "TITLE": "Sei un libero professionista?",
+        "TITLESOFTWARE": "Affidati a noi per un supporto completo nello sviluppo di applicazioni",
+        "SUBTITLESOFTWARE":"Il tuo team ha bisogno di un partner per accelerare lo sviluppo software?",
         "SUBTITLE": "Se cerchi nuove opportunità di collaborazione unisciti al nostro team e lavora con noi.",
         "PLACEHOLDERS": {
             "NAME": "Nome e cognome",
