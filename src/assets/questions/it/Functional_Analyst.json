@@ -53,5 +53,269 @@
         ],
         "correctAnswer": 0,
         "explanation": "Il diagramma ER (Entity-Relationship) rappresenta le relazioni tra entità nel database."
+    },
+    {
+        "question": "Cos'è un requisito non funzionale?",
+        "options": [
+            "Un requisito opzionale per il sistema",
+            "Un aspetto del sistema che riguarda le performance e l'usabilità",
+            "Un tipo di test",
+            "Una funzionalità specifica richiesta dall'utente"
+        ],
+        "correctAnswer": 1,
+        "explanation": "I requisiti non funzionali riguardano aspetti come le performance, l'usabilità e la sicurezza del sistema."
+    },
+    {
+        "question": "Cosa significa 'elicitation dei requisiti'?",
+        "options": [
+            "Il processo di verificare i requisiti",
+            "Il processo di raccogliere i requisiti degli utenti",
+            "L'analisi delle specifiche tecniche",
+            "Il test delle funzionalità"
+        ],
+        "correctAnswer": 1,
+        "explanation": "L'elicitation dei requisiti è il processo di raccogliere e chiarire le esigenze dell'utente."
+    },
+    {
+        "question": "Cos'è un documento di specifica dei requisiti?",
+        "options": [
+            "Un manuale per gli utenti",
+            "Un elenco delle funzionalità richieste",
+            "Una descrizione dettagliata dei requisiti di sistema",
+            "Una guida per lo sviluppo"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Il documento di specifica dei requisiti descrive in dettaglio tutte le funzionalità e i requisiti di sistema."
+    },
+    {
+        "question": "Cosa fa l'analisi del gap?",
+        "options": [
+            "Identifica la differenza tra l'attuale sistema e il sistema desiderato",
+            "Esegue il debug del codice",
+            "Crea un backup del sistema",
+            "Definisce i requisiti non funzionali"
+        ],
+        "correctAnswer": 0,
+        "explanation": "L'analisi del gap identifica le differenze tra lo stato attuale e il sistema desiderato."
+    },
+    {
+        "question": "Cos'è un mockup?",
+        "options": [
+            "Un diagramma per mostrare l'architettura di rete",
+            "Un prototipo visivo di un'interfaccia utente",
+            "Un report sulle performance",
+            "Un processo di debugging"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Un mockup è un prototipo visivo che mostra come potrebbe apparire l'interfaccia utente."
+    },
+    {
+        "question": "Qual è il ruolo di un wireframe?",
+        "options": [
+            "Definire la struttura di un'applicazione senza dettagli grafici",
+            "Rappresentare le performance del sistema",
+            "Monitorare il traffico di rete",
+            "Sviluppare il codice"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Un wireframe definisce la struttura di un'applicazione a livello visivo senza dettagli grafici."
+    },
+    {
+        "question": "Cos'è il tracciamento dei requisiti?",
+        "options": [
+            "Monitorare le attività del team",
+            "Assicurarsi che i requisiti siano soddisfatti nel progetto",
+            "Scrivere il codice di test",
+            "Automatizzare i flussi di lavoro"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Il tracciamento dei requisiti assicura che tutti i requisiti definiti siano soddisfatti durante lo sviluppo."
+    },
+    {
+        "question": "Cosa rappresenta un diagramma di flusso?",
+        "options": [
+            "Un insieme di codici sorgente",
+            "Un diagramma che rappresenta i passaggi di un processo",
+            "Una rete di sicurezza",
+            "Una lista di utenti"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Un diagramma di flusso rappresenta i passaggi di un processo tramite simboli e frecce."
+    },
+    {
+        "question": "Qual è l'obiettivo di un test di accettazione utente (UAT)?",
+        "options": [
+            "Testare l'infrastruttura IT",
+            "Garantire che il sistema soddisfi le esigenze dell'utente",
+            "Sviluppare nuove funzionalità",
+            "Creare un backup dei dati"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Il test di accettazione utente (UAT) verifica che il sistema risponda alle esigenze degli utenti."
+    },
+    {
+        "question": "Cos'è una matrice di tracciabilità dei requisiti?",
+        "options": [
+            "Un sistema per monitorare i dati",
+            "Un documento che mappa i requisiti alle specifiche del progetto",
+            "Un diagramma di rete",
+            "Un report delle performance"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Una matrice di tracciabilità dei requisiti mappa i requisiti dell'utente alle specifiche del progetto."
+    },
+    {
+        "question": "Cosa rappresenta il termine 'scope creep'?",
+        "options": [
+            "L'inclusione di nuove funzionalità in un progetto senza un'adeguata pianificazione",
+            "Un processo di debugging",
+            "Un tipo di database",
+            "Un backup di sistema"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Lo 'scope creep' si verifica quando nuove funzionalità vengono aggiunte al progetto senza una pianificazione appropriata."
+    },
+    {
+        "question": "Cos'è l'analisi dei dati?",
+        "options": [
+            "L'esecuzione del backup dei dati",
+            "L'analisi delle prestazioni del sistema",
+            "Il processo di estrarre informazioni dai dati per migliorare le decisioni",
+            "La creazione di un database"
+        ],
+        "correctAnswer": 2,
+        "explanation": "L'analisi dei dati è il processo di estrarre informazioni significative dai dati per supportare decisioni migliori."
+    },
+    {
+        "question": "Qual è il ruolo di un documento di business case?",
+        "options": [
+            "Definire i vantaggi e i costi di un progetto",
+            "Specificare le linee guida per la sicurezza",
+            "Gestire la documentazione dell'infrastruttura",
+            "Monitorare le performance dell'applicazione"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Un business case giustifica l'avvio di un progetto, specificando costi, vantaggi e rischi."
+    },
+    {
+        "question": "Cos'è l'analisi delle cause?",
+        "options": [
+            "Una tecnica per trovare la causa principale di un problema",
+            "Un report sui risultati delle vendite",
+            "Un piano di test per un progetto",
+            "Una fase di backup dei dati"
+        ],
+        "correctAnswer": 0,
+        "explanation": "L'analisi delle cause è una tecnica per trovare la causa principale di un problema."
+    },
+    {
+        "question": "Cosa significa la 'verifica dei requisiti'?",
+        "options": [
+            "Assicurarsi che i requisiti siano comprensibili e realizzabili",
+            "Eseguire test sui requisiti",
+            "Creare un diagramma di flusso",
+            "Monitorare la performance"
+        ],
+        "correctAnswer": 0,
+        "explanation": "La verifica dei requisiti assicura che siano comprensibili, completi e realizzabili."
+    },
+    {
+        "question": "Cos'è una 'persona utente'?",
+        "options": [
+            "Un tipo di database",
+            "Un profilo che rappresenta un tipo di utente specifico",
+            "Un requisito tecnico",
+            "Un metodo di test"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Una persona utente è un profilo che rappresenta un gruppo di utenti con comportamenti e bisogni specifici."
+    },
+    {
+        "question": "Cos'è il change management?",
+        "options": [
+            "Un processo per gestire le modifiche al sistema",
+            "Un metodo per testare le prestazioni",
+            "Un database per i backup",
+            "Un linguaggio di programmazione"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Il change management gestisce le modifiche al sistema per minimizzare l'impatto sugli utenti."
+    },
+    {
+        "question": "Cosa si intende per 'user story'?",
+        "options": [
+            "Una tecnica di analisi",
+            "Una descrizione dei requisiti dal punto di vista dell'utente",
+            "Un diagramma di flusso",
+            "Un modello di database"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Una user story descrive i requisiti dal punto di vista dell'utente."
+    },
+    {
+        "question": "Qual è lo scopo del testing funzionale?",
+        "options": [
+            "Verificare che il sistema rispetti i requisiti funzionali",
+            "Testare le performance",
+            "Monitorare i dati in tempo reale",
+            "Creare backup automatici"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Il testing funzionale verifica che il sistema rispetti i requisiti funzionali."
+    },
+    {
+        "question": "Cos'è il diagramma di contesto?",
+        "options": [
+            "Una rappresentazione delle interazioni del sistema con entità esterne",
+            "Un grafico delle performance",
+            "Un tipo di rete",
+            "Un piano di backup"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Un diagramma di contesto rappresenta le interazioni del sistema con utenti e altri sistemi esterni."
+    },
+    {
+        "question": "Cos'è la gestione dei requisiti?",
+        "options": [
+            "Un metodo per creare report",
+            "Un processo per monitorare, aggiornare e documentare i requisiti",
+            "Un tipo di database",
+            "Un sistema di backup"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La gestione dei requisiti è il processo di monitorare, aggiornare e documentare i requisiti durante il ciclo di vita del progetto."
+    },
+    {
+        "question": "Qual è il ruolo di un 'storyboard'?",
+        "options": [
+            "Documentare la struttura del codice",
+            "Mostrare visivamente il flusso di un'applicazione",
+            "Creare diagrammi di rete",
+            "Eseguire backup dei dati"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Uno storyboard mostra visivamente il flusso di un'applicazione, illustrando l'esperienza utente."
+    },
+    {
+        "question": "Cos'è la prototipazione?",
+        "options": [
+            "Un processo di sviluppo del software",
+            "La creazione di modelli iniziali di un prodotto",
+            "Un metodo per il backup dei dati",
+            "Una fase di test delle prestazioni"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La prototipazione consiste nella creazione di modelli iniziali per visualizzare e testare le funzionalità di un prodotto."
+    },
+    {
+        "question": "Qual è il ruolo dell'analisi dei processi aziendali?",
+        "options": [
+            "Identificare e migliorare i processi aziendali esistenti",
+            "Scrivere codice per nuove applicazioni",
+            "Definire le politiche di sicurezza",
+            "Eseguire backup regolari"
+        ],
+        "correctAnswer": 0,
+        "explanation": "L'analisi dei processi aziendali mira a identificare e ottimizzare i processi per migliorare l'efficienza."
     }
 ]

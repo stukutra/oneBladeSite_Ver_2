@@ -141,5 +141,181 @@
         ],
         "correctAnswer": 0,
         "explanation": "L'astrazione è un concetto per nascondere i dettagli complessi e mostrare solo ciò che è rilevante."
+    },
+    {
+        "question": "Cos'è il 'design pattern' Singleton?",
+        "options": [
+            "Un modello che garantisce una sola istanza della classe",
+            "Un modello per creare molteplici oggetti",
+            "Un modello per strutturare dati complessi",
+            "Un modello che rende i metodi statici"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Il pattern Singleton garantisce che una classe abbia una sola istanza accessibile globalmente."
+    },
+    {
+        "question": "Qual è la differenza tra 'abstract class' e 'interface'?",
+        "options": [
+            "Un'abstract class ha metodi non implementati, mentre un'interfaccia ha solo costanti",
+            "Un'abstract class può avere metodi implementati, mentre un'interfaccia no",
+            "Un'interface ha metodi implementati, mentre un'abstract class no",
+            "Non c'è differenza"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Un'abstract class può avere metodi implementati, mentre un'interfaccia definisce solo i metodi."
+    },
+    {
+        "question": "Cos'è l'overloading di un metodo?",
+        "options": [
+            "Un metodo che viene eseguito automaticamente",
+            "Definire più metodi con lo stesso nome ma parametri diversi",
+            "Un metodo che viene chiamato solo una volta",
+            "Nascondere un metodo"
+        ],
+        "correctAnswer": 1,
+        "explanation": "L'overloading permette di creare metodi con lo stesso nome ma parametri diversi."
+    },
+    {
+        "question": "Cos'è un 'package' in programmazione?",
+        "options": [
+            "Un gruppo di classi correlate",
+            "Un tipo di variabile speciale",
+            "Un metodo statico",
+            "Un ciclo in programmazione"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Un package è un contenitore di classi e interfacce correlate."
+    },
+    {
+        "question": "Cos'è la 'gestione delle eccezioni'?",
+        "options": [
+            "Un processo per eseguire codice ripetitivo",
+            "Una tecnica per risolvere errori di compilazione",
+            "Un metodo per gestire errori in fase di esecuzione",
+            "Un modello di progettazione"
+        ],
+        "correctAnswer": 2,
+        "explanation": "La gestione delle eccezioni è il processo di gestire errori in fase di esecuzione del programma."
+    },
+    {
+        "question": "Qual è lo scopo del costruttore?",
+        "options": [
+            "Cancellare un oggetto",
+            "Inizializzare un nuovo oggetto",
+            "Salvare un oggetto nel database",
+            "Verificare la disponibilità della memoria"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Il costruttore è usato per inizializzare le variabili di istanza quando si crea un nuovo oggetto."
+    },
+    {
+        "question": "Cosa significa 'immutable' per un oggetto?",
+        "options": [
+            "L'oggetto non può essere modificato una volta creato",
+            "L'oggetto può essere cancellato solo una volta",
+            "L'oggetto ha accesso limitato",
+            "L'oggetto non può essere salvato"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Un oggetto immutabile non può essere modificato una volta creato."
+    },
+    {
+        "question": "Cosa rappresenta il termine 'loop'?",
+        "options": [
+            "Un ciclo che ripete istruzioni multiple volte",
+            "Una variabile speciale",
+            "Un tipo di funzione",
+            "Un modello di progettazione"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Un loop è una struttura di controllo per ripetere un insieme di istruzioni."
+    },
+    {
+        "question": "Qual è la differenza tra '== ' e 'equals()' in Java?",
+        "options": [
+            "'==' confronta l'identità degli oggetti, mentre 'equals()' confronta il valore",
+            "'==' confronta il valore, 'equals()' controlla l'uguaglianza della classe",
+            "Non c'è differenza",
+            "'==' confronta la lunghezza della stringa"
+        ],
+        "correctAnswer": 0,
+        "explanation": "'==' verifica se due riferimenti puntano allo stesso oggetto, mentre 'equals()' confronta il valore."
+    },
+    {
+        "question": "Cos'è il 'Garbage Collection'?",
+        "options": [
+            "Un processo per raccogliere oggetti inutilizzati",
+            "Una funzione per salvare dati",
+            "Un ciclo per iterare su oggetti",
+            "Un meccanismo per scrivere dati in un file"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Il Garbage Collection recupera memoria eliminando gli oggetti non più utilizzati."
+    },
+    {
+        "question": "Cos'è una 'lambda expression'?",
+        "options": [
+            "Un tipo di classe speciale",
+            "Un modo per dichiarare variabili",
+            "Una funzione senza nome che può essere utilizzata come parametro",
+            "Un tipo di oggetto"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Una lambda expression è una funzione senza nome, spesso utilizzata per espressioni concisive."
+    },
+    {
+        "question": "Cos'è la serializzazione?",
+        "options": [
+            "Il processo di nascondere i dati",
+            "Un metodo per salvare lo stato di un oggetto in un file",
+            "Una tecnica per sovrascrivere metodi",
+            "Un ciclo per iterare dati"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La serializzazione permette di convertire lo stato di un oggetto in un formato che può essere memorizzato."
+    },
+    {
+        "question": "Cosa significa 'namespace' in programmazione?",
+        "options": [
+            "Un contenitore per definizioni di nomi univoci",
+            "Una funzione per salvare dati",
+            "Un tipo di classe speciale",
+            "Una variabile utilizzata in un ciclo"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Un namespace è utilizzato per organizzare classi, funzioni e variabili in un contesto unico."
+    },
+    {
+        "question": "Cos'è un 'framework'?",
+        "options": [
+            "Un ciclo di programmazione",
+            "Una piattaforma per costruire applicazioni",
+            "Un tipo di classe speciale",
+            "Una variabile"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Un framework è una struttura di supporto per sviluppare applicazioni."
+    },
+    {
+        "question": "Cos'è l'API?",
+        "options": [
+            "Un tipo di variabile",
+            "Un'interfaccia per interagire con software esterni",
+            "Un tipo di loop",
+            "Un errore nel codice"
+        ],
+        "correctAnswer": 1,
+        "explanation": "L'API è un'interfaccia che consente la comunicazione tra diversi software."
+    },
+    {
+        "question": "Cos'è un modulo?",
+        "options": [
+            "Una sezione indipendente di un'applicazione",
+            "Una variabile globale",
+            "Un metodo privato",
+            "Un ciclo for"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Un modulo è una componente indipendente di un software che svolge una specifica funzione."
     }
 ]

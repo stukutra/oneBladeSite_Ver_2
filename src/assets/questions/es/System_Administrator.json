@@ -1,0 +1,332 @@
+[
+    {
+        "question": "¿Cuál es el rol principal de un administrador de sistemas?",
+        "options": [
+            "Diseñar la interfaz de usuario",
+            "Gestionar y mantener los sistemas de TI",
+            "Desarrollar aplicaciones de software",
+            "Crear contenido multimedia"
+        ],
+        "correctAnswer": 1,
+        "explanation": "El administrador de sistemas es responsable de gestionar y mantener los sistemas de TI."
+    },
+    {
+        "question": "¿Qué es un servidor DNS?",
+        "options": [
+            "Un dispositivo que proporciona acceso a Internet",
+            "Un sistema para resolver nombres de dominio en direcciones IP",
+            "Un tipo de firewall",
+            "Una aplicación para monitorear la red"
+        ],
+        "correctAnswer": 1,
+        "explanation": "El DNS traduce nombres de dominio en direcciones IP utilizables por computadoras."
+    },
+    {
+        "question": "¿Cuál es el comando para ver la configuración de red en un sistema Linux?",
+        "options": [
+            "ping",
+            "netstat",
+            "ifconfig",
+            "ps"
+        ],
+        "correctAnswer": 2,
+        "explanation": "`ifconfig` muestra la configuración de red en sistemas Linux."
+    },
+    {
+        "question": "¿Qué es un firewall?",
+        "options": [
+            "Un software para mejorar la velocidad del ordenador",
+            "Un hardware para almacenar datos",
+            "Un sistema para proteger la red de accesos no autorizados",
+            "Un programa para diseñar sitios web"
+        ],
+        "correctAnswer": 2,
+        "explanation": "El firewall protege la red de accesos no autorizados."
+    },
+    {
+        "question": "¿Qué protocolo se utiliza para enviar correos electrónicos?",
+        "options": [
+            "HTTP",
+            "FTP",
+            "SMTP",
+            "IMAP"
+        ],
+        "correctAnswer": 2,
+        "explanation": "SMTP (Simple Mail Transfer Protocol) se utiliza para enviar correos electrónicos."
+    },
+    {
+        "question": "¿Qué es Active Directory?",
+        "options": [
+            "Un sistema para gestionar y organizar usuarios y recursos de red",
+            "Un servidor web para alojar sitios",
+            "Una aplicación de respaldo",
+            "Un sistema operativo"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Active Directory gestiona y organiza usuarios y recursos de red."
+    },
+    {
+        "question": "¿Qué es SSH?",
+        "options": [
+            "Un protocolo para acceso remoto seguro",
+            "Un sistema para enviar correos electrónicos",
+            "Una base de datos",
+            "Un tipo de firewall"
+        ],
+        "correctAnswer": 0,
+        "explanation": "SSH (Secure Shell) es un protocolo para acceso remoto seguro."
+    },
+    {
+        "question": "¿Qué comando se utiliza para reiniciar un sistema Linux?",
+        "options": [
+            "shutdown",
+            "reboot",
+            "restart",
+            "poweroff"
+        ],
+        "correctAnswer": 1,
+        "explanation": "`reboot` es el comando para reiniciar un sistema Linux."
+    },
+    {
+        "question": "¿Qué comando se usa para ver los procesos activos en Linux?",
+        "options": [
+            "ls",
+            "top",
+            "ifconfig",
+            "chmod"
+        ],
+        "correctAnswer": 1,
+        "explanation": "`top` muestra los procesos activos en tiempo real en Linux."
+    },
+    {
+        "question": "¿Qué es RAID?",
+        "options": [
+            "Un sistema para crear copias de seguridad",
+            "Una configuración de discos para mejorar el rendimiento y/o la redundancia",
+            "Un tipo de firewall",
+            "Un sistema operativo para servidores"
+        ],
+        "correctAnswer": 1,
+        "explanation": "RAID es una configuración de discos utilizada para mejorar el rendimiento y/o la redundancia."
+    },
+    {
+        "question": "¿Qué comando se usa para cambiar los permisos de un archivo en Linux?",
+        "options": [
+            "ls",
+            "chmod",
+            "mv",
+            "cp"
+        ],
+        "correctAnswer": 1,
+        "explanation": "`chmod` es el comando para cambiar los permisos de un archivo en Linux."
+    },
+    {
+        "question": "¿Qué hace el protocolo FTP?",
+        "options": [
+            "Envía correos electrónicos",
+            "Transfiere archivos entre computadoras",
+            "Monitorea la red",
+            "Crea copias de seguridad"
+        ],
+        "correctAnswer": 1,
+        "explanation": "FTP es un protocolo utilizado para transferir archivos entre computadoras."
+    },
+    {
+        "question": "¿Cuál es la función de un servidor proxy?",
+        "options": [
+            "Bloquear el acceso a sitios web",
+            "Permitir el acceso remoto",
+            "Actuar como intermediario entre el cliente y el servidor",
+            "Almacenar los datos de los usuarios"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Un servidor proxy actúa como intermediario entre el cliente y el servidor."
+    },
+    {
+        "question": "¿Qué es una dirección IP?",
+        "options": [
+            "Una contraseña para acceder a una red",
+            "Un protocolo para enviar correos electrónicos",
+            "Un identificador único para dispositivos en una red",
+            "Un software de seguridad"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Una dirección IP es un identificador único para dispositivos conectados a una red."
+    },
+    {
+        "question": "¿Cuál es el comando para actualizar los paquetes en un sistema Debian?",
+        "options": [
+            "yum update",
+            "pacman -Syu",
+            "apt-get update",
+            "dnf update"
+        ],
+        "correctAnswer": 2,
+        "explanation": "`apt-get update` actualiza los paquetes en sistemas Debian."
+    },
+    {
+        "question": "¿Qué es una VPN?",
+        "options": [
+            "Un dispositivo de respaldo",
+            "Una conexión segura entre dos redes",
+            "Un tipo de firewall",
+            "Un servidor de correo electrónico"
+        ],
+        "correctAnswer": 1,
+        "explanation": "VPN (Virtual Private Network) es una conexión segura entre dos redes."
+    },
+    {
+        "question": "¿Qué es HTTPS?",
+        "options": [
+            "Un protocolo para transferencia de archivos",
+            "Un protocolo para enviar correos electrónicos",
+            "Un protocolo seguro para navegar por Internet",
+            "Un sistema para gestionar contraseñas"
+        ],
+        "correctAnswer": 2,
+        "explanation": "HTTPS es una versión segura del protocolo HTTP para la navegación web."
+    },
+    {
+        "question": "¿Qué comando se usa para ver el espacio de disco disponible en Linux?",
+        "options": [
+            "ls",
+            "du",
+            "df",
+            "free"
+        ],
+        "correctAnswer": 2,
+        "explanation": "`df` muestra el espacio de disco disponible en Linux."
+    },
+    {
+        "question": "¿Qué comando se usa para renombrar un archivo en Linux?",
+        "options": [
+            "cp",
+            "mv",
+            "rename",
+            "ln"
+        ],
+        "correctAnswer": 1,
+        "explanation": "`mv` se utiliza para renombrar o mover archivos en Linux."
+    },
+    {
+        "question": "¿Qué es una máscara de subred?",
+        "options": [
+            "Un dispositivo de red",
+            "Un parámetro para subdividir una red IP",
+            "Un tipo de firewall",
+            "Un protocolo de seguridad"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Una máscara de subred subdivide una red IP en subredes."
+    },
+    {
+        "question": "¿Qué sistema de virtualización se usa comúnmente en entornos Linux?",
+        "options": [
+            "VMware",
+            "VirtualBox",
+            "KVM",
+            "Hyper-V"
+        ],
+        "correctAnswer": 2,
+        "explanation": "KVM se utiliza comúnmente para la virtualización en Linux."
+    },
+    {
+        "question": "¿Qué es un puerto de red?",
+        "options": [
+            "Un dispositivo físico para conectar computadoras",
+            "Una interfaz para transmitir señales inalámbricas",
+            "Un punto final lógico para comunicación en una red",
+            "Un tipo de software antivirus"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Un puerto de red es un punto final lógico para comunicación en una red."
+    },
+    {
+        "question": "¿Qué protocolo se utiliza para navegar por Internet?",
+        "options": [
+            "FTP",
+            "SMTP",
+            "HTTP",
+            "POP3"
+        ],
+        "correctAnswer": 2,
+        "explanation": "HTTP es el protocolo utilizado para navegar por Internet."
+    },
+    {
+        "question": "¿Cuál es la función de una copia de seguridad?",
+        "options": [
+            "Proteger el ordenador de virus",
+            "Bloquear sitios web no seguros",
+            "Guardar copias de datos para recuperación",
+            "Monitorear la red"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Una copia de seguridad guarda copias de datos para una posible recuperación."
+    },
+    {
+        "question": "¿Qué comando se utiliza para eliminar un archivo en Linux?",
+        "options": [
+            "rm",
+            "del",
+            "erase",
+            "remove"
+        ],
+        "correctAnswer": 0,
+        "explanation": "`rm` es el comando utilizado para eliminar archivos en Linux."
+    },
+    {
+        "question": "¿Qué es un sistema operativo?",
+        "options": [
+            "Un tipo de base de datos",
+            "Una interfaz gráfica",
+            "Un software que gestiona los recursos de hardware y software",
+            "Una aplicación para procesamiento de texto"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Un sistema operativo gestiona los recursos de hardware y software del ordenador."
+    },
+    {
+        "question": "¿Qué comando se usa para ver la memoria disponible en Linux?",
+        "options": [
+            "df",
+            "free",
+            "ls",
+            "du"
+        ],
+        "correctAnswer": 1,
+        "explanation": "`free` muestra la memoria disponible en un sistema Linux."
+    },
+    {
+        "question": "¿Para qué se utiliza el comando `ping`?",
+        "options": [
+            "Para ver archivos",
+            "Para comprobar la conexión con otro host",
+            "Para cambiar permisos de archivos",
+            "Para transferir archivos entre computadoras"
+        ],
+        "correctAnswer": 1,
+        "explanation": "`ping` comprueba la conexión con otro host."
+    },
+    {
+        "question": "¿Qué significa 'uptime'?",
+        "options": [
+            "La cantidad de tiempo que un sistema ha estado en funcionamiento",
+            "El tiempo de transferencia de archivos",
+            "La velocidad de la red",
+            "La frecuencia de actualización del sistema"
+        ],
+        "correctAnswer": 0,
+        "explanation": "El uptime indica el tiempo total que un sistema ha estado activo."
+    },
+    {
+        "question": "¿Qué es una dirección MAC?",
+        "options": [
+            "Una dirección IP",
+            "Un identificador único de un dispositivo de red",
+            "Un comando de red",
+            "Un tipo de firewall"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La dirección MAC es un identificador único asignado a cada dispositivo de red."
+    }
+]

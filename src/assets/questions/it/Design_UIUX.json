@@ -53,5 +53,148 @@
         ],
         "correctAnswer": 1,
         "explanation": "Il design responsive permette all'interfaccia di adattarsi a diversi dispositivi e risoluzioni di schermo."
+    },
+    {
+        "question": "Qual è il principio fondamentale del design 'Mobile First'?",
+        "options": [
+            "Progettare prima per dispositivi desktop",
+            "Progettare prima per dispositivi mobili e adattare a schermi più grandi",
+            "Ignorare i dispositivi mobili",
+            "Progettare per la massima risoluzione disponibile"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Il principio 'Mobile First' implica progettare per dispositivi mobili prima di adattare a schermi più grandi."
+    },
+    {
+        "question": "Qual è l'obiettivo di un A/B testing?",
+        "options": [
+            "Verificare la velocità di caricamento",
+            "Confrontare due varianti per determinare quale performa meglio",
+            "Creare un'interfaccia alternativa",
+            "Testare la sicurezza di un'interfaccia"
+        ],
+        "correctAnswer": 1,
+        "explanation": "L'A/B testing confronta due varianti per vedere quale è più efficace per l'utente."
+    },
+    {
+        "question": "Cosa si intende per 'Above the Fold'?",
+        "options": [
+            "La parte di un'interfaccia nascosta",
+            "L'area visibile di una pagina web senza scroll",
+            "La sezione di una pagina in cui l'utente interagisce di meno",
+            "L'elemento grafico che separa le sezioni"
+        ],
+        "correctAnswer": 1,
+        "explanation": "L'area 'Above the Fold' è la parte di una pagina visibile all'utente senza scorrere."
+    },
+    {
+        "question": "Qual è lo scopo del 'Card Sorting'?",
+        "options": [
+            "Creare layout a schede",
+            "Organizzare e categorizzare le informazioni in base alla percezione dell'utente",
+            "Realizzare test di usabilità",
+            "Definire il percorso di navigazione"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Il Card Sorting aiuta a organizzare le informazioni in modo che sia intuitivo per l'utente."
+    },
+    {
+        "question": "Cosa rappresenta un 'Journey Map'?",
+        "options": [
+            "Un diagramma del flusso di codice",
+            "Un percorso dettagliato che un utente segue durante l'interazione con un prodotto",
+            "Una mappa di navigazione del sito",
+            "Un grafico delle metriche di prestazione"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Un Journey Map descrive i passaggi dell'utente mentre interagisce con un prodotto, evidenziando punti di contatto e emozioni."
+    },
+    {
+        "question": "Quale elemento è fondamentale per un design accessibile?",
+        "options": [
+            "Colore brillante",
+            "Testo alternativo per le immagini",
+            "Carattere piccolo",
+            "Immagini ad alta risoluzione"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Il testo alternativo è essenziale per rendere le immagini accessibili agli utenti ipovedenti."
+    },
+    {
+        "question": "Che cos'è la 'Fitts' Law' nel contesto di UI?",
+        "options": [
+            "Una legge sulla sicurezza dei dati",
+            "Un principio che lega la dimensione e la distanza degli oggetti alla facilità di clic",
+            "Una regola di design responsive",
+            "Un metodo di testing A/B"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La Fitts' Law suggerisce che oggetti più grandi e vicini sono più facili da selezionare."
+    },
+    {
+        "question": "Cos'è una 'CTA' in UI design?",
+        "options": [
+            "Un colore complementare",
+            "Una call-to-action per guidare l'utente",
+            "Un'area di testo alternativa",
+            "Una misura di accessibilità"
+        ],
+        "correctAnswer": 1,
+        "explanation": "CTA è una 'call-to-action', come pulsanti o link che invitano l'utente a compiere un'azione specifica."
+    },
+    {
+        "question": "Quale fattore è cruciale nel design per un'esperienza utente intuitiva?",
+        "options": [
+            "Elevato contrasto visivo",
+            "Usabilità e facilità di navigazione",
+            "Colore accattivante",
+            "Tutti gli elementi animati"
+        ],
+        "correctAnswer": 1,
+        "explanation": "L'usabilità e la facilità di navigazione sono fondamentali per creare un'esperienza utente intuitiva."
+    },
+    {
+        "question": "Cos'è la 'regola dei 3 clic' in UX?",
+        "options": [
+            "Gli utenti dovrebbero poter accedere a qualsiasi informazione in massimo 3 clic",
+            "Gli utenti devono visualizzare ogni pagina almeno 3 volte",
+            "Ogni azione deve richiedere solo 3 input",
+            "Un utente dovrebbe poter vedere almeno 3 sezioni del sito in ogni visita"
+        ],
+        "correctAnswer": 0,
+        "explanation": "La 'regola dei 3 clic' suggerisce che un utente dovrebbe trovare l'informazione desiderata entro 3 clic."
+    },
+    {
+        "question": "Quale di queste è una best practice per migliorare la leggibilità del testo?",
+        "options": [
+            "Usare un carattere piccolo",
+            "Usare un contrasto elevato tra testo e sfondo",
+            "Usare un colore di testo simile allo sfondo",
+            "Evitare l'uso di spaziatura"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Un alto contrasto tra testo e sfondo migliora la leggibilità del testo."
+    },
+    {
+        "question": "Cos'è il test di accessibilità?",
+        "options": [
+            "Un test per valutare la velocità del sito",
+            "Un test per verificare l'usabilità per utenti con disabilità",
+            "Un test per determinare la qualità del design",
+            "Un test per assicurarsi che tutte le pagine siano raggiungibili"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Il test di accessibilità valuta come utenti con disabilità possono usare un'interfaccia."
+    },
+    {
+        "question": "Cos'è uno user flow?",
+        "options": [
+            "Una serie di schermate in un sito web",
+            "Il percorso che l'utente segue per completare un'attività",
+            "Un test per valutare la qualità dell'interfaccia",
+            "Un layout di un'app"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Lo user flow descrive il percorso che l'utente segue per completare un'azione."
     }
 ]

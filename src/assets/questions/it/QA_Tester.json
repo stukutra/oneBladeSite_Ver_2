@@ -53,5 +53,269 @@
         ],
         "correctAnswer": 1,
         "explanation": "Il test di regressione assicura che le modifiche non abbiano introdotto nuovi errori."
+    },
+    {
+        "question": "Qual è lo scopo del testing di carico?",
+        "options": [
+            "Verificare che l'applicazione soddisfi i requisiti funzionali",
+            "Misurare come il sistema si comporta sotto carichi elevati",
+            "Controllare il design dell'applicazione",
+            "Testare la sicurezza dell'applicazione"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Il testing di carico misura la performance del sistema sotto carichi elevati."
+    },
+    {
+        "question": "Cos'è un ambiente di test?",
+        "options": [
+            "Un ambiente di produzione",
+            "Un ambiente utilizzato per testare il software",
+            "Un ambiente per l'analisi dei requisiti",
+            "Un ambiente per lo sviluppo del codice"
+        ],
+        "correctAnswer": 1,
+        "explanation": "L'ambiente di test è un ambiente isolato utilizzato per testare il software prima del deployment."
+    },
+    {
+        "question": "Cos'è l'automazione dei test?",
+        "options": [
+            "Il processo di eseguire test manualmente",
+            "L'uso di strumenti per eseguire test automaticamente",
+            "Il controllo del design dell'applicazione",
+            "Un'analisi delle prestazioni del software"
+        ],
+        "correctAnswer": 1,
+        "explanation": "L'automazione dei test consiste nell'uso di strumenti per eseguire test senza intervento manuale."
+    },
+    {
+        "question": "Cos'è il test di usabilità?",
+        "options": [
+            "Un test di sicurezza",
+            "Un test per verificare se il sistema è facile da usare per gli utenti",
+            "Un test per monitorare le performance",
+            "Un'analisi dei costi"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Il test di usabilità verifica che il sistema sia intuitivo e facile da usare per gli utenti."
+    },
+    {
+        "question": "Cosa significa 'passare un test'?",
+        "options": [
+            "Il test è stato eseguito con successo",
+            "Il test è fallito",
+            "Il test è stato cancellato",
+            "Il test è stato pianificato"
+        ],
+        "correctAnswer": 0,
+        "explanation": "'Passare un test' significa che il software ha superato la verifica senza errori."
+    },
+    {
+        "question": "Cos'è il test di sistema?",
+        "options": [
+            "Un test che verifica singoli componenti",
+            "Un test che verifica l'intero sistema come un'unità",
+            "Un test di sicurezza",
+            "Un test di compatibilità hardware"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Il test di sistema verifica che tutti i componenti del sistema funzionino correttamente insieme."
+    },
+    {
+        "question": "Cosa fa un test di compatibilità?",
+        "options": [
+            "Verifica la sicurezza del software",
+            "Assicura che il software funzioni su diverse piattaforme e dispositivi",
+            "Testa le prestazioni sotto carichi elevati",
+            "Verifica la struttura del codice"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Il test di compatibilità verifica che il software funzioni correttamente su diversi dispositivi e piattaforme."
+    },
+    {
+        "question": "Cos'è un test di accettazione?",
+        "options": [
+            "Un test eseguito dai sviluppatori",
+            "Un test eseguito dagli utenti finali per accettare il sistema",
+            "Un test delle performance",
+            "Un test di compatibilità"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Il test di accettazione è eseguito dagli utenti per confermare che il sistema soddisfi le loro aspettative."
+    },
+    {
+        "question": "Cosa verifica il test delle performance?",
+        "options": [
+            "L'interfaccia utente",
+            "Le funzionalità richieste",
+            "La velocità e la stabilità del sistema sotto vari carichi",
+            "La sicurezza dell'applicazione"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Il test delle performance misura velocità, stabilità e affidabilità del sistema sotto diversi carichi."
+    },
+    {
+        "question": "Cosa si intende per 'test script'?",
+        "options": [
+            "Una descrizione testuale dei requisiti",
+            "Codice scritto per eseguire test automatici",
+            "Un report sui bug",
+            "Una bozza del progetto"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Un test script è un codice utilizzato per automatizzare i test di funzionalità."
+    },
+    {
+        "question": "Cos'è un bug?",
+        "options": [
+            "Un problema o errore nel software",
+            "Un miglioramento del sistema",
+            "Un requisito funzionale",
+            "Una richiesta dell'utente"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Un bug è un difetto o errore nel software che causa un comportamento indesiderato."
+    },
+    {
+        "question": "Cos'è il test alpha?",
+        "options": [
+            "Un test eseguito da utenti reali",
+            "Un test iniziale eseguito dagli sviluppatori",
+            "Un test delle prestazioni",
+            "Un test di sicurezza"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Il test alpha è un test interno eseguito dagli sviluppatori per identificare bug principali."
+    },
+    {
+        "question": "Cos'è il test beta?",
+        "options": [
+            "Un test eseguito dagli utenti finali",
+            "Un test di sviluppo",
+            "Un test di sicurezza",
+            "Un test delle prestazioni"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Il test beta è eseguito dagli utenti finali per individuare bug in un ambiente reale."
+    },
+    {
+        "question": "Cos'è il test di integrazione?",
+        "options": [
+            "Verifica l'integrazione di nuove funzionalità",
+            "Assicura che i vari componenti del sistema funzionino insieme",
+            "Un test per valutare le prestazioni",
+            "Un test per il controllo del codice"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Il test di integrazione verifica che i vari moduli funzionino insieme correttamente."
+    },
+    {
+        "question": "Cos'è un test di unità?",
+        "options": [
+            "Un test che verifica l'intero sistema",
+            "Un test che verifica singole unità di codice",
+            "Un test di prestazioni",
+            "Un test di compatibilità"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Il test di unità verifica singole parti del codice per assicurarsi che funzionino come previsto."
+    },
+    {
+        "question": "Qual è lo scopo del test di sicurezza?",
+        "options": [
+            "Verificare l'usabilità del sistema",
+            "Assicurare che il sistema sia protetto da vulnerabilità",
+            "Controllare la velocità dell'applicazione",
+            "Gestire le funzionalità dell'interfaccia utente"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Il test di sicurezza assicura che il sistema sia protetto contro vulnerabilità e minacce."
+    },
+    {
+        "question": "Cos'è il test di sanità (Sanity Testing)?",
+        "options": [
+            "Un controllo preliminare delle funzioni principali",
+            "Un test di performance",
+            "Un test di sicurezza",
+            "Un test di usabilità"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Il sanity testing verifica rapidamente che le funzionalità principali siano operative dopo una modifica."
+    },
+    {
+        "question": "Cos'è il test di fumo (Smoke Testing)?",
+        "options": [
+            "Un test approfondito di tutte le funzionalità",
+            "Una verifica preliminare per controllare che il sistema sia stabile",
+            "Un test di regressione",
+            "Un test di accettazione"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Il smoke testing è una verifica preliminare per assicurarsi che il sistema sia stabile."
+    },
+    {
+        "question": "Cosa significa 'fail a test'?",
+        "options": [
+            "Il test ha avuto successo",
+            "Il test ha riscontrato problemi o errori",
+            "Il test è stato cancellato",
+            "Il test è stato completato con successo"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'Fail a test' significa che il software ha riscontrato problemi o errori."
+    },
+    {
+        "question": "Cos'è il test di resilienza?",
+        "options": [
+            "Un test che valuta l'interfaccia utente",
+            "Un test che verifica la capacità del sistema di recuperare dopo un errore",
+            "Un test di usabilità",
+            "Un test di regressione"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Il test di resilienza verifica la capacità del sistema di riprendersi da un errore."
+    },
+    {
+        "question": "Cosa si intende per 'bug severity'?",
+        "options": [
+            "La frequenza con cui si verifica un bug",
+            "L'impatto di un bug sul sistema",
+            "La difficoltà di risolvere un bug",
+            "La documentazione di un bug"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La 'bug severity' indica l'impatto di un bug sulle funzionalità del sistema."
+    },
+    {
+        "question": "Cos'è il test di compatibilità cross-browser?",
+        "options": [
+            "Verificare che l'applicazione funzioni su diverse versioni di un browser",
+            "Assicurarsi che l'applicazione funzioni su diversi browser",
+            "Controllare la sicurezza dell'applicazione",
+            "Eseguire test di regressione"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Il test di compatibilità cross-browser verifica che l'app funzioni correttamente su diversi browser."
+    },
+    {
+        "question": "Cos'è un defect log?",
+        "options": [
+            "Un documento che elenca i miglioramenti",
+            "Un registro di tutti i bug riscontrati durante i test",
+            "Un report delle performance",
+            "Un manuale di utilizzo"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Un defect log è un registro che elenca tutti i bug riscontrati durante i test."
+    },
+    {
+        "question": "Cosa significa 'test coverage'?",
+        "options": [
+            "Il numero di bug risolti",
+            "La percentuale di codice coperto dai test",
+            "La quantità di dati di backup",
+            "La durata del test"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Il test coverage è la percentuale di codice o funzionalità coperta dai test."
     }
 ]

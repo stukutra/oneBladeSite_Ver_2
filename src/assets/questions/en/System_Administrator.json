@@ -1,0 +1,332 @@
+[
+    {
+        "question": "What is the primary role of a system administrator?",
+        "options": [
+            "Design the user interface",
+            "Manage and maintain IT systems",
+            "Develop software applications",
+            "Create multimedia content"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The system administrator is responsible for managing and maintaining IT systems."
+    },
+    {
+        "question": "What is a DNS server?",
+        "options": [
+            "A device that provides Internet access",
+            "A system for resolving domain names to IP addresses",
+            "A type of firewall",
+            "An application for network monitoring"
+        ],
+        "correctAnswer": 1,
+        "explanation": "DNS translates domain names into IP addresses usable by computers."
+    },
+    {
+        "question": "What is the command to view network configuration on a Linux system?",
+        "options": [
+            "ping",
+            "netstat",
+            "ifconfig",
+            "ps"
+        ],
+        "correctAnswer": 2,
+        "explanation": "`ifconfig` displays network configuration on Linux systems."
+    },
+    {
+        "question": "What is a firewall?",
+        "options": [
+            "Software to improve computer speed",
+            "Hardware to store data",
+            "A system to protect the network from unauthorized access",
+            "A program for website design"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The firewall protects the network from unauthorized access."
+    },
+    {
+        "question": "Which protocol is used for sending email?",
+        "options": [
+            "HTTP",
+            "FTP",
+            "SMTP",
+            "IMAP"
+        ],
+        "correctAnswer": 2,
+        "explanation": "SMTP (Simple Mail Transfer Protocol) is used to send email."
+    },
+    {
+        "question": "What is Active Directory?",
+        "options": [
+            "A system for managing and organizing users and network resources",
+            "A web server for hosting sites",
+            "A backup application",
+            "An operating system"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Active Directory manages and organizes users and network resources."
+    },
+    {
+        "question": "What is SSH?",
+        "options": [
+            "A protocol for secure remote access",
+            "A system for sending email",
+            "A database",
+            "A type of firewall"
+        ],
+        "correctAnswer": 0,
+        "explanation": "SSH (Secure Shell) is a protocol for secure remote access."
+    },
+    {
+        "question": "Which command is used to reboot a Linux system?",
+        "options": [
+            "shutdown",
+            "reboot",
+            "restart",
+            "poweroff"
+        ],
+        "correctAnswer": 1,
+        "explanation": "`reboot` is the command to restart a Linux system."
+    },
+    {
+        "question": "Which command is used to view active processes on Linux?",
+        "options": [
+            "ls",
+            "top",
+            "ifconfig",
+            "chmod"
+        ],
+        "correctAnswer": 1,
+        "explanation": "`top` shows active processes in real time on Linux."
+    },
+    {
+        "question": "What is RAID?",
+        "options": [
+            "A system to create backups",
+            "A disk configuration to improve performance and/or redundancy",
+            "A type of firewall",
+            "An operating system for servers"
+        ],
+        "correctAnswer": 1,
+        "explanation": "RAID is a disk configuration used to improve performance and/or redundancy."
+    },
+    {
+        "question": "Which command is used to change file permissions in Linux?",
+        "options": [
+            "ls",
+            "chmod",
+            "mv",
+            "cp"
+        ],
+        "correctAnswer": 1,
+        "explanation": "`chmod` is the command to change file permissions in Linux."
+    },
+    {
+        "question": "What does the FTP protocol do?",
+        "options": [
+            "Sends emails",
+            "Transfers files between computers",
+            "Monitors the network",
+            "Creates backups"
+        ],
+        "correctAnswer": 1,
+        "explanation": "FTP is a protocol used to transfer files between computers."
+    },
+    {
+        "question": "What is the function of a proxy server?",
+        "options": [
+            "Block access to websites",
+            "Enable remote access",
+            "Act as an intermediary between client and server",
+            "Store user data"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A proxy server acts as an intermediary between client and server."
+    },
+    {
+        "question": "What is an IP address?",
+        "options": [
+            "A password to access a network",
+            "A protocol for sending email",
+            "A unique identifier for devices on a network",
+            "Security software"
+        ],
+        "correctAnswer": 2,
+        "explanation": "An IP address is a unique identifier for devices connected to a network."
+    },
+    {
+        "question": "What is the command to update packages on a Debian system?",
+        "options": [
+            "yum update",
+            "pacman -Syu",
+            "apt-get update",
+            "dnf update"
+        ],
+        "correctAnswer": 2,
+        "explanation": "`apt-get update` updates packages on Debian systems."
+    },
+    {
+        "question": "What is a VPN?",
+        "options": [
+            "A backup device",
+            "A secure connection between two networks",
+            "A type of firewall",
+            "An email server"
+        ],
+        "correctAnswer": 1,
+        "explanation": "VPN (Virtual Private Network) is a secure connection between two networks."
+    },
+    {
+        "question": "What is HTTPS?",
+        "options": [
+            "A protocol for file transfer",
+            "A protocol for sending email",
+            "A secure protocol for browsing the internet",
+            "A system for managing passwords"
+        ],
+        "correctAnswer": 2,
+        "explanation": "HTTPS is a secure version of the HTTP protocol for web browsing."
+    },
+    {
+        "question": "Which command is used to see available disk space on Linux?",
+        "options": [
+            "ls",
+            "du",
+            "df",
+            "free"
+        ],
+        "correctAnswer": 2,
+        "explanation": "`df` shows available disk space in Linux."
+    },
+    {
+        "question": "Which command is used to rename a file on Linux?",
+        "options": [
+            "cp",
+            "mv",
+            "rename",
+            "ln"
+        ],
+        "correctAnswer": 1,
+        "explanation": "`mv` is used to rename or move files in Linux."
+    },
+    {
+        "question": "What is a subnet mask?",
+        "options": [
+            "A network device",
+            "A parameter for subdividing an IP network",
+            "A type of firewall",
+            "A security protocol"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A subnet mask subdivides an IP network into subnets."
+    },
+    {
+        "question": "Which virtualization system is commonly used in Linux environments?",
+        "options": [
+            "VMware",
+            "VirtualBox",
+            "KVM",
+            "Hyper-V"
+        ],
+        "correctAnswer": 2,
+        "explanation": "KVM is commonly used for virtualization on Linux."
+    },
+    {
+        "question": "What is a network port?",
+        "options": [
+            "A physical device to connect computers",
+            "An interface for transmitting wireless signals",
+            "A logical endpoint for communication on a network",
+            "A type of antivirus software"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A network port is a logical endpoint for communication on a network."
+    },
+    {
+        "question": "Which protocol is used for browsing the Internet?",
+        "options": [
+            "FTP",
+            "SMTP",
+            "HTTP",
+            "POP3"
+        ],
+        "correctAnswer": 2,
+        "explanation": "HTTP is the protocol used for browsing the Internet."
+    },
+    {
+        "question": "What is the function of a backup?",
+        "options": [
+            "Protect the computer from viruses",
+            "Block unsafe websites",
+            "Save data copies for recovery",
+            "Monitor the network"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A backup saves copies of data for potential recovery."
+    },
+    {
+        "question": "Which command is used to delete a file on Linux?",
+        "options": [
+            "rm",
+            "del",
+            "erase",
+            "remove"
+        ],
+        "correctAnswer": 0,
+        "explanation": "`rm` is the command used to delete files on Linux."
+    },
+    {
+        "question": "What is an operating system?",
+        "options": [
+            "A type of database",
+            "A graphical interface",
+            "Software that manages hardware and software resources",
+            "A text processing application"
+        ],
+        "correctAnswer": 2,
+        "explanation": "An operating system manages a computer's hardware and software resources."
+    },
+    {
+        "question": "Which command is used to view available memory on Linux?",
+        "options": [
+            "df",
+            "free",
+            "ls",
+            "du"
+        ],
+        "correctAnswer": 1,
+        "explanation": "`free` displays available memory on a Linux system."
+    },
+    {
+        "question": "What is the `ping` command used for?",
+        "options": [
+            "To view files",
+            "To check the connection to another host",
+            "To change file permissions",
+            "To transfer files between computers"
+        ],
+        "correctAnswer": 1,
+        "explanation": "`ping` checks the connection to another host."
+    },
+    {
+        "question": "What does 'uptime' mean?",
+        "options": [
+            "The amount of time a system has been running",
+            "File transfer time",
+            "Network speed",
+            "System update frequency"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Uptime indicates the total time a system has been active."
+    },
+    {
+        "question": "What is a MAC address?",
+        "options": [
+            "An IP address",
+            "A unique identifier for a network device",
+            "A network command",
+            "A type of firewall"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A MAC address is a unique identifier assigned to each network device."
+    }
+]

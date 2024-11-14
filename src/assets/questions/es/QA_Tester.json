@@ -1,0 +1,321 @@
+[
+    {
+        "question": "¿Cuál es el rol principal de un QA Tester?",
+        "options": [
+            "Desarrollar nuevas funcionalidades",
+            "Asegurarse de que el software cumpla con los requisitos y esté libre de errores",
+            "Gestionar servidores",
+            "Diseñar interfaces de usuario"
+        ],
+        "correctAnswer": 1,
+        "explanation": "El QA Tester verifica que el software cumpla con los requisitos y esté libre de errores."
+    },
+    {
+        "question": "¿Qué es un caso de prueba (test case)?",
+        "options": [
+            "Una descripción de los pasos necesarios para verificar una funcionalidad",
+            "Un documento que describe los requisitos de un software",
+            "Un informe sobre errores encontrados",
+            "Una solicitud de cambio"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Un caso de prueba describe los pasos necesarios para verificar una funcionalidad específica."
+    },
+    {
+        "question": "¿Qué es la prueba funcional (functional testing)?",
+        "options": [
+            "Una prueba que verifica solo el diseño del software",
+            "Una prueba que verifica la funcionalidad de una aplicación según los requisitos",
+            "Una prueba de rendimiento",
+            "Una prueba de compatibilidad de hardware"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La prueba funcional verifica que la aplicación funcione como se describe en los requisitos."
+    },
+    {
+        "question": "¿Qué es un informe de errores (bug report)?",
+        "options": [
+            "Un documento que enumera los requisitos",
+            "Un informe que describe un problema o error encontrado",
+            "Un informe de rendimiento",
+            "Un documento de diseño"
+        ],
+        "correctAnswer": 1,
+        "explanation": "El informe de errores documenta los detalles de un problema encontrado en el software."
+    },
+    {
+        "question": "¿Qué es la prueba de regresión?",
+        "options": [
+            "Una prueba que verifica nuevas funcionalidades",
+            "Una prueba que verifica si las funcionalidades anteriores siguen funcionando después de un cambio",
+            "Una prueba de compatibilidad de hardware",
+            "Una prueba de seguridad"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La prueba de regresión asegura que los cambios no hayan introducido nuevos errores."
+    },
+    {
+        "question": "¿Cuál es el propósito de la prueba de carga (load testing)?",
+        "options": [
+            "Verificar que la aplicación cumpla con los requisitos funcionales",
+            "Medir cómo se comporta el sistema bajo cargas altas",
+            "Revisar el diseño de la aplicación",
+            "Probar la seguridad de la aplicación"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La prueba de carga mide el rendimiento del sistema bajo cargas altas."
+    },
+    {
+        "question": "¿Qué es un entorno de prueba (test environment)?",
+        "options": [
+            "Un entorno de producción",
+            "Un entorno utilizado para probar software",
+            "Un entorno para el análisis de requisitos",
+            "Un entorno para el desarrollo de código"
+        ],
+        "correctAnswer": 1,
+        "explanation": "El entorno de prueba es un entorno aislado utilizado para probar el software antes de la implementación."
+    },
+    {
+        "question": "¿Qué es la automatización de pruebas?",
+        "options": [
+            "El proceso de realizar pruebas manualmente",
+            "El uso de herramientas para ejecutar pruebas automáticamente",
+            "La verificación del diseño de la aplicación",
+            "Un análisis del rendimiento del software"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La automatización de pruebas utiliza herramientas para ejecutar pruebas sin intervención manual."
+    },
+    {
+        "question": "¿Qué es la prueba de usabilidad?",
+        "options": [
+            "Una prueba de seguridad",
+            "Una prueba para verificar si el sistema es fácil de usar para los usuarios",
+            "Una prueba para monitorear el rendimiento",
+            "Un análisis de costos"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La prueba de usabilidad verifica que el sistema sea intuitivo y fácil de usar para los usuarios."
+    },
+    {
+        "question": "¿Qué significa 'pasar una prueba'?",
+        "options": [
+            "La prueba se completó con éxito",
+            "La prueba falló",
+            "La prueba fue cancelada",
+            "La prueba fue programada"
+        ],
+        "correctAnswer": 0,
+        "explanation": "'Pasar una prueba' significa que el software pasó la verificación sin problemas."
+    },
+    {
+        "question": "¿Qué es la prueba del sistema (system testing)?",
+        "options": [
+            "Una prueba que verifica componentes individuales",
+            "Una prueba que verifica todo el sistema como un conjunto",
+            "Una prueba de seguridad",
+            "Una prueba de compatibilidad de hardware"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La prueba del sistema verifica que todos los componentes del sistema funcionen correctamente juntos."
+    },
+    {
+        "question": "¿Qué hace la prueba de compatibilidad?",
+        "options": [
+            "Asegura la seguridad del software",
+            "Asegura que el software funcione en varias plataformas y dispositivos",
+            "Prueba el rendimiento bajo cargas altas",
+            "Verifica la estructura del código"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La prueba de compatibilidad verifica que el software funcione correctamente en diferentes dispositivos y plataformas."
+    },
+    {
+        "question": "¿Qué es la prueba de aceptación?",
+        "options": [
+            "Una prueba realizada por desarrolladores",
+            "Una prueba realizada por usuarios finales para aceptar el sistema",
+            "Una prueba de rendimiento",
+            "Una prueba de compatibilidad"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La prueba de aceptación es realizada por los usuarios para confirmar que el sistema cumple con sus expectativas."
+    },
+    {
+        "question": "¿Qué verifica la prueba de rendimiento (performance testing)?",
+        "options": [
+            "La interfaz de usuario",
+            "Las funcionalidades requeridas",
+            "La velocidad y estabilidad del sistema bajo diferentes cargas",
+            "La seguridad de la aplicación"
+        ],
+        "correctAnswer": 2,
+        "explanation": "La prueba de rendimiento mide la velocidad, estabilidad y fiabilidad del sistema bajo diferentes cargas."
+    },
+    {
+        "question": "¿Qué es un script de prueba (test script)?",
+        "options": [
+            "Una descripción textual de los requisitos",
+            "Código escrito para ejecutar pruebas automáticas",
+            "Un informe de errores",
+            "Un borrador del proyecto"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Un script de prueba es un código utilizado para automatizar pruebas de funcionalidad."
+    },
+    {
+        "question": "¿Qué es un bug (error)?",
+        "options": [
+            "Un problema o error en el software",
+            "Una mejora del sistema",
+            "Un requisito funcional",
+            "Una solicitud del usuario"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Un bug es un defecto o error en el software que causa un comportamiento no deseado."
+    },
+    {
+        "question": "¿Qué es la prueba alfa (alpha testing)?",
+        "options": [
+            "Una prueba realizada por usuarios reales",
+            "Una prueba inicial realizada por desarrolladores",
+            "Una prueba de rendimiento",
+            "Una prueba de seguridad"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La prueba alfa es una prueba interna realizada por desarrolladores para identificar errores principales."
+    },
+    {
+        "question": "¿Qué es la prueba beta?",
+        "options": [
+            "Una prueba realizada por los usuarios finales",
+            "Una prueba de desarrollo",
+            "Una prueba de seguridad",
+            "Una prueba de rendimiento"
+        ],
+        "correctAnswer": 0,
+        "explanation": "La prueba beta es realizada por los usuarios finales para identificar errores en un entorno real."
+    },
+    {
+        "question": "¿Qué es la prueba de integración?",
+        "options": [
+            "Verifica la integración de nuevas funcionalidades",
+            "Asegura que los diversos componentes del sistema funcionen juntos",
+            "Una prueba para evaluar el rendimiento",
+            "Una prueba de control de código"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La prueba de integración verifica que los diferentes módulos funcionen juntos correctamente."
+    },
+    {
+        "question": "¿Qué es la prueba de unidad (unit testing)?",
+        "options": [
+            "Una prueba que verifica todo el sistema",
+            "Una prueba que verifica unidades individuales de código",
+            "Una prueba de rendimiento",
+            "Una prueba de compatibilidad"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La prueba de unidad verifica partes individuales del código para asegurarse de que funcionen como se espera."
+    },
+    {
+        "question": "¿Cuál es el propósito de la prueba de seguridad?",
+        "options": [
+            "Verificar la usabilidad del sistema",
+            "Asegurar que el sistema esté protegido de vulnerabilidades",
+            "Revisar la velocidad de la aplicación",
+            "Gestionar las funciones de la interfaz de usuario"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La prueba de seguridad asegura que el sistema esté protegido contra vulnerabilidades y amenazas."
+    },
+    {
+        "question": "¿Qué es la prueba de sanidad (Sanity Testing)?",
+        "options": [
+            "Una verificación preliminar de las funciones principales",
+            "Una prueba de rendimiento",
+            "Una prueba de seguridad",
+            "Una prueba de usabilidad"
+        ],
+        "correctAnswer": 0,
+        "explanation": "La prueba de sanidad verifica rápidamente que las funciones principales estén operativas después de un cambio."
+    },
+    {
+        "question": "¿Qué es la prueba de humo (Smoke Testing)?",
+        "options": [
+            "Una prueba exhaustiva de todas las funcionalidades",
+            "Una verificación preliminar para asegurar que el sistema sea estable",
+            "Una prueba de regresión",
+            "Una prueba de aceptación"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La prueba de humo es una verificación preliminar para asegurar la estabilidad del sistema."
+    },
+    {
+        "question": "¿Qué significa 'fallar una prueba'?",
+        "options": [
+            "La prueba fue exitosa",
+            "La prueba encontró problemas o errores",
+            "La prueba fue cancelada",
+            "La prueba se completó con éxito"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'Fallar una prueba' significa que se encontraron problemas o errores durante la prueba."
+    },
+    {
+        "question": "¿Qué es la prueba de resiliencia?",
+        "options": [
+            "Una prueba que evalúa la interfaz de usuario",
+            "Una prueba que verifica la capacidad del sistema para recuperarse después de un fallo",
+            "Una prueba de usabilidad",
+            "Una prueba de regresión"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La prueba de resiliencia verifica la capacidad del sistema para recuperarse de un fallo."
+    },
+    {
+        "question": "¿Qué significa 'severidad del bug'?",
+        "options": [
+            "La frecuencia con que ocurre un bug",
+            "El impacto de un bug en el sistema",
+            "La dificultad de resolver un bug",
+            "La documentación de un bug"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La 'severidad del bug' indica el impacto de un bug en las funcionalidades del sistema."
+    },
+    {
+        "question": "¿Qué es la prueba de compatibilidad entre navegadores (cross-browser compatibility)?",
+        "options": [
+            "Verificar que la aplicación funcione en diferentes versiones de un navegador",
+            "Asegurar que la aplicación funcione en diferentes navegadores",
+            "Revisar la seguridad de la aplicación",
+            "Realizar pruebas de regresión"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La prueba de compatibilidad entre navegadores verifica que la app funcione correctamente en diferentes navegadores."
+    },
+    {
+        "question": "¿Qué es un registro de defectos (defect log)?",
+        "options": [
+            "Un documento que enumera mejoras",
+            "Un registro de todos los bugs encontrados durante las pruebas",
+            "Un informe de rendimiento",
+            "Un manual de usuario"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Un registro de defectos es un registro que enumera todos los bugs encontrados durante las pruebas."
+    },
+    {
+        "question": "¿Qué significa 'cobertura de pruebas' (test coverage)?",
+        "options": [
+            "El número de bugs corregidos",
+            "El porcentaje de código cubierto por pruebas",
+            "La cantidad de datos de respaldo",
+            "La duración de la prueba"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La cobertura de pruebas es el porcentaje de código o funcionalidades cubiertas por pruebas."
+    }
+]

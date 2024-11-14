@@ -1,0 +1,178 @@
+[
+    {
+        "question": "¿Qué es el clustering?",
+        "options": [
+            "Un algoritmo para clasificar los datos",
+            "Una técnica de análisis de datos no supervisada",
+            "Un método para prever las tendencias futuras",
+            "Un sistema para monitorear la red"
+        ],
+        "correctAnswer": 1,
+        "explanation": "El clustering es una técnica de análisis de datos no supervisada que busca agrupar los datos en categorías similares."
+    },
+    {
+        "question": "¿Qué es el análisis de regresión?",
+        "options": [
+            "Un algoritmo para clasificar los datos",
+            "Una técnica de análisis de datos supervisada que intenta predecir una variable dependiente",
+            "Un método para visualizar los datos",
+            "Un sistema para monitorear la red"
+        ],
+        "correctAnswer": 1,
+        "explanation": "El análisis de regresión es una técnica de análisis de datos supervisada que intenta predecir una variable dependiente en función de otras variables independientes."
+    },
+    {
+        "question": "¿Qué es un árbol de decisión?",
+        "options": [
+            "Un algoritmo para clasificar los datos",
+            "Una técnica de análisis de datos no supervisada que intenta agrupar los datos en categorías similares",
+            "Un método para visualizar los datos",
+            "Un sistema para monitorear la red"
+        ],
+        "correctAnswer": 0,
+        "explanation": "El árbol de decisión es un algoritmo para clasificar los datos que utiliza una estructura de decisión para predecir el resultado en función de las entradas."
+    },
+    {
+        "question": "¿Qué es el bosque aleatorio (random forest)?",
+        "options": [
+            "Un algoritmo para clasificar los datos",
+            "Una técnica de análisis de datos no supervisada que intenta agrupar los datos en categorías similares",
+            "Un método para visualizar los datos",
+            "Un sistema para monitorear la red"
+        ],
+        "correctAnswer": 0,
+        "explanation": "El random forest es un algoritmo para clasificar los datos que utiliza una combinación de árboles de decisión para predecir el resultado en función de las entradas."
+    },
+    {
+        "question": "¿Qué es el gradient boosting?",
+        "options": [
+            "Un algoritmo para clasificar los datos",
+            "Una técnica de análisis de datos no supervisada que intenta agrupar los datos en categorías similares",
+            "Un método para visualizar los datos",
+            "Un sistema para monitorear la red"
+        ],
+        "correctAnswer": 0,
+        "explanation": "El gradient boosting es un algoritmo para clasificar los datos que utiliza una combinación de árboles de decisión para predecir el resultado en función de las entradas."
+    },
+    {
+        "question": "¿Qué es el k-means clustering?",
+        "options": [
+            "Un algoritmo para clasificar los datos",
+            "Una técnica de análisis de datos no supervisada que intenta agrupar los datos en categorías similares",
+            "Un método para visualizar los datos",
+            "Un sistema para monitorear la red"
+        ],
+        "correctAnswer": 1,
+        "explanation": "El k-means clustering es una técnica de análisis de datos no supervisada que intenta agrupar los datos en categorías similares."
+    },
+    {
+        "question": "¿Qué es el PCA?",
+        "options": [
+            "Un algoritmo para clasificar los datos",
+            "Una técnica de análisis de datos no supervisada que intenta agrupar los datos en categorías similares",
+            "Un método para visualizar los datos",
+            "Un sistema para monitorear la red"
+        ],
+        "correctAnswer": 2,
+        "explanation": "El PCA es un método para visualizar los datos que utiliza una técnica de reducción de dimensiones para extraer las características más importantes."
+    },
+    {
+        "question": "¿Qué es el t-SNE?",
+        "options": [
+            "Un algoritmo para clasificar los datos",
+            "Una técnica de análisis de datos no supervisada que intenta agrupar los datos en categorías similares",
+            "Un método para visualizar los datos",
+            "Un sistema para monitorear la red"
+        ],
+        "correctAnswer": 2,
+        "explanation": "El t-SNE es un método para visualizar los datos que utiliza una técnica de reducción de dimensiones para extraer las características más importantes."
+    },
+    {
+        "question": "¿Qué es una red neuronal (neural network)?",
+        "options": [
+            "Un algoritmo para clasificar los datos",
+            "Una técnica de análisis de datos no supervisada que intenta agrupar los datos en categorías similares",
+            "Un método para visualizar los datos",
+            "Un sistema para monitorear la red"
+        ],
+        "correctAnswer": 0,
+        "explanation": "La red neuronal es un algoritmo para clasificar los datos que utiliza una estructura de redes neuronales para predecir el resultado en función de las entradas."
+    },
+    {
+        "question": "¿Qué es una red neuronal convolucional (convolutional neural network)?",
+        "options": [
+            "Un algoritmo para clasificar los datos",
+            "Una técnica de análisis de datos no supervisada que intenta agrupar los datos en categorías similares",
+            "Un método para visualizar los datos",
+            "Un sistema para monitorear la red"
+        ],
+        "correctAnswer": 0,
+        "explanation": "La red neuronal convolucional es un algoritmo para clasificar los datos que utiliza una estructura de redes neuronales convolucionales para predecir el resultado en función de las entradas."
+    },
+    {
+        "question": "¿Qué es una red neuronal recurrente (recurrent neural network)?",
+        "options": [
+            "Un algoritmo para clasificar los datos",
+            "Una técnica de análisis de datos no supervisada que intenta agrupar los datos en categorías similares",
+            "Un método para visualizar los datos",
+            "Un sistema para monitorear la red"
+        ],
+        "correctAnswer": 0,
+        "explanation": "La red neuronal recurrente es un algoritmo para clasificar los datos que utiliza una estructura de redes neuronales recurrentes para predecir el resultado en función de las entradas."
+    },
+    {
+        "question": "¿Qué es un autoencoder?",
+        "options": [
+            "Un algoritmo para clasificar los datos",
+            "Una técnica de análisis de datos no supervisada que intenta agrupar los datos en categorías similares",
+            "Un método para visualizar los datos",
+            "Un sistema para monitorear la red"
+        ],
+        "correctAnswer": 2,
+        "explanation": "El autoencoder es un método para visualizar los datos que utiliza una técnica de reducción de dimensiones para extraer las características más importantes."
+    },
+    {
+        "question": "¿Qué es una red generativa antagónica (generative adversarial network)?",
+        "options": [
+            "Un algoritmo para clasificar los datos",
+            "Una técnica de análisis de datos no supervisada que intenta agrupar los datos en categorías similares",
+            "Un método para visualizar los datos",
+            "Un sistema para monitorear la red"
+        ],
+        "correctAnswer": 0,
+        "explanation": "La red generativa antagónica es un algoritmo para clasificar los datos que utiliza una estructura de redes neuronales generadas por dos componentes: el generador y el discriminador."
+    },
+    {
+        "question": "¿Qué es el aprendizaje por transferencia (transfer learning)?",
+        "options": [
+            "Un algoritmo para clasificar los datos",
+            "Una técnica de análisis de datos no supervisada que intenta agrupar los datos en categorías similares",
+            "Un método para visualizar los datos",
+            "Un sistema para monitorear la red"
+        ],
+        "correctAnswer": 0,
+        "explanation": "El aprendizaje por transferencia es un algoritmo que utiliza una estructura de redes neuronales preentrenadas en un problema específico y las adapta a un nuevo problema."
+    },
+    {
+        "question": "¿Qué es el aprendizaje por refuerzo (reinforcement learning)?",
+        "options": [
+            "Un algoritmo para clasificar los datos",
+            "Una técnica de análisis de datos no supervisada que intenta agrupar los datos en categorías similares",
+            "Un método para visualizar los datos",
+            "Un sistema para monitorear la red"
+        ],
+        "correctAnswer": 0,
+        "explanation": "El aprendizaje por refuerzo es un algoritmo que utiliza una estructura de redes neuronales para aprender a tomar decisiones en función de las recompensas o castigos recibidos."
+    },
+    {
+        "question": "¿Qué es el deep learning?",
+        "options": [
+            "Un algoritmo para clasificar los datos",
+            "Una técnica de análisis de datos no supervisada que intenta agrupar los datos en categorías similares",
+            "Un método para visualizar los datos",
+            "Un sistema para monitorear la red"
+        ],
+        "correctAnswer": 0,
+        "explanation": "El deep learning es un algoritmo que utiliza una estructura de redes neuronales profundas para aprender a tomar decisiones basadas en los datos."
+    }
+]

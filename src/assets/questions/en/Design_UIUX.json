@@ -1,0 +1,200 @@
+[
+    {
+        "question": "What is the difference between UI and UX?",
+        "options": [
+            "UI is about user experience, UX is about user interface",
+            "UI is about user interface, UX is about user experience",
+            "UI is about code, UX is about design",
+            "There is no difference between UI and UX"
+        ],
+        "correctAnswer": 1,
+        "explanation": "UI refers to the user interface, while UX deals with the overall user experience."
+    },
+    {
+        "question": "What does a wireframe represent?",
+        "options": [
+            "A complete prototype of the product",
+            "A site navigation map",
+            "A visual draft of the structure of a page",
+            "A three-dimensional model of the interface"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A wireframe is a visual draft that shows the structure of a page without graphic details."
+    },
+    {
+        "question": "What is a usability test?",
+        "options": [
+            "A test to check loading speed",
+            "A test to gather feedback from users on using an interface",
+            "A test to verify security",
+            "A test to ensure software integration"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A usability test is a method to collect feedback on the usability of an interface."
+    },
+    {
+        "question": "What is the purpose of a user persona?",
+        "options": [
+            "To represent a potential target user",
+            "To define code structure",
+            "To create a page layout",
+            "To describe a system bug"
+        ],
+        "correctAnswer": 0,
+        "explanation": "A user persona represents a profile of a typical user to guide design decisions."
+    },
+    {
+        "question": "What is responsive design?",
+        "options": [
+            "A design that answers user questions",
+            "A design that adapts to different screen sizes",
+            "A design for static websites",
+            "A design that never changes"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Responsive design allows the interface to adapt to different devices and screen resolutions."
+    },
+    {
+        "question": "What is the fundamental principle of 'Mobile First' design?",
+        "options": [
+            "Designing for desktop devices first",
+            "Designing for mobile devices first and adapting to larger screens",
+            "Ignoring mobile devices",
+            "Designing for the highest resolution available"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'Mobile First' design means designing for mobile devices first and then adapting to larger screens."
+    },
+    {
+        "question": "What is the purpose of A/B testing?",
+        "options": [
+            "To check loading speed",
+            "To compare two variants to determine which performs better",
+            "To create an alternative interface",
+            "To test interface security"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A/B testing compares two variants to see which one is more effective for the user."
+    },
+    {
+        "question": "What does 'Above the Fold' mean?",
+        "options": [
+            "The hidden part of an interface",
+            "The visible area of a web page without scrolling",
+            "The section of a page where the user interacts less",
+            "The graphic element that separates sections"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'Above the Fold' is the part of a page visible to the user without scrolling."
+    },
+    {
+        "question": "What is the purpose of 'Card Sorting'?",
+        "options": [
+            "To create card layouts",
+            "To organize and categorize information based on user perception",
+            "To conduct usability tests",
+            "To define the navigation path"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Card Sorting helps organize information in a way that is intuitive for the user."
+    },
+    {
+        "question": "What does a 'Journey Map' represent?",
+        "options": [
+            "A diagram of code flow",
+            "A detailed path that a user follows while interacting with a product",
+            "A site navigation map",
+            "A performance metrics chart"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A Journey Map describes the steps a user takes while interacting with a product, highlighting touchpoints and emotions."
+    },
+    {
+        "question": "What element is essential for accessible design?",
+        "options": [
+            "Bright color",
+            "Alternative text for images",
+            "Small font size",
+            "High-resolution images"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Alternative text is essential for making images accessible to visually impaired users."
+    },
+    {
+        "question": "What is 'Fitts' Law' in UI design?",
+        "options": [
+            "A law on data security",
+            "A principle linking the size and distance of objects to the ease of clicking",
+            "A responsive design rule",
+            "An A/B testing method"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Fitts' Law suggests that larger and closer objects are easier to select."
+    },
+    {
+        "question": "What is a 'CTA' in UI design?",
+        "options": [
+            "A complementary color",
+            "A call-to-action guiding the user",
+            "An alternative text area",
+            "An accessibility measure"
+        ],
+        "correctAnswer": 1,
+        "explanation": "CTA stands for 'call-to-action,' such as buttons or links that invite the user to perform a specific action."
+    },
+    {
+        "question": "What factor is crucial for an intuitive user experience?",
+        "options": [
+            "High visual contrast",
+            "Usability and ease of navigation",
+            "Attractive color",
+            "All elements animated"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Usability and ease of navigation are fundamental for creating an intuitive user experience."
+    },
+    {
+        "question": "What is the '3-click rule' in UX?",
+        "options": [
+            "Users should be able to access any information within 3 clicks",
+            "Users must view each page at least 3 times",
+            "Every action should require only 3 inputs",
+            "A user should be able to see at least 3 sections of the site on each visit"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The '3-click rule' suggests that a user should find the desired information within 3 clicks."
+    },
+    {
+        "question": "Which of these is a best practice to improve text readability?",
+        "options": [
+            "Use a small font",
+            "Use a high contrast between text and background",
+            "Use a text color similar to the background",
+            "Avoid using spacing"
+        ],
+        "correctAnswer": 1,
+        "explanation": "High contrast between text and background improves readability."
+    },
+    {
+        "question": "What is accessibility testing?",
+        "options": [
+            "A test to evaluate the site's speed",
+            "A test to verify usability for users with disabilities",
+            "A test to determine design quality",
+            "A test to ensure all pages are accessible"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Accessibility testing evaluates how users with disabilities can use an interface."
+    },
+    {
+        "question": "What is a user flow?",
+        "options": [
+            "A series of screens on a website",
+            "The path the user takes to complete a task",
+            "A test to evaluate interface quality",
+            "An app layout"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The user flow describes the path the user takes to complete an action."
+    }
+]

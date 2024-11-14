@@ -1,0 +1,200 @@
+[
+    {
+        "question": "¿Cuál es la diferencia entre UI y UX?",
+        "options": [
+            "UI se refiere a la experiencia del usuario, UX a la interfaz del usuario",
+            "UI se refiere a la interfaz del usuario, UX a la experiencia del usuario",
+            "UI se refiere al código, UX al diseño",
+            "No hay diferencia entre UI y UX"
+        ],
+        "correctAnswer": 1,
+        "explanation": "UI se refiere a la interfaz del usuario, mientras que UX se enfoca en la experiencia general del usuario."
+    },
+    {
+        "question": "¿Qué representa un wireframe?",
+        "options": [
+            "Un prototipo completo del producto",
+            "Un mapa de navegación del sitio",
+            "Un boceto visual de la estructura de una página",
+            "Un modelo tridimensional de la interfaz"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Un wireframe es un boceto visual que muestra la estructura de una página sin detalles gráficos."
+    },
+    {
+        "question": "¿Qué es una prueba de usabilidad?",
+        "options": [
+            "Una prueba para verificar la velocidad de carga",
+            "Una prueba para recopilar comentarios de los usuarios sobre el uso de una interfaz",
+            "Una prueba para verificar la seguridad",
+            "Una prueba para garantizar la integración del software"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La prueba de usabilidad es un método para recopilar comentarios sobre la usabilidad de una interfaz."
+    },
+    {
+        "question": "¿Cuál es el propósito de una user persona?",
+        "options": [
+            "Representar a un usuario objetivo potencial",
+            "Definir la estructura del código",
+            "Crear un diseño de página",
+            "Describir un error en el sistema"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Una user persona representa el perfil de un usuario tipo para guiar las decisiones de diseño."
+    },
+    {
+        "question": "¿Qué es el diseño responsivo?",
+        "options": [
+            "Un diseño que responde a las preguntas del usuario",
+            "Un diseño que se adapta a diferentes tamaños de pantalla",
+            "Un diseño para sitios web estáticos",
+            "Un diseño que nunca cambia"
+        ],
+        "correctAnswer": 1,
+        "explanation": "El diseño responsivo permite que la interfaz se adapte a diferentes dispositivos y resoluciones de pantalla."
+    },
+    {
+        "question": "¿Cuál es el principio fundamental del diseño 'Mobile First'?",
+        "options": [
+            "Diseñar primero para dispositivos de escritorio",
+            "Diseñar primero para dispositivos móviles y luego adaptarse a pantallas más grandes",
+            "Ignorar los dispositivos móviles",
+            "Diseñar para la resolución más alta disponible"
+        ],
+        "correctAnswer": 1,
+        "explanation": "El principio 'Mobile First' implica diseñar para dispositivos móviles primero y luego adaptarse a pantallas más grandes."
+    },
+    {
+        "question": "¿Cuál es el propósito de las pruebas A/B?",
+        "options": [
+            "Verificar la velocidad de carga",
+            "Comparar dos variantes para determinar cuál funciona mejor",
+            "Crear una interfaz alternativa",
+            "Probar la seguridad de la interfaz"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Las pruebas A/B comparan dos variantes para ver cuál es más efectiva para el usuario."
+    },
+    {
+        "question": "¿Qué significa 'Above the Fold'?",
+        "options": [
+            "La parte oculta de una interfaz",
+            "El área visible de una página web sin desplazarse",
+            "La sección de una página donde el usuario interactúa menos",
+            "El elemento gráfico que separa las secciones"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'Above the Fold' es la parte de una página visible para el usuario sin desplazarse."
+    },
+    {
+        "question": "¿Cuál es el propósito de 'Card Sorting'?",
+        "options": [
+            "Crear diseños de tarjetas",
+            "Organizar y categorizar información según la percepción del usuario",
+            "Realizar pruebas de usabilidad",
+            "Definir la ruta de navegación"
+        ],
+        "correctAnswer": 1,
+        "explanation": "El Card Sorting ayuda a organizar la información de una manera que sea intuitiva para el usuario."
+    },
+    {
+        "question": "¿Qué representa un 'Journey Map'?",
+        "options": [
+            "Un diagrama del flujo de código",
+            "Un camino detallado que sigue un usuario al interactuar con un producto",
+            "Un mapa de navegación del sitio",
+            "Un gráfico de métricas de rendimiento"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Un Journey Map describe los pasos que un usuario sigue al interactuar con un producto, destacando puntos de contacto y emociones."
+    },
+    {
+        "question": "¿Qué elemento es esencial para un diseño accesible?",
+        "options": [
+            "Color brillante",
+            "Texto alternativo para imágenes",
+            "Tamaño de fuente pequeño",
+            "Imágenes de alta resolución"
+        ],
+        "correctAnswer": 1,
+        "explanation": "El texto alternativo es esencial para que las imágenes sean accesibles a los usuarios con discapacidad visual."
+    },
+    {
+        "question": "¿Qué es la 'Ley de Fitts' en el diseño UI?",
+        "options": [
+            "Una ley sobre seguridad de datos",
+            "Un principio que relaciona el tamaño y la distancia de los objetos con la facilidad de hacer clic",
+            "Una regla de diseño responsivo",
+            "Un método de prueba A/B"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La Ley de Fitts sugiere que los objetos más grandes y cercanos son más fáciles de seleccionar."
+    },
+    {
+        "question": "¿Qué es un 'CTA' en diseño UI?",
+        "options": [
+            "Un color complementario",
+            "Una llamada a la acción para guiar al usuario",
+            "Un área de texto alternativo",
+            "Una medida de accesibilidad"
+        ],
+        "correctAnswer": 1,
+        "explanation": "CTA significa 'llamada a la acción', como botones o enlaces que invitan al usuario a realizar una acción específica."
+    },
+    {
+        "question": "¿Qué factor es crucial para una experiencia de usuario intuitiva?",
+        "options": [
+            "Alto contraste visual",
+            "Usabilidad y facilidad de navegación",
+            "Color atractivo",
+            "Todos los elementos animados"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La usabilidad y la facilidad de navegación son fundamentales para crear una experiencia de usuario intuitiva."
+    },
+    {
+        "question": "¿Qué es la 'regla de los 3 clics' en UX?",
+        "options": [
+            "Los usuarios deberían poder acceder a cualquier información en un máximo de 3 clics",
+            "Los usuarios deben ver cada página al menos 3 veces",
+            "Cada acción debe requerir solo 3 entradas",
+            "Un usuario debería poder ver al menos 3 secciones del sitio en cada visita"
+        ],
+        "correctAnswer": 0,
+        "explanation": "La 'regla de los 3 clics' sugiere que un usuario debería encontrar la información deseada en un máximo de 3 clics."
+    },
+    {
+        "question": "¿Cuál de estas es una práctica recomendada para mejorar la legibilidad del texto?",
+        "options": [
+            "Usar una fuente pequeña",
+            "Usar un alto contraste entre texto y fondo",
+            "Usar un color de texto similar al fondo",
+            "Evitar el uso de espaciado"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Un alto contraste entre el texto y el fondo mejora la legibilidad."
+    },
+    {
+        "question": "¿Qué es la prueba de accesibilidad?",
+        "options": [
+            "Una prueba para evaluar la velocidad del sitio",
+            "Una prueba para verificar la usabilidad para usuarios con discapacidades",
+            "Una prueba para determinar la calidad del diseño",
+            "Una prueba para asegurarse de que todas las páginas sean accesibles"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La prueba de accesibilidad evalúa cómo los usuarios con discapacidades pueden usar una interfaz."
+    },
+    {
+        "question": "¿Qué es un flujo de usuario?",
+        "options": [
+            "Una serie de pantallas en un sitio web",
+            "El camino que sigue el usuario para completar una tarea",
+            "Una prueba para evaluar la calidad de la interfaz",
+            "Un diseño de una aplicación"
+        ],
+        "correctAnswer": 1,
+        "explanation": "El flujo de usuario describe el camino que el usuario sigue para completar una acción."
+    }
+]

@@ -1,0 +1,299 @@
+[
+    {
+        "question": "¿Qué es la integración continua (CI)?",
+        "options": [
+            "Un método para probar el software",
+            "Un enfoque para automatizar la construcción y prueba del software",
+            "Un sistema para gestionar bases de datos",
+            "Un servicio de hosting en la nube"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La integración continua (CI) automatiza la construcción y prueba del software para identificar rápidamente problemas."
+    },
+    {
+        "question": "¿Cuál es el propósito de Docker?",
+        "options": [
+            "Crear copias de seguridad del sistema",
+            "Virtualizar la infraestructura",
+            "Contenerizar aplicaciones",
+            "Proveer soporte técnico"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Docker se utiliza para contenerizar aplicaciones, facilitando su transporte y distribución."
+    },
+    {
+        "question": "¿Qué hace Kubernetes?",
+        "options": [
+            "Gestiona contenedores Docker",
+            "Desarrolla aplicaciones",
+            "Proporciona soporte técnico",
+            "Automatiza las operaciones de seguridad"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Kubernetes gestiona y orquesta contenedores, permitiendo el despliegue a gran escala."
+    },
+    {
+        "question": "¿Qué es el monitoreo continuo?",
+        "options": [
+            "Un proceso para probar el software antes del despliegue",
+            "Una técnica para desarrollar software sin errores",
+            "Una actividad para monitorear continuamente aplicaciones en producción",
+            "Un método para mejorar la interfaz de usuario"
+        ],
+        "correctAnswer": 2,
+        "explanation": "El monitoreo continuo permite identificar y resolver rápidamente problemas en aplicaciones en producción."
+    },
+    {
+        "question": "¿Qué herramienta se utiliza para monitorear aplicaciones?",
+        "options": [
+            "Git",
+            "Nagios",
+            "JIRA",
+            "Docker"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Nagios es una herramienta de monitoreo ampliamente utilizada para aplicaciones e infraestructuras de TI."
+    },
+    {
+        "question": "¿Qué es el despliegue continuo (CD)?",
+        "options": [
+            "Un proceso para automatizar la implementación del software",
+            "Un método para actualizar bases de datos",
+            "Un sistema de gestión de código",
+            "Un tipo de respaldo"
+        ],
+        "correctAnswer": 0,
+        "explanation": "El despliegue continuo (CD) automatiza la implementación del software en producción."
+    },
+    {
+        "question": "¿Cuál es el rol de Jenkins?",
+        "options": [
+            "Monitorear la red",
+            "Orquestar contenedores",
+            "Automatizar CI/CD",
+            "Gestionar recursos en la nube"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Jenkins es una herramienta popular para la automatización de procesos de integración y despliegue continuo."
+    },
+    {
+        "question": "¿Qué es Terraform?",
+        "options": [
+            "Una herramienta para automatizar la infraestructura",
+            "Un lenguaje de programación",
+            "Un tipo de base de datos",
+            "Un sistema operativo"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Terraform es una herramienta de Infrastructure as Code para automatizar la gestión de infraestructura."
+    },
+    {
+        "question": "¿Cuál es el propósito de Ansible?",
+        "options": [
+            "Configurar y automatizar servidores",
+            "Monitorear aplicaciones",
+            "Probar software",
+            "Analizar tráfico de red"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Ansible se utiliza para la configuración y automatización de servidores."
+    },
+    {
+        "question": "¿Qué es un playbook de Ansible?",
+        "options": [
+            "Un informe de rendimiento del servidor",
+            "Una lista de tareas para automatizar configuraciones",
+            "Un programa para desarrollar software",
+            "Una copia de seguridad de datos"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Un playbook de Ansible es una lista de tareas utilizada para automatizar configuraciones."
+    },
+    {
+        "question": "¿Qué es el concepto de 'Infrastructure as Code'?",
+        "options": [
+            "Gestionar la infraestructura con scripts",
+            "Escribir código solo para la infraestructura",
+            "Utilizar hardware virtual",
+            "Monitorear la infraestructura de TI"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Infrastructure as Code significa gestionar la infraestructura mediante scripts, haciéndola reproducible y automatizable."
+    },
+    {
+        "question": "¿Qué significa 'escalabilidad' en DevOps?",
+        "options": [
+            "Agregar más usuarios a un sistema",
+            "Aumentar los recursos en respuesta a la demanda",
+            "Reducir los costos del sistema",
+            "Crear copias de seguridad regulares"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La escalabilidad significa aumentar los recursos en respuesta a la demanda."
+    },
+    {
+        "question": "¿Qué es un microservicio?",
+        "options": [
+            "Un servidor dedicado individual",
+            "Una arquitectura en la que las aplicaciones se dividen en servicios independientes",
+            "Una base de datos pequeña",
+            "Un componente de seguridad"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Un microservicio es una arquitectura que divide las aplicaciones en servicios independientes y modulares."
+    },
+    {
+        "question": "¿Qué es Git?",
+        "options": [
+            "Un sistema de control de versiones",
+            "Un editor de código",
+            "Un lenguaje de programación",
+            "Un servicio de cloud hosting"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Git es un sistema de control de versiones que permite a los equipos colaborar en el código."
+    },
+    {
+        "question": "¿Para qué se usa Prometheus?",
+        "options": [
+            "Para gestionar versiones de código",
+            "Para automatizar despliegues",
+            "Para monitorear y recolectar métricas",
+            "Para realizar pruebas de software"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Prometheus es una herramienta de monitoreo que recopila métricas para aplicaciones e infraestructura."
+    },
+    {
+        "question": "¿Cuál es la función principal de ELK Stack?",
+        "options": [
+            "Monitorear la red",
+            "Gestionar contenedores",
+            "Recolectar, analizar y visualizar logs",
+            "Realizar pruebas de carga"
+        ],
+        "correctAnswer": 2,
+        "explanation": "ELK Stack (Elasticsearch, Logstash y Kibana) se utiliza para recolectar, analizar y visualizar logs."
+    },
+    {
+        "question": "¿Qué es la Continuous Delivery (CD)?",
+        "options": [
+            "Una fase de pruebas continuas",
+            "El proceso de automatizar la liberación de software hasta el entorno de producción",
+            "Un método para crear copias de seguridad automáticas",
+            "Un sistema para realizar pruebas de seguridad"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La Continuous Delivery (CD) es el proceso de automatizar la liberación de software hasta el entorno de producción."
+    },
+    {
+        "question": "¿Qué es el concepto de 'rolling update'?",
+        "options": [
+            "Actualizar toda la aplicación a la vez",
+            "Actualizar una parte del sistema a la vez sin tiempo de inactividad",
+            "Realizar copias de seguridad de la aplicación",
+            "Crear una nueva versión de respaldo"
+        ],
+        "correctAnswer": 1,
+        "explanation": "El 'rolling update' actualiza una parte del sistema a la vez, evitando tiempos de inactividad."
+    },
+    {
+        "question": "¿Cuál es la función de un pipeline CI/CD?",
+        "options": [
+            "Proporcionar soporte a los usuarios",
+            "Automatizar el desarrollo y la liberación de software",
+            "Gestionar bases de datos",
+            "Monitorear el rendimiento de la red"
+        ],
+        "correctAnswer": 1,
+        "explanation": "El pipeline CI/CD se utiliza para automatizar el proceso de desarrollo, pruebas y liberación de software."
+    },
+    {
+        "question": "¿Qué es Helm?",
+        "options": [
+            "Un sistema operativo",
+            "Una herramienta de monitoreo",
+            "Una herramienta para gestionar paquetes de Kubernetes",
+            "Un lenguaje de programación"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Helm es una herramienta para la gestión de paquetes de Kubernetes."
+    },
+    {
+        "question": "¿Qué es un Load Balancer?",
+        "options": [
+            "Una herramienta para monitorear el tráfico",
+            "Una tecnología para distribuir la carga entre varios servidores",
+            "Una base de datos de respaldo",
+            "Un firewall"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Un Load Balancer distribuye el tráfico entre varios servidores para mejorar el rendimiento y la confiabilidad."
+    },
+    {
+        "question": "¿Qué es Vault?",
+        "options": [
+            "Una herramienta para gestionar versiones de código",
+            "Una herramienta para gestionar credenciales y secretos",
+            "Un programa de respaldo",
+            "Un servicio de red"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Vault es una herramienta para gestionar de manera segura credenciales y secretos."
+    },
+    {
+        "question": "¿Qué es Splunk?",
+        "options": [
+            "Una herramienta para analizar y monitorear logs",
+            "Un sistema de respaldo",
+            "Una app para comunicaciones empresariales",
+            "Un sistema de gestión de redes"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Splunk es una herramienta para el análisis y monitoreo de logs empresariales."
+    },
+    {
+        "question": "¿Qué es la seguridad de aplicaciones (Application Security)?",
+        "options": [
+            "Un firewall para el sistema",
+            "El uso de técnicas y herramientas para proteger aplicaciones contra vulnerabilidades",
+            "Un programa de monitoreo de red",
+            "Un método de respaldo"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La seguridad de aplicaciones implica el uso de técnicas y herramientas para proteger aplicaciones contra vulnerabilidades."
+    },
+    {
+        "question": "¿Qué es la observabilidad?",
+        "options": [
+            "Solo monitorear el rendimiento",
+            "Un conjunto de métricas para comprender el sistema y su salud",
+            "Un tipo de análisis de logs",
+            "Un enfoque para la seguridad"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La observabilidad se refiere al conjunto de métricas, logs y trazas para comprender la salud y el rendimiento del sistema."
+    },
+    {
+        "question": "¿Qué significa 'prueba de extremo a extremo' (end-to-end test)?",
+        "options": [
+            "Una prueba de componentes individuales",
+            "Una prueba para verificar el flujo completo de una aplicación",
+            "Un método de respaldo",
+            "Un modo de despliegue"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Una prueba de extremo a extremo verifica el flujo completo de una aplicación desde el punto de vista del usuario."
+    },
+    {
+        "question": "¿Qué es Istio?",
+        "options": [
+            "Un sistema de gestión de contenedores",
+            "Una base de datos",
+            "Un service mesh para gestionar la comunicación entre microservicios",
+            "Un sistema de respaldo"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Istio es un service mesh que facilita la gestión de la comunicación entre microservicios."
+    }
+]

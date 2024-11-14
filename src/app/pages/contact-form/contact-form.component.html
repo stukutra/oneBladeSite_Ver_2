@@ -58,7 +58,6 @@
       <div class="mb-3 form-group">
         <input type="file" id="file" name="file" class="form-control file-input" (change)="onFileChange($event)"
           required />
-        <small class="form-text">{{ 'FORM.PLACEHOLDERS.FILE' | translate }}</small>
         <div *ngIf="fileError" class="text-danger">
           {{ fileError }}
         </div>

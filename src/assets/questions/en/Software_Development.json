@@ -1,0 +1,321 @@
+[
+    {
+        "question": "What is inheritance in object-oriented programming?",
+        "options": [
+            "A technique to copy existing classes",
+            "A relationship between classes that allows code reuse",
+            "A way to declare variables",
+            "A method to write non-repetitive code"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Inheritance is a concept for code reuse and modeling."
+    },
+    {
+        "question": "What is encapsulation?",
+        "options": [
+            "Hiding an object's internal state",
+            "A special type of class",
+            "A technique to create multiple instances",
+            "A type of variable"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Encapsulation is the mechanism of hiding implementation details."
+    },
+    {
+        "question": "What is polymorphism?",
+        "options": [
+            "A type of variable",
+            "The ability of an object to take on multiple forms",
+            "A mechanism for handling errors",
+            "A technique for creating objects"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Polymorphism allows treating objects of different types uniformly."
+    },
+    {
+        "question": "What is a constructor in a class?",
+        "options": [
+            "A method to create new variables",
+            "A special method for initializing an object",
+            "A function to remove attributes from an object",
+            "A special type of property"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A constructor is a special method used to initialize a new object."
+    },
+    {
+        "question": "What is a static method?",
+        "options": [
+            "A method that belongs to the class rather than an instance",
+            "A method that runs automatically",
+            "A method that cannot be inherited",
+            "A method that is called only once"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Static methods belong to the class and can be called without creating an instance."
+    },
+    {
+        "question": "What is the purpose of an interface?",
+        "options": [
+            "To define a concrete data type",
+            "To define a set of methods without implementation",
+            "To define a constructor for a class",
+            "To manage error handling"
+        ],
+        "correctAnswer": 1,
+        "explanation": "An interface defines a contract for classes that implement it."
+    },
+    {
+        "question": "What is method overriding?",
+        "options": [
+            "Creating a method with the same name in a subclass to change its behavior",
+            "Copying a method from one class to another",
+            "Hiding an existing method in a class",
+            "Deleting a method from the base class"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Overriding allows redefining a method of the base class in a derived class."
+    },
+    {
+        "question": "What is an attribute in a class?",
+        "options": [
+            "A special method",
+            "A property or variable that belongs to the class or instance",
+            "A function to perform operations",
+            "A type of class"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Attributes are properties of a class representing the state or characteristics of an object."
+    },
+    {
+        "question": "What is the purpose of the 'public' access modifier?",
+        "options": [
+            "To make a member accessible only within the class",
+            "To make a member accessible from anywhere in the program",
+            "To restrict access to derived objects",
+            "To make the member modifiable only once"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The 'public' modifier makes a member accessible from anywhere in the program."
+    },
+    {
+        "question": "What does the term 'class' represent in object-oriented programming?",
+        "options": [
+            "A special type of function",
+            "A type of variable",
+            "A blueprint for creating objects",
+            "A type of loop"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A class is a blueprint or template for creating objects with attributes and methods."
+    },
+    {
+        "question": "What does the term 'object' mean in object-oriented programming?",
+        "options": [
+            "A temporary variable",
+            "An instance of a class",
+            "A function that returns no values",
+            "A programming error"
+        ],
+        "correctAnswer": 1,
+        "explanation": "An object is an instance of a class and represents an entity with properties and behavior."
+    },
+    {
+        "question": "What is the difference between 'class' and 'object'?",
+        "options": [
+            "A class is a type of variable, whereas an object is a type of function",
+            "A class is an instance of an object",
+            "A class is a blueprint, whereas an object is an instance of that blueprint",
+            "There is no difference between class and object"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A class is a blueprint for creating objects, while an object is an instance of the class."
+    },
+    {
+        "question": "What does 'abstraction' mean in object-oriented programming?",
+        "options": [
+            "Hiding the implementation and showing only the essential features",
+            "Creating a copy of a class",
+            "Making all variables accessible",
+            "Simplifying code without classes"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Abstraction is a concept for hiding complex details and showing only what is relevant."
+    },
+    {
+        "question": "What is the Singleton design pattern?",
+        "options": [
+            "A pattern that ensures a single instance of the class",
+            "A pattern to create multiple objects",
+            "A pattern to structure complex data",
+            "A pattern that makes methods static"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The Singleton pattern ensures a class has only one globally accessible instance."
+    },
+    {
+        "question": "What is the difference between an 'abstract class' and an 'interface'?",
+        "options": [
+            "An abstract class has unimplemented methods, whereas an interface has only constants",
+            "An abstract class can have implemented methods, while an interface cannot",
+            "An interface has implemented methods, while an abstract class does not",
+            "There is no difference"
+        ],
+        "correctAnswer": 1,
+        "explanation": "An abstract class can have implemented methods, while an interface defines only methods."
+    },
+    {
+        "question": "What is method overloading?",
+        "options": [
+            "A method that runs automatically",
+            "Defining multiple methods with the same name but different parameters",
+            "A method that is called only once",
+            "Hiding a method"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Overloading allows creating methods with the same name but different parameters."
+    },
+    {
+        "question": "What is a 'package' in programming?",
+        "options": [
+            "A group of related classes",
+            "A special type of variable",
+            "A static method",
+            "A loop in programming"
+        ],
+        "correctAnswer": 0,
+        "explanation": "A package is a container of related classes and interfaces."
+    },
+    {
+        "question": "What is exception handling?",
+        "options": [
+            "A process to execute repetitive code",
+            "A technique to solve compilation errors",
+            "A method to handle runtime errors",
+            "A design pattern"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Exception handling is the process of handling errors during program execution."
+    },
+    {
+        "question": "What is the purpose of a constructor?",
+        "options": [
+            "To delete an object",
+            "To initialize a new object",
+            "To save an object in the database",
+            "To check memory availability"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The constructor is used to initialize instance variables when creating a new object."
+    },
+    {
+        "question": "What does 'immutable' mean for an object?",
+        "options": [
+            "The object cannot be modified once created",
+            "The object can be deleted only once",
+            "The object has limited access",
+            "The object cannot be saved"
+        ],
+        "correctAnswer": 0,
+        "explanation": "An immutable object cannot be modified once created."
+    },
+    {
+        "question": "What does the term 'loop' represent?",
+        "options": [
+            "A cycle that repeats instructions multiple times",
+            "A special variable",
+            "A type of function",
+            "A design pattern"
+        ],
+        "correctAnswer": 0,
+        "explanation": "A loop is a control structure to repeat a set of instructions."
+    },
+    {
+        "question": "What is the difference between '==' and 'equals()' in Java?",
+        "options": [
+            "'==' compares object identity, whereas 'equals()' compares the value",
+            "'==' compares the value, 'equals()' checks class equality",
+            "There is no difference",
+            "'==' compares the string length"
+        ],
+        "correctAnswer": 0,
+        "explanation": "'==' checks if two references point to the same object, while 'equals()' compares the value."
+    },
+    {
+        "question": "What is Garbage Collection?",
+        "options": [
+            "A process to collect unused objects",
+            "A function to save data",
+            "A loop to iterate over objects",
+            "A mechanism to write data to a file"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Garbage Collection frees up memory by removing unused objects."
+    },
+    {
+        "question": "What is a lambda expression?",
+        "options": [
+            "A special type of class",
+            "A way to declare variables",
+            "An unnamed function that can be used as a parameter",
+            "A type of object"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A lambda expression is an unnamed function often used for concise expressions."
+    },
+    {
+        "question": "What is serialization?",
+        "options": [
+            "The process of hiding data",
+            "A method to save the state of an object to a file",
+            "A technique to override methods",
+            "A loop to iterate data"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Serialization allows converting an object's state into a format that can be stored."
+    },
+    {
+        "question": "What does 'namespace' mean in programming?",
+        "options": [
+            "A container for unique name definitions",
+            "A function to save data",
+            "A special type of class",
+            "A variable used in a loop"
+        ],
+        "correctAnswer": 0,
+        "explanation": "A namespace is used to organize classes, functions, and variables in a unique context."
+    },
+    {
+        "question": "What is a framework?",
+        "options": [
+            "A programming loop",
+            "A platform for building applications",
+            "A special type of class",
+            "A variable"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A framework is a support structure for developing applications."
+    },
+    {
+        "question": "What is an API?",
+        "options": [
+            "A type of variable",
+            "An interface for interacting with external software",
+            "A type of loop",
+            "An error in code"
+        ],
+        "correctAnswer": 1,
+        "explanation": "An API is an interface that allows communication between different software."
+    },
+    {
+        "question": "What is a module?",
+        "options": [
+            "An independent section of an application",
+            "A global variable",
+            "A private method",
+            "A for loop"
+        ],
+        "correctAnswer": 0,
+        "explanation": "A module is an independent component of software that performs a specific function."
+    }
+]

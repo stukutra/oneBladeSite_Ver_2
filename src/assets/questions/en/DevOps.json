@@ -1,0 +1,299 @@
+[
+    {
+        "question": "What is Continuous Integration (CI)?",
+        "options": [
+            "A method to test software",
+            "An approach to automate the building and testing of software",
+            "A system to manage databases",
+            "A cloud hosting service"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Continuous Integration (CI) automates the building and testing of software to quickly identify issues."
+    },
+    {
+        "question": "What is the purpose of Docker?",
+        "options": [
+            "To create system backups",
+            "To virtualize infrastructure",
+            "To containerize applications",
+            "To provide technical support"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Docker is used to containerize applications, making it easier to transport and deploy them."
+    },
+    {
+        "question": "What does Kubernetes do?",
+        "options": [
+            "Manages Docker containers",
+            "Develops applications",
+            "Provides technical support",
+            "Automates security operations"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Kubernetes manages and orchestrates containers, enabling large-scale deployment."
+    },
+    {
+        "question": "What is continuous monitoring?",
+        "options": [
+            "A process to test software before deployment",
+            "A technique for error-free software development",
+            "An activity to continuously monitor applications in production",
+            "A method to improve the user interface"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Continuous monitoring allows for quickly identifying and resolving issues in applications in production."
+    },
+    {
+        "question": "Which tool is used for application monitoring?",
+        "options": [
+            "Git",
+            "Nagios",
+            "JIRA",
+            "Docker"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Nagios is a widely used monitoring tool for applications and IT infrastructure."
+    },
+    {
+        "question": "What is Continuous Deployment (CD)?",
+        "options": [
+            "A process to automate software deployment",
+            "A method to update databases",
+            "A code management system",
+            "A type of backup"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Continuous Deployment (CD) automates the deployment of software into production."
+    },
+    {
+        "question": "What is the role of Jenkins?",
+        "options": [
+            "Network monitoring",
+            "Container orchestration",
+            "Automating CI/CD",
+            "Cloud resource management"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Jenkins is a popular tool for automating continuous integration and deployment processes."
+    },
+    {
+        "question": "What is Terraform?",
+        "options": [
+            "A tool to automate infrastructure",
+            "A programming language",
+            "A type of database",
+            "An operating system"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Terraform is an Infrastructure as Code tool used to automate infrastructure management."
+    },
+    {
+        "question": "What is the purpose of Ansible?",
+        "options": [
+            "To configure and automate servers",
+            "To monitor applications",
+            "To test software",
+            "To analyze network traffic"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Ansible is used for server configuration and automation."
+    },
+    {
+        "question": "What is an Ansible playbook?",
+        "options": [
+            "A server performance report",
+            "A list of tasks to automate configurations",
+            "A program for developing software",
+            "A data backup"
+        ],
+        "correctAnswer": 1,
+        "explanation": "An Ansible playbook is a list of tasks used to automate configurations."
+    },
+    {
+        "question": "What is the concept of 'Infrastructure as Code'?",
+        "options": [
+            "Managing infrastructure with scripts",
+            "Writing code only for infrastructure",
+            "Using virtual hardware",
+            "Monitoring IT infrastructure"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Infrastructure as Code means managing infrastructure through scripts, making it reproducible and automatable."
+    },
+    {
+        "question": "What does 'scalability' mean in DevOps?",
+        "options": [
+            "Adding more users to a system",
+            "Increasing resources in response to demand",
+            "Reducing system costs",
+            "Creating regular backups"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Scalability means increasing resources in response to demand."
+    },
+    {
+        "question": "What is a microservice?",
+        "options": [
+            "A single dedicated server",
+            "An architecture where applications are divided into independent services",
+            "A small database",
+            "A security component"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A microservice is an architecture that divides applications into independent, modular services."
+    },
+    {
+        "question": "What is Git?",
+        "options": [
+            "A version control system",
+            "A code editor",
+            "A programming language",
+            "A cloud hosting service"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Git is a version control system that enables teams to collaborate on code."
+    },
+    {
+        "question": "What is Prometheus used for?",
+        "options": [
+            "To manage code versions",
+            "To automate deployments",
+            "To monitor and collect metrics",
+            "To run software tests"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Prometheus is a monitoring tool that collects metrics for applications and infrastructure."
+    },
+    {
+        "question": "What is the primary function of the ELK Stack?",
+        "options": [
+            "Network monitoring",
+            "Container management",
+            "Collecting, analyzing, and visualizing logs",
+            "Load testing"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The ELK Stack (Elasticsearch, Logstash, and Kibana) is used to collect, analyze, and visualize logs."
+    },
+    {
+        "question": "What is Continuous Delivery (CD)?",
+        "options": [
+            "A continuous testing phase",
+            "The process of automating software release to production",
+            "A method for creating automatic backups",
+            "A system for security testing"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Continuous Delivery (CD) is the process of automating software release to the production environment."
+    },
+    {
+        "question": "What is the concept of 'rolling update'?",
+        "options": [
+            "Updating the entire application at once",
+            "Updating part of the system at a time without downtime",
+            "Backing up the application",
+            "Creating a new backup version"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A 'rolling update' updates part of the system at a time, avoiding downtime."
+    },
+    {
+        "question": "What is the purpose of a CI/CD pipeline?",
+        "options": [
+            "Providing user support",
+            "Automating software development and release",
+            "Managing databases",
+            "Monitoring network performance"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A CI/CD pipeline is used to automate the process of software development, testing, and release."
+    },
+    {
+        "question": "What is Helm?",
+        "options": [
+            "An operating system",
+            "A monitoring tool",
+            "A tool for managing Kubernetes packages",
+            "A programming language"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Helm is a tool for managing Kubernetes packages."
+    },
+    {
+        "question": "What is a Load Balancer?",
+        "options": [
+            "A tool to monitor traffic",
+            "A technology to distribute load across multiple servers",
+            "A backup database",
+            "A firewall"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A Load Balancer distributes traffic across multiple servers to improve performance and reliability."
+    },
+    {
+        "question": "What is Vault?",
+        "options": [
+            "A tool for version control",
+            "A tool for managing credentials and secrets",
+            "A backup program",
+            "A network service"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Vault is a tool for securely managing credentials and secrets."
+    },
+    {
+        "question": "What is Splunk?",
+        "options": [
+            "A tool for analyzing and monitoring logs",
+            "A backup system",
+            "A business communication app",
+            "A network management system"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Splunk is a tool for analyzing and monitoring business logs."
+    },
+    {
+        "question": "What is Application Security?",
+        "options": [
+            "A firewall for the system",
+            "The use of techniques and tools to protect applications from vulnerabilities",
+            "A network monitoring program",
+            "A backup method"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Application Security involves using techniques and tools to protect applications from vulnerabilities."
+    },
+    {
+        "question": "What is observability?",
+        "options": [
+            "Only monitoring performance",
+            "A set of metrics to understand the system and its health",
+            "A type of log analysis",
+            "A security approach"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Observability refers to the collection of metrics, logs, and tracing to understand system health and performance."
+    },
+    {
+        "question": "What is an end-to-end test?",
+        "options": [
+            "A test of individual components",
+            "A test to verify the entire application flow",
+            "A backup method",
+            "A deployment mode"
+        ],
+        "correctAnswer": 1,
+        "explanation": "An end-to-end test verifies the entire application flow from the user’s perspective."
+    },
+    {
+        "question": "What is Istio?",
+        "options": [
+            "A container management system",
+            "A database",
+            "A service mesh for managing communication between microservices",
+            "A backup system"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Istio is a service mesh that facilitates managing communication between microservices."
+    }
+]

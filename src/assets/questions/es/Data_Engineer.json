@@ -1,0 +1,222 @@
+[
+    {
+        "question": "¿Cuál es el tipo de base de datos más común?",
+        "options": [
+            "NoSQL",
+            "Relacional",
+            "Grafo",
+            "Serie de tiempo"
+        ],
+        "correctAnswer": 1,
+        "explanation": "El Sistema de Gestión de Bases de Datos Relacional (RDBMS) es el tipo de base de datos más común."
+    },
+    {
+        "question": "¿Qué es un clúster de datos?",
+        "options": [
+            "Un grupo de computadoras compartidas",
+            "Una técnica para reducir la redundancia de datos",
+            "Un conjunto de nodos que trabajan juntos para gestionar los datos",
+            "Un tipo de base de datos"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Un clúster de datos es un conjunto de nodos que trabajan juntos para gestionar los datos."
+    },
+    {
+        "question": "¿Cuál es el propósito de la gobernanza de datos?",
+        "options": [
+            "Gestionar la seguridad de los datos",
+            "Optimizar el acceso a los datos",
+            "Mejorar la calidad e integridad de los datos",
+            "Reducir los costos de almacenamiento"
+        ],
+        "correctAnswer": 2,
+        "explanation": "La gobernanza de datos es el proceso de gestionar y controlar la información para asegurar que sea precisa, completa y segura."
+    },
+    {
+        "question": "¿Qué es un Data Lake?",
+        "options": [
+            "Un tipo de base de datos",
+            "Una plataforma de análisis de datos",
+            "Un repositorio de grandes cantidades de datos no estructurados",
+            "Un sistema de gestión de copias de seguridad"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Un Data Lake es un repositorio de grandes cantidades de datos no estructurados que pueden usarse para el análisis y el aprendizaje automático."
+    },
+    {
+        "question": "¿Cuál es el propósito de la calidad de los datos?",
+        "options": [
+            "Garantizar la seguridad de los datos",
+            "Mejorar la velocidad de las consultas",
+            "Reducir los costos de almacenamiento",
+            "Asegurar que los datos sean precisos y completos"
+        ],
+        "correctAnswer": 3,
+        "explanation": "La calidad de los datos es el proceso de asegurar que los datos sean precisos, completos y coherentes."
+    },
+    {
+        "question": "¿Qué es un pipeline de datos?",
+        "options": [
+            "Un flujo de trabajo para el análisis de datos",
+            "Una técnica para reducir la redundancia de datos",
+            "Un proceso de extracción, transformación y carga (ETL) de datos",
+            "Un tipo de base de datos"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Un pipeline de datos es un proceso que toma datos de entrada, los procesa y los carga en un formato utilizable."
+    },
+    {
+        "question": "¿Cuál es el propósito de la normalización de bases de datos?",
+        "options": [
+            "Simplificar la estructura de la base de datos",
+            "Aumentar la seguridad de los datos",
+            "Eliminar la redundancia y mejorar la integridad de los datos",
+            "Optimizar la velocidad de las consultas"
+        ],
+        "correctAnswer": 2,
+        "explanation": "La normalización elimina la redundancia y mejora la integridad de los datos en las bases de datos."
+    },
+    {
+        "question": "¿Qué es un Científico de Datos?",
+        "options": [
+            "Un profesional que gestiona los datos",
+            "Un programador especializado en aprendizaje automático",
+            "Un estadístico que se enfoca en el análisis de datos",
+            "Un experto en ciberseguridad"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Un Científico de Datos es un profesional que utiliza técnicas de análisis y visualización para obtener conocimiento de los datos."
+    },
+    {
+        "question": "¿Cuál es el propósito de la visualización de datos?",
+        "options": [
+            "Presentar los resultados del análisis de datos",
+            "Gestionar la seguridad de los datos",
+            "Optimizar el acceso a los datos",
+            "Reducir los costos de almacenamiento"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La visualización de datos es el proceso de presentar los resultados del análisis de datos de manera clara y fácil de interpretar."
+    },
+    {
+        "question": "¿Qué es un esquema de base de datos?",
+        "options": [
+            "Un tipo de base de datos",
+            "Una técnica para reducir la redundancia de datos",
+            "La estructura organizativa de la base de datos",
+            "El lenguaje utilizado para crear la base de datos"
+        ],
+        "correctAnswer": 2,
+        "explanation": "El esquema de una base de datos es la estructura organizativa que define cómo se almacenan y relacionan los datos."
+    },
+    {
+        "question": "¿Cuál es el propósito de la agregación de datos?",
+        "options": [
+            "Reducir los costos de almacenamiento",
+            "Mejorar el acceso a los datos",
+            "Agrupar los datos para obtener información más significativa",
+            "Gestionar la seguridad de los datos"
+        ],
+        "correctAnswer": 2,
+        "explanation": "La agregación de datos es el proceso de recolectar y analizar datos para obtener información más significativa."
+    },
+    {
+        "question": "¿Qué es un Data Mart?",
+        "options": [
+            "Un tipo de base de datos",
+            "Una plataforma de análisis de datos",
+            "Un repositorio de grandes cantidades de datos estructurados",
+            "Un sistema de gestión de copias de seguridad"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Un Data Mart es un repositorio de datos estructurados que han sido preprocesados y están listos para su uso."
+    },
+    {
+        "question": "¿Cuál es el propósito de la gobernanza de datos?",
+        "options": [
+            "Gestionar la seguridad de los datos",
+            "Mejorar el acceso a los datos",
+            "Asegurar que los datos sean precisos y completos",
+            "Definir políticas para el uso de los datos"
+        ],
+        "correctAnswer": 3,
+        "explanation": "La gobernanza de datos es el proceso de definir políticas para el uso, la gestión y la seguridad de los datos."
+    },
+    {
+        "question": "¿Qué es un Data Warehouse?",
+        "options": [
+            "Un tipo de base de datos",
+            "Una plataforma de análisis de datos",
+            "Un repositorio de grandes cantidades de datos estructurados",
+            "Un sistema de gestión de copias de seguridad"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Un Data Warehouse es un repositorio de datos estructurados que han sido preprocesados y están listos para su uso."
+    },
+    {
+        "question": "¿Cuál es el propósito de la integración de datos?",
+        "options": [
+            "Gestionar la seguridad de los datos",
+            "Mejorar el acceso a los datos",
+            "Asegurar que los datos sean precisos y completos",
+            "Unificar los datos de diferentes fuentes"
+        ],
+        "correctAnswer": 3,
+        "explanation": "La integración de datos es el proceso de unificar datos de diferentes fuentes de manera coherente y utilizable."
+    },
+    {
+        "question": "¿Qué es un Data Lake?",
+        "options": [
+            "Un tipo de base de datos",
+            "Una plataforma de análisis de datos",
+            "Un repositorio de grandes cantidades de datos no estructurados",
+            "Un sistema de gestión de copias de seguridad"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Un Data Lake es un repositorio de grandes cantidades de datos no estructurados que pueden usarse para el análisis y el aprendizaje automático."
+    },
+    {
+        "question": "¿Cuál es el propósito de la narración de datos (data storytelling)?",
+        "options": [
+            "Presentar los resultados del análisis de datos",
+            "Gestionar la seguridad de los datos",
+            "Optimizar el acceso a los datos",
+            "Reducir los costos de almacenamiento"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La narración de datos es el proceso de presentar los resultados del análisis de datos de manera clara y fácil de interpretar."
+    },
+    {
+        "question": "¿Qué es un Ingeniero de Datos?",
+        "options": [
+            "Un profesional que gestiona los datos",
+            "Un programador especializado en aprendizaje automático",
+            "Un estadístico que se enfoca en el análisis de datos",
+            "Un experto en ciberseguridad"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Un Ingeniero de Datos es un profesional responsable de gestionar y desarrollar infraestructuras para el uso y la gestión de datos."
+    },
+    {
+        "question": "¿Cuál es el propósito de la catalogación de datos?",
+        "options": [
+            "Gestionar la seguridad de los datos",
+            "Mejorar el acceso a los datos",
+            "Asegurar que los datos sean precisos y completos",
+            "Crear una lista de todos los datos disponibles"
+        ],
+        "correctAnswer": 3,
+        "explanation": "La catalogación de datos es el proceso de crear una lista de todos los datos disponibles, con información sobre su origen, estructura y uso."
+    },
+    {
+        "question": "¿Qué es un Arquitecto de Datos?",
+        "options": [
+            "Un profesional que gestiona los datos",
+            "Un programador especializado en aprendizaje automático",
+            "Un estadístico que se enfoca en el análisis de datos",
+            "Un experto en ciberseguridad"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Un Arquitecto de Datos es un profesional responsable de diseñar y desarrollar infraestructuras para el uso y la gestión de datos."
+    }
+]

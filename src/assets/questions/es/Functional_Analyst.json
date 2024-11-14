@@ -1,0 +1,321 @@
+[
+    {
+        "question": "¿Cuál es el rol de un Analista Funcional?",
+        "options": [
+            "Escribir código para aplicaciones",
+            "Diseñar la infraestructura de TI",
+            "Analizar y documentar los requisitos de los usuarios",
+            "Gestionar las copias de seguridad del sistema"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Un Analista Funcional analiza y documenta los requisitos de los usuarios."
+    },
+    {
+        "question": "¿Qué es un requisito funcional?",
+        "options": [
+            "Una característica técnica de un sistema",
+            "Una necesidad del usuario que describe una función específica",
+            "Un tipo de base de datos",
+            "Un requisito innecesario"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Los requisitos funcionales describen específicamente las funciones que el sistema debe realizar."
+    },
+    {
+        "question": "¿Cuál es el propósito de un caso de uso?",
+        "options": [
+            "Definir una estructura de base de datos",
+            "Describir cómo un sistema interactúa con un usuario",
+            "Probar un software",
+            "Gestionar el proyecto"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Los casos de uso describen cómo un sistema interactúa con los usuarios y otros sistemas."
+    },
+    {
+        "question": "¿Qué es un flujo de proceso?",
+        "options": [
+            "Un diagrama que describe los procesos de negocio",
+            "Código para automatización",
+            "Un programa de monitoreo",
+            "Un tipo de base de datos"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Un flujo de proceso representa visualmente los procesos de negocio."
+    },
+    {
+        "question": "¿Qué hace un diagrama ER?",
+        "options": [
+            "Representa las relaciones entre entidades en una base de datos",
+            "Muestra la estructura de una red",
+            "Gestiona las versiones del software",
+            "Automatiza los flujos de trabajo"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Un diagrama ER (Entidad-Relación) representa las relaciones entre entidades en una base de datos."
+    },
+    {
+        "question": "¿Qué es un requisito no funcional?",
+        "options": [
+            "Un requisito opcional para el sistema",
+            "Un aspecto del sistema que involucra rendimiento y usabilidad",
+            "Un tipo de prueba",
+            "Una funcionalidad específica requerida por el usuario"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Los requisitos no funcionales cubren aspectos como el rendimiento, la usabilidad y la seguridad del sistema."
+    },
+    {
+        "question": "¿Qué significa 'elicitación de requisitos'?",
+        "options": [
+            "El proceso de verificar los requisitos",
+            "El proceso de recopilar los requisitos de los usuarios",
+            "El análisis de especificaciones técnicas",
+            "Las pruebas de funcionalidad"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La elicitación de requisitos es el proceso de recopilar y aclarar las necesidades del usuario."
+    },
+    {
+        "question": "¿Qué es un documento de especificación de requisitos?",
+        "options": [
+            "Un manual de usuario",
+            "Una lista de funcionalidades requeridas",
+            "Una descripción detallada de los requisitos del sistema",
+            "Una guía de desarrollo"
+        ],
+        "correctAnswer": 2,
+        "explanation": "El documento de especificación de requisitos detalla todas las funcionalidades y requisitos del sistema."
+    },
+    {
+        "question": "¿Qué hace el análisis de brechas?",
+        "options": [
+            "Identifica la diferencia entre el sistema actual y el sistema deseado",
+            "Depura el código",
+            "Crea una copia de seguridad del sistema",
+            "Define los requisitos no funcionales"
+        ],
+        "correctAnswer": 0,
+        "explanation": "El análisis de brechas identifica las diferencias entre el estado actual y el sistema deseado."
+    },
+    {
+        "question": "¿Qué es un mockup?",
+        "options": [
+            "Un diagrama que muestra la arquitectura de red",
+            "Un prototipo visual de una interfaz de usuario",
+            "Un informe de rendimiento",
+            "Un proceso de depuración"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Un mockup es un prototipo visual que muestra cómo podría ser la interfaz de usuario."
+    },
+    {
+        "question": "¿Cuál es el rol de un wireframe?",
+        "options": [
+            "Definir la estructura de una aplicación sin detalles gráficos",
+            "Representar el rendimiento del sistema",
+            "Monitorear el tráfico de red",
+            "Desarrollar código"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Un wireframe define la estructura de una aplicación visualmente sin detalles gráficos."
+    },
+    {
+        "question": "¿Qué es el seguimiento de requisitos?",
+        "options": [
+            "Monitorear las actividades del equipo",
+            "Asegurarse de que se cumplan los requisitos en el proyecto",
+            "Escribir el código de prueba",
+            "Automatizar los flujos de trabajo"
+        ],
+        "correctAnswer": 1,
+        "explanation": "El seguimiento de requisitos asegura que se cumplan todos los requisitos definidos durante el desarrollo."
+    },
+    {
+        "question": "¿Qué representa un diagrama de flujo?",
+        "options": [
+            "Un conjunto de códigos fuente",
+            "Un diagrama que representa los pasos de un proceso",
+            "Una red de seguridad",
+            "Una lista de usuarios"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Un diagrama de flujo representa los pasos de un proceso mediante símbolos y flechas."
+    },
+    {
+        "question": "¿Cuál es el propósito de las pruebas de aceptación de usuario (UAT)?",
+        "options": [
+            "Probar la infraestructura de TI",
+            "Asegurarse de que el sistema cumpla con las necesidades del usuario",
+            "Desarrollar nuevas funcionalidades",
+            "Crear copias de seguridad de los datos"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Las pruebas de aceptación de usuario (UAT) aseguran que el sistema cumpla con las necesidades de los usuarios."
+    },
+    {
+        "question": "¿Qué es una matriz de trazabilidad de requisitos?",
+        "options": [
+            "Un sistema para monitorear datos",
+            "Un documento que mapea los requisitos con las especificaciones del proyecto",
+            "Un diagrama de red",
+            "Un informe de rendimiento"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Una matriz de trazabilidad de requisitos mapea los requisitos del usuario con las especificaciones del proyecto."
+    },
+    {
+        "question": "¿Qué representa el término 'scope creep'?",
+        "options": [
+            "Agregar nuevas funcionalidades a un proyecto sin la planificación adecuada",
+            "Un proceso de depuración",
+            "Un tipo de base de datos",
+            "Una copia de seguridad del sistema"
+        ],
+        "correctAnswer": 0,
+        "explanation": "El 'scope creep' ocurre cuando se agregan nuevas funcionalidades al proyecto sin la planificación adecuada."
+    },
+    {
+        "question": "¿Qué es el análisis de datos?",
+        "options": [
+            "Realizar copias de seguridad de datos",
+            "Analizar el rendimiento del sistema",
+            "El proceso de extraer información de los datos para mejorar las decisiones",
+            "Crear una base de datos"
+        ],
+        "correctAnswer": 2,
+        "explanation": "El análisis de datos es el proceso de extraer información significativa de los datos para apoyar mejores decisiones."
+    },
+    {
+        "question": "¿Cuál es el rol de un documento de caso de negocio?",
+        "options": [
+            "Definir los beneficios y costos de un proyecto",
+            "Especificar las pautas de seguridad",
+            "Gestionar la documentación de la infraestructura",
+            "Monitorear el rendimiento de la aplicación"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Un caso de negocio justifica el inicio de un proyecto especificando costos, beneficios y riesgos."
+    },
+    {
+        "question": "¿Qué es el análisis de causa raíz?",
+        "options": [
+            "Una técnica para encontrar la causa raíz de un problema",
+            "Un informe de ventas",
+            "Un plan de pruebas para un proyecto",
+            "Una fase de copia de seguridad de datos"
+        ],
+        "correctAnswer": 0,
+        "explanation": "El análisis de causa raíz es una técnica para encontrar la causa subyacente de un problema."
+    },
+    {
+        "question": "¿Qué significa la 'validación de requisitos'?",
+        "options": [
+            "Asegurarse de que los requisitos sean comprensibles y realizables",
+            "Realizar pruebas en los requisitos",
+            "Crear un diagrama de flujo",
+            "Monitorear el rendimiento"
+        ],
+        "correctAnswer": 0,
+        "explanation": "La validación de requisitos asegura que los requisitos sean comprensibles, completos y realizables."
+    },
+    {
+        "question": "¿Qué es una persona de usuario?",
+        "options": [
+            "Un tipo de base de datos",
+            "Un perfil que representa un tipo específico de usuario",
+            "Un requisito técnico",
+            "Un método de prueba"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Una persona de usuario es un perfil que representa un grupo de usuarios con comportamientos y necesidades específicas."
+    },
+    {
+        "question": "¿Qué es la gestión del cambio?",
+        "options": [
+            "Un proceso para gestionar cambios en el sistema",
+            "Un método de pruebas de rendimiento",
+            "Una base de datos de respaldo",
+            "Un lenguaje de programación"
+        ],
+        "correctAnswer": 0,
+        "explanation": "La gestión del cambio maneja cambios en el sistema para minimizar el impacto en los usuarios."
+    },
+    {
+        "question": "¿Qué es una 'historia de usuario'?",
+        "options": [
+            "Una técnica de análisis",
+            "Una descripción de los requisitos desde la perspectiva del usuario",
+            "Un diagrama de flujo",
+            "Un modelo de base de datos"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Una historia de usuario describe los requisitos desde la perspectiva del usuario."
+    },
+    {
+        "question": "¿Cuál es el propósito de las pruebas funcionales?",
+        "options": [
+            "Verificar que el sistema cumpla con los requisitos funcionales",
+            "Probar el rendimiento",
+            "Monitorear datos en tiempo real",
+            "Crear copias de seguridad automáticas"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Las pruebas funcionales verifican que el sistema cumpla con los requisitos funcionales."
+    },
+    {
+        "question": "¿Qué es un diagrama de contexto?",
+        "options": [
+            "Una representación de las interacciones del sistema con entidades externas",
+            "Un gráfico de rendimiento",
+            "Un tipo de red",
+            "Un plan de respaldo"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Un diagrama de contexto representa las interacciones del sistema con los usuarios y otros sistemas externos."
+    },
+    {
+        "question": "¿Qué es la gestión de requisitos?",
+        "options": [
+            "Un método para crear informes",
+            "Un proceso para monitorear, actualizar y documentar los requisitos",
+            "Un tipo de base de datos",
+            "Un sistema de copia de seguridad"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La gestión de requisitos es el proceso de monitorear, actualizar y documentar los requisitos durante el ciclo de vida del proyecto."
+    },
+    {
+        "question": "¿Cuál es el rol de un storyboard?",
+        "options": [
+            "Documentar la estructura del código",
+            "Mostrar visualmente el flujo de una aplicación",
+            "Crear diagramas de red",
+            "Realizar copias de seguridad de los datos"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Un storyboard muestra visualmente el flujo de una aplicación, ilustrando la experiencia del usuario."
+    },
+    {
+        "question": "¿Qué es la creación de prototipos?",
+        "options": [
+            "Un proceso de desarrollo de software",
+            "La creación de modelos iniciales de un producto",
+            "Un método para copias de seguridad de datos",
+            "Una fase de pruebas de rendimiento"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La creación de prototipos consiste en crear modelos iniciales para visualizar y probar las características de un producto."
+    },
+    {
+        "question": "¿Cuál es el rol del análisis de procesos de negocio?",
+        "options": [
+            "Identificar y mejorar los procesos de negocio existentes",
+            "Escribir código para nuevas aplicaciones",
+            "Definir políticas de seguridad",
+            "Realizar copias de seguridad regulares"
+        ],
+        "correctAnswer": 0,
+        "explanation": "El análisis de procesos de negocio tiene como objetivo identificar y optimizar los procesos para mejorar la eficiencia."
+    }
+]

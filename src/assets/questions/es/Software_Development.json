@@ -1,0 +1,321 @@
+[
+    {
+        "question": "¿Qué es la herencia en la programación orientada a objetos?",
+        "options": [
+            "Una técnica para copiar clases existentes",
+            "Una relación entre clases que permite reutilizar código",
+            "Una forma de declarar variables",
+            "Un método para escribir código no repetitivo"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La herencia es un concepto para la reutilización del código y modelado."
+    },
+    {
+        "question": "¿Qué es el encapsulamiento?",
+        "options": [
+            "Ocultar el estado interno de un objeto",
+            "Un tipo especial de clase",
+            "Una técnica para crear múltiples instancias",
+            "Un tipo de variable"
+        ],
+        "correctAnswer": 0,
+        "explanation": "El encapsulamiento es el mecanismo para ocultar los detalles de la implementación."
+    },
+    {
+        "question": "¿Qué es el polimorfismo?",
+        "options": [
+            "Un tipo de variable",
+            "La capacidad de un objeto de adoptar múltiples formas",
+            "Un mecanismo para manejar errores",
+            "Una técnica para crear objetos"
+        ],
+        "correctAnswer": 1,
+        "explanation": "El polimorfismo permite tratar objetos de diferentes tipos de manera uniforme."
+    },
+    {
+        "question": "¿Qué es un constructor en una clase?",
+        "options": [
+            "Un método para crear nuevas variables",
+            "Un método especial para inicializar un objeto",
+            "Una función para eliminar atributos de un objeto",
+            "Un tipo especial de propiedad"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Un constructor es un método especial usado para inicializar un nuevo objeto."
+    },
+    {
+        "question": "¿Qué es un método estático?",
+        "options": [
+            "Un método que pertenece a la clase en lugar de a una instancia",
+            "Un método que se ejecuta automáticamente",
+            "Un método que no se puede heredar",
+            "Un método que se llama solo una vez"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Los métodos estáticos pertenecen a la clase y pueden ser llamados sin crear una instancia."
+    },
+    {
+        "question": "¿Cuál es el propósito de una interfaz?",
+        "options": [
+            "Definir un tipo de dato concreto",
+            "Definir un conjunto de métodos sin implementación",
+            "Definir un constructor para una clase",
+            "Permitir la gestión de errores"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Una interfaz define un contrato para las clases que la implementan."
+    },
+    {
+        "question": "¿Qué es la sobrecarga de método?",
+        "options": [
+            "Crear un método con el mismo nombre en una subclase para cambiar su comportamiento",
+            "Copiar un método de una clase a otra",
+            "Ocultar un método existente en una clase",
+            "Eliminar un método de la clase base"
+        ],
+        "correctAnswer": 0,
+        "explanation": "La sobrecarga permite redefinir un método de la clase base en una clase derivada."
+    },
+    {
+        "question": "¿Qué es un atributo en una clase?",
+        "options": [
+            "Un método especial",
+            "Una propiedad o variable que pertenece a la clase o instancia",
+            "Una función para realizar operaciones",
+            "Un tipo de clase"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Los atributos son propiedades de una clase que representan el estado o las características de un objeto."
+    },
+    {
+        "question": "¿Cuál es el propósito del modificador de acceso 'public'?",
+        "options": [
+            "Hacer que un miembro sea accesible solo dentro de la clase",
+            "Hacer que un miembro sea accesible desde cualquier parte del programa",
+            "Restringir el acceso a objetos derivados",
+            "Hacer que el miembro sea modificable solo una vez"
+        ],
+        "correctAnswer": 1,
+        "explanation": "El modificador 'public' hace que un miembro sea accesible desde cualquier parte del programa."
+    },
+    {
+        "question": "¿Qué representa el término 'clase' en la programación orientada a objetos?",
+        "options": [
+            "Un tipo especial de función",
+            "Un tipo de variable",
+            "Un modelo para crear objetos",
+            "Un tipo de ciclo"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Una clase es un modelo o plantilla para crear objetos con atributos y métodos."
+    },
+    {
+        "question": "¿Qué significa el término 'objeto' en la programación orientada a objetos?",
+        "options": [
+            "Una variable temporal",
+            "Una instancia de una clase",
+            "Una función que no retorna valores",
+            "Un error de programación"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Un objeto es una instancia de una clase y representa una entidad con propiedades y comportamiento."
+    },
+    {
+        "question": "¿Cuál es la diferencia entre 'clase' y 'objeto'?",
+        "options": [
+            "Una clase es un tipo de variable, mientras que un objeto es un tipo de función",
+            "Una clase es una instancia de un objeto",
+            "Una clase es un modelo, mientras que un objeto es una instancia de ese modelo",
+            "No hay diferencia entre clase y objeto"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Una clase es un modelo para crear objetos, mientras que un objeto es una instancia de la clase."
+    },
+    {
+        "question": "¿Qué significa 'abstracción' en la programación orientada a objetos?",
+        "options": [
+            "Ocultar la implementación y mostrar solo las funcionalidades esenciales",
+            "Crear una copia de una clase",
+            "Hacer que todas las variables sean accesibles",
+            "Simplificar el código sin clases"
+        ],
+        "correctAnswer": 0,
+        "explanation": "La abstracción es un concepto para ocultar detalles complejos y mostrar solo lo relevante."
+    },
+    {
+        "question": "¿Qué es el patrón de diseño Singleton?",
+        "options": [
+            "Un patrón que asegura una sola instancia de la clase",
+            "Un patrón para crear múltiples objetos",
+            "Un patrón para estructurar datos complejos",
+            "Un patrón que hace métodos estáticos"
+        ],
+        "correctAnswer": 0,
+        "explanation": "El patrón Singleton asegura que una clase tenga solo una instancia accesible globalmente."
+    },
+    {
+        "question": "¿Cuál es la diferencia entre una 'clase abstracta' y una 'interfaz'?",
+        "options": [
+            "Una clase abstracta tiene métodos no implementados, mientras que una interfaz solo tiene constantes",
+            "Una clase abstracta puede tener métodos implementados, mientras que una interfaz no",
+            "Una interfaz tiene métodos implementados, mientras que una clase abstracta no",
+            "No hay diferencia"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Una clase abstracta puede tener métodos implementados, mientras que una interfaz solo define métodos."
+    },
+    {
+        "question": "¿Qué es la sobrecarga de métodos?",
+        "options": [
+            "Un método que se ejecuta automáticamente",
+            "Definir múltiples métodos con el mismo nombre pero diferentes parámetros",
+            "Un método que se llama solo una vez",
+            "Ocultar un método"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La sobrecarga permite crear métodos con el mismo nombre pero diferentes parámetros."
+    },
+    {
+        "question": "¿Qué es un 'paquete' en programación?",
+        "options": [
+            "Un grupo de clases relacionadas",
+            "Un tipo especial de variable",
+            "Un método estático",
+            "Un ciclo en programación"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Un paquete es un contenedor de clases e interfaces relacionadas."
+    },
+    {
+        "question": "¿Qué es el manejo de excepciones?",
+        "options": [
+            "Un proceso para ejecutar código repetitivo",
+            "Una técnica para resolver errores de compilación",
+            "Un método para manejar errores en tiempo de ejecución",
+            "Un patrón de diseño"
+        ],
+        "correctAnswer": 2,
+        "explanation": "El manejo de excepciones es el proceso de manejar errores durante la ejecución del programa."
+    },
+    {
+        "question": "¿Cuál es el propósito de un constructor?",
+        "options": [
+            "Eliminar un objeto",
+            "Inicializar un nuevo objeto",
+            "Guardar un objeto en la base de datos",
+            "Verificar la disponibilidad de memoria"
+        ],
+        "correctAnswer": 1,
+        "explanation": "El constructor se utiliza para inicializar las variables de instancia al crear un nuevo objeto."
+    },
+    {
+        "question": "¿Qué significa 'inmutable' para un objeto?",
+        "options": [
+            "El objeto no puede modificarse una vez creado",
+            "El objeto solo puede eliminarse una vez",
+            "El objeto tiene acceso limitado",
+            "El objeto no se puede guardar"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Un objeto inmutable no se puede modificar una vez creado."
+    },
+    {
+        "question": "¿Qué representa el término 'ciclo'?",
+        "options": [
+            "Un ciclo que repite instrucciones múltiples veces",
+            "Una variable especial",
+            "Un tipo de función",
+            "Un patrón de diseño"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Un ciclo es una estructura de control para repetir un conjunto de instrucciones."
+    },
+    {
+        "question": "¿Cuál es la diferencia entre '==' y 'equals()' en Java?",
+        "options": [
+            "'==' compara la identidad del objeto, mientras que 'equals()' compara el valor",
+            "'==' compara el valor, 'equals()' verifica la igualdad de la clase",
+            "No hay diferencia",
+            "'==' compara la longitud de la cadena"
+        ],
+        "correctAnswer": 0,
+        "explanation": "'==' verifica si dos referencias apuntan al mismo objeto, mientras que 'equals()' compara el valor."
+    },
+    {
+        "question": "¿Qué es la recolección de basura (Garbage Collection)?",
+        "options": [
+            "Un proceso para recolectar objetos no utilizados",
+            "Una función para guardar datos",
+            "Un ciclo para iterar sobre objetos",
+            "Un mecanismo para escribir datos en un archivo"
+        ],
+        "correctAnswer": 0,
+        "explanation": "La recolección de basura libera memoria eliminando los objetos no utilizados."
+    },
+    {
+        "question": "¿Qué es una expresión lambda?",
+        "options": [
+            "Un tipo especial de clase",
+            "Una forma de declarar variables",
+            "Una función sin nombre que puede utilizarse como parámetro",
+            "Un tipo de objeto"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Una expresión lambda es una función sin nombre, utilizada a menudo para expresiones concisas."
+    },
+    {
+        "question": "¿Qué es la serialización?",
+        "options": [
+            "El proceso de ocultar datos",
+            "Un método para guardar el estado de un objeto en un archivo",
+            "Una técnica para sobrescribir métodos",
+            "Un ciclo para iterar datos"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La serialización permite convertir el estado de un objeto en un formato que se puede almacenar."
+    },
+    {
+        "question": "¿Qué significa 'namespace' en programación?",
+        "options": [
+            "Un contenedor para definiciones de nombres únicos",
+            "Una función para guardar datos",
+            "Un tipo especial de clase",
+            "Una variable utilizada en un ciclo"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Un namespace se utiliza para organizar clases, funciones y variables en un contexto único."
+    },
+    {
+        "question": "¿Qué es un framework?",
+        "options": [
+            "Un ciclo de programación",
+            "Una plataforma para construir aplicaciones",
+            "Un tipo especial de clase",
+            "Una variable"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Un framework es una estructura de soporte para desarrollar aplicaciones."
+    },
+    {
+        "question": "¿Qué es una API?",
+        "options": [
+            "Un tipo de variable",
+            "Una interfaz para interactuar con software externo",
+            "Un tipo de ciclo",
+            "Un error en el código"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Una API es una interfaz que permite la comunicación entre diferentes software."
+    },
+    {
+        "question": "¿Qué es un módulo?",
+        "options": [
+            "Una sección independiente de una aplicación",
+            "Una variable global",
+            "Un método privado",
+            "Un ciclo for"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Un módulo es un componente independiente de un software que realiza una función específica."
+    }
+]

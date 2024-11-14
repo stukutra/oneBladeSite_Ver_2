@@ -1,0 +1,321 @@
+[
+    {
+        "question": "What is the role of a Functional Analyst?",
+        "options": [
+            "To write code for applications",
+            "To design IT infrastructure",
+            "To analyze and document user requirements",
+            "To manage system backups"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A Functional Analyst analyzes and documents user requirements."
+    },
+    {
+        "question": "What is a functional requirement?",
+        "options": [
+            "A technical feature of a system",
+            "A user need describing a specific function",
+            "A type of database",
+            "An unnecessary requirement"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Functional requirements specifically describe the functions that the system must perform."
+    },
+    {
+        "question": "What is the purpose of a use case?",
+        "options": [
+            "To define a database structure",
+            "To describe how a system interacts with a user",
+            "To test software",
+            "To manage the project"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Use cases describe how a system interacts with users and other systems."
+    },
+    {
+        "question": "What is a process flow?",
+        "options": [
+            "A diagram that describes business processes",
+            "Code for automation",
+            "A monitoring program",
+            "A type of database"
+        ],
+        "correctAnswer": 0,
+        "explanation": "A process flow visually represents business processes."
+    },
+    {
+        "question": "What does an ER diagram do?",
+        "options": [
+            "Represents relationships between entities in a database",
+            "Shows the structure of a network",
+            "Manages software versions",
+            "Automates workflows"
+        ],
+        "correctAnswer": 0,
+        "explanation": "An ER (Entity-Relationship) diagram represents relationships between entities in a database."
+    },
+    {
+        "question": "What is a non-functional requirement?",
+        "options": [
+            "An optional requirement for the system",
+            "An aspect of the system concerning performance and usability",
+            "A type of test",
+            "A specific functionality required by the user"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Non-functional requirements cover aspects such as system performance, usability, and security."
+    },
+    {
+        "question": "What does 'requirements elicitation' mean?",
+        "options": [
+            "The process of verifying requirements",
+            "The process of gathering user requirements",
+            "The analysis of technical specifications",
+            "Functionality testing"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Requirements elicitation is the process of gathering and clarifying user needs."
+    },
+    {
+        "question": "What is a requirements specification document?",
+        "options": [
+            "A user manual",
+            "A list of required functionalities",
+            "A detailed description of system requirements",
+            "A development guide"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A requirements specification document details all system functionalities and requirements."
+    },
+    {
+        "question": "What does gap analysis do?",
+        "options": [
+            "Identifies the difference between the current system and the desired system",
+            "Debugs code",
+            "Creates a system backup",
+            "Defines non-functional requirements"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Gap analysis identifies the differences between the current state and the desired system."
+    },
+    {
+        "question": "What is a mockup?",
+        "options": [
+            "A diagram showing network architecture",
+            "A visual prototype of a user interface",
+            "A performance report",
+            "A debugging process"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A mockup is a visual prototype that shows what a user interface might look like."
+    },
+    {
+        "question": "What is the role of a wireframe?",
+        "options": [
+            "To define the structure of an application without graphical details",
+            "To represent system performance",
+            "To monitor network traffic",
+            "To develop code"
+        ],
+        "correctAnswer": 0,
+        "explanation": "A wireframe defines the structure of an application visually without graphical details."
+    },
+    {
+        "question": "What is requirements tracking?",
+        "options": [
+            "Monitoring team activities",
+            "Ensuring requirements are met in the project",
+            "Writing test code",
+            "Automating workflows"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Requirements tracking ensures that all defined requirements are met during development."
+    },
+    {
+        "question": "What does a flowchart represent?",
+        "options": [
+            "A set of source codes",
+            "A diagram representing process steps",
+            "A safety network",
+            "A user list"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A flowchart represents process steps using symbols and arrows."
+    },
+    {
+        "question": "What is the purpose of User Acceptance Testing (UAT)?",
+        "options": [
+            "Testing IT infrastructure",
+            "Ensuring the system meets user needs",
+            "Developing new features",
+            "Creating data backups"
+        ],
+        "correctAnswer": 1,
+        "explanation": "User Acceptance Testing (UAT) ensures that the system meets user needs."
+    },
+    {
+        "question": "What is a requirements traceability matrix?",
+        "options": [
+            "A system for monitoring data",
+            "A document mapping requirements to project specifications",
+            "A network diagram",
+            "A performance report"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A requirements traceability matrix maps user requirements to project specifications."
+    },
+    {
+        "question": "What does the term 'scope creep' represent?",
+        "options": [
+            "Adding new features to a project without proper planning",
+            "A debugging process",
+            "A type of database",
+            "A system backup"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Scope creep occurs when new features are added to the project without proper planning."
+    },
+    {
+        "question": "What is data analysis?",
+        "options": [
+            "Running data backups",
+            "Analyzing system performance",
+            "The process of extracting information from data to improve decisions",
+            "Creating a database"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Data analysis is the process of extracting meaningful insights from data to support better decisions."
+    },
+    {
+        "question": "What is the role of a business case document?",
+        "options": [
+            "To define the benefits and costs of a project",
+            "To specify security guidelines",
+            "To manage infrastructure documentation",
+            "To monitor application performance"
+        ],
+        "correctAnswer": 0,
+        "explanation": "A business case justifies starting a project by specifying costs, benefits, and risks."
+    },
+    {
+        "question": "What is root cause analysis?",
+        "options": [
+            "A technique to find the root cause of a problem",
+            "A sales report",
+            "A project test plan",
+            "A data backup phase"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Root cause analysis is a technique to identify the underlying cause of a problem."
+    },
+    {
+        "question": "What does 'requirements validation' mean?",
+        "options": [
+            "Ensuring requirements are understandable and feasible",
+            "Running tests on requirements",
+            "Creating a flowchart",
+            "Monitoring performance"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Requirements validation ensures that requirements are understandable, complete, and feasible."
+    },
+    {
+        "question": "What is a user persona?",
+        "options": [
+            "A type of database",
+            "A profile representing a specific type of user",
+            "A technical requirement",
+            "A testing method"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A user persona is a profile representing a group of users with specific behaviors and needs."
+    },
+    {
+        "question": "What is change management?",
+        "options": [
+            "A process for managing system changes",
+            "A performance testing method",
+            "A backup database",
+            "A programming language"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Change management handles system changes to minimize user impact."
+    },
+    {
+        "question": "What is a 'user story'?",
+        "options": [
+            "An analysis technique",
+            "A description of requirements from the user's perspective",
+            "A flowchart",
+            "A database model"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A user story describes requirements from the user's perspective."
+    },
+    {
+        "question": "What is the purpose of functional testing?",
+        "options": [
+            "To verify that the system meets functional requirements",
+            "To test performance",
+            "To monitor real-time data",
+            "To create automatic backups"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Functional testing verifies that the system meets functional requirements."
+    },
+    {
+        "question": "What is a context diagram?",
+        "options": [
+            "A representation of the system's interactions with external entities",
+            "A performance graph",
+            "A type of network",
+            "A backup plan"
+        ],
+        "correctAnswer": 0,
+        "explanation": "A context diagram represents the system's interactions with users and other external systems."
+    },
+    {
+        "question": "What is requirements management?",
+        "options": [
+            "A method for creating reports",
+            "A process for monitoring, updating, and documenting requirements",
+            "A type of database",
+            "A backup system"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Requirements management is the process of monitoring, updating, and documenting requirements throughout the project lifecycle."
+    },
+    {
+        "question": "What is the role of a storyboard?",
+        "options": [
+            "To document code structure",
+            "To visually display an application's flow",
+            "To create network diagrams",
+            "To back up data"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A storyboard visually displays an application's flow, illustrating the user experience."
+    },
+    {
+        "question": "What is prototyping?",
+        "options": [
+            "A software development process",
+            "Creating initial models of a product",
+            "A data backup method",
+            "A performance testing phase"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Prototyping involves creating initial models to visualize and test a product’s features."
+    },
+    {
+        "question": "What is the role of business process analysis?",
+        "options": [
+            "To identify and improve existing business processes",
+            "To write code for new applications",
+            "To define security policies",
+            "To perform regular backups"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Business process analysis aims to identify and optimize processes to improve efficiency."
+    }
+]

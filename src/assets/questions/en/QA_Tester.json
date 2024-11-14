@@ -1,0 +1,321 @@
+[
+    {
+        "question": "What is the main role of a QA Tester?",
+        "options": [
+            "Develop new features",
+            "Ensure that the software meets requirements and is bug-free",
+            "Manage servers",
+            "Design user interfaces"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The QA Tester ensures that the software meets requirements and is free of bugs."
+    },
+    {
+        "question": "What is a test case?",
+        "options": [
+            "A description of steps needed to verify a functionality",
+            "A document that describes software requirements",
+            "A report on errors found",
+            "A request for change"
+        ],
+        "correctAnswer": 0,
+        "explanation": "A test case describes the steps needed to verify a specific functionality."
+    },
+    {
+        "question": "What is functional testing?",
+        "options": [
+            "A test that only checks the design of the software",
+            "A test that verifies application functionality against requirements",
+            "A performance test",
+            "A test for hardware compatibility"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Functional testing verifies that the application works as described in the requirements."
+    },
+    {
+        "question": "What is a bug report?",
+        "options": [
+            "A document listing requirements",
+            "A report that describes an issue or error found",
+            "A performance report",
+            "A design document"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A bug report documents the details of an issue found in the software."
+    },
+    {
+        "question": "What is regression testing?",
+        "options": [
+            "A test that checks new features",
+            "A test that verifies if previous features still work after a change",
+            "A hardware compatibility test",
+            "A security test"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Regression testing ensures that changes have not introduced new errors."
+    },
+    {
+        "question": "What is the purpose of load testing?",
+        "options": [
+            "To verify that the application meets functional requirements",
+            "To measure system behavior under high loads",
+            "To check the design of the application",
+            "To test the application’s security"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Load testing measures system performance under high loads."
+    },
+    {
+        "question": "What is a test environment?",
+        "options": [
+            "A production environment",
+            "An environment used to test software",
+            "An environment for requirements analysis",
+            "An environment for code development"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A test environment is an isolated setting used to test software before deployment."
+    },
+    {
+        "question": "What is test automation?",
+        "options": [
+            "The process of performing tests manually",
+            "The use of tools to execute tests automatically",
+            "Application design checking",
+            "Software performance analysis"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Test automation uses tools to execute tests without manual intervention."
+    },
+    {
+        "question": "What is usability testing?",
+        "options": [
+            "A security test",
+            "A test to check if the system is easy to use for users",
+            "A performance monitoring test",
+            "A cost analysis"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Usability testing ensures that the system is intuitive and easy for users."
+    },
+    {
+        "question": "What does it mean to 'pass a test'?",
+        "options": [
+            "The test was successfully completed",
+            "The test failed",
+            "The test was canceled",
+            "The test was scheduled"
+        ],
+        "correctAnswer": 0,
+        "explanation": "'Passing a test' means the software passed verification without issues."
+    },
+    {
+        "question": "What is system testing?",
+        "options": [
+            "A test that verifies individual components",
+            "A test that verifies the entire system as a whole",
+            "A security test",
+            "A hardware compatibility test"
+        ],
+        "correctAnswer": 1,
+        "explanation": "System testing verifies that all system components work correctly together."
+    },
+    {
+        "question": "What does compatibility testing do?",
+        "options": [
+            "Ensures software security",
+            "Ensures the software works on various platforms and devices",
+            "Tests performance under high loads",
+            "Verifies code structure"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Compatibility testing checks that the software works properly on different devices and platforms."
+    },
+    {
+        "question": "What is acceptance testing?",
+        "options": [
+            "A test performed by developers",
+            "A test performed by end users to accept the system",
+            "A performance test",
+            "A compatibility test"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Acceptance testing is performed by users to confirm that the system meets their expectations."
+    },
+    {
+        "question": "What does performance testing check?",
+        "options": [
+            "The user interface",
+            "Required functionalities",
+            "System speed and stability under various loads",
+            "Application security"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Performance testing measures speed, stability, and reliability under different loads."
+    },
+    {
+        "question": "What is a 'test script'?",
+        "options": [
+            "A textual description of requirements",
+            "Code written to execute automated tests",
+            "A bug report",
+            "A project draft"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A test script is code used to automate functionality tests."
+    },
+    {
+        "question": "What is a bug?",
+        "options": [
+            "An issue or error in the software",
+            "A system improvement",
+            "A functional requirement",
+            "A user request"
+        ],
+        "correctAnswer": 0,
+        "explanation": "A bug is a defect or error in software that causes unwanted behavior."
+    },
+    {
+        "question": "What is alpha testing?",
+        "options": [
+            "A test conducted by real users",
+            "An initial test performed by developers",
+            "A performance test",
+            "A security test"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Alpha testing is an internal test performed by developers to identify major bugs."
+    },
+    {
+        "question": "What is beta testing?",
+        "options": [
+            "A test conducted by end users",
+            "A development test",
+            "A security test",
+            "A performance test"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Beta testing is conducted by end users to identify bugs in a real-world environment."
+    },
+    {
+        "question": "What is integration testing?",
+        "options": [
+            "Verifies the integration of new features",
+            "Ensures that various system components work together",
+            "A test to evaluate performance",
+            "A code control test"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Integration testing verifies that different modules work together correctly."
+    },
+    {
+        "question": "What is unit testing?",
+        "options": [
+            "A test that verifies the entire system",
+            "A test that verifies individual units of code",
+            "A performance test",
+            "A compatibility test"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Unit testing verifies individual code parts to ensure they work as expected."
+    },
+    {
+        "question": "What is the purpose of security testing?",
+        "options": [
+            "To verify system usability",
+            "To ensure the system is protected from vulnerabilities",
+            "To check application speed",
+            "To manage UI features"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Security testing ensures that the system is protected against vulnerabilities and threats."
+    },
+    {
+        "question": "What is Sanity Testing?",
+        "options": [
+            "A preliminary check of main functions",
+            "A performance test",
+            "A security test",
+            "A usability test"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Sanity testing quickly verifies that main functionalities are operational after a change."
+    },
+    {
+        "question": "What is Smoke Testing?",
+        "options": [
+            "A thorough test of all functionalities",
+            "An initial check to ensure the system is stable",
+            "A regression test",
+            "An acceptance test"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Smoke testing is an initial check to ensure system stability."
+    },
+    {
+        "question": "What does it mean to 'fail a test'?",
+        "options": [
+            "The test was successful",
+            "The test encountered issues or errors",
+            "The test was canceled",
+            "The test was completed successfully"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'Failing a test' means that issues or errors were encountered during testing."
+    },
+    {
+        "question": "What is resilience testing?",
+        "options": [
+            "A test that evaluates the user interface",
+            "A test that checks the system’s ability to recover after failure",
+            "A usability test",
+            "A regression test"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Resilience testing checks the system's ability to recover from failure."
+    },
+    {
+        "question": "What does 'bug severity' mean?",
+        "options": [
+            "The frequency of a bug occurring",
+            "The impact of a bug on the system",
+            "The difficulty in resolving a bug",
+            "Bug documentation"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Bug severity indicates the impact of a bug on system functionality."
+    },
+    {
+        "question": "What is cross-browser compatibility testing?",
+        "options": [
+            "Verifying that the application works on different browser versions",
+            "Ensuring the application works on different browsers",
+            "Checking application security",
+            "Running regression tests"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Cross-browser compatibility testing verifies that the app functions correctly on different browsers."
+    },
+    {
+        "question": "What is a defect log?",
+        "options": [
+            "A document listing improvements",
+            "A record of all bugs found during testing",
+            "A performance report",
+            "A user manual"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A defect log is a record that lists all bugs found during testing."
+    },
+    {
+        "question": "What does 'test coverage' mean?",
+        "options": [
+            "The number of bugs fixed",
+            "The percentage of code covered by tests",
+            "The amount of backup data",
+            "The duration of the test"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Test coverage is the percentage of code or functionalities covered by tests."
+    }
+]
