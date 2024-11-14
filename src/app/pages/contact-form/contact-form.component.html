@@ -76,7 +76,7 @@
   </div>
 </div>
 
-<!-- Modale personalizzata -->
+<!-- Modale personalizzata di Errore/Successo -->
 <div class="custom-modal" *ngIf="isModalVisible">
   <div class="custom-modal-content">
     <span class="custom-modal-close" (click)="closeModal()">&times;</span>
@@ -87,9 +87,9 @@
 </div>
 
 <!-- Modale del Questionario -->
-<div class="custom-modal" *ngIf="isModalVisible">
+<div class="custom-modal" *ngIf="isQuestionnaireModalVisible">
   <div class="custom-modal-content">
-    <span class="custom-modal-close" (click)="closeModal()">&times;</span>
+    <span class="custom-modal-close" (click)="closeQuestionnaireModal()">&times;</span>
     <!-- Inserisci qui il componente del questionario -->
     <app-questionnaire [role]="model.applicationType"></app-questionnaire>
   </div>

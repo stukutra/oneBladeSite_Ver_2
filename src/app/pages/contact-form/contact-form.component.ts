@@ -19,7 +19,8 @@ export class ContactFormComponent {
   fileError: string | null = null;
   successMessage: string | null = null;
   errorMessage: string | null = null;  
-  isModalVisible: boolean = false;
+  isModalVisible: boolean = false; // Per le modali di Errore/Successo
+  isQuestionnaireModalVisible: boolean = false; // Per la modale del questionario
   modalTitle: string = '';
   modalMessage: string = '';
 
@@ -44,9 +45,7 @@ export class ContactFormComponent {
       return;
     }
 
-    // Recupera il report del questionario dal localStorage
     const questionnaireReport = localStorage.getItem('questionnaireReport');
-
     const formData = new FormData();
     formData.append('name', this.model.name);
     formData.append('telephone', this.model.telephone);
@@ -55,8 +54,6 @@ export class ContactFormComponent {
     formData.append('applicationType', this.model.applicationType);
     formData.append('file', this.model.file);
     formData.append('api_key', '7F3kH#r8!wL5tVxZ2Q9p^nGjR@cM1dP6');
-    
-    // Aggiungi il report al corpo dell'email
     formData.append('questionnaireReport', questionnaireReport || 'Nessun report disponibile');
 
     this.http.post('https://www.oneblade.it/sendEmail.php', formData).subscribe(
@@ -65,8 +62,6 @@ export class ContactFormComponent {
         if (response.status === 'success') {
           this.showModal('Successo', 'La tua candidatura è stata inviata con successo!');
           this.resetForm(form);
-
-          // Cancella il report dal localStorage
           localStorage.removeItem('questionnaireReport');
         } else {
           this.showModal('Errore', response.message || 'Si è verificato un errore.');
@@ -80,12 +75,8 @@ export class ContactFormComponent {
   }
 
   resetForm(form: NgForm) {
-    form.resetForm();  // Resetta i campi del modulo
-
-    // Resetta manualmente il campo file
+    form.resetForm(); 
     this.model.file = null;
-
-    // Se stai usando un input file nel template, resetta anche il valore dell'elemento DOM
     const fileInput = document.getElementById('file') as HTMLInputElement;
     if (fileInput) {
       fileInput.value = '';
@@ -103,6 +94,10 @@ export class ContactFormComponent {
   }
 
   openQuestionnaireModal() {
-    this.isModalVisible = true; // Mostra la modale del questionario
+    this.isQuestionnaireModalVisible = true;
+  }
+
+  closeQuestionnaireModal(): void {
+    this.isQuestionnaireModalVisible = false;
   }
 }
