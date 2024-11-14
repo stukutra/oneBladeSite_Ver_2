@@ -3,51 +3,26 @@
     <h5 class="box-title">{{ 'FORM.TITLE' | translate }}</h5>
     <h6 class="mb-4">{{ 'FORM.SUBTITLE' | translate }}</h6>
     <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" novalidate class="contact-form">
-      
+
       <div class="mb-3 form-group">
-        <input
-          type="text"
-          id="name"
-          name="name"
-          class="form-control"
-          [(ngModel)]="model.name"
-          #name="ngModel"
-          required
-          placeholder="{{ 'FORM.PLACEHOLDERS.NAME' | translate }}"
-        />
+        <input type="text" id="name" name="name" class="form-control" [(ngModel)]="model.name" #name="ngModel" required
+          placeholder="{{ 'FORM.PLACEHOLDERS.NAME' | translate }}" />
         <div *ngIf="name.invalid && (name.dirty || name.touched)" class="text-danger">
           <div *ngIf="name.errors?.['required']">{{ 'FORM.VALIDATION.NAME_REQUIRED' | translate }}</div>
         </div>
       </div>
 
       <div class="mb-3 form-group">
-        <input
-          type="text"
-          id="telephone"
-          name="telephone"
-          class="form-control"
-          [(ngModel)]="model.telephone"
-          #telephone="ngModel"
-          required
-          placeholder="{{ 'FORM.PLACEHOLDERS.TELEPHONE' | translate }}"
-        />
+        <input type="text" id="telephone" name="telephone" class="form-control" [(ngModel)]="model.telephone"
+          #telephone="ngModel" required placeholder="{{ 'FORM.PLACEHOLDERS.TELEPHONE' | translate }}" />
         <div *ngIf="telephone.invalid && (telephone.dirty || telephone.touched)" class="text-danger">
           <div *ngIf="telephone.errors?.['required']">{{ 'FORM.VALIDATION.TELEPHONE_REQUIRED' | translate }}</div>
         </div>
       </div>
 
       <div class="mb-3 form-group">
-        <input
-          type="email"
-          id="email"
-          name="email"
-          class="form-control"
-          [(ngModel)]="model.email"
-          #email="ngModel"
-          required
-          email
-          placeholder="{{ 'FORM.PLACEHOLDERS.EMAIL' | translate }}"
-        />
+        <input type="email" id="email" name="email" class="form-control" [(ngModel)]="model.email" #email="ngModel"
+          required email placeholder="{{ 'FORM.PLACEHOLDERS.EMAIL' | translate }}" />
         <div *ngIf="email.invalid && (email.dirty || email.touched)" class="text-danger">
           <div *ngIf="email.errors?.['required']">{{ 'FORM.VALIDATION.EMAIL_REQUIRED' | translate }}</div>
           <div *ngIf="email.errors?.['email']">{{ 'FORM.VALIDATION.EMAIL_INVALID' | translate }}</div>
@@ -55,17 +30,8 @@
       </div>
 
       <div class="mb-3 form-group">
-        <input
-          type="text"
-          id="vat"
-          name="vat"
-          class="form-control"
-          [(ngModel)]="model.vat"
-          #vat="ngModel"
-          required
-          pattern="^[0-9]{11}$"
-          placeholder="{{ 'FORM.PLACEHOLDERS.VAT' | translate }}"
-        />
+        <input type="text" id="vat" name="vat" class="form-control" [(ngModel)]="model.vat" #vat="ngModel" required
+          pattern="^[0-9]{11}$" placeholder="{{ 'FORM.PLACEHOLDERS.VAT' | translate }}" />
         <div *ngIf="vat.invalid && (vat.dirty || vat.touched)" class="text-danger">
           <div *ngIf="vat.errors?.['required']">{{ 'FORM.VALIDATION.VAT_REQUIRED' | translate }}</div>
           <div *ngIf="vat.errors?.['pattern']">{{ 'FORM.VALIDATION.VAT_INVALID' | translate }}</div>
@@ -73,7 +39,8 @@
       </div>
 
       <div class="mb-3 form-group">
-        <select id="applicationType" name="applicationType" class="form-select" [(ngModel)]="model.applicationType" #applicationType="ngModel" required>
+        <select id="applicationType" name="applicationType" class="form-select" [(ngModel)]="model.applicationType"
+          #applicationType="ngModel" required>
           <option value="">{{ 'FORM.PLACEHOLDERS.APPLICATION_TYPE' | translate }}</option>
           <option value="Software Development">Developer</option>
           <option value="System Administrator">System Administrator</option>
@@ -87,12 +54,12 @@
         <div *ngIf="applicationType.invalid && (applicationType.dirty || applicationType.touched)" class="text-danger">
           <div *ngIf="applicationType.errors?.['required']">{{ 'FORM.VALIDATION.ROLE_REQUIRED' | translate }}</div>
         </div>
-      </div>  
+      </div>
 
       <div class="button-row">
         <div class="send-button-container">
-          <button type="button" class="btn btn-primary open-questionnaire-btn"  (click)="openQuestionnaireModal()">Vuoi inviarci un breve test?</button>
-          <button type="submit" class="btn btn-primary" [disabled]="contactForm.invalid">{{ 'FORM.BUTTON_SUBMIT' | translate }}</button>
+          <button type="submit" class="btn btn-primary" [disabled]="contactForm.invalid">{{ 'FORM.BUTTON_SUBMIT' |
+            translate }}</button>
         </div>
       </div>
     </form>
@@ -104,14 +71,15 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="successModalLabel">{{ 'FORM.SUCCESS_MESSAGE_TITLE' | translate }}</h5>
+        <h5 class="modal-title" id="successModalLabel">{{ 'FORM.MODAL.TITLE_SUCCESS' | translate }}</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         {{ successMessage }}
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary custom-btn" data-bs-dismiss="modal">{{ 'FORM.MODAL_CLOSE' | translate }}</button>
+        <button type="button" class="btn btn-primary custom-btn" data-bs-dismiss="modal">{{ 'FORM.MODAL.CLOSE' |
+          translate }}</button>
       </div>
     </div>
   </div>
@@ -122,26 +90,16 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="errorModalLabel">{{ 'FORM.ERROR_MESSAGE_TITLE' | translate }}</h5>
+        <h5 class="modal-title" id="errorModalLabel">{{ 'FORM.MODAL.MESSAGE_ERROR' | translate }}</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         {{ errorMessage }}
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger custom-btn" data-bs-dismiss="modal">{{ 'FORM.MODAL_CLOSE' | translate }}</button>
+        <button type="button" class="btn btn-danger custom-btn" data-bs-dismiss="modal">{{ 'FORM.MODAL.CLOSE' |
+          translate }}</button>
       </div>
     </div>
-  </div>
-</div>
-
-
-
-<!-- Modale del Questionario -->
-<div class="custom-modal" *ngIf="isModalVisible">
-  <div class="custom-modal-content">
-    <span class="custom-modal-close" (click)="closeModal()">&times;</span>
-    <!-- Inserisci qui il componente del questionario -->
-    <app-questionnaire [role]="model.applicationType"></app-questionnaire>
   </div>
 </div>

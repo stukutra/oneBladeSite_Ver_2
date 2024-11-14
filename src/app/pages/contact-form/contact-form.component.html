@@ -4,49 +4,24 @@
     <h6 class="mb-4">{{ 'FORM.SUBTITLE' | translate }}</h6>
     <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" novalidate class="contact-form">
       <div class="mb-3 form-group">
-        <input
-          type="text"
-          id="name"
-          name="name"
-          class="form-control"
-          [(ngModel)]="model.name"
-          #name="ngModel"
-          required
-          placeholder="{{ 'FORM.PLACEHOLDERS.NAME' | translate }}"
-        />
+        <input type="text" id="name" name="name" class="form-control" [(ngModel)]="model.name" #name="ngModel" required
+          placeholder="{{ 'FORM.PLACEHOLDERS.NAME' | translate }}" />
         <div *ngIf="name.invalid && (name.dirty || name.touched)" class="text-danger">
           <div *ngIf="name.errors?.['required']">{{ 'FORM.VALIDATION.NAME_REQUIRED' | translate }}</div>
         </div>
       </div>
 
       <div class="mb-3 form-group">
-        <input
-          type="text"
-          id="telephone"
-          name="telephone"
-          class="form-control"
-          [(ngModel)]="model.telephone"
-          #telephone="ngModel"
-          required
-          placeholder="{{ 'FORM.PLACEHOLDERS.TELEPHONE' | translate }}"
-        />
+        <input type="text" id="telephone" name="telephone" class="form-control" [(ngModel)]="model.telephone"
+          #telephone="ngModel" required placeholder="{{ 'FORM.PLACEHOLDERS.TELEPHONE' | translate }}" />
         <div *ngIf="telephone.invalid && (telephone.dirty || telephone.touched)" class="text-danger">
           <div *ngIf="telephone.errors?.['required']">{{ 'FORM.VALIDATION.TELEPHONE_REQUIRED' | translate }}</div>
         </div>
       </div>
 
       <div class="mb-3 form-group">
-        <input
-          type="email"
-          id="email"
-          name="email"
-          class="form-control"
-          [(ngModel)]="model.email"
-          #email="ngModel"
-          required
-          email
-          placeholder="{{ 'FORM.PLACEHOLDERS.EMAIL' | translate }}"
-        />
+        <input type="email" id="email" name="email" class="form-control" [(ngModel)]="model.email" #email="ngModel"
+          required email placeholder="{{ 'FORM.PLACEHOLDERS.EMAIL' | translate }}" />
         <div *ngIf="email.invalid && (email.dirty || email.touched)" class="text-danger">
           <div *ngIf="email.errors?.['required']">{{ 'FORM.VALIDATION.EMAIL_REQUIRED' | translate }}</div>
           <div *ngIf="email.errors?.['email']">{{ 'FORM.VALIDATION.EMAIL_INVALID' | translate }}</div>
@@ -54,17 +29,8 @@
       </div>
 
       <div class="mb-3 form-group">
-        <input
-          type="text"
-          id="vat"
-          name="vat"
-          class="form-control"
-          [(ngModel)]="model.vat"
-          #vat="ngModel"
-          required
-          pattern="^[0-9]{11}$"
-          placeholder="{{ 'FORM.PLACEHOLDERS.VAT' | translate }}"
-        />
+        <input type="text" id="vat" name="vat" class="form-control" [(ngModel)]="model.vat" #vat="ngModel" required
+          pattern="^[0-9]{11}$" placeholder="{{ 'FORM.PLACEHOLDERS.VAT' | translate }}" />
         <div *ngIf="vat.invalid && (vat.dirty || vat.touched)" class="text-danger">
           <div *ngIf="vat.errors?.['required']">{{ 'FORM.VALIDATION.VAT_REQUIRED' | translate }}</div>
           <div *ngIf="vat.errors?.['pattern']">{{ 'FORM.VALIDATION.VAT_INVALID' | translate }}</div>
@@ -72,7 +38,8 @@
       </div>
 
       <div class="mb-3 form-group">
-        <select id="applicationType" name="applicationType" class="form-select" [(ngModel)]="model.applicationType" #applicationType="ngModel" required>
+        <select id="applicationType" name="applicationType" class="form-select" [(ngModel)]="model.applicationType"
+          #applicationType="ngModel" required>
           <option value="">{{ 'FORM.PLACEHOLDERS.APPLICATION_TYPE' | translate }}</option>
           <option value="Software_Development">Developer</option>
           <option value="System_Administrator">System Administrator</option>
@@ -89,14 +56,8 @@
       </div>
 
       <div class="mb-3 form-group">
-        <input
-          type="file"
-          id="file"
-          name="file"
-          class="form-control file-input"
-          (change)="onFileChange($event)"
-          required
-        />
+        <input type="file" id="file" name="file" class="form-control file-input" (change)="onFileChange($event)"
+          required />
         <small class="form-text">{{ 'FORM.PLACEHOLDERS.FILE' | translate }}</small>
         <div *ngIf="fileError" class="text-danger">
           {{ fileError }}
@@ -107,8 +68,10 @@
       </div>
 
       <div class="button-row">
-        <button type="button" class="btn btn-primary open-questionnaire-btn"  (click)="openQuestionnaireModal()">Vuoi inviarci un breve test?</button>
-        <button type="submit" class="btn btn-primary submit-btn" [disabled]="contactForm.invalid || !model.file">{{ 'FORM.BUTTON_SUBMIT' | translate }}</button>
+        <button type="button" class="btn btn-primary open-questionnaire-btn" (click)="openQuestionnaireModal()">Vuoi
+          inviarci un breve test?</button>
+        <button type="submit" class="btn btn-primary submit-btn" [disabled]="contactForm.invalid || !model.file">{{
+          'FORM.BUTTON_SUBMIT' | translate }}</button>
       </div>
     </form>
   </div>
