@@ -6,12 +6,17 @@
   </a>
 
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMenu()">
-<i class="bi bi-list"></i>
-</button>
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMenu()">
+    <i class="bi bi-list"></i>
+  </button>
 
   <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
     <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link christmas-link" href="#" (click)="openChristmasModal($event)">
+          🎄 Buon Natale, gioca con me! 🎅
+        </a>
+      </li>
       <li class="nav-item">
         <a class="nav-link linkedin-link" href="https://www.linkedin.com/in/guidosalzano/" target="_blank">
           <i class="bi bi-linkedin"></i> LinkedIn
@@ -28,3 +33,11 @@
     </ul>
   </div>
 </nav>
+
+
+<div class="custom-modal-natale" *ngIf="isChristmasModalVisible">
+  <div class="custom-modal-content-natale">
+    <span class="custom-modal-close-natale" (click)="closeChristmasModal()">&times;</span>
+    <iframe src="https://www.oneblade.it/natale" width="100%" height="50%" style="border: none;" title="BuonNatale"></iframe>
+  </div>
+</div>

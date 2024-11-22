@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -10,6 +11,10 @@ import { TranslateService } from '@ngx-translate/core';
 export class TopBarComponent {
 
   isMenuOpen: boolean = false;
+
+  isChristmasModalVisible: boolean = false;
+
+
 
   constructor(private router: Router, private translate: TranslateService) {
     this.translate.addLangs(['en', 'it', 'es']);
@@ -54,5 +59,17 @@ export class TopBarComponent {
     const lang = selectElement.value;
     this.translate.use(lang);
     this.closeMenu();
+  }
+
+
+
+
+  openChristmasModal(event: Event): void {
+    event.preventDefault(); // Previene il comportamento predefinito del link
+    this.isChristmasModalVisible = true; // Mostra la modale
+  }
+  
+  closeChristmasModal(): void {
+    this.isChristmasModalVisible = false; // Nasconde la modale
   }
 }
