@@ -143,7 +143,7 @@ $button-hover-darken: 10%;
     transform: translate(-50%, -50%);
 }
 
-.form-check-input:checked + .form-check-label {
+.form-check-input:checked+.form-check-label {
     color: $primary-color;
 }
 
@@ -172,6 +172,7 @@ $button-hover-darken: 10%;
     .text-success {
         color: $secondary-color;
     }
+
     .text-danger {
         color: $text-color-error;
     }

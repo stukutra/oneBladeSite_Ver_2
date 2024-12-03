@@ -18,7 +18,7 @@ export class ContactFormComponent {
   };
   fileError: string | null = null;
   successMessage: string | null = null;
-  errorMessage: string | null = null;  
+  errorMessage: string | null = null;
   isModalVisible: boolean = false; // Per le modali di Errore/Successo
   isQuestionnaireModalVisible: boolean = false; // Per la modale del questionario
   modalTitle: string = '';
@@ -75,7 +75,7 @@ export class ContactFormComponent {
   }
 
   resetForm(form: NgForm) {
-    form.resetForm(); 
+    form.resetForm();
     this.model.file = null;
     const fileInput = document.getElementById('file') as HTMLInputElement;
     if (fileInput) {

@@ -32,7 +32,7 @@ export class QuestionnaireComponent implements OnInit, OnDestroy {
   formattedTime: string = '00:00';
   timerInterval: any;
 
-  constructor(private http: HttpClient, private translate: TranslateService) {}
+  constructor(private http: HttpClient, private translate: TranslateService) { }
 
   ngOnInit(): void {
     // Imposta lingua
@@ -113,19 +113,19 @@ export class QuestionnaireComponent implements OnInit, OnDestroy {
     const correctAnswersCount = this.displayedQuestions.reduce((count, question, i) => {
       return count + (this.userAnswers[i] === question.correctAnswer ? 1 : 0);
     }, 0);
-    
+
     // Calcola la percentuale di risposte corrette
     const scorePercentage = (correctAnswersCount / this.displayedQuestions.length) * 100;
-  
+
     // Crea il report dettagliato con il punteggio in percentuale
     const reportLines = this.displayedQuestions.map((question, i) => {
       const correct = this.userAnswers[i] === question.correctAnswer;
       return `Domanda: ${question.question}\nRisposta: ${question.options[this.userAnswers[i]]}\nEsito: ${correct ? 'Corretta' : 'Errata'}\n${correct ? 'Motivazione: ' + question.explanation : ''}\n`;
     });
-  
+
     // Aggiunge il punteggio in percentuale alla fine del report
     this.reportContent = reportLines.join('\n\n') + `\n\nPunteggio finale: ${scorePercentage.toFixed(2)}%`;
-  
+
     // Salva il report completo con il punteggio in `localStorage`
     localStorage.setItem('questionnaireReport', this.reportContent);
   }

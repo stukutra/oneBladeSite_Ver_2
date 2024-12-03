@@ -132,7 +132,8 @@ $custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsa
 // Riga dei pulsanti
 .button-row {
   display: flex;
-  justify-content: space-between; /* Distribuisce i pulsanti agli estremi */
+  justify-content: space-between;
+  /* Distribuisce i pulsanti agli estremi */
   align-items: center;
   margin-top: 20px;
 }
@@ -158,28 +159,31 @@ $custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsa
 
 /* Lo sfondo semitrasparente */
 .custom-modal {
-  display: none; /* Nascosto di default */
-  position: fixed; 
-  z-index: 1000; 
+  display: none;
+  /* Nascosto di default */
+  position: fixed;
+  z-index: 1000;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgba(0,0,0,0.5); /* Sfondo semitrasparente */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Sfondo semitrasparente */
 }
 
 /* Contenuto della modale */
 .custom-modal-content {
   position: relative;
   background-color: #fff;
-  margin: 15% auto; 
+  margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; 
-  max-width: 500px; 
+  width: 80%;
+  max-width: 500px;
   border-radius: 8px;
-  animation: fadeIn 0.3s; /* Effetto di apertura */
+  animation: fadeIn 0.3s;
+  /* Effetto di apertura */
 }
 
 /* Il pulsante di chiusura */
@@ -188,7 +192,7 @@ $custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsa
   top: 10px;
   right: 20px;
   color: #aaa;
-  font-size: 28px;// Variabili generali
+  font-size: 28px; // Variabili generali
   $topbar-color: #9339bb; // Colore primario del sito
   $button-text-color: #ffffff; // Colore del testo del pulsante
   $button-border-color: $topbar-color; // Colore del bordo del pulsante
@@ -207,7 +211,7 @@ $custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsa
   $custom-btn-bg-color: #9339bb; // Colore di sfondo del pulsante personalizzato
   $custom-btn-hover-bg-color: #a80aec; // Colore di sfondo del pulsante personalizzato al passaggio del mouse
   $custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsante personalizzato
-  
+
   // Stile generico
   .description-box {
     background-color: #ffffff;
@@ -218,23 +222,23 @@ $custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsa
     border-radius: 8px;
     box-shadow: 0 4px 8px $box-shadow-color;
   }
-  
+
   // Titoli
   .box-title {
     font-size: 28px;
     margin-bottom: 15px;
     color: $topbar-color;
   }
-  
+
   // Modulo di contatto
   .contact-form {
     display: grid;
     gap: 1rem;
-  
+
     .form-group {
       position: relative;
     }
-  
+
     .form-control,
     .form-select,
     .file-input {
@@ -245,17 +249,17 @@ $custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsa
       font-size: 15px;
       box-shadow: none;
       transition: border-color 0.3s ease;
-  
+
       &:focus {
         border-color: $input-focus-border-color;
         outline: none;
       }
-  
+
       &::placeholder {
         color: $input-placeholder-color;
       }
     }
-  
+
     .form-label.required::after {
       content: "*";
       color: $topbar-color;
@@ -264,12 +268,12 @@ $custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsa
       right: -1.5rem;
       top: 0;
     }
-  
+
     .text-danger {
       font-size: 0.75rem;
       color: $error-text-color;
     }
-  
+
     .form-control[type="file"] {
       border: 2px solid $input-border-color;
       border-radius: $file-input-border-radius;
@@ -277,7 +281,7 @@ $custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsa
       background-color: #fff;
       color: #333;
       display: flex;
-  
+
       &::file-selector-button {
         background-color: $file-button-bg-color;
         border: none;
@@ -286,14 +290,14 @@ $custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsa
         border-radius: $file-input-border-radius;
         font-size: 15px;
         cursor: pointer;
-  
+
         &:hover {
           background-color: $file-button-hover-bg-color;
         }
       }
     }
   }
-  
+
   // Pulsanti
   .contact-form .btn-primary {
     background-color: transparent;
@@ -303,12 +307,12 @@ $custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsa
     font-size: 16px;
     border-radius: 12px;
     transition: background-color 0.3s ease, color 0.3s ease;
-  
+
     &:hover {
       background-color: $button-hover-bg-color;
       color: $button-hover-text-color;
     }
-  
+
     &:disabled {
       background-color: $button-disabled-bg-color;
       border-color: $button-disabled-bg-color;
@@ -317,7 +321,7 @@ $custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsa
       opacity: 0.6;
     }
   }
-  
+
   // Riga pulsanti
   .button-row {
     display: flex;
@@ -325,7 +329,7 @@ $custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsa
     align-items: center;
     margin-top: 20px;
   }
-  
+
   // Pulsanti personalizzati
   .custom-btn {
     background-color: $custom-btn-bg-color;
@@ -335,16 +339,16 @@ $custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsa
     border-radius: 5px;
     font-size: 16px;
     transition: background-color 0.3s ease;
-  
+
     &:hover {
       background-color: $custom-btn-hover-bg-color;
     }
-  
+
     &:focus {
       box-shadow: 0 0 5px $custom-btn-focus-shadow-color;
     }
   }
-  
+
   // Modali
   .custom-modal {
     display: flex;
@@ -357,7 +361,7 @@ $custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsa
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-  
+
     &-content {
       background-color: #ffffff;
       padding: 20px;
@@ -367,7 +371,7 @@ $custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsa
       text-align: center;
       animation: fadeIn 0.3s ease-out;
     }
-  
+
     &-close {
       position: absolute;
       top: 10px;
@@ -376,22 +380,24 @@ $custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsa
       font-size: 28px;
       font-weight: bold;
       cursor: pointer;
-  
+
       &:hover {
         color: #000;
       }
     }
   }
-  
+
   // Animazioni
   @keyframes fadeIn {
     from {
       opacity: 0;
     }
+
     to {
       opacity: 1;
     }
   }
+
   font-weight: bold;
   cursor: pointer;
 }
@@ -405,13 +411,23 @@ $custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsa
 
 /* Effetti di animazione */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeOut {
-  from { opacity: 1; }
-  to { opacity: 0; }
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
 }
 
 
@@ -425,7 +441,8 @@ $custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsa
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Sfondo semitrasparente */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Sfondo semitrasparente */
 }
 
 .custom-modal-content {
@@ -456,6 +473,7 @@ $custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsa
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -463,11 +481,13 @@ $custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsa
 
 
 .submit-btn {
-  margin-left: auto; /* Sposta il pulsante "Invia" a destra */
+  margin-left: auto;
+  /* Sposta il pulsante "Invia" a destra */
 }
 
 .open-questionnaire-btn {
-  margin-right: auto; /* Sposta il pulsante "Apri Questionario" a sinistra */
+  margin-right: auto;
+  /* Sposta il pulsante "Apri Questionario" a sinistra */
 }
 
 
@@ -481,7 +501,8 @@ $custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsa
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Sfondo semitrasparente */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Sfondo semitrasparente */
 }
 
 .custom-modal-content {
@@ -512,6 +533,7 @@ $custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsa
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -541,4 +563,3 @@ $custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsa
   background-color: $button-hover-bg-color;
   color: $button-hover-text-color;
 }
-

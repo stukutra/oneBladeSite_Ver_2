@@ -20,7 +20,7 @@ export class ContactFormAziendaComponent {
   errorMessage: string | null = null;
   isModalVisible: boolean = false;
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   onSubmit(form: NgForm) {
     if (form.invalid) {
@@ -29,7 +29,7 @@ export class ContactFormAziendaComponent {
       this.showModal('errorModal');  // Mostra la modale di errore
       return;
     }
-  
+
     const formData = new FormData();
     formData.append('name', this.model.name);
     formData.append('telephone', this.model.telephone);
@@ -37,7 +37,7 @@ export class ContactFormAziendaComponent {
     formData.append('vat', this.model.vat);
     formData.append('applicationType', this.model.applicationType);
     formData.append('api_key', '7F3kH#r8!wL5tVxZ2Q9p^nGjR@cM1dP6');
-  
+
     this.http.post('https://www.oneblade.it/sendEmailSenzaAllegato.php', formData).subscribe(
       (response: any) => {
         if (response.status === 'success') {
@@ -66,7 +66,7 @@ export class ContactFormAziendaComponent {
     // Resetta manualmente il campo file
     this.model.file = null;
   }
-  
+
   showModal(modalId: string) {
     const modalElement = document.getElementById(modalId);
     if (modalElement) {
