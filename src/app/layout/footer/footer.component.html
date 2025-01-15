@@ -9,6 +9,18 @@
       <a href="https://www.linkedin.com/in/guidosalzano/" class="footer-link" target="_blank" aria-label="LinkedIn">
         <i class="bi bi-linkedin"></i> LinkedIn
       </a>
+      <div href="#" class="footer-link cursorPrivacy" target="_blank" aria-label="LinkedIn">
+        <i class="" (click)="openPrivacyPolicyModal()">&nbsp;Privacy Policy </i> 
+      </div>
     </div>
+  </div>
+</div>
+
+
+<!-- Modale della privacy Policy -->
+<div class="custom-modal" *ngIf="isopenPrivacyPolicyModalModalVisible">
+  <div class="custom-modal-content">
+    <span class="custom-modal-close" (click)="closePrivacyPolicyModal()">&times;</span>
+    <app-privacy_policy></app-privacy_policy>
   </div>
 </div>

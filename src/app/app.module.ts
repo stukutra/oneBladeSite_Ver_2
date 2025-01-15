@@ -1,5 +1,7 @@
 import { NO_ERRORS_SCHEMA, NgModule } from '@angular/core';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
+import { AgencyDetailsComponent } from './pages/agencyDetails/agencyDetails.component';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -11,14 +13,14 @@ import { ContactFormComponent } from './pages/contact-form/contact-form.componen
 import { FooterComponent } from './layout/footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './layout/home/home.component';
+import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 import { ImageCarouselComponent } from './pages/image-carousel/image-carousel.component';
 import { ParallaxComponent } from './pages/parallax/parallax.component';
-import { TopBarComponent } from './layout/top-bar/top-bar.component';
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { HttpClient } from '@angular/common/http';
+import { Privacy_policyComponent } from './pages/privacy_policy/privacy_policy.component';
 import { QuestionnaireComponent } from './pages/questionnaire/questionnaire.component';
+import { TopBarComponent } from './layout/top-bar/top-bar.component';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 // Funzione di factory per il TranslateLoader
 export function HttpLoaderFactory(http: HttpClient) {
@@ -38,7 +40,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     ImageCarouselComponent,
     ParallaxComponent,
     ContactFormAziendaComponent,
-    QuestionnaireComponent
+    QuestionnaireComponent,
+    Privacy_policyComponent,
+    AgencyDetailsComponent
   ],
   imports: [
     BrowserModule,
