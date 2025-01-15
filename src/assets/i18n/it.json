@@ -62,7 +62,7 @@
     "CAROUSEL": {
         "SLIDE_1": {
             "TITLE": "Talent Acquisition",
-            "SUBTITLE": "Il nostro forte è trovare il tuo migliore"
+            "SUBTITLE": "Il nostro forte è trovare il miglior professionista nel settore IT"
         },
         "SLIDE_2": {
             "TITLE": "Dal concetto alla creazione",
@@ -70,11 +70,11 @@
         },
         "SLIDE_3": {
             "TITLE": "Talento e Innovazione in Perfetta Armonia",
-            "SUBTITLE": "Selezioniamo i migliori talenti per sviluppare software che trasforma il futuro."
+            "SUBTITLE": "Selezioniamo i migliori talenti per sviluppare le tue idee"
         }
     },
     "PARALLAX": {
         "TITLE": "Talenti Eccellenti, Software Eccelso",
-        "SUBTITLE": "Connettiamo i migliori professionisti al software che guida il cambiamento."
+        "SUBTITLE": "Connettiamo i migliori professionisti al software che guida il cambiamento"
     }
 }
