@@ -76,5 +76,11 @@
     "PARALLAX": {
         "TITLE": "Talento Sobresaliente, Software Excepcional",
         "SUBTITLE": "Conectamos a los mejores profesionales con el software que impulsa el cambio."
+    },
+    "INFOCOMPANY":{
+        "TITLE":"¿Te gustaría trabajar en la oficina? 🙂",
+        "SUBTITLE":"Estamos ubicados en Via Di Valle Lupare 10, 00148 Roma (RM).",
+        "FULLREMOTETITLE":"FULL-Remote",
+        "FULLREMOTESUBTITLE":"Trabaja desde donde quieras: ¡tu puesto de trabajo es donde elijas estar!"
     }
 }

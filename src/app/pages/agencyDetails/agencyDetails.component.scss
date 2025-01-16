@@ -1,24 +1,34 @@
 .box {
-  background-color:rgba(161, 49, 169, 0.886);
+  background-color: rgba(161, 49, 169, 0.886);
   color: white;
-  border-radius: 12px; /* Angoli arrotondati */
+  border-radius: 12px;
+  /* Angoli arrotondati */
   text-align: center;
   padding: 20px;
-  height: 200px; /* Altezza fissa */
-  display: flex; /* Centrare i contenuti */
+  height: 200px;
+  /* Altezza fissa */
+  display: flex;
+  /* Centrare i contenuti */
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Leggera ombra */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transizione per hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Leggera ombra */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Transizione per hover */
 }
+
 .box:hover {
-  transform: translateY(-5px); /* Leggera elevazione al passaggio del mouse */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombra più intensa */
+  transform: translateY(-5px);
+  /* Leggera elevazione al passaggio del mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Ombra più intensa */
 }
+
 .box h2 {
   margin-bottom: 10px;
 }
+
 .box p {
   margin: 0;
 }

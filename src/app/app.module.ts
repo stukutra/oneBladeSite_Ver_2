@@ -16,6 +16,7 @@ import { HomeComponent } from './layout/home/home.component';
 import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 import { ImageCarouselComponent } from './pages/image-carousel/image-carousel.component';
+import { MyInformationComponent } from './pages/myInformation/myInformation.component';
 import { ParallaxComponent } from './pages/parallax/parallax.component';
 import { Privacy_policyComponent } from './pages/privacy_policy/privacy_policy.component';
 import { QuestionnaireComponent } from './pages/questionnaire/questionnaire.component';
@@ -42,7 +43,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactFormAziendaComponent,
     QuestionnaireComponent,
     Privacy_policyComponent,
-    AgencyDetailsComponent
+    AgencyDetailsComponent,
+    MyInformationComponent
   ],
   imports: [
     BrowserModule,

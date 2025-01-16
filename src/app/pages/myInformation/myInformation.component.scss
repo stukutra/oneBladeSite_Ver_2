@@ -1,0 +1,43 @@
+.box {
+    background-color: rgb(83 62 133);
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+    padding: 20px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    /* Stile per l'immagine di sfondo */
+    background-size: cover; /* L'immagine copre l'intera area del box */
+    background-position: center; /* Centra l'immagine */
+    background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    /* Leggera elevazione al passaggio del mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Ombra più intensa */
+}
+
+.box h2 {
+    margin-bottom: 10px;
+}
+
+.box p {
+    margin: 0;
+}
+
+.sede {
+    background-image: url('../../../assets//world.png');
+
+}
+
+.remote {
+    background-image: url('../../../assets//world.png');
+}
