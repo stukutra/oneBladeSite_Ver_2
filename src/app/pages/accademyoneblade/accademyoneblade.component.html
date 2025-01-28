@@ -29,19 +29,33 @@
   </div>
 </div>
 
-<div class="container-full course-section p-5">
-  <div class="container">
-    <h1 class="text-center">Scopri i nostri corsi</h1>
-    <h3 class="text-center mb-5">
-      Traccia la tua strada, noi saremo al tuo fianco.
-    </h3>
-    <div *ngFor="let category of categories" class="category">
-      <h3 class="category-title">{{ category.title }}</h3>
-      <div class="course-list">
-        <div *ngFor="let course of category.courses" class="course-card">
-          {{ course }}
-        </div>
+
+<div class="filter-container mt-5">
+  <label for="categorySelect">Scegli il tuo corso</label>
+  <select id="categorySelect" [(ngModel)]="selectedCategory" (change)="filterCourses()">
+    <option *ngFor="let category of categories" [value]="category.title">
+      {{ category.title }}
+    </option>
+  </select>
+</div>
+
+<!-- Lista corsi filtrata -->
+<div class="course-section">
+  <div *ngFor="let category of filteredCategories" class="category">
+    
+    <div class="course-list">
+      <div *ngFor="let course of category.courses" class="course-card">
+          <span class="ribbon">Dettagli</span>
+          <h3>{{ course.title }}</h3>
+    
+          <p><strong>Durata:</strong> {{ course.duration }}</p>
+          <p><strong>Modalità:</strong> {{ course.mode }}</p>
+          <p><strong>Lezioni:</strong> {{ course.lessons }}</p>
+          <p><strong>Tempo:</strong> {{ course.time }}</p>
+          <p><strong>Informazioni:</strong> {{ course.description }}</p>
+          <p class="course-level"><strong>Livello:</strong> {{ course.level }}</p>
       </div>
     </div>
+
   </div>
 </div>

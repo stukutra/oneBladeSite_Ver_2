@@ -3,25 +3,81 @@
         {
             "title": "Sviluppo Web",
             "courses": [
-                "Frontend Development",
-                "Backend Development",
-                "Full Stack Development"
+                {
+                    "title": "Full Stack Developer",
+                    "duration": "4 mesi",
+                    "mode": "In aula | Online",
+                    "description": "Il corso completo che ti proietterà nel mondo della programmazione a 360 gradi",
+                    "lessons": 80,
+                    "time": "4h + 2h",
+                    "level": "Beginner",
+                    "nature": "Corso pratico e completo per una carriera nel settore dello sviluppo web."
+                },
+                {
+                    "title": "Front End Developer",
+                    "duration": "2 mesi",
+                    "mode": "In aula | Online",
+                    "description": "Specializzati nei framework per creare e mantenere l’interfaccia utente di un sito web o di un’applicazione",
+                    "lessons": 40,
+                    "time": "4h",
+                    "level": "Beginner/Middle",
+                    "nature": "Corso focalizzato sulla creazione e gestione delle interfacce utente."
+                }
             ]
         },
         {
             "title": "Data Science",
             "courses": [
-                "Machine Learning",
-                "Data Analysis",
-                "Big Data"
+                {
+                    "title": "AI & Machine Learning",
+                    "duration": "4 mesi",
+                    "mode": "In aula | Online",
+                    "description": "Scopri i segreti dell’Intelligenza Artificiale e dei sistemi che ti permetteranno di proiettarti direttamente nel futuro",
+                    "lessons": 80,
+                    "time": "6h",
+                    "level": "Expert",
+                    "nature": "Corso avanzato per imparare a sviluppare sistemi di intelligenza artificiale."
+                }
             ]
         },
         {
             "title": "Cyber Security",
             "courses": [
-                "Ethical Hacking",
-                "Network Security",
-                "Cryptography"
+                {
+                    "title": "Cyber Security",
+                    "duration": "4 mesi",
+                    "mode": "In aula | Online",
+                    "description": "Imparare le conoscenze necessarie per proteggere sistemi informatici, reti e dati da attacchi",
+                    "lessons": 50,
+                    "time": "4h 30m",
+                    "level": "Beginner/Middle",
+                    "nature": "Corso mirato alla protezione e sicurezza informatica."
+                }
+            ]
+        },
+        {
+            "title": "Marketing e Management",
+            "courses": [
+                {
+                    "title": "SEO Expert",
+                    "duration": "2 mesi",
+                    "mode": "In aula | Online",
+                    "description": "Ti saranno fornite le capacità necessarie per migliorare la visibilità di un sito web sui motori di ricerca",
+                    "lessons": 16,
+                    "time": "3h 30m",
+                    "level": "Beginner",
+                    "nature": "Corso orientato all'ottimizzazione per i motori di ricerca."
+                },
+                {
+                    "title": "Project Management",
+                    "duration": "4 mesi",
+                    "mode": "In aula | Online",
+                    "description": "Avrai una formazione completa sulle competenze necessarie per gestire progetti di successo",
+                    "lessons": 80,
+                    "time": "4h",
+                    "level": "Beginner",
+                    "nature": "Corso progettato per sviluppare competenze di gestione di progetti."
+                }
             ]
         }
     ]

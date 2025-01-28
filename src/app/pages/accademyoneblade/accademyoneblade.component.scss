@@ -1,22 +1,45 @@
+/* Variabili principali */
+$primary-color: #6a1b9a;
+$secondary-color: #9c2ea6;
+$text-color: #ffffff;
+$text-color-dark: #000000;
+$background-color: rgb(83, 62, 133);
+$hover-color: rgba(0, 0, 0, 0.2);
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+$border-radius: 0.75rem; /* 12px */
+$transition-speed: 0.3s;
+$font-size-base: 1rem; /* 16px */
+$font-size-lg: 1.5rem; /* 24px */
+$font-size-xl: 2.5rem; /* 40px */
+$font-size-ribbon: 0.9rem; /* 14px */
+$padding-base: 1.25rem; /* 20px */
+$gap: 1rem; /* 16px */
+$filter-width: 50%;
+$filter-max-width: 25rem; /* 400px */
+
+/* Stile generale per i testi */
 contenitore-testo {
     h1 {
-        font-size: 2.5rem;
+        font-size: $font-size-xl;
         font-weight: bold;
+        color: $text-color;
     }
 
     h3 {
-        font-size: 1.5rem;
+        font-size: $font-size-lg;
         font-weight: normal;
-        margin-bottom: 20px;
+        margin-bottom: $gap;
+        color: $text-color;
     }
 
     ul {
-        padding-left: 20px;
+        padding-left: $gap;
         list-style: none;
 
         li {
-            font-size: 1rem;
-            margin-bottom: 10px;
+            font-size: $font-size-base;
+            margin-bottom: 0.625rem; /* 10px */
+            color: $text-color;
 
             &:before {
                 content: '✔ ';
@@ -27,118 +50,206 @@ contenitore-testo {
     }
 }
 
-
+/* Immagini */
 img {
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 400px;
+    max-width: 25rem; /* 400px */
     height: auto;
     margin-left: auto;
 }
 
+/* Banner */
 .color-accademy-banner {
     background-color: #a380bc;
 }
 
 .textBannerAccademy {
-    color: #ffffff;
+    color: $text-color;
 }
 
-
+/* Box generico */
 .box {
-    background-color: rgb(83 62 133);
-    color: white;
-    border-radius: 12px;
+    background-color: $background-color;
+    color: $text-color;
+    border-radius: $border-radius;
     text-align: center;
-    padding: 20px;
-    height: 250px;
+    padding: $padding-base;
+    min-height: 15.625rem; /* 250px */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-    /* Stile per l'immagine di sfondo */
+    box-shadow: $box-shadow;
+    transition: transform $transition-speed, box-shadow $transition-speed;
     background-size: cover;
-    /* L'immagine copre l'intera area del box */
     background-position: center;
-    /* Centra l'immagine */
     background-repeat: no-repeat;
-    /* Evita la ripetizione dell'immagine */
+
+    &:hover {
+        transform: translateY(-0.3125rem); /* -5px */
+        box-shadow: 0 0.5rem 1rem $hover-color;
+    }
+
+    h2 {
+        margin-bottom: 0.625rem; /* 10px */
+    }
+
+    p {
+        margin: 0;
+    }
 }
 
-.box:hover {
-    transform: translateY(-5px);
-    /* Leggera elevazione al passaggio del mouse */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    /* Ombra più intensa */
-}
-
-.box h2 {
-    margin-bottom: 10px;
-}
-
-.box p {
-    margin: 0;
-}
-
+/* Accademy Banner */
 .accademyBanner1 {
     background-image: url('../../../assets/accademy/never-stop-learning-3653430_640.jpg');
-
+    background-size: cover;
 }
 
 .xAccademyLogo {
     background-image: url('../../../assets/accademy/logo_xAccademy.svg');
-    background-repeat: no-repeat; /* Evita la ripetizione */
-    background-size: contain; /* Adatta l'immagine dentro il div */
-    background-position: center; /* Centra l'immagine */
-    width: 310px; /* Imposta una larghezza adeguata */
-    height: 150px; /* Imposta un'altezza adeguata */
-    display: block; /* Assicura che il div venga visualizzato */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 19.375rem; /* 310px */
+    height: 9.375rem; /* 150px */
+    display: block;
 }
 
 .remote {
-    background-image: url('../../../assets//world.png');
+    background-image: url('../../../assets/world.png');
+    background-size: cover;
 }
 
-
+/* Sezione corsi */
 .course-section {
-    background-color: #ffffff;
+    background-color: $text-color;
+    padding: 2.5rem 1.25rem; /* 40px 20px */
 
     .category {
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem; /* 40px */
 
         .category-title {
-            font-size: 1.8rem;
+            font-size: $font-size-lg;
             font-weight: bold;
-            margin-bottom: 20px;
+            margin-bottom: $gap;
             text-align: center;
-            color: #6a1b9a;
+            color: $primary-color;
         }
 
         .course-list {
             display: flex;
             justify-content: center;
-            gap: 15px;
+            gap: $gap;
             flex-wrap: wrap;
         }
 
         .course-card {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            font-size: 1.2rem;
-            width: 200px;
+            background-color: $text-color;
+            color: $text-color-dark;
+            padding: $padding-base;
+            border-radius: $border-radius;
+            box-shadow: $box-shadow;
+            text-align: left;
+            font-size: $font-size-base;
+            width: 18.75rem; /* 300px */
             transition: transform 0.2s, box-shadow 0.2s;
 
             &:hover {
                 transform: scale(1.05);
-                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 0.75rem 1.5rem $hover-color;
+                cursor: pointer;
             }
+
+            h3 {
+                font-size: 1.4rem;
+                font-weight: bold;
+                margin-bottom: 0.625rem; /* 10px */
+                color: $primary-color;
+            }
+
+            p {
+                margin: 0.3125rem 0; /* 5px */
+                font-size: 0.9rem;
+            }
+
+            .course-details {
+                margin-top: 0.625rem; /* 10px */
+                font-size: 0.9rem;
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+/* Ribbon */
+.course-card {
+    position: relative;
+    overflow: hidden;
+
+    .ribbon {
+        position: absolute;
+        top: 0.625rem; /* 10px */
+        right: 0;
+        background: $secondary-color;
+        color: $text-color;
+        padding: 0.3125rem 1.875rem; /* 5px 30px */
+        font-size: $font-size-ribbon;
+        font-weight: bold;
+        transform: rotate(20deg);
+        box-shadow: $box-shadow;
+        border-radius: 0.25rem; /* 4px */
+        opacity: 0;
+        transition: all $transition-speed ease-in-out;
+    }
+
+    &:hover .ribbon {
+        right: -0.625rem; /* -10px */
+        opacity: 1;
+    }
+}
+
+/* Filtro */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.875rem; /* 30px */
+    text-align: center;
+    flex-direction: column;
+
+    label {
+        font-size: $font-size-lg;
+        font-weight: bold;
+        color: $primary-color;
+        margin-bottom: 0.625rem; /* 10px */
+    }
+
+    select {
+        font-size: $font-size-base;
+        padding: 0.75rem 1.25rem; /* 12px 20px */
+        border-radius: $border-radius;
+        border: 1px solid $primary-color;
+        background-color: $text-color;
+        color: $primary-color;
+        cursor: pointer;
+        width: $filter-width;
+        max-width: $filter-max-width;
+        text-align: center;
+        box-shadow: $box-shadow;
+        transition: all $transition-speed;
+
+        &:hover {
+            background-color: #a380bc;
+            color: $text-color;
+            border: 1px solid $text-color;
+        }
+
+        &:focus {
+            outline: none;
+            border-color: #a380bc;
+            box-shadow: 0px 0px 0.5rem rgba(208, 92, 212, 0.5);
         }
     }
 }
