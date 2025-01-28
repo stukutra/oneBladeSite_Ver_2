@@ -1,0 +1,28 @@
+{
+    "categories": [
+        {
+            "title": "Sviluppo Web",
+            "courses": [
+                "Frontend Development",
+                "Backend Development",
+                "Full Stack Development"
+            ]
+        },
+        {
+            "title": "Data Science",
+            "courses": [
+                "Machine Learning",
+                "Data Analysis",
+                "Big Data"
+            ]
+        },
+        {
+            "title": "Cyber Security",
+            "courses": [
+                "Ethical Hacking",
+                "Network Security",
+                "Cryptography"
+            ]
+        }
+    ]
+}

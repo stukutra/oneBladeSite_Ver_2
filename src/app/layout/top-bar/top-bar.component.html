@@ -13,19 +13,24 @@
   <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
+        <a class="nav-link" routerLink="/home" routerLinkActive="active">
+          <i class="me-2">Home</i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/accademy" routerLinkActive="active">
+          Accademy
+        </a>
+      </li>
+      <li class="nav-item d-flex align-items-center">
         <a class="nav-link christmas-link" href="#" (click)="openChristmasModal($event)">
           Gioca con me!
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link linkedin-link" href="https://www.linkedin.com/in/guidosalzano/" target="_blank">
-          <i class="bi bi-archive"></i> Accademy
-        </a>
-      </li>
       <li class="nav-item d-flex align-items-center">
-        <i class="bi bi-globe language-icon me-2"></i> <!-- Icona del mondo -->
+        <i class="bi bi-globe me-2"></i>
         <select class="form-select language-select" (change)="changeLanguage($event)" aria-label="Select Language">
-          <option value="it">Italiano</option>
+          <option value="it">Italian</option>
           <option value="en">English</option>
           <option value="es">Español</option>
         </select>
@@ -33,8 +38,6 @@
     </ul>
   </div>
 </nav>
-
-
 <div class="custom-modal-natale" *ngIf="isChristmasModalVisible">
   <div class="custom-modal-content-natale">
     <span class="custom-modal-close-natale" (click)="closeChristmasModal()">&times;</span>

@@ -1,6 +1,8 @@
 import { NO_ERRORS_SCHEMA, NgModule } from '@angular/core';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
+import { AccademyCaroselComponent } from './pages/accademyCarosel/accademyCarosel.component';
+import { AccademyonebladeComponent } from './pages/accademyoneblade/accademyoneblade.component';
 import { AgencyDetailsComponent } from './pages/agencyDetails/agencyDetails.component';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -23,7 +25,6 @@ import { QuestionnaireComponent } from './pages/questionnaire/questionnaire.comp
 import { TopBarComponent } from './layout/top-bar/top-bar.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-// Funzione di factory per il TranslateLoader
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -43,7 +44,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     QuestionnaireComponent,
     Privacy_policyComponent,
     AgencyDetailsComponent,
-    MyInformationComponent
+    MyInformationComponent,
+    AccademyCaroselComponent,
+    AccademyonebladeComponent
   ],
   imports: [
     BrowserModule,

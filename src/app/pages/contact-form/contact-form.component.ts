@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Contact } from 'src/app/modules/contact';
 import { HttpClient } from '@angular/common/http';
 import { NgForm } from '@angular/forms';
 
@@ -8,6 +9,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./contact-form.component.scss']
 })
 export class ContactFormComponent {
+
   model: any = {
     name: '',
     telephone: '',
