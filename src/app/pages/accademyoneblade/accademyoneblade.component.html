@@ -1,13 +1,19 @@
-<app-accademyCarosel></app-accademyCarosel>
+
 
 <div class="container-full color-accademy-banner p-5">
   <div class="row">
     <!-- Colonna sinistra: Testo -->
     <div class="col-6 contenitore-testo d-flex flex-column justify-content-center textBannerAccademy">
       <h1>Semplice, pratico, efficace: <br>il tuo percorso tech</h1>
+
       <h3>
-        Forma le tue competenze tech con corsi online orientati <strong>pratica</strong>. Parti da zero e impara in modo rapido e pratico
+        Forma le tue competenze tech con corsi online orientati alla <strong>pratica</strong>. <br>Parti da zero e
+        impara in modo
+        rapido e pratico
       </h3>
+      
+        <div  class="xAccademyLogo mt-3">La nostra forza è la tua crescita: insieme a </div>
+
     </div>
     <!-- Colonna destra: Immagine -->
     <div class="col-6">
@@ -23,10 +29,12 @@
   </div>
 </div>
 
-
 <div class="container-full course-section p-5">
   <div class="container">
-    <h2 class="text-center">Scopri i nostri corsi</h2>
+    <h1 class="text-center">Scopri i nostri corsi</h1>
+    <h3 class="text-center mb-5">
+      Traccia la tua strada, noi saremo al tuo fianco.
+    </h3>
     <div *ngFor="let category of categories" class="category">
       <h3 class="category-title">{{ category.title }}</h3>
       <div class="course-list">

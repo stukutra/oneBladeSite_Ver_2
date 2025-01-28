@@ -89,13 +89,23 @@ img {
 
 }
 
+.xAccademyLogo {
+    background-image: url('../../../assets/accademy/logo_xAccademy.svg');
+    background-repeat: no-repeat; /* Evita la ripetizione */
+    background-size: contain; /* Adatta l'immagine dentro il div */
+    background-position: center; /* Centra l'immagine */
+    width: 310px; /* Imposta una larghezza adeguata */
+    height: 150px; /* Imposta un'altezza adeguata */
+    display: block; /* Assicura che il div venga visualizzato */
+}
+
 .remote {
     background-image: url('../../../assets//world.png');
 }
 
 
 .course-section {
-    background-color: #f5f5f5;
+    background-color: #ffffff;
 
     .category {
         margin-bottom: 40px;
@@ -105,7 +115,7 @@ img {
             font-weight: bold;
             margin-bottom: 20px;
             text-align: center;
-            color: #6a1b9a; // Viola accademy
+            color: #6a1b9a;
         }
 
         .course-list {
@@ -116,13 +126,12 @@ img {
         }
 
         .course-card {
-            background-color: #fff;
+            background-color: #ffffff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
             font-size: 1.2rem;
-            font-weight: bold;
             width: 200px;
             transition: transform 0.2s, box-shadow 0.2s;
 
