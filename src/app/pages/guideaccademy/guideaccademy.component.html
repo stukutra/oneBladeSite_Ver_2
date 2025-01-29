@@ -8,7 +8,7 @@
         impara in modo
         rapido e pratico
       </h3>
-        <div  class="xAccademyLogo mt-3">La nostra forza è la tua crescita: insieme a </div>
+      <div class="xAccademyLogo mt-3">La nostra forza è la tua crescita: insieme a </div>
     </div>
     <!-- Colonna destra: Immagine -->
     <div class="col-6">
@@ -24,15 +24,39 @@
   </div>
 </div>
 
+<div class="container align-items-center mt-5 titleGuide">
+  <div class="row">
+    <div class="col">
+      <h1><strong>Guide per chi vuole dare una sbirciatina 🙂</strong></h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p>
+        <strong>Oggi la programmazione è diventata una competenza essenziale</strong>, proprio come la capacità di usare uno smartphone o un computer lo è stata negli ultimi decenni.  
+        Con l’<strong>evoluzione tecnologica</strong> e la crescente <strong>digitalizzazione</strong>, acquisire abilità nel settore informatico è 
+        fondamentale per <strong>restare competitivi nel mercato</strong>.
+      </p>
+      <p>
+        Le aziende cercano costantemente <strong>professionisti qualificati</strong>, ma l’offerta di talenti non riesce a soddisfare la domanda:  
+        <span class="highlight">solo in Italia, si stimano oltre <strong>200.000 posizioni aperte</strong> in ambito tech.</span>
+      </p>
+      <p>
+        Indipendentemente dall’area in cui si desidera specializzarsi, è <strong>cruciale costruire solide basi di conoscenza</strong>.  
+        Le nostre guide sono pensate per chi vuole <strong>avvicinarsi al mondo dello sviluppo web</strong>, fornendo strumenti  
+        <strong>pratici e concreti</strong> per iniziare a programmare e scoprire le opportunità offerte da questa professione.
+      </p>
+    </div>
+  </div>
+</div>
 
-
-<div class="guides-container">
+<div class="guides-container mt-5 mb-5">
   <h1>Guide avanzate</h1>
   <p>Scopri tutte le guide tecniche a tema sviluppo web.</p>
 
   <div class="guide-list">
     <div *ngFor="let guide of guides" class="guide-card" (click)="openGuide(guide)">
-      <img [src]="guide.image" alt="{{ guide.title }}"/>
+      <img [src]="guide.image" alt="{{ guide.title }}" />
       <h2>{{ guide.title }}</h2>
       <p>{{ guide.description }}</p>
       <button>Scopri di più →</button>

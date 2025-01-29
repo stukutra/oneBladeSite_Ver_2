@@ -1,18 +1,37 @@
-
+// 🎨 Variabili globali
 $text-color: #ffffff;
+$primary-color: #6a1b9a;
+$secondary-color: rgb(83, 62, 133);
+$accent-color: #9c2ea6;
+$background-light: #fff;
+$background-dark: #a380bc;
+$border-radius: 0.75rem; // 12px
+$padding-base: 1.25rem; // 20px
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+$box-shadow-hover: 0 6px 12px rgba(0, 0, 0, 0.15);
+$transition-speed: 0.3s;
+$hover-color: rgba(0, 0, 0, 0.2);
+$font-size-title: 2.5rem;
+$font-size-subtitle: 1.2rem;
+$font-size-text: 0.9rem;
+$font-size-button: 0.9rem;
+$button-height: 40px;
+$card-width: 250px;
+$card-min-height: 380px;
+$image-height: 80px;
 
-
+/* 📌 Contenitore Guide */
 .guides-container {
     text-align: center;
     padding: 2rem;
 
     h1 {
-        font-size: 2.5rem;
-        color: #6a1b9a;
+        font-size: $font-size-title;
+        color: $primary-color;
     }
 
     p {
-        font-size: 1.2rem;
+        font-size: $font-size-subtitle;
         margin-bottom: 2rem;
     }
 
@@ -22,83 +41,83 @@ $text-color: #ffffff;
         justify-content: center;
         gap: 1.5rem;
     }
-    
+
     .guide-card {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        background: #fff;
+        background: $background-light;
         padding: 1.5rem;
-        border-radius: 12px;
+        border-radius: $border-radius;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        width: 250px;
+        width: $card-width;
         height: 100%;
-        min-height: 380px; /* Imposta un'altezza minima uguale per tutte */
-        transition: transform 0.3s ease;
+        min-height: $card-min-height;
+        transition: transform $transition-speed ease;
         cursor: pointer;
-        justify-content: space-between; /* Mantiene il pulsante in basso */
-    
+        justify-content: space-between; // Mantiene il pulsante in basso
+
         &:hover {
             transform: scale(1.05);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            box-shadow: $box-shadow-hover;
         }
-    
+
         img {
             width: auto;
-            height: 80px; /* Imposta la stessa altezza per tutte le immagini */
+            height: $image-height;
             object-fit: contain;
             margin-bottom: 1rem;
         }
-    
+
         h2 {
-            font-size: 1.2rem;
+            font-size: $font-size-subtitle;
             font-weight: bold;
-            color: #6a1b9a;
+            color: $primary-color;
             margin-bottom: 0.5rem;
         }
-    
+
         p {
-            font-size: 0.9rem;
-            flex-grow: 1; /* Espande il testo per bilanciare la card */
+            font-size: $font-size-text;
+            flex-grow: 1; // Espande il testo per bilanciare la card
             margin-bottom: 1rem;
         }
-    
+
         button {
-            background: #6a1b9a;
-            color: #fff;
+            background: $primary-color;
+            color: $text-color;
             border: none;
             padding: 0.75rem 1.5rem;
             border-radius: 6px;
-            font-size: 0.9rem;
+            font-size: $font-size-button;
             font-weight: bold;
             width: 100%;
             max-width: 180px;
-            height: 40px;
+            height: $button-height;
             cursor: pointer;
-            transition: background 0.3s ease;
+            transition: background $transition-speed ease;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: auto; /* Fissa il pulsante in basso */
-    
+            margin-top: auto; // Fissa il pulsante in basso
+
             &:hover {
-                background: #9c2ea6;
+                background: $accent-color;
             }
         }
     }
 }
 
-
-/* Banner */
+/* 📌 Banner */
 .color-accademy-banner {
-    background-color: #a380bc;
+    background-color: $background-dark;
 }
 
 .textBannerAccademy {
     color: $text-color;
 }
 
+/* 📌 Logo Accademy */
 .xAccademyLogo {
     background-image: url('../../../assets/accademy/logo_xAccademy.svg');
     background-repeat: no-repeat;
@@ -109,8 +128,48 @@ $text-color: #ffffff;
     display: block;
 }
 
-/* Accademy Banner */
+/* 📌 Box Generico */
+.box {
+    background-color: $secondary-color;
+    color: $text-color;
+    border-radius: $border-radius;
+    text-align: center;
+    padding: $padding-base;
+    min-height: 15.625rem; /* 250px */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: $box-shadow;
+    transition: transform $transition-speed, box-shadow $transition-speed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:hover {
+        transform: translateY(-0.3125rem); /* -5px */
+        box-shadow: 0 0.5rem 1rem $hover-color;
+    }
+
+    h2 {
+        margin-bottom: 0.625rem; /* 10px */
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+/* 📌 Accademy Banner */
 .accademyBanner1 {
     background-image: url('../../../assets/accademy/never-stop-learning-3653430_640.jpg');
     background-size: cover;
+}
+
+/* 📌 Titolo Guide */
+.titleGuide {
+    h1 {
+        font-size: $font-size-title;
+        color: $primary-color;
+    }
 }
