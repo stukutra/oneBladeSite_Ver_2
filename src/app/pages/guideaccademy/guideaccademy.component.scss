@@ -1,0 +1,116 @@
+
+$text-color: #ffffff;
+
+
+.guides-container {
+    text-align: center;
+    padding: 2rem;
+
+    h1 {
+        font-size: 2.5rem;
+        color: #6a1b9a;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .guide-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    
+    .guide-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background: #fff;
+        padding: 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 250px;
+        height: 100%;
+        min-height: 380px; /* Imposta un'altezza minima uguale per tutte */
+        transition: transform 0.3s ease;
+        cursor: pointer;
+        justify-content: space-between; /* Mantiene il pulsante in basso */
+    
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+    
+        img {
+            width: auto;
+            height: 80px; /* Imposta la stessa altezza per tutte le immagini */
+            object-fit: contain;
+            margin-bottom: 1rem;
+        }
+    
+        h2 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #6a1b9a;
+            margin-bottom: 0.5rem;
+        }
+    
+        p {
+            font-size: 0.9rem;
+            flex-grow: 1; /* Espande il testo per bilanciare la card */
+            margin-bottom: 1rem;
+        }
+    
+        button {
+            background: #6a1b9a;
+            color: #fff;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            width: 100%;
+            max-width: 180px;
+            height: 40px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: auto; /* Fissa il pulsante in basso */
+    
+            &:hover {
+                background: #9c2ea6;
+            }
+        }
+    }
+}
+
+
+/* Banner */
+.color-accademy-banner {
+    background-color: #a380bc;
+}
+
+.textBannerAccademy {
+    color: $text-color;
+}
+
+.xAccademyLogo {
+    background-image: url('../../../assets/accademy/logo_xAccademy.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 19.375rem; /* 310px */
+    height: 9.375rem; /* 150px */
+    display: block;
+}
+
+/* Accademy Banner */
+.accademyBanner1 {
+    background-image: url('../../../assets/accademy/never-stop-learning-3653430_640.jpg');
+    background-size: cover;
+}

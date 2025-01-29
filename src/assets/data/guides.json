@@ -1,0 +1,64 @@
+{
+    "guides": [
+        {
+            "title": "Guida Bootstrap",
+            "description": "Una guida dettagliata su Bootstrap, il framework CSS più utilizzato per creare siti web responsivi e moderni.",
+            "topics": [
+                "Introduzione a Bootstrap",
+                "Struttura base di Bootstrap",
+                "Componenti principali",
+                "Personalizzazione di Bootstrap",
+                "Bootstrap tutorial: creare un sito web"
+            ],
+            "image": "assets/guides/bootstrap_oneBlade.png"
+        },
+        {
+            "title": "Guida Git",
+            "description": "Scopri come utilizzare Git, il sistema di versionamento più popolare tra gli sviluppatori, per gestire i tuoi progetti.",
+            "topics": [
+                "Cos'è Git e perché usarlo",
+                "Installazione e configurazione",
+                "Gestione dei repository",
+                "Branching e merging",
+                "Collaborazione con GitHub"
+            ],
+            "image": "assets/guides/git_oneBlade.png"
+        },
+        {
+            "title": "Guida HTML e CSS",
+            "description": "Una guida completa per imparare le basi di HTML e CSS, i mattoni fondamentali del web design.",
+            "topics": [
+                "Struttura di una pagina HTML",
+                "Tag e attributi fondamentali",
+                "CSS: selettori e proprietà",
+                "Box model e layout responsivo",
+                "Animazioni e transizioni con CSS"
+            ],
+            "image": "assets/guides/html_css_oneBlade.png"
+        },
+        {
+            "title": "Guida TypeScript",
+            "description": "Un'introduzione a TypeScript, il superset di JavaScript che migliora la gestione dei tipi e il controllo del codice.",
+            "topics": [
+                "Perché usare TypeScript",
+                "Tipi e interfacce",
+                "Classi e oggetti",
+                "Moduli e Namespaces",
+                "Compilazione e debugging"
+            ],
+            "image": "assets/guides/typescript_oneBlade.png"
+        },
+        {
+            "title": "Guida SQL",
+            "description": "Impara SQL, il linguaggio essenziale per la gestione dei database relazionali.",
+            "topics": [
+                "Introduzione ai database relazionali",
+                "Creazione e gestione delle tabelle",
+                "Interrogazioni con SELECT",
+                "JOIN e relazioni tra tabelle",
+                "Stored procedures e funzioni"
+            ],
+            "image": "assets/guides/sql_oneBlade.png"
+        }
+    ]
+}

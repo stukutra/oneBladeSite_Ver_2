@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Contact } from 'src/app/modules/contact';
+import { Contact } from 'src/app/models/contact';
 import { HttpClient } from '@angular/common/http';
 import { NgForm } from '@angular/forms';
 
