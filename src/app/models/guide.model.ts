@@ -1,7 +1,12 @@
+export interface Topic {
+    topic: string;
+    description: string;
+}
+
 export interface Guide {
     title: string;
     description: string;
-    topics: string[];
+    topics: Topic[];
     image: string;
 }
 

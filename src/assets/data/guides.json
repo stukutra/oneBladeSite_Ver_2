@@ -4,11 +4,26 @@
             "title": "Guida Bootstrap",
             "description": "Una guida dettagliata su Bootstrap, il framework CSS più utilizzato per creare siti web responsivi e moderni.",
             "topics": [
-                "Introduzione a Bootstrap",
-                "Struttura base di Bootstrap",
-                "Componenti principali",
-                "Personalizzazione di Bootstrap",
-                "Bootstrap tutorial: creare un sito web"
+                {
+                    "topic": "Introduzione a Bootstrap",
+                    "description": "**Bootstrap** è un framework **open-source** creato da Twitter con l'obiettivo di semplificare lo sviluppo di interfacce utente responsive e accessibili a tutti i dispositivi.  \n\n### **📌 Perché usare Bootstrap?**  \n✅ **Facilità d’uso** → Include classi CSS pronte all’uso.  \n✅ **Responsive Design** → Adatta automaticamente i layout ai diversi dispositivi.  \n✅ **Compatibilità Cross-browser** → Supporta tutti i browser moderni.  \n✅ **Componenti predefiniti** → Navbar, modali, form, card e molto altro.  \n✅ **Supporto per JavaScript** → Include funzionalità avanzate senza bisogno di librerie esterne.  \n✅ **Ampia Community** → Grande supporto da parte della community di sviluppatori.  \n\n### **📌 Come Funziona Bootstrap?**  \nBootstrap si basa su un sistema modulare che comprende:  \n1️⃣ **Un sistema a griglia flessibile** per creare layout dinamici.  \n2️⃣ **Una serie di componenti CSS e JavaScript** per elementi interattivi.  \n3️⃣ **Classi di utilità** che permettono di personalizzare margini, padding, colori e altri aspetti del design con facilità.  \n\nPer iniziare a usare Bootstrap in un progetto, ci sono due modalità principali:  \n- **Includere il file Bootstrap tramite CDN**  \n```html\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\">\n```\n- **Scaricare Bootstrap localmente** ed integrarlo nel progetto.  \n\n### **📌 Mobile-First e Responsive Design**  \nUno dei punti di forza di Bootstrap è il suo approccio **mobile-first**. Questo significa che il framework è stato progettato per **adattarsi perfettamente a qualsiasi schermo**, dai dispositivi mobili ai monitor di grandi dimensioni, utilizzando un sistema a **griglia fluida** e media queries predefinite.  \n💡 **Esempio di layout responsive con Bootstrap**:  \n```html\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-md-6 bg-primary text-white\">Colonna 1</div>\n    <div class=\"col-md-6 bg-secondary text-white\">Colonna 2</div>\n  </div>\n</div>\n```\nQuesto codice crea un layout con due colonne che **si ridimensionano automaticamente** in base alla dimensione dello schermo.  \n\n### **📌 Chi Utilizza Bootstrap?**  \nBootstrap è ampiamente adottato da:  \n✅ **Aziende tecnologiche** come Twitter, Spotify, e Airbnb.  \n✅ **Sviluppatori e designer** che vogliono creare siti web in modo rapido.  \n✅ **Startup e freelancer** che hanno bisogno di soluzioni professionali senza spendere troppo tempo sulla grafica.  \n\nGrazie alla sua versatilità, Bootstrap è utilizzato sia in **progetti personali**, sia in **grandi applicazioni web aziendali**.  \n\n### **🚀 Conclusione**  \nBootstrap rappresenta uno **strumento essenziale** per qualsiasi sviluppatore che voglia realizzare **siti web moderni, performanti e responsive** senza dover scrivere codice CSS complesso. Grazie alla sua vasta gamma di componenti predefiniti, il supporto per JavaScript e il sistema a griglia flessibile, permette di risparmiare **tempo e risorse**, offrendo al contempo un **design pulito e professionale**.  \n\nSe vuoi approfondire ulteriormente, esploreremo nel dettaglio **la struttura della griglia, i componenti principali e le tecniche di personalizzazione avanzata di Bootstrap** nelle prossime sezioni. 🚀🔥"
+                },
+                {
+                    "topic": "Struttura base di Bootstrap",
+                    "description": "Bootstrap utilizza una struttura basata su una griglia a 12 colonne. Il file di base include il collegamento ai file CSS e JavaScript necessari, oltre a un contenitore `.container` che ospita righe `.row` e colonne `.col` per il layout."
+                },
+                {
+                    "topic": "Componenti principali",
+                    "description": "Bootstrap offre una vasta gamma di componenti come bottoni, navbar, modali, card e carousel. Questi elementi sono facilmente personalizzabili e utilizzabili senza scrivere codice CSS aggiuntivo."
+                },
+                {
+                    "topic": "Personalizzazione di Bootstrap",
+                    "description": "Bootstrap permette di personalizzare i suoi componenti modificando le variabili SCSS o sovrascrivendo gli stili con file CSS personalizzati. È anche possibile utilizzare Bootstrap Themes per personalizzazioni avanzate."
+                },
+                {
+                    "topic": "Bootstrap tutorial: creare un sito web",
+                    "description": "Una guida passo passo su come costruire un sito web completo utilizzando Bootstrap. Il tutorial include l'integrazione di navbar, form di contatto, griglie e componenti avanzati per una pagina moderna e professionale."
+                }
             ],
             "image": "assets/guides/bootstrap_oneBlade.png"
         },
@@ -16,11 +31,26 @@
             "title": "Guida Git",
             "description": "Scopri come utilizzare Git, il sistema di versionamento più popolare tra gli sviluppatori, per gestire i tuoi progetti.",
             "topics": [
-                "Cos'è Git e perché usarlo",
-                "Installazione e configurazione",
-                "Gestione dei repository",
-                "Branching e merging",
-                "Collaborazione con GitHub"
+                {
+                    "topic": "Cos'è Git e perché usarlo",
+                    "description": "Git è un sistema di controllo di versione distribuito che consente agli sviluppatori di tracciare le modifiche al codice, collaborare in team e gestire versioni diverse di un progetto senza perdere dati."
+                },
+                {
+                    "topic": "Installazione e configurazione",
+                    "description": "Git può essere installato su Windows, macOS e Linux. Dopo l'installazione, è necessario configurare il proprio utente con `git config --global user.name` e `git config --global user.email` per identificarsi nei repository."
+                },
+                {
+                    "topic": "Gestione dei repository",
+                    "description": "Un repository Git è una cartella contenente il codice del progetto e la cronologia delle modifiche. È possibile inizializzare un nuovo repository con `git init` o clonarne uno esistente con `git clone URL`."
+                },
+                {
+                    "topic": "Branching e merging",
+                    "description": "Git permette di lavorare su più rami (`branches`) contemporaneamente, permettendo agli sviluppatori di testare nuove funzionalità senza compromettere il codice principale. Il comando `git merge` consente di unire le modifiche di un branch in un altro."
+                },
+                {
+                    "topic": "Collaborazione con GitHub",
+                    "description": "GitHub è una piattaforma che permette di gestire repository remoti, facilitando la collaborazione tra sviluppatori. Si può creare un `pull request` per proporre modifiche o utilizzare `git push` e `git pull` per aggiornare il repository."
+                }
             ],
             "image": "assets/guides/git_oneBlade.png"
         },
@@ -28,11 +58,26 @@
             "title": "Guida HTML e CSS",
             "description": "Una guida completa per imparare le basi di HTML e CSS, i mattoni fondamentali del web design.",
             "topics": [
-                "Struttura di una pagina HTML",
-                "Tag e attributi fondamentali",
-                "CSS: selettori e proprietà",
-                "Box model e layout responsivo",
-                "Animazioni e transizioni con CSS"
+                {
+                    "topic": "Struttura di una pagina HTML",
+                    "description": "Un file HTML è composto da una struttura ben definita che include il `DOCTYPE`, il `head` per i metadati e il `body` per il contenuto della pagina. Ogni elemento HTML è definito da tag come `<div>`, `<header>`, `<section>` e `<footer>`."
+                },
+                {
+                    "topic": "Tag e attributi fondamentali",
+                    "description": "HTML utilizza tag per definire il contenuto di una pagina. Ogni tag può avere attributi, come `id`, `class`, `href`, `src` e `alt`, che forniscono informazioni aggiuntive e permettono di personalizzare l'elemento."
+                },
+                {
+                    "topic": "CSS: selettori e proprietà",
+                    "description": "CSS è il linguaggio che permette di definire lo stile degli elementi HTML. I selettori CSS consentono di applicare regole specifiche a determinati elementi, mentre le proprietà CSS gestiscono colore, dimensione, margini e layout."
+                },
+                {
+                    "topic": "Box model e layout responsivo",
+                    "description": "Il Box Model di CSS definisce come vengono calcolate le dimensioni degli elementi, tenendo conto di margini, padding e bordi. Il layout responsivo può essere realizzato utilizzando tecniche come Flexbox e CSS Grid."
+                },
+                {
+                    "topic": "Animazioni e transizioni con CSS",
+                    "description": "CSS permette di creare animazioni fluide utilizzando `transition` e `animation`. Con `keyframes`, è possibile definire movimenti e cambiamenti di stile progressivi sugli elementi della pagina."
+                }
             ],
             "image": "assets/guides/html_css_oneBlade.png"
         },
@@ -40,11 +85,14 @@
             "title": "Guida TypeScript",
             "description": "Un'introduzione a TypeScript, il superset di JavaScript che migliora la gestione dei tipi e il controllo del codice.",
             "topics": [
-                "Perché usare TypeScript",
-                "Tipi e interfacce",
-                "Classi e oggetti",
-                "Moduli e Namespaces",
-                "Compilazione e debugging"
+                {
+                    "topic": "Perché usare TypeScript",
+                    "description": "TypeScript è un superset di JavaScript che introduce i tipi statici per migliorare la manutenibilità e la sicurezza del codice. Aiuta a prevenire errori e facilita il refactoring del codice."
+                },
+                {
+                    "topic": "Tipi e interfacce",
+                    "description": "TypeScript introduce i tipi statici come `string`, `number`, `boolean`, oltre a tipi avanzati come `union`, `tuple` e `any`. Le interfacce permettono di definire la struttura di oggetti complessi."
+                }
             ],
             "image": "assets/guides/typescript_oneBlade.png"
         },
@@ -52,11 +100,14 @@
             "title": "Guida SQL",
             "description": "Impara SQL, il linguaggio essenziale per la gestione dei database relazionali.",
             "topics": [
-                "Introduzione ai database relazionali",
-                "Creazione e gestione delle tabelle",
-                "Interrogazioni con SELECT",
-                "JOIN e relazioni tra tabelle",
-                "Stored procedures e funzioni"
+                {
+                    "topic": "Introduzione ai database relazionali",
+                    "description": "Un database relazionale è una raccolta di dati organizzati in tabelle collegate tra loro. SQL (Structured Query Language) è il linguaggio utilizzato per interagire con questi database."
+                },
+                {
+                    "topic": "Creazione e gestione delle tabelle",
+                    "description": "In SQL, le tabelle vengono create con il comando `CREATE TABLE` e possono essere modificate con `ALTER TABLE`. Le colonne devono essere definite con un tipo di dato appropriato come `VARCHAR`, `INT` o `DATE`."
+                }
             ],
             "image": "assets/guides/sql_oneBlade.png"
         }

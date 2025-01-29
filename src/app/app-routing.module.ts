@@ -1,6 +1,7 @@
 import { RouterModule, Routes } from '@angular/router';
 
 import { AccademyonebladeComponent } from './pages/accademyoneblade/accademyoneblade.component';
+import { GuideAccademyDetailsComponent } from './pages/guideAccademyDetails/guideAccademyDetails.component';
 import { GuideaccademyComponent } from './pages/guideaccademy/guideaccademy.component';
 import { HomeComponent } from './layout/home/home.component';
 import { NgModule } from '@angular/core';
@@ -11,7 +12,8 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'questionario', component: QuestionnaireComponent },
   { path: 'accademy', component: AccademyonebladeComponent },
-  { path: 'guideAccademy', component: GuideaccademyComponent }
+  { path: 'guideAccademy', component: GuideaccademyComponent },
+  { path: 'guideAccademy/:title', component: GuideAccademyDetailsComponent }
 ];
 
 @NgModule({

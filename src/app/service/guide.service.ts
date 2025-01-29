@@ -17,4 +17,14 @@ export class GuideService {
       map((response: { guides: any; }) => response.guides)
     );
   }
+
+  getGuideByTitle(title: string): Observable<Guide | undefined> {
+    return this.getGuides().pipe(
+      map(guides => guides.find(guide => this.formatTitle(guide.title) === title))
+    );
+  }
+  
+  private formatTitle(title: string): string {
+    return title.toLowerCase().replace(/\s+/g, '-');
+  }
 }
