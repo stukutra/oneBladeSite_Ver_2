@@ -8,8 +8,8 @@ $hover-color: rgba(0, 0, 0, 0.2);
 $box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 $border-radius: 0.75rem; /* 12px */
 $transition-speed: 0.3s;
-$font-size-base: 2rem; /* 16px */
-$font-size-lg: 2.3rem; /* 24px */
+$font-size-base: 1.8rem; /* 16px */
+$font-size-lg: 2.8rem; /* 24px */
 $font-size-xl: 2.5rem; /* 40px */
 $font-size-ribbon: 1rem; /* 14px */
 $padding-base: 1.25rem; /* 20px */
@@ -38,7 +38,7 @@ contenitore-testo {
 
         li {
             font-size: $font-size-base;
-            margin-bottom: 0.625rem; /* 10px */
+            margin-bottom: 0px; /* 10px */
             color: $text-color;
 
             &:before {
@@ -153,7 +153,7 @@ img {
             box-shadow: $box-shadow;
             text-align: left;
             font-size: $font-size-base;
-            width: 18.75rem; /* 300px */
+            width: 30rem; /* 300px */
             transition: transform 0.2s, box-shadow 0.2s;
 
             &:hover {
@@ -171,12 +171,12 @@ img {
 
             p {
                 margin: 0.3125rem 0; /* 5px */
-                font-size: 0.9rem;
+                font-size: 1.3rem;
             }
 
             .course-details {
                 margin-top: 0.625rem; /* 10px */
-                font-size: 0.9rem;
+                font-size: 1.8rem;
                 color: $secondary-color;
             }
         }
@@ -205,7 +205,7 @@ img {
     }
 
     &:hover .ribbon {
-        right: -1rem; /* Mostra il ribbon completamente */
+        right: -0.7rem; /* Mostra il ribbon completamente */
         opacity: 0.6;
     }
 }
