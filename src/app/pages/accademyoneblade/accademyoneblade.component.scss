@@ -2,6 +2,7 @@
 $primary-color: #6a1b9a;
 $secondary-color: #9c2ea6;
 $text-color: #ffffff;
+$text-color-oneblade: #9c2ea6;;
 $text-color-dark: #000000;
 $background-color: rgb(83, 62, 133);
 $hover-color: rgba(0, 0, 0, 0.2);
@@ -208,4 +209,9 @@ img {
         right: -0.7rem; /* Mostra il ribbon completamente */
         opacity: 0.6;
     }
+}
+
+
+.course-level{
+    color: $text-color-oneblade
 }
