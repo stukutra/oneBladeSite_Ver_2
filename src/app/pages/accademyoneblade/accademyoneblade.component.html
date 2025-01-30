@@ -27,19 +27,14 @@
 </div>
 
 
-<div class="filter-container mt-5">
-  <label for="categorySelect">Scegli il tuo corso</label>
-  <select id="categorySelect" [(ngModel)]="selectedCategory" (change)="filterCourses()">
-    <option *ngFor="let category of categories" [value]="category.title">
-      {{ category.title }}
-    </option>
-  </select>
-</div>
-
 <!-- Lista corsi filtrata -->
-<div class="course-section">
-  <div *ngFor="let category of filteredCategories" class="category">
-    
+<!-- Lista corsi senza filtro -->
+<div class="course-section mt-3">
+
+
+  <div *ngFor="let category of categories" class="category">
+    <h3 class="category-title">{{ category.title }}</h3>
+
     <div class="course-list">
       <div *ngFor="let course of category.courses" class="course-card">
           <span class="ribbon">Dettagli</span>
@@ -53,6 +48,5 @@
           <p class="course-level"><strong>Livello:</strong> {{ course.level }}</p>
       </div>
     </div>
-
   </div>
 </div>

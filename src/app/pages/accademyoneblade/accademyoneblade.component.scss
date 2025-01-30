@@ -8,10 +8,10 @@ $hover-color: rgba(0, 0, 0, 0.2);
 $box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 $border-radius: 0.75rem; /* 12px */
 $transition-speed: 0.3s;
-$font-size-base: 1rem; /* 16px */
-$font-size-lg: 1.5rem; /* 24px */
+$font-size-base: 2rem; /* 16px */
+$font-size-lg: 2.3rem; /* 24px */
 $font-size-xl: 2.5rem; /* 40px */
-$font-size-ribbon: 0.9rem; /* 14px */
+$font-size-ribbon: 1rem; /* 14px */
 $padding-base: 1.25rem; /* 20px */
 $gap: 1rem; /* 16px */
 $filter-width: 50%;
@@ -207,49 +207,5 @@ img {
     &:hover .ribbon {
         right: -1rem; /* Mostra il ribbon completamente */
         opacity: 0.6;
-    }
-}
-
-/* Filtro */
-.filter-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1.875rem; /* 30px */
-    text-align: center;
-    flex-direction: column;
-
-    label {
-        font-size: $font-size-lg;
-        font-weight: bold;
-        color: $primary-color;
-        margin-bottom: 0.625rem; /* 10px */
-    }
-
-    select {
-        font-size: $font-size-base;
-        padding: 0.75rem 1.25rem; /* 12px 20px */
-        border-radius: $border-radius;
-        border: 1px solid $primary-color;
-        background-color: $text-color;
-        color: $primary-color;
-        cursor: pointer;
-        width: $filter-width;
-        max-width: $filter-max-width;
-        text-align: center;
-        box-shadow: $box-shadow;
-        transition: all $transition-speed;
-
-        &:hover {
-            background-color: #a380bc;
-            color: $text-color;
-            border: 1px solid $text-color;
-        }
-
-        &:focus {
-            outline: none;
-            border-color: #a380bc;
-            box-shadow: 0px 0px 0.5rem rgba(208, 92, 212, 0.5);
-        }
     }
 }

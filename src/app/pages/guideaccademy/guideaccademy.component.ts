@@ -15,8 +15,7 @@ export class GuideaccademyComponent implements OnInit {
 
   ngOnInit(): void {
     this.guidesService.getGuides().subscribe(data => {
-      this.guides = data;
-      console.log(data);
+      this.guides = data; // 🔹 Carica tutte le guide disponibili
     });
   }
 
