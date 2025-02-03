@@ -3,6 +3,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
 import { AccademyBannerComponent } from './pages/accademy/accademyBanner/accademyBanner.component';
 import { AccademyCaroselComponent } from './pages/accademy/accademyCarosel/accademyCarosel.component';
+import { AccademyDetailsComponent } from './pages/accademy/accademyDetails/accademyDetails.component';
 import { AccademyonebladeComponent } from './pages/accademy/accademyoneblade/accademyoneblade.component';
 import { AgencyDetailsComponent } from './pages/agencyDetails/agencyDetails.component';
 import { AppComponent } from './app.component';
@@ -58,7 +59,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     GuideBannerTopComponent,
     GuideListComponent,
     InfooneBladeComponent,
-    AccademyBannerComponent
+    AccademyBannerComponent,
+    AccademyDetailsComponent
   ],
   imports: [
     BrowserModule,

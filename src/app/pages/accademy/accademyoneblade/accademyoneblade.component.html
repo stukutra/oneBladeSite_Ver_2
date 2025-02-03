@@ -26,20 +26,22 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <!-- Lista corsi senza filtro -->
       <div class="course-section mt-3">
         <div *ngFor="let category of categories" class="category">
           <h3 class="category-title">{{ category.title }}</h3>
           <div class="course-list">
             <div *ngFor="let course of category.courses" class="course-card">
-              <span class="ribbon">Dettagli</span>
-              <h3>{{ course.title }}</h3>
-              <p><strong>Durata:</strong> {{ course.duration }}</p>
-              <p><strong>Modalità:</strong> {{ course.mode }}</p>
-              <p><strong>Lezioni:</strong> {{ course.lessons }}</p>
-              <p><strong>Tempo:</strong> {{ course.time }}</p>
-              <p><strong>Informazioni:</strong> {{ course.description }}</p>
-              <p class="course-level"><strong>Livello:</strong> {{ course.level }}</p>
+              <div [routerLink]="['/AccademyDetails', course.idCourse]">
+                <span class="ribbon">Dettagli</span>
+                <h3>{{ course.title }}</h3>
+                <p><strong>Codice corso:</strong><i> {{ course.idCourse }}</i></p>
+                <p><strong>Durata:</strong> {{ course.duration }}</p>
+                <p><strong>Modalità:</strong> {{ course.mode }}</p>
+                <p><strong>Lezioni:</strong> {{ course.lessons }}</p>
+                <p><strong>Tempo:</strong> {{ course.time }}</p>
+                <p><strong>Informazioni:</strong> {{ course.description }}</p>
+                <p class="course-level"><strong>Livello:</strong> {{ course.level}}</p>
+              </div>
             </div>
           </div>
         </div>

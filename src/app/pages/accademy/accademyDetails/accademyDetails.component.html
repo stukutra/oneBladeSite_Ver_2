@@ -1,0 +1,39 @@
+
+
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col">
+      <div *ngIf="course">
+        <h1>{{ course.title }}</h1>
+
+        <p>
+          {{ course.nature }}
+        </p>
+        <p><strong>ID Corso:</strong> {{ course.idCourse }}</p>
+        <p><strong>Durata:</strong> {{ course.duration }}</p>
+        <p><strong>Modalità:</strong> {{ course.mode }}</p>
+        <p><strong>Lezioni:</strong> {{ course.lessons }}</p>
+        <p><strong>Tempo:</strong> {{ course.time }}</p>
+        <p><strong>Livello:</strong> {{ course.level }}</p>
+        <p><strong>Descrizione:</strong> {{ course.description }}</p>
+      
+        <h3>Contenuti del Corso:</h3>
+        <ul>
+          <li *ngFor="let content of course.course_contents">
+            <strong>{{ content.title }}:</strong> {{ content.text }}
+          </li>
+        </ul>
+      
+        <h3>Requisiti:</h3>
+        <ul>
+          <li *ngFor="let req of course.requirements">
+            <strong>{{ req.title }}:</strong> {{ req.description }}
+          </li>
+        </ul>
+      
+        <a routerLink="/">Torna alla lista corsi</a>
+      </div>
+    </div>
+  </div>
+</div>
