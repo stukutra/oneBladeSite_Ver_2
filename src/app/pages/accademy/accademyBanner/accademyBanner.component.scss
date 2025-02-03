@@ -17,6 +17,7 @@
     background-repeat: no-repeat;
     overflow: hidden;
     font-size: 1.7rem;
+    cursor: pointer;
 
     /* Overlay semi-trasparente */
     &::before {
@@ -26,12 +27,14 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.5); /* Oscura lo sfondo senza eliminare l'immagine */
+        background: rgba(0, 0, 0, 0.5);
+        /* Oscura lo sfondo senza eliminare l'immagine */
         z-index: 1;
     }
 
     /* Assicura che il testo rimanga visibile sopra l'overlay */
-    h2, p {
+    h2,
+    p {
         position: relative;
         z-index: 2;
     }
