@@ -143,5 +143,12 @@ $image-height: 80px;
 
 .text-standard-oneblade{
     font-size: 1.2rem;
-    ;
+    padding: 1rem; /* Spazio interno al testo */
+}
+
+.full-width-img {
+    width: 100%; /* L'immagine occupa tutta la colonna */
+    height: auto;
+    display: block; /* Evita spazi extra sotto l'immagine */
+    object-fit: cover; /* Mantiene l'immagine adattata senza distorsioni */
 }

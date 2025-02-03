@@ -1,0 +1,46 @@
+.box {
+    position: relative;
+    background-color: rgb(83, 62, 133);
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+    padding: 20px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    /* Overlay semi-trasparente */
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Oscura lo sfondo senza eliminare l'immagine */
+        z-index: 1;
+    }
+
+    /* Assicura che il testo rimanga visibile sopra l'overlay */
+    h2, p {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+/* Imposta l'immagine di sfondo */
+.accademy {
+    background-image: url('../../../../assets/accademy/bussola.png');
+}
+
+.guide {
+    background-image: url('../../../../assets/accademy/Guide_oneBlade.png');
+}

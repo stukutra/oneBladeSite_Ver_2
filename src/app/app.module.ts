@@ -1,6 +1,7 @@
 import { NO_ERRORS_SCHEMA, NgModule } from '@angular/core';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
+import { AccademyBannerComponent } from './pages/accademy/accademyBanner/accademyBanner.component';
 import { AccademyCaroselComponent } from './pages/accademy/accademyCarosel/accademyCarosel.component';
 import { AccademyonebladeComponent } from './pages/accademy/accademyoneblade/accademyoneblade.component';
 import { AgencyDetailsComponent } from './pages/agencyDetails/agencyDetails.component';
@@ -22,6 +23,7 @@ import { HomeComponent } from './layout/home/home.component';
 import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 import { ImageCarouselComponent } from './pages/image-carousel/image-carousel.component';
+import { InfooneBladeComponent } from './pages/infooneBlade/infooneBlade.component';
 import { MyInformationComponent } from './pages/myInformation/myInformation.component';
 import { ParallaxComponent } from './pages/parallax/parallax.component';
 import { Privacy_policyComponent } from './pages/privacy_policy/privacy_policy.component';
@@ -54,7 +56,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     GuideaccademyComponent,
     GuideAccademyDetailsComponent,
     GuideBannerTopComponent,
-    GuideListComponent
+    GuideListComponent,
+    InfooneBladeComponent,
+    AccademyBannerComponent
   ],
   imports: [
     BrowserModule,
