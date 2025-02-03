@@ -10,17 +10,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./guideaccademy.component.scss']
 })
 export class GuideaccademyComponent implements OnInit {
-  guides: Guide[] = [];
-  constructor(private router: Router,private guidesService:GuideService) { }
+  
+  constructor() { }
 
-  ngOnInit(): void {
-    this.guidesService.getGuides().subscribe(data => {
-      this.guides = data; // 🔹 Carica tutte le guide disponibili
-    });
+  ngOnInit(){
+   
   }
 
-  openGuide(guide: Guide): void {
-    this.router.navigate(['/guideAccademy', guide.title.toLowerCase().replace(/\s+/g, '-')]);
-  }
+  
 
 }

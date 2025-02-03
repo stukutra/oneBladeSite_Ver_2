@@ -1,7 +1,8 @@
-<div class="container mt-5">
+<app-guideBannerTop></app-guideBannerTop>
+<div class="container mt-5">  
   <ng-container *ngIf="guide$ | async as guide; else loading">
-    <h1 class="text-center text-primary">{{ guide.title }}</h1>
-    <img [src]="guide.image" alt="{{ guide.title }}" class="img-fluid d-block mx-auto mt-3 mb-4 rounded" width="200">
+    <h1 class="text-center text-primary-oneblade">{{ guide.title }}</h1>
+    <img [src]="guide.image" alt="{{ guide.title }}" class="img-fluid d-block mx-auto mt-3 mb-4 rounded" width="30%">
 
     <p class="lead text-center">{{ guide.description }}</p>
 
@@ -24,11 +25,6 @@
           </div>
         </div>
       </div>
-
-    </div>
-
-    <div class="text-center mt-4">
-      <a routerLink="/guideAccademy" class="btn btn-outline-primary">Torna alla lista delle guide</a>
     </div>
   </ng-container>
 
@@ -36,3 +32,7 @@
     <p class="text-center text-muted">Caricamento...</p>
   </ng-template>
 </div>
+
+
+
+<app-guideList></app-guideList>

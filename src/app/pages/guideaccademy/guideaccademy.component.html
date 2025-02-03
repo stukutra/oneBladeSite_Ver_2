@@ -1,28 +1,4 @@
-<div class="container-full color-accademy-banner p-5">
-  <div class="row">
-    <!-- Colonna sinistra: Testo -->
-    <div class="col-6 contenitore-testo d-flex flex-column justify-content-center textBannerAccademy">
-      <h1>Semplice, pratico, efficace: <br>il tuo percorso tech</h1>
-      <h3>
-        Forma le tue competenze tech con corsi online orientati alla <strong>pratica</strong>. <br>Parti da zero e
-        impara in modo
-        rapido e pratico
-      </h3>
-      <div class="xAccademyLogo mt-3">La nostra forza è la tua crescita: insieme a </div>
-    </div>
-    <!-- Colonna destra: Immagine -->
-    <div class="col-6">
-      <div class="container py-5">
-        <div class="row">
-          <div class="col-12">
-            <div class="box accademyBanner1">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<app-guideBannerTop></app-guideBannerTop>
 
 <div class="container p-4 mt-5 titleGuide">
   <div class="row">
@@ -50,16 +26,5 @@
   </div>
 </div>
 
-<div class="guides-container mt-5 mb-5">
-  <h1>Guide avanzate</h1>
-  <p>Scopri tutte le guide tecniche a tema sviluppo web.</p>
 
-  <div class="guide-list">
-    <div *ngFor="let guide of guides" class="guide-card" (click)="openGuide(guide)">
-      <img [src]="guide.image" alt="{{ guide.title }}" />
-      <h2>{{ guide.title }}</h2>
-      <p>{{ guide.description }}</p>
-      <button>Scopri di più →</button>
-    </div>
-  </div>
-</div>
+<app-guideList></app-guideList>

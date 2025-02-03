@@ -18,39 +18,6 @@ $gap: 1rem; /* 16px */
 $filter-width: 50%;
 $filter-max-width: 25rem; /* 400px */
 
-/* Stile generale per i testi */
-contenitore-testo {
-    h1 {
-        font-size: $font-size-xl;
-        font-weight: bold;
-        color: $text-color;
-    }
-
-    h3 {
-        font-size: $font-size-lg;
-        font-weight: normal;
-        margin-bottom: $gap;
-        color: $text-color;
-    }
-
-    ul {
-        padding-left: $gap;
-        list-style: none;
-
-        li {
-            font-size: $font-size-base;
-            margin-bottom: 0px; /* 10px */
-            color: $text-color;
-
-            &:before {
-                content: '✔ ';
-                color: #007bff;
-                font-weight: bold;
-            }
-        }
-    }
-}
-
 /* Immagini */
 img {
     display: flex;

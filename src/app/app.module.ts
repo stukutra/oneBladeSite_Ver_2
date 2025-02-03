@@ -15,6 +15,8 @@ import { ContactFormComponent } from './pages/contact-form/contact-form.componen
 import { FooterComponent } from './layout/footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { GuideAccademyDetailsComponent } from './pages/guideAccademyDetails/guideAccademyDetails.component';
+import { GuideBannerTopComponent } from './pages/guideBannerTop/guideBannerTop.component';
+import { GuideListComponent } from './pages/guideList/guideList.component';
 import { GuideaccademyComponent } from './pages/guideaccademy/guideaccademy.component';
 import { HomeComponent } from './layout/home/home.component';
 import { HttpClient } from '@angular/common/http';
@@ -50,7 +52,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     AccademyCaroselComponent,
     AccademyonebladeComponent,
     GuideaccademyComponent,
-    GuideAccademyDetailsComponent
+    GuideAccademyDetailsComponent,
+    GuideBannerTopComponent,
+    GuideListComponent
   ],
   imports: [
     BrowserModule,
