@@ -1,8 +1,8 @@
 import { RouterModule, Routes } from '@angular/router';
 
-import { AccademyonebladeComponent } from './pages/accademyoneblade/accademyoneblade.component';
-import { GuideAccademyDetailsComponent } from './pages/guideAccademyDetails/guideAccademyDetails.component';
-import { GuideaccademyComponent } from './pages/guideaccademy/guideaccademy.component';
+import { AccademyonebladeComponent } from './pages/accademy/accademyoneblade/accademyoneblade.component';
+import { GuideAccademyDetailsComponent } from './pages/guide/guideAccademyDetails/guideAccademyDetails.component';
+import { GuideaccademyComponent } from './pages/guide/guideaccademy/guideaccademy.component';
 import { HomeComponent } from './layout/home/home.component';
 import { NgModule } from '@angular/core';
 import { QuestionnaireComponent } from './pages/questionnaire/questionnaire.component';

@@ -119,7 +119,7 @@ $image-height: 80px;
 
 /* 📌 Logo Accademy */
 .xAccademyLogo {
-    background-image: url('../../../assets/accademy/logo_xAccademy.svg');
+    background-image: url('../../../../assets/accademy/logo_xAccademy.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -129,12 +129,9 @@ $image-height: 80px;
 }
 /* 📌 Accademy Banner */
 .accademyBanner1 {
-    background-image: url('../../../assets/accademy/never-stop-learning-3653430_640.jpg');
+    background-image: url('../../../../assets/accademy/never-stop-learning-3653430_640.jpg');
     background-size: cover;
 }
-
-
-
 
 /* 📌 Titolo Guide */
 .titleGuide {
@@ -142,4 +139,9 @@ $image-height: 80px;
         font-size: $font-size-title;
         color: $primary-color;
     }
+}
+
+.text-standard-oneblade{
+    font-size: 1.2rem;
+    ;
 }

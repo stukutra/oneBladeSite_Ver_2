@@ -1,8 +1,8 @@
 import { NO_ERRORS_SCHEMA, NgModule } from '@angular/core';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
-import { AccademyCaroselComponent } from './pages/accademyCarosel/accademyCarosel.component';
-import { AccademyonebladeComponent } from './pages/accademyoneblade/accademyoneblade.component';
+import { AccademyCaroselComponent } from './pages/accademy/accademyCarosel/accademyCarosel.component';
+import { AccademyonebladeComponent } from './pages/accademy/accademyoneblade/accademyoneblade.component';
 import { AgencyDetailsComponent } from './pages/agencyDetails/agencyDetails.component';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -14,10 +14,10 @@ import { ContactFormAziendaComponent } from './pages/contact-form-azienda/contac
 import { ContactFormComponent } from './pages/contact-form/contact-form.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { FormsModule } from '@angular/forms';
-import { GuideAccademyDetailsComponent } from './pages/guideAccademyDetails/guideAccademyDetails.component';
-import { GuideBannerTopComponent } from './pages/guideBannerTop/guideBannerTop.component';
-import { GuideListComponent } from './pages/guideList/guideList.component';
-import { GuideaccademyComponent } from './pages/guideaccademy/guideaccademy.component';
+import { GuideAccademyDetailsComponent } from './pages/guide/guideAccademyDetails/guideAccademyDetails.component';
+import { GuideBannerTopComponent } from './pages/guide/guideBannerTop/guideBannerTop.component';
+import { GuideListComponent } from './pages/guide/guideList/guideList.component';
+import { GuideaccademyComponent } from './pages/guide/guideaccademy/guideaccademy.component';
 import { HomeComponent } from './layout/home/home.component';
 import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
