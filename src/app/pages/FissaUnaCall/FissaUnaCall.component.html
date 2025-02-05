@@ -1,0 +1,12 @@
+<!-- Sezione Call -->
+<div class="container-fluid call-section">
+  <div class="row justify-content-center call-container">
+    <div class="col-md-8 text-center">
+      <div class="topCallToAction" (click)="toggleIframe()">Fissa una Call</div>
+      <div class="iframe-container" [ngClass]="{'active': showIframe}">
+        <iframe src="https://calendly.com/oneblade-info" width="100%" height="700px" frameborder="0"
+          title="firstCalloneBlade"></iframe>
+      </div>
+    </div>
+  </div>
+</div>

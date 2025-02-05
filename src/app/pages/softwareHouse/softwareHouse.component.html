@@ -10,15 +10,12 @@
     <!-- Colonna testo centrata verticalmente -->
     <div class="col d-flex align-items-center">
       <div>
-        <h2>Il nostro servizio</h2>
-        <p>
+        <h2 class="title">Il nostro servizio</h2>
+        <p class="subtitle_1">
           <strong>OneBlade</strong> realizza <strong>soluzioni software su misura</strong> per potenziare e ottimizzare il tuo business.  
           Siamo un team di <strong>sviluppatori</strong>, <strong>designer</strong> e <strong>architetti del software</strong>, specializzati nella 
           <strong>progettazione</strong> e <strong>creazione di applicazioni personalizzate</strong>, pensate per rispondere in modo 
-          <strong>efficace</strong> e <strong>innovativo</strong> alle esigenze dei nostri clienti e partner.  
-        </p>
-        
-        <p>
+          <strong>efficace</strong> e <strong>innovativo</strong> alle esigenze dei nostri clienti e partner.<br>
           Ci occupiamo di tutto il <strong>ciclo di sviluppo</strong>, dall’<strong>ideazione</strong> e <strong>progettazione</strong> 
           fino all’<strong>implementazione</strong>, garantendo prodotti di <strong>alta qualità</strong> e perfettamente integrati 
           nei <strong>processi aziendali</strong>.
@@ -30,7 +27,7 @@
 
 <div class="custom-container">
   <h2 class="title">Le nostre soluzioni personalizzate per le aziende</h2>
-  <p class="subtitle">
+  <p class="subtitle_1">
     Scegli tra diverse soluzioni studiate per rispondere nel modo più efficace alle 
     <strong>esigenze di aziende, agenzie marketing e software house</strong>.
   </p>
@@ -60,17 +57,6 @@
   </div>
 </div>
 
-<!-- Sezione Call -->
-<div class="container-fluid call-section">
-  <div class="row justify-content-center call-container">
-    <div class="col-md-8 text-center">
-      <div class="topCallToAction" (click)="toggleIframe()">Fissa una Call</div>
-      <div class="iframe-container" [ngClass]="{'active': showIframe}">
-        <iframe src="https://calendly.com/oneblade-info" width="100%" height="700px" frameborder="0"
-          title="firstCalloneBlade"></iframe>
-      </div>
-    </div>
-  </div>
-</div>
 
+<app-FissaUnaCall></app-FissaUnaCall>
 <app-infooneBlade></app-infooneBlade>

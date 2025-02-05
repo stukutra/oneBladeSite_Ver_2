@@ -14,6 +14,7 @@ import { CompanyDescriptionComponent } from './pages/company-description/company
 import { CompanyLogosComponent } from './pages/company-logos/company-logos.component';
 import { ContactFormAziendaComponent } from './pages/contact-form-azienda/contact-form-azienda.component';
 import { ContactFormComponent } from './pages/contact-form/contact-form.component';
+import { FissaUnaCallComponent } from './pages/FissaUnaCall/FissaUnaCall.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { GuideAccademyDetailsComponent } from './pages/guide/guideAccademyDetails/guideAccademyDetails.component';
@@ -62,7 +63,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     InfooneBladeComponent,
     AccademyBannerComponent,
     AccademyDetailsComponent,
-    SoftwareHouseComponent
+    SoftwareHouseComponent,
+    FissaUnaCallComponent
   ],
   imports: [
     BrowserModule,

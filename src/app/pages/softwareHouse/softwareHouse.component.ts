@@ -8,11 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class SoftwareHouseComponent implements OnInit {
 
   constructor() { }
-  showIframe = false; // Nascondiamo inizialmente l'iframe
-
-  toggleIframe(): void {
-    this.showIframe = !this.showIframe;
-  }
+  
   
   ngOnInit() {
   }
