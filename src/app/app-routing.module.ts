@@ -7,6 +7,7 @@ import { GuideaccademyComponent } from './pages/guide/guideaccademy/guideaccadem
 import { HomeComponent } from './layout/home/home.component';
 import { NgModule } from '@angular/core';
 import { QuestionnaireComponent } from './pages/questionnaire/questionnaire.component';
+import { SoftwareHouseComponent } from './pages/softwareHouse/softwareHouse.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, data: { animation: 'Home' } },
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'accademy', component: AccademyonebladeComponent },
   { path: 'AccademyDetails/:id', component: AccademyDetailsComponent },
   { path: 'guideAccademy', component: GuideaccademyComponent },
-  { path: 'guideAccademy/:title', component: GuideAccademyDetailsComponent }
+  { path: 'guideAccademy/:title', component: GuideAccademyDetailsComponent },
+  { path: 'softwarehouse', component: SoftwareHouseComponent }
 ];
 
 @NgModule({

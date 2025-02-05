@@ -1,0 +1,135 @@
+/* Variabili principali */
+$primary-color: #6a1b9a;
+$secondary-color: #9c2ea6;
+$text-color: #ffffff;
+$text-color-oneblade: #9c2ea6;
+$text-color-dark: #000000;
+$background-color: rgb(83, 62, 133);
+$hover-color: rgba(0, 0, 0, 0.2);
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+$border-radius: 0.75rem;
+$transition-speed: 0.3s;
+$font-size-base: 1.8rem;
+$font-size-lg: 2.8rem;
+$font-size-xs: 1.5rem;
+$font-size-xl: 2.5rem;
+$font-size-md: 2.5rem;
+$font-size-ribbon: 1rem;
+$padding-base: 1.25rem;
+$filter-width: 50%;
+$filter-max-width: 25rem;
+
+.topCallToAction {
+    cursor: pointer; // Indica che è cliccabile
+    background-color: $background-color;
+    color: $text-color;
+    font-size: $font-size-xs;
+    height: 70px;
+    display: flex;
+    justify-content: center;  // Centra il testo orizzontalmente
+    align-items: center;      // Centra il testo verticalmente
+    text-align: center;
+    font-weight: bold;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    margin: 20px 0;  // Spazio sopra e sotto
+}
+
+/* Stile per la riga della call */
+.call-section {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;  // Colore di sfondo neutro
+}
+
+.call-container {
+    max-width: 1200px; // Imposta una larghezza massima per il contenuto
+    width: 100%;
+}
+
+.iframe-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.iframe-container.active {
+    max-height: 700px; /* Altezza piena */
+    opacity: 1;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+
+.faded-image {
+    position: relative;
+    display: inline-block;
+   
+    mask-image: radial-gradient(circle, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: radial-gradient(circle, rgb(0, 0, 0) 44%, rgba(0, 0, 0, 0) 60%);
+  }
+
+  .custom-container {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #5a5a5a;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-box {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    width: 45%;
+    min-width: 300px;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+}
+
+.service-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-icon {
+    width: 250px;
+    margin-bottom: 20px;
+    mask-image: radial-gradient(circle, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: radial-gradient(circle, rgb(0, 0, 0) 44%, rgba(0, 0, 0, 0) 60%);
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}

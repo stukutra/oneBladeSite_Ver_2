@@ -29,6 +29,7 @@ import { MyInformationComponent } from './pages/myInformation/myInformation.comp
 import { ParallaxComponent } from './pages/parallax/parallax.component';
 import { Privacy_policyComponent } from './pages/privacy_policy/privacy_policy.component';
 import { QuestionnaireComponent } from './pages/questionnaire/questionnaire.component';
+import { SoftwareHouseComponent } from './pages/softwareHouse/softwareHouse.component';
 import { TopBarComponent } from './layout/top-bar/top-bar.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
@@ -60,7 +61,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     GuideListComponent,
     InfooneBladeComponent,
     AccademyBannerComponent,
-    AccademyDetailsComponent
+    AccademyDetailsComponent,
+    SoftwareHouseComponent
   ],
   imports: [
     BrowserModule,
