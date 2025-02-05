@@ -16,6 +16,7 @@
   /* Leggera ombra */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   /* Transizione per hover */
+  cursor:pointer;
 }
 
 .box:hover {

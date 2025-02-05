@@ -1,4 +1,5 @@
-<app-guideBannerTop></app-guideBannerTop>
+<!-- <app-guideBannerTop></app-guideBannerTop> -->
+<app-image-carousel></app-image-carousel>
 <div class="container mt-5">  
   <ng-container *ngIf="guide$ | async as guide; else loading">
     <h1 class="text-center text-primary-oneblade">{{ guide.title }}</h1>
@@ -36,5 +37,6 @@
 
 
 <app-guideList></app-guideList>
-<app-infooneBlade></app-infooneBlade>
+<!-- <app-infooneBlade></app-infooneBlade> -->
 <app-accademyBanner></app-accademyBanner>
+<app-FissaUnaCall></app-FissaUnaCall>
