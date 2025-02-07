@@ -1,0 +1,67 @@
+{
+    "guides": [
+        {
+            "title": "Bootstrap Guide",
+            "description": "A detailed guide on Bootstrap, the most used CSS framework for creating responsive and modern websites.",
+            "topics": [
+                {
+                    "topic": "Introduction to Bootstrap",
+                    "description": "<strong>Bootstrap</strong> is an open-source framework created by Twitter with the aim of simplifying the development of responsive and accessible user interfaces. <h3>Why use Bootstrap?</h3> <ul> <li><strong>Easy to use:</strong> Includes ready-to-use CSS classes that simplify layout creation and graphical components.</li> <li><strong>Responsive Design:</strong> Automatically adapts layouts to different devices, ensuring an optimal user experience on mobile, tablets, and desktops.</li> <li><strong>Cross-browser compatibility:</strong> Supports all modern browsers.</li> <li><strong>Predefined components:</strong> Includes elements like navbar, modals, forms, cards, and many others.</li> <li><strong>JavaScript support:</strong> Offers advanced functionalities without the need for external libraries.</li> </ul> <h3>How Bootstrap Works?</h3> <p>Bootstrap is based on a modular system that includes a flexible grid for dynamic layouts and a series of CSS and JavaScript components for interactive elements.</p> <h3>Conclusion</h3> <p>Bootstrap is an essential tool for any developer looking to create modern, performant, and responsive websites without having to write complex CSS code.</p>"
+                },
+                {
+                    "topic": "Fundamental HTML Tags and Attributes",
+                    "description": "<h3> Fundamentals of HTML Tags and Attributes</h3> <p>HTML uses tags to structure the content of a web page. Each tag has a specific purpose and can include attributes to define its behavior or appearance.</p> <h4> Most common tags:</h4> <ul> <li><code>&lt;h1&gt;...&lt;/h1&gt;</code>: Headings from <code>h1</code> to <code>h6</code> for titles of different sizes.</li> <li><code>&lt;p&gt;...&lt;/p&gt;</code>: Paragraphs of text.</li> <li><code>&lt;a href='URL'&gt;Link&lt;/a&gt;</code>: Hypertext links.</li> <li><code>&lt;img src='image.jpg' alt='Description'&gt;</code>: Insert images.</li> <li><code>&lt;div&gt;...&lt;/div&gt;</code>: Containers for layouts and complex structures.</li> </ul> <h4> Important attributes:</h4> <ul> <li><code>id</code>: Unique identifier for an element.</li> <li><code>class</code>: Defines a CSS class for styling.</li> <li><code>alt</code>: Alternative text for images.</li> <li><code>href</code>: Destination address for links.</li> </ul>"
+                }
+            ],
+            "image": "assets/guides/bootstrap_oneBlade.png"
+        },
+        {
+            "title": "Git Guide",
+            "description": "Learn how to use Git, the most popular version control system among developers, to manage your projects.",
+            "topics": [
+                {
+                    "topic": "What is Git and why use it?",
+                    "description": "<h3> What is Git?</h3> <p><strong>Git</strong> is a distributed version control system created by Linus Torvalds in 2005. It's designed to efficiently manage code development, allowing multiple developers to work simultaneously without conflicts.</p> <h3> Why use Git?</h3> <ul> <li><strong>Change history:</strong> Every modification to the code is tracked, allowing the restoration of previous versions if necessary.</li> <li><strong>Collaboration:</strong> Multiple developers can work on the same project at the same time without overwriting each other's work.</li> <li><strong>Speed and reliability:</strong> Being a distributed system, every copy of a repository contains the entire history, improving data security.</li> <li><strong>Branching and merging:</strong> Allows creating separate development branches to test new functionalities and merge them later.</li> </ul>"
+                },
+                {
+                    "topic": "Installation and Configuration",
+                    "description": "<h3> Installing Git</h3> <p>Git is available for Windows, macOS, and Linux. To install it, follow these steps:</p> <ul> <li><strong>Windows:</strong> Download the installer from the official website <a href='https://git-scm.com/downloads' target='_blank'>git-scm.com</a> and follow the guided instructions.</li> <li><strong>macOS:</strong> Install it with Homebrew by running <code>brew install git</code>.</li> <li><strong>Linux:</strong> Use the command <code>sudo apt install git</code> on Debian/Ubuntu or <code>sudo dnf install git</code> on Fedora.</li> </ul> <h3> Configuring Git</h3> <p>After installation, it's necessary to configure your username and email to track changes:</p> <pre><code>git config --global user.name 'YourName' git config --global user.email 'youremail@example.com'</code></pre> <p>You can verify the configuration by running:</p> <pre><code>git config --list</code></pre>"
+                }
+            ],
+            "image": "assets/guides/git_oneBlade.png"
+        },
+        {
+            "title": "HTML and CSS Guide",
+            "description": "A comprehensive guide to learn the basics of HTML and CSS, the fundamental building blocks of web design.",
+            "topics": [
+                {
+                    "topic": "Structure of an HTML Page",
+                    "description": "<h3> Structure of an HTML Page</h3> <p>An HTML file is composed of a well-defined structure that organizes the content of a web page. Every HTML document starts with a <code>DOCTYPE</code> declaration to indicate the browser about the version of HTML in use.</p> <h4> Basic structure:</h4> <pre><code>&lt;!DOCTYPE html&gt; &lt;html lang='en'&gt; &lt;head&gt; &lt;meta charset='UTF-8'&gt; &lt;meta name='viewport' content='width=device-width, initial-scale=1.0'&gt; &lt;title&gt;Page Title&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;Welcome to the World of HTML&lt;/h1&gt; &lt;p&gt;This is an example paragraph.&lt;/p&gt; &lt;/body&gt; &lt;/html&gt;</code></pre> <p>Every HTML page is divided into two main sections: the <strong>head</strong>, which contains metadata and links to style sheets and scripts, and the <strong>body</strong>, which contains the visible content of the page.</p>"
+                }
+            ],
+            "image": "assets/guides/html_css_oneBlade.png"
+        },
+        {
+            "title": "TypeScript Guide",
+            "description": "An introduction to TypeScript, a superset of JavaScript that improves type management and code control.",
+            "topics": [
+                {
+                    "topic": "Why Use TypeScript?",
+                    "description": "<h3> Why Use TypeScript?</h3> <p><strong>TypeScript</strong> is a superset of JavaScript developed by Microsoft that adds support for static types, improving the readability, maintainability, and security of the code. Here are some key advantages:</p> <ul> <li><strong>Error prevention:</strong> Thanks to static types, TypeScript helps avoid common coding errors.</li> <li><strong>Autocomplete and IntelliSense:</strong> Provides intelligent suggestions and real-time documentation.</li> <li><strong>Safe refactoring:</strong> Enhances the ability to modify code without introducing bugs.</li> <li><strong>Compatibility with JavaScript:</strong> Can be used on any existing JavaScript codebase.</li> <li><strong>Advanced support for ES6+:<strong> Includes modern functionalities like async/await, destructuring, and ES6+ modules.</li> </ul>"
+                }
+            ],
+            "image": "assets/guides/typescript_oneBlade.png"
+        },
+        {
+            "title": "SQL Guide",
+            "description": "Learn SQL, the essential language for managing relational databases.",
+            "topics": [
+                {
+                    "topic": "Introduction to Relational Databases",
+                    "description": "<h3> Introduction to Relational Databases</h3> <p>SQL (Structured Query Language) is a programming language used to manage and query relational databases. Relational databases organize data into tables connected through primary and foreign keys.</p> <h4> Why use a relational database?</h4> <ul> <li><strong>Organized structure:</strong> Data is stored in tables with rows and columns.</li> <li><strong>Referential integrity:</strong> Relationships between tables ensure data coherence.</li> <li><strong>Efficiency:</strong> SQL allows for quickly retrieving, updating, and managing large amounts of data.</li> </ul> <h4> Main Relational Databases</h4> <p>Among the most used are: <strong>MySQL</strong>, <strong>PostgreSQL</strong>, <strong>Microsoft SQL Server</strong>, <strong>Oracle</strong>, and <strong>SQLite</strong>.</p>"
+                }
+            ],
+            "image": "assets/guides/sql_oneBlade.png"
+        }
+    ]
+}
