@@ -1,10 +1,10 @@
 import { NO_ERRORS_SCHEMA, NgModule } from '@angular/core';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
-import { AccademyBannerComponent } from './pages/accademy/accademyBanner/accademyBanner.component';
-import { AccademyCaroselComponent } from './pages/accademy/accademyCarosel/accademyCarosel.component';
-import { AccademyDetailsComponent } from './pages/accademy/accademyDetails/accademyDetails.component';
-import { AccademyonebladeComponent } from './pages/accademy/accademyoneblade/accademyoneblade.component';
+import { AcademyBannerComponent } from './pages/accademy/academyBanner/academyBanner.component';
+import { AcademyCaroselComponent } from './pages/accademy/academyCarosel/academyCarosel.component';
+import { AcademyDetailsComponent } from './pages/accademy/academyDetails/academyDetails.component';
+import { AcademyonebladeComponent } from './pages/accademy/academyoneblade/academyoneblade.component';
 import { AgencyDetailsComponent } from './pages/agencyDetails/agencyDetails.component';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -54,15 +54,15 @@ export function HttpLoaderFactory(http: HttpClient) {
     Privacy_policyComponent,
     AgencyDetailsComponent,
     MyInformationComponent,
-    AccademyCaroselComponent,
-    AccademyonebladeComponent,
+    AcademyCaroselComponent,
+    AcademyonebladeComponent,
     GuideaccademyComponent,
     GuideAccademyDetailsComponent,
     GuideBannerTopComponent,
     GuideListComponent,
     InfooneBladeComponent,
-    AccademyBannerComponent,
-    AccademyDetailsComponent,
+    AcademyBannerComponent,
+    AcademyDetailsComponent,
     SoftwareHouseComponent,
     FissaUnaCallComponent
   ],

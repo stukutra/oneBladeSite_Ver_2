@@ -5,10 +5,10 @@ import { CoursesService } from 'src/app/service/Courses.service';
 
 @Component({
   selector: 'app-accademyoneblade',
-  templateUrl: './accademyoneblade.component.html',
-  styleUrls: ['./accademyoneblade.component.scss']
+  templateUrl: './academyoneblade.component.html',
+  styleUrls: ['./academyoneblade.component.scss']
 })
-export class AccademyonebladeComponent implements OnInit {
+export class AcademyonebladeComponent implements OnInit {
 
   constructor(private coursesService: CoursesService) { }
   categories: Category[] = []; // Tutte le categorie originali

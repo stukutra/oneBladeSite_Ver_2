@@ -5,11 +5,11 @@ import { Course } from 'src/app/models/course.model';
 import { CoursesService } from 'src/app/service/Courses.service';
 
 @Component({
-  selector: 'app-accademyDetails',
-  templateUrl: './accademyDetails.component.html',
-  styleUrls: ['./accademyDetails.component.scss']
+  selector: 'app-academyDetails',
+  templateUrl: './academyDetails.component.html',
+  styleUrls: ['./academyDetails.component.scss']
 })
-export class AccademyDetailsComponent implements OnInit {
+export class AcademyDetailsComponent implements OnInit {
   course: Course | undefined;
   constructor(private route: ActivatedRoute, private coursesService: CoursesService) { }
 

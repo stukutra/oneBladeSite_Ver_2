@@ -31,7 +31,7 @@
           <h3 class="category-title">{{ category.title }}</h3>
           <div class="course-list">
             <div *ngFor="let course of category.courses" class="course-card">
-              <div [routerLink]="['/AccademyDetails', course.idCourse]">
+              <div [routerLink]="['/AcademyDetails', course.idCourse]">
                 <span class="ribbon">Dettagli</span>
                 <h3>{{ course.title }}</h3>
                 <div class="course-content">
