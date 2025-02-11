@@ -28,7 +28,7 @@
       </div>   
 
       <div class="button-row">
-        <button type="submit" class="btn btn-primary submit-btn" [disabled]="contactForm.invalid || !model.file">{{
+        <button type="submit" class="btn btn-primary submit-btn" [disabled]="contactForm.invalid">{{
           'FORM.BUTTON_RESERVATIONACADEMY' | translate }}</button>
       </div>
     </form>
@@ -41,14 +41,5 @@
     <h5>{{ modalTitle }}</h5>
     <p>{{ modalMessage }}</p>
     <button class="btn btn-primary custom-btn" (click)="closeModal()">{{ 'FORM.MODAL.CLOSE' | translate }}</button>
-  </div>
-</div>
-
-<!-- Modale del Questionario -->
-<div class="custom-modal" *ngIf="isQuestionnaireModalVisible">
-  <div class="custom-modal-content">
-    <span class="custom-modal-close" (click)="closeQuestionnaireModal()">&times;</span>
-    <!-- Inserisci qui il componente del questionario -->
-    <app-questionnaire [role]="model.applicationType"></app-questionnaire>
   </div>
 </div>

@@ -48,7 +48,7 @@
             "FILE_REQUIRED": "El archivo es obligatorio"
         },
         "BUTTON_SUBMIT": "Envía tu solicitud",
-        "BUTTON_RESERVATIONACADEMY": "Prenota",
+        "BUTTON_RESERVATIONACADEMY": "Inscribirse en el Curso",
         "MODAL": {
             "TITLE_SUCCESS": "Envío Exitoso",
             "TITLE_ERROR": "Error de Envío",

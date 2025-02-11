@@ -136,7 +136,7 @@ $filter-max-width: 25rem;
     font-size: $font-size-md;
 
     h3 {
-        font-size: 1.2rem;  // Ridotto per uniformità
+        font-size: $font-size-xs;  // Ridotto per uniformità
         color: #6a1b9a;
         font-weight: bold;
         margin-bottom: 0.8rem;
