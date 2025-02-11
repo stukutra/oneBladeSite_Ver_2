@@ -6,6 +6,7 @@ import { GuideAccademyDetailsComponent } from './pages/guide/guideAccademyDetail
 import { GuideaccademyComponent } from './pages/guide/guideaccademy/guideaccademy.component';
 import { HomeComponent } from './layout/home/home.component';
 import { NgModule } from '@angular/core';
+import { OutsourcingInfoComponent } from './pages/outsourcing/outsourcingInfo/outsourcingInfo.component';
 import { QuestionnaireComponent } from './pages/questionnaire/questionnaire.component';
 import { SoftwareHouseComponent } from './pages/softwareHouse/softwareHouse.component';
 
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'AcademyDetails/:id', component: AcademyDetailsComponent },
   { path: 'guideAccademy', component: GuideaccademyComponent },
   { path: 'guideAccademy/:title', component: GuideAccademyDetailsComponent },
-  { path: 'softwarehouse', component: SoftwareHouseComponent }
+  { path: 'softwarehouse', component: SoftwareHouseComponent },
+  { path: 'outsourcinginfo', component: OutsourcingInfoComponent },
 ];
 
 @NgModule({

@@ -28,6 +28,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ImageCarouselComponent } from './pages/image-carousel/image-carousel.component';
 import { InfooneBladeComponent } from './pages/infooneBlade/infooneBlade.component';
 import { MyInformationComponent } from './pages/myInformation/myInformation.component';
+import { OutsourcingBannerComponent } from './pages/outsourcing/outsourcingBanner/outsourcingBanner.component';
+import { OutsourcingInfoComponent } from './pages/outsourcing/outsourcingInfo/outsourcingInfo.component';
 import { ParallaxComponent } from './pages/parallax/parallax.component';
 import { Privacy_policyComponent } from './pages/privacy_policy/privacy_policy.component';
 import { QuestionnaireComponent } from './pages/questionnaire/questionnaire.component';
@@ -66,7 +68,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     AcademyDetailsComponent,
     SoftwareHouseComponent,
     FissaUnaCallComponent,
-    AcademyReservationComponent
+    AcademyReservationComponent,
+    OutsourcingBannerComponent,
+    OutsourcingInfoComponent
   ],
   imports: [
     BrowserModule,
