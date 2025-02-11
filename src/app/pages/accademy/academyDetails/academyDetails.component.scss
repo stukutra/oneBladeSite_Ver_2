@@ -133,11 +133,11 @@ $filter-max-width: 25rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     margin-top: 1.5rem;
     text-align: left;
+    font-size: $font-size-md;
 
     h3 {
         font-size: 1.2rem;  // Ridotto per uniformità
         color: #6a1b9a;
-        text-align: center;
         font-weight: bold;
         margin-bottom: 0.8rem;
     }

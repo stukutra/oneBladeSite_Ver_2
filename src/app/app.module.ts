@@ -4,6 +4,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { AcademyBannerComponent } from './pages/accademy/academyBanner/academyBanner.component';
 import { AcademyCaroselComponent } from './pages/accademy/academyCarosel/academyCarosel.component';
 import { AcademyDetailsComponent } from './pages/accademy/academyDetails/academyDetails.component';
+import { AcademyReservationComponent } from './pages/accademy/academyReservation/academyReservation.component';
 import { AcademyonebladeComponent } from './pages/accademy/academyoneblade/academyoneblade.component';
 import { AgencyDetailsComponent } from './pages/agencyDetails/agencyDetails.component';
 import { AppComponent } from './app.component';
@@ -64,7 +65,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     AcademyBannerComponent,
     AcademyDetailsComponent,
     SoftwareHouseComponent,
-    FissaUnaCallComponent
+    FissaUnaCallComponent,
+    AcademyReservationComponent
   ],
   imports: [
     BrowserModule,

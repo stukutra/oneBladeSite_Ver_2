@@ -46,6 +46,7 @@
       "FILE_REQUIRED": "File is required"
     },
     "BUTTON_SUBMIT": "Submit your application",
+    "BUTTON_RESERVATIONACADEMY": "Prenota",
     "MODAL": {
       "TITLE_SUCCESS": "Submission Successful",
       "TITLE_ERROR": "Submission Error",
