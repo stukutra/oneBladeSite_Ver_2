@@ -18,9 +18,13 @@ export class AccademyDetailsComponent implements OnInit {
 
     this.coursesService.getCourses().subscribe(data => {
       this.course = data.categories
-        .flatMap((category: { courses: any; }) => category.courses)
+        .flatMap((category: { courses: Course; }) => category.courses)
         .find((course: { idCourse: string | null; }) => course.idCourse === courseId);
     });
+  }
+
+  bookCourse() {
+    alert("Hai prenotato il corso con codice: " + this.course?.idCourse);
   }
 
 }
