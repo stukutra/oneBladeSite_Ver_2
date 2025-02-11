@@ -3,28 +3,20 @@ $primary-color: #6a1b9a;
 $secondary-color: #9c2ea6;
 $text-color: #ffffff;
 $text-color-oneblade: #9c2ea6;
-;
 $text-color-dark: #000000;
 $background-color: rgb(83, 62, 133);
 $hover-color: rgba(0, 0, 0, 0.2);
 $box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 $border-radius: 0.75rem;
-/* 12px */
 $transition-speed: 0.3s;
-$font-size-base: 1.8rem;
-/* 16px */
-$font-size-lg: 2.8rem;
-$font-size-xs: 1.5rem;
-/* 24px */
+$font-size-base: 1rem;
+$font-size-lg: 1.8rem;
+$font-size-xs: 1.2rem;
 $font-size-xl: 2.5rem;
-$font-size-md:2.5rem;
-/* 40px */
+$font-size-md: 1.4rem;
 $font-size-ribbon: 1rem;
-/* 14px */
 $padding-base: 1.25rem;
-/* 20px */
 $gap: 1rem;
-/* 16px */
 $filter-width: 50%;
 $filter-max-width: 25rem;
 /* 400px */
@@ -35,7 +27,6 @@ img {
     align-items: center;
     width: 100%;
     max-width: 25rem;
-    /* 400px */
     height: auto;
     margin-left: auto;
 }
@@ -70,13 +61,11 @@ img {
 
     &:hover {
         transform: translateY(-0.3125rem);
-        /* -5px */
         box-shadow: 0 0.5rem 1rem $hover-color;
     }
 
     h2 {
         margin-bottom: 0.625rem;
-        /* 10px */
     }
 
     p {
@@ -96,9 +85,7 @@ img {
     background-size: contain;
     background-position: center;
     width: 19.375rem;
-    /* 310px */
     height: 9.375rem;
-    /* 150px */
     display: block;
 }
 
@@ -134,7 +121,7 @@ img {
             border-radius: $border-radius;
             box-shadow: $box-shadow;
             text-align: left;
-            font-size: $font-size-base;
+            font-size: $font-size-xs;
             width: 33rem;
             transition: transform 0.2s, box-shadow 0.2s;
 
@@ -145,7 +132,7 @@ img {
             }
 
             h3 {
-                font-size: 1.4rem;
+                font-size: $font-size-md;
                 font-weight: bold;
                 margin-bottom: 0.625rem;
                 color: $primary-color;
@@ -153,63 +140,110 @@ img {
 
             p {
                 margin: 0.3125rem 0;
-                /* 5px */
-                font-size: 1.3rem;
+                font-size: $font-size-xs;
             }
 
             .course-details {
                 margin-top: 0.625rem;
-                /* 10px */
-                font-size: 1.8rem;
+                font-size: $font-size-base;
                 color: $secondary-color;
             }
         }
     }
 }
 
-/* Ribbon */
 .course-card {
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; // Distribuisce il contenuto e il footer
+    height: 100%;
+    min-height: 26rem; // Mantiene tutte le card della stessa altezza
+    padding: $padding-base;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    text-align: left;
+    font-size: $font-size-xs;
+    width: 33rem;
+    background-color: $text-color;
+
+    &:hover {
+        transform: scale(1);
+        box-shadow: 0 0.75rem 1.5rem $hover-color;
+        cursor: pointer;
+    }
 
     .ribbon {
         position: absolute;
         top: 7.2rem;
-        /* Leggermente più in alto */
         right: -2rem;
-        /* Spostato un po' più a destra */
         background: $secondary-color;
         color: $text-color;
         padding: 0.5rem 2.9rem;
-        /* Aumentata la lunghezza */
         font-size: $font-size-ribbon;
         font-weight: bold;
         transform: rotate(0deg);
         box-shadow: $box-shadow;
         border-radius: 0.25rem;
-        /* Angoli arrotondati */
         opacity: 0;
         transition: all $transition-speed ease-in-out;
     }
 
     &:hover .ribbon {
         right: -0.7rem;
-        /* Mostra il ribbon completamente */
         opacity: 0.6;
+    }
+
+    h3 {
+        font-size: $font-size-md;
+        font-weight: bold;
+        margin-bottom: 0.625rem;
+        color: $primary-color;
+    }
+
+    p {
+        margin: 0.3125rem 0;
+        font-size: $font-size-xs;
+    }
+
+    /* ✅ Sezione contenuto che cresce per spingere il footer in basso */
+    .course-content {
+        flex-grow: 1; // Fa in modo che il contenuto occupi tutto lo spazio disponibile
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ✅ Footer perfettamente allineato in basso con altezza fissa */
+    .course-level-container {
+        flex-shrink: 0; // Evita che il footer si ridimensioni
+        margin-top: auto; // Spinge il footer SEMPRE in fondo
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 50px; // **Altezza fissa per il footer**
+        text-align: left;
+        width: 100%;
+    }
+
+    .course-level {
+        color: $text-color-oneblade;
+        margin-left: 0.5rem;
     }
 }
 
-
-.course-level {
-    color: $text-color-oneblade
+/* ✅ Mantiene tutte le card alla stessa altezza */
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
 }
 
 
 /* Stile per la sezione banner */
 /* Imposta lo sfondo bianco per la sezione */
 .accademy-banner {
-    background-color: #ffffff; // Sfondo bianco
-    //padding: 3rem 2rem;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -218,7 +252,7 @@ img {
         color: $primary-color; // Cambia il colore del testo
 
         h1 {
-            font-size: $font-size-md;
+            font-size: $font-size-lg;
             line-height: 1.2;
             color: $primary-color; // Colore principale
         }

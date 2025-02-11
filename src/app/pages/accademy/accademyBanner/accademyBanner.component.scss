@@ -43,6 +43,11 @@
 /* Imposta l'immagine di sfondo */
 .accademy {
     background-image: url('../../../../assets/accademy/bussola.png');
+    
+    &:hover {
+        transform: scale(1.02);
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    }
 }
 
 .guide {
