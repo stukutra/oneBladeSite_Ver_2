@@ -2,282 +2,51 @@
 $topbar-color: #9339bb; // Colore primario del sito
 $button-text-color: #ffffff; // Colore del testo del pulsante
 $button-border-color: $topbar-color; // Colore del bordo del pulsante
-$button-hover-bg-color: darken($topbar-color, 10%); // Colore di sfondo del pulsante al passaggio del mouse
-$button-hover-text-color: $button-text-color; // Colore del testo del pulsante al passaggio del mouse
-$input-border-color: #ccc; // Colore del bordo degli input
-$input-focus-border-color: $topbar-color; // Colore del bordo degli input al focus
-$input-placeholder-color: #aaa; // Colore del placeholder
-$error-text-color: $topbar-color; // Colore dei messaggi di errore
-$file-input-border-radius: 8px; // Raggio dell'angolo per l'input file
-$file-button-bg-color: $topbar-color; // Colore di sfondo del bottone di selezione file
-$file-button-hover-bg-color: darken($topbar-color, 10%); // Colore di sfondo al passaggio del mouse sul bottone di selezione file
-$box-shadow-color: rgba(0, 0, 0, 0.1); // Colore dell'ombra del box
-$custom-btn-bg-color: #9339bb; // Colore di sfondo del pulsante personalizzato
-$custom-btn-hover-bg-color: #a80aec; // Colore di sfondo del pulsante personalizzato al passaggio del mouse
-$custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsante personalizzato
+$button-hover-bg-color: darken($topbar-color, 10%); // Sfondo pulsante al passaggio
+$button-hover-text-color: $button-text-color; // Testo pulsante al passaggio
+$input-border-color: #ccc; // Bordo input standard
+$input-focus-border-color: $topbar-color; // Bordo input in focus
+$error-text-color: $topbar-color; // Testo errore
+$box-shadow-color: rgba(0, 0, 0, 0.1); // Ombra generale
+$custom-btn-bg-color: #9339bb; // Pulsante personalizzato
+$custom-btn-hover-bg-color: #a80aec; // Hover pulsante
+$custom-btn-focus-shadow-color: #aa4fd1; // Glow pulsante
+$checkbox-border: #ccc; // Bordo checkbox
+$checkbox-active-bg: $topbar-color; // Checkbox attivo
+$checkbox-hover-border: darken($topbar-color, 15%); // Hover checkbox
+$checkbox-disabled-bg: #e0e0e0; // Sfondo disabilitato
 
-// Box di descrizione
-.description-box {
-    color: #333;
-}
-
-// Titolo del box
-.box-title {
-    font-size: 28px;
-    color: $topbar-color;
-}
-
-// Modulo di contatto
+// Stile generale del form
 .contact-form {
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
-}
 
-// Gruppo di form
-.contact-form .form-group {
-    position: relative;
-}
-
-// Input e selettori
-.contact-form .form-control,
-.contact-form .form-select,
-.contact-form .file-input {
-    border: none;
-    border-bottom: 1px solid $input-border-color;
-    border-radius: 0;
-    font-size: 15px;
-    box-shadow: none;
-    transition: border-color 0.3s ease;
-}
-
-.contact-form .form-control:focus,
-.contact-form .form-select:focus,
-.contact-form .file-input:focus {
-    border-color: $input-focus-border-color;
-    outline: none;
-}
-
-// Placeholder
-.contact-form .form-control::placeholder,
-.contact-form .form-select::placeholder,
-.contact-form .file-input::placeholder {
-    color: $input-placeholder-color;
-}
-
-// Asterischi per i campi obbligatori
-.contact-form .form-label.required::after {
-    content: "*";
-    color: $topbar-color;
-    font-size: 0.75rem;
-    position: absolute;
-    right: -1.5rem;
-    top: 0;
-}
-
-// Messaggi di errore
-.contact-form .text-danger {
-    font-size: 0.75rem;
-    color: $error-text-color;
-}
-
-// Input file
-.contact-form .form-control[type="file"] {
-    border-radius: $file-input-border-radius;
-    background-color: #fff;
-    color: #333;
-    display: flex;
-}
-
-// Bottone di selezione file
-.contact-form .form-control[type="file"]::file-selector-button {
-    background-color: $file-button-bg-color;
-    border: none;
-    color: $button-text-color;
-    border-radius: $file-input-border-radius;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.contact-form .form-control[type="file"]::file-selector-button:hover {
-    background-color: $file-button-hover-bg-color;
-}
-
-// Pulsanti
-.contact-form .btn-primary {
-    background-color: transparent;
-    border: 2px solid $button-border-color;
-    color: $button-border-color;
-    font-size: 16px;
-    border-radius: 12px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.contact-form .btn-primary:hover {
-    background-color: $button-hover-bg-color;
-    color: $button-hover-text-color;
-}
-
-// Riga dei pulsanti
-.button-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-// Pulsante personalizzato
-.custom-btn {
-    background-color: $custom-btn-bg-color;
-    color: $button-text-color;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-.custom-btn:hover {
-    background-color: $custom-btn-hover-bg-color;
-}
-
-.custom-btn:focus {
-    box-shadow: 0 0 5px $custom-btn-focus-shadow-color;
-}
-
-/* Lo sfondo semitrasparente */
-.custom-modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Sfondo semitrasparente */
-}
-
-/* Contenuto della modale */
-.custom-modal-content {
-    position: relative;
-    background-color: #fff;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 500px;
-    border-radius: 8px;
-    animation: fadeIn 0.3s;
-    /* Effetto di apertura */
-}
-
-/* Il pulsante di chiusura */
-.custom-modal-close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    color: #aaa;
-    font-size: 28px; // Variabili generali
-    $topbar-color: #9339bb; // Colore primario del sito
-    $button-text-color: #ffffff; // Colore del testo del pulsante
-    $button-border-color: $topbar-color; // Colore del bordo del pulsante
-    $button-hover-bg-color: darken($topbar-color, 10%); // Colore di sfondo del pulsante al passaggio del mouse
-    $button-hover-text-color: $button-text-color; // Colore del testo del pulsante al passaggio del mouse
-    $button-disabled-bg-color: #d3d3d3; // Sfondo pulsante disabilitato
-    $button-disabled-text-color: #6c757d; // Testo pulsante disabilitato
-    $input-border-color: #ccc; // Colore del bordo degli input
-    $input-focus-border-color: $topbar-color; // Colore del bordo degli input al focus
-    $input-placeholder-color: #aaa; // Colore del placeholder
-    $error-text-color: $topbar-color; // Colore dei messaggi di errore
-    $file-input-border-radius: 8px; // Raggio dell'angolo per l'input file
-    $file-button-bg-color: $topbar-color; // Colore di sfondo del bottone di selezione file
-    $file-button-hover-bg-color: darken($topbar-color, 10%); // Colore di sfondo al passaggio del mouse sul bottone di selezione file
-    $box-shadow-color: rgba(0, 0, 0, 0.1); // Colore dell'ombra del box
-    $custom-btn-bg-color: #9339bb; // Colore di sfondo del pulsante personalizzato
-    $custom-btn-hover-bg-color: #a80aec; // Colore di sfondo del pulsante personalizzato al passaggio del mouse
-    $custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsante personalizzato
-
-    // Stile generico
-    .description-box {
-        background-color: #ffffff;
-        color: #333;
-        max-width: 800px;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px $box-shadow-color;
+    .form-group {
+        position: relative;
     }
 
-    // Titoli
-    .box-title {
-        font-size: 28px;
-        margin-bottom: 15px;
-        color: $topbar-color;
-    }
+    .form-control {
+        border: none;
+        border-bottom: 2px solid $input-border-color;
+        border-radius: 0;
+        font-size: 15px;
+        box-shadow: none;
+        transition: border-color 0.3s ease;
 
-    // Modulo di contatto
-    .contact-form {
-        display: grid;
-        gap: 1rem;
-
-        .form-group {
-            position: relative;
-        }
-
-        .form-control,
-        .form-select,
-        .file-input {
-            border: none;
-            border-bottom: 2px solid $input-border-color;
-            border-radius: 0;
-            font-size: 15px;
-            box-shadow: none;
-            transition: border-color 0.3s ease;
-
-            &:focus {
-                border-color: $input-focus-border-color;
-                outline: none;
-            }
-
-            &::placeholder {
-                color: $input-placeholder-color;
-            }
-        }
-
-        .form-label.required::after {
-            content: "*";
-            color: $topbar-color;
-            font-size: 0.75rem;
-            position: absolute;
-            right: -1.5rem;
-            top: 0;
-        }
-
-        .text-danger {
-            font-size: 0.75rem;
-            color: $error-text-color;
-        }
-
-        .form-control[type="file"] {
-            border: 1px solid $input-border-color;
-            border-radius: $file-input-border-radius;
-            background-color: #fff;
-            color: #333;
-            display: flex;
-
-            &::file-selector-button {
-                background-color: $file-button-bg-color;
-                border: none;
-                color: $button-text-color;
-                border-radius: $file-input-border-radius;
-                font-size: 15px;
-                cursor: pointer;
-
-                &:hover {
-                    background-color: $file-button-hover-bg-color;
-                }
-            }
+        &:focus {
+            border-color: $input-focus-border-color;
+            outline: none;
         }
     }
 
-    // Pulsanti
-    .contact-form .btn-primary {
+    .text-danger {
+        font-size: 0.75rem;
+        color: $error-text-color;
+    }
+
+    // Pulsanti del form
+    .btn-primary {
         background-color: transparent;
         border: 2px solid $button-border-color;
         color: $button-border-color;
@@ -289,91 +58,179 @@ $custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsa
             background-color: $button-hover-bg-color;
             color: $button-hover-text-color;
         }
-
-        &:disabled {
-            background-color: $button-disabled-bg-color;
-            border-color: $button-disabled-bg-color;
-            color: $button-disabled-text-color;
-            cursor: not-allowed;
-            opacity: 0.6;
-        }
     }
 
-    // Riga pulsanti
+    // Stile riga pulsanti
     .button-row {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-top: 20px;
     }
+}
 
-    // Pulsanti personalizzati
-    .custom-btn {
-        background-color: $custom-btn-bg-color;
-        color: $button-text-color;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-        transition: background-color 0.3s ease;
+// Stile personalizzato per i checkbox
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    position: relative;
+
+    input[type="checkbox"] {
+        appearance: none;
+        width: 18px;
+        height: 18px;
+        border: 2px solid $checkbox-border;
+        border-radius: 4px;
+        position: relative;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        display: inline-block;
+        background-color: #fff;
 
         &:hover {
-            background-color: $custom-btn-hover-bg-color;
+            border-color: $checkbox-hover-border;
+        }
+
+        &:checked {
+            background-color: $checkbox-active-bg;
+            border-color: $checkbox-active-bg;
+        }
+
+        &:checked::before {
+            content: "✔";
+            font-size: 12px;
+            color: white;
+            font-weight: bold;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         &:focus {
-            box-shadow: 0 0 5px $custom-btn-focus-shadow-color;
+            outline: none;
+            box-shadow: 0 0 5px rgba($checkbox-active-bg, 0.5);
+        }
+
+        &:disabled {
+            background-color: $checkbox-disabled-bg;
+            border-color: darken($checkbox-disabled-bg, 10%);
+            cursor: not-allowed;
         }
     }
 
-    // Modali
-    .custom-modal {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        z-index: 1000;
-        left: 0;
-        top: 0;
+    label {
+        cursor: pointer;
+        font-size: 14px;
+        user-select: none;
+    }
+}
+
+// Pulsante personalizzato
+.custom-btn {
+    background-color: $custom-btn-bg-color;
+    color: $button-text-color;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: $custom-btn-hover-bg-color;
+    }
+
+    &:focus {
+        box-shadow: 0 0 5px $custom-btn-focus-shadow-color;
+    }
+}
+
+// Modal personalizzata
+.custom-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    &-content {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
         width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-
-        &-content {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            width: 100%;
-            max-width: 600px;
-            text-align: center;
-            animation: fadeIn 0.3s ease-out;
-        }
-
-        &-close {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            color: #aaa;
-            font-size: 28px;
-            font-weight: bold;
-            cursor: pointer;
-
-            &:hover {
-                color: #000;
-            }
-        }
+        max-width: 600px;
+        text-align: center;
+        animation: fadeIn 0.3s ease-out;
     }
 
-    // Animazioni
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
+    &-close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        color: #aaa;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
 
-        to {
-            opacity: 1;
+        &:hover {
+            color: #000;
         }
     }
+}
 
+.custom-modal {
+    display: block;
+    /* Visibile quando necessario */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* Assicura lo scrolling della finestra */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Sfondo semitrasparente */
+}
+
+/* Contenuto della modale */
+.custom-modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: auto;
+    /* Per centrare orizzontalmente */
+    top: 50%;
+    /* Posizione verticale */
+    transform: translateY(-50%);
+    /* Centrare verticalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 50%;
+    /* Limita la larghezza al 50% */
+    max-height: 80%;
+    /* Limita l'altezza al 80% della finestra */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    /* Abilita lo scrolling del contenuto */
+    animation: fadeIn 0.3s;
+    font-size: 20px;
+}
+
+/* Pulsante di chiusura */
+.custom-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #aaa;
+    font-size: 28px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -385,7 +242,7 @@ $custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsa
     cursor: pointer;
 }
 
-/* Effetti di animazione */
+/* Animazione di apertura */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -395,151 +252,6 @@ $custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsa
         opacity: 1;
     }
 }
-
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0;
-    }
-}
-
-
-.custom-modal {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Sfondo semitrasparente */
-}
-
-.custom-modal-content {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 500px;
-    text-align: center;
-    animation: fadeIn 0.3s ease-out;
-}
-
-.custom-modal-close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.custom-modal-close:hover {
-    color: #000;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-
-.submit-btn {
-    margin-left: auto;
-    /* Sposta il pulsante "Invia" a destra */
-}
-
-.open-questionnaire-btn {
-    margin-right: auto;
-    /* Sposta il pulsante "Apri Questionario" a sinistra */
-}
-
-
-.custom-modal {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Sfondo semitrasparente */
-}
-
-.custom-modal-content {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-    animation: fadeIn 0.3s ease-out;
-}
-
-.custom-modal-close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.custom-modal-close:hover {
-    color: #000;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-// Stile per i pulsanti disabilitati
-.contact-form .btn-primary:disabled {
-    background-color: #d3d3d3; // Grigio chiaro
-    border-color: #d3d3d3;
-    color: #6c757d; // Grigio scuro (non nero)
-    cursor: not-allowed; // Icona di divieto per i pulsanti disabilitati
-    opacity: 0.6; // Leggero effetto di trasparenza
-}
-
-// Stile per i pulsanti abilitati (lascia il comportamento esistente)
-.contact-form .btn-primary:not(:disabled) {
-    background-color: transparent;
-    border: 2px solid $button-border-color;
-    color: $button-border-color;
-    padding: 0.5rem 1rem;
-    font-size: 16px;
-    border-radius: 12px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.contact-form .btn-primary:not(:disabled):hover {
-    background-color: $button-hover-bg-color;
-    color: $button-hover-text-color;
-}
-
 
 .description-box {
     padding: 0px !important;

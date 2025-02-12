@@ -9,13 +9,15 @@ import { NgForm } from '@angular/forms';
   templateUrl: './academyReservation.component.html',
   styleUrls: ['./academyReservation.component.scss']
 })
-export class AcademyReservationComponent implements OnInit{
-
+export class AcademyReservationComponent implements OnInit {
+  public isopenPrivacyPolicyModalModalVisible: boolean = false;
   model: any = {
     name: '',
     telephone: '',
     email: '',
-    course: ''
+    course: '',
+    privacy1: false, // Default false per il checkbox obbligatorio
+    privacy2: false  // Default false per il checkbox facoltativo
   };
 
   successMessage: string | null = null;
@@ -36,9 +38,17 @@ export class AcademyReservationComponent implements OnInit{
   }
 
   onSubmit(form: NgForm) {
+    console.log('Modello al submit:', this.model);
+    console.log('Valore privacy1:', this.model.privacy1);
+    console.log('Valore privacy2:', this.model.privacy2);
+
     if (form.invalid) {
-      this.errorMessage = 'Per favore, compila tutti i campi richiesti.';
-      this.showModal('Errore', this.errorMessage);
+      this.showModal('Errore', 'Per favore, compila tutti i campi richiesti.');
+      return;
+    }
+
+    if (this.model.privacy1 !== true && this.model.privacy1 !== 'true') {
+      this.showModal('Errore', 'Devi autorizzare il trattamento dei dati personali per procedere.');
       return;
     }
 
@@ -47,6 +57,8 @@ export class AcademyReservationComponent implements OnInit{
     formData.append('telephone', this.model.telephone);
     formData.append('email', this.model.email);
     formData.append('course', this.model.course);
+    formData.append('privacy1', this.model.privacy1 ? 'true' : 'false'); // Converte il booleano in stringa
+    formData.append('privacy2', this.model.privacy2 ? 'true' : 'false'); // Converte il booleano in stringa
     formData.append('api_key', '7F3kH#r8!wL5tVxZ2Q9p^nGjR@cM1dP6');
 
     this.http.post('https://www.oneblade.it/sendEmailReservation.php', formData).subscribe(
@@ -82,5 +94,13 @@ export class AcademyReservationComponent implements OnInit{
 
   closeModal(): void {
     this.isModalVisible = false;
+  }
+
+  public openPrivacyPolicyModal() {
+    this.isopenPrivacyPolicyModalModalVisible = true;
+  }
+
+  public closePrivacyPolicyModal(): void {
+    this.isopenPrivacyPolicyModalModalVisible = false;
   }
 }
