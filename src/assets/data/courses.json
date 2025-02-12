@@ -4,7 +4,8 @@
             "title": "Sviluppo Web",
             "courses": [
                 {
-                    "idCourse":"CODBlade01",
+                    "active": true,
+                    "idCourse": "CODBlade01",
                     "title": "Full Stack Developer",
                     "duration": "4 mesi",
                     "mode": "In aula | Online",
@@ -21,19 +22,41 @@
                         "Implementazione e gestione di soluzioni cloud, ottimizzando le risorse e garantendo la scalabilità."
                     ],
                     "requirements": [
-                        {"title": "Conoscenze base di informatica", "description": "Capire i concetti fondamentali di un computer."},
-                        {"title": "Nessuna esperienza richiesta", "description": "Adatto anche ai principianti."}
+                        {
+                            "title": "Conoscenze base di informatica",
+                            "description": "Capire i concetti fondamentali di un computer."
+                        },
+                        {
+                            "title": "Nessuna esperienza richiesta",
+                            "description": "Adatto anche ai principianti."
+                        }
                     ],
                     "course_contents": [
-                        {"title": "Introduzione al Web Development", "text": "Concetti base e strumenti di sviluppo."},
-                        {"title": "HTML, CSS e JavaScript", "text": "Struttura e interattività delle pagine web."},
-                        {"title": "Framework Frontend", "text": "Utilizzo di Angular e React per interfacce avanzate."},
-                        {"title": "Backend Development", "text": "Creazione di API e gestione dei database."},
-                        {"title": "Progetto finale", "text": "Sviluppo di un'applicazione completa."}
+                        {
+                            "title": "Introduzione al Web Development",
+                            "text": "Concetti base e strumenti di sviluppo."
+                        },
+                        {
+                            "title": "HTML, CSS e JavaScript",
+                            "text": "Struttura e interattività delle pagine web."
+                        },
+                        {
+                            "title": "Framework Frontend",
+                            "text": "Utilizzo di Angular e React per interfacce avanzate."
+                        },
+                        {
+                            "title": "Backend Development",
+                            "text": "Creazione di API e gestione dei database."
+                        },
+                        {
+                            "title": "Progetto finale",
+                            "text": "Sviluppo di un'applicazione completa."
+                        }
                     ]
                 },
                 {
-                    "idCourse":"CODBlade02",
+                    "active": true,
+                    "idCourse": "CODBlade02",
                     "title": "Front End Developer",
                     "duration": "2 mesi",
                     "mode": "In aula | Online",
@@ -50,14 +73,32 @@
                         "Ottimizzazione delle prestazioni front-end"
                     ],
                     "requirements": [
-                        {"title": "Conoscenza base di HTML e CSS", "description": "Utile ma non obbligatoria."},
-                        {"title": "Passione per il design", "description": "Interesse per le interfacce utente e l'esperienza utente."}
+                        {
+                            "title": "Conoscenza base di HTML e CSS",
+                            "description": "Utile ma non obbligatoria."
+                        },
+                        {
+                            "title": "Passione per il design",
+                            "description": "Interesse per le interfacce utente e l'esperienza utente."
+                        }
                     ],
                     "course_contents": [
-                        {"title": "HTML, CSS e JavaScript", "text": "Tecniche avanzate per creare layout responsive."},
-                        {"title": "Framework Moderni", "text": "Approfondimento su Angular e React."},
-                        {"title": "Performance Optimization", "text": "Strategie per migliorare la velocità e la scalabilità."},
-                        {"title": "Progetto finale", "text": "Realizzazione di un'applicazione front-end completa."}
+                        {
+                            "title": "HTML, CSS e JavaScript",
+                            "text": "Tecniche avanzate per creare layout responsive."
+                        },
+                        {
+                            "title": "Framework Moderni",
+                            "text": "Approfondimento su Angular e React."
+                        },
+                        {
+                            "title": "Performance Optimization",
+                            "text": "Strategie per migliorare la velocità e la scalabilità."
+                        },
+                        {
+                            "title": "Progetto finale",
+                            "text": "Realizzazione di un'applicazione front-end completa."
+                        }
                     ]
                 }
             ]
@@ -66,7 +107,8 @@
             "title": "Data Science",
             "courses": [
                 {
-                    "idCourse":"CODBlade03",
+                    "active": true,
+                    "idCourse": "CODBlade03",
                     "title": "AI & Machine Learning",
                     "duration": "4 mesi",
                     "mode": "In aula | Online",
@@ -82,14 +124,32 @@
                         "Ottimizzazione delle prestazioni front-end"
                     ],
                     "requirements": [
-                        {"title": "Conoscenza base di HTML e CSS", "description": "Utile ma non obbligatoria."},
-                        {"title": "Passione per il design", "description": "Interesse per le interfacce utente e l'esperienza utente."}
+                        {
+                            "title": "Conoscenza base di HTML e CSS",
+                            "description": "Utile ma non obbligatoria."
+                        },
+                        {
+                            "title": "Passione per il design",
+                            "description": "Interesse per le interfacce utente e l'esperienza utente."
+                        }
                     ],
                     "course_contents": [
-                        {"title": "HTML, CSS e JavaScript", "text": "Tecniche avanzate per creare layout responsive."},
-                        {"title": "Framework Moderni", "text": "Approfondimento su Angular e React."},
-                        {"title": "Performance Optimization", "text": "Strategie per migliorare la velocità e la scalabilità."},
-                        {"title": "Progetto finale", "text": "Realizzazione di un'applicazione front-end completa."}
+                        {
+                            "title": "HTML, CSS e JavaScript",
+                            "text": "Tecniche avanzate per creare layout responsive."
+                        },
+                        {
+                            "title": "Framework Moderni",
+                            "text": "Approfondimento su Angular e React."
+                        },
+                        {
+                            "title": "Performance Optimization",
+                            "text": "Strategie per migliorare la velocità e la scalabilità."
+                        },
+                        {
+                            "title": "Progetto finale",
+                            "text": "Realizzazione di un'applicazione front-end completa."
+                        }
                     ]
                 }
             ]
@@ -98,7 +158,8 @@
             "title": "Cyber Security",
             "courses": [
                 {
-                    "idCourse":"CODBlade04",
+                    "active": true,
+                    "idCourse": "CODBlade04",
                     "title": "Cyber Security",
                     "duration": "4 mesi",
                     "mode": "In aula | Online",
@@ -114,14 +175,32 @@
                         "Ottimizzazione delle prestazioni front-end"
                     ],
                     "requirements": [
-                        {"title": "Conoscenza base di HTML e CSS", "description": "Utile ma non obbligatoria."},
-                        {"title": "Passione per il design", "description": "Interesse per le interfacce utente e l'esperienza utente."}
+                        {
+                            "title": "Conoscenza base di HTML e CSS",
+                            "description": "Utile ma non obbligatoria."
+                        },
+                        {
+                            "title": "Passione per il design",
+                            "description": "Interesse per le interfacce utente e l'esperienza utente."
+                        }
                     ],
                     "course_contents": [
-                        {"title": "HTML, CSS e JavaScript", "text": "Tecniche avanzate per creare layout responsive."},
-                        {"title": "Framework Moderni", "text": "Approfondimento su Angular e React."},
-                        {"title": "Performance Optimization", "text": "Strategie per migliorare la velocità e la scalabilità."},
-                        {"title": "Progetto finale", "text": "Realizzazione di un'applicazione front-end completa."}
+                        {
+                            "title": "HTML, CSS e JavaScript",
+                            "text": "Tecniche avanzate per creare layout responsive."
+                        },
+                        {
+                            "title": "Framework Moderni",
+                            "text": "Approfondimento su Angular e React."
+                        },
+                        {
+                            "title": "Performance Optimization",
+                            "text": "Strategie per migliorare la velocità e la scalabilità."
+                        },
+                        {
+                            "title": "Progetto finale",
+                            "text": "Realizzazione di un'applicazione front-end completa."
+                        }
                     ]
                 }
             ]
@@ -130,7 +209,8 @@
             "title": "Marketing e Management",
             "courses": [
                 {
-                    "idCourse":"CODBlade05",
+                    "active":true,
+                    "idCourse": "CODBlade05",
                     "title": "SEO Expert",
                     "duration": "2 mesi",
                     "mode": "In aula | Online",
@@ -146,18 +226,37 @@
                         "Ottimizzazione delle prestazioni front-end"
                     ],
                     "requirements": [
-                        {"title": "Conoscenza base di HTML e CSS", "description": "Utile ma non obbligatoria."},
-                        {"title": "Passione per il design", "description": "Interesse per le interfacce utente e l'esperienza utente."}
+                        {
+                            "title": "Conoscenza base di HTML e CSS",
+                            "description": "Utile ma non obbligatoria."
+                        },
+                        {
+                            "title": "Passione per il design",
+                            "description": "Interesse per le interfacce utente e l'esperienza utente."
+                        }
                     ],
                     "course_contents": [
-                        {"title": "HTML, CSS e JavaScript", "text": "Tecniche avanzate per creare layout responsive."},
-                        {"title": "Framework Moderni", "text": "Approfondimento su Angular e React."},
-                        {"title": "Performance Optimization", "text": "Strategie per migliorare la velocità e la scalabilità."},
-                        {"title": "Progetto finale", "text": "Realizzazione di un'applicazione front-end completa."}
+                        {
+                            "title": "HTML, CSS e JavaScript",
+                            "text": "Tecniche avanzate per creare layout responsive."
+                        },
+                        {
+                            "title": "Framework Moderni",
+                            "text": "Approfondimento su Angular e React."
+                        },
+                        {
+                            "title": "Performance Optimization",
+                            "text": "Strategie per migliorare la velocità e la scalabilità."
+                        },
+                        {
+                            "title": "Progetto finale",
+                            "text": "Realizzazione di un'applicazione front-end completa."
+                        }
                     ]
                 },
                 {
-                    "idCourse":"CODBlade06",
+                    "active": true,
+                    "idCourse": "CODBlade06",
                     "title": "Project Management",
                     "duration": "4 mesi",
                     "mode": "In aula | Online",
@@ -173,14 +272,32 @@
                         "Ottimizzazione delle prestazioni front-end"
                     ],
                     "requirements": [
-                        {"title": "Conoscenza base di HTML e CSS", "description": "Utile ma non obbligatoria."},
-                        {"title": "Passione per il design", "description": "Interesse per le interfacce utente e l'esperienza utente."}
+                        {
+                            "title": "Conoscenza base di HTML e CSS",
+                            "description": "Utile ma non obbligatoria."
+                        },
+                        {
+                            "title": "Passione per il design",
+                            "description": "Interesse per le interfacce utente e l'esperienza utente."
+                        }
                     ],
                     "course_contents": [
-                        {"title": "HTML, CSS e JavaScript", "text": "Tecniche avanzate per creare layout responsive."},
-                        {"title": "Framework Moderni", "text": "Approfondimento su Angular e React."},
-                        {"title": "Performance Optimization", "text": "Strategie per migliorare la velocità e la scalabilità."},
-                        {"title": "Progetto finale", "text": "Realizzazione di un'applicazione front-end completa."}
+                        {
+                            "title": "HTML, CSS e JavaScript",
+                            "text": "Tecniche avanzate per creare layout responsive."
+                        },
+                        {
+                            "title": "Framework Moderni",
+                            "text": "Approfondimento su Angular e React."
+                        },
+                        {
+                            "title": "Performance Optimization",
+                            "text": "Strategie per migliorare la velocità e la scalabilità."
+                        },
+                        {
+                            "title": "Progetto finale",
+                            "text": "Realizzazione di un'applicazione front-end completa."
+                        }
                     ]
                 }
             ]

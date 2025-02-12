@@ -1,4 +1,5 @@
 export interface Course {
+    active:boolean;
     idCourse: string;
     title: string;
     duration: string;

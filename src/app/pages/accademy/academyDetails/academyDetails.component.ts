@@ -15,11 +15,25 @@ export class AcademyDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     const courseId = this.route.snapshot.paramMap.get('id');
-
-    this.coursesService.getCourses().subscribe(data => {
+  
+    if (!courseId) {
+      console.error("Errore: ID del corso non presente nell'URL.");
+      return; // Evita di eseguire il codice se l'ID non è presente
+    }
+  
+    this.coursesService.getCoursesALL().subscribe(data => {
+      if (!data || !Array.isArray(data.categories)) {
+        console.error("Errore: il service non ha restituito dati validi", data);
+        return;
+      }
+  
       this.course = data.categories
-        .flatMap((category: { courses: Course; }) => category.courses)
-        .find((course: { idCourse: string | null; }) => course.idCourse === courseId);
+        .flatMap((category: { courses: Course[] }) => category.courses)
+        .find((course: { idCourse: string }) => course.idCourse === courseId);
+  
+      if (!this.course) {
+        console.error("Errore: Nessun corso trovato con ID:", courseId);
+      }
     });
   }
 

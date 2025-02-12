@@ -1,6 +1,6 @@
+import { Category, Course } from 'src/app/models/course.model';
 import { Component, OnInit } from '@angular/core';
 
-import { Category } from 'src/app/models/course.model';
 import { CoursesService } from 'src/app/service/Courses.service';
 
 @Component({
@@ -10,13 +10,24 @@ import { CoursesService } from 'src/app/service/Courses.service';
 })
 export class AcademyonebladeComponent implements OnInit {
 
+  categories: Category[] = []; // Solo categorie con corsi attivi
+
   constructor(private coursesService: CoursesService) { }
-  categories: Category[] = []; // Tutte le categorie originali
 
   ngOnInit(): void {
-  this.coursesService.getCourses().subscribe(data => {
-      this.categories = data.categories;
-      console.log(data.categories)
+    this.coursesService.getCoursesActive().subscribe(data => {
+      if (!data || !Array.isArray(data)) {
+        console.error("Errore: il service non restituisce dati validi", data);
+        return;
+      }
+
+      // Applica il filtro ai corsi attivi
+      this.categories = data
+        .map((category: Category) => ({
+          ...category,
+          courses: category.courses.filter((course: Course) => course.active === true) // Filtra solo i corsi attivi
+        }))
+        .filter((category: Category) => category.courses.length > 0); // Mantiene solo le categorie con corsi attivi
     });
   }
 }
