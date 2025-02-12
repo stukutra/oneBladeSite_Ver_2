@@ -6,9 +6,9 @@ import { Guide } from 'src/app/models/guide.model';
 import { GuideService } from 'src/app/service/guide.service';
 
 @Component({
-  selector: 'app-guideAccademyDetails',
-  templateUrl: './guideAccademyDetails.component.html',
-  styleUrls: ['./guideAccademyDetails.component.scss']
+  selector: 'app-guideAcademyDetails',
+  templateUrl: './guideAcademyDetails.component.html',
+  styleUrls: ['./guideAcademyDetails.component.scss']
 })
 export class GuideAccademyDetailsComponent implements OnInit {
   guide$!: Observable<Guide | undefined>; 

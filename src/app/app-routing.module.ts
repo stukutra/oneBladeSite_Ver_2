@@ -2,7 +2,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AcademyDetailsComponent } from './pages/accademy/academyDetails/academyDetails.component';
 import { AcademyonebladeComponent } from './pages/accademy/academyoneblade/academyoneblade.component';
-import { GuideAccademyDetailsComponent } from './pages/guide/guideAccademyDetails/guideAccademyDetails.component';
+import { GuideAccademyDetailsComponent } from './pages/guide/guideAcademyDetails/guideAcademyDetails.component';
 import { GuideaccademyComponent } from './pages/guide/guideaccademy/guideaccademy.component';
 import { HomeComponent } from './layout/home/home.component';
 import { NgModule } from '@angular/core';

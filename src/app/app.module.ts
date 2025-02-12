@@ -18,7 +18,7 @@ import { ContactFormComponent } from './pages/contact-form/contact-form.componen
 import { FissaUnaCallComponent } from './pages/FissaUnaCall/FissaUnaCall.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { FormsModule } from '@angular/forms';
-import { GuideAccademyDetailsComponent } from './pages/guide/guideAccademyDetails/guideAccademyDetails.component';
+import { GuideAccademyDetailsComponent } from './pages/guide/guideAcademyDetails/guideAcademyDetails.component';
 import { GuideBannerTopComponent } from './pages/guide/guideBannerTop/guideBannerTop.component';
 import { GuideListComponent } from './pages/guide/guideList/guideList.component';
 import { GuideaccademyComponent } from './pages/guide/guideaccademy/guideaccademy.component';
