@@ -28,4 +28,8 @@ export class CoursesService {
   getCoursesALL(): Observable<any> {
     return this.http.get(this.jsonUrl);
   }
+
+  getCourseDescription(filePath: string): Observable<string> {
+    return this.http.get(filePath, { responseType: 'text' });
+  }
 }

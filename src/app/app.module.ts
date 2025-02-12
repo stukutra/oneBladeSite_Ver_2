@@ -30,6 +30,7 @@ import { GuideListComponent } from './pages/guide/guideList/guideList.component'
 import { GuideaccademyComponent } from './pages/guide/guideaccademy/guideaccademy.component';
 import { HomeComponent } from './layout/home/home.component';
 import { ImageCarouselComponent } from './pages/image-carousel/image-carousel.component';
+import { InfooneBladeComponent } from './pages/infooneBlade/infooneBlade.component';
 import { MyInformationComponent } from './pages/myInformation/myInformation.component';
 // Outsourcing Components
 import { OutsourcingBannerComponent } from './pages/outsourcing/outsourcingBanner/outsourcingBanner.component';
@@ -75,7 +76,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     OutsourcingBannerComponent,
     OutsourcingInfoComponent,
     SoftwareHouseComponent,
-    FissaUnaCallComponent
+    FissaUnaCallComponent,
+    InfooneBladeComponent,
   ],
   imports: [
     BrowserModule,

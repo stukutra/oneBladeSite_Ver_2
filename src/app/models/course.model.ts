@@ -13,6 +13,7 @@ export interface Course {
     learning_outcomes: string[];
     requirements: Requirement[];
     course_contents: CourseContent[];
+    descriptionFile:string;
 }
 
 export interface Requirement {

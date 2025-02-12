@@ -13,7 +13,8 @@
                     "lessons": 80,
                     "time": "4h + 2h",
                     "level": "Beginner",
-                    "nature": "Il nostro corso Full Stack è progettato per fornire una formazione completa e approfondita su tutte le tecnologie necessarie per diventare uno sviluppatore full stack competente. Questo corso copre una vasta gamma di argomenti, dalla programmazione di base e l’analisi dei requisiti, fino alla creazione di applicazioni complete e complesse utilizzando tecnologie di back-end, front-end e cloud.<br><br><h1>Descrizione del Corso</h1><strong>Introduzione alla Programmazione e UML:</strong><br>Iniziamo il corso con una panoramica dei concetti fondamentali della programmazione. Utilizzeremo UML (Unified Modeling Language) per analizzare e progettare sistemi software, facilitando la comprensione delle relazioni e delle interazioni tra i vari componenti del sistema.<br><strong>Linguaggio C++ e Concetti di OOP:</strong><br>Passeremo poi all’apprendimento del linguaggio C++, un potente linguaggio di programmazione utilizzato in numerosi ambiti. Approfondiremo i concetti di programmazione orientata agli oggetti (OOP), come incapsulamento, ereditarietà e polimorfismo, che sono fondamentali per lo sviluppo di software modulare e riutilizzabile.<br><strong>Basi di Dati e Linguaggio SQL:</strong><br>Il corso proseguirà con una sezione dedicata alle basi di dati. Imparerete a progettare e gestire basi di dati relazionali, utilizzando il linguaggio SQL per eseguire operazioni di creazione, lettura, aggiornamento e cancellazione dei dati (CRUD). Questo modulo è cruciale per comprendere come gestire e manipolare grandi quantità di dati in modo efficiente.<br><br><h1>Linguaggio Back-End (C#, Java)</h1>Successivamente, vi introdurremo a uno dei principali linguaggi di programmazione back-end: C# o Java. Questi linguaggi sono ampiamente utilizzati per lo sviluppo di applicazioni server-side robuste e scalabili. Approfondirete concetti come la gestione delle sessioni, la sicurezza e l’integrazione con database. Concetti di Front-End (HTML, CSS, JavaScript): Il corso include anche una sezione sui fondamenti dello sviluppo front-end. Imparerete a creare interfacce utente interattive e responsive utilizzando HTML per la struttura, CSS per lo stile e JavaScript per l’interattività. Questi strumenti sono essenziali per lo sviluppo di applicazioni web moderne. Concetti di Cloud: Infine, esploreremo i concetti fondamentali del cloud computing. Scoprirete come utilizzare i servizi cloud per ospitare applicazioni, archiviare dati e scalare le risorse in base alle esigenze. Questa sezione vi preparerà a lavorare con piattaforme cloud come AWS, Azure o Google Cloud, che sono diventate indispensabili nel panorama tecnologico attuale.<br><br>",
+                    "descriptionFile": "assets/course_descriptions/CODBlade01.html",
+                    "nature": "",
                     "overview": "Impara a sviluppare applicazioni web complete, dalla parte front-end alla gestione del database.",
                     "learning_outcomes": [
                         "Progettare e sviluppare applicazioni complete, dalla logica di business al front-end",
@@ -64,6 +65,7 @@
                     "lessons": 40,
                     "time": "4h",
                     "level": "Beginner/Middle",
+                    "descriptionFile": "assets/course_descriptions/CODBlade01.html",
                     "nature": "Corso focalizzato sulla creazione e gestione delle interfacce utente.",
                     "overview": "Approfondisci le competenze necessarie per creare interfacce moderne e responsive.",
                     "learning_outcomes": [
@@ -116,6 +118,7 @@
                     "lessons": 80,
                     "time": "6h",
                     "level": "Expert",
+                    "descriptionFile": "assets/course_descriptions/CODBlade01.html",
                     "nature": "Corso avanzato per imparare a sviluppare sistemi di intelligenza artificiale.",
                     "learning_outcomes": [
                         "HTML, CSS e JavaScript avanzati",
@@ -167,6 +170,7 @@
                     "lessons": 50,
                     "time": "4h 30m",
                     "level": "Beginner/Middle",
+                    "descriptionFile": "assets/course_descriptions/CODBlade01.html",
                     "nature": "Corso mirato alla protezione e sicurezza informatica.",
                     "learning_outcomes": [
                         "HTML, CSS e JavaScript avanzati",
@@ -209,7 +213,7 @@
             "title": "Marketing e Management",
             "courses": [
                 {
-                    "active":true,
+                    "active": true,
                     "idCourse": "CODBlade05",
                     "title": "SEO Expert",
                     "duration": "2 mesi",
@@ -218,6 +222,7 @@
                     "lessons": 16,
                     "time": "3h 30m",
                     "level": "Beginner",
+                    "descriptionFile": "assets/course_descriptions/CODBlade01.html",
                     "nature": "Corso orientato all'ottimizzazione per i motori di ricerca.",
                     "learning_outcomes": [
                         "HTML, CSS e JavaScript avanzati",
@@ -264,6 +269,7 @@
                     "lessons": 80,
                     "time": "4h",
                     "level": "Beginner",
+                    "descriptionFile": "assets/course_descriptions/CODBlade01.html",
                     "nature": "Corso progettato per sviluppare competenze di gestione di progetti.",
                     "learning_outcomes": [
                         "HTML, CSS e JavaScript avanzati",

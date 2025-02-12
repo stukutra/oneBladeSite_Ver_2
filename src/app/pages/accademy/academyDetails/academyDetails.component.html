@@ -4,9 +4,11 @@
   <div class="container mt-5">
     <div class="row">
       <div class="col-8">
-
         <h1>{{ course.title }}</h1>
-        <div [innerHTML]="course.nature"></div>
+
+        <!-- Descrizione caricata dinamicamente -->
+        <div *ngIf="sanitizedDescription" [innerHTML]="sanitizedDescription"></div>
+
         <h3>Contenuti del Corso:</h3>
         <ul>
           <li *ngFor="let content of course.course_contents">
@@ -31,8 +33,7 @@
           <p><strong>Lezioni:</strong> {{ course.lessons }}</p>
           <p><strong>Tempo:</strong> {{ course.time }}</p>
           <p><strong>Livello:</strong> {{ course.level }}</p>
-          <p><strong>Descrizione:</strong> {{ course.description }}</p>
-      
+
           <app-academyReservation></app-academyReservation>
         </div>
       </div>
@@ -42,4 +43,3 @@
 
 <app-accademyBanner></app-accademyBanner>
 <app-infooneBlade></app-infooneBlade>
-<app-guideList></app-guideList>
