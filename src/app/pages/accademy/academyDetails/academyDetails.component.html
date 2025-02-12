@@ -33,15 +33,17 @@
           <p><strong>Lezioni:</strong> {{ course.lessons }}</p>
           <p><strong>Tempo:</strong> {{ course.time }}</p>
           <p><strong>Livello:</strong> {{ course.level }}</p>
-          <p><strong>Live session:</strong> Parteciperai 2 volte a settimana a lezioni live con i docenti, dove potrai interagire e porre domande in tempo reale.</p>
+          <p><strong>Live session:</strong> Parteciperai 2 volte a settimana a lezioni live con i docenti, dove potrai
+            interagire e porre domande in tempo reale.</p>
 
           <app-academyReservation></app-academyReservation>
         </div>
 
-        <div class="course-info-box">
+        <div class="course-info-box" *ngIf="course.datecourse?.length">
           <h3>Prossime classi in partenza</h3>
-          <p><strong>24 Febbraio 2025</strong></p>
-          <p><strong>1 Marzo 2025</strong></p>
+          <div *ngFor="let date of course.datecourse">
+            <p><strong>{{ date }}</strong></p>
+          </div>
         </div>
       </div>
 

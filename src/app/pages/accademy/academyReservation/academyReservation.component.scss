@@ -65,7 +65,6 @@ $checkbox-disabled-bg: #e0e0e0; // Sfondo disabilitato
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 20px;
     }
 }
 
@@ -255,4 +254,5 @@ $checkbox-disabled-bg: #e0e0e0; // Sfondo disabilitato
 
 .description-box {
     padding: 0px !important;
+    margin: 0px !important;
 }

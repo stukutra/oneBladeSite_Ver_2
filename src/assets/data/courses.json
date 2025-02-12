@@ -16,6 +16,10 @@
                     "descriptionFile": "assets/course_descriptions/CODBlade01.html",
                     "nature": "",
                     "overview": "Impara a sviluppare applicazioni web complete, dalla parte front-end alla gestione del database.",
+                    "datecourse":[
+                        "24 Febbraio 2025",
+                        "1 Marzo 2025"
+                    ],
                     "learning_outcomes": [
                         "Progettare e sviluppare applicazioni complete, dalla logica di business al front-end",
                         "Sviluppare e manutenere software complessi, con competenze sia di back-end che di front-end che di database.",
@@ -68,6 +72,10 @@
                     "descriptionFile": "assets/course_descriptions/CODBlade01.html",
                     "nature": "Corso focalizzato sulla creazione e gestione delle interfacce utente.",
                     "overview": "Approfondisci le competenze necessarie per creare interfacce moderne e responsive.",
+                    "datecourse":[
+                        "24 Febbraio 2025",
+                        "1 Marzo 2025"
+                    ],
                     "learning_outcomes": [
                         "HTML, CSS e JavaScript avanzati",
                         "Utilizzo di framework come Angular e React",
@@ -120,6 +128,11 @@
                     "level": "Expert",
                     "descriptionFile": "assets/course_descriptions/CODBlade01.html",
                     "nature": "Corso avanzato per imparare a sviluppare sistemi di intelligenza artificiale.",
+                    "overview": "Approfondisci le competenze necessarie per creare interfacce moderne e responsive.",
+                    "datecourse":[
+                        "24 Febbraio 2025",
+                        "1 Marzo 2025"
+                    ],
                     "learning_outcomes": [
                         "HTML, CSS e JavaScript avanzati",
                         "Utilizzo di framework come Angular e React",
@@ -172,6 +185,11 @@
                     "level": "Beginner/Middle",
                     "descriptionFile": "assets/course_descriptions/CODBlade01.html",
                     "nature": "Corso mirato alla protezione e sicurezza informatica.",
+                    "overview": "Approfondisci le competenze necessarie per creare interfacce moderne e responsive.",
+                    "datecourse":[
+                        "24 Febbraio 2025",
+                        "1 Marzo 2025"
+                    ],
                     "learning_outcomes": [
                         "HTML, CSS e JavaScript avanzati",
                         "Utilizzo di framework come Angular e React",
@@ -224,6 +242,11 @@
                     "level": "Beginner",
                     "descriptionFile": "assets/course_descriptions/CODBlade01.html",
                     "nature": "Corso orientato all'ottimizzazione per i motori di ricerca.",
+                    "overview": "Approfondisci le competenze necessarie per creare interfacce moderne e responsive.",
+                    "datecourse":[
+                        "24 Febbraio 2025",
+                        "1 Marzo 2025"
+                    ],
                     "learning_outcomes": [
                         "HTML, CSS e JavaScript avanzati",
                         "Utilizzo di framework come Angular e React",
@@ -271,6 +294,11 @@
                     "level": "Beginner",
                     "descriptionFile": "assets/course_descriptions/CODBlade01.html",
                     "nature": "Corso progettato per sviluppare competenze di gestione di progetti.",
+                    "overview": "Approfondisci le competenze necessarie per creare interfacce moderne e responsive.",
+                    "datecourse":[
+                        "24 Febbraio 2025",
+                        "1 Marzo 2025"
+                    ],
                     "learning_outcomes": [
                         "HTML, CSS e JavaScript avanzati",
                         "Utilizzo di framework come Angular e React",

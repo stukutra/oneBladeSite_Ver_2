@@ -11,6 +11,7 @@ export interface Course {
     nature: string;
     overview: string;
     learning_outcomes: string[];
+    datecourse:string[];
     requirements: Requirement[];
     course_contents: CourseContent[];
     descriptionFile:string;
