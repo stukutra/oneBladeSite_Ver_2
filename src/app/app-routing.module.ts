@@ -20,10 +20,11 @@ const routes: Routes = [
   { path: 'guideAccademy/:title', component: GuideAccademyDetailsComponent },
   { path: 'softwarehouse', component: SoftwareHouseComponent },
   { path: 'outsourcinginfo', component: OutsourcingInfoComponent },
+  { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule]
 })
 
