@@ -115,38 +115,59 @@ img {
         }
 
         .course-card {
-            background-color: $text-color;
-            color: $text-color-dark;
-            padding: $padding-base;
-            border-radius: $border-radius;
-            box-shadow: $box-shadow;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: auto;
+            min-height: 180px; // Altezza minima più contenuta
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             text-align: left;
-            font-size: $font-size-xs;
-            width: 33rem;
+            font-size: 0.9rem;
+            width: 22rem; // Ridotto per maggiore compattezza
+            background-color: #fff;
             transition: transform 0.2s, box-shadow 0.2s;
-
+        
             &:hover {
-                transform: scale(1);
-                box-shadow: 0 0.75rem 1.5rem $hover-color;
+                transform: scale(1.02);
+                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
                 cursor: pointer;
             }
-
+        
             h3 {
-                font-size: $font-size-md;
+                font-size: 1.1rem;
                 font-weight: bold;
-                margin-bottom: 0.625rem;
-                color: $primary-color;
+                margin-bottom: 0.5rem;
+                color: #6a1b9a;
             }
-
+        
             p {
-                margin: 0.3125rem 0;
-                font-size: $font-size-xs;
+                margin: 0.2rem 0; // Ridotto per meno spazio verticale
+                font-size: 0.9rem;
             }
-
-            .course-details {
-                margin-top: 0.625rem;
-                font-size: $font-size-base;
-                color: $secondary-color;
+        
+            .course-content {
+                display: flex;
+                flex-direction: column;
+                gap: 5px; // Spazio uniforme tra gli elementi
+            }
+        
+            .course-level-container {
+                margin-top: auto;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                height: 30px; // Altezza più contenuta
+                text-align: left;
+                width: 100%;
+            }
+        
+            .course-level {
+                color: #9c2ea6;
+                font-weight: bold;
             }
         }
     }

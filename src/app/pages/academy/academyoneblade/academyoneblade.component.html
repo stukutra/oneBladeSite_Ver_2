@@ -6,12 +6,43 @@
       <div class="col-8">
         <div class="text-content">
           <h1>Trova il tuo cammino, <span class="highlight">noi siamo al tuo fianco.</span></h1>
+
           <p>
-            <strong>Ogni viaggio inizia con una scelta:</strong> scopri il corso perfetto per te,
-            <strong>modellato sulle tue ambizioni,</strong>, sul tuo livello di partenza e sul tempo che puoi dedicare
-            alla tua crescita.
-            <strong>Siamo qui per guidarti passo dopo passo verso il tuo obiettivo.</strong>
+            <strong>Ogni viaggio inizia con una scelta:</strong> 
+            <span class="highlight">scoprire, imparare, mettersi alla prova.</span> 
+            I nostri corsi sono pensati per chi vuole <strong>comprendere davvero questo mondo</strong>, 
+            per chi è mosso dalla curiosità e dalla voglia di acquisire 
+            <strong>competenze concrete</strong>.
           </p>
+          
+          <p>
+            Crediamo che <strong>la conoscenza e la passione</strong> siano più importanti di qualsiasi certificazione. 
+            Le certificazioni possono essere un valore aggiunto, ma ciò che conta davvero è 
+            <strong>l’apprendimento reale, la pratica e la comprensione delle metodologie</strong>.
+          </p>
+
+          <p>
+            Noi <strong>non rilasciamo titoli</strong>, perché <span class="highlight">il titolo più importante è la competenza acquisita.</span>
+            Non facciamo promesse di <strong>posti di lavoro o garanzie di inserimento</strong>, 
+            perché non crediamo nelle illusioni. 
+            Il nostro obiettivo è <strong>formare realmente le persone</strong> che vogliono seguire ed 
+            <span class="highlight">inseguire la conoscenza</span>.
+          </p>
+
+          <p>
+            La nostra missione non si limita agli studenti: 
+            crediamo fermamente che anche <strong>la selezione dei docenti</strong> 
+            sia un aspetto fondamentale. 
+            Scegliamo solo professionisti che condividono la nostra filosofia, 
+            che credono <span class="highlight">nel valore della formazione autentica</span> 
+            e nel <strong>potere della conoscenza</strong> come strumento di crescita personale e professionale.
+          </p>
+
+          <p>
+            Se sei pronto a <strong>costruire il tuo futuro con determinazione e impegno</strong>, 
+            allora siamo qui per <strong>guidarti passo dopo passo</strong> verso il tuo obiettivo. 🚀
+          </p>
+          <app-academyEndorserBanner></app-academyEndorserBanner>
         </div>
       </div>
       <div class="col-4">
@@ -35,12 +66,8 @@
                 <span class="ribbon">Dettagli</span>
                 <h3>{{ course.title }}</h3>
                 <div class="course-content">
-                  <p><strong>Codice corso</strong><i> {{ course.idCourse }}</i></p>
-                  <p><strong>Durata</strong> {{ course.duration }}</p>
-                  <p><strong>Modalità</strong> {{ course.mode }}</p>
-                  <p><strong>Lezioni</strong> {{ course.lessons }}</p>
-                  <p><strong>Tempo</strong> {{ course.time }}</p>
-                  <p><strong>Informazioni</strong> {{ course.description }}</p>
+                  <p><strong>Durata:</strong> {{ course.duration }}</p>
+                  <p><strong>Modalità:</strong> {{ course.mode }}</p>
                 </div>
 
                 <!-- Footer sempre fisso in basso -->
@@ -55,5 +82,7 @@
     </div>
   </div>
 </div>
+
+
 <app-infooneBlade></app-infooneBlade>
 <app-guideList></app-guideList>
