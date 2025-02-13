@@ -197,7 +197,7 @@ img {
 
     .ribbon {
         position: absolute;
-        top: 7.2rem;
+        //top: 7.2rem;
         right: -2rem;
         background: $secondary-color;
         color: $text-color;
@@ -300,4 +300,17 @@ img {
             height: auto;
         }
     }
+}
+
+  /* Stile personalizzato per il prezzo */
+  .course-price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: $secondary-color; /* Arancione acceso per evidenziare */
+    background-color: rgba(255, 87, 34, 0.1); /* Leggera evidenziazione di sfondo */
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 0.5rem;
+    margin-left:10px
 }
