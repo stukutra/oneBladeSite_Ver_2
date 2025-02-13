@@ -9,14 +9,34 @@ export class AcademyEndorserBannerComponent implements OnInit {
 
   constructor() { }
   docenti = [
-    { nome: 'Maria Rossi', ruolo: 'Esperta in Angular e TypeScript', img: '../../../../assets/accademy/docenti/user-icon-512.png' },
-    { nome: 'Luca Bianchi', ruolo: 'Specialista in .NET Core e API', img: '../../../../assets/accademy/docenti/user-icon-512.png' },
-    { nome: 'Giulia Verdi', ruolo: 'Senior UX Designer', img: '../../../../assets/accademy/docenti/user-icon-512.png' },
-    { nome: 'Roberto Neri', ruolo: 'Cloud Engineer AWS', img: '../../../../assets/accademy/docenti/user-icon-512.png' }
+    { 
+      nome: 'Maria Rossi', 
+      ruolo: 'Esperta in Angular e TypeScript', 
+      img: '../../../../assets/accademy/docenti/user-icon-512.png',
+      linkedin: 'https://www.linkedin.com/in/maria-rossi'
+    },
+    { 
+      nome: 'Luca Bianchi', 
+      ruolo: 'Specialista in .NET Core e API', 
+      img: '../../../../assets/accademy/docenti/user-icon-512.png',
+      linkedin: 'https://www.linkedin.com/in/luca-bianchi'
+    },
+    { 
+      nome: 'Giulia Verdi', 
+      ruolo: 'Senior UX Designer', 
+      img: '../../../../assets/accademy/docenti/user-icon-512.png',
+      linkedin: 'https://www.linkedin.com/in/giulia-verdi'
+    },
+    { 
+      nome: 'Roberto Neri', 
+      ruolo: 'Cloud Engineer AWS', 
+      img: '../../../../assets/accademy/docenti/user-icon-512.png',
+      linkedin: 'https://www.linkedin.com/in/roberto-neri'
+    }
   ];
 
   currentIndex = 0;
-  slidesToShow = 4; // Default per desktop
+  slidesToShow = 4;
   totalSlides = this.docenti.length;
   autoplayInterval: any;
   fadeActive = false;
@@ -34,7 +54,6 @@ export class AcademyEndorserBannerComponent implements OnInit {
       this.slidesToShow = 4;
     }
 
-    // Evita il cambio se non ci sono abbastanza elementi
     if (this.totalSlides <= this.slidesToShow) {
       this.currentIndex = 0;
       this.stopAutoplay();

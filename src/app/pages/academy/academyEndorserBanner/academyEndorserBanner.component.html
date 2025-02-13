@@ -1,18 +1,19 @@
-<div class="container mt-5 mb-5">
-  <div class="row">
-    <div class="col">
-      <div class="docenti-slider">
-        <div class="slider-container">
-          <div class="slider" [class.fade]="fadeActive">
-            <div class="docente-box" *ngFor="let docente of getCurrentSlides()">
-              <div class="docente-img">
-                <img [src]="docente.img" [alt]="docente.nome" alt="">
-              </div>
-              <div class="docente-content">
-                <h3>{{ docente.nome }}</h3>
-                <p>{{ docente.ruolo }}</p>
-              </div>
-            </div>
+<div class="docenti-section text-center mt-5 mb-5">
+  <h2 class="docenti-title">I Nostri Endorser</h2> <!-- Titolo della sezione -->
+  
+  <div class="docenti-slider">
+    <div class="slider-container">
+      <div class="slider" [class.fade]="fadeActive">
+        <div class="docente-box" *ngFor="let docente of getCurrentSlides()">
+          <div class="docente-img">
+            <img [src]="docente.img" [alt]="docente.nome" alt="">
+          </div>
+          <div class="docente-content">
+            <h3>{{ docente.nome }}</h3>
+            <p>{{ docente.ruolo }}</p>
+            <a *ngIf="docente.linkedin" [href]="docente.linkedin" target="_blank" class="linkedin-icon">
+              <i class="bi bi-linkedin"></i> <!-- Icona LinkedIn Bootstrap -->
+            </a>
           </div>
         </div>
       </div>
