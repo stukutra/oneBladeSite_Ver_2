@@ -15,6 +15,7 @@ export interface Course {
     requirements: Requirement[];
     course_contents: CourseContent[];
     descriptionFile:string;
+    price:string
 }
 
 export interface Requirement {

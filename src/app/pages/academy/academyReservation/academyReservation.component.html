@@ -1,5 +1,10 @@
 <div class="description-box">
+
+
+
   <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" novalidate class="contact-form">
+  
+
     <div class="mb-3 form-group">
       <input type="text" id="name" name="name" class="form-control" [(ngModel)]="model.name" #name="ngModel" required
         placeholder="{{ 'FORM.PLACEHOLDERS.NAME' | translate }}" />

@@ -1,0 +1,100 @@
+// 🎨 Variabili per il design
+$background-color: #fff;
+$box-shadow-color: rgba(0, 0, 0, 0.1);
+$gap-size: 10px;
+$padding-box: 10px;
+$border-radius: 8px;
+$image-size: 70px; // Riduzione della dimensione dell'immagine
+
+.docenti-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+
+    .slider-container {
+        overflow: hidden;
+        width: 80%;
+        padding: 10px;
+    }
+
+    .slider {
+        display: flex;
+        gap: $gap-size;
+        justify-content: center;
+        transition: opacity 0.8s ease-in-out; // Effetto fade-in / fade-out più morbido
+    }
+
+    .fade {
+        opacity: 0;
+    }
+
+    .docente-box {
+        flex: 0 0 calc(22% - #{$gap-size}); // Box più piccoli per adattarsi meglio
+        padding: $padding-box;
+        text-align: center;
+        background: $background-color;
+        border-radius: $border-radius;
+        box-shadow: 0px 3px 5px $box-shadow-color;
+        transition: transform 0.3s ease-in-out;
+        margin: 5px;
+        max-width: 200px; // Imposta una larghezza massima per evitare ingrandimenti eccessivi
+
+        &:hover {
+            transform: scale(1.05);
+            z-index: 2;
+        }
+
+        .docente-img {
+            width: $image-size;
+            height: $image-size;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            margin: auto;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .docente-content {
+            margin-top: 8px;
+
+            h3 {
+                font-size: 0.9rem;
+                color: #333;
+                margin-bottom: 4px;
+            }
+
+            p {
+                font-size: 0.8rem;
+                color: #666;
+            }
+        }
+    }
+
+    // 🌍 Responsive Design
+    @media (max-width: 1280px) { // Tablet grande
+        .docente-box {
+            flex: 0 0 calc(30% - #{$gap-size});
+        }
+    }
+
+    @media (max-width: 1024px) { // Tablet piccolo
+        .docente-box {
+            flex: 0 0 calc(45% - #{$gap-size});
+        }
+    }
+
+    @media (max-width: 768px) { // Mobile
+        .docente-box {
+            flex: 0 0 calc(90% - #{$gap-size});
+        }
+    }
+}

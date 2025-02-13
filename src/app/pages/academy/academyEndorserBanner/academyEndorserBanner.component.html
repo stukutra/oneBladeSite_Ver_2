@@ -1,0 +1,21 @@
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <div class="col">
+      <div class="docenti-slider">
+        <div class="slider-container">
+          <div class="slider" [class.fade]="fadeActive">
+            <div class="docente-box" *ngFor="let docente of getCurrentSlides()">
+              <div class="docente-img">
+                <img [src]="docente.img" [alt]="docente.nome" alt="">
+              </div>
+              <div class="docente-content">
+                <h3>{{ docente.nome }}</h3>
+                <p>{{ docente.ruolo }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

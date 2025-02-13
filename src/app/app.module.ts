@@ -4,11 +4,12 @@ import { NO_ERRORS_SCHEMA, NgModule } from '@angular/core';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
 // Academy Components
-import { AcademyBannerComponent } from './pages/accademy/academyBanner/academyBanner.component';
-import { AcademyCaroselComponent } from './pages/accademy/academyCarosel/academyCarosel.component';
-import { AcademyDetailsComponent } from './pages/accademy/academyDetails/academyDetails.component';
-import { AcademyReservationComponent } from './pages/accademy/academyReservation/academyReservation.component';
-import { AcademyonebladeComponent } from './pages/accademy/academyoneblade/academyoneblade.component';
+import { AcademyBannerComponent } from './pages/academy/academyBanner/academyBanner.component';
+import { AcademyCaroselComponent } from './pages/academy/academyCarosel/academyCarosel.component';
+import { AcademyDetailsComponent } from './pages/academy/academyDetails/academyDetails.component';
+import { AcademyEndorserBannerComponent } from './pages/academy/academyEndorserBanner/academyEndorserBanner.component';
+import { AcademyReservationComponent } from './pages/academy/academyReservation/academyReservation.component';
+import { AcademyonebladeComponent } from './pages/academy/academyoneblade/academyoneblade.component';
 import { AgencyDetailsComponent } from './pages/agencyDetails/agencyDetails.component';
 // Layout Components
 import { AppComponent } from './app.component';
@@ -78,6 +79,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     SoftwareHouseComponent,
     FissaUnaCallComponent,
     InfooneBladeComponent,
+    AcademyEndorserBannerComponent
   ],
   imports: [
     BrowserModule,
