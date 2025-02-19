@@ -19,7 +19,7 @@ $padding-base: 1.25rem;
 $gap: 1rem;
 $filter-width: 50%;
 $filter-max-width: 25rem;
-/* 400px */
+
 
 /* Immagini */
 img {
@@ -48,7 +48,6 @@ img {
     text-align: center;
     padding: $padding-base;
     min-height: 15.625rem;
-    /* 250px */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -130,31 +129,31 @@ img {
             width: 22rem; // Ridotto per maggiore compattezza
             background-color: #fff;
             transition: transform 0.2s, box-shadow 0.2s;
-        
+
             &:hover {
                 transform: scale(1.02);
                 box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
                 cursor: pointer;
             }
-        
+
             h3 {
                 font-size: 1.1rem;
                 font-weight: bold;
                 margin-bottom: 0.5rem;
                 color: #6a1b9a;
             }
-        
+
             p {
                 margin: 0.2rem 0; // Ridotto per meno spazio verticale
                 font-size: 0.9rem;
             }
-        
+
             .course-content {
                 display: flex;
                 flex-direction: column;
                 gap: 5px; // Spazio uniforme tra gli elementi
             }
-        
+
             .course-level-container {
                 margin-top: auto;
                 display: flex;
@@ -164,7 +163,7 @@ img {
                 text-align: left;
                 width: 100%;
             }
-        
+
             .course-level {
                 color: #9c2ea6;
                 font-weight: bold;
@@ -302,15 +301,17 @@ img {
     }
 }
 
-  /* Stile personalizzato per il prezzo */
-  .course-price {
+/* Stile personalizzato per il prezzo */
+.course-price {
     font-size: 1rem;
     font-weight: bold;
-    color: $secondary-color; /* Arancione acceso per evidenziare */
-    background-color: rgba(255, 87, 34, 0.1); /* Leggera evidenziazione di sfondo */
+    color: $secondary-color;
+    /* Arancione acceso per evidenziare */
+    background-color: rgba(255, 87, 34, 0.1);
+    /* Leggera evidenziazione di sfondo */
     padding: 0.5rem 1rem;
     border-radius: 8px;
     display: inline-block;
     margin-top: 0.5rem;
-    margin-left:10px
+    margin-left: 10px
 }

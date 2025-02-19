@@ -341,6 +341,33 @@
                     ]
                 }
             ]
+        },
+        {
+            "title": "Metodologie e gestione progetti",
+            "courses": [
+                {
+                    "active": true,
+                    "idCourse": "CODBlade07",
+                    "title": "Metodologie agile",
+                    "duration": "9 ore",
+                    "mode": "Online",
+                    "description": "Scopri i segreti dell’Intelligenza Artificiale e dei sistemi che ti permetteranno di proiettarti direttamente nel futuro",
+                    "lessons": 80,
+                    "time": "",
+                    "level": "Beginner/Middle",
+                    "descriptionFile": "assets/course_descriptions/CODBlade07.html",
+                    "nature": "Corso di metodologie di sviluppo software agile con focus sul framework di Scrum",
+                    "overview": "Corso di metodologie di sviluppo software agile con focus sul framework di Scrum",
+                    "datecourse":[
+                        "24 Febbraio 2025",
+                        "1 Marzo 2025"
+                    ],
+                    "price":"000,00 €",
+                    "learning_outcomes": [],
+                    "requirements": [],
+                    "course_contents": []
+                }
+            ]
         }
     ]
 }
