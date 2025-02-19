@@ -14,7 +14,7 @@ export class CompanyAboutUsComponent implements OnInit {
       technologies: [
         { name: 'Fullstack', value: 95 },
         { name: 'Angular', value: 90 },
-        { name: 'React', value: 50 }
+        { name: 'React', value: 60 }
       ]
     },
     {
@@ -22,7 +22,7 @@ export class CompanyAboutUsComponent implements OnInit {
       technologies: [
         { name: 'Mobile (iOS, React Native, Android)', value: 80 },
         { name: 'IOS', value: 60 },
-        { name: 'React Native', value: 50 }
+        { name: 'React Native', value: 70 }
       ]
     },
     {
@@ -36,7 +36,7 @@ export class CompanyAboutUsComponent implements OnInit {
     {
       category: 'Quality Assurance & UI/UX',
       technologies: [
-        { name: 'QA', value: 30 },
+        { name: 'QA', value: 40 },
         { name: 'UI/UX', value: 75 }
       ]
     }
