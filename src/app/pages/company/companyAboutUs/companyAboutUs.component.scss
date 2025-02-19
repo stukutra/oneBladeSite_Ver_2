@@ -38,15 +38,24 @@ h4 {
     }
 }
 
+.profile-container {
+    display: flex;
+    justify-content: center; // Centra le card orizzontalmente
+    gap: 20px; // Spazio tra le card
+    flex-wrap: wrap; // Se non ci sta su schermi piccoli, va a capo
+}
+
 .profile-card {
     display: flex;
     align-items: center;
-    background-color: #ffffff; // Sfondo bianco
+    background-color: #ffffff;
     padding: 15px;
     border-radius: 10px;
     max-width: 400px;
-    border: 1px solid #d1d1d1; // Bordo sottile grigio chiaro
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1); // Ombreggiatura leggera
+    border: 1px solid #d1d1d1;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1; // Adatta le card per stare in una riga
+    min-width: 350px; // Previene che diventino troppo piccole
 }
 
 .profile-image {
