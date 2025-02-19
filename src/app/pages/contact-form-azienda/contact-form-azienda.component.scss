@@ -1,26 +1,8 @@
-// Variabili generali
-$topbar-color: #9339bb; // Colore primario del sito
-$button-text-color: #ffffff; // Colore del testo del pulsante
-$button-border-color: $topbar-color; // Colore del bordo del pulsante
-$button-hover-bg-color: darken($topbar-color, 10%); // Colore di sfondo del pulsante al passaggio del mouse
-$button-hover-text-color: $button-text-color; // Colore del testo del pulsante al passaggio del mouse
-$button-disabled-bg-color: #d3d3d3; // Sfondo pulsante disabilitato
-$button-disabled-text-color: #6c757d; // Testo pulsante disabilitato
-$input-border-color: #ccc; // Colore del bordo degli input
-$input-focus-border-color: $topbar-color; // Colore del bordo degli input al focus
-$input-placeholder-color: #aaa; // Colore del placeholder
-$error-text-color: $topbar-color; // Colore dei messaggi di errore
-$file-input-border-radius: 8px; // Raggio dell'angolo per l'input file
-$file-button-bg-color: $topbar-color; // Colore di sfondo del bottone di selezione file
-$file-button-hover-bg-color: darken($topbar-color, 10%); // Colore di sfondo al passaggio del mouse sul bottone di selezione file
-$box-shadow-color: rgba(0, 0, 0, 0.1); // Colore dell'ombra del box
-$custom-btn-bg-color: $topbar-color; // Colore di sfondo del pulsante personalizzato
-$custom-btn-hover-bg-color: #a80aec; // Colore di sfondo del pulsante personalizzato al passaggio del mouse
-$custom-btn-focus-shadow-color: #aa4fd1; // Colore dell'ombra al focus sul pulsante personalizzato
+@import '../../style/variabiles';
 
 // Box di descrizione
 .description-box {
-  background-color: #ffffff;
+  background-color: $background-color_2;
   color: #333;
   padding: 20px;
   max-width: 800px;

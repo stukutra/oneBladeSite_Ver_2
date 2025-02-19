@@ -1,16 +1,10 @@
-// Variabili
-$topbar-color: #9339bb; // Colore primario del sito
-$tab-active-bg: #ffffff; // Colore di sfondo del tab attivo
-$tab-inactive-bg: #f8f9fa; // Colore di sfondo dei tab non attivi
-$tab-border-color: #9339bb; // Colore del bordo dei tab
-$tab-inactive-color: #6c757d; // Colore del testo per i tab non attivi
-$tab-hover-bg: lighten($tab-inactive-bg, 10%); // Colore di sfondo dei tab al passaggio del mouse
+
+@import '../../../style/variabiles';
 
 .nav-tabs .nav-link {
   color: $topbar-color;
   font-size: larger;
 }
-
 
 // Stile per le tabs
 .rounded-tabs {

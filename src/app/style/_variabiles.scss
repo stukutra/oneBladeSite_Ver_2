@@ -38,7 +38,6 @@ $filter-max-width: 25rem;
 $topbar-color: #9339bb; // Colore primario del sito
 $button-text-color: #ffffff; // Colore del testo del pulsante
 $button-border-color: $topbar-color; // Colore del bordo del pulsante
-$button-hover-bg-color: darken($topbar-color, 10%); // Sfondo pulsante al passaggio
 $button-hover-text-color: $button-text-color; // Testo pulsante al passaggio
 $input-border-color: #ccc; // Bordo input standard
 $input-focus-border-color: $topbar-color; // Bordo input in focus
@@ -50,4 +49,53 @@ $checkbox-border: #ccc; // Bordo checkbox
 $checkbox-active-bg: $topbar-color; // Checkbox attivo
 $checkbox-hover-border: darken($topbar-color, 15%); // Hover checkbox
 $checkbox-disabled-bg: #e0e0e0; // Sfondo disabilitato
+
+$tab-active-bg: #ffffff; // Colore di sfondo del tab attivo
+$tab-inactive-bg: #f8f9fa; // Colore di sfondo dei tab non attivi
+$tab-border-color: #9339bb; // Colore del bordo dei tab
+$tab-inactive-color: #6c757d; // Colore del testo per i tab non attivi
+$tab-hover-bg: lighten($tab-inactive-bg, 10%); // Colore di sfondo dei tab al passaggio del mouse
+
+$button-hover-bg-color: darken($topbar-color, 10%); // Colore di sfondo del pulsante al passaggio del mouse
+$input-placeholder-color: #aaa; // Colore del placeholder
+$file-input-border-radius: 8px; // Raggio dell'angolo per l'input file
+$file-button-bg-color: $topbar-color; // Colore di sfondo del bottone di selezione file
+$file-button-hover-bg-color: darken($topbar-color, 10%); // Colore di sfondo al passaggio del mouse sul bottone di selezione file
+$button-disabled-bg-color: #d3d3d3; // Sfondo pulsante disabilitato
+$button-disabled-text-color: #6c757d; // Testo pulsante disabilitato
+
+
+$carousel-item-padding: 20px;
+$logo-item-padding: 15px;
+
+$primary-color: #6a1b9a;
+$secondary-color: #9c2ea6;
+$text-color: #ffffff;
+$text-color-oneblade: #9c2ea6;
+$text-color-dark: #000000;
+$background-color: rgb(83, 62, 133);
+$hover-color: rgba(0, 0, 0, 0.2);
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+$padding-base: 1.25rem;
+$filter-width: 50%;
+$filter-max-width: 25rem;
+$button-height: 60px;
+$accent-color: #9c2ea6;
+$text-light: #ffffff;
+$text-dark: #000000;
+$border-radius: 0.75rem;
+$transition-speed: 0.3s;
+
+$background-light: #fff;
+$background-dark: #a380bc;
+
+$box-shadow-hover: 0 6px 12px rgba(0, 0, 0, 0.15);
+$font-size-title: 2.5rem;
+$font-size-subtitle: 1.2rem;
+$font-size-text: 0.9rem;
+$font-size-button: 0.9rem;
+$card-width: 250px;
+$card-min-height: 380px;
+$image-height: 80px;
+
 

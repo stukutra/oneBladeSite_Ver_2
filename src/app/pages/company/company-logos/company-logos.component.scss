@@ -1,8 +1,5 @@
-// Variabili
-$carousel-item-padding: 20px;
-$logo-item-padding: 15px;
+@import '../../../style/variabiles';
 
-// Stile per il carosello
 .carousel-inner {
   overflow: hidden;
   position: relative;

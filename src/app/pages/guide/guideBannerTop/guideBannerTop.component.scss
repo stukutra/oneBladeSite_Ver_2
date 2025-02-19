@@ -1,24 +1,4 @@
-// 🎨 Variabili globali
-$text-color: #ffffff;
-$primary-color: #6a1b9a;
-$secondary-color: rgb(83, 62, 133);
-$accent-color: #9c2ea6;
-$background-light: #fff;
-$background-dark: #a380bc;
-$border-radius: 0.75rem; // 12px
-$padding-base: 1.25rem; // 20px
-$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-$box-shadow-hover: 0 6px 12px rgba(0, 0, 0, 0.15);
-$transition-speed: 0.3s;
-$hover-color: rgba(0, 0, 0, 0.2);
-$font-size-title: 2.5rem;
-$font-size-subtitle: 1.2rem;
-$font-size-text: 0.9rem;
-$font-size-button: 0.9rem;
-$button-height: 40px;
-$card-width: 250px;
-$card-min-height: 380px;
-$image-height: 80px;
+@import '../../../style/variabiles';
 
 /* 📌 Banner */
 .color-accademy-banner {
