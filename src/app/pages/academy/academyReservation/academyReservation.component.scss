@@ -1,20 +1,4 @@
-// Variabili generali
-$topbar-color: #9339bb; // Colore primario del sito
-$button-text-color: #ffffff; // Colore del testo del pulsante
-$button-border-color: $topbar-color; // Colore del bordo del pulsante
-$button-hover-bg-color: darken($topbar-color, 10%); // Sfondo pulsante al passaggio
-$button-hover-text-color: $button-text-color; // Testo pulsante al passaggio
-$input-border-color: #ccc; // Bordo input standard
-$input-focus-border-color: $topbar-color; // Bordo input in focus
-$error-text-color: $topbar-color; // Testo errore
-$box-shadow-color: rgba(0, 0, 0, 0.1); // Ombra generale
-$custom-btn-bg-color: #9339bb; // Pulsante personalizzato
-$custom-btn-hover-bg-color: #a80aec; // Hover pulsante
-$custom-btn-focus-shadow-color: #aa4fd1; // Glow pulsante
-$checkbox-border: #ccc; // Bordo checkbox
-$checkbox-active-bg: $topbar-color; // Checkbox attivo
-$checkbox-hover-border: darken($topbar-color, 15%); // Hover checkbox
-$checkbox-disabled-bg: #e0e0e0; // Sfondo disabilitato
+@import '../../../style/variabiles';// Variabili generali
 
 // Stile generale del form
 .contact-form {

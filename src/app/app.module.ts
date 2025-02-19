@@ -16,9 +16,10 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
-import { CompanyDescriptionComponent } from './pages/company-description/company-description.component';
+import { CompanyAboutUsComponent } from './pages/company/companyAboutUs/companyAboutUs.component';
+import { CompanyDescriptionComponent } from './pages/company/company-description/company-description.component';
 // Pages Components
-import { CompanyLogosComponent } from './pages/company-logos/company-logos.component';
+import { CompanyLogosComponent } from './pages/company/company-logos/company-logos.component';
 import { ContactFormAziendaComponent } from './pages/contact-form-azienda/contact-form-azienda.component';
 import { ContactFormComponent } from './pages/contact-form/contact-form.component';
 import { FissaUnaCallComponent } from './pages/FissaUnaCall/FissaUnaCall.component';
@@ -79,7 +80,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     SoftwareHouseComponent,
     FissaUnaCallComponent,
     InfooneBladeComponent,
-    AcademyEndorserBannerComponent
+    AcademyEndorserBannerComponent,
+    CompanyAboutUsComponent
   ],
   imports: [
     BrowserModule,

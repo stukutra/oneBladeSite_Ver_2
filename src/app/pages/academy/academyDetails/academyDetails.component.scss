@@ -1,25 +1,4 @@
-/* Box generico */
-/* Variabili principali */
-$primary-color: #6a1b9a;
-$secondary-color: #9c2ea6;
-$text-color: #000000;
-$text-color-oneblade: #9c2ea6;
-$text-color-dark: #000000;
-$background-color: rgb(255, 255, 255);
-$hover-color: rgba(0, 0, 0, 0.2);
-$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-$border-radius: 0.75rem;
-$transition-speed: 0.3s;
-$font-size-base: 1.8rem;
-$font-size-lg: 2.8rem;
-$font-size-xs: 1.5rem;
-$font-size-xl: 2.5rem;
-$font-size-md: 2.5rem;
-$font-size-ribbon: 1rem;
-$padding-base: 1.25rem;
-$gap: 1rem;
-$filter-width: 50%;
-$filter-max-width: 25rem;
+@import '../../../style/variabiles';
 
 .box {
     background-color: $background-color;
@@ -28,7 +7,6 @@ $filter-max-width: 25rem;
     text-align: center;
     padding: $padding-base;
     min-height: 15.625rem;
-    /* 250px */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,13 +19,11 @@ $filter-max-width: 25rem;
 
     &:hover {
         transform: translateY(-0.3125rem);
-        /* -5px */
         box-shadow: 0 0.5rem 1rem $hover-color;
     }
 
     h2 {
         margin-bottom: 0.625rem;
-        /* 10px */
     }
 
     p {

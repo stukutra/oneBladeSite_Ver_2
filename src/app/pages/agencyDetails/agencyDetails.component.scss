@@ -1,5 +1,7 @@
+@import '../../../app/style/variabiles';// Variabili generali
+
 .box {
-  background-color: rgba(161, 49, 169, 0.886);
+  background-color: $background-color;
   color: white;
   border-radius: 12px;
   /* Angoli arrotondati */

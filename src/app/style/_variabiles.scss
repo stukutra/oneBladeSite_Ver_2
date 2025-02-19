@@ -1,0 +1,53 @@
+$primary-color: #6a1b9a;
+$secondary-color: #9c2ea6;
+$text-color: #000000;
+$text-color-oneblade: #9c2ea6;
+$text-color-dark: #000000;
+$text-color-dark: #000000;
+$background-color: rgb(83, 62, 133);
+$hover-color: rgba(0, 0, 0, 0.2);
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+$border-radius: 0.75rem;
+$transition-speed: 0.3s;
+$font-size-ribbon: 1rem;
+$padding-base: 1.25rem;
+$gap: 1rem;
+$filter-width: 50%;
+$filter-max-width: 25rem;
+$background-color: #da69e5;
+$background-color_2: #ffffff;
+$box-shadow-color: rgba(0, 0, 0, 0.1);
+$gap-size: 10px; 
+$padding-box: 20px;
+$border-radius: 10px;
+$image-size: 85px;
+$linkedin-color: #0077B5;
+$hover-color: rgba(0, 0, 0, 0.2);
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+$transition-speed: 0.3s;
+$font-size-base: 1rem;
+$font-size-lg: 1.8rem;
+$font-size-xs: 1.2rem;
+$font-size-xl: 2.5rem;
+$font-size-md: 1.4rem;
+$font-size-ribbon: 1rem;
+$padding-base: 1.25rem;
+$filter-width: 50%;
+$filter-max-width: 25rem;
+
+$topbar-color: #9339bb; // Colore primario del sito
+$button-text-color: #ffffff; // Colore del testo del pulsante
+$button-border-color: $topbar-color; // Colore del bordo del pulsante
+$button-hover-bg-color: darken($topbar-color, 10%); // Sfondo pulsante al passaggio
+$button-hover-text-color: $button-text-color; // Testo pulsante al passaggio
+$input-border-color: #ccc; // Bordo input standard
+$input-focus-border-color: $topbar-color; // Bordo input in focus
+$error-text-color: $topbar-color; // Testo errore
+$custom-btn-bg-color: #9339bb; // Pulsante personalizzato
+$custom-btn-hover-bg-color: #a80aec; // Hover pulsante
+$custom-btn-focus-shadow-color: #aa4fd1; // Glow pulsante
+$checkbox-border: #ccc; // Bordo checkbox
+$checkbox-active-bg: $topbar-color; // Checkbox attivo
+$checkbox-hover-border: darken($topbar-color, 15%); // Hover checkbox
+$checkbox-disabled-bg: #e0e0e0; // Sfondo disabilitato
+

@@ -5,6 +5,81 @@
             "courses": [
                 {
                     "active": true,
+                    "idCourse": "CODBlade08",
+                    "title": "Fondamenti Web",
+                    "duration": "40 ore",
+                    "mode": "Online",
+                    "description": "<p><strong>Scopri come creare pagine web moderne e interattive</strong> partendo dalle basi! Questo corso ti guiderà nell’apprendimento di <strong>HTML, CSS e JavaScript</strong>, i tre pilastri fondamentali del web development. Imparerai a <em>costruire pagine ben strutturate</em> con <strong>HTML</strong>, a <em>renderle esteticamente accattivanti</em> con <strong>CSS</strong> e a <em>renderle dinamiche e interattive</em> grazie a <strong>JavaScript</strong>. Perfetto per chi vuole avvicinarsi alla programmazione web, <strong>sia per hobby che per lavoro</strong>. Alla fine del corso, sarai in grado di <strong>realizzare siti web responsivi e funzionali</strong>, pronti per essere pubblicati online!</p>",
+                    "lessons": 0,
+                    "time": "",
+                    "level": "Beginner",
+                    "descriptionFile": "assets/course_descriptions/CODBlade08.html",
+                    "nature": "",
+                    "overview": "",
+                    "datecourse": [
+                        "24 Febbraio 2025",
+                        "1 Marzo 2025"
+                    ],
+                    "price": "000,00 €",
+                    "learning_outcomes": [],
+                    "requirements": [],
+                    "course_contents": []
+                },
+                {
+                    "active": true,
+                    "idCourse": "CODBlade02",
+                    "title": "Front End Developer",
+                    "duration": "2 mesi",
+                    "mode": "In aula | Online",
+                    "description": "Specializzati nei framework per creare e mantenere l’interfaccia utente di un sito web o di un’applicazione",
+                    "lessons": 40,
+                    "time": "4h",
+                    "level": "Beginner/Middle",
+                    "descriptionFile": "assets/course_descriptions/CODBlade01.html",
+                    "nature": "Corso focalizzato sulla creazione e gestione delle interfacce utente.",
+                    "overview": "Approfondisci le competenze necessarie per creare interfacce moderne e responsive.",
+                    "datecourse": [
+                        "24 Febbraio 2025",
+                        "1 Marzo 2025"
+                    ],
+                    "price": "299,00 €",
+                    "learning_outcomes": [
+                        "HTML, CSS e JavaScript avanzati",
+                        "Utilizzo di framework come Angular e React",
+                        "Responsive Design e UX/UI",
+                        "Ottimizzazione delle prestazioni front-end"
+                    ],
+                    "requirements": [
+                        {
+                            "title": "Conoscenza base di HTML e CSS",
+                            "description": "Utile ma non obbligatoria."
+                        },
+                        {
+                            "title": "Passione per il design",
+                            "description": "Interesse per le interfacce utente e l'esperienza utente."
+                        }
+                    ],
+                    "course_contents": [
+                        {
+                            "title": "HTML, CSS e JavaScript",
+                            "text": "Tecniche avanzate per creare layout responsive."
+                        },
+                        {
+                            "title": "Framework Moderni",
+                            "text": "Approfondimento su Angular e React."
+                        },
+                        {
+                            "title": "Performance Optimization",
+                            "text": "Strategie per migliorare la velocità e la scalabilità."
+                        },
+                        {
+                            "title": "Progetto finale",
+                            "text": "Realizzazione di un'applicazione front-end completa."
+                        }
+                    ]
+                },
+                {
+                    "active": true,
                     "idCourse": "CODBlade01",
                     "title": "Full Stack Developer",
                     "duration": "4 mesi",
@@ -16,11 +91,11 @@
                     "descriptionFile": "assets/course_descriptions/CODBlade01.html",
                     "nature": "",
                     "overview": "Impara a sviluppare applicazioni web complete, dalla parte front-end alla gestione del database.",
-                    "datecourse":[
+                    "datecourse": [
                         "24 Febbraio 2025",
                         "1 Marzo 2025"
                     ],
-                    "price":"299,00 €",
+                    "price": "299,00 €",
                     "learning_outcomes": [
                         "Progettare e sviluppare applicazioni complete, dalla logica di business al front-end",
                         "Sviluppare e manutenere software complessi, con competenze sia di back-end che di front-end che di database.",
@@ -59,81 +134,6 @@
                             "text": "Sviluppo di un'applicazione completa."
                         }
                     ]
-                },
-                {
-                    "active": true,
-                    "idCourse": "CODBlade02",
-                    "title": "Front End Developer",
-                    "duration": "2 mesi",
-                    "mode": "In aula | Online",
-                    "description": "Specializzati nei framework per creare e mantenere l’interfaccia utente di un sito web o di un’applicazione",
-                    "lessons": 40,
-                    "time": "4h",
-                    "level": "Beginner/Middle",
-                    "descriptionFile": "assets/course_descriptions/CODBlade01.html",
-                    "nature": "Corso focalizzato sulla creazione e gestione delle interfacce utente.",
-                    "overview": "Approfondisci le competenze necessarie per creare interfacce moderne e responsive.",
-                    "datecourse":[
-                        "24 Febbraio 2025",
-                        "1 Marzo 2025"
-                    ],
-                    "price":"299,00 €",
-                    "learning_outcomes": [
-                        "HTML, CSS e JavaScript avanzati",
-                        "Utilizzo di framework come Angular e React",
-                        "Responsive Design e UX/UI",
-                        "Ottimizzazione delle prestazioni front-end"
-                    ],
-                    "requirements": [
-                        {
-                            "title": "Conoscenza base di HTML e CSS",
-                            "description": "Utile ma non obbligatoria."
-                        },
-                        {
-                            "title": "Passione per il design",
-                            "description": "Interesse per le interfacce utente e l'esperienza utente."
-                        }
-                    ],
-                    "course_contents": [
-                        {
-                            "title": "HTML, CSS e JavaScript",
-                            "text": "Tecniche avanzate per creare layout responsive."
-                        },
-                        {
-                            "title": "Framework Moderni",
-                            "text": "Approfondimento su Angular e React."
-                        },
-                        {
-                            "title": "Performance Optimization",
-                            "text": "Strategie per migliorare la velocità e la scalabilità."
-                        },
-                        {
-                            "title": "Progetto finale",
-                            "text": "Realizzazione di un'applicazione front-end completa."
-                        }
-                    ]
-                },
-                {
-                    "active": true,
-                    "idCourse": "CODBlade08",
-                    "title": "Fondamenti Web (HTML, Css, Javascript)",
-                    "duration": "40 ore",
-                    "mode": "Online",
-                    "description": "<p><strong>Scopri come creare pagine web moderne e interattive</strong> partendo dalle basi! Questo corso ti guiderà nell’apprendimento di <strong>HTML, CSS e JavaScript</strong>, i tre pilastri fondamentali del web development. Imparerai a <em>costruire pagine ben strutturate</em> con <strong>HTML</strong>, a <em>renderle esteticamente accattivanti</em> con <strong>CSS</strong> e a <em>renderle dinamiche e interattive</em> grazie a <strong>JavaScript</strong>. Perfetto per chi vuole avvicinarsi alla programmazione web, <strong>sia per hobby che per lavoro</strong>. Alla fine del corso, sarai in grado di <strong>realizzare siti web responsivi e funzionali</strong>, pronti per essere pubblicati online!</p>",
-                    "lessons": 0,
-                    "time": "",
-                    "level": "Beginner",
-                    "descriptionFile": "assets/course_descriptions/CODBlade08.html",
-                    "nature": "",
-                    "overview": "",
-                    "datecourse":[
-                        "24 Febbraio 2025",
-                        "1 Marzo 2025"
-                    ],
-                    "price":"000,00 €",
-                    "learning_outcomes": [],
-                    "requirements": [],
-                    "course_contents": []
                 }
             ]
         },
@@ -153,11 +153,11 @@
                     "descriptionFile": "assets/course_descriptions/CODBlade01.html",
                     "nature": "Corso avanzato per imparare a sviluppare sistemi di intelligenza artificiale.",
                     "overview": "Approfondisci le competenze necessarie per creare interfacce moderne e responsive.",
-                    "datecourse":[
+                    "datecourse": [
                         "24 Febbraio 2025",
                         "1 Marzo 2025"
                     ],
-                    "price":"299,00 €",
+                    "price": "299,00 €",
                     "learning_outcomes": [
                         "HTML, CSS e JavaScript avanzati",
                         "Utilizzo di framework come Angular e React",
@@ -211,11 +211,11 @@
                     "descriptionFile": "assets/course_descriptions/CODBlade01.html",
                     "nature": "Corso mirato alla protezione e sicurezza informatica.",
                     "overview": "Approfondisci le competenze necessarie per creare interfacce moderne e responsive.",
-                    "datecourse":[
+                    "datecourse": [
                         "24 Febbraio 2025",
                         "1 Marzo 2025"
                     ],
-                    "price":"299,00 €",
+                    "price": "299,00 €",
                     "learning_outcomes": [
                         "HTML, CSS e JavaScript avanzati",
                         "Utilizzo di framework come Angular e React",
@@ -269,11 +269,11 @@
                     "descriptionFile": "assets/course_descriptions/CODBlade01.html",
                     "nature": "Corso orientato all'ottimizzazione per i motori di ricerca.",
                     "overview": "Approfondisci le competenze necessarie per creare interfacce moderne e responsive.",
-                    "datecourse":[
+                    "datecourse": [
                         "24 Febbraio 2025",
                         "1 Marzo 2025"
                     ],
-                    "price":"299,00 €",
+                    "price": "299,00 €",
                     "learning_outcomes": [
                         "HTML, CSS e JavaScript avanzati",
                         "Utilizzo di framework come Angular e React",
@@ -322,11 +322,11 @@
                     "descriptionFile": "assets/course_descriptions/CODBlade01.html",
                     "nature": "Corso progettato per sviluppare competenze di gestione di progetti.",
                     "overview": "Approfondisci le competenze necessarie per creare interfacce moderne e responsive.",
-                    "datecourse":[
+                    "datecourse": [
                         "24 Febbraio 2025",
                         "1 Marzo 2025"
                     ],
-                    "price":"299,00 €",
+                    "price": "299,00 €",
                     "learning_outcomes": [
                         "HTML, CSS e JavaScript avanzati",
                         "Utilizzo di framework come Angular e React",
@@ -380,11 +380,11 @@
                     "descriptionFile": "assets/course_descriptions/CODBlade07.html",
                     "nature": "Corso di metodologie di sviluppo software agile con focus sul framework di Scrum",
                     "overview": "Corso di metodologie di sviluppo software agile con focus sul framework di Scrum",
-                    "datecourse":[
+                    "datecourse": [
                         "24 Febbraio 2025",
                         "1 Marzo 2025"
                     ],
-                    "price":"000,00 €",
+                    "price": "000,00 €",
                     "learning_outcomes": [],
                     "requirements": [],
                     "course_contents": []

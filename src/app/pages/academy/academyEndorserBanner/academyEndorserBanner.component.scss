@@ -1,11 +1,5 @@
-// 🎨 Variabili per il design
-$background-color: #fff;
-$box-shadow-color: rgba(0, 0, 0, 0.1);
-$gap-size: 10px; // Ridotto leggermente per migliorare la spaziatura
-$padding-box: 20px; // Più padding per una lettura migliore
-$border-radius: 10px;
-$image-size: 85px; // Leggermente più grande
-$linkedin-color: #0077B5;
+@import '../../../style/variabiles';
+
 
 .docenti-section {
     text-align: center;

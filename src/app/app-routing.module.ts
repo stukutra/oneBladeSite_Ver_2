@@ -2,6 +2,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AcademyDetailsComponent } from './pages/academy/academyDetails/academyDetails.component';
 import { AcademyonebladeComponent } from './pages/academy/academyoneblade/academyoneblade.component';
+import { CompanyAboutUsComponent } from './pages/company/companyAboutUs/companyAboutUs.component';
 import { GuideAccademyDetailsComponent } from './pages/guide/guideAcademyDetails/guideAcademyDetails.component';
 import { GuideaccademyComponent } from './pages/guide/guideaccademy/guideaccademy.component';
 import { HomeComponent } from './layout/home/home.component';
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'guideAccademy/:title', component: GuideAccademyDetailsComponent },
   { path: 'softwarehouse', component: SoftwareHouseComponent },
   { path: 'outsourcinginfo', component: OutsourcingInfoComponent },
+  { path: 'aboutus', component: CompanyAboutUsComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
