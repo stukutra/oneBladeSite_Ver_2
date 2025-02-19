@@ -9,26 +9,17 @@ $background-color: rgb(255, 255, 255);
 $hover-color: rgba(0, 0, 0, 0.2);
 $box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 $border-radius: 0.75rem;
-/* 12px */
 $transition-speed: 0.3s;
 $font-size-base: 1.8rem;
-/* 16px */
 $font-size-lg: 2.8rem;
 $font-size-xs: 1.5rem;
-/* 24px */
 $font-size-xl: 2.5rem;
-$font-size-md:2.5rem;
-/* 40px */
+$font-size-md: 2.5rem;
 $font-size-ribbon: 1rem;
-/* 14px */
 $padding-base: 1.25rem;
-/* 20px */
 $gap: 1rem;
-/* 16px */
 $filter-width: 50%;
 $filter-max-width: 25rem;
-/* 400px */
-
 
 .box {
     background-color: $background-color;
@@ -155,23 +146,25 @@ $filter-max-width: 25rem;
     .course-price {
         font-size: 1.6rem;
         font-weight: bold;
-        color: $secondary-color; /* Arancione acceso per evidenziare */
-        background-color: rgba(255, 87, 34, 0.1); /* Leggera evidenziazione di sfondo */
+        color: $secondary-color;
+        /* Arancione acceso per evidenziare */
+        background-color: rgba(255, 87, 34, 0.1);
+        /* Leggera evidenziazione di sfondo */
         padding: 0.5rem 1rem;
         border-radius: 8px;
         display: inline-block;
         margin-top: 0.5rem;
-        margin-left:10px
+        margin-left: 10px
     }
 }
 
 
 .btn-booking {
-    background-color: transparent;  // Nessun riempimento iniziale
-    color: #6a1b9a;  // Testo con colore primario
+    background-color: transparent; // Nessun riempimento iniziale
+    color: #6a1b9a; // Testo con colore primario
     padding: 0.75rem 1.5rem;
     font-size: 1.1rem;
-    border: 2px solid #6a1b9a;  // Bordo colorato
+    border: 2px solid #6a1b9a; // Bordo colorato
     border-radius: 0.5rem;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, transform 0.2s;
@@ -179,13 +172,13 @@ $filter-max-width: 25rem;
     width: 100%;
 
     &:hover {
-        background-color: #6a1b9a;  // Riempimento al passaggio
-        color: white;  // Testo diventa bianco
+        background-color: #6a1b9a; // Riempimento al passaggio
+        color: white; // Testo diventa bianco
         transform: scale(1.05);
     }
 }
 
 
-
-
-
+h1 {
+    color: #6a1b9a;
+}
