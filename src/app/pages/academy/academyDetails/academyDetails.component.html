@@ -1,11 +1,13 @@
 <app-guideBannerTop></app-guideBannerTop>
 
 <div *ngIf="course">
-  <div class="container mt-5">
+  <div class="container mt-4">
     <div class="row">
       <div class="col-8">
         <h1>{{ course.title }}</h1>
 
+
+        <div [innerHTML]="course.description"></div>
         <!-- Descrizione caricata dinamicamente -->
         <div *ngIf="sanitizedDescription" [innerHTML]="sanitizedDescription"></div>
 
