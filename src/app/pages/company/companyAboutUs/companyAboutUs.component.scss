@@ -4,19 +4,36 @@ h2 {
     color: $primary-color;
 }
 
-// Definizione del colore principale
-$progress-bar-color: #9c2ea6;
+// Contenitore centrato e con larghezza ridotta
+.tech-section {
+    max-width: 800px; // Riduzione della larghezza
+    margin: 0 auto; // Centratura
+}
+
+// Stile per ogni categoria
+.category {
+    margin-bottom: 40px; // Spazio tra le categorie
+}
+
+h4 {
+    margin-bottom: 15px; // Spazio sotto il titolo della categoria
+    font-weight: bold;
+    color: #9c2ea6;
+    border-bottom: 2px solid #9c2ea6; // Sottolineatura leggera per evidenziare le categorie
+    padding-bottom: 5px;
+}
 
 .custom-progress {
-  height: 35px; // Altezza della barra
-  border-radius: 8px; // Arrotondamento angoli
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2); // Effetto rilievo
+    height: 25px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px; // Spazio tra le progress bar
 
-  .progress-bar {
-    background-color: $progress-bar-color !important;
-    font-weight: bold;
-    font-size: 16px;
-    text-align: center;
-    transition: width 0.6s ease-in-out; // Animazione fluida
-  }
+    .progress-bar {
+        background-color: #9c2ea6 !important;
+        font-weight: bold;
+        font-size: 14px;
+        text-align: center;
+        transition: width 0.6s ease-in-out;
+    }
 }
