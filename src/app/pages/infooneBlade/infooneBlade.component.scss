@@ -1,22 +1,4 @@
-$primary-color: #6a1b9a;
-$secondary-color: #9c2ea6;
-$text-color: #ffffff;
-$text-color-oneblade: #9c2ea6;
-$text-color-dark: #9c2ea6;
-$background-color: rgb(255, 255, 255);
-$hover-color: rgba(0, 0, 0, 0.2);
-$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-$border-radius: 0.75rem;
-$transition-speed: 0.3s;
-$font-size-base: 1.8rem;
-$font-size-lg: 2.8rem;
-$font-size-xs: 1.5rem;
-$font-size-xl: 2.5rem;
-$font-size-md:2.5rem;
-$padding-base: 1.25rem;
-$gap: 1rem;
-$filter-width: 50%;
-$filter-max-width: 25rem;
+@import '../../style/variabiles';
 
 .info-contatto {
     background-color: $background-color; // Sfondo bianco
