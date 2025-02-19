@@ -26,7 +26,7 @@ img {
     border-radius: $border-radius;
     text-align: center;
     padding: $padding-base;
-    min-height: 15.625rem;
+    min-height: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,7 +99,7 @@ img {
             flex-direction: column;
             justify-content: space-between;
             height: auto;
-            min-height: 180px; // Altezza minima più contenuta
+            min-height: 70px; // Altezza minima più contenuta
             padding: 1rem;
             border-radius: 0.5rem;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

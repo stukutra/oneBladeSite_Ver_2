@@ -41,7 +41,7 @@
             Se sei pronto a <strong>costruire il tuo futuro con determinazione e impegno</strong>, 
             allora siamo qui per <strong>guidarti passo dopo passo</strong> verso il tuo obiettivo. 🚀
           </p>
-          <app-academyEndorserBanner></app-academyEndorserBanner>
+          
         </div>
       </div>
       <div class="col-4">
@@ -50,6 +50,7 @@
         </div>
       </div>
     </div>
+  
   </div>
 </div>
 
@@ -65,14 +66,14 @@
                 <span class="ribbon">Dettagli</span>
                 <h3>{{ course.title }}</h3>
                 <div class="course-content">
-                  <p><strong>Durata:</strong> {{ course.duration }}</p>
-                  <p><strong>Modalità:</strong> {{ course.mode }}</p>
+                  <!-- <p><strong>Durata:</strong> {{ course.duration }}</p>
+                  <p><strong>Modalità:</strong> {{ course.mode }}</p> -->
                   <!-- <p><strong>Prezzo del corso:</strong> <span class="course-price">{{ course.price }}</span></p> -->
                 </div>
 
-                <div class="course-level-container">
+                <!-- <div class="course-level-container">
                   <p class="course-level"><strong>Livello:</strong> {{ course.level }}</p>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -82,6 +83,10 @@
   </div>
 </div>
 
-
+<div class="row">
+  <div class="col">
+    <app-academyEndorserBanner></app-academyEndorserBanner>
+  </div>
+</div>
 <app-infooneBlade></app-infooneBlade>
 <app-guideList></app-guideList>
