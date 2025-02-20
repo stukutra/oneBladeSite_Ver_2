@@ -29,27 +29,31 @@
         color: $error-text-color;
     }
 
-    // Pulsanti del form
-    .btn-primary {
-        background-color: transparent;
-        border: 2px solid $button-border-color;
-        color: $button-border-color;
-        font-size: 16px;
-        border-radius: 12px;
-        transition: background-color 0.3s ease, color 0.3s ease;
+    
 
-        &:hover {
-            background-color: $button-hover-bg-color;
-            color: $button-hover-text-color;
-        }
-    }
+    // Modifica il pulsante per farlo occupare tutto lo spazio
+.btn-primary {
+    background-color: transparent;
+    border: 2px solid $button-border-color;
+    color: $button-border-color;
+    width: 100%; // Occupa tutta la larghezza disponibile
+    padding: 15px 0; // Rende il pulsante più alto
+    font-size: 18px; // Ingrandisce il testo
+    font-weight: bold; // Rende il testo più leggibile
+    border-radius: 8px; // Rende i bordi più morbidi
 
-    // Stile riga pulsanti
-    .button-row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    &:hover {
+        background-color: $button-hover-bg-color;
+        color: $button-hover-text-color;
     }
+}
+
+// Modifica il contenitore dei pulsanti per allinearli correttamente
+.button-row {
+    display: flex;
+    justify-content: center; // Centra il bottone
+    width: 100%;
+}
 }
 
 // Stile personalizzato per i checkbox
