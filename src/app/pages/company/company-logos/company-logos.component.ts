@@ -28,7 +28,9 @@ export class CompanyLogosComponent implements OnInit {
     { src: 'assets/loghiCompany/GSE.png', alt: 'GSE' },
     { src: 'assets/loghiCompany/Hyntelo.png', alt: 'Hyntelo' },
     { src: 'assets/loghiCompany/Barilla.png', alt: 'Barilla' },
-    { src: 'assets/loghiCompany/Microgame.png', alt: 'Microgame' }
+    { src: 'assets/loghiCompany/Microgame.png', alt: 'Microgame' },
+    { src: 'assets/loghiCompany/EdenRed.png', alt: 'EdenRed' },
+    { src: 'assets/loghiCompany/Prometeia.png', alt: 'Prometeia' }
   ];
 
   logosPerSlide: number = 4;
