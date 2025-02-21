@@ -5,7 +5,7 @@
     border-radius: 12px;
     text-align: center;
     padding: 20px;
-    height: 200px;
+    min-height: 180px; /* Altezza minima adattabile */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,37 +16,69 @@
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     cursor: pointer;
+}
 
-    /* Overlay semi-trasparente */
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        /* Oscura lo sfondo senza eliminare l'immagine */
-        z-index: 1;
+/* Effetto hover */
+.box:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 6px 15px rgba(27, 25, 25, 0.2);
+}
+
+/* Overlay semi-trasparente */
+.box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Assicura che il testo rimanga visibile sopra l'overlay */
+.box h2,
+.box p {
+    position: relative;
+    z-index: 2;
+}
+
+/* Imposta l'immagine di sfondo */
+.outsourcing {
+    background-image: url('../../../../assets/BodyRental.jpg');
+}
+
+/* --- RESPONSIVITÀ --- */
+@media (max-width: 768px) {
+    .box {
+        min-height: 160px;
+        padding: 15px;
+        font-size: 1.3rem;
     }
 
-    /* Assicura che il testo rimanga visibile sopra l'overlay */
-    h2,
-    p {
-        position: relative;
-        z-index: 2;
+    .box h2 {
+        font-size: 1.2rem;
+    }
+
+    .box p {
+        font-size: 1rem;
     }
 }
 
+@media (max-width: 576px) {
+    .box {
+        min-height: 140px;
+        padding: 12px;
+        font-size: 1.2rem;
+    }
 
+    .box h2 {
+        font-size: 1rem;
+    }
 
-.outsourcing {
-    background-image: url('../../../../assets/BodyRental.jpg');
-
-    &:hover {
-        transform: scale(1.02);
-        box-shadow: 0px 6px 15px rgba(27, 25, 25, 0.2);
+    .box p {
+        font-size: 0.9rem;
     }
 }

@@ -1,7 +1,7 @@
 @import '../../style/variabiles';
 
 .info-contatto {
-    background-color: $background-color_2; // Sfondo bianco
+    background-color: $background-color_2; 
     padding: 3rem 2rem;
     display: flex;
     justify-content: center;
@@ -13,8 +13,10 @@
         justify-content: space-between;
         max-width: 1200px;
         width: 100%;
+        gap: 2rem;
     }
 
+    /* Testo */
     .testo-contatto {
         color: $primary-color;
         max-width: 600px;
@@ -37,7 +39,9 @@
         }
 
         .bottone-whatsapp {           
+            display: flex;
             align-items: center;
+            justify-content: center;
             background-color: #25D366;
             color: $text-color;
             font-size: $font-size-xs;
@@ -46,6 +50,7 @@
             text-decoration: none;
             margin-top: 1.5rem;
             transition: background 0.3s ease-in-out;
+            width: fit-content;
 
             img {
                 width: 24px;
@@ -70,9 +75,37 @@
         }
     }
 
+    /* Immagine */
     .immagine-contatto {
         img {          
-            width: 90%;                              
+            width: 90%;  
+            max-width: 400px; /* Limitiamo la grandezza dell'immagine */
         }
+    }
+}
+
+/* --- RESPONSIVITÀ --- */
+@media (max-width: 768px) {
+    .info-contatto {
+        padding: 2rem 1rem;
+    }
+
+    .contenitore {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .testo-contatto {
+        max-width: 100%;
+    }
+
+    .bottone-whatsapp {
+        width: 100%;
+    }
+
+    .immagine-contatto img {
+        max-width: 80%; 
+        margin: 0 auto;
     }
 }

@@ -1,14 +1,14 @@
 <app-image-carousel></app-image-carousel>
 
 <div class="container mt-5">
-  <div class="row">
+  <div class="row align-items-center">
     <!-- Colonna immagine -->
-    <div class="col">
+    <div class="col-12 col-md-6 text-center text-md-start mb-4 mb-md-0">
       <img src="../../../assets/sviluppoSoftwareOneBlade.jpg" class="img-fluid faded-image" alt="Immagine Esempio">
     </div>
 
     <!-- Colonna testo centrata verticalmente -->
-    <div class="col d-flex align-items-center">
+    <div class="col-12 col-md-6 d-flex align-items-center">
       <div>
         <p class="subtitle_1">
           <strong>OneBlade</strong> realizza <strong>soluzioni software su misura</strong> per potenziare e ottimizzare il tuo business.  
@@ -24,37 +24,43 @@
   </div>
 </div>
 
-<div class="custom-container">
-  <h2 class="title">Le nostre soluzioni personalizzate per le aziende</h2>
-  <p class="subtitle_1">
-    Scegli tra diverse soluzioni studiate per rispondere nel modo più efficace alle 
-    <strong>esigenze di aziende, agenzie marketing e software house</strong>.
-  </p>
-
-  <div class="row">
-    <!-- Box Sviluppo Software -->
-    <div class="service-box">
-      <div class="service-content">
-        <img src="../../../assets/speedSoftwareOneBlade.jpg" alt="Sviluppo Software" class="service-icon">
-        <h3>Soluzioni su misura per la crescita della tua azienda</h3>
-        <p>
-          Offriamo una gamma di servizi pensati per supportare aziende, agenzie di marketing e software house nella digitalizzazione e nello sviluppo di soluzioni tecnologiche innovative.
-        </p>
+<!-- Sezione Servizi -->
+<div class="custom-container text-center text-md-start mt-5">
+  <div class="container mt-5">
+    <h2 class="title text-center">Le nostre soluzioni personalizzate per le aziende</h2>
+    <p class="subtitle_1 text-center">
+      Scegli tra diverse soluzioni studiate per rispondere nel modo più efficace alle 
+      <strong>esigenze di aziende, agenzie marketing e software house</strong>.
+    </p>
+  
+    <div class="row justify-content-center g-4">
+      <!-- Box Sviluppo Software -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+        <div class="service-box">
+          <div class="service-content">
+            <img src="../../../assets/speedSoftwareOneBlade.jpg" alt="Sviluppo Software" class="service-icon">
+            <h3>Soluzioni su misura per la crescita della tua azienda</h3>
+            <p>
+              Offriamo una gamma di servizi pensati per supportare aziende, agenzie di marketing e software house nella digitalizzazione e nello sviluppo di soluzioni tecnologiche innovative.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <!-- Box Collaborazioni -->
-    <div class="service-box">
-      <div class="service-content" routerLink="/outsourcinginfo">
-        <img src="../../../assets/BodyRentalServiceOneBlade.jpg" alt="Collaborazioni" class="service-icon">
-        <h3>Collaborazioni body rental</h3>
-        <p>
-          Mettiamo a disposizione della tua azienda professionisti qualificati, pronti a integrarsi rapidamente nei tuoi progetti. Ti garantiamo competenza, affidabilità e un supporto flessibile per soddisfare le tue esigenze operative.
-        </p>
+  
+      <!-- Box Collaborazioni -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+        <div class="service-box">
+          <div class="service-content" routerLink="/outsourcinginfo">
+            <img src="../../../assets/BodyRentalServiceOneBlade.jpg" alt="Collaborazioni" class="service-icon">
+            <h3>Collaborazioni body rental</h3>
+            <p>
+              Mettiamo a disposizione della tua azienda professionisti qualificati, pronti a integrarsi rapidamente nei tuoi progetti. Ti garantiamo competenza, affidabilità e un supporto flessibile per soddisfare le tue esigenze operative.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
 <app-FissaUnaCall></app-FissaUnaCall>

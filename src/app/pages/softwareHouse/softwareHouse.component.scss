@@ -1,13 +1,17 @@
 @import '../../style/variabiles';
 
+/* Immagine sfumata */
 .faded-image {
     position: relative;
     display: inline-block;
-
+    width: 100%;
+    height: auto;
+    max-width: 100%;
     mask-image: radial-gradient(circle, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
     -webkit-mask-image: radial-gradient(circle, rgb(0, 0, 0) 44%, rgba(0, 0, 0, 0) 60%);
 }
 
+/* Contenitore principale */
 .custom-container {
     text-align: center;
     padding: 40px 20px;
@@ -15,6 +19,7 @@
     margin: 0 auto;
 }
 
+/* Titoli */
 .title {
     font-size: $font-size-md;
     font-weight: bold;
@@ -22,22 +27,14 @@
     color: #6a1b9a;
 }
 
-.subtitle {
-    font-size: $font-size-xs;
-    color: #9c2ea6;
-    max-width: 800px;
-    margin: 0 auto 40px;
-}
-
-.subtitle_1 {
+.subtitle, .subtitle_1 {
     font-size: $font-size-xs;
     color: $text-color-dark;
     max-width: 800px;
-    margin: 0 auto 40px;
+    margin: 0 auto 20px;
 }
 
-
-
+/* BOX SERVIZI */
 .service-box {
     background: #ffffff;
     border-radius: 10px;
@@ -45,14 +42,31 @@
     text-align: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
-    width: 50%;
+    max-width: 500px; /* Limitiamo la larghezza per evitare box troppo larghi */
+    width: 100%;
     min-width: 300px;
+    margin: 0 auto;
 }
 
 .service-box:hover {
     transform: translateY(-5px);
 }
 
+/* Layout Responsive dei box */
+@media (min-width: 768px) {
+    .service-box {
+        width: 50%;
+    }
+}
+
+/* Miglioriamo il layout su schermi grandi */
+@media (min-width: 1400px) {
+    .custom-container {
+        max-width: 1200px;
+    }
+}
+
+/* Contenuto del box */
 .service-content {
     display: flex;
     flex-direction: column;
@@ -60,15 +74,35 @@
     cursor: pointer;
 }
 
+/* Icone */
 .service-icon {
-    width: 250px;
+    width: 100%;
+    max-width: 200px; /* Ridotta dimensione massima per non occupare troppo spazio */
+    height: auto;
     margin-bottom: 20px;
     mask-image: radial-gradient(circle, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
     -webkit-mask-image: radial-gradient(circle, rgb(0, 0, 0) 44%, rgba(0, 0, 0, 0) 60%);
 }
 
+/* Titolo */
 h3 {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 15px;
+}
+
+/* Spaziatura per sezioni diverse */
+@media (max-width: 768px) {
+    .custom-container {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 1.25rem;
+    }
+
+    .subtitle, .subtitle_1 {
+        font-size: $font-size-xs;
+        margin-bottom: 15px;
+    }
 }

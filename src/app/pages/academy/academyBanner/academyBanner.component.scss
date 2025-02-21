@@ -44,7 +44,7 @@
 /* Imposta l'immagine di sfondo */
 .accademy {
     background-image: url('../../../../assets/accademy/bussola.png');
-    
+
     &:hover {
         transform: scale(1.02);
         box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
@@ -57,5 +57,37 @@
     &:hover {
         transform: scale(1.02);
         box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* --- RESPONSIVITÀ --- */
+@media (max-width: 768px) {
+    .box {
+        font-size: 1.4rem;
+        padding: 15px;
+        height: 180px;
+    }
+
+    .box h2 {
+        font-size: 1.2rem;
+    }
+
+    .box p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .box {
+        font-size: 1.2rem;
+        height: 160px;
+    }
+
+    .box h2 {
+        font-size: 1rem;
+    }
+
+    .box p {
+        font-size: 0.9rem;
     }
 }
