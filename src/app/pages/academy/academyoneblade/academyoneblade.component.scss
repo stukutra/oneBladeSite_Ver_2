@@ -161,26 +161,27 @@ img {
         cursor: pointer;
     }
 
-    .ribbon {
-        position: absolute;
-        //top: 7.2rem;
-        right: -2rem;
-        background: $secondary-color;
-        color: $text-color;
-        padding: 0.5rem 2.9rem;
-        font-size: $font-size-ribbon;
-        font-weight: bold;
-        transform: rotate(0deg);
-        box-shadow: $box-shadow;
-        border-radius: 0.25rem;
-        opacity: 0;
-        transition: all $transition-speed ease-in-out;
-    }
+    // .ribbon {
+    //     position: absolute;
+    //     top: 102px;
+    //     right: -2rem;
+    //     background: $secondary-color;
+    //     color: $text-color;
+    //     padding: 0.5rem 2.9rem;
+    //     font-size: $font-size-ribbon;
+    //     font-weight: bold;
+    //     transform: rotate(0deg);
+    //     box-shadow: $box-shadow;
+    //     border-radius: 0.25rem;
+    //     opacity: 0;
+    //     transition: all $transition-speed ease-in-out;
+    // }
 
-    &:hover .ribbon {
-        right: -0.7rem;
-        opacity: 0.6;
-    }
+    // &:hover .ribbon {
+    //     right: -0.7rem;
+    //     opacity: 0.6;
+    //     top: 102px;
+    // }
 
     h3 {
         font-size: $font-size-md;

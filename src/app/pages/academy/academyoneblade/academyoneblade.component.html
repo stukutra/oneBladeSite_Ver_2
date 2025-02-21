@@ -7,41 +7,42 @@
           <h1>Trova il tuo cammino, <span class="highlight">noi siamo al tuo fianco.</span></h1>
 
           <p>
-            <strong>Ogni viaggio inizia con una scelta:</strong> 
-            <span class="highlight"> scoprire, imparare, mettersi alla prova.</span> 
-            I nostri corsi sono pensati per chi vuole <strong>comprendere davvero questo mondo</strong>, 
-            per chi è mosso dalla curiosità e dalla voglia di acquisire 
+            <strong>Ogni viaggio inizia con una scelta:</strong>
+            <span class="highlight"> scoprire, imparare, mettersi alla prova.</span>
+            I nostri corsi sono pensati per chi vuole <strong>comprendere davvero questo mondo</strong>,
+            per chi è mosso dalla curiosità e dalla voglia di acquisire
             <strong>competenze concrete</strong>.
           </p>
-          
+
           <p>
-            Crediamo che <strong>la conoscenza e la passione</strong> siano più importanti di qualsiasi certificazione. 
-            Le certificazioni possono essere un valore aggiunto, ma ciò che conta davvero è 
+            Crediamo che <strong>la conoscenza e la passione</strong> siano più importanti di qualsiasi certificazione.
+            Le certificazioni possono essere un valore aggiunto, ma ciò che conta davvero è
             <strong>l’apprendimento reale, la pratica e la comprensione delle metodologie</strong>.
           </p>
 
           <p>
-            Noi <strong>non rilasciamo titoli</strong>, perché <span class="highlight">il titolo più importante è la competenza acquisita.</span>
-            Non facciamo promesse di <strong>posti di lavoro o garanzie di inserimento</strong>, 
-            perché non crediamo nelle illusioni. 
-            Il nostro obiettivo è <strong>formare realmente le persone</strong> che vogliono seguire ed 
+            Noi <strong>non rilasciamo titoli</strong>, perché <span class="highlight">il titolo più importante è la
+              competenza acquisita.</span>
+            Non facciamo promesse di <strong>posti di lavoro o garanzie di inserimento</strong>,
+            perché non crediamo nelle illusioni.
+            Il nostro obiettivo è <strong>formare realmente le persone</strong> che vogliono seguire ed
             <span class="highlight">inseguire la conoscenza</span>.
           </p>
 
           <p>
-            La nostra missione non si limita agli studenti: 
-            crediamo fermamente che anche <strong>la selezione dei docenti</strong> 
-            sia un aspetto fondamentale. 
-            Scegliamo solo professionisti che condividono la nostra filosofia, 
-            che credono <span class="highlight">nel valore della formazione autentica</span> 
+            La nostra missione non si limita agli studenti:
+            crediamo fermamente che anche <strong>la selezione dei docenti</strong>
+            sia un aspetto fondamentale.
+            Scegliamo solo professionisti che condividono la nostra filosofia,
+            che credono <span class="highlight">nel valore della formazione autentica</span>
             e nel <strong>potere della conoscenza</strong> come strumento di crescita personale e professionale.
           </p>
 
           <p>
-            Se sei pronto a <strong>costruire il tuo futuro con determinazione e impegno</strong>, 
+            Se sei pronto a <strong>costruire il tuo futuro con determinazione e impegno</strong>,
             allora siamo qui per <strong>guidarti passo dopo passo</strong> verso il tuo obiettivo. 🚀
           </p>
-          
+
         </div>
       </div>
       <div class="col-4">
@@ -50,7 +51,7 @@
         </div>
       </div>
     </div>
-  
+
   </div>
 </div>
 
@@ -65,15 +66,13 @@
               <div [routerLink]="['/AcademyDetails', course.idCourse]">
                 <span class="ribbon">Dettagli</span>
                 <h3>{{ course.title }}</h3>
-                <!-- <div class="course-content">
+                <div class="course-content">
+                  <p>{{ course.nature }}</p>
                   <p><strong>Durata:</strong> {{ course.duration }}</p>
-                  <p><strong>Modalità:</strong> {{ course.mode }}</p> -->
-                  <!-- <p><strong>Prezzo del corso:</strong> <span class="course-price">{{ course.price }}</span></p>
-                </div> -->
-
-                <!-- <div class="course-level-container">
-                  <p class="course-level"><strong>Livello:</strong> {{ course.level }}</p>
-                </div> -->
+                  <p><strong>Modalità del corso:</strong> {{ course.mode }}</p>
+                  <p><strong>Livello:</strong> {{ course.level }}</p>
+                  <p><strong>Dettaglio:</strong> {{ course.overview }}</p>
+                </div>
               </div>
             </div>
           </div>
@@ -81,12 +80,11 @@
       </div>
     </div>
   </div>
-</div>
 
-<div class="row">
-  <div class="col">
-    <app-academyEndorserBanner></app-academyEndorserBanner>
-  </div>
-</div>
-<app-infooneBlade></app-infooneBlade>
-<app-guideList></app-guideList>
+  <!-- <div class="row">
+    <div class="col">
+      <app-academyEndorserBanner></app-academyEndorserBanner>
+    </div>
+  </div> -->
+  <app-infooneBlade></app-infooneBlade>
+  <app-guideList></app-guideList>

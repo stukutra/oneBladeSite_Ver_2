@@ -6,7 +6,7 @@ header("Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-W
 // Impostazioni email
 $to = "business@oneblade.it"; // Email destinatario principale
 $api_key = "7F3kH#r8!wL5tVxZ2Q9p^nGjR@cM1dP6";
-
+$from="noreply@oneblade.it";
 // Controllo che i dati siano stati inviati tramite POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Verifica della chiave API
@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Firma dell'email
     $signature = "------------------------------------------\n";
     $signature .= "oneBlade S.r.l.\n";
-    $signature .= "Via Di Valle Lupare 10, 00127\n";
+    $signature .= "Via Di Valle Lupare 10, 00148\n";
     $signature .= "P.IVA/C.F. 16510411008\n";
     $signature .= "https://www.oneblade.it\n";
     $signature .= "info@oneblade.it\n\n";
@@ -62,8 +62,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $body .= $signature;
 
     // Headers dell'email
-    $headers = "From: $email\r\n";
-    $headers .= "Reply-To: $email\r\n";
+    $headers = "From: $from\r\n";
+    $headers .= "Reply-To: $from\r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
     // Invia l'email all'azienda

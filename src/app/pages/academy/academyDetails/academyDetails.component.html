@@ -3,7 +3,7 @@
 <div *ngIf="course">
   <div class="container mt-4">
     <div class="row">
-      <div class="col-8">
+      <div class="col-12 col-md-8 col-lg-8 mb-4">
         <h1>{{ course.title }}</h1>
         <div [innerHTML]="course.description"></div>
         <!-- Descrizione caricata dinamicamente -->
@@ -23,7 +23,7 @@
         </ul>
       </div>
 
-      <div class="col-4">
+      <div class="col-12 col-md-4 col-lg-4">
         <div class="course-info-box">
           <h2>Dettagli del Corso</h2>
           <p *ngIf="course.idCourse !== null && course.idCourse !== undefined && course.idCourse !== ''">
@@ -34,8 +34,8 @@
           <p *ngIf="course.lessons"><strong>Lezioni</strong> {{ course.lessons }}</p>
           <p *ngIf="course.time"><strong>Tempo</strong> {{ course.time }}</p>
           <p *ngIf="course.level"><strong>Livello</strong> {{ course.level }}</p>
-          <p *ngIf="course.price"><strong>Prezzo del corso:</strong> <span class="course-price">{{ course.price
-              }}</span></p>
+          <!-- <p *ngIf="course.price"><strong>Prezzo del corso:</strong> <span class="course-price">{{ course.price
+              }}</span></p> -->
 
           <!-- <p><strong>Live session:</strong> Parteciperai 2 volte a settimana a lezioni live con i docenti, dove potrai
             interagire e porre domande in tempo reale.</p> -->

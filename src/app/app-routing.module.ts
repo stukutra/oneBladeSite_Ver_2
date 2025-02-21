@@ -1,6 +1,7 @@
 import { RouterModule, Routes } from '@angular/router';
 
 import { AcademyDetailsComponent } from './pages/academy/academyDetails/academyDetails.component';
+import { AcademyFAQComponent } from './pages/academy/academyFAQ/academyFAQ.component';
 import { AcademyonebladeComponent } from './pages/academy/academyoneblade/academyoneblade.component';
 import { CompanyAboutUsComponent } from './pages/company/companyAboutUs/companyAboutUs.component';
 import { GuideAccademyDetailsComponent } from './pages/guide/guideAcademyDetails/guideAcademyDetails.component';
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'softwarehouse', component: SoftwareHouseComponent },
   { path: 'outsourcinginfo', component: OutsourcingInfoComponent },
   { path: 'aboutus', component: CompanyAboutUsComponent },
+  { path: 'academyFAQ', component: AcademyFAQComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
