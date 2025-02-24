@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { Course, Language } from 'src/app/models/course.model';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { map, switchMap } from 'rxjs/operators';
 
 import { ActivatedRoute } from '@angular/router';
-import { Course } from 'src/app/models/course.model';
 import { CoursesService } from 'src/app/service/Courses.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-academyDetails',
@@ -19,8 +20,15 @@ export class AcademyDetailsComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private coursesService: CoursesService,
-    private sanitizer: DomSanitizer
-  ) { }
+    private sanitizer: DomSanitizer,
+    private translate: TranslateService
+  ) {
+    this.translate.onLangChange.subscribe(() => {
+      if (this.course?.descriptionFile) {
+        this.loadCourseDescription(this.course.descriptionFile);
+      }
+    });
+  }
 
   ngOnInit(): void {
     this.route.paramMap.pipe(
@@ -87,5 +95,10 @@ export class AcademyDetailsComponent implements OnInit {
 
   bookCourse() {
     alert("Hai prenotato il corso con codice: " + this.course?.idCourse);
+  }
+
+  getDescription(): string {
+    const lang = this.translate.currentLang as Language;
+    return this.course?.description[lang] || '';
   }
 }

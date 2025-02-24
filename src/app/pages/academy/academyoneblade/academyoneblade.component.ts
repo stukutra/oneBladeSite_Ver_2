@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 import { CoursesService } from 'src/app/service/Courses.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-accademyoneblade',
@@ -14,7 +15,11 @@ export class AcademyonebladeComponent implements OnInit {
   categories: Category[] = []; // Solo categorie con corsi attivi
   courseDescriptions: { [key: string]: SafeHtml } = {}; // Memorizza le descrizioni HTML per ogni corso
 
-  constructor(private coursesService: CoursesService, private sanitizer: DomSanitizer) {}
+  constructor(private coursesService: CoursesService, private sanitizer: DomSanitizer, private translate: TranslateService) {
+    this.translate.onLangChange.subscribe(() => {
+      this.loadCourseDescriptions();
+    });
+  }
 
   ngOnInit(): void {
     this.coursesService.getCoursesActive().subscribe(data => {
@@ -31,13 +36,16 @@ export class AcademyonebladeComponent implements OnInit {
         }))
         .filter((category: Category) => category.courses.length > 0);
 
-      // Carica le descrizioni dei corsi in modo asincrono
-      this.categories.forEach(category => {
-        category.courses.forEach(course => {
-          if (course.descriptionFile) {
-            this.loadCourseDescription(course.idCourse, course.descriptionFile);
-          }
-        });
+      this.loadCourseDescriptions();
+    });
+  }
+
+  private loadCourseDescriptions(): void {
+    this.categories.forEach(category => {
+      category.courses.forEach(course => {
+        if (course.descriptionFile) {
+          this.loadCourseDescription(course.idCourse, course.descriptionFile);
+        }
       });
     });
   }

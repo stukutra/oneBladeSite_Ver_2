@@ -5,7 +5,7 @@
     <div class="row">
       <div class="col-12 col-md-8 col-lg-8 mb-4">
         <h1>{{ course.title }}</h1>
-        <div [innerHTML]="course.description"></div>
+        <div [innerHTML]="getDescription()"></div>
         <!-- Descrizione caricata dinamicamente -->
         <div *ngIf="sanitizedDescription" [innerHTML]="sanitizedDescription"></div>
         <h3 *ngIf="course.course_contents && course.course_contents.length > 0">Contenuti del Corso:</h3>

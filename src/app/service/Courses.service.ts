@@ -2,6 +2,7 @@ import { Course } from '../models/course.model';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { TranslateService } from '@ngx-translate/core';
 import { map } from 'rxjs/operators';
 
 @Injectable({
@@ -10,7 +11,7 @@ import { map } from 'rxjs/operators';
 export class CoursesService {
   private jsonUrl = 'assets/data/courses.json';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private translate: TranslateService) { }
 
   getCoursesActive(): Observable<any> {
     return this.http.get(this.jsonUrl).pipe(
@@ -75,7 +76,9 @@ export class CoursesService {
   }
 
   getCourseDescription(filePath: string): Observable<string> {
-    return this.http.get(filePath, { responseType: 'text' });
+    const lang = this.translate.currentLang || this.translate.defaultLang;
+    const localizedFilePath = filePath.replace('.html', `_${lang}.html`);
+    return this.http.get(localizedFilePath, { responseType: 'text' });
   }
 
   getRelatedCourses(idCourse: string): Observable<any> {

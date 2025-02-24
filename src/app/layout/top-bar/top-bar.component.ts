@@ -1,4 +1,6 @@
 import { Component, HostListener } from '@angular/core';
+import { Course, Language } from '../../models/course.model';
+
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -64,5 +66,10 @@ export class TopBarComponent {
 
   closeChristmasModal(): void {
     this.isChristmasModalVisible = false; // Nasconde la modale
+  }
+
+  getDescription(course: Course): string {
+    const lang = this.translate.currentLang;
+    return course.description[lang as Language];
   }
 }
