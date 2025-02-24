@@ -26,7 +26,32 @@ export class CoursesService {
   }
 
   getCoursesALL(): Observable<any> {
-    return this.http.get(this.jsonUrl);
+    return this.http.get(this.jsonUrl).pipe(
+      map((data: any) => {
+        const today = new Date();
+        const monthIndex: { [key: string]: number } = {
+          'Gennaio': 0, 'Febbraio': 1, 'Marzo': 2, 'Aprile': 3, 'Maggio': 4, 'Giugno': 5,
+          'Luglio': 6, 'Agosto': 7, 'Settembre': 8, 'Ottobre': 9, 'Novembre': 10, 'Dicembre': 11
+        };
+        data.categories.forEach((category: any) => {
+          category.courses.forEach((course: any) => {
+            const futureDates: string[] = [];
+            course.datecourse.forEach((dateString: string) => {
+              const [day, month, year] = dateString.split(' ');
+              const courseDate = new Date(parseInt(year), monthIndex[month], parseInt(day));
+              const diffDays = Math.ceil((courseDate.getTime() - today.getTime()) / (1000 * 3600 * 24));
+              if (diffDays >= 0) {
+                futureDates.push(dateString);
+              }
+            });
+            course.datecourse = futureDates;
+            console.log(`Filtered dates for course ${course.idCourse}:`, course.datecourse);
+          });
+        });
+        console.log('Filtered data:', data);
+        return data;
+      })
+    );
   }
 
   getCourseDescription(filePath: string): Observable<string> {
