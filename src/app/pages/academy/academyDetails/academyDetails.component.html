@@ -21,6 +21,18 @@
             <strong>{{ req.title }}:</strong> {{ req.description }}
           </li>
         </ul>
+
+        <!-- Sezione per i corsi correlati -->
+        <div class="row mt-4" *ngIf="relatedCourses.length > 0">
+          <div class="col-12">
+            <h3>Corsi correlati</h3>
+            <ul>
+              <li *ngFor="let relatedCourse of relatedCourses">
+                <a [routerLink]="['/AcademyDetails', relatedCourse.idCourse]">{{ relatedCourse.title }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <div class="col-12 col-md-4 col-lg-4">
@@ -52,6 +64,8 @@
             <p><strong>{{ date }}</strong></p>
           </div>
         </div>
+
+
       </div>
     </div>
   </div>

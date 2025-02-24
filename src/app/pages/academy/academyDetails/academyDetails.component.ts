@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { map, switchMap } from 'rxjs/operators';
 
 import { ActivatedRoute } from '@angular/router';
 import { Course } from 'src/app/models/course.model';
@@ -13,6 +14,7 @@ import { CoursesService } from 'src/app/service/Courses.service';
 export class AcademyDetailsComponent implements OnInit {
   course: Course | undefined;
   sanitizedDescription: SafeHtml | undefined;
+  relatedCourses: { title: string, idCourse: string }[] = [];
 
   constructor(
     private route: ActivatedRoute,
@@ -21,33 +23,42 @@ export class AcademyDetailsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    const courseId = this.route.snapshot.paramMap.get('id');
+    this.route.paramMap.pipe(
+      switchMap(params => {
+        const courseId = params.get('id');
+        if (!courseId) {
+          console.error("Errore: ID del corso non presente nell'URL.");
+          return [];
+        }
+        return this.coursesService.getCoursesALL().pipe(
+          map((data: { categories: { courses: Course[]; }[]; }) => {
+            if (!data || !Array.isArray(data.categories)) {
+              console.error("Errore: il service non ha restituito dati validi", data);
+              return [];
+            }
 
-    if (!courseId) {
-      console.error("Errore: ID del corso non presente nell'URL.");
-      return; // Blocca l'esecuzione se non c'è l'ID
-    }
+            this.course = data.categories
+              .flatMap((category: { courses: Course[] }) => category.courses)
+              .find((course: Course) => course.idCourse === courseId);
 
-    this.coursesService.getCoursesALL().subscribe(data => {
-      if (!data || !Array.isArray(data.categories)) {
-        console.error("Errore: il service non ha restituito dati validi", data);
-        return;
-      }
+            if (!this.course) {
+              console.error("Errore: Nessun corso trovato con ID:", courseId);
+              return [];
+            }
 
-      this.course = data.categories
-        .flatMap((category: { courses: Course[] }) => category.courses)
-        .find((course: Course) => course.idCourse === courseId);
+            // Carica la descrizione HTML dinamicamente
+            if (this.course.descriptionFile) {
+              this.loadCourseDescription(this.course.descriptionFile);
+            }
 
-      if (!this.course) {
-        console.error("Errore: Nessun corso trovato con ID:", courseId);
-        return;
-      }
+            // Carica i corsi correlati
+            this.getRelativeCourse(courseId);
 
-      // Carica la descrizione HTML dinamicamente
-      if (this.course.descriptionFile) {
-        this.loadCourseDescription(this.course.descriptionFile);
-      }
-    });
+            return [];
+          })
+        );
+      })
+    ).subscribe();
   }
 
   // Metodo per caricare la descrizione HTML
@@ -58,6 +69,18 @@ export class AcademyDetailsComponent implements OnInit {
       },
       error => {
         console.error(`Errore nel caricamento della descrizione per il corso ${this.course?.idCourse}:`, error);
+      }
+    );
+  }
+
+  // Metodo per ottenere i corsi correlati
+  private getRelativeCourse(courseId: string): void {
+    this.coursesService.getRelatedCourses(courseId).subscribe(
+      relatedCourses => {
+        this.relatedCourses = relatedCourses;
+      },
+      error => {
+        console.error(`Errore nel caricamento dei corsi correlati per il corso ${courseId}:`, error);
       }
     );
   }

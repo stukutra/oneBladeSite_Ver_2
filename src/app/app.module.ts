@@ -41,6 +41,7 @@ import { OutsourcingInfoComponent } from './pages/outsourcing/outsourcingInfo/ou
 import { ParallaxComponent } from './pages/parallax/parallax.component';
 import { Privacy_policyComponent } from './pages/privacy_policy/privacy_policy.component';
 import { QuestionnaireComponent } from './pages/questionnaire/questionnaire.component';
+import { RegistrationFormUserComponent } from './user/registrationFormUser/registrationFormUser.component';
 // Software House & Call Components
 import { SoftwareHouseComponent } from './pages/softwareHouse/softwareHouse.component';
 import { TopBarComponent } from './layout/top-bar/top-bar.component';
@@ -83,7 +84,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     InfooneBladeComponent,
     AcademyEndorserBannerComponent,
     CompanyAboutUsComponent,
-    AcademyFAQComponent
+    AcademyFAQComponent,
+    RegistrationFormUserComponent
   ],
   imports: [
     BrowserModule,
