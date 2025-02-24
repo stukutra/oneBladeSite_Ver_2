@@ -121,6 +121,7 @@
         "ONEBLADE_LAB": "oneBlade LAB",
         "CHOOSE_COURSE": "Scegli il corso",
         "GUIDES": "Guide",
+        "FAQ": "FAQ",
         "SELECT_LANGUAGE": "Seleziona lingua",
         "ITALIAN": "Italiano",
         "ENGLISH": "Inglese",
@@ -194,5 +195,22 @@
         "PARAGRAPH_1": "Oggi la programmazione è diventata una competenza essenziale, proprio come la capacità di usare uno smartphone o un computer lo è stata negli ultimi decenni. Con l’evoluzione tecnologica e la crescente digitalizzazione, acquisire abilità nel settore informatico è fondamentale per restare competitivi nel mercato.",
         "PARAGRAPH_2": "Le aziende cercano costantemente professionisti qualificati, ma l’offerta di talenti non riesce a soddisfare la domanda: solo in Italia, si stimano oltre 200.000 posizioni aperte in ambito tech.",
         "PARAGRAPH_3": "Indipendentemente dall’area in cui si desidera specializzarsi, è cruciale costruire solide basi di conoscenza. Le nostre guide sono pensate per chi vuole avvicinarsi al mondo dello sviluppo web, fornendo strumenti pratici e concreti per iniziare a programmare e scoprire le opportunità offerte da questa professione."
+    },
+    "FAQ": {
+        "TITLE": "Domande Frequenti (FAQ)",
+        "QUESTION_1": "I corsi sono disponibili online?",
+        "ANSWER_1": "Sì, tutti i nostri corsi sono erogati <strong>online</strong>, permettendo ai partecipanti di accedere facilmente da qualsiasi luogo. Dopo l'iscrizione, riceverai tutte le informazioni necessarie per accedere alle lezioni e ai materiali didattici.",
+        "QUESTION_2": "Come riceverò informazioni sulle date e l'organizzazione del corso?",
+        "ANSWER_2": "Dopo la prenotazione, riceverai via email tutte le comunicazioni relative al corso, comprese le <strong>date delle lezioni, gli orari e le modalità di accesso</strong>. Il nostro team sarà sempre a disposizione per supportarti in ogni fase.",
+        "QUESTION_3": "Cosa succede se non posso partecipare alla data concordata?",
+        "ANSWER_3": "Non preoccuparti! Se per qualsiasi motivo non potrai partecipare alla data concordata, <strong>verrai automaticamente spostato alla sessione successiva</strong>. OneBlade garantisce flessibilità nella partecipazione per assicurare che tutti i corsisti possano completare il proprio percorso senza problemi.",
+        "QUESTION_4": "Chi può partecipare ai corsi?",
+        "ANSWER_4": "<strong>Tutti possono partecipare ai nostri corsi!</strong> Che tu sia un principiante curioso, uno studente in cerca di competenze pratiche o un professionista che vuole aggiornarsi, troverai il percorso adatto alle tue esigenze. <strong>La formazione è un investimento sul futuro</strong>, e i nostri corsi sono progettati per darti competenze concrete e subito applicabili nel mondo del lavoro.",
+        "QUESTION_5": "Cosa si impara durante i vostri corsi?",
+        "ANSWER_5": "Nei nostri corsi <strong>non ti limiti a studiare la teoria</strong>, ma sviluppi <strong>competenze pratiche</strong> che ti permetteranno di affrontare scenari reali. Immagina di partecipare a un corso di <strong>Cyber Security</strong>: oltre a conoscere le minacce informatiche, imparerai a <strong>difendere sistemi e reti con strategie concrete</strong>. Se invece ti interessa <strong>AI Generativa</strong>, esplorerai le tecnologie più avanzate e scoprirai come integrarle nel business. <strong>Ogni corso è pensato per darti un bagaglio di competenze che puoi applicare da subito nel mondo professionale!</strong>",
+        "QUESTION_6": "Rilasciate un attestato alla fine del corso?",
+        "ANSWER_6": "<strong>Sì!</strong> Alla fine del corso riceverai un <strong>attestato di partecipazione rilasciato da OneBlade</strong>, a condizione che tu abbia frequentato almeno il <strong>70% delle lezioni</strong>. Questo certificato rappresenta un valore aggiunto per il tuo curriculum e dimostra la tua preparazione nel settore.",
+        "QUESTION_7": "Posso seguire il corso mentre lavoro o studio?",
+        "ANSWER_7": "<strong>Sì!</strong> Tutti i nostri corsi sono organizzati in orari serali, <strong>dopo le 18:00</strong>, per permettere a chi lavora o studia di seguirli senza difficoltà. Sappiamo quanto sia importante conciliare formazione e impegni quotidiani, ed è per questo che offriamo flessibilità e supporto per aiutarti a raggiungere i tuoi obiettivi professionali."
     }
 }

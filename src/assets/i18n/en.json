@@ -121,6 +121,7 @@
     "ONEBLADE_LAB": "oneBlade LAB",
     "CHOOSE_COURSE": "Choose the course",
     "GUIDES": "Guides",
+    "FAQ": "FAQ",
     "SELECT_LANGUAGE": "Select language",
     "ITALIAN": "Italian",
     "ENGLISH": "English",
@@ -194,5 +195,22 @@
     "PARAGRAPH_1": "Today, programming has become an essential skill, just like the ability to use a smartphone or computer was in recent decades. With technological evolution and increasing digitalization, acquiring skills in the IT sector is crucial to remain competitive in the market.",
     "PARAGRAPH_2": "Companies are constantly looking for qualified professionals, but the supply of talent fails to meet the demand: in Italy alone, there are estimated to be over 200,000 open positions in the tech field.",
     "PARAGRAPH_3": "Regardless of the area you wish to specialize in, it is crucial to build a solid knowledge base. Our guides are designed for those who want to approach the world of web development, providing practical and concrete tools to start programming and discover the opportunities offered by this profession."
+  },
+  "FAQ": {
+    "TITLE": "Frequently Asked Questions (FAQ)",
+    "QUESTION_1": "Are the courses available online?",
+    "ANSWER_1": "Yes, all our courses are delivered <strong>online</strong>, allowing participants to easily access them from anywhere. After registration, you will receive all the necessary information to access the lessons and educational materials.",
+    "QUESTION_2": "How will I receive information about the course dates and organization?",
+    "ANSWER_2": "After booking, you will receive all communications related to the course via email, including the <strong>dates of the lessons, times, and access methods</strong>. Our team will always be available to support you at every stage.",
+    "QUESTION_3": "What happens if I can't attend on the agreed date?",
+    "ANSWER_3": "Don't worry! If for any reason you cannot attend on the agreed date, <strong>you will be automatically moved to the next session</strong>. OneBlade guarantees flexibility in participation to ensure that all students can complete their course without problems.",
+    "QUESTION_4": "Who can participate in the courses?",
+    "ANSWER_4": "<strong>Everyone can participate in our courses!</strong> Whether you are a curious beginner, a student looking for practical skills, or a professional wanting to update your knowledge, you will find the right course for your needs. <strong>Training is an investment in the future</strong>, and our courses are designed to provide you with concrete skills that can be immediately applied in the workplace.",
+    "QUESTION_5": "What do you learn during your courses?",
+    "ANSWER_5": "In our courses, <strong>you don't just study theory</strong>, but you develop <strong>practical skills</strong> that will allow you to face real scenarios. Imagine participating in a <strong>Cyber Security</strong> course: in addition to learning about cyber threats, you will learn to <strong>defend systems and networks with concrete strategies</strong>. If you are interested in <strong>Generative AI</strong>, you will explore the most advanced technologies and discover how to integrate them into business. <strong>Each course is designed to provide you with a set of skills that you can immediately apply in the professional world!</strong>",
+    "QUESTION_6": "Do you issue a certificate at the end of the course?",
+    "ANSWER_6": "<strong>Yes!</strong> At the end of the course, you will receive a <strong>certificate of participation issued by OneBlade</strong>, provided that you have attended at least <strong>70% of the lessons</strong>. This certificate represents an added value for your resume and demonstrates your preparation in the field.",
+    "QUESTION_7": "Can I follow the course while working or studying?",
+    "ANSWER_7": "<strong>Yes!</strong> All our courses are organized in the evening, <strong>after 6:00 PM</strong>, to allow those who work or study to follow them without difficulty. We know how important it is to balance training with daily commitments, and that is why we offer flexibility and support to help you achieve your professional goals."
   }
 }

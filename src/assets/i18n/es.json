@@ -151,6 +151,7 @@
         "ONEBLADE_LAB": "oneBlade LAB",
         "CHOOSE_COURSE": "Elige el curso",
         "GUIDES": "Guías",
+        "FAQ": "FAQ",
         "SELECT_LANGUAGE": "Seleccionar idioma",
         "ITALIAN": "Italiano",
         "ENGLISH": "Inglés",
@@ -194,5 +195,22 @@
         "PARAGRAPH_1": "Hoy en día, la programación se ha convertido en una habilidad esencial, al igual que la capacidad de usar un teléfono inteligente o una computadora lo fue en las últimas décadas. Con la evolución tecnológica y la creciente digitalización, adquirir habilidades en el sector informático es fundamental para mantenerse competitivo en el mercado.",
         "PARAGRAPH_2": "Las empresas buscan constantemente profesionales cualificados, pero la oferta de talentos no logra satisfacer la demanda: solo en Italia, se estiman más de 200.000 posiciones abiertas en el ámbito tecnológico.",
         "PARAGRAPH_3": "Independientemente del área en la que desees especializarte, es crucial construir una base sólida de conocimientos. Nuestras guías están diseñadas para aquellos que desean acercarse al mundo del desarrollo web, proporcionando herramientas prácticas y concretas para comenzar a programar y descubrir las oportunidades que ofrece esta profesión."
+    },
+    "FAQ": {
+        "TITLE": "Preguntas Frecuentes (FAQ)",
+        "QUESTION_1": "¿Los cursos están disponibles en línea?",
+        "ANSWER_1": "Sí, todos nuestros cursos se imparten <strong>en línea</strong>, lo que permite a los participantes acceder fácilmente desde cualquier lugar. Después de la inscripción, recibirás toda la información necesaria para acceder a las clases y materiales didácticos.",
+        "QUESTION_2": "¿Cómo recibiré información sobre las fechas y la organización del curso?",
+        "ANSWER_2": "Después de la reserva, recibirás por correo electrónico todas las comunicaciones relacionadas con el curso, incluidas las <strong>fechas de las clases, los horarios y las modalidades de acceso</strong>. Nuestro equipo estará siempre disponible para apoyarte en cada etapa.",
+        "QUESTION_3": "¿Qué pasa si no puedo asistir en la fecha acordada?",
+        "ANSWER_3": "¡No te preocupes! Si por cualquier motivo no puedes asistir en la fecha acordada, <strong>serás automáticamente trasladado a la siguiente sesión</strong>. OneBlade garantiza flexibilidad en la participación para asegurar que todos los estudiantes puedan completar su curso sin problemas.",
+        "QUESTION_4": "¿Quién puede participar en los cursos?",
+        "ANSWER_4": "<strong>¡Todos pueden participar en nuestros cursos!</strong> Ya seas un principiante curioso, un estudiante en busca de habilidades prácticas o un profesional que quiera actualizarse, encontrarás el curso adecuado para tus necesidades. <strong>La formación es una inversión en el futuro</strong>, y nuestros cursos están diseñados para proporcionarte habilidades concretas y aplicables de inmediato en el mundo laboral.",
+        "QUESTION_5": "¿Qué se aprende durante sus cursos?",
+        "ANSWER_5": "En nuestros cursos <strong>no te limitas a estudiar la teoría</strong>, sino que desarrollas <strong>habilidades prácticas</strong> que te permitirán enfrentar escenarios reales. Imagina participar en un curso de <strong>Seguridad Cibernética</strong>: además de conocer las amenazas informáticas, aprenderás a <strong>defender sistemas y redes con estrategias concretas</strong>. Si te interesa la <strong>IA Generativa</strong>, explorarás las tecnologías más avanzadas y descubrirás cómo integrarlas en los negocios. <strong>¡Cada curso está diseñado para proporcionarte un conjunto de habilidades que puedes aplicar de inmediato en el mundo profesional!</strong>",
+        "QUESTION_6": "¿Emiten un certificado al final del curso?",
+        "ANSWER_6": "<strong>¡Sí!</strong> Al final del curso recibirás un <strong>certificado de participación emitido por OneBlade</strong>, siempre que hayas asistido al menos al <strong>70% de las clases</strong>. Este certificado representa un valor añadido para tu currículum y demuestra tu preparación en el sector.",
+        "QUESTION_7": "¿Puedo seguir el curso mientras trabajo o estudio?",
+        "ANSWER_7": "<strong>¡Sí!</strong> Todos nuestros cursos están organizados en horarios nocturnos, <strong>después de las 18:00</strong>, para permitir que quienes trabajan o estudian puedan seguirlos sin dificultad. Sabemos lo importante que es conciliar la formación con los compromisos diarios, y por eso ofrecemos flexibilidad y apoyo para ayudarte a alcanzar tus objetivos profesionales."
     }
 }
