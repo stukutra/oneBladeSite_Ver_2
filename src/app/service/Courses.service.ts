@@ -44,7 +44,29 @@ export class CoursesService {
                 futureDates.push(dateString);
               }
             });
-            course.datecourse = futureDates;
+
+            // Ensure there are at least 4 future dates
+            const requiredDates = 4;
+            let dateToAdd = new Date(today);
+
+            while (futureDates.length < requiredDates) {
+              dateToAdd.setDate(dateToAdd.getDate() + ((1 + 7 - dateToAdd.getDay()) % 7 || 7)); // Next Monday
+              const newDateString = `${dateToAdd.getDate()} ${Object.keys(monthIndex)[dateToAdd.getMonth()]} ${dateToAdd.getFullYear()}`;
+              if (!futureDates.includes(newDateString)) {
+                futureDates.push(newDateString);
+              }
+            }
+
+            // Ensure dates are consecutive weekly appointments
+            futureDates.sort((a, b) => {
+              const [dayA, monthA, yearA] = a.split(' ');
+              const [dayB, monthB, yearB] = b.split(' ');
+              const dateA = new Date(parseInt(yearA), monthIndex[monthA], parseInt(dayA));
+              const dateB = new Date(parseInt(yearB), monthIndex[monthB], parseInt(dayB));
+              return dateA.getTime() - dateB.getTime();
+            });
+
+            course.datecourse = futureDates.slice(0, requiredDates);
           });
         });
         return data;
