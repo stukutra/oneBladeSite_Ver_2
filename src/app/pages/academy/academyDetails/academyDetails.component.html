@@ -55,11 +55,16 @@
           <app-academyReservation></app-academyReservation>
         </div>
 
-        <div class="course-info-box" *ngIf="course.datecourse?.length">
+        <div class="course-info-box">
           <h3>Prossime classi in partenza</h3>
-          <div *ngFor="let date of course.datecourse">
-            <p><strong>{{ date }}</strong></p>
+          <div *ngIf="course.datecourse?.length; else noDates">
+            <div *ngFor="let date of course.datecourse">
+              <p><strong>{{ date }}</strong></p>
+            </div>
           </div>
+          <ng-template #noDates>
+            <p>Programmazione del calendario in corso. Scrivi per avere maggiori dettagli.</p>
+          </ng-template>
         </div>
       </div>
     </div>
