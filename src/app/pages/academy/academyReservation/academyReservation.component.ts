@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { NgForm } from '@angular/forms';
+import { RegionsService } from '../../../service/Regions.service';
 
 @Component({
   selector: 'app-academyReservation',
@@ -16,6 +17,7 @@ export class AcademyReservationComponent implements OnInit {
     telephone: '',
     email: '',
     course: '',
+    region: '', // New field for region
     privacy1: false, // Default false per il checkbox obbligatorio
     privacy2: false  // Default false per il checkbox facoltativo
   };
@@ -25,8 +27,9 @@ export class AcademyReservationComponent implements OnInit {
   isModalVisible: boolean = false;
   modalTitle: string = '';
   modalMessage: string = '';
+  regions: any[] = []; // Array to hold regions
 
-  constructor(private http: HttpClient, private route: ActivatedRoute) { }
+  constructor(private http: HttpClient, private route: ActivatedRoute, private regionsService: RegionsService) { }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
@@ -34,6 +37,11 @@ export class AcademyReservationComponent implements OnInit {
       if (courseId) {
         this.model.course = courseId;
       }
+    });
+
+    // Fetch regions
+    this.regionsService.getRegions().subscribe(data => {
+      this.regions = data.regioni;
     });
   }
 
@@ -57,6 +65,7 @@ export class AcademyReservationComponent implements OnInit {
     formData.append('telephone', this.model.telephone);
     formData.append('email', this.model.email);
     formData.append('course', this.model.course);
+    formData.append('region', this.model.region); // Append region
     formData.append('privacy1', this.model.privacy1 ? 'true' : 'false'); // Converte il booleano in stringa
     formData.append('privacy2', this.model.privacy2 ? 'true' : 'false'); // Converte il booleano in stringa
     formData.append('api_key', '7F3kH#r8!wL5tVxZ2Q9p^nGjR@cM1dP6');

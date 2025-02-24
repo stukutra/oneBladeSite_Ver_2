@@ -22,11 +22,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $telephone = $_POST['telephone'] ?? '';
     $email = $_POST['email'] ?? '';
     $course = $_POST['course'] ?? '';
+    $region = $_POST['region'] ?? ''; // New field for region
     $privacy_mandatory = isset($_POST['privacy1']) ? "Accettato ✅" : "NON Accettato ❌";
     $privacy_optional = isset($_POST['privacy2']) ? "Accettato ✅" : "NON Accettato ❌";
 
     if (empty($email)) {
         echo json_encode(["status" => "error", "message" => "Il campo 'Email' è richiesto."]);
+        exit();
+    }
+
+    if (empty($region)) {
+        echo json_encode(["status" => "error", "message" => "Il campo 'Regione' è richiesto."]);
         exit();
     }
 
@@ -43,7 +49,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $body = "📌 **Nuova prenotazione per il corso \"$course\"**.\n\n";
     $body .= "🧑 Nome: $name\n";
     $body .= "📞 Telefono: $telephone\n";
-    $body .= "📧 Email: $email\n\n";
+    $body .= "📧 Email: $email\n";
+    $body .= "🌍 Regione: $region\n\n"; // Add region to the email body
 
     // Informazioni sulla privacy
     $body .= "🔐 **Consensi privacy:**\n";

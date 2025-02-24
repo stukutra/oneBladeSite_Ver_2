@@ -38,7 +38,8 @@
             "EMAIL": "Email",
             "VAT": "Partita IVA",
             "APPLICATION_TYPE": "Seleziona un ruolo",
-            "FILE": "Il file non può superare i 2MB"
+            "FILE": "Il file non può superare i 2MB",
+            "REGION": "Seleziona una regione"
         },
         "VALIDATION": {
             "NAME_REQUIRED": "Il nome è un campo richiesto",
@@ -48,7 +49,8 @@
             "VAT_REQUIRED": "La partita IVA è un campo richiesto",
             "VAT_INVALID": "La partita IVA non è valida",
             "ROLE_REQUIRED": "Il ruolo è un campo richiesto",
-            "FILE_REQUIRED": "Il file è richiesto"
+            "FILE_REQUIRED": "Il file è richiesto",
+            "REGION_REQUIRED": "La regione è un campo richiesto"
         },
         "BUTTON_SUBMIT": "Invia la tua candidatura",
         "BUTTON_RESERVATIONACADEMY": "Prenota",
@@ -78,10 +80,10 @@
         "TITLE": "Talenti Eccellenti, Software Eccelso",
         "SUBTITLE": "Connettiamo i migliori professionisti al software che guida il cambiamento"
     },
-    "INFOCOMPANY":{
-        "TITLE":"Vuoi lavorare in sede :-)?",
-        "SUBTITLE":"Siamo in Via Di Valle Lupara 10, 00148 Roma (RM)",
-        "FULLREMOTETITLE":"FULL-Remote",
-        "FULLREMOTESUBTITLE":"Lavora ovunque desideri: la tua postazione è dove scegli di essere!"
+    "INFOCOMPANY": {
+        "TITLE": "Vuoi lavorare in sede :-)?",
+        "SUBTITLE": "Siamo in Via Di Valle Lupara 10, 00148 Roma (RM)",
+        "FULLREMOTETITLE": "FULL-Remote",
+        "FULLREMOTESUBTITLE": "Lavora ovunque desideri: la tua postazione è dove scegli di essere!"
     }
 }

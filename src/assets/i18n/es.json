@@ -35,7 +35,8 @@
             "EMAIL": "Correo electrónico",
             "VAT": "Número de IVA",
             "APPLICATION_TYPE": "Selecciona un rol",
-            "FILE": "El archivo no puede exceder de 2MB"
+            "FILE": "El archivo no puede exceder de 2MB",
+            "REGION": "Selecciona una región"
         },
         "VALIDATION": {
             "NAME_REQUIRED": "El nombre es un campo obligatorio",
@@ -45,7 +46,8 @@
             "VAT_REQUIRED": "El número de IVA es un campo obligatorio",
             "VAT_INVALID": "Número de IVA no válido",
             "ROLE_REQUIRED": "El rol es un campo obligatorio",
-            "FILE_REQUIRED": "El archivo es obligatorio"
+            "FILE_REQUIRED": "El archivo es obligatorio",
+            "REGION_REQUIRED": "La región es un campo obligatorio"
         },
         "BUTTON_SUBMIT": "Envía tu solicitud",
         "BUTTON_RESERVATIONACADEMY": "Inscribirse en el Curso",
@@ -78,10 +80,10 @@
         "TITLE": "Talento Sobresaliente, Software Excepcional",
         "SUBTITLE": "Conectamos a los mejores profesionales con el software que impulsa el cambio."
     },
-    "INFOCOMPANY":{
-        "TITLE":"¿Te gustaría trabajar en la oficina?",
-        "SUBTITLE":"Estamos ubicados en Via Di Valle Lupara 10, 00148 Roma (RM).",
-        "FULLREMOTETITLE":"FULL-Remote",
-        "FULLREMOTESUBTITLE":"Trabaja desde donde quieras: ¡tu puesto de trabajo es donde elijas estar!"
+    "INFOCOMPANY": {
+        "TITLE": "¿Te gustaría trabajar en la oficina?",
+        "SUBTITLE": "Estamos ubicados en Via Di Valle Lupara 10, 00148 Roma (RM).",
+        "FULLREMOTETITLE": "FULL-Remote",
+        "FULLREMOTESUBTITLE": "Trabaja desde donde quieras: ¡tu puesto de trabajo es donde elijas estar!"
     }
 }

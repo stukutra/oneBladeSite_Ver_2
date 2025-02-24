@@ -33,7 +33,8 @@
       "EMAIL": "Email",
       "VAT": "VAT Number",
       "APPLICATION_TYPE": "Select a role",
-      "FILE": "File must not exceed 2MB"
+      "FILE": "File must not exceed 2MB",
+      "REGION": "Select a region"
     },
     "VALIDATION": {
       "NAME_REQUIRED": "Name is a required field",
@@ -43,7 +44,8 @@
       "VAT_REQUIRED": "VAT number is a required field",
       "VAT_INVALID": "Invalid VAT number",
       "ROLE_REQUIRED": "Role is a required field",
-      "FILE_REQUIRED": "File is required"
+      "FILE_REQUIRED": "File is required",
+      "REGION_REQUIRED": "Region is a required field" 
     },
     "BUTTON_SUBMIT": "Submit your application",
     "BUTTON_RESERVATIONACADEMY": "Enroll in the Course",
@@ -78,10 +80,10 @@
     "TITLE": "Outstanding Talent, Exceptional Software",
     "SUBTITLE": "We connect the best professionals to software that drives change."
   },
-  "INFOCOMPANY":{
-      "TITLE":"Would you like to work on-site?",
-      "SUBTITLE":"We are located at Via Di Valle Lupara 10, 00148 Rome (RM).",
-      "FULLREMOTETITLE":"FULL-Remote",
-      "FULLREMOTESUBTITLE":"Work from wherever you want: your workstation is wherever you choose to be!"
+  "INFOCOMPANY": {
+    "TITLE": "Would you like to work on-site?",
+    "SUBTITLE": "We are located at Via Di Valle Lupara 10, 00148 Rome (RM).",
+    "FULLREMOTETITLE": "FULL-Remote",
+    "FULLREMOTESUBTITLE": "Work from wherever you want: your workstation is wherever you choose to be!"
   }
 }

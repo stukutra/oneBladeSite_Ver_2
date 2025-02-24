@@ -25,6 +25,16 @@
       </div>
     </div>
 
+    <div class="mb-3 form-group">
+      <select id="region" name="region" class="form-control" [(ngModel)]="model.region" #region="ngModel" required>
+        <option value="" disabled [selected]="!model.region">{{ 'FORM.PLACEHOLDERS.REGION' | translate }}</option>
+        <option *ngFor="let region of regions" [value]="region.nome">{{ region.nome }}</option>
+      </select>
+      <div *ngIf="region.invalid && (region.dirty || region.touched)" class="text-danger">
+        <div *ngIf="region.errors?.['required']">{{ 'FORM.VALIDATION.REGION_REQUIRED' | translate }}</div>
+      </div>
+    </div>
+
     <!-- Checkbox Privacy 1 (Obbligatorio) -->
     <div class="form-check">
       <input type="checkbox" id="privacy1" name="privacy1" class="form-check-input" [(ngModel)]="model.privacy1"
