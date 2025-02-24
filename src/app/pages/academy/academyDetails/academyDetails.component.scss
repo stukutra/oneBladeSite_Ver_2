@@ -77,13 +77,11 @@
 
             p {
                 margin: 0.3125rem 0;
-                /* 5px */
                 font-size: 1.3rem;
             }
 
             .course-details {
                 margin-top: 0.625rem;
-                /* 10px */
                 font-size: 1.8rem;
                 color: $secondary-color;
             }
@@ -103,7 +101,7 @@
 
     h3 {
         font-size: $font-size-xs;
-        color: #6a1b9a;
+        color: $primary-color;
         font-weight: bold;
         margin-bottom: 0.8rem;
     }
@@ -113,34 +111,30 @@
         margin-bottom: 0.4rem;
 
         strong {
-            color: #9c2ea6;
+            color: $secondary-color;
             font-weight: 600;
         }
     }
 
-    /* Stile personalizzato per il prezzo */
     .course-price {
         font-size: 1.6rem;
         font-weight: bold;
         color: $secondary-color;
-        /* Arancione acceso per evidenziare */
-        background-color: rgba(255, 87, 34, 0.1);
-        /* Leggera evidenziazione di sfondo */
+        background-color: rgba(255, 87, 34, 0.1); // Non c'è una variabile per questo colore
         padding: 0.5rem 1rem;
         border-radius: 8px;
         display: inline-block;
         margin-top: 0.5rem;
-        margin-left: 10px
+        margin-left: 10px;
     }
 }
 
-
 .btn-booking {
-    background-color: transparent; // Nessun riempimento iniziale
-    color: #6a1b9a; // Testo con colore primario
+    background-color: transparent;
+    color: $primary-color;
     padding: 0.75rem 1.5rem;
     font-size: 1.1rem;
-    border: 2px solid #6a1b9a; // Bordo colorato
+    border: 2px solid $primary-color;
     border-radius: 0.5rem;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, transform 0.2s;
@@ -148,17 +142,12 @@
     width: 100%;
 
     &:hover {
-        background-color: #6a1b9a; // Riempimento al passaggio
-        color: white; // Testo diventa bianco
+        background-color: $primary-color;
+        color: white;
         transform: scale(1.05);
     }
 }
 
-
-h1 {
-    color: #6a1b9a;
-}
-
-h2 {
-    color: #6a1b9a;
+h1, h2 {
+    color: $primary-color;
 }
