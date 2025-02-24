@@ -23,15 +23,17 @@
         </ul>
 
         <!-- Sezione per i corsi correlati -->
-        <div class="row mt-4" *ngIf="relatedCourses.length > 0">
+        <div class="row related-courses" *ngIf="relatedCourses.length > 0">
           <div class="col-12">
-            <h3>Corsi correlati</h3>
+            <div class="course-info-box">
+            <h1>Altri corsi interessanti</h1>
             <ul>
               <li *ngFor="let relatedCourse of relatedCourses">
                 <a [routerLink]="['/AcademyDetails', relatedCourse.idCourse]">{{ relatedCourse.title }}</a>
               </li>
             </ul>
           </div>
+        </div>
         </div>
       </div>
 
@@ -41,20 +43,15 @@
           <p *ngIf="course.idCourse !== null && course.idCourse !== undefined && course.idCourse !== ''">
             <strong>Codice:</strong> {{ course.idCourse }}
           </p>
-          <p *ngIf="course.duration"><strong>Durata</strong> {{ course.duration }}</p>
-          <p *ngIf="course.mode"><strong>Modalità</strong> {{ course.mode }}</p>
-          <p *ngIf="course.lessons"><strong>Lezioni</strong> {{ course.lessons }}</p>
-          <p *ngIf="course.time"><strong>Tempo</strong> {{ course.time }}</p>
-          <p *ngIf="course.level"><strong>Livello</strong> {{ course.level }}</p>
-          <!-- <p *ngIf="course.price"><strong>Prezzo del corso:</strong> <span class="course-price">{{ course.price
-              }}</span></p> -->
+          <p *ngIf="course.duration"><strong>Durata:</strong> {{ course.duration }}</p>
+          <p *ngIf="course.mode"><strong>Modalità:</strong> {{ course.mode }}</p>
+          <p *ngIf="course.lessons"><strong>Lezioni:</strong> {{ course.lessons }}</p>
+          <p *ngIf="course.time"><strong>Tempo:</strong> {{ course.time }}</p>
+          <p *ngIf="course.level"><strong>Livello:</strong> {{ course.level }}</p>
+          <!-- <p *ngIf="course.price"><strong>Prezzo del corso:</strong> <span class="course-price">{{ course.price }}</span></p> -->
 
-          <!-- <p><strong>Live session:</strong> Parteciperai 2 volte a settimana a lezioni live con i docenti, dove potrai
-            interagire e porre domande in tempo reale.</p> -->
-          <p class="mt-3 mb-3">Compilando il form qui presente, non effettuerai direttamente l’acquisto del corso, ma
-            invierai una richiesta di contatto. Il nostro team ti ricontatterà al più presto per fornirti tutte le
-            informazioni necessarie, rispondere alle tue domande e guidarti nel processo di iscrizione. Siamo a tua
-            disposizione per qualsiasi chiarimento! 😊</p>
+          <!-- <p><strong>Live session:</strong> Parteciperai 2 volte a settimana a lezioni live con i docenti, dove potrai interagire e porre domande in tempo reale.</p> -->
+          <p class="mt-3 mb-3">Compilando il form qui presente, non effettuerai direttamente l’acquisto del corso, ma invierai una richiesta di contatto. Il nostro team ti ricontatterà al più presto per fornirti tutte le informazioni necessarie, rispondere alle tue domande e guidarti nel processo di iscrizione. Siamo a tua disposizione per qualsiasi chiarimento! 😊</p>
           <app-academyReservation></app-academyReservation>
         </div>
 
@@ -64,8 +61,6 @@
             <p><strong>{{ date }}</strong></p>
           </div>
         </div>
-
-
       </div>
     </div>
   </div>
