@@ -183,5 +183,16 @@
     "WHY_CHOOSE_3": "Continuous Innovation: We are constantly updated on the latest trends and technologies, ensuring cutting-edge solutions for our clients.",
     "WHY_CHOOSE_4": "Talent Network: Thanks to our academy and talent acquisition services, we have a vast network of qualified professionals ready to meet market needs.",
     "TECHNOLOGIES_TITLE": "Technologies"
+  },
+  "GUIDE_LIST": {
+    "TITLE": "Introductory Guides",
+    "DESCRIPTION": "Discover all the technical guides on web development.",
+    "BUTTON": "Learn more →"
+  },
+  "GUIDE_ACCADEMY": {
+    "TITLE": "Guides for aspiring programmers",
+    "PARAGRAPH_1": "Today, programming has become an essential skill, just like the ability to use a smartphone or computer was in recent decades. With technological evolution and increasing digitalization, acquiring skills in the IT sector is crucial to remain competitive in the market.",
+    "PARAGRAPH_2": "Companies are constantly looking for qualified professionals, but the supply of talent fails to meet the demand: in Italy alone, there are estimated to be over 200,000 open positions in the tech field.",
+    "PARAGRAPH_3": "Regardless of the area you wish to specialize in, it is crucial to build a solid knowledge base. Our guides are designed for those who want to approach the world of web development, providing practical and concrete tools to start programming and discover the opportunities offered by this profession."
   }
 }

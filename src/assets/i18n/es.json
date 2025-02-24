@@ -164,6 +164,11 @@
         "TITLE": "Simple, práctico, efectivo: tu camino tech",
         "SUBTITLE": "Desarrolla tus habilidades tech con cursos en línea orientados a la práctica. Comienza desde cero y aprende de manera rápida y práctica."
     },
+    "GUIDE_LIST": {
+        "TITLE": "Guías introductorias",
+        "DESCRIPTION": "Descubre todas las guías técnicas sobre desarrollo web.",
+        "BUTTON": "Descubre más →"
+    },
     "COMPANY_ABOUT_US": {
         "TITLE": "Quiénes Somos",
         "INTRO": "Fundada con el objetivo de cerrar la brecha entre la demanda y la oferta de habilidades tecnológicas en el mercado italiano, oneBlade se destaca por su capacidad de ofrecer servicios integrados que van desde la creación de software personalizado hasta la formación de profesionales altamente cualificados. Nuestra sede principal está situada en Italia, y operamos en todo el territorio nacional para satisfacer las necesidades de una clientela diversificada.",
@@ -183,5 +188,11 @@
         "WHY_CHOOSE_3": "Innovación Continua: Estamos constantemente actualizados sobre las últimas tendencias y tecnologías, garantizando a nuestros clientes soluciones de vanguardia.",
         "WHY_CHOOSE_4": "Red de Talentos: Gracias a nuestra academia y a los servicios de adquisición de talento, disponemos de una amplia red de profesionales cualificados listos para satisfacer las necesidades del mercado.",
         "TECHNOLOGIES_TITLE": "Tecnologías"
+    },
+    "GUIDE_ACCADEMY": {
+        "TITLE": "Guías para aspirantes a programadores",
+        "PARAGRAPH_1": "Hoy en día, la programación se ha convertido en una habilidad esencial, al igual que la capacidad de usar un teléfono inteligente o una computadora lo fue en las últimas décadas. Con la evolución tecnológica y la creciente digitalización, adquirir habilidades en el sector informático es fundamental para mantenerse competitivo en el mercado.",
+        "PARAGRAPH_2": "Las empresas buscan constantemente profesionales cualificados, pero la oferta de talentos no logra satisfacer la demanda: solo en Italia, se estiman más de 200.000 posiciones abiertas en el ámbito tecnológico.",
+        "PARAGRAPH_3": "Independientemente del área en la que desees especializarte, es crucial construir una base sólida de conocimientos. Nuestras guías están diseñadas para aquellos que desean acercarse al mundo del desarrollo web, proporcionando herramientas prácticas y concretas para comenzar a programar y descubrir las oportunidades que ofrece esta profesión."
     }
 }

@@ -164,6 +164,11 @@
         "TITLE": "Semplice, pratico, efficace: il tuo percorso tech",
         "SUBTITLE": "Forma le tue competenze tech con corsi online orientati alla pratica. Parti da zero e impara in modo rapido e pratico."
     },
+    "GUIDE_LIST": {
+        "TITLE": "Guide introduttive",
+        "DESCRIPTION": "Scopri tutte le guide tecniche a tema sviluppo web.",
+        "BUTTON": "Scopri di più →"
+    },
     "COMPANY_ABOUT_US": {
         "TITLE": "Chi Siamo",
         "INTRO": "Fondata con l’obiettivo di colmare il divario tra la domanda e l’offerta di competenze tecnologiche nel mercato italiano, oneBlade si distingue per la sua capacità di offrire servizi integrati che spaziano dalla creazione di software personalizzati alla formazione di professionisti altamente qualificati. La nostra sede principale è situata in Italia, e operiamo su tutto il territorio nazionale per soddisfare le esigenze di una clientela diversificata.",
@@ -183,5 +188,11 @@
         "WHY_CHOOSE_3": "Innovazione Continua: Siamo costantemente aggiornati sulle ultime tendenze e tecnologie, garantendo ai nostri clienti soluzioni all’avanguardia.",
         "WHY_CHOOSE_4": "Rete di Talenti: Grazie alla nostra accademia e ai servizi di talent acquisition, disponiamo di una vasta rete di professionisti qualificati pronti a soddisfare le esigenze del mercato.",
         "TECHNOLOGIES_TITLE": "Tecnologie"
+    },
+    "GUIDE_ACCADEMY": {
+        "TITLE": "Guide per aspiranti programmatori",
+        "PARAGRAPH_1": "Oggi la programmazione è diventata una competenza essenziale, proprio come la capacità di usare uno smartphone o un computer lo è stata negli ultimi decenni. Con l’evoluzione tecnologica e la crescente digitalizzazione, acquisire abilità nel settore informatico è fondamentale per restare competitivi nel mercato.",
+        "PARAGRAPH_2": "Le aziende cercano costantemente professionisti qualificati, ma l’offerta di talenti non riesce a soddisfare la domanda: solo in Italia, si stimano oltre 200.000 posizioni aperte in ambito tech.",
+        "PARAGRAPH_3": "Indipendentemente dall’area in cui si desidera specializzarsi, è cruciale costruire solide basi di conoscenza. Le nostre guide sono pensate per chi vuole avvicinarsi al mondo dello sviluppo web, fornendo strumenti pratici e concreti per iniziare a programmare e scoprire le opportunità offerte da questa professione."
     }
 }
