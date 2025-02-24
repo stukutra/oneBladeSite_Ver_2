@@ -45,7 +45,7 @@
       "VAT_INVALID": "Invalid VAT number",
       "ROLE_REQUIRED": "Role is a required field",
       "FILE_REQUIRED": "File is required",
-      "REGION_REQUIRED": "Region is a required field" 
+      "REGION_REQUIRED": "Region is a required field"
     },
     "BUTTON_SUBMIT": "Submit your application",
     "BUTTON_RESERVATIONACADEMY": "Enroll in the Course",
@@ -85,5 +85,103 @@
     "SUBTITLE": "We are located at Via Di Valle Lupara 10, 00148 Rome (RM).",
     "FULLREMOTETITLE": "FULL-Remote",
     "FULLREMOTESUBTITLE": "Work from wherever you want: your workstation is wherever you choose to be!"
+  },
+  "ACADEMY_BANNER": {
+    "LAB_TITLE": "oneBlade Lab",
+    "LAB_DESCRIPTION": "Choose your path, we guide you",
+    "GUIDE_TITLE": "Guides",
+    "GUIDE_DESCRIPTION": "for aspiring programmers"
+  },
+  "ACADEMY_DETAILS": {
+    "COURSE_CONTENTS_TITLE": "Course Contents:",
+    "REQUIREMENTS_TITLE": "Requirements",
+    "RELATED_COURSES_TITLE": "Other interesting courses",
+    "COURSE_DETAILS_TITLE": "Course Details",
+    "COURSE_CODE": "Code:",
+    "COURSE_DURATION": "Duration:",
+    "COURSE_MODE": "Mode:",
+    "COURSE_LESSONS": "Lessons:",
+    "COURSE_TIME": "Time:",
+    "COURSE_LEVEL": "Level:",
+    "FORM_DESCRIPTION": "By filling out the form present, you will not directly purchase the course, but you will send a contact request. Our team will contact you as soon as possible to provide you with all the necessary information, answer your questions, and guide you through the enrollment process. We are at your disposal for any clarification! 😊",
+    "NEXT_CLASSES_TITLE": "Next starting classes",
+    "NO_DATES_MESSAGE": "Calendar scheduling in progress. Write for more details."
+  },
+  "ACADEMY_ONEBLADE": {
+    "TITLE": "Find your path, we are by your side.",
+    "INTRO": "Every journey begins with a choice: to discover, to learn, to challenge oneself. Our courses are designed for those who truly want to understand this world, for those driven by curiosity and the desire to acquire concrete skills.",
+    "BELIEF": "We believe that knowledge and passion are more important than any certification. Certifications can be an added value, but what really matters is real learning, practice, and understanding of methodologies.",
+    "NO_TITLES": "We do not issue titles, because the most important title is the acquired competence. We do not make promises of jobs or guarantees of placement, because we do not believe in illusions. Our goal is to truly train people who want to follow and pursue knowledge.",
+    "MISSION": "Our mission is not limited to students: we firmly believe that the selection of teachers is also a fundamental aspect. We choose only professionals who share our philosophy, who believe in the value of authentic training and in the power of knowledge as a tool for personal and professional growth.",
+    "READY": "If you are ready to build your future with determination and commitment, then we are here to guide you step by step towards your goal. 🚀"
+  },
+  "TOP_BAR": {
+    "ABOUT_US": "About oneBlade",
+    "BODY_RENTAL": "Body rental",
+    "ONEBLADE_LAB": "oneBlade LAB",
+    "CHOOSE_COURSE": "Choose the course",
+    "GUIDES": "Guides",
+    "SELECT_LANGUAGE": "Select language",
+    "ITALIAN": "Italian",
+    "ENGLISH": "English",
+    "SPANISH": "Spanish",
+    "CHRISTMAS_GAME": "Play with me!"
+  },
+  "CALL_SECTION": {
+    "TITLE": "Schedule a Call"
+  },
+  "OUTSOURCING_BANNER": {
+    "TITLE": "Body Rental",
+    "DESCRIPTION": "Why choose body rental for your projects? Find out!"
+  },
+  "OUTSOURCING_INFO": {
+    "TITLE": "The 9 Advantages of Outsourcing Developers",
+    "SUBTITLE": "Why choose body rental for your projects",
+    "INTRO_1": "In recent years, the IT sector has seen a growing interest in body rental, a model that allows companies to utilize highly qualified developers without having to handle direct hiring.",
+    "INTRO_2": "Previously, we talked about Time & Material for IT personnel; now we delve into the developer outsourcing service, a strategic option for companies of all sizes.",
+    "SECTION_TITLE_1": "What is body rental for developers?",
+    "BODY_1": "Body rental is an outsourcing service that allows companies to integrate highly specialized developers into their teams without having to hire them directly. This model is ideal for short and long-term projects, ensuring maximum flexibility and reduced operational costs.",
+    "SECTION_TITLE_2": "The 9 advantages of body rental for companies",
+    "BENEFIT_1": "Time and cost savings in personnel search – Avoid the long and costly selection process between ads and employment agencies.",
+    "BENEFIT_2": "Savings in the skills evaluation process – Developers are already selected and evaluated for the specific project.",
+    "BENEFIT_3": "Savings in training costs – The provided personnel are already trained and ready to work.",
+    "BENEFIT_4": "Immediate integration into the company team – Our developers can be immediately integrated into projects, with specific training if necessary.",
+    "BENEFIT_5": "No direct responsibility for hiring – The company does not have to worry about long-term contracts or administrative management.",
+    "BENEFIT_6": "Quality assurance and continuous support – We offer qualified personnel with internal support for mentoring and advising.",
+    "BENEFIT_7": "Professional growth of the company team – Collaborating with experienced developers helps improve the company's internal skills.",
+    "BENEFIT_8": "Work continuity guarantee – Ability to quickly scale the team and handle work peaks without interruptions.",
+    "SECTION_TITLE_3": "Our approach",
+    "BODY_2": "We offer a service structured according to company needs:",
+    "APPROACH_1": "Personalized analysis: we study the company's needs and provide suitable developers.",
+    "APPROACH_2": "Accurate selection: we choose the best talents with specific skills for each project.",
+    "APPROACH_3": "Continuous support: we provide assistance and mentoring to ensure maximum efficiency.",
+    "APPROACH_4": "Contractual flexibility: ability to scale the team according to project needs.",
+    "SECTION_TITLE_4": "Conclusion",
+    "CONCLUSION": "Body rental represents a strategic solution for IT companies, offering economic savings, flexibility, and highly qualified personnel without the complexities of direct hiring.",
+    "CONTACT": "If you want to find out how we can support your company with our developer outsourcing service, contact us today and schedule an appointment!"
+  },
+  "GUIDE_BANNER_TOP": {
+    "TITLE": "Simple, practical, effective: your tech path",
+    "SUBTITLE": "Develop your tech skills with online courses focused on practice. Start from scratch and learn quickly and practically."
+  },
+  "COMPANY_ABOUT_US": {
+    "TITLE": "About Us",
+    "INTRO": "Founded with the goal of bridging the gap between the demand and supply of technological skills in the Italian market, oneBlade stands out for its ability to offer integrated services ranging from the creation of customized software to the training of highly qualified professionals. Our main office is located in Italy, and we operate throughout the national territory to meet the needs of a diverse clientele.",
+    "CEO_NAME": "Guido Salzano",
+    "CEO_TITLE": "CEO oneBlade",
+    "HR_NAME": "Serena D'Angelo",
+    "HR_TITLE": "HR Manager & Co-Founder oneBlade",
+    "MISSION_TITLE": "Mission",
+    "MISSION_BODY": "The mission of oneBlade is to promote technological innovation in Italy through the development of cutting-edge software solutions and the training of talents capable of facing the challenges of the modern market. We are committed to providing companies with the necessary tools to grow and compete in a global context, while offering professionals the development and growth opportunities they deserve.",
+    "SERVICES_TITLE": "Services Offered",
+    "SERVICE_1": "Customized Software Development: We design and develop tailor-made software applications, adapted to the specific needs of our clients, using the most modern and reliable technologies.",
+    "SERVICE_2": "Training Academy: We offer advanced programming and software development courses, aimed at both beginners and professionals wishing to update their skills. Our training programs are structured to ensure practical learning that is immediately applicable in the workplace.",
+    "SERVICE_3": "Talent Acquisition: We support companies in the search and selection of highly specialized IT professionals, ensuring an efficient and targeted recruiting process.",
+    "WHY_CHOOSE_TITLE": "Why Choose oneBlade",
+    "WHY_CHOOSE_1": "Experience and Competence: Our team is composed of professionals with years of experience in the technology and training sector.",
+    "WHY_CHOOSE_2": "Personalized Approach: Every project is unique; that's why we offer tailor-made solutions that respond to the specific needs of each client.",
+    "WHY_CHOOSE_3": "Continuous Innovation: We are constantly updated on the latest trends and technologies, ensuring cutting-edge solutions for our clients.",
+    "WHY_CHOOSE_4": "Talent Network: Thanks to our academy and talent acquisition services, we have a vast network of qualified professionals ready to meet market needs.",
+    "TECHNOLOGIES_TITLE": "Technologies"
   }
 }

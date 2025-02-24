@@ -8,14 +8,16 @@
         <div [innerHTML]="getDescription()"></div>
         <!-- Descrizione caricata dinamicamente -->
         <div *ngIf="sanitizedDescription" [innerHTML]="sanitizedDescription"></div>
-        <h3 *ngIf="course.course_contents && course.course_contents.length > 0">Contenuti del Corso:</h3>
+        <h3 *ngIf="course.course_contents && course.course_contents.length > 0">{{
+          'ACADEMY_DETAILS.COURSE_CONTENTS_TITLE' | translate }}</h3>
         <ul *ngIf="course.course_contents && course.course_contents.length > 0">
           <li *ngFor="let content of course.course_contents">
             <strong>{{ content.title }}:</strong> {{ content.text }}
           </li>
         </ul>
 
-        <h3 *ngIf="course.requirements && course.requirements.length > 0">Requisiti</h3>
+        <h3 *ngIf="course.requirements && course.requirements.length > 0">{{ 'ACADEMY_DETAILS.REQUIREMENTS_TITLE' |
+          translate }}</h3>
         <ul *ngIf="course.requirements && course.requirements.length > 0">
           <li *ngFor="let req of course.requirements">
             <strong>{{ req.title }}:</strong> {{ req.description }}
@@ -26,7 +28,7 @@
         <div class="row related-courses" *ngIf="relatedCourses.length > 0">
           <div class="col-12">
             <div class="course-info-box">
-              <h1>Altri corsi interessanti</h1>
+              <h1>{{ 'ACADEMY_DETAILS.RELATED_COURSES_TITLE' | translate }}</h1>
               <ul>
                 <li *ngFor="let relatedCourse of relatedCourses">
                   <a [routerLink]="['/AcademyDetails', relatedCourse.idCourse]">{{ relatedCourse.title }}</a>
@@ -39,34 +41,34 @@
 
       <div class="col-12 col-md-4 col-lg-4">
         <div class="course-info-box">
-          <h2>Dettagli del Corso</h2>
+          <h2>{{ 'ACADEMY_DETAILS.COURSE_DETAILS_TITLE' | translate }}</h2>
           <p *ngIf="course.idCourse !== null && course.idCourse !== undefined && course.idCourse !== ''">
-            <strong>Codice:</strong> {{ course.idCourse }}
+            <strong>{{ 'ACADEMY_DETAILS.COURSE_CODE' | translate }}</strong> {{ course.idCourse }}
           </p>
-          <p *ngIf="course.duration"><strong>Durata:</strong> {{ course.duration }}</p>
-          <p *ngIf="course.mode"><strong>Modalità:</strong> {{ course.mode }}</p>
-          <p *ngIf="course.lessons"><strong>Lezioni:</strong> {{ course.lessons }}</p>
-          <p *ngIf="course.time"><strong>Tempo:</strong> {{ course.time }}</p>
-          <p *ngIf="course.level"><strong>Livello:</strong> {{ course.level }}</p>
+          <p *ngIf="course.duration"><strong>{{ 'ACADEMY_DETAILS.COURSE_DURATION' | translate }}</strong> {{
+            course.duration }}</p>
+          <p *ngIf="course.mode"><strong>{{ 'ACADEMY_DETAILS.COURSE_MODE' | translate }}</strong> {{ course.mode }}</p>
+          <p *ngIf="course.lessons"><strong>{{ 'ACADEMY_DETAILS.COURSE_LESSONS' | translate }}</strong> {{
+            course.lessons }}</p>
+          <p *ngIf="course.time"><strong>{{ 'ACADEMY_DETAILS.COURSE_TIME' | translate }}</strong> {{ course.time }}</p>
+          <p *ngIf="course.level"><strong>{{ 'ACADEMY_DETAILS.COURSE_LEVEL' | translate }}</strong> {{ course.level }}
+          </p>
           <!-- <p *ngIf="course.price"><strong>Prezzo del corso:</strong> <span class="course-price">{{ course.price }}</span></p> -->
 
           <!-- <p><strong>Live session:</strong> Parteciperai 2 volte a settimana a lezioni live con i docenti, dove potrai interagire e porre domande in tempo reale.</p> -->
-          <p class="mt-3 mb-3">Compilando il form qui presente, non effettuerai direttamente l’acquisto del corso, ma
-            invierai una richiesta di contatto. Il nostro team ti ricontatterà al più presto per fornirti tutte le
-            informazioni necessarie, rispondere alle tue domande e guidarti nel processo di iscrizione. Siamo a tua
-            disposizione per qualsiasi chiarimento! 😊</p>
+          <p class="mt-3 mb-3">{{ 'ACADEMY_DETAILS.FORM_DESCRIPTION' | translate }}</p>
           <app-academyReservation></app-academyReservation>
         </div>
 
         <div class="course-info-box">
-          <h3>Prossime classi in partenza</h3>
+          <h3>{{ 'ACADEMY_DETAILS.NEXT_CLASSES_TITLE' | translate }}</h3>
           <div *ngIf="course.datecourse?.length; else noDates">
             <div *ngFor="let date of course.datecourse">
               <p><strong>{{ date }}</strong></p>
             </div>
           </div>
           <ng-template #noDates>
-            <p>Programmazione del calendario in corso. Scrivi per avere maggiori dettagli.</p>
+            <p>{{ 'ACADEMY_DETAILS.NO_DATES_MESSAGE' | translate }}</p>
           </ng-template>
         </div>
       </div>

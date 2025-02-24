@@ -85,5 +85,103 @@
         "SUBTITLE": "Estamos ubicados en Via Di Valle Lupara 10, 00148 Roma (RM).",
         "FULLREMOTETITLE": "FULL-Remote",
         "FULLREMOTESUBTITLE": "Trabaja desde donde quieras: ¡tu puesto de trabajo es donde elijas estar!"
+    },
+    "OUTSOURCING_BANNER": {
+        "TITLE": "Body Rental",
+        "DESCRIPTION": "¿Por qué elegir el body rental para tus proyectos? ¡Descúbrelo!"
+    },
+    "OUTSOURCING_INFO": {
+        "TITLE": "Las 9 ventajas del desarrollador en outsourcing",
+        "SUBTITLE": "Por qué elegir el body rental para tus proyectos",
+        "INTRO_1": "En los últimos años, el sector de TI ha visto un creciente interés por el body rental, un modelo que permite a las empresas utilizar desarrolladores altamente calificados sin tener que ocuparse de contrataciones directas.",
+        "INTRO_2": "Anteriormente, hablamos del Time & Material para el personal de TI; ahora profundizamos en el servicio de outsourcing de desarrolladores, una opción estratégica para empresas de todos los tamaños.",
+        "SECTION_TITLE_1": "¿Qué es el body rental para desarrolladores?",
+        "BODY_1": "El body rental es un servicio de outsourcing que permite a las empresas integrar desarrolladores altamente especializados en sus equipos sin tener que contratarlos directamente. Este modelo es ideal para proyectos a corto y largo plazo, garantizando máxima flexibilidad y reducción de costos operativos.",
+        "SECTION_TITLE_2": "Las 9 ventajas del body rental para las empresas",
+        "BENEFIT_1": "Ahorro de tiempo y costos en la búsqueda de personal – Evita el largo y costoso proceso de selección entre anuncios y agencias de empleo.",
+        "BENEFIT_2": "Ahorro en el proceso de evaluación de competencias – Los desarrolladores ya están seleccionados y evaluados para el proyecto específico.",
+        "BENEFIT_3": "Ahorro en costos de formación – El personal proporcionado ya está formado y listo para trabajar.",
+        "BENEFIT_4": "Integración inmediata en el equipo de la empresa – Nuestros desarrolladores pueden ser integrados inmediatamente en los proyectos, con formación específica si es necesario.",
+        "BENEFIT_5": "Ninguna responsabilidad directa en la contratación – La empresa no tiene que preocuparse por contratos a largo plazo o gestión administrativa.",
+        "BENEFIT_6": "Garantía de calidad y soporte continuo – Ofrecemos personal calificado con un soporte interno para mentoring y advising.",
+        "BENEFIT_7": "Crecimiento profesional del equipo de la empresa – Colaborar con desarrolladores experimentados ayuda a mejorar las competencias internas de la empresa.",
+        "BENEFIT_8": "Garantía de continuidad laboral – Posibilidad de escalar rápidamente el equipo y hacer frente a picos de trabajo sin interrupciones.",
+        "SECTION_TITLE_3": "Nuestro enfoque",
+        "BODY_2": "Ofrecemos un servicio estructurado según las necesidades de la empresa:",
+        "APPROACH_1": "Análisis personalizado: estudiamos las necesidades de la empresa y proporcionamos desarrolladores adecuados.",
+        "APPROACH_2": "Selección precisa: elegimos los mejores talentos con competencias específicas para cada proyecto.",
+        "APPROACH_3": "Soporte continuo: proporcionamos asistencia y mentoring para garantizar la máxima eficiencia.",
+        "APPROACH_4": "Flexibilidad contractual: posibilidad de escalar el equipo según las necesidades del proyecto.",
+        "SECTION_TITLE_4": "Conclusión",
+        "CONCLUSION": "El body rental representa una solución estratégica para las empresas de TI, ofreciendo ahorros económicos, flexibilidad y personal altamente calificado sin las complejidades de una contratación directa.",
+        "CONTACT": "Si quieres descubrir cómo podemos apoyar a tu empresa con nuestro servicio de outsourcing de desarrolladores, ¡contáctanos hoy mismo y programa una cita!"
+    },
+    "ACADEMY_BANNER": {
+        "LAB_TITLE": "oneBlade Lab",
+        "LAB_DESCRIPTION": "Elige tu camino, nosotros te acompañamos",
+        "GUIDE_TITLE": "Guías",
+        "GUIDE_DESCRIPTION": "para aspirantes a programadores"
+    },
+    "ACADEMY_DETAILS": {
+        "COURSE_CONTENTS_TITLE": "Contenidos del Curso:",
+        "REQUIREMENTS_TITLE": "Requisitos",
+        "RELATED_COURSES_TITLE": "Otros cursos interesantes",
+        "COURSE_DETAILS_TITLE": "Detalles del Curso",
+        "COURSE_CODE": "Código:",
+        "COURSE_DURATION": "Duración:",
+        "COURSE_MODE": "Modalidad:",
+        "COURSE_LESSONS": "Lecciones:",
+        "COURSE_TIME": "Tiempo:",
+        "COURSE_LEVEL": "Nivel:",
+        "FORM_DESCRIPTION": "Al completar el formulario presente, no realizarás directamente la compra del curso, sino que enviarás una solicitud de contacto. Nuestro equipo te contactará lo antes posible para proporcionarte toda la información necesaria, responder a tus preguntas y guiarte en el proceso de inscripción. ¡Estamos a tu disposición para cualquier aclaración! 😊",
+        "NEXT_CLASSES_TITLE": "Próximas clases",
+        "NO_DATES_MESSAGE": "Programación del calendario en curso. Escribe para obtener más detalles."
+    },
+    "ACADEMY_ONEBLADE": {
+        "TITLE": "Encuentra tu camino, estamos a tu lado.",
+        "INTRO": "Cada viaje comienza con una elección: descubrir, aprender, ponerse a prueba. Nuestros cursos están diseñados para aquellos que realmente quieren comprender este mundo, para aquellos que están impulsados por la curiosidad y el deseo de adquirir habilidades concretas.",
+        "BELIEF": "Creemos que el conocimiento y la pasión son más importantes que cualquier certificación. Las certificaciones pueden ser un valor añadido, pero lo que realmente importa es el aprendizaje real, la práctica y la comprensión de las metodologías.",
+        "NO_TITLES": "No otorgamos títulos, porque el título más importante es la competencia adquirida. No hacemos promesas de trabajos o garantías de inserción, porque no creemos en las ilusiones. Nuestro objetivo es formar realmente a las personas que quieren seguir y perseguir el conocimiento.",
+        "MISSION": "Nuestra misión no se limita a los estudiantes: creemos firmemente que la selección de los docentes también es un aspecto fundamental. Elegimos solo a profesionales que comparten nuestra filosofía, que creen en el valor de la formación auténtica y en el poder del conocimiento como herramienta de crecimiento personal y profesional.",
+        "READY": "Si estás listo para construir tu futuro con determinación y esfuerzo, entonces estamos aquí para guiarte paso a paso hacia tu objetivo. 🚀"
+    },
+    "TOP_BAR": {
+        "ABOUT_US": "Quién es oneBlade",
+        "BODY_RENTAL": "Body rental",
+        "ONEBLADE_LAB": "oneBlade LAB",
+        "CHOOSE_COURSE": "Elige el curso",
+        "GUIDES": "Guías",
+        "SELECT_LANGUAGE": "Seleccionar idioma",
+        "ITALIAN": "Italiano",
+        "ENGLISH": "Inglés",
+        "SPANISH": "Español",
+        "CHRISTMAS_GAME": "¡Juega conmigo!"
+    },
+    "CALL_SECTION": {
+        "TITLE": "Programa una llamada"
+    },
+    "GUIDE_BANNER_TOP": {
+        "TITLE": "Simple, práctico, efectivo: tu camino tech",
+        "SUBTITLE": "Desarrolla tus habilidades tech con cursos en línea orientados a la práctica. Comienza desde cero y aprende de manera rápida y práctica."
+    },
+    "COMPANY_ABOUT_US": {
+        "TITLE": "Quiénes Somos",
+        "INTRO": "Fundada con el objetivo de cerrar la brecha entre la demanda y la oferta de habilidades tecnológicas en el mercado italiano, oneBlade se destaca por su capacidad de ofrecer servicios integrados que van desde la creación de software personalizado hasta la formación de profesionales altamente cualificados. Nuestra sede principal está situada en Italia, y operamos en todo el territorio nacional para satisfacer las necesidades de una clientela diversificada.",
+        "CEO_NAME": "Guido Salzano",
+        "CEO_TITLE": "CEO oneBlade",
+        "HR_NAME": "Serena D'Angelo",
+        "HR_TITLE": "HR Manager & Co-Founder oneBlade",
+        "MISSION_TITLE": "Misión",
+        "MISSION_BODY": "La misión de oneBlade es promover la innovación tecnológica en Italia a través del desarrollo de soluciones de software de vanguardia y la formación de talentos capaces de enfrentar los desafíos del mercado moderno. Nos comprometemos a proporcionar a las empresas las herramientas necesarias para crecer y competir en un contexto global, ofreciendo al mismo tiempo a los profesionales las oportunidades de desarrollo y crecimiento que merecen.",
+        "SERVICES_TITLE": "Servicios Ofrecidos",
+        "SERVICE_1": "Desarrollo de Software Personalizado: Diseñamos y desarrollamos aplicaciones de software a medida, adaptadas a las necesidades específicas de nuestros clientes, utilizando las tecnologías más modernas y fiables.",
+        "SERVICE_2": "Academia de Formación: Ofrecemos cursos avanzados de programación y desarrollo de software, dirigidos tanto a principiantes como a profesionales que deseen actualizar sus habilidades. Nuestros programas de formación están estructurados para garantizar un aprendizaje práctico y aplicable de inmediato en el mundo laboral.",
+        "SERVICE_3": "Adquisición de Talento: Apoyamos a las empresas en la búsqueda y selección de profesionales altamente especializados en el sector de TI, garantizando un proceso de reclutamiento eficiente y enfocado.",
+        "WHY_CHOOSE_TITLE": "Por Qué Elegir oneBlade",
+        "WHY_CHOOSE_1": "Experiencia y Competencia: Nuestro equipo está compuesto por profesionales con años de experiencia en el sector tecnológico y de formación.",
+        "WHY_CHOOSE_2": "Enfoque Personalizado: Cada proyecto es único; por eso ofrecemos soluciones a medida que responden a las necesidades específicas de cada cliente.",
+        "WHY_CHOOSE_3": "Innovación Continua: Estamos constantemente actualizados sobre las últimas tendencias y tecnologías, garantizando a nuestros clientes soluciones de vanguardia.",
+        "WHY_CHOOSE_4": "Red de Talentos: Gracias a nuestra academia y a los servicios de adquisición de talento, disponemos de una amplia red de profesionales cualificados listos para satisfacer las necesidades del mercado.",
+        "TECHNOLOGIES_TITLE": "Tecnologías"
     }
 }
