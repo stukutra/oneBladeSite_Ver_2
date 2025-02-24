@@ -45,10 +45,8 @@ export class CoursesService {
               }
             });
             course.datecourse = futureDates;
-            console.log(`Filtered dates for course ${course.idCourse}:`, course.datecourse);
           });
         });
-        console.log('Filtered data:', data);
         return data;
       })
     );
