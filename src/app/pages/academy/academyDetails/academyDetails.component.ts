@@ -16,6 +16,9 @@ export class AcademyDetailsComponent implements OnInit {
   course: Course | undefined;
   sanitizedDescription: SafeHtml | undefined;
   relatedCourses: { title: string, idCourse: string }[] = [];
+  model: any = {
+    region: null
+  };
 
   constructor(
     private route: ActivatedRoute,
@@ -65,6 +68,11 @@ export class AcademyDetailsComponent implements OnInit {
         );
       })
     ).subscribe();
+  }
+
+  onRegionChange(regionId: number) {
+    console.log('Region changed in AcademyDetailsComponent:', regionId);
+    this.model.region = regionId;
   }
 
   private reloadCourseDetails(): void {

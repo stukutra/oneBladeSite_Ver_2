@@ -9,6 +9,7 @@ import { AcademyCaroselComponent } from './pages/academy/academyCarosel/academyC
 import { AcademyDetailsComponent } from './pages/academy/academyDetails/academyDetails.component';
 import { AcademyEndorserBannerComponent } from './pages/academy/academyEndorserBanner/academyEndorserBanner.component';
 import { AcademyFAQComponent } from './pages/academy/academyFAQ/academyFAQ.component';
+import { AcademyFundingComponent } from './pages/academy/academyFunding/academyFunding.component';
 import { AcademyReservationComponent } from './pages/academy/academyReservation/academyReservation.component';
 import { AcademyonebladeComponent } from './pages/academy/academyoneblade/academyoneblade.component';
 import { AgencyDetailsComponent } from './pages/agencyDetails/agencyDetails.component';
@@ -85,7 +86,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     AcademyEndorserBannerComponent,
     CompanyAboutUsComponent,
     AcademyFAQComponent,
-    RegistrationFormUserComponent
+    RegistrationFormUserComponent,
+    AcademyFundingComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,12 @@
+{
+    "finanziamenti": [
+        {
+            "id": 1,
+            "idregione": 9,
+            "nomeregione": "Lombardia",
+            "active": true,
+            "descrizione": "Finanziamento per lo sviluppo delle PMI",
+            "link": "https://example.com/finanziamento-abruzzo"
+        }
+    ]
+}

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
+
+import { AcademyFundingComponent } from '../academyFunding/academyFunding.component';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { NgForm } from '@angular/forms';
@@ -11,6 +13,8 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./academyReservation.component.scss']
 })
 export class AcademyReservationComponent implements OnInit {
+  @ViewChild(AcademyFundingComponent) academyFundingComponent!: AcademyFundingComponent;
+  @Output() regionChange = new EventEmitter<number>();
   public isopenPrivacyPolicyModalModalVisible: boolean = false;
   model: any = {
     name: '',
@@ -29,7 +33,12 @@ export class AcademyReservationComponent implements OnInit {
   modalMessage: string = '';
   regions: any[] = []; // Array to hold regions
 
-  constructor(private http: HttpClient, private route: ActivatedRoute, private regionsService: RegionsService, private translate: TranslateService) { }
+  constructor(
+    private http: HttpClient,
+    private route: ActivatedRoute,
+    private regionsService: RegionsService,
+    private translate: TranslateService
+  ) { }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
@@ -45,8 +54,13 @@ export class AcademyReservationComponent implements OnInit {
     });
   }
 
+  onRegionChange() {
+    console.log('Region changed:', this.model.region);
+    this.regionChange.emit(Number(this.model.region));
+  }
+
   onSubmit(form: NgForm) {
-    console.log('Modello al submit:', this.model);
+    console.log('Form submitted with model:', this.model);
     console.log('Valore privacy1:', this.model.privacy1);
     console.log('Valore privacy2:', this.model.privacy2);
 
@@ -94,6 +108,12 @@ export class AcademyReservationComponent implements OnInit {
         });
       }
     );
+
+    if (this.model.region) {
+      console.log('Setting idregione in AcademyFundingComponent:', this.model.region);
+      this.academyFundingComponent.idregione = Number(this.model.region);
+      this.academyFundingComponent.ngOnInit();
+    }
   }
 
   resetForm(form: NgForm) {
