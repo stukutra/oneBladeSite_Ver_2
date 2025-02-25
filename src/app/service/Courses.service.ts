@@ -9,12 +9,36 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class CoursesService {
-  private jsonUrl = 'assets/data/courses.json';
+  private baseJsonUrl = 'assets/data/courses';
 
   constructor(private http: HttpClient, private translate: TranslateService) { }
 
+  private getJsonUrl(): string {
+    const lang = this.translate.currentLang || this.translate.defaultLang;
+    return `${this.baseJsonUrl}_${lang}.json`;
+  }
+
+  private getMonthIndex(): { [key: string]: number } {
+    const lang = this.translate.currentLang || this.translate.defaultLang;
+    const monthIndex: { [key: string]: { [key: string]: number } } = {
+      'it': {
+        'Gennaio': 0, 'Febbraio': 1, 'Marzo': 2, 'Aprile': 3, 'Maggio': 4, 'Giugno': 5,
+        'Luglio': 6, 'Agosto': 7, 'Settembre': 8, 'Ottobre': 9, 'Novembre': 10, 'Dicembre': 11
+      },
+      'en': {
+        'January': 0, 'February': 1, 'March': 2, 'April': 3, 'May': 4, 'June': 5,
+        'July': 6, 'August': 7, 'September': 8, 'October': 9, 'November': 10, 'December': 11
+      },
+      'es': {
+        'Enero': 0, 'Febrero': 1, 'Marzo': 2, 'Abril': 3, 'Mayo': 4, 'Junio': 5,
+        'Julio': 6, 'Agosto': 7, 'Septiembre': 8, 'Octubre': 9, 'Noviembre': 10, 'Diciembre': 11
+      }
+    };
+    return monthIndex[lang];
+  }
+
   getCoursesActive(): Observable<any> {
-    return this.http.get(this.jsonUrl).pipe(
+    return this.http.get(this.getJsonUrl()).pipe(
       map((data: any) => {
         return data.categories
           .map((category: any) => ({
@@ -27,13 +51,10 @@ export class CoursesService {
   }
 
   getCoursesALL(): Observable<any> {
-    return this.http.get(this.jsonUrl).pipe(
+    return this.http.get(this.getJsonUrl()).pipe(
       map((data: any) => {
         const today = new Date();
-        const monthIndex: { [key: string]: number } = {
-          'Gennaio': 0, 'Febbraio': 1, 'Marzo': 2, 'Aprile': 3, 'Maggio': 4, 'Giugno': 5,
-          'Luglio': 6, 'Agosto': 7, 'Settembre': 8, 'Ottobre': 9, 'Novembre': 10, 'Dicembre': 11
-        };
+        const monthIndex = this.getMonthIndex();
         data.categories.forEach((category: any) => {
           category.courses.forEach((course: any) => {
             const futureDates: string[] = [];
@@ -82,7 +103,7 @@ export class CoursesService {
   }
 
   getRelatedCourses(idCourse: string): Observable<any> {
-    return this.http.get(this.jsonUrl).pipe(
+    return this.http.get(this.getJsonUrl()).pipe(
       map((data: any) => {
         for (let category of data.categories) {
           const course = category.courses.find((course: Course) => course.idCourse === idCourse);

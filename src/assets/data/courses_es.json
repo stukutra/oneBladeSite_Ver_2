@@ -1,0 +1,225 @@
+{
+    "categories": [
+        {
+            "title": "Desarrollo Web",
+            "courses": [
+                {
+                    "active": true,
+                    "idCourse": "CODBlade08",
+                    "title": "Fundamentos Web",
+                    "duration": "40 horas",
+                    "mode": "Online",
+                    "description": {
+                        "it": "<p><strong>Scopri come creare pagine web moderne e interattive</strong> partendo dalle basi! Questo corso ti guiderà nell’apprendimento di <strong>HTML, CSS e JavaScript</strong>, i tre pilastri fondamentali del web development. Imparerai a <em>costruire pagine ben strutturate</em> con <strong>HTML</strong>, a <em>renderle esteticamente accattivanti</em> con <strong>CSS</strong> e a <em>renderle dinamiche e interattive</em> grazie a <strong>JavaScript</strong>. Perfetto per chi vuole avvicinarsi alla programmazione web, <strong>sia per hobby che per lavoro</strong>. Alla fine del corso, sarai in grado di <strong>realizzare siti web responsivi e funzionali</strong>, pronti per essere pubblicati online!</p>",
+                        "en": "<p><strong>Learn how to create modern and interactive web pages</strong> from scratch! This course will guide you through learning <strong>HTML, CSS, and JavaScript</strong>, the three fundamental pillars of web development. You will learn to <em>build well-structured pages</em> with <strong>HTML</strong>, make them <em>visually appealing</em> with <strong>CSS</strong>, and make them <em>dynamic and interactive</em> with <strong>JavaScript</strong>. Perfect for those who want to get into web programming, <strong>either as a hobby or for work</strong>. By the end of the course, you will be able to <strong>create responsive and functional websites</strong>, ready to be published online!</p>",
+                        "es": "<p><strong>Aprende a crear páginas web modernas e interactivas</strong> desde cero! Este curso te guiará en el aprendizaje de <strong>HTML, CSS y JavaScript</strong>, los tres pilares fundamentales del desarrollo web. Aprenderás a <em>construir páginas bien estructuradas</em> con <strong>HTML</strong>, hacerlas <em>visualmente atractivas</em> con <strong>CSS</strong> y hacerlas <em>dinámicas e interactivas</em> con <strong>JavaScript</strong>. Perfecto para aquellos que quieren iniciarse en la programación web, <strong>ya sea como hobby o para trabajar</strong>. Al final del curso, serás capaz de <strong>crear sitios web responsivos y funcionales</strong>, listos para ser publicados en línea!</p>"
+                    },
+                    "lessons": 0,
+                    "time": "El curso está disponible desde las 18:00",
+                    "level": "Principiante/Intermedio",
+                    "descriptionFile": "assets/course_descriptions/CODBlade08.html",
+                    "nature": "Aprende a crear páginas web modernas con HTML, CSS y JavaScript",
+                    "overview": "Modo de curso en vivo",
+                    "datecourse": [
+                        "3 Marzo 2025",
+                        "10 Marzo 2025",
+                        "17 Marzo de 2025",
+                        "24 Marzo de 2025"
+                    ],
+                    "price": "000,00 €",
+                    "learning_outcomes": [],
+                    "requirements": [],
+                    "course_contents": []
+                }
+            ]
+        },
+        {
+            "title": "Inteligencia Artificial y Machine Learning",
+            "courses": [
+                {
+                    "active": true,
+                    "idCourse": "CODBlade03",
+                    "title": "IA Generativa",
+                    "duration": "40 horas",
+                    "mode": "Online",
+                    "description": {
+                        "it": "Comprendere i modelli di AI Generativa, le loro applicazioni aziendali e le implicazioni etiche e di sicurezza.",
+                        "en": "Understand Generative AI models, their business applications, and ethical and security implications.",
+                        "es": "Comprender los modelos de IA Generativa, sus aplicaciones empresariales y las implicaciones éticas y de seguridad."
+                    },
+                    "lessons": 0,
+                    "time": "El curso está disponible desde las 18:00",
+                    "level": "Principiante/Intermedio",
+                    "descriptionFile": "assets/course_descriptions/CODBlade03.html",
+                    "nature": "Descubre los modelos de IA Generativa y sus aplicaciones empresariales.",
+                    "overview": "Modo de curso en vivo",
+                    "datecourse": [
+                        "3 Marzo 2025",
+                        "10 Marzo 2025",
+                        "17 Marzo de 2025",
+                        "24 Marzo de 2025"
+                    ],
+                    "price": "000,00 €",
+                    "learning_outcomes": [],
+                    "requirements": [],
+                    "course_contents": []
+                }
+            ]
+        },
+        {
+            "title": "Ciberseguridad",
+            "courses": [
+                {
+                    "active": true,
+                    "idCourse": "CODBlade04",
+                    "title": "Ciberseguridad (CompTIA Security+)",
+                    "duration": "40 horas",
+                    "mode": "Online",
+                    "description": {
+                        "it": "Acquisisci le competenze essenziali della sicurezza informatica per proteggere reti e dati da minacce esterne, imparando strategie efficaci di difesa e prevenzione degli attacchi.",
+                        "en": "Acquire essential cybersecurity skills to protect networks and data from external threats, learning effective defense and attack prevention strategies.",
+                        "es": "Adquiere habilidades esenciales de ciberseguridad para proteger redes y datos de amenazas externas, aprendiendo estrategias efectivas de defensa y prevención de ataques."
+                    },
+                    "lessons": 0,
+                    "time": "El curso está disponible desde las 18:00",
+                    "level": "Principiante/Intermedio",
+                    "descriptionFile": "assets/course_descriptions/CODBlade04.html",
+                    "nature": "Adquiere habilidades esenciales de ciberseguridad para proteger redes y datos de amenazas externas, aprendiendo estrategias efectivas de defensa y prevención de ataques.",
+                    "overview": "Modo de curso en vivo",
+                    "datecourse": [
+                        "3 Marzo 2025",
+                        "10 Marzo 2025",
+                        "17 Marzo de 2025",
+                        "24 Marzo de 2025"
+                    ],
+                    "price": "299,00 €",
+                    "learning_outcomes": [],
+                    "requirements": [],
+                    "course_contents": []
+                }
+            ]
+        },
+        {
+            "title": "Metodologías y gestión de proyectos",
+            "courses": [
+                {
+                    "active": true,
+                    "idCourse": "CODBlade07",
+                    "title": "Metodologías ágiles",
+                    "duration": "12 horas",
+                    "mode": "Online",
+                    "description": {
+                        "it": "Scopri i segreti dell’Intelligenza Artificiale e dei sistemi che ti permetteranno di proiettarti direttamente nel futuro",
+                        "en": "Discover the secrets of Artificial Intelligence and the systems that will allow you to project yourself directly into the future.",
+                        "es": "Descubre los secretos de la Inteligencia Artificial y los sistemas que te permitirán proyectarte directamente al futuro."
+                    },
+                    "lessons": 0,
+                    "time": "El curso está disponible desde las 18:00",
+                    "level": "Principiante/Intermedio",
+                    "descriptionFile": "assets/course_descriptions/CODBlade07.html",
+                    "nature": "Profundiza en Scrum y las metodologías ágiles para la gestión de proyectos.",
+                    "overview": "Modo de curso en vivo",
+                    "datecourse": [
+                        "3 Marzo 2025",
+                        "10 Marzo 2025",
+                        "17 Marzo de 2025",
+                        "24 Marzo de 2025"
+                    ],
+                    "price": "000,00 €",
+                    "learning_outcomes": [],
+                    "requirements": [],
+                    "course_contents": []
+                },
+                {
+                    "active": true,
+                    "idCourse": "CODBlade02",
+                    "title": "Design Thinking, Transformación Digital",
+                    "duration": "9 horas",
+                    "mode": "Online",
+                    "description": {
+                        "it": "Scopri i segreti dell’Intelligenza Artificiale e dei sistemi che ti permetteranno di proiettarti direttamente nel futuro",
+                        "en": "Discover the secrets of Artificial Intelligence and the systems that will allow you to project yourself directly into the future.",
+                        "es": "Descubre los secretos de la Inteligencia Artificial y los sistemas que te permitirán proyectarte directamente al futuro."
+                    },
+                    "lessons": 0,
+                    "time": "El curso está disponible desde las 18:00",
+                    "level": "Principiante/Intermedio",
+                    "descriptionFile": "assets/course_descriptions/CODBlade02.html",
+                    "nature": "Innovación y transformación digital",
+                    "overview": "Modo de curso en vivo",
+                    "datecourse": [
+                        "3 Marzo 2025",
+                        "10 Marzo 2025",
+                        "17 Marzo de 2025",
+                        "24 Marzo de 2025"
+                    ],
+                    "price": "000,00 €",
+                    "learning_outcomes": [],
+                    "requirements": [],
+                    "course_contents": []
+                }
+            ]
+        },
+        {
+            "title": "Gestión de bases de datos",
+            "courses": [
+                {
+                    "active": true,
+                    "idCourse": "CODBlade09",
+                    "title": "SQL",
+                    "duration": "40 horas",
+                    "mode": "Online",
+                    "description": {
+                        "it": "Acquisire competenze nell’uso del linguaggio SQL per gestire, interrogare e manipolare database relazionali in modo efficiente ed efficace.",
+                        "en": "Acquire skills in using SQL language to manage, query, and manipulate relational databases efficiently and effectively.",
+                        "es": "Adquiere habilidades en el uso del lenguaje SQL para gestionar, consultar y manipular bases de datos relacionales de manera eficiente y efectiva."
+                    },
+                    "lessons": 0,
+                    "time": "El curso está disponible desde las 18:00",
+                    "level": "Principiante/Intermedio",
+                    "descriptionFile": "assets/course_descriptions/CODBlade09.html",
+                    "nature": "Consulta y gestión de bases de datos",
+                    "overview": "Modo de curso en vivo",
+                    "datecourse": [
+                        "3 Marzo 2025",
+                        "10 Marzo 2025",
+                        "17 Marzo de 2025",
+                        "24 Marzo de 2025"
+                    ],
+                    "price": "000,00 €",
+                    "learning_outcomes": [],
+                    "requirements": [],
+                    "course_contents": []
+                },
+                {
+                    "active": true,
+                    "idCourse": "CODBlade10",
+                    "title": "Data Warehousing",
+                    "duration": "40 horas",
+                    "mode": "Online",
+                    "description": {
+                        "it": "Approfondire i concetti di Data Warehousing, dalla progettazione alla gestione, ottimizzazione e sicurezza.",
+                        "en": "Deepen your understanding of Data Warehousing concepts, from design to management, optimization, and security.",
+                        "es": "Profundiza en los conceptos de Data Warehousing, desde el diseño hasta la gestión, optimización y seguridad."
+                    },
+                    "lessons": 0,
+                    "time": "El curso está disponible desde las 18:00",
+                    "level": "Principiante/Intermedio",
+                    "descriptionFile": "assets/course_descriptions/CODBlade10.html",
+                    "nature": "Profundiza en el diseño, gestión y seguridad de Data Warehouses",
+                    "overview": "Modo de curso en vivo",
+                    "datecourse": [
+                        "3 Marzo 2025",
+                        "10 Marzo 2025",
+                        "17 Marzo de 2025",
+                        "24 Marzo de 2025"
+                    ],
+                    "price": "000,00 €",
+                    "learning_outcomes": [],
+                    "requirements": [],
+                    "course_contents": []
+                }
+            ]
+        }
+    ]
+}

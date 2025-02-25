@@ -1,6 +1,7 @@
 import { Component, HostListener } from '@angular/core';
 import { Course, Language } from '../../models/course.model';
 
+import { CoursesService } from 'src/app/service/Courses.service';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -15,7 +16,7 @@ export class TopBarComponent {
 
   isChristmasModalVisible: boolean = false;
 
-  constructor(private router: Router, private translate: TranslateService) {
+  constructor(private router: Router, private translate: TranslateService, private coursesService: CoursesService) {
     this.translate.addLangs(['en', 'it', 'es']);
     this.translate.setDefaultLang('it');
   }
@@ -55,7 +56,9 @@ export class TopBarComponent {
   changeLanguage(event: Event) {
     const selectElement = event.target as HTMLSelectElement;
     const lang = selectElement.value;
-    this.translate.use(lang);
+    this.translate.use(lang).subscribe(() => {
+      this.coursesService.getCoursesALL().subscribe(); // Reload courses data
+    });
     this.closeMenu();
   }
 

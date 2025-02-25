@@ -17,11 +17,15 @@ export class AcademyonebladeComponent implements OnInit {
 
   constructor(private coursesService: CoursesService, private sanitizer: DomSanitizer, private translate: TranslateService) {
     this.translate.onLangChange.subscribe(() => {
-      this.loadCourseDescriptions();
+      this.loadCourses();
     });
   }
 
   ngOnInit(): void {
+    this.loadCourses();
+  }
+
+  private loadCourses(): void {
     this.coursesService.getCoursesActive().subscribe(data => {
       if (!data || !Array.isArray(data)) {
         console.error("Errore: il service non restituisce dati validi", data);

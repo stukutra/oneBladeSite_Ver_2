@@ -24,9 +24,7 @@ export class AcademyDetailsComponent implements OnInit {
     private translate: TranslateService
   ) {
     this.translate.onLangChange.subscribe(() => {
-      if (this.course?.descriptionFile) {
-        this.loadCourseDescription(this.course.descriptionFile);
-      }
+      this.reloadCourseDetails();
     });
   }
 
@@ -67,6 +65,38 @@ export class AcademyDetailsComponent implements OnInit {
         );
       })
     ).subscribe();
+  }
+
+  private reloadCourseDetails(): void {
+    if (this.course?.idCourse) {
+      this.coursesService.getCoursesALL().pipe(
+        map((data: { categories: { courses: Course[]; }[]; }) => {
+          if (!data || !Array.isArray(data.categories)) {
+            console.error("Errore: il service non ha restituito dati validi", data);
+            return [];
+          }
+
+          this.course = data.categories
+            .flatMap((category: { courses: Course[] }) => category.courses)
+            .find((course: Course) => course.idCourse === this.course?.idCourse);
+
+          if (!this.course) {
+            //console.error("Errore: Nessun corso trovato con ID:", this.course?.idCourse);
+            return [];
+          }
+
+          // Carica la descrizione HTML dinamicamente
+          if (this.course.descriptionFile) {
+            this.loadCourseDescription(this.course.descriptionFile);
+          }
+
+          // Carica i corsi correlati
+          this.getRelativeCourse(this.course.idCourse);
+
+          return [];
+        })
+      ).subscribe();
+    }
   }
 
   // Metodo per caricare la descrizione HTML
