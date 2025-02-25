@@ -1,9 +1,11 @@
-<div *ngIf="funding">
+<div *ngIf="idregione !== null">
   <h2>Finanziamento Attivo</h2>
-  <p>Regione: {{ funding.nomeregione }}</p>
-  <p>Descrizione: {{ funding.descrizione }}</p>
-  <a [href]="funding.link" target="_blank">Maggiori informazioni</a>
-</div>
-<div *ngIf="!funding">
-  <p>Nessun finanziamento attivo per questa regione.</p>
+  <div *ngIf="funding">
+    <p>Regione: {{ funding.nomeregione }}</p>
+    <p>Descrizione: {{ funding.descrizione }}</p>
+    <a [href]="funding.link" target="_blank">Maggiori informazioni</a>
+  </div>
+  <div *ngIf="!funding">
+    <p>Al momento non ci sono finanziamenti disponibili attivi sulla regione scelta.</p>
+  </div>
 </div>
