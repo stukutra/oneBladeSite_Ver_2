@@ -60,7 +60,11 @@
         },
         "QUESTIONARIE": {
             "TITLE": "¿Te gustaría enviarnos una prueba rápida?"
-        }
+        },
+        "VALIDATION_ERROR": "Por favor, completa todos los campos requeridos y carga un archivo válido.",
+        "SUBMISSION_ERROR": "Ocurrió un error durante el envío de tu solicitud",
+        "SERVER_ERROR": "Ocurrió un error durante la comunicación con el servidor.",
+        "SUCCESS_MESSAGE": "Tu solicitud ha sido enviada con éxito. ¡Te contactaremos pronto!"
     },
     "CAROUSEL": {
         "SLIDE_1": {

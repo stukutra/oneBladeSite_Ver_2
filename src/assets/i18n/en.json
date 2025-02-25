@@ -60,7 +60,11 @@
       "TITLE": "Do you want to send us a short test?"
     },
     "TITLESOFTWARE": "Rely on us for comprehensive support in application development",
-    "SUBTITLESOFTWARE": "Does your team need a partner to accelerate software development?"
+    "SUBTITLESOFTWARE": "Does your team need a partner to accelerate software development?",
+    "VALIDATION_ERROR": "Please fill in all required fields and upload a valid file.",
+    "SUBMISSION_ERROR": "An error occurred during the submission of your request",
+    "SERVER_ERROR": "An error occurred while communicating with the server.",
+    "SUCCESS_MESSAGE": "Your request has been successfully sent. We will contact you shortly!"
   },
   "CAROUSEL": {
     "SLIDE_1": {

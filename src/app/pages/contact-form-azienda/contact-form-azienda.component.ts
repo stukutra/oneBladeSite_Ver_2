@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { NgForm } from '@angular/forms';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact-form-azienda',
@@ -20,12 +21,16 @@ export class ContactFormAziendaComponent {
   errorMessage: string | null = null;
   isModalVisible: boolean = false;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private translate: TranslateService) { }
 
   onSubmit(form: NgForm) {
     if (form.invalid) {
-      this.errorMessage = 'Per favore, compila tutti i campi richiesti e carica un file valido.';
-      this.fileError = this.model.file ? null : 'Il file è richiesto';
+      this.translate.get('FORM.VALIDATION_ERROR').subscribe((res: string) => {
+        this.errorMessage = res;
+      });
+      this.translate.get('FORM.FILE_REQUIRED').subscribe((res: string) => {
+        this.fileError = this.model.file ? null : res;
+      });
       this.showModal('errorModal');  // Mostra la modale di errore
       return;
     }
@@ -41,19 +46,23 @@ export class ContactFormAziendaComponent {
     this.http.post('https://www.oneblade.it/sendEmailSenzaAllegato.php', formData).subscribe(
       (response: any) => {
         if (response.status === 'success') {
-          this.successMessage = 'La tua richiesta è stata inviata con successo. Ti contatteremo a breve!';
+          this.translate.get('FORM.SUCCESS_MESSAGE').subscribe((res: string) => {
+            this.successMessage = res;
+          });
           this.errorMessage = null;
           this.fileError = null;  // Cancella il messaggio di errore del file
           this.resetForm(form);  // Resetta il form
           this.showModal('successModal');  // Mostra la modale di successo
         } else {
-          this.errorMessage = response.message || 'Si è verificato un errore durante l\'invio della tua richiesta';
+          this.errorMessage = response.message || this.translate.instant('FORM.SUBMISSION_ERROR');
           this.successMessage = null;
           this.showModal('errorModal');  // Mostra la modale di errore
         }
       },
       (error) => {
-        this.errorMessage = 'Si è verificato un errore durante la comunicazione con il server.';
+        this.translate.get('FORM.SERVER_ERROR').subscribe((res: string) => {
+          this.errorMessage = res;
+        });
         this.successMessage = null;
         this.showModal('errorModal');  // Mostra la modale di errore
       }
