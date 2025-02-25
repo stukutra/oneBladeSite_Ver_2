@@ -64,7 +64,10 @@
     "VALIDATION_ERROR": "Please fill in all required fields and upload a valid file.",
     "SUBMISSION_ERROR": "An error occurred during the submission of your request",
     "SERVER_ERROR": "An error occurred while communicating with the server.",
-    "SUCCESS_MESSAGE": "Your request has been successfully sent. We will contact you shortly!"
+    "SUCCESS_MESSAGE": "Your request has been successfully sent. We will contact you shortly!",
+    "PRIVACY_ERROR": "You must authorize the processing of personal data to proceed.",
+    "FILE_TOO_LARGE": "The file exceeds the size of 3 MB.",
+    "NO_REPORT": "No report available"
   },
   "CAROUSEL": {
     "SLIDE_1": {

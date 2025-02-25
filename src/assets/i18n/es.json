@@ -64,7 +64,10 @@
         "VALIDATION_ERROR": "Por favor, completa todos los campos requeridos y carga un archivo válido.",
         "SUBMISSION_ERROR": "Ocurrió un error durante el envío de tu solicitud",
         "SERVER_ERROR": "Ocurrió un error durante la comunicación con el servidor.",
-        "SUCCESS_MESSAGE": "Tu solicitud ha sido enviada con éxito. ¡Te contactaremos pronto!"
+        "SUCCESS_MESSAGE": "Tu solicitud ha sido enviada con éxito. ¡Te contactaremos pronto!",
+        "PRIVACY_ERROR": "Debes autorizar el tratamiento de datos personales para proceder.",
+        "FILE_TOO_LARGE": "El archivo supera el tamaño de 3 MB.",
+        "NO_REPORT": "No hay informe disponible"
     },
     "CAROUSEL": {
         "SLIDE_1": {
