@@ -3,99 +3,101 @@ header('Content-Type: application/json');
 // header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: POST, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With");
-// Impostazioni email
-$to = "business@oneblade.it"; // Email destinatario principale
+
+// Email settings
+$to = "business@oneblade.it"; // Main recipient email
 $api_key = "7F3kH#r8!wL5tVxZ2Q9p^nGjR@cM1dP6";
-$from="noreply@oneblade.it";
-// Controllo che i dati siano stati inviati tramite POST
+$from = "noreply@oneblade.it";
+
+// Check that data has been sent via POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Verifica della chiave API
+    // Verify API key
     $received_api_key = $_POST['api_key'] ?? '';
-    
+
     if ($received_api_key !== $api_key) {
-        echo json_encode(["status" => "error", "message" => "Autenticazione fallita."]);
+        echo json_encode(["status" => "error", "message" => "Authentication failed."]);
         exit();
     }
 
-    // Ricevi i dati dal form
+    // Receive data from the form
     $name = $_POST['name'] ?? '';
     $telephone = $_POST['telephone'] ?? '';
     $email = $_POST['email'] ?? '';
     $course = $_POST['course'] ?? '';
     $region = $_POST['region'] ?? ''; // New field for region
-    $privacy_mandatory = isset($_POST['privacy1']) ? "Accettato ✅" : "NON Accettato ❌";
-    $privacy_optional = isset($_POST['privacy2']) ? "Accettato ✅" : "NON Accettato ❌";
+    $privacy_mandatory = isset($_POST['privacy1']) ? "Accepted ✅" : "NOT Accepted ❌";
+    $privacy_optional = isset($_POST['privacy2']) ? "Accepted ✅" : "NOT Accepted ❌";
 
     if (empty($email)) {
-        echo json_encode(["status" => "error", "message" => "Il campo 'Email' è richiesto."]);
+        echo json_encode(["status" => "error", "message" => "The 'Email' field is required."]);
         exit();
     }
 
     if (empty($region)) {
-        echo json_encode(["status" => "error", "message" => "Il campo 'Regione' è richiesto."]);
+        echo json_encode(["status" => "error", "message" => "The 'Region' field is required."]);
         exit();
     }
 
-    // Se il consenso obbligatorio non è accettato, blocca l'invio
-    if ($privacy_mandatory === "NON Accettato ❌") {
-        echo json_encode(["status" => "error", "message" => "Devi accettare il consenso obbligatorio per procedere."]);
+    // If mandatory consent is not accepted, block the submission
+    if ($privacy_mandatory === "NOT Accepted ❌") {
+        echo json_encode(["status" => "error", "message" => "You must accept the mandatory consent to proceed."]);
         exit();
     }
 
-    // Oggetto della mail
-    $subject = "Prenotazione corso oneBladeLAB - $course";
+    // Email subject
+    $subject = "Course reservation oneBladeLAB - $course";
 
-    // Corpo del messaggio per l'azienda
-    $body = "📌 **Nuova prenotazione per il corso \"$course\"**.\n\n";
-    $body .= "🧑 Nome: $name\n";
-    $body .= "📞 Telefono: $telephone\n";
+    // Email body for the company
+    $body = "📌 **New reservation for the course \"$course\"**.\n\n";
+    $body .= "🧑 Name: $name\n";
+    $body .= "📞 Phone: $telephone\n";
     $body .= "📧 Email: $email\n";
-    $body .= "🌍 Regione: $region\n\n"; // Add region to the email body
+    $body .= "🌍 Region: $region\n\n"; // Add region to the email body
 
-    // Informazioni sulla privacy
-    $body .= "🔐 **Consensi privacy:**\n";
-    $body .= "- Consenso Obbligatorio: $privacy_mandatory\n";
-    $body .= "- Consenso Facoltativo: $privacy_optional\n\n";
+    // Privacy information
+    $body .= "🔐 **Privacy consents:**\n";
+    $body .= "- Mandatory Consent: $privacy_mandatory\n";
+    $body .= "- Optional Consent: $privacy_optional\n\n";
 
-    // Firma dell'email
+    // Email signature
     $signature = "------------------------------------------\n";
     $signature .= "oneBlade S.r.l.\n";
     $signature .= "Via Di Valle Lupare 10, 00148\n";
     $signature .= "P.IVA/C.F. 16510411008\n";
     $signature .= "https://www.oneblade.it\n";
     $signature .= "info@oneblade.it\n\n";
-    $signature .= "*Rispetta l'ambiente - È veramente necessario stampare questa e-mail?*\n";
+    $signature .= "*Respect the environment - Is it really necessary to print this email?*\n";
 
     $body .= $signature;
 
-    // Headers dell'email
+    // Email headers
     $headers = "From: $from\r\n";
     $headers .= "Reply-To: $from\r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
-    // Invia l'email all'azienda
+    // Send email to the company
     $sent_to_company = mail($to, $subject, $body, $headers);
 
-    // **Invio della conferma all'utente**
-    $customer_subject = "Conferma prenotazione corso - $course";
-    $customer_body = "Gentile $name,\n\n";
-    $customer_body .= "Grazie per aver effettuato la prenotazione per il corso \"$course\" su OneBladeLAB.\n\n";
-    $customer_body .= "A breve verrai contattato per ricevere tutti i dettagli relativi alla tua partecipazione.\n";
-    $customer_body .= "Se hai domande, non esitare a contattarci.\n\n";
-    $customer_body .= "🔐 **Consensi privacy forniti:**\n";
-    $customer_body .= "- Consenso Obbligatorio: $privacy_mandatory\n";
-    $customer_body .= "- Consenso Facoltativo: $privacy_optional\n\n";
+    // **Send confirmation to the user**
+    $customer_subject = "Course reservation confirmation - $course";
+    $customer_body = "Dear $name,\n\n";
+    $customer_body .= "Thank you for reserving the course \"$course\" on OneBladeLAB.\n\n";
+    $customer_body .= "You will be contacted shortly to receive all the details regarding your participation.\n";
+    $customer_body .= "If you have any questions, please do not hesitate to contact us.\n\n";
+    $customer_body .= "🔐 **Provided privacy consents:**\n";
+    $customer_body .= "- Mandatory Consent: $privacy_mandatory\n";
+    $customer_body .= "- Optional Consent: $privacy_optional\n\n";
     $customer_body .= $signature;
 
-    // Invia l'email di conferma al cliente
+    // Send confirmation email to the customer
     $sent_to_customer = mail($email, $customer_subject, $customer_body, $headers);
 
     if ($sent_to_company && $sent_to_customer) {
-        echo json_encode(["status" => "success", "message" => "Email inviata con successo!"]);
+        echo json_encode(["status" => "success", "message" => "Email sent successfully!"]);
     } else {
-        echo json_encode(["status" => "error", "message" => "Errore nell'invio dell'email."]);
+        echo json_encode(["status" => "error", "message" => "Error sending email."]);
     }
 } else {
-    echo json_encode(["status" => "error", "message" => "Richiesta non valida."]);
+    echo json_encode(["status" => "error", "message" => "Invalid request."]);
 }
 ?>
