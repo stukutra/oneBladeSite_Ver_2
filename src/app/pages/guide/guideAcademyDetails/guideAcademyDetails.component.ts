@@ -4,6 +4,7 @@ import { Observable, catchError, of } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
 import { Guide } from 'src/app/models/guide.model';
 import { GuideService } from 'src/app/service/guide.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-guideAcademyDetails',
@@ -11,10 +12,24 @@ import { GuideService } from 'src/app/service/guide.service';
   styleUrls: ['./guideAcademyDetails.component.scss']
 })
 export class GuideAccademyDetailsComponent implements OnInit {
-  guide$!: Observable<Guide | undefined>; 
-  constructor(private route: ActivatedRoute, private guideService: GuideService) { }
+  guide$!: Observable<Guide | undefined>;
+
+  constructor(
+    private route: ActivatedRoute,
+    private guideService: GuideService,
+    private translate: TranslateService
+  ) { }
 
   ngOnInit(): void {
+    this.loadGuide();
+
+    // 🔹 Ricarica la guida quando cambia la lingua
+    this.translate.onLangChange.subscribe(() => {
+      this.loadGuide();
+    });
+  }
+
+  loadGuide(): void {
     const guideTitle = this.route.snapshot.paramMap.get('title');
 
     console.log('Titolo ricevuto dalla URL:', guideTitle); // 🔍 Debug

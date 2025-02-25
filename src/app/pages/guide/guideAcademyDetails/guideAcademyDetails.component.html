@@ -1,6 +1,6 @@
 <!-- <app-guideBannerTop></app-guideBannerTop> -->
 <app-image-carousel></app-image-carousel>
-<div class="container mt-5">  
+<div class="container mt-5">
   <ng-container *ngIf="guide$ | async as guide; else loading">
     <h1 class="text-center text-primary-oneblade">{{ guide.title }}</h1>
     <img [src]="guide.image" alt="{{ guide.title }}" class="img-fluid d-block mx-auto mt-3 mb-4 rounded" width="30%">
@@ -8,7 +8,7 @@
     <p class="lead text-center">{{ guide.description }}</p>
 
     <div class="topics mt-5">
-      <h2 class="text-center mb-4">Argomenti trattati</h2>
+      <h2 class="text-center mb-4">{{ 'GUIDE_ACCADEMY.TOPICS' | translate }}</h2>
 
       <div class="accordion" id="topicAccordion">
         <div class="accordion-item" *ngFor="let topic of guide.topics; let i = index">
@@ -30,11 +30,9 @@
   </ng-container>
 
   <ng-template #loading>
-    <p class="text-center text-muted">Caricamento...</p>
+    <p class="text-center text-muted">{{ 'GUIDE_ACCADEMY.LOADING' | translate }}</p>
   </ng-template>
 </div>
-
-
 
 <app-guideList></app-guideList>
 <app-infooneBlade></app-infooneBlade>
