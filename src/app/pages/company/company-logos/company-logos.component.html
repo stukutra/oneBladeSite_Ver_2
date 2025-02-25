@@ -1,12 +1,20 @@
 <div class="container">
-  <div id="companyCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000"
+  <div id="companyCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000"
     data-bs-pause="false">
     <div class="carousel-inner">
-      <div *ngFor="let slide of getSlides(); let isFirst = first" class="carousel-item" [class.active]="isFirst">
+      <div *ngFor="let slide of slides; let i = index" class="carousel-item" [class.active]="i === currentSlideIndex">
         <div class="logo-item" *ngFor="let logo of slide">
           <img [src]="logo.src" [alt]="logo.alt" class="d-block w-100" alt="" />
         </div>
       </div>
     </div>
+    <a class="carousel-control-prev" role="button" (click)="prevSlide()">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" role="button" (click)="nextSlide()">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
   </div>
 </div>

@@ -10,17 +10,19 @@
   gap: $logo-item-padding; // Spaziatura tra i loghi
   padding: $carousel-item-padding;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  transform: scale(0.95);
 }
 
 .carousel-item.active {
   opacity: 1;
   position: relative; // Porta in primo piano l'elemento attivo
   z-index: 1;
+  transform: scale(1);
 }
 
 // Numero di loghi per riga basato sulla larghezza dello schermo

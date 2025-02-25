@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-company-logos',
@@ -34,10 +34,12 @@ export class CompanyLogosComponent implements OnInit {
   ];
 
   logosPerSlide: number = 4;
+  currentSlideIndex: number = 0;
+  slides: any[][] = [];
 
   ngOnInit(): void {
-    // Imposta il valore iniziale per i loghi per slide
     this.setLogosPerSlide();
+    this.slides = this.getSlides();
   }
 
   getSlides(): any[][] {
@@ -46,6 +48,21 @@ export class CompanyLogosComponent implements OnInit {
       slides.push(this.logos.slice(i, i + this.logosPerSlide));
     }
     return slides;
+  }
+
+  nextSlide() {
+    this.currentSlideIndex = (this.currentSlideIndex + 1) % this.slides.length;
+  }
+
+  prevSlide() {
+    this.currentSlideIndex = (this.currentSlideIndex - 1 + this.slides.length) % this.slides.length;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.setLogosPerSlide();
+    this.slides = this.getSlides();
+    this.currentSlideIndex = 0; // Reset to the first slide on resize
   }
 
   private setLogosPerSlide() {
