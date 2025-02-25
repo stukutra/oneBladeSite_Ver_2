@@ -1,8 +1,8 @@
-<div *ngIf="idregione !== null">
+<div *ngIf="idregione !== null" class="funding-box">
   <h2>Finanziamento Attivo</h2>
   <div *ngIf="funding">
     <p>Regione: {{ funding.nomeregione }}</p>
-    <p>Descrizione: {{ funding.descrizione }}</p>
+    <p [innerHTML]="funding.descrizione"></p>
     <a [href]="funding.link" target="_blank">Maggiori informazioni</a>
   </div>
   <div *ngIf="!funding">
