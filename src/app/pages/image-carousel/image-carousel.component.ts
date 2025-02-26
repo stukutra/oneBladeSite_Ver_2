@@ -2,6 +2,14 @@ import { Component, OnInit } from '@angular/core';
 
 import { CoursesService } from '../../service/Courses.service';
 
+interface Slide {
+  title: string;
+  subtitle: string;
+  image: string;
+  alt: string;
+  link?: string;
+}
+
 @Component({
   selector: 'app-image-carousel',
   templateUrl: './image-carousel.component.html',
@@ -9,7 +17,7 @@ import { CoursesService } from '../../service/Courses.service';
 })
 export class ImageCarouselComponent implements OnInit {
   currentSlide = 0;
-  slides = [
+  slides: Slide[] = [
     { title: 'CAROUSEL.SLIDE_1.TITLE', subtitle: 'CAROUSEL.SLIDE_1.SUBTITLE', image: './assets/slide/Slide_1.jpg', alt: 'Description of Slide 1' },
     { title: 'CAROUSEL.SLIDE_2.TITLE', subtitle: 'CAROUSEL.SLIDE_2.SUBTITLE', image: './assets/slide/Slide_1.jpg', alt: 'Description of Slide 2' },
     { title: 'CAROUSEL.SLIDE_3.TITLE', subtitle: 'CAROUSEL.SLIDE_3.SUBTITLE', image: './assets/slide/Slide_1.jpg', alt: 'Description of Slide 3' }
@@ -36,7 +44,8 @@ export class ImageCarouselComponent implements OnInit {
             title: course.title,
             subtitle: course.nature,
             image: './assets/slide/Slide_1.jpg', // Use a default image or course-specific image if available
-            alt: `Description of ${course.title}`
+            alt: `Description of ${course.title}`,
+            link: `AcademyDetails/${course.idCourse}`
           });
         });
       });

@@ -5,6 +5,9 @@
       <div class="carousel-caption-overlay">
         <h2 class="carousel-title">{{ slide.title | translate }}</h2>
         <p class="carousel-subtitle">{{ slide.subtitle | translate }}</p>
+        <ng-container *ngIf="slide.link">
+          <a [routerLink]="slide.link" class="btn btn-primary">Scopri di più</a>
+        </ng-container>
       </div>
     </div>
   </div>
