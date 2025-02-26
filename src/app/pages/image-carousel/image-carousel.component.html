@@ -1,7 +1,7 @@
 <div id="customCarousel" class="carousel slide">
   <div class="carousel-inner">
     <div *ngFor="let slide of slides; let i = index" [ngClass]="{'carousel-item': true, 'active': i === currentSlide}">
-      <img [src]="slide.image" class="d-block w-100" alt="">
+      <img [src]="slide.image" class="d-block w-100" alt="{{ slide.alt }}">
       <div class="carousel-caption-overlay">
         <h2 class="carousel-title">{{ slide.title | translate }}</h2>
         <p class="carousel-subtitle">{{ slide.subtitle | translate }}</p>
