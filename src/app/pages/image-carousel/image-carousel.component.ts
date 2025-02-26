@@ -19,7 +19,7 @@ export class ImageCarouselComponent implements OnInit {
   currentSlide = 0;
   slides: Slide[] = [
     { title: 'CAROUSEL.SLIDE_1.TITLE', subtitle: 'CAROUSEL.SLIDE_1.SUBTITLE', image: './assets/slide/Slide_1.jpg', alt: 'Description of Slide 1' },
-    { title: 'CAROUSEL.SLIDE_2.TITLE', subtitle: 'CAROUSEL.SLIDE_2.SUBTITLE', image: './assets/slide/Slide_1.jpg', alt: 'Description of Slide 2' },
+    { title: 'CAROUSEL.SLIDE_2.TITLE', subtitle: 'CAROUSEL.SLIDE_2.SUBTITLE', image: './assets/slide/Slide_2.jpg', alt: 'Description of Slide 2' },
     { title: 'CAROUSEL.SLIDE_3.TITLE', subtitle: 'CAROUSEL.SLIDE_3.SUBTITLE', image: './assets/slide/Slide_1.jpg', alt: 'Description of Slide 3' }
   ];
 
@@ -41,7 +41,7 @@ export class ImageCarouselComponent implements OnInit {
       data.forEach((category: any) => {
         category.courses.forEach((course: any) => {
           this.slides.push({
-            title: course.title,
+            title: "Corso di " + course.title,
             subtitle: course.nature,
             image: './assets/slide/Slide_1.jpg', // Use a default image or course-specific image if available
             alt: `Description of ${course.title}`,
