@@ -7,9 +7,11 @@ import { CompanyAboutUsComponent } from './pages/company/companyAboutUs/companyA
 import { GuideAccademyDetailsComponent } from './pages/guide/guideAcademyDetails/guideAcademyDetails.component';
 import { GuideaccademyComponent } from './pages/guide/guideaccademy/guideaccademy.component';
 import { HomeComponent } from './layout/home/home.component';
+import { LoginComponent } from './auth/login/login.component';
 import { NgModule } from '@angular/core';
 import { OutsourcingInfoComponent } from './pages/outsourcing/outsourcingInfo/outsourcingInfo.component';
 import { QuestionnaireComponent } from './pages/questionnaire/questionnaire.component';
+import { RegisterComponent } from './auth/register/register.component';
 import { SoftwareHouseComponent } from './pages/softwareHouse/softwareHouse.component';
 
 const routes: Routes = [
@@ -24,6 +26,8 @@ const routes: Routes = [
   { path: 'outsourcinginfo', component: OutsourcingInfoComponent },
   { path: 'aboutus', component: CompanyAboutUsComponent },
   { path: 'academyFAQ', component: AcademyFAQComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 

@@ -50,7 +50,10 @@
             "VAT_INVALID": "La partita IVA non è valida",
             "ROLE_REQUIRED": "Il ruolo è un campo richiesto",
             "FILE_REQUIRED": "Il file è richiesto",
-            "REGION_REQUIRED": "La regione è un campo richiesto"
+            "REGION_REQUIRED": "La regione è un campo richiesto",
+            "PASSWORD_REQUIRED": "La password è un campo richiesto",
+            "CELLULARE_REQUIRED": "Il cellulare è un campo richiesto",
+            "COGNOME_REQUIRED": "Il cognome è un campo richiesto"
         },
         "BUTTON_SUBMIT": "Invia la tua candidatura",
         "BUTTON_RESERVATIONACADEMY": "Prenota",
@@ -133,7 +136,10 @@
         "ITALIAN": "Italiano",
         "ENGLISH": "Inglese",
         "SPANISH": "Spagnolo",
-        "CHRISTMAS_GAME": "Gioca con me!"
+        "CHRISTMAS_GAME": "Gioca con me!",
+        "ACCOUNT": "Account",
+        "LOGIN": "Accedi",
+        "REGISTER": "Registrati"
     },
     "CALL_SECTION": {
         "TITLE": "Fissa una Call"
@@ -220,5 +226,23 @@
         "ANSWER_6": "<strong>Sì!</strong> Alla fine del corso riceverai un <strong>attestato di partecipazione rilasciato da OneBlade</strong>, a condizione che tu abbia frequentato almeno il <strong>70% delle lezioni</strong>. Questo certificato rappresenta un valore aggiunto per il tuo curriculum e dimostra la tua preparazione nel settore.",
         "QUESTION_7": "Posso seguire il corso mentre lavoro o studio?",
         "ANSWER_7": "<strong>Sì!</strong> Tutti i nostri corsi sono organizzati in orari serali, <strong>dopo le 18:00</strong>, per permettere a chi lavora o studia di seguirli senza difficoltà. Sappiamo quanto sia importante conciliare formazione e impegni quotidiani, ed è per questo che offriamo flessibilità e supporto per aiutarti a raggiungere i tuoi obiettivi professionali."
+    },
+    "LOGIN": {
+        "TITLE": "Accedi",
+        "EMAIL": "Email",
+        "PASSWORD": "Password",
+        "BUTTON": "Accedi",
+        "ERROR": "Accesso fallito"
+    },
+    "REGISTER": {
+        "TITLE": "Registrati",
+        "NOME": "Nome",
+        "COGNOME": "Cognome",
+        "EMAIL": "Email",
+        "CELLULARE": "Cellulare",
+        "PASSWORD": "Password",
+        "BUTTON": "Registrati",
+        "SUCCESS": "Registrazione avvenuta con successo",
+        "ERROR": "Registrazione fallita"
     }
 }

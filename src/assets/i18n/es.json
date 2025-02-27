@@ -47,7 +47,10 @@
             "VAT_INVALID": "Número de IVA no válido",
             "ROLE_REQUIRED": "El rol es un campo obligatorio",
             "FILE_REQUIRED": "El archivo es obligatorio",
-            "REGION_REQUIRED": "La región es un campo obligatorio"
+            "REGION_REQUIRED": "La región es un campo obligatorio",
+            "PASSWORD_REQUIRED": "La contraseña es un campo obligatorio",
+            "CELLULARE_REQUIRED": "El teléfono es un campo obligatorio",
+            "COGNOME_REQUIRED": "El apellido es un campo obligatorio"
         },
         "BUTTON_SUBMIT": "Envía tu solicitud",
         "BUTTON_RESERVATIONACADEMY": "Inscribirse en el Curso",
@@ -163,7 +166,10 @@
         "ITALIAN": "Italiano",
         "ENGLISH": "Inglés",
         "SPANISH": "Español",
-        "CHRISTMAS_GAME": "¡Juega conmigo!"
+        "CHRISTMAS_GAME": "¡Juega conmigo!",
+        "ACCOUNT": "Cuenta",
+        "LOGIN": "Iniciar sesión",
+        "REGISTER": "Registrarse"
     },
     "CALL_SECTION": {
         "TITLE": "Programa una llamada"
@@ -220,5 +226,23 @@
         "ANSWER_6": "<strong>¡Sí!</strong> Al final del curso recibirás un <strong>certificado de participación emitido por OneBlade</strong>, siempre que hayas asistido al menos al <strong>70% de las clases</strong>. Este certificado representa un valor añadido para tu currículum y demuestra tu preparación en el sector.",
         "QUESTION_7": "¿Puedo seguir el curso mientras trabajo o estudio?",
         "ANSWER_7": "<strong>¡Sí!</strong> Todos nuestros cursos están organizados en horarios nocturnos, <strong>después de las 18:00</strong>, para permitir que quienes trabajan o estudian puedan seguirlos sin dificultad. Sabemos lo importante que es conciliar la formación con los compromisos diarios, y por eso ofrecemos flexibilidad y apoyo para ayudarte a alcanzar tus objetivos profesionales."
+    },
+    "LOGIN": {
+        "TITLE": "Iniciar sesión",
+        "EMAIL": "Correo electrónico",
+        "PASSWORD": "Contraseña",
+        "BUTTON": "Iniciar sesión",
+        "ERROR": "Error de inicio de sesión"
+    },
+    "REGISTER": {
+        "TITLE": "Registrarse",
+        "NOME": "Nombre",
+        "COGNOME": "Apellido",
+        "EMAIL": "Correo electrónico",
+        "CELLULARE": "Teléfono",
+        "PASSWORD": "Contraseña",
+        "BUTTON": "Registrarse",
+        "SUCCESS": "Registro exitoso",
+        "ERROR": "Error de registro"
     }
 }

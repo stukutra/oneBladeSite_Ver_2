@@ -45,7 +45,10 @@
       "VAT_INVALID": "Invalid VAT number",
       "ROLE_REQUIRED": "Role is a required field",
       "FILE_REQUIRED": "File is required",
-      "REGION_REQUIRED": "Region is a required field"
+      "REGION_REQUIRED": "Region is a required field",
+      "PASSWORD_REQUIRED": "Password is a required field",
+      "CELLULARE_REQUIRED": "Phone is a required field",
+      "COGNOME_REQUIRED": "Last name is a required field"
     },
     "BUTTON_SUBMIT": "Submit your application",
     "BUTTON_RESERVATIONACADEMY": "Enroll in the Course",
@@ -134,7 +137,10 @@
     "ITALIAN": "Italian",
     "ENGLISH": "English",
     "SPANISH": "Spanish",
-    "CHRISTMAS_GAME": "Play with me!"
+    "CHRISTMAS_GAME": "Play with me!",
+    "ACCOUNT": "Account",
+    "LOGIN": "Login",
+    "REGISTER": "Register"
   },
   "CALL_SECTION": {
     "TITLE": "Schedule a Call"
@@ -221,5 +227,23 @@
     "ANSWER_6": "<strong>Yes!</strong> At the end of the course, you will receive a <strong>certificate of participation issued by OneBlade</strong>, provided that you have attended at least <strong>70% of the lessons</strong>. This certificate represents an added value for your resume and demonstrates your preparation in the field.",
     "QUESTION_7": "Can I follow the course while working or studying?",
     "ANSWER_7": "<strong>Yes!</strong> All our courses are organized in the evening, <strong>after 6:00 PM</strong>, to allow those who work or study to follow them without difficulty. We know how important it is to balance training with daily commitments, and that is why we offer flexibility and support to help you achieve your professional goals."
+  },
+  "LOGIN": {
+    "TITLE": "Login",
+    "EMAIL": "Email",
+    "PASSWORD": "Password",
+    "BUTTON": "Login",
+    "ERROR": "Login failed"
+  },
+  "REGISTER": {
+    "TITLE": "Register",
+    "NOME": "First Name",
+    "COGNOME": "Last Name",
+    "EMAIL": "Email",
+    "CELLULARE": "Phone",
+    "PASSWORD": "Password",
+    "BUTTON": "Register",
+    "SUCCESS": "Registration successful",
+    "ERROR": "Registration failed"
   }
 }

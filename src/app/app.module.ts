@@ -35,6 +35,7 @@ import { GuideaccademyComponent } from './pages/guide/guideaccademy/guideaccadem
 import { HomeComponent } from './layout/home/home.component';
 import { ImageCarouselComponent } from './pages/image-carousel/image-carousel.component';
 import { InfooneBladeComponent } from './pages/infooneBlade/infooneBlade.component';
+import { LoginComponent } from './auth/login/login.component';
 import { MyInformationComponent } from './pages/myInformation/myInformation.component';
 // Outsourcing Components
 import { OutsourcingBannerComponent } from './pages/outsourcing/outsourcingBanner/outsourcingBanner.component';
@@ -42,6 +43,7 @@ import { OutsourcingInfoComponent } from './pages/outsourcing/outsourcingInfo/ou
 import { ParallaxComponent } from './pages/parallax/parallax.component';
 import { Privacy_policyComponent } from './pages/privacy_policy/privacy_policy.component';
 import { QuestionnaireComponent } from './pages/questionnaire/questionnaire.component';
+import { RegisterComponent } from './auth/register/register.component';
 import { RegistrationFormUserComponent } from './user/registrationFormUser/registrationFormUser.component';
 // Software House & Call Components
 import { SoftwareHouseComponent } from './pages/softwareHouse/softwareHouse.component';
@@ -87,7 +89,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     CompanyAboutUsComponent,
     AcademyFAQComponent,
     RegistrationFormUserComponent,
-    AcademyFundingComponent
+    AcademyFundingComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

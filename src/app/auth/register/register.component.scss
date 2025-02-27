@@ -1,0 +1,182 @@
+@use 'src/app/style/_variabiles' as *;
+
+.register-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid $input-border-color;
+    border-radius: $border-radius;
+    background-color: $background-color_2;
+}
+
+.register-container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.register-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-container form div {
+    margin-bottom: 1rem;
+}
+
+.register-container form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.register-container form input {
+    padding: 0.5rem;
+    border: 1px solid $input-border-color;
+    border-radius: $border-radius;
+}
+
+.register-container form button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: $border-radius;
+    background-color: $custom-btn-bg-color;
+    color: $button-text-color;
+    cursor: pointer;
+    transition: background-color $transition-speed;
+}
+
+.register-container form button:hover {
+    background-color: $custom-btn-hover-bg-color;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.description-box {
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px $box-shadow-color;
+}
+
+.box-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: $topbar-color;
+}
+
+.contact-form {
+    display: grid;
+    gap: 1rem;
+}
+
+.contact-form .form-group {
+    position: relative;
+}
+
+.contact-form .form-control,
+.contact-form .form-select,
+.contact-form .file-input {
+    border: none;
+    border-bottom: 2px solid $input-border-color;
+    border-radius: 0;
+    padding: 0.5rem 0.75rem;
+    font-size: 15px;
+    box-shadow: none;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus,
+.contact-form .file-input:focus {
+    border-color: $input-focus-border-color;
+    outline: none;
+}
+
+.contact-form .form-control::placeholder,
+.contact-form .form-select::placeholder,
+.contact-form .file-input::placeholder {
+    color: $input-placeholder-color;
+}
+
+.contact-form .form-label.required::after {
+    content: "*";
+    color: $topbar-color;
+    font-size: 0.75rem;
+    position: absolute;
+    right: -1.5rem;
+    top: 0;
+}
+
+.contact-form .text-danger {
+    font-size: 0.75rem;
+    color: $error-text-color;
+}
+
+.contact-form .form-control[type="file"] {
+    border: 2px solid $input-border-color;
+    border-radius: $file-input-border-radius;
+    padding: 0.5rem 0.75rem;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+}
+
+.contact-form .form-control[type="file"]::file-selector-button {
+    background-color: $file-button-bg-color;
+    border: none;
+    color: $button-text-color;
+    padding: 0.5rem 1rem;
+    border-radius: $file-input-border-radius;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.contact-form .form-control[type="file"]::file-selector-button:hover {
+    background-color: $file-button-hover-bg-color;
+}
+
+.contact-form .btn-primary {
+    background-color: transparent;
+    border: 2px solid $button-border-color;
+    color: $button-border-color;
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: $button-hover-bg-color;
+    color: $button-hover-text-color;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.custom-btn {
+    background-color: $custom-btn-bg-color;
+    color: $button-text-color;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: $custom-btn-hover-bg-color;
+}
+
+.custom-btn:focus {
+    box-shadow: 0 0 5px $custom-btn-focus-shadow-color;
+}

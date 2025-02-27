@@ -108,4 +108,30 @@ class Database {
             return null;
         }
     }
+
+    public function login() {
+        $data = json_decode(file_get_contents("php://input"));
+        $email = $data->email;
+        $password = $data->password;
+        $token = $this->authenticate($email, $password);
+        if ($token) {
+            echo json_encode(["token" => $token]);
+        } else {
+            echo json_encode(["message" => "Login failed"]);
+        }
+    }
+
+    public function register() {
+        $data = json_decode(file_get_contents("php://input"));
+        $nome = $data->nome;
+        $cognome = $data->cognome;
+        $email = $data->email;
+        $cellulare = $data->cellulare;
+        $password = $data->password;
+        if ($this->registerUser($nome, $cognome, $email, $cellulare, $password)) {
+            echo json_encode(["success" => true]);
+        } else {
+            echo json_encode(["success" => false]);
+        }
+    }
 }
