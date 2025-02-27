@@ -39,15 +39,7 @@
           </li>
         </ul>
       </li>
-      <li class="nav-item d-flex align-items-center">
-        <i class="bi bi-globe me-2"></i>
-        <select class="form-select language-select" (change)="changeLanguage($event)"
-          aria-label="{{ 'TOP_BAR.SELECT_LANGUAGE' | translate }}">
-          <option value="it">{{ 'TOP_BAR.ITALIAN' | translate }}</option>
-          <option value="en">{{ 'TOP_BAR.ENGLISH' | translate }}</option>
-          <option value="es">{{ 'TOP_BAR.SPANISH' | translate }}</option>
-        </select>
-      </li>
+   
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="authDropdown" role="button" data-bs-toggle="dropdown"
           aria-expanded="false">
@@ -61,6 +53,15 @@
             <a class="dropdown-item" routerLink="/register">{{ 'TOP_BAR.REGISTER' | translate }}</a>
           </li>
         </ul>
+      </li>
+      <li class="nav-item d-flex align-items-center">
+        <i class="bi bi-globe me-2"></i>
+        <select class="form-select language-select" (change)="changeLanguage($event)"
+          aria-label="{{ 'TOP_BAR.SELECT_LANGUAGE' | translate }}">
+          <option value="it">{{ 'TOP_BAR.ITALIAN' | translate }}</option>
+          <option value="en">{{ 'TOP_BAR.ENGLISH' | translate }}</option>
+          <option value="es">{{ 'TOP_BAR.SPANISH' | translate }}</option>
+        </select>
       </li>
     </ul>
   </div>
