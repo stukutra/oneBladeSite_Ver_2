@@ -48,7 +48,8 @@
       "REGION_REQUIRED": "Region is a required field",
       "PASSWORD_REQUIRED": "Password is a required field",
       "CELLULARE_REQUIRED": "Phone is a required field",
-      "COGNOME_REQUIRED": "Last name is a required field"
+      "COGNOME_REQUIRED": "Last name is a required field",
+      "CONFIRM_PASSWORD_REQUIRED": "Confirm password is a required field"
     },
     "BUTTON_SUBMIT": "Submit your application",
     "BUTTON_RESERVATIONACADEMY": "Enroll in the Course",
@@ -70,7 +71,14 @@
     "SUCCESS_MESSAGE": "Your request has been successfully sent. We will contact you shortly!",
     "PRIVACY_ERROR": "You must authorize the processing of personal data to proceed.",
     "FILE_TOO_LARGE": "The file exceeds the size of 3 MB.",
-    "NO_REPORT": "No report available"
+    "NO_REPORT": "No report available",
+    "PASSWORD_REQUIREMENTS": {
+      "UPPERCASE": "Password must contain at least one uppercase letter",
+      "LOWERCASE": "Password must contain at least one lowercase letter",
+      "NUMBER": "Password must contain at least one number",
+      "SPECIAL_CHAR": "Password must contain at least one special character",
+      "MIN_LENGTH": "Password must be at least 8 characters long"
+    }
   },
   "CAROUSEL": {
     "SLIDE_1": {
@@ -242,6 +250,7 @@
     "EMAIL": "Email",
     "CELLULARE": "Phone",
     "PASSWORD": "Password",
+    "CONFIRM_PASSWORD": "Confirm Password",
     "BUTTON": "Register",
     "SUCCESS": "Registration successful",
     "ERROR": "Registration failed"

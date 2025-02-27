@@ -50,7 +50,8 @@
             "REGION_REQUIRED": "La región es un campo obligatorio",
             "PASSWORD_REQUIRED": "La contraseña es un campo obligatorio",
             "CELLULARE_REQUIRED": "El teléfono es un campo obligatorio",
-            "COGNOME_REQUIRED": "El apellido es un campo obligatorio"
+            "COGNOME_REQUIRED": "El apellido es un campo obligatorio",
+            "CONFIRM_PASSWORD_REQUIRED": "La confirmación de la contraseña es un campo obligatorio"
         },
         "BUTTON_SUBMIT": "Envía tu solicitud",
         "BUTTON_RESERVATIONACADEMY": "Inscribirse en el Curso",
@@ -71,6 +72,13 @@
         "PRIVACY_ERROR": "Debes autorizar el tratamiento de datos personales para proceder.",
         "FILE_TOO_LARGE": "El archivo supera el tamaño de 3 MB.",
         "NO_REPORT": "No hay informe disponible"
+    },
+    "PASSWORD_REQUIREMENTS": {
+        "UPPERCASE": "La contraseña debe contener al menos una letra mayúscula",
+        "LOWERCASE": "La contraseña debe contener al menos una letra minúscula",
+        "NUMBER": "La contraseña debe contener al menos un número",
+        "SPECIAL_CHAR": "La contraseña debe contener al menos un carácter especial",
+        "MIN_LENGTH": "La contraseña debe tener al menos 8 caracteres"
     },
     "CAROUSEL": {
         "SLIDE_1": {
@@ -241,6 +249,7 @@
         "EMAIL": "Correo electrónico",
         "CELLULARE": "Teléfono",
         "PASSWORD": "Contraseña",
+        "CONFIRM_PASSWORD": "Confirmar Contraseña",
         "BUTTON": "Registrarse",
         "SUCCESS": "Registro exitoso",
         "ERROR": "Error de registro"

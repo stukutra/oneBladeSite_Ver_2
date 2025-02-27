@@ -53,7 +53,8 @@
             "REGION_REQUIRED": "La regione è un campo richiesto",
             "PASSWORD_REQUIRED": "La password è un campo richiesto",
             "CELLULARE_REQUIRED": "Il cellulare è un campo richiesto",
-            "COGNOME_REQUIRED": "Il cognome è un campo richiesto"
+            "COGNOME_REQUIRED": "Il cognome è un campo richiesto",
+            "CONFIRM_PASSWORD_REQUIRED": "La conferma della password è un campo richiesto"
         },
         "BUTTON_SUBMIT": "Invia la tua candidatura",
         "BUTTON_RESERVATIONACADEMY": "Prenota",
@@ -70,7 +71,14 @@
         "SUCCESS_MESSAGE": "La tua richiesta è stata inviata con successo. Ti contatteremo a breve!",
         "PRIVACY_ERROR": "Devi autorizzare il trattamento dei dati personali per procedere.",
         "FILE_TOO_LARGE": "Il file supera la dimensione di 3 MB.",
-        "NO_REPORT": "Nessun report disponibile"
+        "NO_REPORT": "Nessun report disponibile",
+        "PASSWORD_REQUIREMENTS": {
+            "UPPERCASE": "La password deve contenere almeno una lettera maiuscola",
+            "LOWERCASE": "La password deve contenere almeno una lettera minuscola",
+            "NUMBER": "La password deve contenere almeno un numero",
+            "SPECIAL_CHAR": "La password deve contenere almeno un carattere speciale",
+            "MIN_LENGTH": "La password deve essere lunga almeno 8 caratteri"
+        }
     },
     "CAROUSEL": {
         "SLIDE_1": {
@@ -243,6 +251,7 @@
         "PASSWORD": "Password",
         "BUTTON": "Registrati",
         "SUCCESS": "Registrazione avvenuta con successo",
-        "ERROR": "Registrazione fallita"
+        "ERROR": "Registrazione fallita",
+        "CONFIRM_PASSWORD": "Conferma Password"
     }
 }

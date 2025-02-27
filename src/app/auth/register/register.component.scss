@@ -6,7 +6,7 @@
     padding: 1rem;
     border: 1px solid $input-border-color;
     border-radius: $border-radius;
-    background-color: $background-color_2;
+    background-color: #ffffff; // Fondo bianco
 }
 
 .register-container h2 {
@@ -19,39 +19,57 @@
     flex-direction: column;
 }
 
-.register-container form div {
+.register-container form .form-group {
     margin-bottom: 1rem;
 }
 
-.register-container form label {
+.register-container form .form-label {
     margin-bottom: 0.5rem;
     font-weight: bold;
 }
 
-.register-container form input {
+.register-container form .form-control {
     padding: 0.5rem;
-    border: 1px solid $input-border-color;
-    border-radius: $border-radius;
+    border: none;
+    border-bottom: 2px solid $input-border-color;
+    border-radius: 0;
+    padding: 0.5rem 0.75rem;
+    font-size: 15px;
+    box-shadow: none;
+    transition: border-color 0.3s ease;
 }
 
-.register-container form button {
+.register-container form .form-control:focus {
+    border-color: $input-focus-border-color;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+.register-container form .form-control::placeholder {
+    color: $input-placeholder-color;
+}
+
+.register-container form .submit-btn {
     padding: 0.5rem;
     border: none;
     border-radius: $border-radius;
-    background-color: $custom-btn-bg-color;
-    color: $button-text-color;
+    background-color: #007bff; // Original Bootstrap-like color
+    color: white; // Original Bootstrap-like text color
     cursor: pointer;
     transition: background-color $transition-speed;
 }
 
-.register-container form button:hover {
-    background-color: $custom-btn-hover-bg-color;
+.register-container form .submit-btn:hover {
+    background-color: darken(#007bff, 10%); // Original Bootstrap-like hover color
 }
 
-.container {
+.custom-container {
     max-width: 600px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 20px;
+    background-color: #ffffff; // Fondo bianco
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .description-box {
@@ -62,6 +80,7 @@
     margin: 40px auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px $box-shadow-color;
+    margin-bottom: 20px;
 }
 
 .box-title {
@@ -77,6 +96,7 @@
 
 .contact-form .form-group {
     position: relative;
+    margin-bottom: 15px;
 }
 
 .contact-form .form-control,
@@ -96,6 +116,7 @@
 .contact-form .file-input:focus {
     border-color: $input-focus-border-color;
     outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
 }
 
 .contact-form .form-control::placeholder,
@@ -114,8 +135,15 @@
 }
 
 .contact-form .text-danger {
-    font-size: 0.75rem;
+    font-size: 14px;
     color: $error-text-color;
+    margin-top: 5px;
+}
+
+.contact-form .text-info {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #17a2b8;
 }
 
 .contact-form .form-control[type="file"] {
@@ -161,6 +189,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+    text-align: center;
 }
 
 .custom-btn {
@@ -179,4 +208,35 @@
 
 .custom-btn:focus {
     box-shadow: 0 0 5px $custom-btn-focus-shadow-color;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 100%; // Full-width
+}
+
+.submit-btn:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.password-requirements {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.password-requirements li {
+    font-size: 14px;
+    color: #dc3545; // Red color for unmet requirements
+}
+
+.password-requirements li.text-success {
+    color: #28a745; // Green color for met requirements
 }
