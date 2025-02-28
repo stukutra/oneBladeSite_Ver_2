@@ -271,6 +271,7 @@
         "CATEGORY": "Categoría",
         "TALENT": "Talento",
         "CONTACT": "Contacto",
-        "THANK_YOU": "Gracias"
+        "THANK_YOU": "Gracias",
+        "EXPLANATION": "Sigue los pasos para completar el proceso. Puedes retroceder y modificar tus elecciones en cualquier momento."
     }
 }

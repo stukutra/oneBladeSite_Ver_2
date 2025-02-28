@@ -52,22 +52,39 @@
 .stepline {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: $gap;
     padding: $padding-base;
     background-color: $background-light;
     border-radius: $border-radius;
-    box-shadow: $box-shadow;
+    position: relative;
 
     .step {
         flex: 1;
         text-align: center;
-        padding: $padding-base;
         cursor: pointer;
         transition: background-color $transition-speed, color $transition-speed;
+        position: relative;
 
-        &.active {
+        .circle {
+            width: 30px;
+            height: 30px;
+            margin: 0 auto;
+            border-radius: 50%;
+            background-color: $input-border-color;
+            transition: background-color $transition-speed;
+            position: relative;
+            z-index: 1;
+        }
+
+        .label {
+            margin-top: 5px;
+            font-size: 14px;
+            color: $text-color-dark;
+        }
+
+        &.active .circle {
             background-color: $primary-color;
-            color: #ffff ;
         }
 
         &.disabled {
@@ -75,7 +92,7 @@
             opacity: 0.5;
         }
 
-        &:not(.active):hover {
+        &:not(.active):hover .circle {
             background-color: $hover-color;
         }
     }
