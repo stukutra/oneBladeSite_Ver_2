@@ -1,12 +1,35 @@
 <app-image-carousel></app-image-carousel>
 
-<div class="container mt-4">
+<div class="container mt-5">
     <!-- Testo esplicativo -->
-    <div class="explanatory-text text-center">
-        <h3 *ngIf="step === 1" class="step-explanation">Step 1: {{ 'STEP.EXPLANATION_STEP_1' | translate }}</h3>
-        <h3 *ngIf="step === 2" class="step-explanation">Step 2: {{ 'STEP.EXPLANATION_STEP_2' | translate }}</h3>
-        <h3 *ngIf="step === 3" class="step-explanation">Step 3: {{ 'STEP.EXPLANATION_STEP_3' | translate }}</h3>
-        <h3 *ngIf="step === 4" class="step-explanation">Step 4: {{ 'STEP.EXPLANATION_STEP_4' | translate }}</h3>
+    <div class="explanatory-text">
+        <div *ngIf="step === 1">
+            <h3 class="step-explanation">Step 1: {{ 'STEP.EXPLANATION_STEP_1' | translate }}</h3>
+            <p>Scegli la categoria più adatta alle tue esigenze. Ogni talento è classificato in base alla sua area di competenza, 
+                come <strong>sviluppo software</strong>, <strong>design</strong>, <strong>marketing digitale</strong>, <strong>consulenza IT</strong> e molte altre. 
+                Questa selezione ti aiuterà a trovare rapidamente i professionisti specializzati nel settore di tuo interesse.</p>
+        </div>
+
+        <div *ngIf="step === 2">
+            <h3 class="step-explanation">Step 2: {{ 'STEP.EXPLANATION_STEP_2' | translate }}</h3>
+            <p>Consulta l’elenco dei talenti disponibili e scegli quello che meglio risponde ai tuoi bisogni. 
+                Ogni talento ha una breve descrizione delle sue <strong>competenze principali</strong>, del <strong>livello di esperienza</strong> 
+                e della <strong>tipologia di servizi offerti</strong>. Seleziona il professionista che ritieni più adatto al tuo progetto.</p>
+        </div>
+
+
+        <div *ngIf="step === 3">
+            <h3 class="step-explanation">Step 3: {{ 'STEP.EXPLANATION_STEP_3' | translate }}</h3>
+            <p>Dopo aver scelto il talento giusto, inserisci i tuoi dati e i dettagli della richiesta nel modulo di contatto. 
+                Specifica le tue esigenze, il tipo di <strong>collaborazione desiderata</strong> e qualsiasi altra informazione utile 
+                per ricevere un riscontro rapido e personalizzato.</p>
+        </div>
+
+        <div *ngIf="step === 4">
+            <h3 class="step-explanation">Step 4: {{ 'STEP.EXPLANATION_STEP_4' | translate }}</h3>
+        </div>     
+        
+        
     </div>
 
     <!-- Stepline -->
@@ -79,4 +102,4 @@
 
 <app-FissaUnaCall></app-FissaUnaCall>
 <app-academyBanner></app-academyBanner>
-
+<app-infooneBlade></app-infooneBlade>
