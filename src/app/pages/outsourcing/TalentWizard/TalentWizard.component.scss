@@ -52,53 +52,71 @@
     }
 }
 
-.stepline {
+.step-container {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: $gap;
-    padding: $padding-base;
-    background-color: $background-light;
-    border-radius: $border-radius;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.progress-bar {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    height: 4px;
+    background-color: $input-border-color;
+    z-index: 0;
+    transform: translateY(-50%);
+}
+
+.progress-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: $primary-color;
+    width: calc((100% - 40px) / 3 * var(--completed-steps));
+    transition: width $transition-duration ease;
+}
+
+.step {
     position: relative;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $input-border-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: $font-color-white;
+    flex-direction: column; // Aggiungi questa linea per posizionare la scritta sotto al punto
 
-    .step {
-        flex: 1;
-        text-align: center;
-        cursor: pointer;
-        transition: background-color $transition-speed, color $transition-speed;
-        position: relative;
-
-        .circle {
-            width: 30px;
-            height: 30px;
-            margin: 0 auto;
-            border-radius: 50%;
-            background-color: $input-border-color;
-            transition: background-color $transition-speed;
-            position: relative;
-            z-index: 1;
-        }
-
-        .label {
-            margin-top: 5px;
-            font-size: $font-size-text;
-            color: $text-color-dark;
-        }
-
-        &.active .circle {
-            background-color: $primary-color;
-        }
-
-        &.disabled {
-            cursor: not-allowed;
-            opacity: 0.5;
-        }
-
-        &:not(.active):hover .circle {
-            background-color: $hover-color;
-        }
+    .circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $input-border-color;
+        color: $font-color-white;
+        font-weight: bold;
+        line-height: 40px; // Assicurati che il numero sia centrato verticalmente
     }
+}
+
+.step.completed .circle {
+    background-color: $primary-color;
+}
+
+.step.current .circle {
+    background-color: $primary-color;
 }
 
 .step-explanation {
@@ -108,4 +126,5 @@
 .step-label {
     text-align: center;
     color: $primary-color; // Colore dei punti di step
+    margin-top: 10px; // Aggiungi un margine superiore per distanziare la scritta dal punto
 }
