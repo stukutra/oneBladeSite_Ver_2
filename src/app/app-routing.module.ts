@@ -13,6 +13,7 @@ import { OutsourcingInfoComponent } from './pages/outsourcing/outsourcingInfo/ou
 import { QuestionnaireComponent } from './pages/questionnaire/questionnaire.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { SoftwareHouseComponent } from './pages/softwareHouse/softwareHouse.component';
+import { TalentListComponent } from './pages/outsourcing/TalentList/TalentList.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, data: { animation: 'Home' } },
@@ -28,6 +29,7 @@ const routes: Routes = [
   { path: 'academyFAQ', component: AcademyFAQComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
+  { path: 'talent', component: TalentListComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 

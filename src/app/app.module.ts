@@ -47,6 +47,7 @@ import { RegisterComponent } from './auth/register/register.component';
 import { RegistrationFormUserComponent } from './user/registrationFormUser/registrationFormUser.component';
 // Software House & Call Components
 import { SoftwareHouseComponent } from './pages/softwareHouse/softwareHouse.component';
+import { TalentListComponent } from './pages/outsourcing/TalentList/TalentList.component';
 import { TopBarComponent } from './layout/top-bar/top-bar.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
@@ -91,7 +92,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     RegistrationFormUserComponent,
     AcademyFundingComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    TalentListComponent
   ],
   imports: [
     BrowserModule,
