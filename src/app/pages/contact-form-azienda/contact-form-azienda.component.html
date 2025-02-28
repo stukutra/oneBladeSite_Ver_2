@@ -1,7 +1,7 @@
 <div class="container">
   <div class="description-box">
-    <h5 class="box-title">{{ 'FORM.TITLESOFTWARE' | translate }}</h5>
-    <h6 class="mb-4">{{ 'FORM.SUBTITLESOFTWARE' | translate }}</h6>
+    <h5 class="box-title">{{ customTitle || 'FORM.TITLESOFTWARE' | translate }}</h5>
+    <h6 class="mb-4">{{ customSubtitle || 'FORM.SUBTITLESOFTWARE' | translate }}</h6>
     <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" novalidate class="contact-form">
 
       <div class="mb-3 form-group">

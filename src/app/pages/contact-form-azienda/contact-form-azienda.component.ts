@@ -14,6 +14,8 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class ContactFormAziendaComponent implements OnInit, OnChanges {
   @Input() selectedCategory: string | null = null;
+  @Input() customTitle: string | null = null;
+  @Input() customSubtitle: string | null = null;
   categories: Category[] = [];
   model: ContactFormModel = {
     name: '',
