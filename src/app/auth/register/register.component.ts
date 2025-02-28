@@ -1,7 +1,7 @@
 import { AuthService } from 'src/app/service/auth.service';
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 import { ReCaptchaV3Service } from 'ngx-captcha';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-register',
