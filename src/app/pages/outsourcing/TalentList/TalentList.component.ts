@@ -1,7 +1,7 @@
 import { Category, Talent } from '../../../models/talent.model';
 import { Component, OnInit } from '@angular/core';
 
-import { TalentService } from '../../../services/talent.service';
+import { TalentService } from '../../../service/talent.service';
 
 @Component({
   selector: 'app-TalentList',

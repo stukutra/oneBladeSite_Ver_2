@@ -4,7 +4,7 @@ import { Category } from 'src/app/models/talent.model';
 import { ContactFormModel } from 'src/app/models/contact-form.model';
 import { HttpClient } from '@angular/common/http';
 import { NgForm } from '@angular/forms';
-import { TalentService } from 'src/app/services/talent.service';
+import { TalentService } from 'src/app/service/talent.service';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
