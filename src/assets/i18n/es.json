@@ -6,7 +6,7 @@
     "CONTENT": {
         "DEVELOPMENT": {
             "TITLE": "Desarrollamos tu software",
-            "INTRO": "Estamos aquí para ayudarte a crear proyectos de software totalmente personalizados para tus necesidades específicas y objetivos estratégicos. Nuestra misión es construir equipos altamente cualificados y dedicados, capaces de manejar proyectos de tamaño medio y grande con competencia y profesionalismo.",
+            "INTRO": "<strong>OneBlade</strong> crea <strong>soluciones de software a medida</strong> para potenciar y optimizar tu negocio. Somos un equipo de <strong>desarrolladores</strong>, <strong>diseñadores</strong> y <strong>arquitectos de software</strong>, especializados en el <strong>diseño</strong> y <strong>creación de aplicaciones personalizadas</strong>, pensadas para responder de manera <strong>eficaz</strong> e <strong>innovadora</strong> a las necesidades de nuestros clientes y socios. Nos encargamos de todo el <strong>ciclo de desarrollo</strong>, desde la <strong>ideación</strong> y el <strong>diseño</strong> hasta la <strong>implementación</strong>, garantizando productos de <strong>alta calidad</strong> y perfectamente integrados en los <strong>procesos empresariales</strong>.",
             "SUBTITLE_DEVELOPERS": "Desarrolladores y profesionales",
             "BODY_DEVELOPERS": "Para lograr este objetivo, reunimos grupos de expertos cuidadosamente seleccionados a lo largo de los años. Cada miembro de nuestro equipo es un consultor especializado con una trayectoria comprobada y una amplia experiencia en el sector. Hemos invertido tiempo y recursos en la selección y formación de estos profesionales, garantizando que cumplan con tus necesidades técnicas y funcionales.",
             "SUBTITLE_APPROACH": "Nuestro enfoque",
@@ -17,7 +17,7 @@
         },
         "TALENT": {
             "TITLE": "Adquisición de talento",
-            "INTRO": "Nuestro servicio de adquisición de talento está diseñado para conectar a los profesionales con los mejores proyectos de TI disponibles en el mercado. Pero nuestra oferta va mucho más allá de la simple selección de candidatos: nos comprometemos a comprender profundamente las necesidades específicas de cada proyecto, para garantizar que el talento que proponemos no solo cumpla, sino que supere las expectativas.",
+            "INTRO": "Nuestro servicio de talent acquisition está diseñado para conectar a los profesionales con los mejores proyectos IT disponibles en el mercado. Pero nuestra oferta va mucho más allá de la simple selección de candidatos: nos comprometemos a comprender profundamente las necesidades específicas de cada proyecto, para garantizar que el talento que proponemos no solo cumpla, sino que supere las expectativas.",
             "BODY_ANALYSIS": "Para lograr esto, adoptamos un enfoque personalizado y analítico. Comenzamos con una evaluación detallada de los requisitos del proyecto y las habilidades necesarias. Este proceso nos permite identificar y seleccionar a los profesionales más adecuados, que posean no solo las cualificaciones técnicas requeridas, sino también la capacidad de adaptarse y contribuir eficazmente al contexto del proyecto.",
             "BODY_CANDIDATES": "Cada candidato que consideramos para tus necesidades es sometido a rigurosas pruebas internas y evaluaciones en profundidad. Estas pruebas están diseñadas para garantizar que el personal seleccionado opere de acuerdo con altos estándares de calidad y profesionalismo. Esto nos permite asegurar que cada talento no solo cumpla con los requisitos técnicos, sino que también se integre bien en el equipo y contribuya al éxito general del proyecto.",
             "BODY_NETWORK": "Además, nuestra experiencia en el sector nos permite mantener una red de profesionales altamente cualificados y actualizados con las últimas tendencias y tecnologías en el campo de TI. Esto nos permite responder de manera rápida y precisa a las necesidades de nuestros clientes, proporcionando soluciones de adquisición de talento que son tanto oportunas como de alta calidad.",
@@ -253,5 +253,9 @@
         "BUTTON": "Registrarse",
         "SUCCESS": "Registro exitoso",
         "ERROR": "Error de registro"
+    },
+    "NEW_CONTENT": {
+        "TITLE": "Nuevo Contenido",
+        "DESCRIPTION": "Esta es una descripción del nuevo contenido."
     }
 }

@@ -11,13 +11,7 @@
     <div class="col-12 col-md-6 d-flex align-items-center">
       <div>
         <p class="subtitle_1">
-          <strong>OneBlade</strong> realizza <strong>soluzioni software su misura</strong> per potenziare e ottimizzare il tuo business.  
-          Siamo un team di <strong>sviluppatori</strong>, <strong>designer</strong> e <strong>architetti del software</strong>, specializzati nella 
-          <strong>progettazione</strong> e <strong>creazione di applicazioni personalizzate</strong>, pensate per rispondere in modo 
-          <strong>efficace</strong> e <strong>innovativo</strong> alle esigenze dei nostri clienti e partner.<br>
-          Ci occupiamo di tutto il <strong>ciclo di sviluppo</strong>, dall’<strong>ideazione</strong> e <strong>progettazione</strong> 
-          fino all’<strong>implementazione</strong>, garantendo prodotti di <strong>alta qualità</strong> e perfettamente integrati 
-          nei <strong>processi aziendali</strong>.
+          <span [innerHTML]="'CONTENT.DEVELOPMENT.INTRO' | translate"></span>
         </p>
       </div>
     </div>
@@ -27,43 +21,36 @@
 <!-- Sezione Servizi -->
 <div class="custom-container text-center text-md-start mt-5">
   <div class="container mt-5">
-    <h2 class="title text-center">Le nostre soluzioni personalizzate per le aziende</h2>
-    <p class="subtitle_1 text-center">
-      Scegli tra diverse soluzioni studiate per rispondere nel modo più efficace alle 
-      <strong>esigenze di aziende, agenzie marketing e software house</strong>.
-    </p>
-  
+    <h2 class="title text-center" [innerHTML]="'CONTENT.DEVELOPMENT.TITLE' | translate"></h2>
+    <p class="subtitle_1 text-center" [innerHTML]="'CONTENT.DEVELOPMENT.SUMMARY' | translate"></p>
+
     <div class="row justify-content-center g-4">
       <!-- Box Sviluppo Software -->
       <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
         <div class="service-box">
           <div class="service-content">
-            <img src="../../../assets/speedSoftwareOneBlade.jpg" alt="Sviluppo Software" class="service-icon">
-            <h3>Soluzioni su misura per la crescita della tua azienda</h3>
-            <p>
-              Offriamo una gamma di servizi pensati per supportare aziende, agenzie di marketing e software house nella digitalizzazione e nello sviluppo di soluzioni tecnologiche innovative.
-            </p>
+            <img src="../../../assets/speedSoftwareOneBlade.jpg" alt="Sviluppo Software"
+              class="service-icon service-image service-image-software">
+            <h3 [innerHTML]="'CONTENT.DEVELOPMENT.SUBTITLE_DEVELOPERS' | translate"></h3>
+            <p [innerHTML]="'CONTENT.DEVELOPMENT.BODY_DEVELOPERS' | translate"></p>
           </div>
         </div>
       </div>
-  
+
       <!-- Box Collaborazioni -->
       <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
         <div class="service-box">
           <div class="service-content" routerLink="/outsourcinginfo">
-            <img src="../../../assets/BodyRentalServiceOneBlade.jpg" alt="Collaborazioni" class="service-icon">
-            <h3>Collaborazioni body rental</h3>
-            <p>
-              Mettiamo a disposizione della tua azienda professionisti qualificati, pronti a integrarsi rapidamente nei tuoi progetti. Ti garantiamo competenza, affidabilità e un supporto flessibile per soddisfare le tue esigenze operative.
-            </p>
+            <img src="../../../assets/BodyRentalServiceOneBlade.jpg" alt="Collaborazioni"
+              class="service-icon service-image service-image-collaborations">
+            <h3 [innerHTML]="'CONTENT.TALENT.TITLE' | translate"></h3>
+            <p [innerHTML]="'CONTENT.TALENT.INTRO' | translate"></p>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-
+</div>
 <app-FissaUnaCall></app-FissaUnaCall>
 <app-academyBanner></app-academyBanner>
 <app-infooneBlade></app-infooneBlade>
-
