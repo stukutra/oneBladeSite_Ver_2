@@ -10,27 +10,27 @@
     </div>
 
     <!-- Stepline -->
-    <div class="stepline">
+    <div class="stepline mt-5">
         <div class="step" [class.active]="step >= 1" (click)="goToStep(1)">
             <div class="circle"></div>
-            <div class="label">{{ 'STEP.CATEGORY' | translate }}</div>
+            <div class="label step-label">{{ 'STEP.CATEGORY' | translate }}</div>
         </div>
         <div class="step" [class.active]="step >= 2" (click)="goToStep(2)" [class.disabled]="!selectedCategory">
             <div class="circle"></div>
-            <div class="label">{{ 'STEP.TALENT' | translate }}</div>
+            <div class="label step-label">{{ 'STEP.TALENT' | translate }}</div>
         </div>
         <div class="step" [class.active]="step >= 3" (click)="goToStep(3)" [class.disabled]="!selectedTalent">
             <div class="circle"></div>
-            <div class="label">{{ 'STEP.CONTACT' | translate }}</div>
+            <div class="label step-label">{{ 'STEP.CONTACT' | translate }}</div>
         </div>
         <div class="step" [class.active]="step === 4">
             <div class="circle"></div>
-            <div class="label">{{ 'STEP.THANK_YOU' | translate }}</div>
+            <div class="label step-label">{{ 'STEP.THANK_YOU' | translate }}</div>
         </div>
     </div>
 
     <div *ngIf="step === 1">
-        <h2 class="text-primary">{{ 'TALENT_LIST.TITLE' | translate }}</h2>
+        <h2 class="text-center mt-5 mb-5">{{ 'TALENT_LIST.TITLE' | translate }}</h2>
         <div class="row">
             <div *ngFor="let category of categories" class="col-md-4 mb-3">
                 <div class="category-box p-3" (click)="selectCategory(category)">
@@ -41,7 +41,7 @@
     </div>
 
     <div *ngIf="step === 2">
-        <h2 class="text-primary">{{ selectedCategory?.name || '' | translate }}</h2>
+        <h2 class="text-center mt-5 mb-5">{{ selectedCategory?.name || '' | translate }}</h2>
         <div class="row">
             <div *ngFor="let talent of selectedCategory?.talents" class="col-md-4 mb-3">
                 <div class="talent-box p-3" (click)="selectTalent(talent)">
@@ -57,7 +57,6 @@
     </div>
 
     <div *ngIf="step === 3">
-
         <div class="talent-info mt-4">
             <h3>{{ (selectedTalent?.name || '') | translate }}</h3>
             <p><strong>{{ 'TALENT_LIST.MIN_CONTRACT' | translate }}:</strong> {{ selectedTalent?.minContract }}</p>
@@ -74,4 +73,6 @@
         <h2>{{ 'FORM.SUCCESS_MESSAGE' | translate }}</h2>
         <p>{{ 'FORM.THANK_YOU_MESSAGE' | translate }}</p>
     </div>
+
+    <app-academyBanner></app-academyBanner>
 </div>
