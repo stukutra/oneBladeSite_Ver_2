@@ -65,7 +65,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     CompanyLogosComponent,
     CompanyDescriptionComponent,
     ContactFormComponent,
-    ContactFormAziendaComponent,
     QuestionnaireComponent,
     Privacy_policyComponent,
     AgencyDetailsComponent,
@@ -93,7 +92,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     AcademyFundingComponent,
     LoginComponent,
     RegisterComponent,
-    TalentListComponent
+    TalentListComponent,
+    ContactFormAziendaComponent
   ],
   imports: [
     BrowserModule,

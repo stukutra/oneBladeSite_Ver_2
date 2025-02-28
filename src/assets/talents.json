@@ -1,0 +1,169 @@
+{
+    "categories": [
+        {
+            "name": "Web Developer",
+            "talents": [
+                {
+                    "name": "React Developer",
+                    "minContract": "1 month",
+                    "description": "Expert in React.js and Redux",
+                    "seniority": "Senior",
+                    "dailyRate": 400
+                },
+                {
+                    "name": "Angular Developer",
+                    "minContract": "2 months",
+                    "description": "Experienced in Angular and RxJS",
+                    "seniority": "Mid",
+                    "dailyRate": 350
+                }
+            ]
+        },
+        {
+            "name": "iOS Developer",
+            "talents": [
+                {
+                    "name": "Swift Developer",
+                    "minContract": "3 months",
+                    "description": "Proficient in Swift and iOS SDK",
+                    "seniority": "Senior",
+                    "dailyRate": 450
+                }
+            ]
+        },
+        {
+            "name": "System Administrator",
+            "talents": [
+                {
+                    "name": "React Developer",
+                    "minContract": "1 month",
+                    "description": "Expert in React.js and Redux",
+                    "seniority": "Senior",
+                    "dailyRate": 400
+                },
+                {
+                    "name": "Angular Developer",
+                    "minContract": "2 months",
+                    "description": "Experienced in Angular and RxJS",
+                    "seniority": "Mid",
+                    "dailyRate": 350
+                }
+            ]
+            
+        },
+        {
+            "name": "DevOps",
+            "talents": [
+                {
+                    "name": "React Developer",
+                    "minContract": "1 month",
+                    "description": "Expert in React.js and Redux",
+                    "seniority": "Senior",
+                    "dailyRate": 400
+                },
+                {
+                    "name": "Angular Developer",
+                    "minContract": "2 months",
+                    "description": "Experienced in Angular and RxJS",
+                    "seniority": "Mid",
+                    "dailyRate": 350
+                }
+            ]
+        },
+        {
+            "name": "Functional Analyst",
+            "talents": [
+                {
+                    "name": "React Developer",
+                    "minContract": "1 month",
+                    "description": "Expert in React.js and Redux",
+                    "seniority": "Senior",
+                    "dailyRate": 400
+                },
+                {
+                    "name": "Angular Developer",
+                    "minContract": "2 months",
+                    "description": "Experienced in Angular and RxJS",
+                    "seniority": "Mid",
+                    "dailyRate": 350
+                }
+            ]
+        },
+        {
+            "name": "Data Engineer",
+            "talents": [
+                {
+                    "name": "React Developer",
+                    "minContract": "1 month",
+                    "description": "Expert in React.js and Redux",
+                    "seniority": "Senior",
+                    "dailyRate": 400
+                },
+                {
+                    "name": "Angular Developer",
+                    "minContract": "2 months",
+                    "description": "Experienced in Angular and RxJS",
+                    "seniority": "Mid",
+                    "dailyRate": 350
+                }
+            ]
+        },
+        {
+            "name": "Data Scientist",
+            "talents": [
+                {
+                    "name": "React Developer",
+                    "minContract": "1 month",
+                    "description": "Expert in React.js and Redux",
+                    "seniority": "Senior",
+                    "dailyRate": 400
+                },
+                {
+                    "name": "Angular Developer",
+                    "minContract": "2 months",
+                    "description": "Experienced in Angular and RxJS",
+                    "seniority": "Mid",
+                    "dailyRate": 350
+                }
+            ]
+        },
+        {
+            "name": "QA Tester",
+            "talents": [
+                {
+                    "name": "React Developer",
+                    "minContract": "1 month",
+                    "description": "Expert in React.js and Redux",
+                    "seniority": "Senior",
+                    "dailyRate": 400
+                },
+                {
+                    "name": "Angular Developer",
+                    "minContract": "2 months",
+                    "description": "Experienced in Angular and RxJS",
+                    "seniority": "Mid",
+                    "dailyRate": 350
+                }
+            ]
+        },
+        {
+            "name": "Design UI/UX",
+            "talents": [
+                {
+                    "name": "React Developer",
+                    "minContract": "1 month",
+                    "description": "Expert in React.js and Redux",
+                    "seniority": "Senior",
+                    "dailyRate": 400
+                },
+                {
+                    "name": "Angular Developer",
+                    "minContract": "2 months",
+                    "description": "Experienced in Angular and RxJS",
+                    "seniority": "Mid",
+                    "dailyRate": 350
+                }
+            ]
+        }
+    ]
+}

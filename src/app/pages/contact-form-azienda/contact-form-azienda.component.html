@@ -42,14 +42,7 @@
         <select id="applicationType" name="applicationType" class="form-select" [(ngModel)]="model.applicationType"
           #applicationType="ngModel" required>
           <option value="">{{ 'FORM.PLACEHOLDERS.APPLICATION_TYPE' | translate }}</option>
-          <option value="Software Development">Developer</option>
-          <option value="System Administrator">System Administrator</option>
-          <option value="DevOps">DevOps</option>
-          <option value="Functional Analyst">Functional Analyst</option>
-          <option value="Data Engineer">Data Engineer</option>
-          <option value="Data Scientist">Data Scientist</option>
-          <option value="QA Tester">QA Tester</option>
-          <option value="Design UI/UX">Design UI/UX</option>
+          <option *ngFor="let category of categories" [value]="category.name">{{ category.name }}</option>
         </select>
         <div *ngIf="applicationType.invalid && (applicationType.dirty || applicationType.touched)" class="text-danger">
           <div *ngIf="applicationType.errors?.['required']">{{ 'FORM.VALIDATION.ROLE_REQUIRED' | translate }}</div>

@@ -1,6 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+
+import { Category } from 'src/app/models/talent.model';
+import { ContactFormModel } from 'src/app/models/contact-form.model';
 import { HttpClient } from '@angular/common/http';
 import { NgForm } from '@angular/forms';
+import { TalentService } from 'src/app/services/talent.service';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -8,8 +12,10 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: './contact-form-azienda.component.html',
   styleUrls: ['./contact-form-azienda.component.scss']
 })
-export class ContactFormAziendaComponent {
-  model: any = {
+export class ContactFormAziendaComponent implements OnInit, OnChanges {
+  @Input() selectedCategory: string | null = null;
+  categories: Category[] = [];
+  model: ContactFormModel = {
     name: '',
     telephone: '',
     email: '',
@@ -21,7 +27,19 @@ export class ContactFormAziendaComponent {
   errorMessage: string | null = null;
   isModalVisible: boolean = false;
 
-  constructor(private http: HttpClient, private translate: TranslateService) { }
+  constructor(private http: HttpClient, private translate: TranslateService, private talentService: TalentService) { }
+
+  ngOnInit() {
+    this.talentService.getTalents().subscribe(data => {
+      this.categories = data.categories;
+    });
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes['selectedCategory'] && this.selectedCategory) {
+      this.model.applicationType = this.selectedCategory;
+    }
+  }
 
   onSubmit(form: NgForm) {
     if (form.invalid) {
@@ -41,6 +59,9 @@ export class ContactFormAziendaComponent {
     formData.append('email', this.model.email);
     formData.append('vat', this.model.vat);
     formData.append('applicationType', this.model.applicationType);
+    if (this.model.file) {
+      formData.append('file', this.model.file);
+    }
     formData.append('api_key', '7F3kH#r8!wL5tVxZ2Q9p^nGjR@cM1dP6');
 
     this.http.post('https://www.oneblade.it/sendEmailSenzaAllegato.php', formData).subscribe(
@@ -73,7 +94,7 @@ export class ContactFormAziendaComponent {
     form.resetForm();  // Resetta i campi del modulo
 
     // Resetta manualmente il campo file
-    this.model.file = null;
+    this.model.file = undefined;
   }
 
   showModal(modalId: string) {
