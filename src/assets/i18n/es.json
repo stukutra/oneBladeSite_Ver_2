@@ -257,5 +257,13 @@
     "NEW_CONTENT": {
         "TITLE": "Nuevo Contenido",
         "DESCRIPTION": "Esta es una descripción del nuevo contenido."
+    },
+    "TALENT_LIST": {
+        "TITLE": "Lista de Talentos",
+        "MIN_CONTRACT": "Contrato Mínimo",
+        "DESCRIPTION": "Descripción",
+        "SENIORITY": "Antigüedad",
+        "DAILY_RATE": "Tarifa Diaria",
+        "PRICE_PER_DAY": "Precio por Día"
     }
 }

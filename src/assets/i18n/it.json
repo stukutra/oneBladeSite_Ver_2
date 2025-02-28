@@ -253,5 +253,13 @@
         "SUCCESS": "Registrazione avvenuta con successo",
         "ERROR": "Registrazione fallita",
         "CONFIRM_PASSWORD": "Conferma Password"
+    },
+    "TALENT_LIST": {
+        "TITLE": "Lista dei Talenti",
+        "MIN_CONTRACT": "Contratto Minimo",
+        "DESCRIPTION": "Descrizione",
+        "SENIORITY": "Anzianità",
+        "DAILY_RATE": "Tariffa Giornaliera",
+        "PRICE_PER_DAY": "Prezzo per Giorno"
     }
 }

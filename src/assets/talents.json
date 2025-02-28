@@ -8,14 +8,16 @@
                     "minContract": "1 month",
                     "description": "Expert in React.js and Redux",
                     "seniority": "Senior",
-                    "dailyRate": 400
+                    "dailyRate": 400,
+                    "pricePerDay": 450
                 },
                 {
                     "name": "Angular Developer",
                     "minContract": "2 months",
                     "description": "Experienced in Angular and RxJS",
                     "seniority": "Mid",
-                    "dailyRate": 350
+                    "dailyRate": 350,
+                    "pricePerDay": 400
                 }
             ]
         },
@@ -27,7 +29,8 @@
                     "minContract": "3 months",
                     "description": "Proficient in Swift and iOS SDK",
                     "seniority": "Senior",
-                    "dailyRate": 450
+                    "dailyRate": 450,
+                    "pricePerDay": 500
                 }
             ]
         },
@@ -39,17 +42,18 @@
                     "minContract": "1 month",
                     "description": "Expert in React.js and Redux",
                     "seniority": "Senior",
-                    "dailyRate": 400
+                    "dailyRate": 400,
+                    "pricePerDay": 450
                 },
                 {
                     "name": "Angular Developer",
                     "minContract": "2 months",
                     "description": "Experienced in Angular and RxJS",
                     "seniority": "Mid",
-                    "dailyRate": 350
+                    "dailyRate": 350,
+                    "pricePerDay": 400
                 }
             ]
-            
         },
         {
             "name": "DevOps",
@@ -59,14 +63,16 @@
                     "minContract": "1 month",
                     "description": "Expert in React.js and Redux",
                     "seniority": "Senior",
-                    "dailyRate": 400
+                    "dailyRate": 400,
+                    "pricePerDay": 450
                 },
                 {
                     "name": "Angular Developer",
                     "minContract": "2 months",
                     "description": "Experienced in Angular and RxJS",
                     "seniority": "Mid",
-                    "dailyRate": 350
+                    "dailyRate": 350,
+                    "pricePerDay": 400
                 }
             ]
         },
@@ -78,14 +84,16 @@
                     "minContract": "1 month",
                     "description": "Expert in React.js and Redux",
                     "seniority": "Senior",
-                    "dailyRate": 400
+                    "dailyRate": 400,
+                    "pricePerDay": 450
                 },
                 {
                     "name": "Angular Developer",
                     "minContract": "2 months",
                     "description": "Experienced in Angular and RxJS",
                     "seniority": "Mid",
-                    "dailyRate": 350
+                    "dailyRate": 350,
+                    "pricePerDay": 400
                 }
             ]
         },
@@ -97,14 +105,16 @@
                     "minContract": "1 month",
                     "description": "Expert in React.js and Redux",
                     "seniority": "Senior",
-                    "dailyRate": 400
+                    "dailyRate": 400,
+                    "pricePerDay": 450
                 },
                 {
                     "name": "Angular Developer",
                     "minContract": "2 months",
                     "description": "Experienced in Angular and RxJS",
                     "seniority": "Mid",
-                    "dailyRate": 350
+                    "dailyRate": 350,
+                    "pricePerDay": 400
                 }
             ]
         },
@@ -116,14 +126,16 @@
                     "minContract": "1 month",
                     "description": "Expert in React.js and Redux",
                     "seniority": "Senior",
-                    "dailyRate": 400
+                    "dailyRate": 400,
+                    "pricePerDay": 450
                 },
                 {
                     "name": "Angular Developer",
                     "minContract": "2 months",
                     "description": "Experienced in Angular and RxJS",
                     "seniority": "Mid",
-                    "dailyRate": 350
+                    "dailyRate": 350,
+                    "pricePerDay": 400
                 }
             ]
         },
@@ -135,14 +147,16 @@
                     "minContract": "1 month",
                     "description": "Expert in React.js and Redux",
                     "seniority": "Senior",
-                    "dailyRate": 400
+                    "dailyRate": 400,
+                    "pricePerDay": 450
                 },
                 {
                     "name": "Angular Developer",
                     "minContract": "2 months",
                     "description": "Experienced in Angular and RxJS",
                     "seniority": "Mid",
-                    "dailyRate": 350
+                    "dailyRate": 350,
+                    "pricePerDay": 400
                 }
             ]
         },
@@ -154,14 +168,16 @@
                     "minContract": "1 month",
                     "description": "Expert in React.js and Redux",
                     "seniority": "Senior",
-                    "dailyRate": 400
+                    "dailyRate": 400,
+                    "pricePerDay": 450
                 },
                 {
                     "name": "Angular Developer",
                     "minContract": "2 months",
                     "description": "Experienced in Angular and RxJS",
                     "seniority": "Mid",
-                    "dailyRate": 350
+                    "dailyRate": 350,
+                    "pricePerDay": 400
                 }
             ]
         }

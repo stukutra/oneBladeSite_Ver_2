@@ -254,5 +254,13 @@
     "BUTTON": "Register",
     "SUCCESS": "Registration successful",
     "ERROR": "Registration failed"
+  },
+  "TALENT_LIST": {
+    "TITLE": "Talent List",
+    "MIN_CONTRACT": "Min Contract",
+    "DESCRIPTION": "Description",
+    "SENIORITY": "Seniority",
+    "DAILY_RATE": "Daily Rate",
+    "PRICE_PER_DAY": "Price Per Day"
   }
 }

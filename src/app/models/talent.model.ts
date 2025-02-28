@@ -4,6 +4,7 @@ export interface Talent {
     description: string;
     seniority: string;
     dailyRate: number;
+    pricePerDay: number; // Add the pricePerDay property
 }
 
 export interface Category {
