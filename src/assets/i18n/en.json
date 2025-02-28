@@ -263,5 +263,11 @@
     "SENIORITY": "Seniority",
     "DAILY_RATE": "Daily Rate",
     "PRICE_PER_DAY": "Price Per Day"
+  },
+  "STEP": {
+    "CATEGORY": "Category",
+    "TALENT": "Talent",
+    "CONTACT": "Contact",
+    "THANK_YOU": "Thank You"
   }
 }

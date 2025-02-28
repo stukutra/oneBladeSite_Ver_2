@@ -262,5 +262,11 @@
         "SENIORITY": "Anzianità",
         "DAILY_RATE": "Tariffa Giornaliera",
         "PRICE_PER_DAY": "Prezzo per Giorno"
+    },
+    "STEP": {
+        "CATEGORY": "Categoria",
+        "TALENT": "Talento",
+        "CONTACT": "Contatto",
+        "THANK_YOU": "Grazie"
     }
 }

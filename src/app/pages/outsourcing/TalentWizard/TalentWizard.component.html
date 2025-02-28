@@ -1,8 +1,15 @@
 <app-image-carousel></app-image-carousel>
 
-
 <div class="container mt-4">
-
+    <!-- Stepline -->
+    <div class="stepline">
+        <div class="step" [class.active]="step >= 1" (click)="goToStep(1)">{{ 'STEP.CATEGORY' | translate }}</div>
+        <div class="step" [class.active]="step >= 2" (click)="goToStep(2)" [class.disabled]="!selectedCategory">{{
+            'STEP.TALENT' | translate }}</div>
+        <div class="step" [class.active]="step >= 3" (click)="goToStep(3)" [class.disabled]="!selectedTalent">{{
+            'STEP.CONTACT' | translate }}</div>
+        <div class="step" [class.active]="step === 4">{{ 'STEP.THANK_YOU' | translate }}</div>
+    </div>
 
     <div *ngIf="step === 1">
         <h2 class="text-primary">{{ 'TALENT_LIST.TITLE' | translate }}</h2>

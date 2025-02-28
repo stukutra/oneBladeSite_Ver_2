@@ -266,5 +266,11 @@
         "SENIORITY": "Antigüedad",
         "DAILY_RATE": "Tarifa Diaria",
         "PRICE_PER_DAY": "Precio por Día"
+    },
+    "STEP": {
+        "CATEGORY": "Categoría",
+        "TALENT": "Talento",
+        "CONTACT": "Contacto",
+        "THANK_YOU": "Gracias"
     }
 }

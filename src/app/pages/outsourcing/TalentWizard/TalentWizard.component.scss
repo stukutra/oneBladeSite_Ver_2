@@ -48,3 +48,35 @@
         color: $text-color-dark;
     }
 }
+
+.stepline {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $gap;
+    padding: $padding-base;
+    background-color: $background-light;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+
+    .step {
+        flex: 1;
+        text-align: center;
+        padding: $padding-base;
+        cursor: pointer;
+        transition: background-color $transition-speed, color $transition-speed;
+
+        &.active {
+            background-color: $primary-color;
+            color: #ffff ;
+        }
+
+        &.disabled {
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+
+        &:not(.active):hover {
+            background-color: $hover-color;
+        }
+    }
+}
