@@ -56,7 +56,7 @@
             <div class="circle">3</div>
             <!-- <div class="label step-label">{{ 'STEP.CONTACT' | translate }}</div> -->
         </div>
-        <div class="step" [class.completed]="step === 4">
+        <div class="step" [class.completed]="step === 4" [class.disabled]="step < 4">
             <div class="circle">4</div>
             <!-- <div class="label step-label">{{ 'STEP.THANK_YOU' | translate }}</div> -->
         </div>
@@ -95,7 +95,6 @@
             <p><strong>{{ 'TALENT_LIST.DESCRIPTION' | translate }}:</strong> {{ selectedTalent?.description }}</p>
             <p><strong>{{ 'TALENT_LIST.SENIORITY' | translate }}:</strong> {{ selectedTalent?.seniority }}</p>
             <p><strong>{{ 'TALENT_LIST.DAILY_RATE' | translate }}:</strong> ${{ selectedTalent?.dailyRate }}</p>
-            <p><strong>{{ 'TALENT_LIST.PRICE_PER_DAY' | translate }}:</strong> ${{ selectedTalent?.pricePerDay }}</p>
         </div>
         <app-contact-form-azienda [selectedCategory]="selectedCategory?.name || ''"
             [selectedTalent]="selectedTalent || {}"

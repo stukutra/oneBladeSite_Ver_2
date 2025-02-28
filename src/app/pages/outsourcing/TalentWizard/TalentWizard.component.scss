@@ -109,6 +109,14 @@
         font-weight: bold;
         line-height: 40px; // Assicurati che il numero sia centrato verticalmente
     }
+
+    &.completed {
+        cursor: pointer;
+    }
+
+    &.disabled {
+        cursor: not-allowed;
+    }
 }
 
 .step.completed .circle {
