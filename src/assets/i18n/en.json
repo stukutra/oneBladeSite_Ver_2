@@ -269,6 +269,10 @@
     "TALENT": "Talent",
     "CONTACT": "Contact",
     "THANK_YOU": "Thank You",
-    "EXPLANATION": "Follow the steps to complete the process. You can go back and modify your choices at any time."
+    "EXPLANATION": "Follow the steps to complete the process. You can go back and modify your choices at any time.",
+    "EXPLANATION_STEP_1": "Select the category of interest to find the most suitable talents for your needs.",
+    "EXPLANATION_STEP_2": "Select the talent that matches your requirements. You can view the details of each talent to make an informed choice.",
+    "EXPLANATION_STEP_3": "Fill out the contact form with your information to proceed with the request.",
+    "EXPLANATION_STEP_4": "Thank you for completing the process. We will contact you shortly for further details."
   }
 }

@@ -2,8 +2,11 @@
 
 <div class="container mt-4">
     <!-- Testo esplicativo -->
-    <div class="explanatory-text">
-        <p>{{ 'STEP.EXPLANATION' | translate }}</p>
+    <div class="explanatory-text text-center">
+        <h3 *ngIf="step === 1" class="step-explanation">{{ 'STEP.EXPLANATION_STEP_1' | translate }}</h3>
+        <h3 *ngIf="step === 2" class="step-explanation">{{ 'STEP.EXPLANATION_STEP_2' | translate }}</h3>
+        <h3 *ngIf="step === 3" class="step-explanation">{{ 'STEP.EXPLANATION_STEP_3' | translate }}</h3>
+        <h3 *ngIf="step === 4" class="step-explanation">{{ 'STEP.EXPLANATION_STEP_4' | translate }}</h3>
     </div>
 
     <!-- Stepline -->

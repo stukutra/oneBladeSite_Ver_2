@@ -272,6 +272,10 @@
         "TALENT": "Talento",
         "CONTACT": "Contacto",
         "THANK_YOU": "Gracias",
-        "EXPLANATION": "Sigue los pasos para completar el proceso. Puedes retroceder y modificar tus elecciones en cualquier momento."
+        "EXPLANATION": "Sigue los pasos para completar el proceso. Puedes retroceder y modificar tus elecciones en cualquier momento.",
+        "EXPLANATION_STEP_1": "Selecciona la categoría de interés para encontrar los talentos más adecuados a tus necesidades.",
+        "EXPLANATION_STEP_2": "Selecciona el talento que corresponde a tus necesidades. Puedes ver los detalles de cada talento para tomar una decisión informada.",
+        "EXPLANATION_STEP_3": "Completa el formulario de contacto con tu información para proceder con la solicitud.",
+        "EXPLANATION_STEP_4": "Gracias por completar el proceso. Nos pondremos en contacto contigo pronto para más detalles."
     }
 }

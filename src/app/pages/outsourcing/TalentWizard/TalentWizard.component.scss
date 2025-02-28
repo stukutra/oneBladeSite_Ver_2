@@ -7,23 +7,26 @@
     margin-bottom: $gap;
     border-radius: $border-radius;
     background-color: $background-light;
-    box-shadow: $box-shadow;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Riduci l'ombra
     transition: transform $transition-speed, box-shadow $transition-speed;
     cursor: pointer;
+    text-align: center; // Centra le scritte
 
     &:hover {
         transform: scale(1.05);
-        box-shadow: $box-shadow-hover;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Riduci l'ombra al passaggio del mouse
     }
 
     h3 {
         margin-top: 0;
         color: $text-color-oneblade;
+        font-size: 14px; // Riduci la dimensione del font
     }
 
     p {
         margin: 0.5rem 0;
         color: $text-color-dark;
+        font-size: 12px; // Riduci la dimensione del font
     }
 }
 
@@ -96,4 +99,8 @@
             background-color: $hover-color;
         }
     }
+}
+
+.step-explanation {
+    color: $primary-color; // Colore dei punti di step
 }
