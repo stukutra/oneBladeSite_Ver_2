@@ -1,0 +1,51 @@
+<app-image-carousel></app-image-carousel>
+
+
+<div class="container mt-4">
+
+
+    <div *ngIf="step === 1">
+        <h2 class="text-primary">{{ 'TALENT_LIST.TITLE' | translate }}</h2>
+        <div class="row">
+            <div *ngFor="let category of categories" class="col-md-4 mb-3">
+                <div class="category-box p-3" (click)="selectCategory(category)">
+                    <h3 class="text-secondary">{{ category.name | translate }}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="step === 2">
+        <h2 class="text-primary">{{ selectedCategory?.name || '' | translate }}</h2>
+        <div class="row">
+            <div *ngFor="let talent of selectedCategory?.talents" class="col-md-4 mb-3">
+                <div class="talent-box p-3" (click)="selectTalent(talent)">
+                    <h3 class="text-secondary">{{ talent.name | translate }}</h3>
+                    <p><strong>{{ 'TALENT_LIST.MIN_CONTRACT' | translate }}:</strong> {{ talent.minContract }}</p>
+                    <p><strong>{{ 'TALENT_LIST.DESCRIPTION' | translate }}:</strong> {{ talent.description }}</p>
+                    <p><strong>{{ 'TALENT_LIST.SENIORITY' | translate }}:</strong> {{ talent.seniority }}</p>
+                    <p><strong>{{ 'TALENT_LIST.DAILY_RATE' | translate }}:</strong> ${{ talent.dailyRate }}</p>
+                    <p><strong>{{ 'TALENT_LIST.PRICE_PER_DAY' | translate }}:</strong> ${{ talent.pricePerDay }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="step === 3">
+        <app-contact-form-azienda [selectedCategory]="selectedCategory?.name || ''"
+            [selectedTalent]="selectedTalent || {}"></app-contact-form-azienda>
+        <div class="talent-info mt-4">
+            <h3>{{ (selectedTalent?.name || '') | translate }}</h3>
+            <p><strong>{{ 'TALENT_LIST.MIN_CONTRACT' | translate }}:</strong> {{ selectedTalent?.minContract }}</p>
+            <p><strong>{{ 'TALENT_LIST.DESCRIPTION' | translate }}:</strong> {{ selectedTalent?.description }}</p>
+            <p><strong>{{ 'TALENT_LIST.SENIORITY' | translate }}:</strong> {{ selectedTalent?.seniority }}</p>
+            <p><strong>{{ 'TALENT_LIST.DAILY_RATE' | translate }}:</strong> ${{ selectedTalent?.dailyRate }}</p>
+            <p><strong>{{ 'TALENT_LIST.PRICE_PER_DAY' | translate }}:</strong> ${{ selectedTalent?.pricePerDay }}</p>
+        </div>
+    </div>
+
+    <div *ngIf="step === 4" class="thank-you-message">
+        <h2>{{ 'FORM.SUCCESS_MESSAGE' | translate }}</h2>
+        <p>{{ 'FORM.THANK_YOU_MESSAGE' | translate }}</p>
+    </div>
+</div>

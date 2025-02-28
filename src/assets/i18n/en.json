@@ -78,7 +78,8 @@
       "NUMBER": "Password must contain at least one number",
       "SPECIAL_CHAR": "Password must contain at least one special character",
       "MIN_LENGTH": "Password must be at least 8 characters long"
-    }
+    },
+    "THANK_YOU_MESSAGE": "Thank you for submitting your application. We will contact you shortly!"
   },
   "CAROUSEL": {
     "SLIDE_1": {

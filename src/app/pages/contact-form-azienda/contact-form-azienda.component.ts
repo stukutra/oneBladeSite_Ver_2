@@ -20,7 +20,8 @@ export class ContactFormAziendaComponent implements OnInit, OnChanges {
     telephone: '',
     email: '',
     vat: '',
-    applicationType: ''
+    applicationType: '',
+    file: null
   };
   fileError: string | null = null;
   successMessage: string | null = null;
@@ -94,7 +95,7 @@ export class ContactFormAziendaComponent implements OnInit, OnChanges {
     form.resetForm();  // Resetta i campi del modulo
 
     // Resetta manualmente il campo file
-    this.model.file = undefined;
+    this.model.file = null;
   }
 
   showModal(modalId: string) {

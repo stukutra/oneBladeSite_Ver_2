@@ -4,5 +4,5 @@ export interface ContactFormModel {
     email: string;
     vat: string;
     applicationType: string;
-    file?: File; // Add the file property
+    file: File | null;
 }

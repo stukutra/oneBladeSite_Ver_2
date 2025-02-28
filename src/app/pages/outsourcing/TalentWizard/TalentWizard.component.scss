@@ -1,0 +1,50 @@
+@import '../../../style/_variabiles.scss';
+
+.category-box,
+.talent-box {
+    border: 1px solid $input-border-color;
+    padding: $padding-base;
+    margin-bottom: $gap;
+    border-radius: $border-radius;
+    background-color: $background-light;
+    box-shadow: $box-shadow;
+    transition: transform $transition-speed, box-shadow $transition-speed;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: $box-shadow-hover;
+    }
+
+    h3 {
+        margin-top: 0;
+        color: $text-color-oneblade;
+    }
+
+    p {
+        margin: 0.5rem 0;
+        color: $text-color-dark;
+    }
+}
+
+.talent-info {
+    border: 1px solid $input-border-color;
+    padding: $padding-base;
+    margin-top: $gap;
+    border-radius: $border-radius;
+    background-color: $background-light;
+    box-shadow: $box-shadow;
+}
+
+.thank-you-message {
+    text-align: center;
+    margin-top: $gap;
+
+    h2 {
+        color: $text-color-oneblade;
+    }
+
+    p {
+        color: $text-color-dark;
+    }
+}

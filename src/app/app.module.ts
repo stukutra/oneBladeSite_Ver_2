@@ -48,6 +48,7 @@ import { RegistrationFormUserComponent } from './user/registrationFormUser/regis
 // Software House & Call Components
 import { SoftwareHouseComponent } from './pages/softwareHouse/softwareHouse.component';
 import { TalentListComponent } from './pages/outsourcing/TalentList/TalentList.component';
+import { TalentWizardComponent } from './pages/outsourcing/TalentWizard/TalentWizard.component';
 import { TopBarComponent } from './layout/top-bar/top-bar.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
@@ -93,7 +94,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     LoginComponent,
     RegisterComponent,
     TalentListComponent,
-    ContactFormAziendaComponent
+    ContactFormAziendaComponent,
+    TalentWizardComponent
   ],
   imports: [
     BrowserModule,

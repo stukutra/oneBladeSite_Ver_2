@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+
+import { ContactFormModel } from 'src/app/models/contact-form.model';
 import { HttpClient } from '@angular/common/http';
 import { NgForm } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
@@ -9,8 +11,9 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./contact-form.component.scss']
 })
 export class ContactFormComponent {
+  @Output() formSubmitted = new EventEmitter<void>();
 
-  model: any = {
+  model: ContactFormModel = {
     name: '',
     telephone: '',
     email: '',
@@ -73,6 +76,7 @@ export class ContactFormComponent {
           });
           this.resetForm(form);
           localStorage.removeItem('questionnaireReport');
+          this.formSubmitted.emit(); // Emit the event when the form is successfully submitted
         } else {
           this.translate.get('FORM.SUBMISSION_ERROR').subscribe((res: string) => {
             this.showModal('Errore', response.message || res);

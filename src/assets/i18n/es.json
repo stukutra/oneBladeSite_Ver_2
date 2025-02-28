@@ -71,7 +71,8 @@
         "SUCCESS_MESSAGE": "Tu solicitud ha sido enviada con éxito. ¡Te contactaremos pronto!",
         "PRIVACY_ERROR": "Debes autorizar el tratamiento de datos personales para proceder.",
         "FILE_TOO_LARGE": "El archivo supera el tamaño de 3 MB.",
-        "NO_REPORT": "No hay informe disponible"
+        "NO_REPORT": "No hay informe disponible",
+        "THANK_YOU_MESSAGE": "Gracias por enviar tu solicitud. ¡Te contactaremos pronto!"
     },
     "PASSWORD_REQUIREMENTS": {
         "UPPERCASE": "La contraseña debe contener al menos una letra mayúscula",

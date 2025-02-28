@@ -78,7 +78,8 @@
             "NUMBER": "La password deve contenere almeno un numero",
             "SPECIAL_CHAR": "La password deve contenere almeno un carattere speciale",
             "MIN_LENGTH": "La password deve essere lunga almeno 8 caratteri"
-        }
+        },
+        "THANK_YOU_MESSAGE": "Grazie per aver inviato la tua candidatura. Ti contatteremo a breve!"
     },
     "CAROUSEL": {
         "SLIDE_1": {
