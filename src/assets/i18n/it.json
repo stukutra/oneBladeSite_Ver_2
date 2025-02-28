@@ -1,277 +1,277 @@
 {
-    "NAV": {
-        "DEVELOPMENT": "Sviluppiamo il tuo software",
-        "TALENT": "Talent acquisition"
+  "NAV": {
+    "DEVELOPMENT": "Sviluppiamo il tuo software",
+    "TALENT": "Talent acquisition"
+  },
+  "CONTENT": {
+    "DEVELOPMENT": {
+      "TITLE": "Sviluppiamo il tuo software",
+      "INTRO": "<strong>OneBlade</strong> realizza <strong>soluzioni software su misura</strong> per potenziare e ottimizzare il tuo business. Siamo un team di <strong>sviluppatori</strong>, <strong>designer</strong> e <strong>architetti del software</strong>, specializzati nella <strong>progettazione</strong> e <strong>creazione di applicazioni personalizzate</strong>, pensate per rispondere in modo <strong>efficace</strong> e <strong>innovativo</strong> alle esigenze dei nostri clienti e partner. Ci occupiamo di tutto il <strong>ciclo di sviluppo</strong>, dall’<strong>ideazione</strong> e <strong>progettazione</strong> fino all’<strong>implementazione</strong>, garantendo prodotti di <strong>alta qualità</strong> e perfettamente integrati nei <strong>processi aziendali</strong>.",
+      "SUBTITLE_DEVELOPERS": "Sviluppatori e professionisti",
+      "BODY_DEVELOPERS": "Per raggiungere questo obiettivo, mettiamo insieme gruppi di esperti selezionati con cura nel corso degli anni. Ogni membro del nostro team è un consulente specializzato con un background comprovato e una profonda esperienza nel settore. Abbiamo investito tempo e risorse nella selezione e nella formazione di questi professionisti, garantendo che rispondano esattamente alle tue esigenze tecniche e funzionali.",
+      "SUBTITLE_APPROACH": "L'approccio",
+      "BODY_APPROACH": "Il nostro approccio si basa su una comprensione dettagliata delle tue necessità e dei tuoi obiettivi. Collaboriamo strettamente con te per definire i requisiti del progetto e progettare soluzioni che siano perfettamente allineate con le tue aspettative. I team che formiamo lavorano con impegno e dedizione, assicurando un processo di sviluppo fluido e senza intoppi.",
+      "SUBTITLE_REMOTE": "Tutto da remoto",
+      "BODY_REMOTE": "Inoltre, siamo in grado di gestire tutto il processo di sviluppo software completamente da remoto, offrendo così una flessibilità operativa senza pari. Questa modalità di lavoro non solo consente di adattarsi rapidamente ai cambiamenti e alle nuove esigenze, ma ti permette anche di accedere ai migliori talenti globali senza limitazioni geografiche.",
+      "SUMMARY": "In sintesi, il nostro servizio ti offre una soluzione integrata e su misura, con team di esperti altamente qualificati che lavorano in sinergia per garantire risultati di alta qualità e una gestione del progetto fluida e adattabile. La nostra capacità di operare completamente in modalità remota ti offre la libertà di concentrarti sulle tue priorità strategiche, sapendo che il tuo progetto software è nelle mani di professionisti esperti e dedicati."
     },
-    "CONTENT": {
-        "DEVELOPMENT": {
-            "TITLE": "Sviluppiamo il tuo software",
-            "INTRO": "<strong>OneBlade</strong> realizza <strong>soluzioni software su misura</strong> per potenziare e ottimizzare il tuo business. Siamo un team di <strong>sviluppatori</strong>, <strong>designer</strong> e <strong>architetti del software</strong>, specializzati nella <strong>progettazione</strong> e <strong>creazione di applicazioni personalizzate</strong>, pensate per rispondere in modo <strong>efficace</strong> e <strong>innovativo</strong> alle esigenze dei nostri clienti e partner. Ci occupiamo di tutto il <strong>ciclo di sviluppo</strong>, dall’<strong>ideazione</strong> e <strong>progettazione</strong> fino all’<strong>implementazione</strong>, garantendo prodotti di <strong>alta qualità</strong> e perfettamente integrati nei <strong>processi aziendali</strong>.",
-            "SUBTITLE_DEVELOPERS": "Sviluppatori e professionisti",
-            "BODY_DEVELOPERS": "Per raggiungere questo obiettivo, mettiamo insieme gruppi di esperti selezionati con cura nel corso degli anni. Ogni membro del nostro team è un consulente specializzato con un background comprovato e una profonda esperienza nel settore. Abbiamo investito tempo e risorse nella selezione e nella formazione di questi professionisti, garantendo che rispondano esattamente alle tue esigenze tecniche e funzionali.",
-            "SUBTITLE_APPROACH": "L'approccio",
-            "BODY_APPROACH": "Il nostro approccio si basa su una comprensione dettagliata delle tue necessità e dei tuoi obiettivi. Collaboriamo strettamente con te per definire i requisiti del progetto e progettare soluzioni che siano perfettamente allineate con le tue aspettative. I team che formiamo lavorano con impegno e dedizione, assicurando un processo di sviluppo fluido e senza intoppi.",
-            "SUBTITLE_REMOTE": "Tutto da remoto",
-            "BODY_REMOTE": "Inoltre, siamo in grado di gestire tutto il processo di sviluppo software completamente da remoto, offrendo così una flessibilità operativa senza pari. Questa modalità di lavoro non solo consente di adattarsi rapidamente ai cambiamenti e alle nuove esigenze, ma ti permette anche di accedere ai migliori talenti globali senza limitazioni geografiche.",
-            "SUMMARY": "In sintesi, il nostro servizio ti offre una soluzione integrata e su misura, con team di esperti altamente qualificati che lavorano in sinergia per garantire risultati di alta qualità e una gestione del progetto fluida e adattabile. La nostra capacità di operare completamente in modalità remota ti offre la libertà di concentrarti sulle tue priorità strategiche, sapendo che il tuo progetto software è nelle mani di professionisti esperti e dedicati."
-        },
-        "TALENT": {
-            "TITLE": "Talent acquisition",
-            "INTRO": "Il nostro servizio di talent acquisition è progettato per mettere in contatto i professionisti con i migliori progetti IT disponibili sul mercato. Ma la nostra offerta va ben oltre la semplice selezione di candidati: ci impegniamo a comprendere in profondità le esigenze specifiche di ogni progetto, per garantire che il talento che proponiamo non solo soddisfi, ma superi le aspettative.",
-            "BODY_ANALYSIS": "Per fare ciò, adottiamo un approccio personalizzato e analitico. Iniziamo con una valutazione dettagliata dei requisiti del progetto e delle competenze richieste. Questo processo ci consente di identificare e selezionare i professionisti più adatti, che possiedano non solo le qualifiche tecniche necessarie, ma anche la capacità di adattarsi e contribuire efficacemente al contesto del progetto.",
-            "BODY_CANDIDATES": "Ogni candidato che consideriamo per le vostre esigenze è sottoposto a rigorosi test interni e valutazioni approfondite. Questi test sono progettati per garantire che il personale selezionato operi secondo standard elevati di qualità e professionalità. Ciò ci permette di assicurare che ogni talento non solo rispetti i requisiti tecnici, ma sia anche in grado di integrarsi bene nel team e contribuire al successo complessivo del progetto.",
-            "BODY_NETWORK": "Inoltre, la nostra esperienza nel settore ci consente di mantenere una rete di professionisti altamente qualificati e aggiornati con le ultime tendenze e tecnologie nel campo IT. Questo ci permette di rispondere con rapidità e precisione alle esigenze dei nostri clienti, fornendo soluzioni di talent acquisition che sono sia tempestive che di alta qualità.",
-            "SUMMARY": "In sintesi, il nostro servizio di talent acquisition è progettato per garantire che ogni progetto IT possa beneficiare delle competenze più adatte e dei talenti più qualificati disponibili, contribuendo così al successo e all’eccellenza dei risultati finali."
-        }
-    },
-    "FORM": {
-        "QUESTIONARIE": {
-            "TITLE": "Vorresti inviarci un test veloce?"
-        },
-        "TITLE": "Sei un libero professionista?",
-        "TITLESOFTWARE": "Affidati a noi per un supporto completo nello sviluppo di applicazioni",
-        "SUBTITLESOFTWARE": "Il tuo team ha bisogno di un partner per accelerare lo sviluppo software?",
-        "SUBTITLE": "Se cerchi nuove opportunità di collaborazione unisciti al nostro team e lavora con noi.",
-        "PLACEHOLDERS": {
-            "NAME": "Nome e cognome",
-            "TELEPHONE": "Cellulare",
-            "EMAIL": "Email",
-            "VAT": "Partita IVA",
-            "APPLICATION_TYPE": "Seleziona un ruolo",
-            "FILE": "Il file non può superare i 2MB",
-            "REGION": "Seleziona una regione"
-        },
-        "VALIDATION": {
-            "NAME_REQUIRED": "Il nome è un campo richiesto",
-            "TELEPHONE_REQUIRED": "Il telefono è un campo richiesto",
-            "EMAIL_REQUIRED": "L'email è un campo richiesto",
-            "EMAIL_INVALID": "Email non valida",
-            "VAT_REQUIRED": "La partita IVA è un campo richiesto",
-            "VAT_INVALID": "La partita IVA non è valida",
-            "ROLE_REQUIRED": "Il ruolo è un campo richiesto",
-            "FILE_REQUIRED": "Il file è richiesto",
-            "REGION_REQUIRED": "La regione è un campo richiesto",
-            "PASSWORD_REQUIRED": "La password è un campo richiesto",
-            "CELLULARE_REQUIRED": "Il cellulare è un campo richiesto",
-            "COGNOME_REQUIRED": "Il cognome è un campo richiesto",
-            "CONFIRM_PASSWORD_REQUIRED": "La conferma della password è un campo richiesto"
-        },
-        "BUTTON_SUBMIT": "Invia la tua candidatura",
-        "BUTTON_RESERVATIONACADEMY": "Prenota",
-        "MODAL": {
-            "TITLE_SUCCESS": "Invio riuscito",
-            "TITLE_ERROR": "Errore di invio",
-            "MESSAGE_SUCCESS": "La tua candidatura è stata inviata con successo.",
-            "MESSAGE_ERROR": "Si è verificato un errore durante l'invio. Riprova.",
-            "CLOSE": "Chiudi"
-        },
-        "VALIDATION_ERROR": "Per favore, compila tutti i campi richiesti e carica un file valido.",
-        "SUBMISSION_ERROR": "Si è verificato un errore durante l'invio della tua richiesta",
-        "SERVER_ERROR": "Si è verificato un errore durante la comunicazione con il server.",
-        "SUCCESS_MESSAGE": "La tua richiesta è stata inviata con successo. Ti contatteremo a breve!",
-        "PRIVACY_ERROR": "Devi autorizzare il trattamento dei dati personali per procedere.",
-        "FILE_TOO_LARGE": "Il file supera la dimensione di 3 MB.",
-        "NO_REPORT": "Nessun report disponibile",
-        "PASSWORD_REQUIREMENTS": {
-            "UPPERCASE": "La password deve contenere almeno una lettera maiuscola",
-            "LOWERCASE": "La password deve contenere almeno una lettera minuscola",
-            "NUMBER": "La password deve contenere almeno un numero",
-            "SPECIAL_CHAR": "La password deve contenere almeno un carattere speciale",
-            "MIN_LENGTH": "La password deve essere lunga almeno 8 caratteri"
-        },
-        "THANK_YOU_MESSAGE": "Grazie per aver inviato la tua candidatura. Ti contatteremo a breve!"
-    },
-    "CAROUSEL": {
-        "SLIDE_1": {
-            "TITLE": "Talent Acquisition",
-            "SUBTITLE": "Il nostro forte è trovare il miglior professionista nel settore IT"
-        },
-        "SLIDE_2": {
-            "TITLE": "Dal concetto alla creazione",
-            "SUBTITLE": "Software che supera le aspettative"
-        },
-        "SLIDE_3": {
-            "TITLE": "Talento e Innovazione in Perfetta Armonia",
-            "SUBTITLE": "Selezioniamo i migliori talenti per sviluppare le tue idee"
-        }
-    },
-    "PARALLAX": {
-        "TITLE": "Talenti Eccellenti, Software Eccelso",
-        "SUBTITLE": "Connettiamo i migliori professionisti al software che guida il cambiamento"
-    },
-    "INFOCOMPANY": {
-        "TITLE": "Vuoi lavorare in sede :-)?",
-        "SUBTITLE": "Siamo in Via Di Valle Lupara 10, 00148 Roma (RM)",
-        "FULLREMOTETITLE": "FULL-Remote",
-        "FULLREMOTESUBTITLE": "Lavora ovunque desideri: la tua postazione è dove scegli di essere!"
-    },
-    "ACADEMY_BANNER": {
-        "LAB_TITLE": "oneBlade Lab",
-        "LAB_DESCRIPTION": "Scegli il tuo percorso, noi ti accompagniamo",
-        "GUIDE_TITLE": "Guide",
-        "GUIDE_DESCRIPTION": "per aspiranti programmatori"
-    },
-    "ACADEMY_DETAILS": {
-        "COURSE_CONTENTS_TITLE": "Contenuti del Corso:",
-        "REQUIREMENTS_TITLE": "Requisiti",
-        "RELATED_COURSES_TITLE": "Altri corsi interessanti",
-        "COURSE_DETAILS_TITLE": "Dettagli del Corso",
-        "COURSE_CODE": "Codice:",
-        "COURSE_DURATION": "Durata:",
-        "COURSE_MODE": "Modalità:",
-        "COURSE_LESSONS": "Lezioni:",
-        "COURSE_TIME": "Tempo:",
-        "COURSE_LEVEL": "Livello:",
-        "FORM_DESCRIPTION": "Compilando il form qui presente, non effettuerai direttamente l’acquisto del corso, ma invierai una richiesta di contatto. Il nostro team ti ricontatterà al più presto per fornirti tutte le informazioni necessarie, rispondere alle tue domande e guidarti nel processo di iscrizione. Siamo a tua disposizione per qualsiasi chiarimento! 😊",
-        "NEXT_CLASSES_TITLE": "Prossime classi in partenza",
-        "NO_DATES_MESSAGE": "Programmazione del calendario in corso. Scrivi per avere maggiori dettagli."
-    },
-    "ACADEMY_ONEBLADE": {
-        "TITLE": "Trova il tuo cammino, noi siamo al tuo fianco.",
-        "INTRO": "Ogni viaggio inizia con una scelta: scoprire, imparare, mettersi alla prova. I nostri corsi sono pensati per chi vuole comprendere davvero questo mondo, per chi è mosso dalla curiosità e dalla voglia di acquisire competenze concrete.",
-        "BELIEF": "Crediamo che la conoscenza e la passione siano più importanti di qualsiasi certificazione. Le certificazioni possono essere un valore aggiunto, ma ciò che conta davvero è l’apprendimento reale, la pratica e la comprensione delle metodologie.",
-        "NO_TITLES": "Noi non rilasciamo titoli, perché il titolo più importante è la competenza acquisita. Non facciamo promesse di posti di lavoro o garanzie di inserimento, perché non crediamo nelle illusioni. Il nostro obiettivo è formare realmente le persone che vogliono seguire ed inseguire la conoscenza.",
-        "MISSION": "La nostra missione non si limita agli studenti: crediamo fermamente che anche la selezione dei docenti sia un aspetto fondamentale. Scegliamo solo professionisti che condividono la nostra filosofia, che credono nel valore della formazione autentica e nel potere della conoscenza come strumento di crescita personale e professionale.",
-        "READY": "Se sei pronto a costruire il tuo futuro con determinazione e impegno, allora siamo qui per guidarti passo dopo passo verso il tuo obiettivo. 🚀"
-    },
-    "TOP_BAR": {
-        "ABOUT_US": "Chi è oneBlade",
-        "BODY_RENTAL": "Body rental",
-        "ONEBLADE_LAB": "oneBlade LAB",
-        "CHOOSE_COURSE": "Scegli il corso",
-        "GUIDES": "Guide",
-        "FAQ": "FAQ",
-        "SELECT_LANGUAGE": "Seleziona lingua",
-        "ITALIAN": "Italiano",
-        "ENGLISH": "Inglese",
-        "SPANISH": "Spagnolo",
-        "CHRISTMAS_GAME": "Gioca con me!",
-        "ACCOUNT": "Account",
-        "LOGIN": "Accedi",
-        "REGISTER": "Registrati"
-    },
-    "CALL_SECTION": {
-        "TITLE": "Fissa una Call"
-    },
-    "OUTSOURCING_BANNER": {
-        "TITLE": "Body Rental",
-        "DESCRIPTION": "Perché scegliere il body rental per i propri progetti? Scoprilo!"
-    },
-    "OUTSOURCING_INFO": {
-        "TITLE": "I 9 vantaggi dello sviluppatore in outsourcing",
-        "SUBTITLE": "Perché scegliere il body rental per i propri progetti",
-        "INTRO_1": "Negli ultimi anni, il settore IT ha assistito a un crescente interesse per il body rental, un modello che consente alle aziende di usufruire di sviluppatori altamente qualificati senza doversi occupare di assunzioni dirette.",
-        "INTRO_2": "In precedenza, abbiamo parlato del Time & Material per il personale IT; ora approfondiamo il servizio di outsourcing degli sviluppatori, un’opzione strategica per aziende di ogni dimensione.",
-        "SECTION_TITLE_1": "Cos'è il body rental per sviluppatori?",
-        "BODY_1": "Il body rental è un servizio di outsourcing che consente alle aziende di integrare sviluppatori altamente specializzati nei propri team senza doverli assumere direttamente. Questo modello è ideale per progetti a breve e lungo termine, garantendo massima flessibilità e riduzione dei costi operativi.",
-        "SECTION_TITLE_2": "I 9 vantaggi del body rental per le aziende",
-        "BENEFIT_1": "Risparmio di tempo e costi di ricerca del personale – Evita il lungo e costoso processo di selezione tra annunci e agenzie interinali.",
-        "BENEFIT_2": "Risparmio nel processo di valutazione delle competenze – Gli sviluppatori sono già selezionati e valutati per il progetto specifico.",
-        "BENEFIT_3": "Risparmio nei costi di formazione – Il personale fornito è già formato e pronto a lavorare.",
-        "BENEFIT_4": "Integrazione immediata nel team aziendale – I nostri sviluppatori possono essere inseriti immediatamente nei progetti, con formazione specifica se necessaria.",
-        "BENEFIT_5": "Nessuna responsabilità diretta sull’assunzione – L’azienda non deve preoccuparsi di contratti a lungo termine o gestione amministrativa.",
-        "BENEFIT_6": "Garanzia di qualità e supporto continuo – Offriamo personale qualificato con un supporto interno per mentoring e advising.",
-        "BENEFIT_7": "Crescita professionale del team aziendale – Collaborare con sviluppatori esperti aiuta a migliorare le competenze interne dell’azienda.",
-        "BENEFIT_8": "Garanzia di continuità lavorativa – Possibilità di scalare rapidamente il team e far fronte a picchi di lavoro senza interruzioni.",
-        "SECTION_TITLE_3": "Il nostro approccio",
-        "BODY_2": "Offriamo un servizio strutturato in base alle esigenze aziendali:",
-        "APPROACH_1": "Analisi personalizzata: studiamo le esigenze aziendali e forniamo sviluppatori adatti.",
-        "APPROACH_2": "Selezione accurata: scegliamo i migliori talenti con competenze specifiche per ogni progetto.",
-        "APPROACH_3": "Supporto continuo: forniamo assistenza e mentoring per garantire la massima efficienza.",
-        "APPROACH_4": "Flessibilità contrattuale: possibilità di scalare il team in base alle esigenze del progetto.",
-        "SECTION_TITLE_4": "Conclusione",
-        "CONCLUSION": "Il body rental rappresenta una soluzione strategica per le aziende IT, offrendo risparmi economici, flessibilità e personale altamente qualificato senza le complessità di un’assunzione diretta.",
-        "CONTACT": "Se vuoi scoprire come possiamo supportare la tua azienda con il nostro servizio di outsourcing di sviluppatori, contattaci oggi stesso fissa un appuntamento!"
-    },
-    "GUIDE_BANNER_TOP": {
-        "TITLE": "Semplice, pratico, efficace: il tuo percorso tech",
-        "SUBTITLE": "Forma le tue competenze tech con corsi online orientati alla pratica. Parti da zero e impara in modo rapido e pratico."
-    },
-    "GUIDE_LIST": {
-        "TITLE": "Guide introduttive",
-        "DESCRIPTION": "Scopri tutte le guide tecniche a tema sviluppo web.",
-        "BUTTON": "Scopri di più →"
-    },
-    "COMPANY_ABOUT_US": {
-        "TITLE": "Chi Siamo",
-        "INTRO": "Fondata con l’obiettivo di colmare il divario tra la domanda e l’offerta di competenze tecnologiche nel mercato italiano, oneBlade si distingue per la sua capacità di offrire servizi integrati che spaziano dalla creazione di software personalizzati alla formazione di professionisti altamente qualificati. La nostra sede principale è situata in Italia, e operiamo su tutto il territorio nazionale per soddisfare le esigenze di una clientela diversificata.",
-        "CEO_NAME": "Guido Salzano",
-        "CEO_TITLE": "CEO oneBlade",
-        "HR_NAME": "Serena D'Angelo",
-        "HR_TITLE": "HR Manager & Co-Founder oneBlade",
-        "MISSION_TITLE": "Missione",
-        "MISSION_BODY": "La missione di oneBlade è promuovere l’innovazione tecnologica in Italia attraverso lo sviluppo di soluzioni software all’avanguardia e la formazione di talenti in grado di affrontare le sfide del mercato moderno. Ci impegniamo a fornire alle aziende gli strumenti necessari per crescere e competere in un contesto globale, offrendo al contempo ai professionisti le opportunità di sviluppo e crescita che meritano.",
-        "SERVICES_TITLE": "Servizi Offerti",
-        "SERVICE_1": "Sviluppo Software Personalizzato: Progettiamo e realizziamo applicazioni software su misura, adattate alle specifiche esigenze dei nostri clienti, utilizzando le tecnologie più moderne e affidabili.",
-        "SERVICE_2": "Accademia di Formazione: Offriamo corsi avanzati di programmazione e sviluppo software, rivolti sia a neofiti che a professionisti desiderosi di aggiornare le proprie competenze. I nostri programmi formativi sono strutturati per garantire un apprendimento pratico e immediatamente applicabile nel mondo del lavoro.",
-        "SERVICE_3": "Talent Acquisition: Supportiamo le aziende nella ricerca e selezione di figure professionali altamente specializzate nel settore IT, garantendo un processo di recruiting efficiente e mirato.",
-        "WHY_CHOOSE_TITLE": "Perché Scegliere oneBlade",
-        "WHY_CHOOSE_1": "Esperienza e Competenza: Il nostro team è composto da professionisti con anni di esperienza nel settore tecnologico e della formazione.",
-        "WHY_CHOOSE_2": "Approccio Personalizzato: Ogni progetto è unico; per questo offriamo soluzioni tailor-made che rispondono alle specifiche esigenze di ciascun cliente.",
-        "WHY_CHOOSE_3": "Innovazione Continua: Siamo costantemente aggiornati sulle ultime tendenze e tecnologie, garantendo ai nostri clienti soluzioni all’avanguardia.",
-        "WHY_CHOOSE_4": "Rete di Talenti: Grazie alla nostra accademia e ai servizi di talent acquisition, disponiamo di una vasta rete di professionisti qualificati pronti a soddisfare le esigenze del mercato.",
-        "TECHNOLOGIES_TITLE": "Tecnologie"
-    },
-    "GUIDE_ACCADEMY": {
-        "TITLE": "Guide per aspiranti programmatori",
-        "PARAGRAPH_1": "Oggi la programmazione è diventata una competenza essenziale, proprio come la capacità di usare uno smartphone o un computer lo è stata negli ultimi decenni. Con l’evoluzione tecnologica e la crescente digitalizzazione, acquisire abilità nel settore informatico è fondamentale per restare competitivi nel mercato.",
-        "PARAGRAPH_2": "Le aziende cercano costantemente professionisti qualificati, ma l’offerta di talenti non riesce a soddisfare la domanda: solo in Italia, si stimano oltre 200.000 posizioni aperte in ambito tech.",
-        "PARAGRAPH_3": "Indipendentemente dall’area in cui si desidera specializzarsi, è cruciale costruire solide basi di conoscenza. Le nostre guide sono pensate per chi vuole avvicinarsi al mondo dello sviluppo web, fornendo strumenti pratici e concreti per iniziare a programmare e scoprire le opportunità offerte da questa professione.",
-        "LOADING": "Caricamento..."
-    },
-    "FAQ": {
-        "TITLE": "Domande Frequenti (FAQ)",
-        "QUESTION_1": "I corsi sono disponibili online?",
-        "ANSWER_1": "Sì, tutti i nostri corsi sono erogati <strong>online</strong>, permettendo ai partecipanti di accedere facilmente da qualsiasi luogo. Dopo l'iscrizione, riceverai tutte le informazioni necessarie per accedere alle lezioni e ai materiali didattici.",
-        "QUESTION_2": "Come riceverò informazioni sulle date e l'organizzazione del corso?",
-        "ANSWER_2": "Dopo la prenotazione, riceverai via email tutte le comunicazioni relative al corso, comprese le <strong>date delle lezioni, gli orari e le modalità di accesso</strong>. Il nostro team sarà sempre a disposizione per supportarti in ogni fase.",
-        "QUESTION_3": "Cosa succede se non posso partecipare alla data concordata?",
-        "ANSWER_3": "Non preoccuparti! Se per qualsiasi motivo non potrai partecipare alla data concordata, <strong>verrai automaticamente spostato alla sessione successiva</strong>. OneBlade garantisce flessibilità nella partecipazione per assicurare che tutti i corsisti possano completare il proprio percorso senza problemi.",
-        "QUESTION_4": "Chi può partecipare ai corsi?",
-        "ANSWER_4": "<strong>Tutti possono partecipare ai nostri corsi!</strong> Che tu sia un principiante curioso, uno studente in cerca di competenze pratiche o un professionista che vuole aggiornarsi, troverai il percorso adatto alle tue esigenze. <strong>La formazione è un investimento sul futuro</strong>, e i nostri corsi sono progettati per darti competenze concrete e subito applicabili nel mondo del lavoro.",
-        "QUESTION_5": "Cosa si impara durante i vostri corsi?",
-        "ANSWER_5": "Nei nostri corsi <strong>non ti limiti a studiare la teoria</strong>, ma sviluppi <strong>competenze pratiche</strong> che ti permetteranno di affrontare scenari reali. Immagina di partecipare a un corso di <strong>Cyber Security</strong>: oltre a conoscere le minacce informatiche, imparerai a <strong>difendere sistemi e reti con strategie concrete</strong>. Se invece ti interessa <strong>AI Generativa</strong>, esplorerai le tecnologie più avanzate e scoprirai come integrarle nel business. <strong>Ogni corso è pensato per darti un bagaglio di competenze che puoi applicare da subito nel mondo professionale!</strong>",
-        "QUESTION_6": "Rilasciate un attestato alla fine del corso?",
-        "ANSWER_6": "<strong>Sì!</strong> Alla fine del corso riceverai un <strong>attestato di partecipazione rilasciato da OneBlade</strong>, a condizione che tu abbia frequentato almeno il <strong>70% delle lezioni</strong>. Questo certificato rappresenta un valore aggiunto per il tuo curriculum e dimostra la tua preparazione nel settore.",
-        "QUESTION_7": "Posso seguire il corso mentre lavoro o studio?",
-        "ANSWER_7": "<strong>Sì!</strong> Tutti i nostri corsi sono organizzati in orari serali, <strong>dopo le 18:00</strong>, per permettere a chi lavora o studia di seguirli senza difficoltà. Sappiamo quanto sia importante conciliare formazione e impegni quotidiani, ed è per questo che offriamo flessibilità e supporto per aiutarti a raggiungere i tuoi obiettivi professionali."
-    },
-    "LOGIN": {
-        "TITLE": "Accedi",
-        "EMAIL": "Email",
-        "PASSWORD": "Password",
-        "BUTTON": "Accedi",
-        "ERROR": "Accesso fallito"
-    },
-    "REGISTER": {
-        "TITLE": "Registrati",
-        "NOME": "Nome",
-        "COGNOME": "Cognome",
-        "EMAIL": "Email",
-        "CELLULARE": "Cellulare",
-        "PASSWORD": "Password",
-        "BUTTON": "Registrati",
-        "SUCCESS": "Registrazione avvenuta con successo",
-        "ERROR": "Registrazione fallita",
-        "CONFIRM_PASSWORD": "Conferma Password"
-    },
-    "TALENT_LIST": {
-        "TITLE": "Lista dei Talenti",
-        "MIN_CONTRACT": "Contratto Minimo",
-        "DESCRIPTION": "Descrizione",
-        "SENIORITY": "Anzianità",
-        "DAILY_RATE": "Tariffa Giornaliera",
-        "PRICE_PER_DAY": "Prezzo per Giorno"
-    },
-    "STEP": {
-        "CATEGORY": "Categoria",
-        "TALENT": "Talento",
-        "CONTACT": "Contatto",
-        "THANK_YOU": "Grazie",
-        "EXPLANATION": "Segui i passaggi per completare il processo. Puoi tornare indietro e modificare le tue scelte in qualsiasi momento.",
-        "EXPLANATION_STEP_1": "Seleziona la categoria di interesse per trovare i talenti più adatti alle tue esigenze.",
-        "EXPLANATION_STEP_2": "Seleziona il talento che corrisponde alle tue necessità. Puoi visualizzare i dettagli di ogni talento per fare una scelta informata.",
-        "EXPLANATION_STEP_3": "Compila il modulo di contatto con le tue informazioni per procedere con la richiesta.",
-        "EXPLANATION_STEP_4": "Grazie per aver completato il processo. Ti contatteremo a breve per ulteriori dettagli."
+    "TALENT": {
+      "TITLE": "Talent acquisition",
+      "INTRO": "Il nostro servizio di talent acquisition è progettato per mettere in contatto i professionisti con i migliori progetti IT disponibili sul mercato. Ma la nostra offerta va ben oltre la semplice selezione di candidati: ci impegniamo a comprendere in profondità le esigenze specifiche di ogni progetto, per garantire che il talento che proponiamo non solo soddisfi, ma superi le aspettative.",
+      "BODY_ANALYSIS": "Per fare ciò, adottiamo un approccio personalizzato e analitico. Iniziamo con una valutazione dettagliata dei requisiti del progetto e delle competenze richieste. Questo processo ci consente di identificare e selezionare i professionisti più adatti, che possiedano non solo le qualifiche tecniche necessarie, ma anche la capacità di adattarsi e contribuire efficacemente al contesto del progetto.",
+      "BODY_CANDIDATES": "Ogni candidato che consideriamo per le vostre esigenze è sottoposto a rigorosi test interni e valutazioni approfondite. Questi test sono progettati per garantire che il personale selezionato operi secondo standard elevati di qualità e professionalità. Ciò ci permette di assicurare che ogni talento non solo rispetti i requisiti tecnici, ma sia anche in grado di integrarsi bene nel team e contribuire al successo complessivo del progetto.",
+      "BODY_NETWORK": "Inoltre, la nostra esperienza nel settore ci consente di mantenere una rete di professionisti altamente qualificati e aggiornati con le ultime tendenze e tecnologie nel campo IT. Questo ci permette di rispondere con rapidità e precisione alle esigenze dei nostri clienti, fornendo soluzioni di talent acquisition che sono sia tempestive che di alta qualità.",
+      "SUMMARY": "In sintesi, il nostro servizio di talent acquisition è progettato per garantire che ogni progetto IT possa beneficiare delle competenze più adatte e dei talenti più qualificati disponibili, contribuendo così al successo e all’eccellenza dei risultati finali."
     }
+  },
+  "FORM": {
+    "QUESTIONARIE": {
+      "TITLE": "Vorresti inviarci un test veloce?"
+    },
+    "TITLE": "Sei un libero professionista?",
+    "TITLESOFTWARE": "Affidati a noi per un supporto completo nello sviluppo di applicazioni",
+    "SUBTITLESOFTWARE": "Il tuo team ha bisogno di un partner per accelerare lo sviluppo software?",
+    "SUBTITLE": "Se cerchi nuove opportunità di collaborazione unisciti al nostro team e lavora con noi.",
+    "PLACEHOLDERS": {
+      "NAME": "Nome e cognome",
+      "TELEPHONE": "Cellulare",
+      "EMAIL": "Email",
+      "VAT": "Partita IVA",
+      "APPLICATION_TYPE": "Seleziona un ruolo",
+      "FILE": "Il file non può superare i 2MB",
+      "REGION": "Seleziona una regione"
+    },
+    "VALIDATION": {
+      "NAME_REQUIRED": "Il nome è un campo richiesto",
+      "TELEPHONE_REQUIRED": "Il telefono è un campo richiesto",
+      "EMAIL_REQUIRED": "L'email è un campo richiesto",
+      "EMAIL_INVALID": "Email non valida",
+      "VAT_REQUIRED": "La partita IVA è un campo richiesto",
+      "VAT_INVALID": "La partita IVA non è valida",
+      "ROLE_REQUIRED": "Il ruolo è un campo richiesto",
+      "FILE_REQUIRED": "Il file è richiesto",
+      "REGION_REQUIRED": "La regione è un campo richiesto",
+      "PASSWORD_REQUIRED": "La password è un campo richiesto",
+      "CELLULARE_REQUIRED": "Il cellulare è un campo richiesto",
+      "COGNOME_REQUIRED": "Il cognome è un campo richiesto",
+      "CONFIRM_PASSWORD_REQUIRED": "La conferma della password è un campo richiesto"
+    },
+    "BUTTON_SUBMIT": "Invia la tua richiesta",
+    "BUTTON_RESERVATIONACADEMY": "Prenota",
+    "MODAL": {
+      "TITLE_SUCCESS": "Invio riuscito",
+      "TITLE_ERROR": "Errore di invio",
+      "MESSAGE_SUCCESS": "La tua candidatura è stata inviata con successo.",
+      "MESSAGE_ERROR": "Si è verificato un errore durante l'invio. Riprova.",
+      "CLOSE": "Chiudi"
+    },
+    "VALIDATION_ERROR": "Per favore, compila tutti i campi richiesti e carica un file valido.",
+    "SUBMISSION_ERROR": "Si è verificato un errore durante l'invio della tua richiesta",
+    "SERVER_ERROR": "Si è verificato un errore durante la comunicazione con il server.",
+    "SUCCESS_MESSAGE": "La tua richiesta è stata inviata con successo. Ti contatteremo a breve!",
+    "PRIVACY_ERROR": "Devi autorizzare il trattamento dei dati personali per procedere.",
+    "FILE_TOO_LARGE": "Il file supera la dimensione di 3 MB.",
+    "NO_REPORT": "Nessun report disponibile",
+    "PASSWORD_REQUIREMENTS": {
+      "UPPERCASE": "La password deve contenere almeno una lettera maiuscola",
+      "LOWERCASE": "La password deve contenere almeno una lettera minuscola",
+      "NUMBER": "La password deve contenere almeno un numero",
+      "SPECIAL_CHAR": "La password deve contenere almeno un carattere speciale",
+      "MIN_LENGTH": "La password deve essere lunga almeno 8 caratteri"
+    },
+    "THANK_YOU_MESSAGE": "Grazie per aver inviato la tua candidatura. Ti contatteremo a breve!"
+  },
+  "CAROUSEL": {
+    "SLIDE_1": {
+      "TITLE": "Talent Acquisition",
+      "SUBTITLE": "Il nostro forte è trovare il miglior professionista nel settore IT"
+    },
+    "SLIDE_2": {
+      "TITLE": "Dal concetto alla creazione",
+      "SUBTITLE": "Software che supera le aspettative"
+    },
+    "SLIDE_3": {
+      "TITLE": "Talento e Innovazione in Perfetta Armonia",
+      "SUBTITLE": "Selezioniamo i migliori talenti per sviluppare le tue idee"
+    }
+  },
+  "PARALLAX": {
+    "TITLE": "Talenti Eccellenti, Software Eccelso",
+    "SUBTITLE": "Connettiamo i migliori professionisti al software che guida il cambiamento"
+  },
+  "INFOCOMPANY": {
+    "TITLE": "Vuoi lavorare in sede :-)?",
+    "SUBTITLE": "Siamo in Via Di Valle Lupara 10, 00148 Roma (RM)",
+    "FULLREMOTETITLE": "FULL-Remote",
+    "FULLREMOTESUBTITLE": "Lavora ovunque desideri: la tua postazione è dove scegli di essere!"
+  },
+  "ACADEMY_BANNER": {
+    "LAB_TITLE": "oneBlade Lab",
+    "LAB_DESCRIPTION": "Scegli il tuo percorso, noi ti accompagniamo",
+    "GUIDE_TITLE": "Guide",
+    "GUIDE_DESCRIPTION": "per aspiranti programmatori"
+  },
+  "ACADEMY_DETAILS": {
+    "COURSE_CONTENTS_TITLE": "Contenuti del Corso:",
+    "REQUIREMENTS_TITLE": "Requisiti",
+    "RELATED_COURSES_TITLE": "Altri corsi interessanti",
+    "COURSE_DETAILS_TITLE": "Dettagli del Corso",
+    "COURSE_CODE": "Codice:",
+    "COURSE_DURATION": "Durata:",
+    "COURSE_MODE": "Modalità:",
+    "COURSE_LESSONS": "Lezioni:",
+    "COURSE_TIME": "Tempo:",
+    "COURSE_LEVEL": "Livello:",
+    "FORM_DESCRIPTION": "Compilando il form qui presente, non effettuerai direttamente l’acquisto del corso, ma invierai una richiesta di contatto. Il nostro team ti ricontatterà al più presto per fornirti tutte le informazioni necessarie, rispondere alle tue domande e guidarti nel processo di iscrizione. Siamo a tua disposizione per qualsiasi chiarimento! 😊",
+    "NEXT_CLASSES_TITLE": "Prossime classi in partenza",
+    "NO_DATES_MESSAGE": "Programmazione del calendario in corso. Scrivi per avere maggiori dettagli."
+  },
+  "ACADEMY_ONEBLADE": {
+    "TITLE": "Trova il tuo cammino, noi siamo al tuo fianco.",
+    "INTRO": "Ogni viaggio inizia con una scelta: scoprire, imparare, mettersi alla prova. I nostri corsi sono pensati per chi vuole comprendere davvero questo mondo, per chi è mosso dalla curiosità e dalla voglia di acquisire competenze concrete.",
+    "BELIEF": "Crediamo che la conoscenza e la passione siano più importanti di qualsiasi certificazione. Le certificazioni possono essere un valore aggiunto, ma ciò che conta davvero è l’apprendimento reale, la pratica e la comprensione delle metodologie.",
+    "NO_TITLES": "Noi non rilasciamo titoli, perché il titolo più importante è la competenza acquisita. Non facciamo promesse di posti di lavoro o garanzie di inserimento, perché non crediamo nelle illusioni. Il nostro obiettivo è formare realmente le persone che vogliono seguire ed inseguire la conoscenza.",
+    "MISSION": "La nostra missione non si limita agli studenti: crediamo fermamente che anche la selezione dei docenti sia un aspetto fondamentale. Scegliamo solo professionisti che condividono la nostra filosofia, che credono nel valore della formazione autentica e nel potere della conoscenza come strumento di crescita personale e professionale.",
+    "READY": "Se sei pronto a costruire il tuo futuro con determinazione e impegno, allora siamo qui per guidarti passo dopo passo verso il tuo obiettivo. 🚀"
+  },
+  "TOP_BAR": {
+    "ABOUT_US": "Chi è oneBlade",
+    "BODY_RENTAL": "Body rental",
+    "ONEBLADE_LAB": "oneBlade LAB",
+    "CHOOSE_COURSE": "Scegli il corso",
+    "GUIDES": "Guide",
+    "FAQ": "FAQ",
+    "SELECT_LANGUAGE": "Seleziona lingua",
+    "ITALIAN": "Italiano",
+    "ENGLISH": "Inglese",
+    "SPANISH": "Spagnolo",
+    "CHRISTMAS_GAME": "Gioca con me!",
+    "ACCOUNT": "Account",
+    "LOGIN": "Accedi",
+    "REGISTER": "Registrati"
+  },
+  "CALL_SECTION": {
+    "TITLE": "Fissa una Call"
+  },
+  "OUTSOURCING_BANNER": {
+    "TITLE": "Body Rental",
+    "DESCRIPTION": "Perché scegliere il body rental per i propri progetti? Scoprilo!"
+  },
+  "OUTSOURCING_INFO": {
+    "TITLE": "I 9 vantaggi dello sviluppatore in outsourcing",
+    "SUBTITLE": "Perché scegliere il body rental per i propri progetti",
+    "INTRO_1": "Negli ultimi anni, il settore IT ha assistito a un crescente interesse per il body rental, un modello che consente alle aziende di usufruire di sviluppatori altamente qualificati senza doversi occupare di assunzioni dirette.",
+    "INTRO_2": "In precedenza, abbiamo parlato del Time & Material per il personale IT; ora approfondiamo il servizio di outsourcing degli sviluppatori, un’opzione strategica per aziende di ogni dimensione.",
+    "SECTION_TITLE_1": "Cos'è il body rental per sviluppatori?",
+    "BODY_1": "Il body rental è un servizio di outsourcing che consente alle aziende di integrare sviluppatori altamente specializzati nei propri team senza doverli assumere direttamente. Questo modello è ideale per progetti a breve e lungo termine, garantendo massima flessibilità e riduzione dei costi operativi.",
+    "SECTION_TITLE_2": "I 9 vantaggi del body rental per le aziende",
+    "BENEFIT_1": "Risparmio di tempo e costi di ricerca del personale – Evita il lungo e costoso processo di selezione tra annunci e agenzie interinali.",
+    "BENEFIT_2": "Risparmio nel processo di valutazione delle competenze – Gli sviluppatori sono già selezionati e valutati per il progetto specifico.",
+    "BENEFIT_3": "Risparmio nei costi di formazione – Il personale fornito è già formato e pronto a lavorare.",
+    "BENEFIT_4": "Integrazione immediata nel team aziendale – I nostri sviluppatori possono essere inseriti immediatamente nei progetti, con formazione specifica se necessaria.",
+    "BENEFIT_5": "Nessuna responsabilità diretta sull’assunzione – L’azienda non deve preoccuparsi di contratti a lungo termine o gestione amministrativa.",
+    "BENEFIT_6": "Garanzia di qualità e supporto continuo – Offriamo personale qualificato con un supporto interno per mentoring e advising.",
+    "BENEFIT_7": "Crescita professionale del team aziendale – Collaborare con sviluppatori esperti aiuta a migliorare le competenze interne dell’azienda.",
+    "BENEFIT_8": "Garanzia di continuità lavorativa – Possibilità di scalare rapidamente il team e far fronte a picchi di lavoro senza interruzioni.",
+    "SECTION_TITLE_3": "Il nostro approccio",
+    "BODY_2": "Offriamo un servizio strutturato in base alle esigenze aziendali:",
+    "APPROACH_1": "Analisi personalizzata: studiamo le esigenze aziendali e forniamo sviluppatori adatti.",
+    "APPROACH_2": "Selezione accurata: scegliamo i migliori talenti con competenze specifiche per ogni progetto.",
+    "APPROACH_3": "Supporto continuo: forniamo assistenza e mentoring per garantire la massima efficienza.",
+    "APPROACH_4": "Flessibilità contrattuale: possibilità di scalare il team in base alle esigenze del progetto.",
+    "SECTION_TITLE_4": "Conclusione",
+    "CONCLUSION": "Il body rental rappresenta una soluzione strategica per le aziende IT, offrendo risparmi economici, flessibilità e personale altamente qualificato senza le complessità di un’assunzione diretta.",
+    "CONTACT": "Se vuoi scoprire come possiamo supportare la tua azienda con il nostro servizio di outsourcing di sviluppatori, contattaci oggi stesso fissa un appuntamento!"
+  },
+  "GUIDE_BANNER_TOP": {
+    "TITLE": "Semplice, pratico, efficace: il tuo percorso tech",
+    "SUBTITLE": "Forma le tue competenze tech con corsi online orientati alla pratica. Parti da zero e impara in modo rapido e pratico."
+  },
+  "GUIDE_LIST": {
+    "TITLE": "Guide introduttive",
+    "DESCRIPTION": "Scopri tutte le guide tecniche a tema sviluppo web.",
+    "BUTTON": "Scopri di più →"
+  },
+  "COMPANY_ABOUT_US": {
+    "TITLE": "Chi Siamo",
+    "INTRO": "Fondata con l’obiettivo di colmare il divario tra la domanda e l’offerta di competenze tecnologiche nel mercato italiano, oneBlade si distingue per la sua capacità di offrire servizi integrati che spaziano dalla creazione di software personalizzati alla formazione di professionisti altamente qualificati. La nostra sede principale è situata in Italia, e operiamo su tutto il territorio nazionale per soddisfare le esigenze di una clientela diversificata.",
+    "CEO_NAME": "Guido Salzano",
+    "CEO_TITLE": "CEO oneBlade",
+    "HR_NAME": "Serena D'Angelo",
+    "HR_TITLE": "HR Manager & Co-Founder oneBlade",
+    "MISSION_TITLE": "Missione",
+    "MISSION_BODY": "La missione di oneBlade è promuovere l’innovazione tecnologica in Italia attraverso lo sviluppo di soluzioni software all’avanguardia e la formazione di talenti in grado di affrontare le sfide del mercato moderno. Ci impegniamo a fornire alle aziende gli strumenti necessari per crescere e competere in un contesto globale, offrendo al contempo ai professionisti le opportunità di sviluppo e crescita che meritano.",
+    "SERVICES_TITLE": "Servizi Offerti",
+    "SERVICE_1": "Sviluppo Software Personalizzato: Progettiamo e realizziamo applicazioni software su misura, adattate alle specifiche esigenze dei nostri clienti, utilizzando le tecnologie più moderne e affidabili.",
+    "SERVICE_2": "Accademia di Formazione: Offriamo corsi avanzati di programmazione e sviluppo software, rivolti sia a neofiti che a professionisti desiderosi di aggiornare le proprie competenze. I nostri programmi formativi sono strutturati per garantire un apprendimento pratico e immediatamente applicabile nel mondo del lavoro.",
+    "SERVICE_3": "Talent Acquisition: Supportiamo le aziende nella ricerca e selezione di figure professionali altamente specializzate nel settore IT, garantendo un processo di recruiting efficiente e mirato.",
+    "WHY_CHOOSE_TITLE": "Perché Scegliere oneBlade",
+    "WHY_CHOOSE_1": "Esperienza e Competenza: Il nostro team è composto da professionisti con anni di esperienza nel settore tecnologico e della formazione.",
+    "WHY_CHOOSE_2": "Approccio Personalizzato: Ogni progetto è unico; per questo offriamo soluzioni tailor-made che rispondono alle specifiche esigenze di ciascun cliente.",
+    "WHY_CHOOSE_3": "Innovazione Continua: Siamo costantemente aggiornati sulle ultime tendenze e tecnologie, garantendo ai nostri clienti soluzioni all’avanguardia.",
+    "WHY_CHOOSE_4": "Rete di Talenti: Grazie alla nostra accademia e ai servizi di talent acquisition, disponiamo di una vasta rete di professionisti qualificati pronti a soddisfare le esigenze del mercato.",
+    "TECHNOLOGIES_TITLE": "Tecnologie"
+  },
+  "GUIDE_ACCADEMY": {
+    "TITLE": "Guide per aspiranti programmatori",
+    "PARAGRAPH_1": "Oggi la programmazione è diventata una competenza essenziale, proprio come la capacità di usare uno smartphone o un computer lo è stata negli ultimi decenni. Con l’evoluzione tecnologica e la crescente digitalizzazione, acquisire abilità nel settore informatico è fondamentale per restare competitivi nel mercato.",
+    "PARAGRAPH_2": "Le aziende cercano costantemente professionisti qualificati, ma l’offerta di talenti non riesce a soddisfare la domanda: solo in Italia, si stimano oltre 200.000 posizioni aperte in ambito tech.",
+    "PARAGRAPH_3": "Indipendentemente dall’area in cui si desidera specializzarsi, è cruciale costruire solide basi di conoscenza. Le nostre guide sono pensate per chi vuole avvicinarsi al mondo dello sviluppo web, fornendo strumenti pratici e concreti per iniziare a programmare e scoprire le opportunità offerte da questa professione.",
+    "LOADING": "Caricamento..."
+  },
+  "FAQ": {
+    "TITLE": "Domande Frequenti (FAQ)",
+    "QUESTION_1": "I corsi sono disponibili online?",
+    "ANSWER_1": "Sì, tutti i nostri corsi sono erogati <strong>online</strong>, permettendo ai partecipanti di accedere facilmente da qualsiasi luogo. Dopo l'iscrizione, riceverai tutte le informazioni necessarie per accedere alle lezioni e ai materiali didattici.",
+    "QUESTION_2": "Come riceverò informazioni sulle date e l'organizzazione del corso?",
+    "ANSWER_2": "Dopo la prenotazione, riceverai via email tutte le comunicazioni relative al corso, comprese le <strong>date delle lezioni, gli orari e le modalità di accesso</strong>. Il nostro team sarà sempre a disposizione per supportarti in ogni fase.",
+    "QUESTION_3": "Cosa succede se non posso partecipare alla data concordata?",
+    "ANSWER_3": "Non preoccuparti! Se per qualsiasi motivo non potrai partecipare alla data concordata, <strong>verrai automaticamente spostato alla sessione successiva</strong>. OneBlade garantisce flessibilità nella partecipazione per assicurare che tutti i corsisti possano completare il proprio percorso senza problemi.",
+    "QUESTION_4": "Chi può partecipare ai corsi?",
+    "ANSWER_4": "<strong>Tutti possono partecipare ai nostri corsi!</strong> Che tu sia un principiante curioso, uno studente in cerca di competenze pratiche o un professionista che vuole aggiornarsi, troverai il percorso adatto alle tue esigenze. <strong>La formazione è un investimento sul futuro</strong>, e i nostri corsi sono progettati per darti competenze concrete e subito applicabili nel mondo del lavoro.",
+    "QUESTION_5": "Cosa si impara durante i vostri corsi?",
+    "ANSWER_5": "Nei nostri corsi <strong>non ti limiti a studiare la teoria</strong>, ma sviluppi <strong>competenze pratiche</strong> che ti permetteranno di affrontare scenari reali. Immagina di partecipare a un corso di <strong>Cyber Security</strong>: oltre a conoscere le minacce informatiche, imparerai a <strong>difendere sistemi e reti con strategie concrete</strong>. Se invece ti interessa <strong>AI Generativa</strong>, esplorerai le tecnologie più avanzate e scoprirai come integrarle nel business. <strong>Ogni corso è pensato per darti un bagaglio di competenze che puoi applicare da subito nel mondo professionale!</strong>",
+    "QUESTION_6": "Rilasciate un attestato alla fine del corso?",
+    "ANSWER_6": "<strong>Sì!</strong> Alla fine del corso riceverai un <strong>attestato di partecipazione rilasciato da OneBlade</strong>, a condizione che tu abbia frequentato almeno il <strong>70% delle lezioni</strong>. Questo certificato rappresenta un valore aggiunto per il tuo curriculum e dimostra la tua preparazione nel settore.",
+    "QUESTION_7": "Posso seguire il corso mentre lavoro o studio?",
+    "ANSWER_7": "<strong>Sì!</strong> Tutti i nostri corsi sono organizzati in orari serali, <strong>dopo le 18:00</strong>, per permettere a chi lavora o studia di seguirli senza difficoltà. Sappiamo quanto sia importante conciliare formazione e impegni quotidiani, ed è per questo che offriamo flessibilità e supporto per aiutarti a raggiungere i tuoi obiettivi professionali."
+  },
+  "LOGIN": {
+    "TITLE": "Accedi",
+    "EMAIL": "Email",
+    "PASSWORD": "Password",
+    "BUTTON": "Accedi",
+    "ERROR": "Accesso fallito"
+  },
+  "REGISTER": {
+    "TITLE": "Registrati",
+    "NOME": "Nome",
+    "COGNOME": "Cognome",
+    "EMAIL": "Email",
+    "CELLULARE": "Cellulare",
+    "PASSWORD": "Password",
+    "BUTTON": "Registrati",
+    "SUCCESS": "Registrazione avvenuta con successo",
+    "ERROR": "Registrazione fallita",
+    "CONFIRM_PASSWORD": "Conferma Password"
+  },
+  "TALENT_LIST": {
+    "TITLE": "Lista dei Talenti",
+    "MIN_CONTRACT": "Contratto Minimo",
+    "DESCRIPTION": "Descrizione",
+    "SENIORITY": "Anzianità",
+    "DAILY_RATE": "Tariffa Giornaliera",
+    "PRICE_PER_DAY": "Prezzo per Giorno"
+  },
+  "STEP": {
+    "CATEGORY": "Categoria",
+    "TALENT": "Talento",
+    "CONTACT": "Contatto",
+    "THANK_YOU": "Grazie",
+    "EXPLANATION": "Segui i passaggi per completare il processo. Puoi tornare indietro e modificare le tue scelte in qualsiasi momento.",
+    "EXPLANATION_STEP_1": "Seleziona la categoria di interesse per trovare i talenti più adatti alle tue esigenze.",
+    "EXPLANATION_STEP_2": "Seleziona il talento che corrisponde alle tue necessità. Puoi visualizzare i dettagli di ogni talento per fare una scelta informata.",
+    "EXPLANATION_STEP_3": "Compila il modulo di contatto con le tue informazioni per procedere con la richiesta.",
+    "EXPLANATION_STEP_4": "Grazie per aver completato il processo. Ti contatteremo a breve per ulteriori dettagli."
+  }
 }

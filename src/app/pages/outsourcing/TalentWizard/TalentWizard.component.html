@@ -3,10 +3,10 @@
 <div class="container mt-4">
     <!-- Testo esplicativo -->
     <div class="explanatory-text text-center">
-        <h3 *ngIf="step === 1" class="step-explanation">{{ 'STEP.EXPLANATION_STEP_1' | translate }}</h3>
-        <h3 *ngIf="step === 2" class="step-explanation">{{ 'STEP.EXPLANATION_STEP_2' | translate }}</h3>
-        <h3 *ngIf="step === 3" class="step-explanation">{{ 'STEP.EXPLANATION_STEP_3' | translate }}</h3>
-        <h3 *ngIf="step === 4" class="step-explanation">{{ 'STEP.EXPLANATION_STEP_4' | translate }}</h3>
+        <h3 *ngIf="step === 1" class="step-explanation">Step 1: {{ 'STEP.EXPLANATION_STEP_1' | translate }}</h3>
+        <h3 *ngIf="step === 2" class="step-explanation">Step 2: {{ 'STEP.EXPLANATION_STEP_2' | translate }}</h3>
+        <h3 *ngIf="step === 3" class="step-explanation">Step 3: {{ 'STEP.EXPLANATION_STEP_3' | translate }}</h3>
+        <h3 *ngIf="step === 4" class="step-explanation">Step 4: {{ 'STEP.EXPLANATION_STEP_4' | translate }}</h3>
     </div>
 
     <!-- Stepline -->
@@ -49,7 +49,6 @@
                     <p><strong>{{ 'TALENT_LIST.MIN_CONTRACT' | translate }}:</strong> {{ talent.minContract }}</p>
                     <p><strong>{{ 'TALENT_LIST.DESCRIPTION' | translate }}:</strong> {{ talent.description }}</p>
                     <p><strong>{{ 'TALENT_LIST.SENIORITY' | translate }}:</strong> {{ talent.seniority }}</p>
-                    <p><strong>{{ 'TALENT_LIST.DAILY_RATE' | translate }}:</strong> ${{ talent.dailyRate }}</p>
                     <p><strong>{{ 'TALENT_LIST.PRICE_PER_DAY' | translate }}:</strong> ${{ talent.pricePerDay }}</p>
                 </div>
             </div>
@@ -74,5 +73,10 @@
         <p>{{ 'FORM.THANK_YOU_MESSAGE' | translate }}</p>
     </div>
 
-    <app-academyBanner></app-academyBanner>
+
+
 </div>
+
+<app-FissaUnaCall></app-FissaUnaCall>
+<app-academyBanner></app-academyBanner>
+
