@@ -261,7 +261,7 @@
     "DESCRIPTION": "Descrizione",
     "SENIORITY": "Anzianità",
     "DAILY_RATE": "Tariffa Giornaliera",
-    "PRICE_PER_DAY": "Prezzo per Giorno"
+    "PRICE_PER_DAY": "Tariffa Giornaliera"
   },
   "STEP": {
     "CATEGORY": "Categoria",

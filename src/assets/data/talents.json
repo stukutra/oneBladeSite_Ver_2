@@ -1,14 +1,17 @@
 {
     "categories": [
         {
-            "name": "Web Developer",
+            "name": "Frontend Developer",
             "talents": [
                 {
                     "role": "React Developer",
                     "minContract": "1 month",
                     "seniority": "Senior",
-                    "dailyRate": "400€ (Iva esclusa)",
-                    "pricePerDay": "400€ (Iva esclusa)",
+                    "dailyRate": {
+                        "1_month": "400€ (Iva esclusa)",
+                        "3_months": "380€ (Iva esclusa)",
+                        "6_months": "360€ (Iva esclusa)"
+                    },
                     "skills": [
                         "React.js",
                         "Redux",
@@ -47,11 +50,14 @@
                 },
                 {
                     "role": "Angular Developer",
-                    "minContract": "1 months",
+                    "minContract": "1 month",
                     "description": "Experienced in Angular and RxJS",
                     "seniority": "Mid",
-                    "dailyRate": "350€ (Iva esclusa)",
-                    "pricePerDay": "400€ (Iva esclusa)",
+                    "dailyRate": {
+                        "1_month": "350€ (Iva esclusa)",
+                        "3_months": "330€ (Iva esclusa)",
+                        "6_months": "310€ (Iva esclusa)"
+                    },
                     "skills": [
                         "Angular",
                         "RxJS",
@@ -91,11 +97,14 @@
             "talents": [
                 {
                     "role": "iOS Developer",
-                    "minContract": "1 months",
+                    "minContract": "1 month",
                     "description": "Proficient in Swift and iOS SDK",
                     "seniority": "Senior",
-                    "dailyRate": "450€ (Iva esclusa)",
-                    "pricePerDay": "350€ (Iva esclusa)",
+                    "dailyRate": {
+                        "1_month": "450€ (Iva esclusa)",
+                        "3_months": "430€ (Iva esclusa)",
+                        "6_months": "410€ (Iva esclusa)"
+                    },
                     "skills": [
                         "Swift",
                         "Objective-C",
@@ -129,8 +138,11 @@
                     "minContract": "3 months",
                     "description": "Proficient in Swift and iOS SDK",
                     "seniority": "Senior",
-                    "dailyRate": "450€ (Iva esclusa)",
-                    "pricePerDay": "350€ (Iva esclusa)",
+                    "dailyRate": {
+                        "1_month": "450€ (Iva esclusa)",
+                        "3_months": "430€ (Iva esclusa)",
+                        "6_months": "410€ (Iva esclusa)"
+                    },
                     "skills": [
                         "Swift",
                         "Objective-C",
@@ -164,8 +176,11 @@
                     "minContract": "3 months",
                     "description": "Proficient in Swift and iOS SDK",
                     "seniority": "Senior",
-                    "dailyRate": "450€ (Iva esclusa)",
-                    "pricePerDay": "350€ (Iva esclusa)",
+                    "dailyRate": {
+                        "1_month": "450€ (Iva esclusa)",
+                        "3_months": "430€ (Iva esclusa)",
+                        "6_months": "410€ (Iva esclusa)"
+                    },
                     "skills": [
                         "Swift",
                         "Objective-C",
@@ -197,81 +212,6 @@
             ]
         },
         {
-            "name": "System Administrator",
-            "talents": [
-                {
-                    "role": "Linux System Administrator",
-                    "minContract": "1 month",
-                    "description": "Expert in Linux server management and shell scripting",
-                    "seniority": "Senior",
-                    "dailyRate": "400€ (Iva esclusa)",
-                    "pricePerDay": "450€ (Iva esclusa)",
-                    "skills": [
-                        "Linux",
-                        "Shell Scripting",
-                        "Bash",
-                        "Python",
-                        "Ansible",
-                        "Docker",
-                        "Kubernetes",
-                        "Git / GitHub"
-                    ],
-                    "frameworks_libraries": [
-                        "Ansible",
-                        "Docker",
-                        "Kubernetes"
-                    ],
-                    "tools": [
-                        "VS Code",
-                        "Jenkins",
-                        "Jira",
-                        "Trello",
-                        "Confluence"
-                    ],
-                    "languages_spoken": {
-                        "English": "C1 - Advanced",
-                        "French": "B2 - Intermediate",
-                        "German": "B1 - Intermediate"
-                    }
-                },
-                {
-                    "role": "Windows System Administrator",
-                    "minContract": "2 months",
-                    "description": "Experienced in Windows server management and Active Directory",
-                    "seniority": "Mid",
-                    "dailyRate": "350€ (Iva esclusa)",
-                    "pricePerDay": "400€ (Iva esclusa)",
-                    "skills": [
-                        "Windows Server",
-                        "Active Directory",
-                        "PowerShell",
-                        "Hyper-V",
-                        "VMware",
-                        "Azure",
-                        "Office 365",
-                        "Git / GitHub"
-                    ],
-                    "frameworks_libraries": [
-                        "PowerShell",
-                        "Hyper-V",
-                        "VMware"
-                    ],
-                    "tools": [
-                        "VS Code",
-                        "Jenkins",
-                        "Jira",
-                        "Trello",
-                        "Confluence"
-                    ],
-                    "languages_spoken": {
-                        "English": "C1 - Advanced",
-                        "Spanish": "B2 - Intermediate",
-                        "French": "B1 - Intermediate"
-                    }
-                }
-            ]
-        },
-        {
             "name": "DevOps",
             "talents": [
                 {
@@ -279,8 +219,11 @@
                     "minContract": "1 month",
                     "description": "Expert in AWS cloud services and CI/CD pipelines",
                     "seniority": "Senior",
-                    "dailyRate": "400€ (Iva esclusa)",
-                    "pricePerDay": "450€ (Iva esclusa)",
+                    "dailyRate": {
+                        "1_month": "400€ (Iva esclusa)",
+                        "3_months": "380€ (Iva esclusa)",
+                        "6_months": "360€ (Iva esclusa)"
+                    },
                     "skills": [
                         "AWS",
                         "CI/CD",
@@ -314,8 +257,11 @@
                     "minContract": "2 months",
                     "description": "Experienced in Azure cloud services and infrastructure automation",
                     "seniority": "Mid",
-                    "dailyRate": "350€ (Iva esclusa)",
-                    "pricePerDay": "400€ (Iva esclusa)",
+                    "dailyRate": {
+                        "1_month": "350€ (Iva esclusa)",
+                        "3_months": "330€ (Iva esclusa)",
+                        "6_months": "310€ (Iva esclusa)"
+                    },
                     "skills": [
                         "Azure",
                         "CI/CD",
@@ -347,79 +293,6 @@
             ]
         },
         {
-            "name": "Functional Analyst",
-            "talents": [
-                {
-                    "role": "Business Analyst",
-                    "minContract": "1 month",
-                    "description": "Expert in business process analysis and requirements gathering",
-                    "seniority": "Senior",
-                    "dailyRate": "400€ (Iva esclusa)",
-                    "pricePerDay": "450€ (Iva esclusa)",
-                    "skills": [
-                        "Business Process Analysis",
-                        "Requirements Gathering",
-                        "Project Management",
-                        "Agile",
-                        "Scrum",
-                        "JIRA",
-                        "Confluence",
-                        "Git / GitHub"
-                    ],
-                    "frameworks_libraries": [
-                        "Scrum",
-                        "Agile"
-                    ],
-                    "tools": [
-                        "JIRA",
-                        "Confluence",
-                        "Trello",
-                        "MS Project",
-                        "VS Code"
-                    ],
-                    "languages_spoken": {
-                        "English": "C1 - Advanced",
-                        "French": "B2 - Intermediate",
-                        "Spanish": "B1 - Intermediate"
-                    }
-                },
-                {
-                    "role": "System Analyst",
-                    "minContract": "2 months",
-                    "description": "Experienced in system analysis and design",
-                    "seniority": "Mid",
-                    "dailyRate": "350€ (Iva esclusa)",
-                    "pricePerDay": "400€ (Iva esclusa)",
-                    "skills": [
-                        "System Analysis",
-                        "System Design",
-                        "UML",
-                        "ERD",
-                        "SQL",
-                        "Agile",
-                        "Scrum",
-                        "Git / GitHub"
-                    ],
-                    "frameworks_libraries": [
-                        "Scrum",
-                        "Agile"
-                    ],
-                    "tools": [
-                        "JIRA",
-                        "Confluence",
-                        "Trello",
-                        "MS Project",
-                        "VS Code"
-                    ],
-                    "languages_spoken": {
-                        "English": "C1 - Advanced",
-                        "French": "B2 - Intermediate",
-                        "Spanish": "B1 - Intermediate"
-                    }
-                }
-            ]
-        },
-        {
             "name": "Data Engineer",
             "talents": [
                 {
@@ -427,8 +300,11 @@
                     "minContract": "1 month",
                     "description": "Expert in big data technologies and data pipeline development",
                     "seniority": "Senior",
-                    "dailyRate": "400€ (Iva esclusa)",
-                    "pricePerDay": "450€ (Iva esclusa)",
+                    "dailyRate": {
+                        "1_month": "400€ (Iva esclusa)",
+                        "3_months": "380€ (Iva esclusa)",
+                        "6_months": "360€ (Iva esclusa)"
+                    },
                     "skills": [
                         "Big Data",
                         "Hadoop",
@@ -462,8 +338,11 @@
                     "minContract": "2 months",
                     "description": "Experienced in ETL processes and data integration",
                     "seniority": "Mid",
-                    "dailyRate": "350€ (Iva esclusa)",
-                    "pricePerDay": "400€ (Iva esclusa)",
+                    "dailyRate": {
+                        "1_month": "350€ (Iva esclusa)",
+                        "3_months": "330€ (Iva esclusa)",
+                        "6_months": "310€ (Iva esclusa)"
+                    },
                     "skills": [
                         "ETL",
                         "Data Integration",
@@ -500,8 +379,11 @@
                     "minContract": "1 month",
                     "description": "Expert in machine learning algorithms and model deployment",
                     "seniority": "Senior",
-                    "dailyRate": "400€ (Iva esclusa)",
-                    "pricePerDay": "450€ (Iva esclusa)",
+                    "dailyRate": {
+                        "1_month": "400€ (Iva esclusa)",
+                        "3_months": "380€ (Iva esclusa)",
+                        "6_months": "360€ (Iva esclusa)"
+                    },
                     "skills": [
                         "Machine Learning",
                         "Python",
@@ -536,8 +418,11 @@
                     "minContract": "2 months",
                     "description": "Experienced in data analysis and visualization",
                     "seniority": "Mid",
-                    "dailyRate": "350€ (Iva esclusa)",
-                    "pricePerDay": "400€ (Iva esclusa)",
+                    "dailyRate": {
+                        "1_month": "350€ (Iva esclusa)",
+                        "3_months": "330€ (Iva esclusa)",
+                        "6_months": "310€ (Iva esclusa)"
+                    },
                     "skills": [
                         "Data Analysis",
                         "Data Visualization",
@@ -576,8 +461,11 @@
                     "minContract": "1 month",
                     "description": "Expert in test automation frameworks and scripting",
                     "seniority": "Senior",
-                    "dailyRate": "400€ (Iva esclusa)",
-                    "pricePerDay": "450€ (Iva esclusa)",
+                    "dailyRate": {
+                        "1_month": "400€ (Iva esclusa)",
+                        "3_months": "380€ (Iva esclusa)",
+                        "6_months": "360€ (Iva esclusa)"
+                    },
                     "skills": [
                         "Test Automation",
                         "Selenium",
@@ -610,8 +498,11 @@
                     "minContract": "2 months",
                     "description": "Experienced in manual testing and test case development",
                     "seniority": "Mid",
-                    "dailyRate": "350€ (Iva esclusa)",
-                    "pricePerDay": "400€ (Iva esclusa)",
+                    "dailyRate": {
+                        "1_month": "350€ (Iva esclusa)",
+                        "3_months": "330€ (Iva esclusa)",
+                        "6_months": "310€ (Iva esclusa)"
+                    },
                     "skills": [
                         "Manual Testing",
                         "Test Case Development",
@@ -647,8 +538,11 @@
                     "minContract": "1 month",
                     "description": "Expert in user interface design and prototyping",
                     "seniority": "Senior",
-                    "dailyRate": "400€ (Iva esclusa)",
-                    "pricePerDay": "450€ (Iva esclusa)",
+                    "dailyRate": {
+                        "1_month": "400€ (Iva esclusa)",
+                        "3_months": "380€ (Iva esclusa)",
+                        "6_months": "360€ (Iva esclusa)"
+                    },
                     "skills": [
                         "UI Design",
                         "Prototyping",
@@ -683,8 +577,11 @@
                     "minContract": "2 months",
                     "description": "Experienced in user experience research and usability testing",
                     "seniority": "Mid",
-                    "dailyRate": "350€ (Iva esclusa)",
-                    "pricePerDay": "400€ (Iva esclusa)",
+                    "dailyRate": {
+                        "1_month": "350€ (Iva esclusa)",
+                        "3_months": "330€ (Iva esclusa)",
+                        "6_months": "310€ (Iva esclusa)"
+                    },
                     "skills": [
                         "UX Research",
                         "Usability Testing",
@@ -711,6 +608,394 @@
                         "English": "C1 - Advanced",
                         "French": "B2 - Intermediate",
                         "Spanish": "B1 - Intermediate"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Backend Developer",
+            "talents": [
+                {
+                    "role": "Node.js Developer",
+                    "minContract": "1 month",
+                    "seniority": "Senior",
+                    "dailyRate": {
+                        "1_month": "400€ (Iva esclusa)",
+                        "3_months": "380€ (Iva esclusa)",
+                        "6_months": "360€ (Iva esclusa)"
+                    },
+                    "skills": [
+                        "Node.js",
+                        "Express.js",
+                        "TypeScript",
+                        "MongoDB",
+                        "MySQL",
+                        "REST API",
+                        "GraphQL",
+                        "Docker",
+                        "Kubernetes",
+                        "Git / GitHub"
+                    ],
+                    "frameworks_libraries": [
+                        "Express.js",
+                        "NestJS",
+                        "Socket.io"
+                    ],
+                    "tools": [
+                        "VS Code",
+                        "Webstorm",
+                        "Jenkins",
+                        "Jira",
+                        "Trello",
+                        "Confluence"
+                    ],
+                    "languages_spoken": {
+                        "English": "C1 - Advanced",
+                        "Italian": "C2 - Advanced",
+                        "Spanish": "B2 - Intermediate"
+                    }
+                },
+                {
+                    "role": ".NET Developer",
+                    "minContract": "1 month",
+                    "seniority": "Senior",
+                    "dailyRate": {
+                        "1_month": "450€ (Iva esclusa)",
+                        "3_months": "430€ (Iva esclusa)",
+                        "6_months": "410€ (Iva esclusa)"
+                    },
+                    "skills": [
+                        ".NET Core",
+                        "C#",
+                        "ASP.NET",
+                        "Entity Framework",
+                        "SQL Server",
+                        "REST API",
+                        "Microservices",
+                        "Docker",
+                        "Kubernetes",
+                        "Git / GitHub"
+                    ],
+                    "frameworks_libraries": [
+                        "ASP.NET Core",
+                        "Blazor",
+                        "SignalR"
+                    ],
+                    "tools": [
+                        "Visual Studio",
+                        "Rider",
+                        "Jenkins",
+                        "Jira",
+                        "Trello",
+                        "Confluence"
+                    ],
+                    "languages_spoken": {
+                        "English": "C1 - Advanced",
+                        "Italian": "C2 - Advanced",
+                        "French": "B2 - Intermediate"
+                    }
+                },
+                {
+                    "role": "Java Developer",
+                    "minContract": "1 month",
+                    "seniority": "Senior",
+                    "dailyRate": {
+                        "1_month": "400€ (Iva esclusa)",
+                        "3_months": "380€ (Iva esclusa)",
+                        "6_months": "360€ (Iva esclusa)"
+                    },
+                    "skills": [
+                        "Java",
+                        "Spring Boot",
+                        "Hibernate",
+                        "MySQL",
+                        "PostgreSQL",
+                        "REST API",
+                        "Microservices",
+                        "Docker",
+                        "Kubernetes",
+                        "Git / GitHub"
+                    ],
+                    "frameworks_libraries": [
+                        "Spring Boot",
+                        "Spring Cloud",
+                        "Apache Kafka"
+                    ],
+                    "tools": [
+                        "IntelliJ IDEA",
+                        "Eclipse",
+                        "Jenkins",
+                        "Jira",
+                        "Trello",
+                        "Confluence"
+                    ],
+                    "languages_spoken": {
+                        "English": "C1 - Advanced",
+                        "Italian": "C2 - Advanced",
+                        "German": "B2 - Intermediate"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Project Manager",
+            "talents": [
+                {
+                    "role": "Project Manager",
+                    "minContract": "1 month",
+                    "seniority": "Senior",
+                    "dailyRate": {
+                        "1_month": "500€ (Iva esclusa)",
+                        "3_months": "480€ (Iva esclusa)",
+                        "6_months": "460€ (Iva esclusa)"
+                    },
+                    "skills": [
+                        "Project Management",
+                        "Agile",
+                        "Scrum",
+                        "Kanban",
+                        "Risk Management",
+                        "Stakeholder Management",
+                        "Budget Management",
+                        "JIRA",
+                        "Confluence",
+                        "MS Project"
+                    ],
+                    "frameworks_libraries": [
+                        "Scrum",
+                        "Kanban",
+                        "Lean"
+                    ],
+                    "tools": [
+                        "JIRA",
+                        "Confluence",
+                        "MS Project",
+                        "Trello",
+                        "Asana"
+                    ],
+                    "languages_spoken": {
+                        "English": "C1 - Advanced",
+                        "Italian": "C2 - Advanced",
+                        "French": "B2 - Intermediate"
+                    }
+                },
+                {
+                    "role": "Scrum Master",
+                    "minContract": "1 month",
+                    "seniority": "Senior",
+                    "dailyRate": {
+                        "1_month": "450€ (Iva esclusa)",
+                        "3_months": "430€ (Iva esclusa)",
+                        "6_months": "410€ (Iva esclusa)"
+                    },
+                    "skills": [
+                        "Scrum",
+                        "Agile Coaching",
+                        "Facilitation",
+                        "Conflict Resolution",
+                        "Stakeholder Management",
+                        "JIRA",
+                        "Confluence",
+                        "MS Project",
+                        "Risk Management"
+                    ],
+                    "frameworks_libraries": [
+                        "Scrum",
+                        "Kanban",
+                        "Lean"
+                    ],
+                    "tools": [
+                        "JIRA",
+                        "Confluence",
+                        "MS Project",
+                        "Trello",
+                        "Asana"
+                    ],
+                    "languages_spoken": {
+                        "English": "C1 - Advanced",
+                        "Italian": "C2 - Advanced",
+                        "Spanish": "B2 - Intermediate"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Fullstack Developer",
+            "talents": [
+                {
+                    "role": "Java/Angular Developer",
+                    "minContract": "1 month",
+                    "seniority": "Senior",
+                    "dailyRate": {
+                        "1_month": "450€ (Iva esclusa)",
+                        "3_months": "430€ (Iva esclusa)",
+                        "6_months": "410€ (Iva esclusa)"
+                    },
+                    "skills": [
+                        "Java",
+                        "Spring Boot",
+                        "Angular",
+                        "RxJS",
+                        "TypeScript",
+                        "JavaScript",
+                        "HTML5",
+                        "CSS3",
+                        "REST API",
+                        "Microservices",
+                        "Docker",
+                        "Kubernetes",
+                        "Git / GitHub"
+                    ],
+                    "frameworks_libraries": [
+                        "Spring Boot",
+                        "Angular Material",
+                        "NgRx"
+                    ],
+                    "tools": [
+                        "IntelliJ IDEA",
+                        "VS Code",
+                        "Jenkins",
+                        "Jira",
+                        "Trello",
+                        "Confluence"
+                    ],
+                    "languages_spoken": {
+                        "English": "C1 - Advanced",
+                        "Italian": "C2 - Advanced",
+                        "Spanish": "B2 - Intermediate"
+                    }
+                },
+                {
+                    "role": "Node.js/ReactJS Developer",
+                    "minContract": "1 month",
+                    "seniority": "Senior",
+                    "dailyRate": {
+                        "1_month": "450€ (Iva esclusa)",
+                        "3_months": "430€ (Iva esclusa)",
+                        "6_months": "410€ (Iva esclusa)"
+                    },
+                    "skills": [
+                        "Node.js",
+                        "Express.js",
+                        "React.js",
+                        "Redux",
+                        "TypeScript",
+                        "JavaScript",
+                        "HTML5",
+                        "CSS3",
+                        "REST API",
+                        "GraphQL",
+                        "Docker",
+                        "Kubernetes",
+                        "Git / GitHub"
+                    ],
+                    "frameworks_libraries": [
+                        "Express.js",
+                        "NestJS",
+                        "React Native"
+                    ],
+                    "tools": [
+                        "VS Code",
+                        "Webstorm",
+                        "Jenkins",
+                        "Jira",
+                        "Trello",
+                        "Confluence"
+                    ],
+                    "languages_spoken": {
+                        "English": "C1 - Advanced",
+                        "Italian": "C2 - Advanced",
+                        "French": "B2 - Intermediate"
+                    }
+                },
+                {
+                    "role": ".NET/Angular Developer",
+                    "minContract": "1 month",
+                    "seniority": "Senior",
+                    "dailyRate": {
+                        "1_month": "450€ (Iva esclusa)",
+                        "3_months": "430€ (Iva esclusa)",
+                        "6_months": "410€ (Iva esclusa)"
+                    },
+                    "skills": [
+                        ".NET Core",
+                        "C#",
+                        "ASP.NET",
+                        "Angular",
+                        "RxJS",
+                        "TypeScript",
+                        "JavaScript",
+                        "HTML5",
+                        "CSS3",
+                        "REST API",
+                        "Microservices",
+                        "Docker",
+                        "Kubernetes",
+                        "Git / GitHub"
+                    ],
+                    "frameworks_libraries": [
+                        "ASP.NET Core",
+                        "Angular Material",
+                        "NgRx"
+                    ],
+                    "tools": [
+                        "Visual Studio",
+                        "Rider",
+                        "VS Code",
+                        "Jenkins",
+                        "Jira",
+                        "Trello",
+                        "Confluence"
+                    ],
+                    "languages_spoken": {
+                        "English": "C1 - Advanced",
+                        "Italian": "C2 - Advanced",
+                        "German": "B2 - Intermediate"
+                    }
+                },
+                {
+                    "role": ".NET/React Developer",
+                    "minContract": "1 month",
+                    "seniority": "Senior",
+                    "dailyRate": {
+                        "1_month": "450€ (Iva esclusa)",
+                        "3_months": "430€ (Iva esclusa)",
+                        "6_months": "410€ (Iva esclusa)"
+                    },
+                    "skills": [
+                        ".NET Core",
+                        "C#",
+                        "ASP.NET",
+                        "React.js",
+                        "Redux",
+                        "TypeScript",
+                        "JavaScript",
+                        "HTML5",
+                        "CSS3",
+                        "REST API",
+                        "Microservices",
+                        "Docker",
+                        "Kubernetes",
+                        "Git / GitHub"
+                    ],
+                    "frameworks_libraries": [
+                        "ASP.NET Core",
+                        "React Native",
+                        "Redux"
+                    ],
+                    "tools": [
+                        "Visual Studio",
+                        "Rider",
+                        "VS Code",
+                        "Jenkins",
+                        "Jira",
+                        "Trello",
+                        "Confluence"
+                    ],
+                    "languages_spoken": {
+                        "English": "C1 - Advanced",
+                        "Italian": "C2 - Advanced",
+                        "French": "B2 - Intermediate"
                     }
                 }
             ]

@@ -8,12 +8,11 @@
     border-radius: $border-radius;
     background-color: $background-light;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Riduci l'ombra
-    transition: transform $transition-speed, box-shadow $transition-speed;
+    transition: box-shadow $transition-speed; // Rimuovi transform per eliminare l'effetto zoom
     cursor: pointer;
     text-align: center; // Centra le scritte
 
     &:hover {
-        transform: scale(1.05);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Riduci l'ombra al passaggio del mouse
     }
 

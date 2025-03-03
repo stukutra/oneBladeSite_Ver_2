@@ -265,7 +265,7 @@
         "DESCRIPTION": "Descripción",
         "SENIORITY": "Antigüedad",
         "DAILY_RATE": "Tarifa Diaria",
-        "PRICE_PER_DAY": "Precio por Día"
+        "PRICE_PER_DAY": "Tarifa Diaria"
     },
     "STEP": {
         "CATEGORY": "Categoría",

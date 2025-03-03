@@ -262,7 +262,7 @@
     "DESCRIPTION": "Description",
     "SENIORITY": "Seniority",
     "DAILY_RATE": "Daily Rate",
-    "PRICE_PER_DAY": "Price Per Day"
+    "PRICE_PER_DAY": "Daily Rate"
   },
   "STEP": {
     "CATEGORY": "Category",
