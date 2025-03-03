@@ -41,6 +41,7 @@ export class AcademyonebladeComponent implements OnInit {
         .filter((category: Category) => category.courses.length > 0);
 
       this.loadCourseDescriptions();
+      this.loadAppleStyleCourseDescriptions();
     });
   }
 
@@ -54,8 +55,29 @@ export class AcademyonebladeComponent implements OnInit {
     });
   }
 
+  private loadAppleStyleCourseDescriptions(): void {
+    this.categories.forEach(category => {
+      category.courses.forEach(course => {
+        if (course.descriptionFile) {
+          this.loadAppleStyleCourseDescription(course.idCourse, course.descriptionFile);
+        }
+      });
+    });
+  }
+
   // Metodo per caricare le descrizioni HTML dei corsi
   private loadCourseDescription(courseId: string, filePath: string): void {
+    this.coursesService.getCourseDescription(filePath).subscribe(
+      htmlContent => {
+        this.courseDescriptions[courseId] = this.sanitizer.bypassSecurityTrustHtml(htmlContent);
+      },
+      error => {
+        console.error(`Errore nel caricamento della descrizione per il corso ${courseId}:`, error);
+      }
+    );
+  }
+
+  private loadAppleStyleCourseDescription(courseId: string, filePath: string): void {
     this.coursesService.getCourseDescription(filePath).subscribe(
       htmlContent => {
         this.courseDescriptions[courseId] = this.sanitizer.bypassSecurityTrustHtml(htmlContent);
