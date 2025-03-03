@@ -27,7 +27,8 @@ export class TalentWizardComponent implements OnInit {
                     expandedSkills: false, // Inizializza la proprietà expandedSkills
                     expandedFrameworks: false, // Inizializza la proprietà expandedFrameworks
                     expandedTools: false, // Inizializza la proprietà expandedTools
-                    expandedLanguages: false // Inizializza la proprietà expandedLanguages
+                    expandedLanguages: false, // Inizializza la proprietà expandedLanguages
+                    selectedRateIndex: 1 // Inizializza l'indice della tariffa selezionata
                 }))
             }));
         });
@@ -41,6 +42,24 @@ export class TalentWizardComponent implements OnInit {
     selectTalent(talent: Talent) {
         this.selectedTalent = talent;
         this.step = 3;
+    }
+
+    changeRate(talent: Talent, rate: string) {
+        talent.selectedRate = rate;
+    }
+
+    updateRate(talent: Talent) {
+        switch (talent.selectedRateIndex) {
+            case 1:
+                talent.selectedRate = '1_month';
+                break;
+            case 2:
+                talent.selectedRate = '3_months';
+                break;
+            case 3:
+                talent.selectedRate = '6_months';
+                break;
+        }
     }
 
     handleEmailSent(success: boolean) {

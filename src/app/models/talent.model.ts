@@ -18,6 +18,8 @@ export interface Talent {
     expandedFrameworks?: boolean;
     expandedTools?: boolean;
     expandedLanguages?: boolean;
+    selectedRate?: string;
+    selectedRateIndex?: number; // Aggiungi questa linea
 }
 
 export interface Category {

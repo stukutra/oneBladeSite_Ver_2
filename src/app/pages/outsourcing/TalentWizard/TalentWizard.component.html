@@ -44,7 +44,8 @@
         <div class="step" [class.completed]="step >= 1" (click)="step < 4 && goToStep(1)">
             <div class="circle">1</div>
         </div>
-        <div class="step" [class.completed]="step >= 2" (click)="step < 4 && goToStep(2)" [class.disabled]="!selectedCategory">
+        <div class="step" [class.completed]="step >= 2" (click)="step < 4 && goToStep(2)"
+            [class.disabled]="!selectedCategory">
             <div class="circle">2</div>
         </div>
         <div class="step" [class.completed]="step >= 3" [class.disabled]="!selectedTalent">
@@ -113,11 +114,19 @@
                         {{ talent.expandedLanguages ? 'Mostra meno' : 'Mostra di più' }}
                     </button>
                     <p class="price"><strong>{{ 'TALENT_LIST.PRICE_PER_DAY' | translate }}:</strong></p>
-                    <ul>
-                        <li><strong>1 Mese:</strong> {{ talent.dailyRate['1_month'] }}</li>
-                        <li><strong>3 Mesi:</strong> {{ talent.dailyRate['3_months'] }}</li>
-                        <li><strong>6 Mesi:</strong> {{ talent.dailyRate['6_months'] }}</li>
-                    </ul>
+                    <div class="price-slider">
+                        <input type="range" class="form-range" min="1" max="3" step="1"
+                            [(ngModel)]="talent.selectedRateIndex" (change)="updateRate(talent)">
+                        <div *ngIf="talent.selectedRateIndex === 1">
+                            <p><strong>1 Mese:</strong> {{ talent.dailyRate['1_month'] }}</p>
+                        </div>
+                        <div *ngIf="talent.selectedRateIndex === 2">
+                            <p><strong>3 Mesi:</strong> {{ talent.dailyRate['3_months'] }}</p>
+                        </div>
+                        <div *ngIf="talent.selectedRateIndex === 3">
+                            <p><strong>6 Mesi:</strong> {{ talent.dailyRate['6_months'] }}</p>
+                        </div>
+                    </div>
                     <button class="btn btn-primary mt-3" (click)="selectTalent(talent)">Scegli</button>
                 </div>
             </div>
@@ -172,11 +181,19 @@
                         {{ selectedTalent.expandedLanguages ? 'Mostra meno' : 'Mostra di più' }}
                     </button>
                     <p class="price"><strong>{{ 'TALENT_LIST.PRICE_PER_DAY' | translate }}:</strong></p>
-                    <ul>
-                        <li><strong>1 Mese:</strong> {{ selectedTalent.dailyRate['1_month'] }}</li>
-                        <li><strong>3 Mesi:</strong> {{ selectedTalent.dailyRate['3_months'] }}</li>
-                        <li><strong>6 Mesi:</strong> {{ selectedTalent.dailyRate['6_months'] }}</li>
-                    </ul>
+                    <div class="price-slider">
+                        <input type="range" class="form-range" min="1" max="3" step="1"
+                            [(ngModel)]="selectedTalent.selectedRateIndex" (change)="updateRate(selectedTalent)">
+                        <div *ngIf="selectedTalent.selectedRateIndex === 1">
+                            <p><strong>1 Mese:</strong> {{ selectedTalent.dailyRate['1_month'] }}</p>
+                        </div>
+                        <div *ngIf="selectedTalent.selectedRateIndex === 2">
+                            <p><strong>3 Mesi:</strong> {{ selectedTalent.dailyRate['3_months'] }}</p>
+                        </div>
+                        <div *ngIf="selectedTalent.selectedRateIndex === 3">
+                            <p><strong>6 Mesi:</strong> {{ selectedTalent.dailyRate['6_months'] }}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-md-6 mb-3">
