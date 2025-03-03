@@ -11,6 +11,7 @@
     transition: box-shadow $transition-speed; // Rimuovi transform per eliminare l'effetto zoom
     cursor: pointer;
     text-align: center; // Centra le scritte
+    width: 100%; // Aumenta la larghezza dei box
 
     &:hover {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Riduci l'ombra al passaggio del mouse
@@ -39,9 +40,8 @@
     }
 
     .price {
-        font-size: 16px;
+        font-size: 14px;
         color: $primary-color;
-        font-weight: bold;
         margin-top: 10px;
     }
 
