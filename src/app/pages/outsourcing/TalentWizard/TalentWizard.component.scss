@@ -32,6 +32,7 @@
     ul {
         font-size: 15px; // Riduci la dimensione del font delle liste
         padding-left: 20px;
+        text-align: left; // Allinea il testo a sinistra
     }
 
     li {
@@ -52,6 +53,19 @@
             color: darken($primary-color, 10%); // Colore del pulsante "Mostra di più" al passaggio del mouse
         }
     }
+
+    .btn-primary {
+        width: 100%; // Larghezza intera
+        border: 1px solid $primary-color; // Bordo del colore primario
+        background-color: transparent; // Sfondo trasparente
+        color: $primary-color; // Testo del colore primario
+        transition: background-color $transition-speed, color $transition-speed; // Transizione per hover
+
+        &:hover {
+            background-color: $primary-color; // Sfondo pieno al passaggio del mouse
+            color: $font-color-white; // Testo bianco al passaggio del mouse
+        }
+    }
 }
 
 .skills-list,
@@ -62,13 +76,14 @@
     max-height: 3.6em; // Altezza per mostrare solo due voci
     overflow: hidden;
     transition: max-height 0.3s ease;
+    cursor: pointer; // Aggiungi il cursore pointer
 
     &.expanded {
         max-height: none;
     }
 
     &::after {
-        content: '';
+        content: '...';
         position: absolute;
         bottom: 0;
         left: 0;
@@ -76,6 +91,9 @@
         height: 1.2em;
         background: linear-gradient(to bottom, rgba(255, 255, 255, 0), $background-light);
         display: block;
+        text-align: left; // Allinea i tre puntini a sinistra
+        color: $primary-color; // Colore dei puntini
+        padding-left: 5px; // Aggiungi spazio tra il testo e i puntini
     }
 
     &.expanded::after {

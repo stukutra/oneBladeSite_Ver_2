@@ -8,7 +8,7 @@
                     "minContract": "1 month",
                     "seniority": "Senior",
                     "dailyRate": "400€ (Iva esclusa)",
-                    "pricePerDay": "450€ (Iva esclusa)",
+                    "pricePerDay": "400€ (Iva esclusa)",
                     "skills": [
                         "React.js",
                         "Redux",
@@ -47,7 +47,7 @@
                 },
                 {
                     "role": "Angular Developer",
-                    "minContract": "2 months",
+                    "minContract": "1 months",
                     "description": "Experienced in Angular and RxJS",
                     "seniority": "Mid",
                     "dailyRate": "350€ (Iva esclusa)",
@@ -90,12 +90,82 @@
             "name": "Mobile Developer",
             "talents": [
                 {
-                    "role": "Swift Developer",
+                    "role": "iOS Developer",
+                    "minContract": "1 months",
+                    "description": "Proficient in Swift and iOS SDK",
+                    "seniority": "Senior",
+                    "dailyRate": "450€ (Iva esclusa)",
+                    "pricePerDay": "350€ (Iva esclusa)",
+                    "skills": [
+                        "Swift",
+                        "Objective-C",
+                        "iOS SDK",
+                        "Xcode",
+                        "Core Data",
+                        "UIKit",
+                        "REST API Integration",
+                        "Git / GitHub"
+                    ],
+                    "frameworks_libraries": [
+                        "Alamofire",
+                        "RxSwift",
+                        "Realm"
+                    ],
+                    "tools": [
+                        "Xcode",
+                        "Jenkins",
+                        "Jira",
+                        "Trello",
+                        "Confluence"
+                    ],
+                    "languages_spoken": {
+                        "English": "C1 - Advanced",
+                        "Italian": "C2 - Advanced",
+                        "Spanish": "B2 - Intermediate"
+                    }
+                },
+                {
+                    "role": "Android Developer",
                     "minContract": "3 months",
                     "description": "Proficient in Swift and iOS SDK",
                     "seniority": "Senior",
                     "dailyRate": "450€ (Iva esclusa)",
-                    "pricePerDay": "500€ (Iva esclusa)",
+                    "pricePerDay": "350€ (Iva esclusa)",
+                    "skills": [
+                        "Swift",
+                        "Objective-C",
+                        "iOS SDK",
+                        "Xcode",
+                        "Core Data",
+                        "UIKit",
+                        "REST API Integration",
+                        "Git / GitHub"
+                    ],
+                    "frameworks_libraries": [
+                        "Alamofire",
+                        "RxSwift",
+                        "Realm"
+                    ],
+                    "tools": [
+                        "Xcode",
+                        "Jenkins",
+                        "Jira",
+                        "Trello",
+                        "Confluence"
+                    ],
+                    "languages_spoken": {
+                        "English": "C1 - Advanced",
+                        "Italian": "C2 - Advanced",
+                        "Spanish": "B2 - Intermediate"
+                    }
+                },
+                {
+                    "role": "React Native Developer",
+                    "minContract": "3 months",
+                    "description": "Proficient in Swift and iOS SDK",
+                    "seniority": "Senior",
+                    "dailyRate": "450€ (Iva esclusa)",
+                    "pricePerDay": "350€ (Iva esclusa)",
                     "skills": [
                         "Swift",
                         "Objective-C",

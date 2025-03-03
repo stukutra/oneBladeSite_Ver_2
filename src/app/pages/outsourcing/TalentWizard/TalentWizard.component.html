@@ -10,8 +10,7 @@
                 come <strong>sviluppo software</strong>, <strong>design</strong>, <strong>marketing digitale</strong>,
                 <strong>consulenza IT</strong> e molte altre.
                 Questa selezione ti aiuterà a trovare rapidamente i professionisti specializzati nel settore di tuo
-                interesse.
-            </p>
+                interesse.</p>
         </div>
 
         <div *ngIf="step === 2">
@@ -20,8 +19,7 @@
                 Ogni talento ha una breve descrizione delle sue <strong>competenze principali</strong>, del
                 <strong>livello di esperienza</strong>
                 e della <strong>tipologia di servizi offerti</strong>. Seleziona il professionista che ritieni più
-                adatto al tuo progetto.
-            </p>
+                adatto al tuo progetto.</p>
         </div>
 
         <div *ngIf="step === 3">
@@ -75,43 +73,35 @@
                     <p><strong>{{ 'TALENT_LIST.MIN_CONTRACT' | translate }}:</strong> {{ talent.minContract }}</p>
                     <p><strong>{{ 'TALENT_LIST.SENIORITY' | translate }}:</strong> {{ talent.seniority }}</p>
                     <p><strong>Skills:</strong></p>
-                    <ul class="skills-list" [class.expanded]="talent.expandedSkills">
-                        <li *ngFor="let skill of talent.skills; let i = index"
-                            [class.hidden]="i >= 2 && !talent.expandedSkills">{{ skill }}</li>
-                    </ul>
-                    <button *ngIf="talent.skills.length > 2" class="btn btn-link p-0"
+                    <ul class="skills-list" [class.expanded]="talent.expandedSkills"
                         (click)="talent.expandedSkills = !talent.expandedSkills">
-                        {{ talent.expandedSkills ? 'Mostra meno' : 'Mostra di più' }}
-                    </button>
+                        <li *ngFor="let skill of talent.skills; let i = index"
+                            [class.hidden]="i >= 2 && !talent.expandedSkills">{{ skill }}<span
+                                *ngIf="i >= 2 && !talent.expandedSkills">...</span></li>
+                    </ul>
                     <p><strong>Frameworks/Libraries:</strong></p>
-                    <ul class="frameworks-list" [class.expanded]="talent.expandedFrameworks">
-                        <li *ngFor="let framework of talent.frameworks_libraries; let i = index"
-                            [class.hidden]="i >= 2 && !talent.expandedFrameworks">{{ framework }}</li>
-                    </ul>
-                    <button *ngIf="talent.frameworks_libraries.length > 2" class="btn btn-link p-0"
+                    <ul class="frameworks-list" [class.expanded]="talent.expandedFrameworks"
                         (click)="talent.expandedFrameworks = !talent.expandedFrameworks">
-                        {{ talent.expandedFrameworks ? 'Mostra meno' : 'Mostra di più' }}
-                    </button>
-                    <p><strong>Tools:</strong></p>
-                    <ul class="tools-list" [class.expanded]="talent.expandedTools">
-                        <li *ngFor="let tool of talent.tools; let i = index"
-                            [class.hidden]="i >= 2 && !talent.expandedTools">{{ tool }}</li>
+                        <li *ngFor="let framework of talent.frameworks_libraries; let i = index"
+                            [class.hidden]="i >= 2 && !talent.expandedFrameworks">{{ framework }}<span
+                                *ngIf="i >= 2 && !talent.expandedFrameworks">...</span></li>
                     </ul>
-                    <button *ngIf="talent.tools.length > 2" class="btn btn-link p-0"
+                    <p><strong>Tools:</strong></p>
+                    <ul class="tools-list" [class.expanded]="talent.expandedTools"
                         (click)="talent.expandedTools = !talent.expandedTools">
-                        {{ talent.expandedTools ? 'Mostra meno' : 'Mostra di più' }}
-                    </button>
+                        <li *ngFor="let tool of talent.tools; let i = index"
+                            [class.hidden]="i >= 2 && !talent.expandedTools">{{ tool }}<span
+                                *ngIf="i >= 2 && !talent.expandedTools">...</span></li>
+                    </ul>
                     <p><strong>Languages:</strong></p>
-                    <ul class="languages-list" [class.expanded]="talent.expandedLanguages">
+                    <ul class="languages-list" [class.expanded]="talent.expandedLanguages"
+                        (click)="talent.expandedLanguages = !talent.expandedLanguages">
                         <li *ngFor="let language of getLanguages(talent.languages_spoken); let i = index"
                             [class.hidden]="i >= 2 && !talent.expandedLanguages">
-                            {{ language }}: {{ talent.languages_spoken[language] }}
+                            {{ language }}: {{ talent.languages_spoken[language] }}<span
+                                *ngIf="i >= 2 && !talent.expandedLanguages">...</span>
                         </li>
                     </ul>
-                    <button *ngIf="getLanguages(talent.languages_spoken).length > 2" class="btn btn-link p-0"
-                        (click)="talent.expandedLanguages = !talent.expandedLanguages">
-                        {{ talent.expandedLanguages ? 'Mostra meno' : 'Mostra di più' }}
-                    </button>
                     <p class="price"><strong>{{ 'TALENT_LIST.PRICE_PER_DAY' | translate }}:</strong> {{
                         talent.pricePerDay }}</p>
                     <button class="btn btn-primary mt-3" (click)="selectTalent(talent)">Dettaglio</button>
@@ -130,43 +120,35 @@
                     </p>
                     <p><strong>{{ 'TALENT_LIST.SENIORITY' | translate }}:</strong> {{ selectedTalent.seniority }}</p>
                     <p><strong>Skills:</strong></p>
-                    <ul class="skills-list" [class.expanded]="selectedTalent.expandedSkills">
-                        <li *ngFor="let skill of selectedTalent.skills; let i = index"
-                            [class.hidden]="i >= 2 && !selectedTalent.expandedSkills">{{ skill }}</li>
-                    </ul>
-                    <button *ngIf="selectedTalent.skills.length > 2" class="btn btn-link p-0"
+                    <ul class="skills-list" [class.expanded]="selectedTalent.expandedSkills"
                         (click)="selectedTalent.expandedSkills = !selectedTalent.expandedSkills">
-                        {{ selectedTalent.expandedSkills ? 'Mostra meno' : 'Mostra di più' }}
-                    </button>
+                        <li *ngFor="let skill of selectedTalent.skills; let i = index"
+                            [class.hidden]="i >= 2 && !selectedTalent.expandedSkills">{{ skill }}<span
+                                *ngIf="i >= 2 && !selectedTalent.expandedSkills">...</span></li>
+                    </ul>
                     <p><strong>Frameworks/Libraries:</strong></p>
-                    <ul class="frameworks-list" [class.expanded]="selectedTalent.expandedFrameworks">
-                        <li *ngFor="let framework of selectedTalent.frameworks_libraries; let i = index"
-                            [class.hidden]="i >= 2 && !selectedTalent.expandedFrameworks">{{ framework }}</li>
-                    </ul>
-                    <button *ngIf="selectedTalent.frameworks_libraries.length > 2" class="btn btn-link p-0"
+                    <ul class="frameworks-list" [class.expanded]="selectedTalent.expandedFrameworks"
                         (click)="selectedTalent.expandedFrameworks = !selectedTalent.expandedFrameworks">
-                        {{ selectedTalent.expandedFrameworks ? 'Mostra meno' : 'Mostra di più' }}
-                    </button>
-                    <p><strong>Tools:</strong></p>
-                    <ul class="tools-list" [class.expanded]="selectedTalent.expandedTools">
-                        <li *ngFor="let tool of selectedTalent.tools; let i = index"
-                            [class.hidden]="i >= 2 && !selectedTalent.expandedTools">{{ tool }}</li>
+                        <li *ngFor="let framework of selectedTalent.frameworks_libraries; let i = index"
+                            [class.hidden]="i >= 2 && !selectedTalent.expandedFrameworks">{{ framework }}<span
+                                *ngIf="i >= 2 && !selectedTalent.expandedFrameworks">...</span></li>
                     </ul>
-                    <button *ngIf="selectedTalent.tools.length > 2" class="btn btn-link p-0"
+                    <p><strong>Tools:</strong></p>
+                    <ul class="tools-list" [class.expanded]="selectedTalent.expandedTools"
                         (click)="selectedTalent.expandedTools = !selectedTalent.expandedTools">
-                        {{ selectedTalent.expandedTools ? 'Mostra meno' : 'Mostra di più' }}
-                    </button>
+                        <li *ngFor="let tool of selectedTalent.tools; let i = index"
+                            [class.hidden]="i >= 2 && !selectedTalent.expandedTools">{{ tool }}<span
+                                *ngIf="i >= 2 && !selectedTalent.expandedTools">...</span></li>
+                    </ul>
                     <p><strong>Languages:</strong></p>
-                    <ul class="languages-list" [class.expanded]="selectedTalent.expandedLanguages">
+                    <ul class="languages-list" [class.expanded]="selectedTalent.expandedLanguages"
+                        (click)="selectedTalent.expandedLanguages = !selectedTalent.expandedLanguages">
                         <li *ngFor="let language of getLanguages(selectedTalent.languages_spoken); let i = index"
                             [class.hidden]="i >= 2 && !selectedTalent.expandedLanguages">
-                            {{ language }}: {{ selectedTalent.languages_spoken[language] }}
+                            {{ language }}: {{ selectedTalent.languages_spoken[language] }}<span
+                                *ngIf="i >= 2 && !selectedTalent.expandedLanguages">...</span>
                         </li>
                     </ul>
-                    <button *ngIf="getLanguages(selectedTalent.languages_spoken).length > 2" class="btn btn-link p-0"
-                        (click)="selectedTalent.expandedLanguages = !selectedTalent.expandedLanguages">
-                        {{ selectedTalent.expandedLanguages ? 'Mostra meno' : 'Mostra di più' }}
-                    </button>
                     <p class="price"><strong>{{ 'TALENT_LIST.PRICE_PER_DAY' | translate }}:</strong> {{
                         selectedTalent.pricePerDay }}</p>
                 </div>
