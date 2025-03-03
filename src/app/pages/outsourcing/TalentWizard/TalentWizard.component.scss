@@ -108,6 +108,17 @@
 
 .talent-box h3 {
     font-size: 24px; // Increase the font size
+    color: $text-color-oneblade; // Define the color for the role title
+}
+
+.frameworks-list a,
+.tools-list a {
+    color: $text-color-oneblade; // Use the same color as the role title
+    text-decoration: none; // Remove the underline from the links
+
+    &:hover {
+        text-decoration: underline; // Add underline on hover
+    }
 }
 
 .skills-list,

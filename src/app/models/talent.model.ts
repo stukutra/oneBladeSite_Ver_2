@@ -8,8 +8,8 @@ export interface Talent {
         "6_months": string;
     };
     skills: string[];
-    frameworks_libraries: string[];
-    tools: string[];
+    frameworks_libraries: { name: string; link: string }[];
+    tools: { name: string; link: string }[];
     languages_spoken: {
         [language: string]: string;
     };

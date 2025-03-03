@@ -97,7 +97,7 @@
                         [class.no-more]="talent.frameworks_libraries.length <= 2">
                         <li *ngFor="let framework of talent.frameworks_libraries; let i = index"
                             [class.hidden]="i >= 2 && !talent.expandedFrameworks">
-                            <a [href]="getFrameworkLink(framework)" target="_blank">{{ framework }}</a>
+                            <a [href]="framework.link" target="_blank">{{ framework.name }}</a>
                         </li>
                     </ul>
                     <button *ngIf="talent.frameworks_libraries.length > 2" class="btn btn-link p-0"
@@ -108,7 +108,9 @@
                     <ul class="tools-list" [class.expanded]="talent.expandedTools"
                         [class.no-more]="talent.tools.length <= 2">
                         <li *ngFor="let tool of talent.tools; let i = index"
-                            [class.hidden]="i >= 2 && !talent.expandedTools">{{ tool }}</li>
+                            [class.hidden]="i >= 2 && !talent.expandedTools">
+                            <a [href]="tool.link" target="_blank">{{ tool.name }}</a>
+                        </li>
                     </ul>
                     <button *ngIf="talent.tools.length > 2" class="btn btn-link p-0"
                         (click)="talent.expandedTools = !talent.expandedTools">
@@ -173,7 +175,7 @@
                         [class.no-more]="selectedTalent.frameworks_libraries.length <= 2">
                         <li *ngFor="let framework of selectedTalent.frameworks_libraries; let i = index"
                             [class.hidden]="i >= 2 && !selectedTalent.expandedFrameworks">
-                            <a [href]="getFrameworkLink(framework)" target="_blank">{{ framework }}</a>
+                            <a [href]="framework.link" target="_blank">{{ framework.name }}</a>
                         </li>
                     </ul>
                     <button *ngIf="selectedTalent.frameworks_libraries.length > 2" class="btn btn-link p-0"
@@ -184,7 +186,9 @@
                     <ul class="tools-list" [class.expanded]="selectedTalent.expandedTools"
                         [class.no-more]="selectedTalent.tools.length <= 2">
                         <li *ngFor="let tool of selectedTalent.tools; let i = index"
-                            [class.hidden]="i >= 2 && !selectedTalent.expandedTools">{{ tool }}</li>
+                            [class.hidden]="i >= 2 && !selectedTalent.expandedTools">
+                            <a [href]="tool.link" target="_blank">{{ tool.name }}</a>
+                        </li>
                     </ul>
                     <button *ngIf="selectedTalent.tools.length > 2" class="btn btn-link p-0"
                         (click)="selectedTalent.expandedTools = !selectedTalent.expandedTools">
