@@ -5,32 +5,34 @@
     border: 1px solid $input-border-color;
     padding: $padding-base;
     margin-bottom: $gap;
-    border-radius: $border-radius;
+    border-radius: 12px; // Aumenta il raggio di curvatura per un aspetto più morbido
     background-color: $background-light;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Riduci l'ombra
-    transition: box-shadow $transition-speed; // Rimuovi transform per eliminare l'effetto zoom
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); // Aumenta l'ombra per un effetto più pronunciato
+    transition: box-shadow 0.3s ease, transform 0.3s ease; // Aggiungi una transizione per l'ombra e la trasformazione
     cursor: pointer;
     text-align: center; // Centra le scritte
     width: 100%; // Aumenta la larghezza dei box
 
     &:hover {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Riduci l'ombra al passaggio del mouse
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); // Aumenta l'ombra al passaggio del mouse
+        transform: translateY(-4px); // Aggiungi un effetto di sollevamento al passaggio del mouse
     }
 
     h3 {
         margin-top: 0;
         color: $text-color-oneblade;
-        font-size: 14px; // Riduci la dimensione del font
+        font-size: 16px; // Aumenta la dimensione del font
+        font-weight: 600; // Rendi il testo in grassetto
     }
 
     p {
         margin: 0.5rem 0;
         color: $text-color-dark;
-        font-size: 12px; // Riduci la dimensione del font
+        font-size: 14px; // Aumenta la dimensione del font
     }
 
     ul {
-        font-size: 15px; // Riduci la dimensione del font delle liste
+        font-size: 14px; // Mantieni la dimensione del font delle liste
         padding-left: 20px;
         text-align: left; // Allinea il testo a sinistra
     }
@@ -40,7 +42,7 @@
     }
 
     .price {
-        font-size: 18px; // Aumenta la dimensione del font
+        font-size: 20px; // Aumenta la dimensione del font
         color: $primary-color;
         margin-top: 10px;
         font-weight: bold; // Rendi il testo in grassetto
@@ -58,19 +60,21 @@
     .btn-primary {
         width: 100%; // Larghezza intera
         border: 1px solid $primary-color; // Bordo del colore primario
-        background-color: transparent; // Sfondo trasparente
-        color: $primary-color; // Testo del colore primario
+        background-color: $primary-color; // Sfondo pieno
+        color: $font-color-white; // Testo bianco
         transition: background-color $transition-speed, color $transition-speed; // Transizione per hover
         margin-top: 20px; // Aggiungi margine superiore per distanziare dal prezzo
+        border-radius: 8px; // Aggiungi un raggio di curvatura ai pulsanti
 
         &:hover {
-            background-color: $primary-color; // Sfondo pieno al passaggio del mouse
+            background-color: darken($primary-color, 10%); // Sfondo più scuro al passaggio del mouse
             color: $font-color-white; // Testo bianco al passaggio del mouse
         }
     }
 
     .price-slider {
         position: relative;
+
         input[type="range"] {
             -webkit-appearance: none;
             width: 100%;
