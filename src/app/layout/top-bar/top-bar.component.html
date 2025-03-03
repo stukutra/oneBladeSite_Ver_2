@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+<nav class="navbar navbar-expand-lg navbar-light bg-light w-100 responsive-navbar">
   <a href="#" class="navbar-brand" alt="">
     <div class="logo-container">
       <img src="../../assets/logo.png" alt="Logo" class="logo default-logo">
@@ -13,7 +13,7 @@
   <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item d-flex align-items-center">
-        <a class="nav-link" routerLink="/aboutus">
+        <a class="nav-link" routerLink="/aboutus" (click)="closeMenu()">
           {{ 'TOP_BAR.ABOUT_US' | translate }}
         </a>
       </li>
@@ -25,13 +25,15 @@
         </a>
         <ul class="dropdown-menu" aria-labelledby="accademyDropdown">
           <li>
-            <a class="dropdown-item" routerLink="/accademy">{{ 'TOP_BAR.CHOOSE_COURSE' | translate }}</a>
+            <a class="dropdown-item" routerLink="/accademy" (click)="closeMenu()">{{ 'TOP_BAR.CHOOSE_COURSE' | translate
+              }}</a>
           </li>
           <li>
-            <a class="dropdown-item" routerLink="/guideAccademy">{{ 'TOP_BAR.GUIDES' | translate }}</a>
+            <a class="dropdown-item" routerLink="/guideAccademy" (click)="closeMenu()">{{ 'TOP_BAR.GUIDES' | translate
+              }}</a>
           </li>
           <li>
-            <a class="dropdown-item" routerLink="/academyFAQ">{{ 'TOP_BAR.FAQ' | translate }}</a>
+            <a class="dropdown-item" routerLink="/academyFAQ" (click)="closeMenu()">{{ 'TOP_BAR.FAQ' | translate }}</a>
           </li>
         </ul>
       </li>
@@ -42,10 +44,12 @@
         </a>
         <ul class="dropdown-menu" aria-labelledby="outsourcingDropdown">
           <li>
-            <a class="dropdown-item" routerLink="/outsourcinginfo">{{ 'TOP_BAR.BODY_RENTAL' | translate }}</a>
+            <a class="dropdown-item" routerLink="/outsourcinginfo" (click)="closeMenu()">{{ 'TOP_BAR.BODY_RENTAL' |
+              translate }}</a>
           </li>
           <li>
-            <a class="dropdown-item" routerLink="/talentWizard">{{ 'TOP_BAR.TALENT_WIZARD' | translate }}</a>
+            <a class="dropdown-item" routerLink="/talentWizard" (click)="closeMenu()">{{ 'TOP_BAR.TALENT_WIZARD' |
+              translate }}</a>
           </li>
         </ul>
       </li>

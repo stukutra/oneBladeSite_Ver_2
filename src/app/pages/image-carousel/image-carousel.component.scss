@@ -85,6 +85,10 @@
 
 // Media Queries per schermi di diverse dimensioni
 @media (max-width: 991px) {
+  .carousel {
+    margin-top: -60px; // Further reduce the top margin to bring the carousel closer to the top
+  }
+
   .carousel-caption-overlay {
     h2.carousel-title {
       font-size: 1.75rem;
