@@ -1,0 +1,21 @@
+
+
+
+p,
+ul {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.accordion-button {
+    font-weight: bold;
+}

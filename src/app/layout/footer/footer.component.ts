@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -10,7 +11,7 @@ export class FooterComponent {
   public currentYear: number;
   public isopenPrivacyPolicyModalModalVisible: boolean=false;
 
-  constructor() {
+  constructor(private router: Router) {
     this.currentYear = new Date().getFullYear(); // Ottieni l'anno corrente dinamicamente
   }
 
@@ -20,5 +21,9 @@ export class FooterComponent {
 
   public closePrivacyPolicyModal(): void {
     this.isopenPrivacyPolicyModalModalVisible = false;
+  }
+
+  public navigateToPrivacyPolicy() {
+    this.router.navigate(['/privacy-policy']);
   }
 }

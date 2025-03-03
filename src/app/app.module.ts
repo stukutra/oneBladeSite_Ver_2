@@ -41,7 +41,7 @@ import { MyInformationComponent } from './pages/myInformation/myInformation.comp
 import { OutsourcingBannerComponent } from './pages/outsourcing/outsourcingBanner/outsourcingBanner.component';
 import { OutsourcingInfoComponent } from './pages/outsourcing/outsourcingInfo/outsourcingInfo.component';
 import { ParallaxComponent } from './pages/parallax/parallax.component';
-import { Privacy_policyComponent } from './pages/privacy_policy/privacy_policy.component';
+import { PrivacyPolicyComponent } from './pages/privacy_policy/privacy_policy.component';
 import { QuestionnaireComponent } from './pages/questionnaire/questionnaire.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { RegistrationFormUserComponent } from './user/registrationFormUser/registrationFormUser.component';
@@ -67,7 +67,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     CompanyDescriptionComponent,
     ContactFormComponent,
     QuestionnaireComponent,
-    Privacy_policyComponent,
+    PrivacyPolicyComponent,
     AgencyDetailsComponent,
     MyInformationComponent,
     ImageCarouselComponent,
