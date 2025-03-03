@@ -66,35 +66,35 @@
         }
     }
 
-    .price-slider {
-        input[type="range"] {
-            -webkit-appearance: none;
-            width: 100%;
-            height: 8px;
-            background: $primary-color; // Colore della slide
-            outline: none;
-            opacity: 0.9;
-            transition: opacity 0.2s;
+    // .price-slider {
+    //     input[type="range"] {
+    //         -webkit-appearance: none;
+    //         width: 100%;
+    //         height: 8px;
+    //         background: $primary-color; // Colore della slide
+    //         outline: none;
+    //         opacity: 0.9;
+    //         transition: opacity 0.2s;
 
-            &::-webkit-slider-thumb {
-                -webkit-appearance: none;
-                appearance: none;
-                width: 20px;
-                height: 20px;
-                background: $primary-color; // Colore del thumb
-                cursor: pointer;
-                border-radius: 50%;
-            }
+    //         &::-webkit-slider-thumb {
+    //             -webkit-appearance: none;
+    //             appearance: none;
+    //             width: 20px;
+    //             height: 20px;
+    //             background: $primary-color; // Colore del thumb
+    //             cursor: pointer;
+    //             border-radius: 50%;
+    //         }
 
-            &::-moz-range-thumb {
-                width: 20px;
-                height: 20px;
-                background: $primary-color; // Colore del thumb
-                cursor: pointer;
-                border-radius: 50%;
-            }
-        }
-    }
+    //         &::-moz-range-thumb {
+    //             width: 20px;
+    //             height: 20px;
+    //             background: $primary-color; // Colore del thumb
+    //             cursor: pointer;
+    //             border-radius: 50%;
+    //         }
+    //     }
+    // }
 }
 
 .skills-list,
@@ -135,6 +135,12 @@
 
     &.expanded li.hidden {
         display: list-item;
+    }
+
+    &:not(.expanded) {
+        &::after {
+            display: none;
+        }
     }
 }
 
