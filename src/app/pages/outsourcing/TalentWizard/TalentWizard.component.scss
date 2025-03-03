@@ -1,4 +1,5 @@
 @import '../../../style/_variabiles.scss';
+@import '~bootstrap-icons/font/bootstrap-icons.css';
 
 .category-box,
 .talent-box {
@@ -103,6 +104,10 @@
             }
         }
     }
+}
+
+.talent-box h3 {
+    font-size: 24px; // Increase the font size
 }
 
 .skills-list,

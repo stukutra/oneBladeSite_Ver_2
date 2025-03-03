@@ -17,6 +17,56 @@ export class TalentWizardComponent implements OnInit {
     step: Step = Step.Step1; // Use the enum for the step
     Step = Step; // Make the enum available in the template
 
+    frameworkLinks: { [key: string]: string } = {
+        'React Native': 'https://reactnative.dev/',
+        'Ionic v4/React.js': 'https://ionicframework.com/',
+        'Strapi Headless CMS': 'https://strapi.io/',
+        'Angular Material': 'https://material.angular.io/',
+        'NgRx': 'https://ngrx.io/',
+        'Bootstrap': 'https://getbootstrap.com/',
+        'Alamofire': 'https://github.com/Alamofire/Alamofire',
+        'RxSwift': 'https://github.com/ReactiveX/RxSwift',
+        'Realm': 'https://realm.io/',
+        'Dagger': 'https://dagger.dev/',
+        'RxJava': 'https://github.com/ReactiveX/RxJava',
+        'Retrofit': 'https://square.github.io/retrofit/',
+        'React Navigation': 'https://reactnavigation.org/',
+        'Redux': 'https://redux.js.org/',
+        'Axios': 'https://axios-http.com/',
+        'Terraform': 'https://www.terraform.io/',
+        'Ansible': 'https://www.ansible.com/',
+        'Docker': 'https://www.docker.com/',
+        'Hadoop': 'https://hadoop.apache.org/',
+        'Spark': 'https://spark.apache.org/',
+        'Kafka': 'https://kafka.apache.org/',
+        'Informatica': 'https://www.informatica.com/',
+        'Talend': 'https://www.talend.com/',
+        'TensorFlow': 'https://www.tensorflow.org/',
+        'Keras': 'https://keras.io/',
+        'Scikit-Learn': 'https://scikit-learn.org/',
+        'Tableau': 'https://www.tableau.com/',
+        'Power BI': 'https://powerbi.microsoft.com/',
+        'Selenium': 'https://www.selenium.dev/',
+        'JUnit': 'https://junit.org/junit5/',
+        'TestNG': 'https://testng.org/',
+        'Sketch': 'https://www.sketch.com/',
+        'Figma': 'https://www.figma.com/',
+        'Adobe XD': 'https://www.adobe.com/products/xd.html',
+        'Express.js': 'https://expressjs.com/',
+        'NestJS': 'https://nestjs.com/',
+        'Socket.io': 'https://socket.io/',
+        'ASP.NET Core': 'https://docs.microsoft.com/en-us/aspnet/core/',
+        'Blazor': 'https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor',
+        'SignalR': 'https://dotnet.microsoft.com/apps/aspnet/signalr',
+        'Spring Boot': 'https://spring.io/projects/spring-boot',
+        'Spring Cloud': 'https://spring.io/projects/spring-cloud',
+        'Apache Kafka': 'https://kafka.apache.org/',
+        'Django': 'https://www.djangoproject.com/',
+        'Flask': 'https://flask.palletsprojects.com/',
+        'FastAPI': 'https://fastapi.tiangolo.com/',
+        // Add more frameworks and their corresponding links here
+    };
+
     constructor(private talentService: TalentService, private http: HttpClient) { }
 
     ngOnInit() {
@@ -82,5 +132,9 @@ export class TalentWizardComponent implements OnInit {
 
     getLanguagesString(languages: { [language: string]: string } | undefined): string {
         return languages ? Object.keys(languages).map(lang => `${lang}: ${languages[lang]}`).join(', ') : '';
+    }
+
+    getFrameworkLink(framework: string): string {
+        return this.frameworkLinks[framework] || '#';
     }
 }
