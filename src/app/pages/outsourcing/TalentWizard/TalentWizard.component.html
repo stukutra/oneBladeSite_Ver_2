@@ -41,10 +41,10 @@
     <!-- Stepline -->
     <div class="step-container mt-5">
         <div class="progress-bar"></div>
-        <div class="step" [class.completed]="step >= 1" (click)="goToStep(1)">
+        <div class="step" [class.completed]="step >= 1" (click)="step < 4 && goToStep(1)">
             <div class="circle">1</div>
         </div>
-        <div class="step" [class.completed]="step >= 2" (click)="goToStep(2)" [class.disabled]="!selectedCategory">
+        <div class="step" [class.completed]="step >= 2" (click)="step < 4 && goToStep(2)" [class.disabled]="!selectedCategory">
             <div class="circle">2</div>
         </div>
         <div class="step" [class.completed]="step >= 3" [class.disabled]="!selectedTalent">
