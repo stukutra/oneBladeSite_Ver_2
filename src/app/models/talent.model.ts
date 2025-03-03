@@ -10,6 +10,11 @@ export interface Talent {
     languages_spoken: {
         [language: string]: string;
     };
+    expanded?: boolean; // Aggiungi questa proprietà
+    expandedSkills?: boolean; // Aggiungi questa proprietà
+    expandedFrameworks?: boolean; // Aggiungi questa proprietà
+    expandedTools?: boolean; // Aggiungi questa proprietà
+    expandedLanguages?: boolean; // Aggiungi questa proprietà
 }
 
 export interface Category {

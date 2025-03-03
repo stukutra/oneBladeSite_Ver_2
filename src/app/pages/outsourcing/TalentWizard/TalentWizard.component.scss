@@ -46,6 +46,43 @@
     }
 }
 
+.skills-list,
+.frameworks-list,
+.tools-list,
+.languages-list {
+    position: relative;
+    max-height: 3.6em; // Altezza per mostrare solo due voci
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+
+    &.expanded {
+        max-height: none;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1.2em;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), $background-light);
+        display: block;
+    }
+
+    &.expanded::after {
+        display: none;
+    }
+
+    li.hidden {
+        display: none;
+    }
+
+    &.expanded li.hidden {
+        display: list-item;
+    }
+}
+
 .talent-info {
     border: 1px solid $input-border-color;
     padding: $padding-base;
@@ -151,4 +188,14 @@
     text-align: center;
     color: $primary-color; // Colore dei punti di step
     margin-top: 10px; // Aggiungi un margine superiore per distanziare la scritta dal punto
+}
+
+@media (max-width: 768px) {
+    .accordion-button {
+        font-size: 14px;
+    }
+
+    .accordion-body {
+        font-size: 12px;
+    }
 }

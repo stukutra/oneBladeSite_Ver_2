@@ -18,7 +18,17 @@ export class TalentWizardComponent implements OnInit {
 
     ngOnInit() {
         this.talentService.getTalents().subscribe(data => {
-            this.categories = data.categories;
+            this.categories = data.categories.map(category => ({
+                ...category,
+                talents: category.talents.map(talent => ({
+                    ...talent,
+                    expanded: false, // Inizializza la proprietà expanded
+                    expandedSkills: false, // Inizializza la proprietà expandedSkills
+                    expandedFrameworks: false, // Inizializza la proprietà expandedFrameworks
+                    expandedTools: false, // Inizializza la proprietà expandedTools
+                    expandedLanguages: false // Inizializza la proprietà expandedLanguages
+                }))
+            }));
         });
     }
 
