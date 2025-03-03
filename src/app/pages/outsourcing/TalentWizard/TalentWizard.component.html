@@ -143,10 +143,10 @@
     </div>
 
     <div *ngIf="step === Step.Step3 && selectedTalent">
-        <h2 class="mt-5 mb-5">{{ selectedCategory?.name || '' | translate }}</h2>
+        <h2 class="mt-5 mb-5 text-center">{{ selectedCategory?.name || '' | translate }}</h2>
         <div class="row">
             <div class="col-md-6 mb-3">
-                <div class="talent-box p-3" style="text-align: left;">
+                <div class="talent-box p-4" style="text-align: left;">
                     <h3>{{ selectedTalent.role | translate }}</h3>
                     <p><strong>{{ 'TALENT_LIST.MIN_CONTRACT' | translate }}:</strong> {{ selectedTalent.minContract }}
                     </p>
