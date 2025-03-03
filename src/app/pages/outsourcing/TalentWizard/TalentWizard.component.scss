@@ -44,6 +44,14 @@
         font-weight: bold;
         margin-top: 10px;
     }
+
+    .btn-link {
+        color: $primary-color; // Colore del pulsante "Mostra di più"
+
+        &:hover {
+            color: darken($primary-color, 10%); // Colore del pulsante "Mostra di più" al passaggio del mouse
+        }
+    }
 }
 
 .skills-list,
