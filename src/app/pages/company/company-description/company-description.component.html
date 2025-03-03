@@ -29,15 +29,18 @@
               <div class="col-lg-6 col-md-12">
                 <div class="description-box">
                   <span class="box-subTitle">{{ 'CONTENT.DEVELOPMENT.TITLE' | translate }}</span>
-                  <p class="box-text">
-                    {{ 'CONTENT.DEVELOPMENT.INTRO' | translate }}<br><br>
-                    <span class="box-subTitle">{{ 'CONTENT.DEVELOPMENT.SUBTITLE_DEVELOPERS' | translate }}</span><br>
-                    {{ 'CONTENT.DEVELOPMENT.BODY_DEVELOPERS' | translate }}<br><br>
-                    <span class="box-subTitle">{{ 'CONTENT.DEVELOPMENT.SUBTITLE_APPROACH' | translate }}</span><br>
-                    {{ 'CONTENT.DEVELOPMENT.BODY_APPROACH' | translate }}<br><br>
-                    <span class="box-subTitle">{{ 'CONTENT.DEVELOPMENT.SUBTITLE_REMOTE' | translate }}</span><br>
-                    {{ 'CONTENT.DEVELOPMENT.BODY_REMOTE' | translate }}
-                  </p>
+                  <p class="box-text" [innerHTML]="'CONTENT.DEVELOPMENT.INTRO' | translate"></p>
+                  <br>
+                  <span class="box-subTitle"
+                    [innerHTML]="'CONTENT.DEVELOPMENT.SUBTITLE_DEVELOPERS' | translate"></span><br>
+                  <p class="box-text" [innerHTML]="'CONTENT.DEVELOPMENT.BODY_DEVELOPERS' | translate"></p>
+                  <br>
+                  <span class="box-subTitle"
+                    [innerHTML]="'CONTENT.DEVELOPMENT.SUBTITLE_APPROACH' | translate"></span><br>
+                  <p class="box-text" [innerHTML]="'CONTENT.DEVELOPMENT.BODY_APPROACH' | translate"></p>
+                  <br>
+                  <span class="box-subTitle" [innerHTML]="'CONTENT.DEVELOPMENT.SUBTITLE_REMOTE' | translate"></span><br>
+                  <p class="box-text" [innerHTML]="'CONTENT.DEVELOPMENT.BODY_REMOTE' | translate"></p>
                 </div>
               </div>
               <div class="col-lg-6 col-md-12">
@@ -50,10 +53,9 @@
               <div class="col-lg-6 col-md-12">
                 <div class="description-box">
                   <span class="box-subTitle">{{ 'CONTENT.TALENT.TITLE' | translate }}</span>
-                  <p class="box-text">
-                    {{ 'CONTENT.TALENT.INTRO' | translate }}<br><br>
-                    {{ 'CONTENT.TALENT.BODY_CANDIDATES' | translate }}
-                  </p>
+                  <p class="box-text" [innerHTML]="'CONTENT.TALENT.INTRO' | translate"></p>
+                  <br><br>
+                  <p class="box-text" [innerHTML]="'CONTENT.TALENT.BODY_CANDIDATES' | translate"></p>
                 </div>
               </div>
               <div class="col-lg-6 col-md-12">
