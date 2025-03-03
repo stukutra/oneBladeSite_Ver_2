@@ -118,7 +118,7 @@
                         <li><strong>3 Mesi:</strong> {{ talent.dailyRate['3_months'] }}</li>
                         <li><strong>6 Mesi:</strong> {{ talent.dailyRate['6_months'] }}</li>
                     </ul>
-                    <button class="btn btn-primary mt-3" (click)="selectTalent(talent)">Dettaglio</button>
+                    <button class="btn btn-primary mt-3" (click)="selectTalent(talent)">Scegli</button>
                 </div>
             </div>
         </div>
@@ -183,7 +183,8 @@
                 <app-contact-form-azienda [selectedCategory]="selectedCategory?.name || ''"
                     [selectedTalent]="selectedTalent"
                     [customTitle]="'Compila la form per poterti aiutare per la scelta del consulente fatta.'"
-                    [customSubtitle]="'Inviandoci la tua richiesta verrai contattato da un nostro responsabile che potrà aiutarti.'"></app-contact-form-azienda>
+                    [customSubtitle]="'Inviandoci la tua richiesta verrai contattato da un nostro responsabile che potrà aiutarti.'"
+                    (emailSent)="handleEmailSent($event)"></app-contact-form-azienda>
             </div>
         </div>
     </div>

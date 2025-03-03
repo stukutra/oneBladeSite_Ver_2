@@ -1,6 +1,7 @@
 import { Category, Talent } from '../../../models/talent.model';
 import { Component, OnInit } from '@angular/core';
 
+import { HttpClient } from '@angular/common/http';
 import { TalentService } from '../../../service/talent.service';
 
 @Component({
@@ -14,7 +15,7 @@ export class TalentWizardComponent implements OnInit {
     selectedTalent: Talent | null = null;
     step: number = 1;
 
-    constructor(private talentService: TalentService) { }
+    constructor(private talentService: TalentService, private http: HttpClient) { }
 
     ngOnInit() {
         this.talentService.getTalents().subscribe(data => {
@@ -42,8 +43,10 @@ export class TalentWizardComponent implements OnInit {
         this.step = 3;
     }
 
-    onFormSubmit() {
-        this.step = 4;
+    handleEmailSent(success: boolean) {
+        if (success) {
+            this.step = 4;
+        }
     }
 
     goToStep(step: number) {

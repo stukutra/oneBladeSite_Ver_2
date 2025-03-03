@@ -734,6 +734,46 @@
                         "Italian": "C2 - Advanced",
                         "German": "B2 - Intermediate"
                     }
+                },
+                {
+                    "role": "Python Developer",
+                    "minContract": "1 month",
+                    "seniority": "Senior",
+                    "dailyRate": {
+                        "1_month": "400€ (Iva esclusa)",
+                        "3_months": "380€ (Iva esclusa)",
+                        "6_months": "360€ (Iva esclusa)"
+                    },
+                    "skills": [
+                        "Python",
+                        "Django",
+                        "Flask",
+                        "SQL",
+                        "NoSQL",
+                        "REST API",
+                        "GraphQL",
+                        "Docker",
+                        "Kubernetes",
+                        "Git / GitHub"
+                    ],
+                    "frameworks_libraries": [
+                        "Django",
+                        "Flask",
+                        "FastAPI"
+                    ],
+                    "tools": [
+                        "PyCharm",
+                        "VS Code",
+                        "Jenkins",
+                        "Jira",
+                        "Trello",
+                        "Confluence"
+                    ],
+                    "languages_spoken": {
+                        "English": "C1 - Advanced",
+                        "Italian": "C2 - Advanced",
+                        "Spanish": "B2 - Intermediate"
+                    }
                 }
             ]
         },
