@@ -54,3 +54,10 @@
   width: 100%;
   height: auto;
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black; // Change the color to make the arrows visible
+  border-radius: 50%;
+  padding: 10px;
+}
