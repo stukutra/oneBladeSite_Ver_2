@@ -178,7 +178,9 @@
         "CHRISTMAS_GAME": "¡Juega conmigo!",
         "ACCOUNT": "Cuenta",
         "LOGIN": "Iniciar sesión",
-        "REGISTER": "Registrarse"
+        "REGISTER": "Registrarse",
+        "OUTSOURCING": "Externalización",
+        "TALENT_WIZARD": "Elige tu talento"
     },
     "CALL_SECTION": {
         "TITLE": "Programa una llamada"

@@ -149,7 +149,9 @@
     "CHRISTMAS_GAME": "Play with me!",
     "ACCOUNT": "Account",
     "LOGIN": "Login",
-    "REGISTER": "Register"
+    "REGISTER": "Register",
+    "OUTSOURCING": "Outsourcing",
+    "TALENT_WIZARD": "Choose your talent"
   },
   "CALL_SECTION": {
     "TITLE": "Schedule a Call"

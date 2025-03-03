@@ -17,11 +17,7 @@
           {{ 'TOP_BAR.ABOUT_US' | translate }}
         </a>
       </li>
-      <li class="nav-item d-flex align-items-center">
-        <a class="nav-link" routerLink="/outsourcinginfo">
-          {{ 'TOP_BAR.BODY_RENTAL' | translate }}
-        </a>
-      </li>
+
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="accademyDropdown" role="button" data-bs-toggle="dropdown"
           aria-expanded="false">
@@ -39,7 +35,20 @@
           </li>
         </ul>
       </li>
-
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="outsourcingDropdown" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          {{ 'TOP_BAR.OUTSOURCING' | translate }}
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="outsourcingDropdown">
+          <li>
+            <a class="dropdown-item" routerLink="/outsourcinginfo">{{ 'TOP_BAR.BODY_RENTAL' | translate }}</a>
+          </li>
+          <li>
+            <a class="dropdown-item" routerLink="/talentWizard">{{ 'TOP_BAR.TALENT_WIZARD' | translate }}</a>
+          </li>
+        </ul>
+      </li>
       <!-- <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="authDropdown" role="button" data-bs-toggle="dropdown"
           aria-expanded="false">

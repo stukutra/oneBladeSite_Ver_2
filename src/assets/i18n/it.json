@@ -136,7 +136,6 @@
   },
   "TOP_BAR": {
     "ABOUT_US": "Chi è oneBlade",
-    "BODY_RENTAL": "Body rental",
     "ONEBLADE_LAB": "oneBlade LAB",
     "CHOOSE_COURSE": "Scegli il corso",
     "GUIDES": "Guide",
@@ -148,7 +147,10 @@
     "CHRISTMAS_GAME": "Gioca con me!",
     "ACCOUNT": "Account",
     "LOGIN": "Accedi",
-    "REGISTER": "Registrati"
+    "REGISTER": "Registrati",
+    "OUTSOURCING": "Talent",
+    "BODY_RENTAL": "Body Rental",
+    "TALENT_WIZARD": "Scegli il tuo talento"
   },
   "CALL_SECTION": {
     "TITLE": "Fissa una Call"
