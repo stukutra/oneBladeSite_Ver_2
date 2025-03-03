@@ -136,7 +136,7 @@
                 {
                     "role": "Android Developer",
                     "minContract": "3 months",
-                    "description": "Proficient in Swift and iOS SDK",
+                    "description": "Proficient in Kotlin and Android SDK",
                     "seniority": "Senior",
                     "dailyRate": {
                         "1_month": "450€ (Iva esclusa)",
@@ -144,22 +144,21 @@
                         "6_months": "410€ (Iva esclusa)"
                     },
                     "skills": [
-                        "Swift",
-                        "Objective-C",
-                        "iOS SDK",
-                        "Xcode",
-                        "Core Data",
-                        "UIKit",
+                        "Kotlin",
+                        "Java",
+                        "Android SDK",
+                        "Android Studio",
+                        "Room Database",
                         "REST API Integration",
                         "Git / GitHub"
                     ],
                     "frameworks_libraries": [
-                        "Alamofire",
-                        "RxSwift",
-                        "Realm"
+                        "Dagger",
+                        "RxJava",
+                        "Retrofit"
                     ],
                     "tools": [
-                        "Xcode",
+                        "Android Studio",
                         "Jenkins",
                         "Jira",
                         "Trello",
@@ -174,7 +173,7 @@
                 {
                     "role": "React Native Developer",
                     "minContract": "3 months",
-                    "description": "Proficient in Swift and iOS SDK",
+                    "description": "Proficient in React Native and mobile app development",
                     "seniority": "Senior",
                     "dailyRate": {
                         "1_month": "450€ (Iva esclusa)",
@@ -182,22 +181,21 @@
                         "6_months": "410€ (Iva esclusa)"
                     },
                     "skills": [
-                        "Swift",
-                        "Objective-C",
-                        "iOS SDK",
-                        "Xcode",
-                        "Core Data",
-                        "UIKit",
+                        "React Native",
+                        "JavaScript",
+                        "TypeScript",
+                        "Redux",
                         "REST API Integration",
                         "Git / GitHub"
                     ],
                     "frameworks_libraries": [
-                        "Alamofire",
-                        "RxSwift",
-                        "Realm"
+                        "React Navigation",
+                        "Redux",
+                        "Axios"
                     ],
                     "tools": [
-                        "Xcode",
+                        "VS Code",
+                        "Webstorm",
                         "Jenkins",
                         "Jira",
                         "Trello",
