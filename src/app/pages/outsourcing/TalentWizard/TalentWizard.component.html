@@ -3,8 +3,8 @@
 <div class="container mt-5">
     <!-- Testo esplicativo -->
     <div class="explanatory-text">
-        <div *ngIf="step === 1">
-            <h3 class="step-explanation">Step 1: {{ 'STEP.EXPLANATION_STEP_1' | translate }}</h3>
+        <div *ngIf="step === Step.Step1">
+            <h3 class="step-explanation"><strong>Step 1:</strong> {{ 'STEP.EXPLANATION_STEP_1' | translate }}</h3>
             <p>Scegli la categoria più adatta alle tue esigenze. Ogni talento è classificato in base alla sua area di
                 competenza,
                 come <strong>sviluppo software</strong>, <strong>design</strong>, <strong>marketing digitale</strong>,
@@ -14,8 +14,8 @@
             </p>
         </div>
 
-        <div *ngIf="step === 2">
-            <h3 class="step-explanation">Step 2: {{ 'STEP.EXPLANATION_STEP_2' | translate }}</h3>
+        <div *ngIf="step === Step.Step2">
+            <h3 class="step-explanation"><strong>Step 2:</strong> {{ 'STEP.EXPLANATION_STEP_2' | translate }}</h3>
             <p>Consulta l’elenco dei talenti disponibili e scegli quello che meglio risponde ai tuoi bisogni.
                 Ogni talento ha una breve descrizione delle sue <strong>competenze principali</strong>, del
                 <strong>livello di esperienza</strong>
@@ -24,8 +24,8 @@
             </p>
         </div>
 
-        <div *ngIf="step === 3">
-            <h3 class="step-explanation">Step 3: {{ 'STEP.EXPLANATION_STEP_3' | translate }}</h3>
+        <div *ngIf="step === Step.Step3">
+            <h3 class="step-explanation"><strong>Step 3:</strong> {{ 'STEP.EXPLANATION_STEP_3' | translate }}</h3>
             <p>Dopo aver scelto il talento giusto, inserisci i tuoi dati e i dettagli della richiesta nel modulo di
                 contatto.
                 Specifica le tue esigenze, il tipo di <strong>collaborazione desiderata</strong> e qualsiasi altra
@@ -33,30 +33,30 @@
                 per ricevere un riscontro rapido e personalizzato.</p>
         </div>
 
-        <div *ngIf="step === 4">
-            <h3 class="step-explanation">Step 4: {{ 'STEP.EXPLANATION_STEP_4' | translate }}</h3>
+        <div *ngIf="step === Step.Step4">
+            <h3 class="step-explanation"><strong>Step 4:</strong> {{ 'STEP.EXPLANATION_STEP_4' | translate }}</h3>
         </div>
     </div>
 
     <!-- Stepline -->
     <div class="step-container mt-5">
         <div class="progress-bar"></div>
-        <div class="step" [class.completed]="step >= 1" (click)="step < 4 && goToStep(1)">
+        <div class="step" [class.completed]="step >= Step.Step1" (click)="step < Step.Step4 && goToStep(Step.Step1)">
             <div class="circle">1</div>
         </div>
-        <div class="step" [class.completed]="step >= 2" (click)="step < 4 && goToStep(2)"
+        <div class="step" [class.completed]="step >= Step.Step2" (click)="step < Step.Step4 && goToStep(Step.Step2)"
             [class.disabled]="!selectedCategory">
             <div class="circle">2</div>
         </div>
-        <div class="step" [class.completed]="step >= 3" [class.disabled]="!selectedTalent">
+        <div class="step" [class.completed]="step >= Step.Step3" [class.disabled]="!selectedTalent">
             <div class="circle">3</div>
         </div>
-        <div class="step" [class.completed]="step === 4" [class.disabled]="step < 4">
+        <div class="step" [class.completed]="step === Step.Step4" [class.disabled]="step < Step.Step4">
             <div class="circle">4</div>
         </div>
     </div>
 
-    <div *ngIf="step === 1">
+    <div *ngIf="step === Step.Step1">
         <h2 class="text-center mt-5 mb-5">{{ 'TALENT_LIST.TITLE' | translate }}</h2>
         <div class="row">
             <div *ngFor="let category of categories" class="col-md-4 mb-3">
@@ -67,7 +67,7 @@
         </div>
     </div>
 
-    <div *ngIf="step === 2">
+    <div *ngIf="step === Step.Step2">
         <h2 class="mt-5 mb-5">{{ selectedCategory?.name || '' | translate }}</h2>
         <div class="row">
             <div *ngFor="let talent of selectedCategory?.talents" class="col-md-4 mb-3">
@@ -76,7 +76,8 @@
                     <p><strong>{{ 'TALENT_LIST.MIN_CONTRACT' | translate }}:</strong> {{ talent.minContract }}</p>
                     <p><strong>{{ 'TALENT_LIST.SENIORITY' | translate }}:</strong> {{ talent.seniority }}</p>
                     <p><strong>Skills:</strong></p>
-                    <ul class="skills-list" [class.expanded]="talent.expandedSkills" [class.no-more]="talent.skills.length <= 2">
+                    <ul class="skills-list" [class.expanded]="talent.expandedSkills"
+                        [class.no-more]="talent.skills.length <= 2">
                         <li *ngFor="let skill of talent.skills; let i = index"
                             [class.hidden]="i >= 2 && !talent.expandedSkills">{{ skill }}</li>
                     </ul>
@@ -85,7 +86,8 @@
                         {{ talent.expandedSkills ? 'Mostra meno' : 'Mostra di più' }}
                     </button>
                     <p><strong>Frameworks/Libraries:</strong></p>
-                    <ul class="frameworks-list" [class.expanded]="talent.expandedFrameworks" [class.no-more]="talent.frameworks_libraries.length <= 2">
+                    <ul class="frameworks-list" [class.expanded]="talent.expandedFrameworks"
+                        [class.no-more]="talent.frameworks_libraries.length <= 2">
                         <li *ngFor="let framework of talent.frameworks_libraries; let i = index"
                             [class.hidden]="i >= 2 && !talent.expandedFrameworks">{{ framework }}</li>
                     </ul>
@@ -94,7 +96,8 @@
                         {{ talent.expandedFrameworks ? 'Mostra meno' : 'Mostra di più' }}
                     </button>
                     <p><strong>Tools:</strong></p>
-                    <ul class="tools-list" [class.expanded]="talent.expandedTools" [class.no-more]="talent.tools.length <= 2">
+                    <ul class="tools-list" [class.expanded]="talent.expandedTools"
+                        [class.no-more]="talent.tools.length <= 2">
                         <li *ngFor="let tool of talent.tools; let i = index"
                             [class.hidden]="i >= 2 && !talent.expandedTools">{{ tool }}</li>
                     </ul>
@@ -103,7 +106,8 @@
                         {{ talent.expandedTools ? 'Mostra meno' : 'Mostra di più' }}
                     </button>
                     <p><strong>Languages:</strong></p>
-                    <ul class="languages-list" [class.expanded]="talent.expandedLanguages" [class.no-more]="getLanguages(talent.languages_spoken).length <= 2">
+                    <ul class="languages-list" [class.expanded]="talent.expandedLanguages"
+                        [class.no-more]="getLanguages(talent.languages_spoken).length <= 2">
                         <li *ngFor="let language of getLanguages(talent.languages_spoken); let i = index"
                             [class.hidden]="i >= 2 && !talent.expandedLanguages">
                             {{ language }}: {{ talent.languages_spoken[language] }}
@@ -115,9 +119,12 @@
                     </button>
                     <p class="price"><strong>{{ 'TALENT_LIST.PRICE_PER_DAY' | translate }}:</strong>
                         <span class="price-value">
-                            <span *ngIf="talent.selectedRateIndex === 1">{{ talent.dailyRate['1_month'] }} / 1 mese</span>
-                            <span *ngIf="talent.selectedRateIndex === 2">{{ talent.dailyRate['3_months'] }} / 3 mesi</span>
-                            <span *ngIf="talent.selectedRateIndex === 3">{{ talent.dailyRate['6_months'] }} / 6 mesi</span>
+                            <span *ngIf="talent.selectedRateIndex === 1">{{ talent.dailyRate['1_month'] }} / 1
+                                mese</span>
+                            <span *ngIf="talent.selectedRateIndex === 2">{{ talent.dailyRate['3_months'] }} / 3
+                                mesi</span>
+                            <span *ngIf="talent.selectedRateIndex === 3">{{ talent.dailyRate['6_months'] }} / 6
+                                mesi</span>
                         </span>
                     </p>
                     <div class="price-slider">
@@ -130,7 +137,7 @@
         </div>
     </div>
 
-    <div *ngIf="step === 3 && selectedTalent">
+    <div *ngIf="step === Step.Step3 && selectedTalent">
         <h2 class="mt-5 mb-5">{{ selectedCategory?.name || '' | translate }}</h2>
         <div class="row">
             <div class="col-md-6 mb-3">
@@ -140,7 +147,8 @@
                     </p>
                     <p><strong>{{ 'TALENT_LIST.SENIORITY' | translate }}:</strong> {{ selectedTalent.seniority }}</p>
                     <p><strong>Skills:</strong></p>
-                    <ul class="skills-list" [class.expanded]="selectedTalent.expandedSkills" [class.no-more]="selectedTalent.skills.length <= 2">
+                    <ul class="skills-list" [class.expanded]="selectedTalent.expandedSkills"
+                        [class.no-more]="selectedTalent.skills.length <= 2">
                         <li *ngFor="let skill of selectedTalent.skills; let i = index"
                             [class.hidden]="i >= 2 && !selectedTalent.expandedSkills">{{ skill }}</li>
                     </ul>
@@ -149,7 +157,8 @@
                         {{ selectedTalent.expandedSkills ? 'Mostra meno' : 'Mostra di più' }}
                     </button>
                     <p><strong>Frameworks/Libraries:</strong></p>
-                    <ul class="frameworks-list" [class.expanded]="selectedTalent.expandedFrameworks" [class.no-more]="selectedTalent.frameworks_libraries.length <= 2">
+                    <ul class="frameworks-list" [class.expanded]="selectedTalent.expandedFrameworks"
+                        [class.no-more]="selectedTalent.frameworks_libraries.length <= 2">
                         <li *ngFor="let framework of selectedTalent.frameworks_libraries; let i = index"
                             [class.hidden]="i >= 2 && !selectedTalent.expandedFrameworks">{{ framework }}</li>
                     </ul>
@@ -158,7 +167,8 @@
                         {{ selectedTalent.expandedFrameworks ? 'Mostra meno' : 'Mostra di più' }}
                     </button>
                     <p><strong>Tools:</strong></p>
-                    <ul class="tools-list" [class.expanded]="selectedTalent.expandedTools" [class.no-more]="selectedTalent.tools.length <= 2">
+                    <ul class="tools-list" [class.expanded]="selectedTalent.expandedTools"
+                        [class.no-more]="selectedTalent.tools.length <= 2">
                         <li *ngFor="let tool of selectedTalent.tools; let i = index"
                             [class.hidden]="i >= 2 && !selectedTalent.expandedTools">{{ tool }}</li>
                     </ul>
@@ -167,7 +177,8 @@
                         {{ selectedTalent.expandedTools ? 'Mostra meno' : 'Mostra di più' }}
                     </button>
                     <p><strong>Languages:</strong></p>
-                    <ul class="languages-list" [class.expanded]="selectedTalent.expandedLanguages" [class.no-more]="getLanguages(selectedTalent.languages_spoken).length <= 2">
+                    <ul class="languages-list" [class.expanded]="selectedTalent.expandedLanguages"
+                        [class.no-more]="getLanguages(selectedTalent.languages_spoken).length <= 2">
                         <li *ngFor="let language of getLanguages(selectedTalent.languages_spoken); let i = index"
                             [class.hidden]="i >= 2 && !selectedTalent.expandedLanguages">
                             {{ language }}: {{ selectedTalent.languages_spoken[language] }}
@@ -203,7 +214,7 @@
         </div>
     </div>
 
-    <div *ngIf="step === 4" class="thank-you-message">
+    <div *ngIf="step === Step.Step4" class="thank-you-message">
         <h2>{{ 'FORM.SUCCESS_MESSAGE' | translate }}</h2>
         <p>{{ 'FORM.THANK_YOU_MESSAGE' | translate }}</p>
     </div>

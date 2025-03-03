@@ -2,6 +2,7 @@ import { Category, Talent } from '../../../models/talent.model';
 import { Component, OnInit } from '@angular/core';
 
 import { HttpClient } from '@angular/common/http';
+import { Step } from './step.enum'; // Import the Step enum
 import { TalentService } from '../../../service/talent.service';
 
 @Component({
@@ -13,7 +14,8 @@ export class TalentWizardComponent implements OnInit {
     categories: Category[] = [];
     selectedCategory: Category | null = null;
     selectedTalent: Talent | null = null;
-    step: number = 1;
+    step: Step = Step.Step1; // Use the enum for the step
+    Step = Step; // Make the enum available in the template
 
     constructor(private talentService: TalentService, private http: HttpClient) { }
 
@@ -23,12 +25,12 @@ export class TalentWizardComponent implements OnInit {
                 ...category,
                 talents: category.talents.map(talent => ({
                     ...talent,
-                    expanded: false, // Inizializza la proprietà expanded
-                    expandedSkills: false, // Inizializza la proprietà expandedSkills
-                    expandedFrameworks: false, // Inizializza la proprietà expandedFrameworks
-                    expandedTools: false, // Inizializza la proprietà expandedTools
-                    expandedLanguages: false, // Inizializza la proprietà expandedLanguages
-                    selectedRateIndex: 1 // Inizializza l'indice della tariffa selezionata
+                    expanded: false,
+                    expandedSkills: false,
+                    expandedFrameworks: false,
+                    expandedTools: false,
+                    expandedLanguages: false,
+                    selectedRateIndex: 1
                 }))
             }));
         });
@@ -36,12 +38,12 @@ export class TalentWizardComponent implements OnInit {
 
     selectCategory(category: Category) {
         this.selectedCategory = category;
-        this.step = 2;
+        this.step = Step.Step2; // Use the enum for the step
     }
 
     selectTalent(talent: Talent) {
         this.selectedTalent = talent;
-        this.step = 3;
+        this.step = Step.Step3; // Use the enum for the step
     }
 
     changeRate(talent: Talent, rate: string) {
@@ -64,12 +66,12 @@ export class TalentWizardComponent implements OnInit {
 
     handleEmailSent(success: boolean) {
         if (success) {
-            this.step = 4;
+            this.step = Step.Step4; // Use the enum for the step
         }
     }
 
-    goToStep(step: number) {
-        if (step === 1 || (step === 2 && this.selectedCategory) || (step === 3 && this.selectedTalent)) {
+    goToStep(step: Step) {
+        if (step === Step.Step1 || (step === Step.Step2 && this.selectedCategory) || (step === Step.Step3 && this.selectedTalent)) {
             this.step = step;
         }
     }
