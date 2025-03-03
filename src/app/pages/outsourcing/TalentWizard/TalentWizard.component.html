@@ -40,7 +40,12 @@
 
     <!-- Stepline -->
     <div class="step-container mt-5">
-        <div class="progress-bar"></div>
+        <div class="progress-bar">
+            <div class="step-tick"></div>
+            <div class="step-tick"></div>
+            <div class="step-tick"></div>
+            <div class="step-tick"></div>
+        </div>
         <div class="step" [class.completed]="step >= Step.Step1" (click)="step < Step.Step4 && goToStep(Step.Step1)">
             <div class="circle">1</div>
         </div>
@@ -117,7 +122,7 @@
                         (click)="talent.expandedLanguages = !talent.expandedLanguages">
                         {{ talent.expandedLanguages ? 'Mostra meno' : 'Mostra di più' }}
                     </button>
-                    <p class="price"><strong>{{ 'TALENT_LIST.PRICE_PER_DAY' | translate }}:</strong>
+                    <p class="price"><strong>{{ 'TALENT_LIST.PRICE_PER_DAY' | translate }}:</strong><br>
                         <span class="price-value">
                             <span *ngIf="talent.selectedRateIndex === 1">{{ talent.dailyRate['1_month'] }} / 1
                                 mese</span>
@@ -188,7 +193,7 @@
                         (click)="selectedTalent.expandedLanguages = !selectedTalent.expandedLanguages">
                         {{ selectedTalent.expandedLanguages ? 'Mostra meno' : 'Mostra di più' }}
                     </button>
-                    <p class="price"><strong>{{ 'TALENT_LIST.PRICE_PER_DAY' | translate }}:</strong>
+                    <p class="price"><strong>{{ 'TALENT_LIST.PRICE_PER_DAY' | translate }}:</strong><br>
                         <span class="price-value">
                             <span *ngIf="selectedTalent.selectedRateIndex === 1">{{ selectedTalent.dailyRate['1_month']
                                 }} / 1 mese</span>

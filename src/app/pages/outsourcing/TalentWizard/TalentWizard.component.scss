@@ -40,9 +40,11 @@
     }
 
     .price {
-        font-size: 14px;
+        font-size: 18px; // Aumenta la dimensione del font
         color: $primary-color;
         margin-top: 10px;
+        font-weight: bold; // Rendi il testo in grassetto
+        text-align: center; // Centra il testo
     }
 
     .btn-link {
@@ -59,6 +61,7 @@
         background-color: transparent; // Sfondo trasparente
         color: $primary-color; // Testo del colore primario
         transition: background-color $transition-speed, color $transition-speed; // Transizione per hover
+        margin-top: 20px; // Aggiungi margine superiore per distanziare dal prezzo
 
         &:hover {
             background-color: $primary-color; // Sfondo pieno al passaggio del mouse
@@ -66,35 +69,36 @@
         }
     }
 
-    // .price-slider {
-    //     input[type="range"] {
-    //         -webkit-appearance: none;
-    //         width: 100%;
-    //         height: 8px;
-    //         background: $primary-color; // Colore della slide
-    //         outline: none;
-    //         opacity: 0.9;
-    //         transition: opacity 0.2s;
+    .price-slider {
+        position: relative;
+        input[type="range"] {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 8px;
+            background: $input-border-color;
+            outline: none;
+            opacity: 0.9;
+            transition: opacity 0.2s;
 
-    //         &::-webkit-slider-thumb {
-    //             -webkit-appearance: none;
-    //             appearance: none;
-    //             width: 20px;
-    //             height: 20px;
-    //             background: $primary-color; // Colore del thumb
-    //             cursor: pointer;
-    //             border-radius: 50%;
-    //         }
+            &::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 20px;
+                height: 20px;
+                background: $primary-color;
+                cursor: pointer;
+                border-radius: 50%;
+            }
 
-    //         &::-moz-range-thumb {
-    //             width: 20px;
-    //             height: 20px;
-    //             background: $primary-color; // Colore del thumb
-    //             cursor: pointer;
-    //             border-radius: 50%;
-    //         }
-    //     }
-    // }
+            &::-moz-range-thumb {
+                width: 20px;
+                height: 20px;
+                background: $primary-color;
+                cursor: pointer;
+                border-radius: 50%;
+            }
+        }
+    }
 }
 
 .skills-list,
@@ -151,6 +155,14 @@
     border-radius: $border-radius;
     background-color: $background-light;
     box-shadow: $box-shadow;
+
+    .price {
+        font-size: 18px; // Aumenta la dimensione del font
+        color: $primary-color;
+        margin-top: 10px;
+        font-weight: bold; // Rendi il testo in grassetto
+        text-align: center; // Centra il testo
+    }
 }
 
 .thank-you-message {
@@ -184,17 +196,43 @@
     background-color: $input-border-color;
     z-index: 0;
     transform: translateY(-50%);
-}
 
-.progress-bar::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: $primary-color;
-    width: calc((100% - 40px) / 3 * var(--completed-steps));
-    transition: width $transition-duration ease;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        right: 20px;
+        height: 4px;
+        background-color: $input-border-color;
+        z-index: 0;
+        transform: translateY(-50%);
+    }
+
+    .step-tick {
+        position: absolute;
+        top: 50%;
+        width: 2px;
+        height: 10px;
+        background-color: $primary-color;
+        transform: translateY(-50%);
+    }
+
+    .step-tick:nth-child(1) {
+        left: calc(20px + (100% - 40px) / 3 * 0);
+    }
+
+    .step-tick:nth-child(2) {
+        left: calc(20px + (100% - 40px) / 3 * 1);
+    }
+
+    .step-tick:nth-child(3) {
+        left: calc(20px + (100% - 40px) / 3 * 2);
+    }
+
+    .step-tick:nth-child(4) {
+        left: calc(20px + (100% - 40px) / 3 * 3);
+    }
 }
 
 .step {
