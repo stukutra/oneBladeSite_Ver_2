@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json');
 header("Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With");
-header("Access-Control-Allow-Origin: *"); // Aggiungi questa riga per consentire esperimenti temporanei
+//header("Access-Control-Allow-Origin: *"); // Aggiungi questa riga per consentire esperimenti temporanei
 
 // Impostazioni email
 $to = "info@oneblade.it";
