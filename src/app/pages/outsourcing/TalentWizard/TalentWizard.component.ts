@@ -41,4 +41,12 @@ export class TalentWizardComponent implements OnInit {
             this.step = step;
         }
     }
+
+    getLanguages(languages: { [language: string]: string } | undefined): string[] {
+        return languages ? Object.keys(languages) : [];
+    }
+
+    getLanguagesString(languages: { [language: string]: string } | undefined): string {
+        return languages ? Object.keys(languages).map(lang => `${lang}: ${languages[lang]}`).join(', ') : '';
+    }
 }

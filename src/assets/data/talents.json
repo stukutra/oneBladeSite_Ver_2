@@ -4,20 +4,85 @@
             "name": "Web Developer",
             "talents": [
                 {
-                    "name": "React Developer",
+                    "role": "React Developer",
                     "minContract": "1 month",
-                    "description": "Expert in React.js and Redux",
                     "seniority": "Senior",
-                    "dailyRate": 400,
-                    "pricePerDay": 450
+                    "dailyRate": "400€ (Iva esclusa)",
+                    "pricePerDay": "450€ (Iva esclusa)",
+                    "skills": [
+                        "React.js",
+                        "Redux",
+                        "TypeScript",
+                        "Node.js",
+                        "MySQL",
+                        "Git / GitHub",
+                        "Bootstrap 4/5",
+                        "Semantic UI",
+                        "Blueprint.js",
+                        "REST API Integration",
+                        "PWA (Progressive Web Apps)",
+                        "State Management"
+                    ],
+                    "frameworks_libraries": [
+                        "React Native",
+                        "Ionic v4/React.js",
+                        "Strapi Headless CMS"
+                    ],
+                    "tools": [
+                        "VS Code",
+                        "Webstorm",
+                        "Jenkins",
+                        "Jira",
+                        "Trello",
+                        "Confluence",
+                        "Zoho"
+                    ],
+                    "languages_spoken": {
+                        "English": "C1 - Advanced",
+                        "French": "Native",
+                        "Italian": "C2 - Advanced",
+                        "Arabic": "B2 - Intermediate",
+                        "Portuguese": "A1 - Basic"
+                    }
                 },
                 {
-                    "name": "Angular Developer",
+                    "role": "Angular Developer",
                     "minContract": "2 months",
                     "description": "Experienced in Angular and RxJS",
                     "seniority": "Mid",
-                    "dailyRate": 350,
-                    "pricePerDay": 400
+                    "dailyRate": "350€ (Iva esclusa)",
+                    "pricePerDay": "400€ (Iva esclusa)",
+                    "skills": [
+                        "Angular",
+                        "RxJS",
+                        "TypeScript",
+                        "JavaScript",
+                        "HTML5",
+                        "CSS3",
+                        "Sass",
+                        "Git / GitHub",
+                        "REST API Integration",
+                        "State Management"
+                    ],
+                    "frameworks_libraries": [
+                        "Angular Material",
+                        "NgRx",
+                        "Bootstrap"
+                    ],
+                    "tools": [
+                        "VS Code",
+                        "Webstorm",
+                        "Jenkins",
+                        "Jira",
+                        "Trello",
+                        "Confluence"
+                    ],
+                    "languages_spoken": {
+                        "Italian": "C2 - Advanced",
+                        "English": "C1 - Advanced",
+                        "Spanish": "B2 - Intermediate",
+                        "French": "B1 - Intermediate"
+                    }
                 }
             ]
         },
@@ -25,12 +90,39 @@
             "name": "iOS Developer",
             "talents": [
                 {
-                    "name": "Swift Developer",
+                    "role": "Swift Developer",
                     "minContract": "3 months",
                     "description": "Proficient in Swift and iOS SDK",
                     "seniority": "Senior",
-                    "dailyRate": 450,
-                    "pricePerDay": 500
+                    "dailyRate": "450€ (Iva esclusa)",
+                    "pricePerDay": "500€ (Iva esclusa)",
+                    "skills": [
+                        "Swift",
+                        "Objective-C",
+                        "iOS SDK",
+                        "Xcode",
+                        "Core Data",
+                        "UIKit",
+                        "REST API Integration",
+                        "Git / GitHub"
+                    ],
+                    "frameworks_libraries": [
+                        "Alamofire",
+                        "RxSwift",
+                        "Realm"
+                    ],
+                    "tools": [
+                        "Xcode",
+                        "Jenkins",
+                        "Jira",
+                        "Trello",
+                        "Confluence"
+                    ],
+                    "languages_spoken": {
+                        "English": "C1 - Advanced",
+                        "Italian": "C2 - Advanced",
+                        "Spanish": "B2 - Intermediate"
+                    }
                 }
             ]
         },
@@ -38,20 +130,74 @@
             "name": "System Administrator",
             "talents": [
                 {
-                    "name": "React Developer",
+                    "role": "Linux System Administrator",
                     "minContract": "1 month",
-                    "description": "Expert in React.js and Redux",
+                    "description": "Expert in Linux server management and shell scripting",
                     "seniority": "Senior",
-                    "dailyRate": 400,
-                    "pricePerDay": 450
+                    "dailyRate": "400€ (Iva esclusa)",
+                    "pricePerDay": "450€ (Iva esclusa)",
+                    "skills": [
+                        "Linux",
+                        "Shell Scripting",
+                        "Bash",
+                        "Python",
+                        "Ansible",
+                        "Docker",
+                        "Kubernetes",
+                        "Git / GitHub"
+                    ],
+                    "frameworks_libraries": [
+                        "Ansible",
+                        "Docker",
+                        "Kubernetes"
+                    ],
+                    "tools": [
+                        "VS Code",
+                        "Jenkins",
+                        "Jira",
+                        "Trello",
+                        "Confluence"
+                    ],
+                    "languages_spoken": {
+                        "English": "C1 - Advanced",
+                        "French": "B2 - Intermediate",
+                        "German": "B1 - Intermediate"
+                    }
                 },
                 {
-                    "name": "Angular Developer",
+                    "role": "Windows System Administrator",
                     "minContract": "2 months",
-                    "description": "Experienced in Angular and RxJS",
+                    "description": "Experienced in Windows server management and Active Directory",
                     "seniority": "Mid",
-                    "dailyRate": 350,
-                    "pricePerDay": 400
+                    "dailyRate": "350€ (Iva esclusa)",
+                    "pricePerDay": "400€ (Iva esclusa)",
+                    "skills": [
+                        "Windows Server",
+                        "Active Directory",
+                        "PowerShell",
+                        "Hyper-V",
+                        "VMware",
+                        "Azure",
+                        "Office 365",
+                        "Git / GitHub"
+                    ],
+                    "frameworks_libraries": [
+                        "PowerShell",
+                        "Hyper-V",
+                        "VMware"
+                    ],
+                    "tools": [
+                        "VS Code",
+                        "Jenkins",
+                        "Jira",
+                        "Trello",
+                        "Confluence"
+                    ],
+                    "languages_spoken": {
+                        "English": "C1 - Advanced",
+                        "Spanish": "B2 - Intermediate",
+                        "French": "B1 - Intermediate"
+                    }
                 }
             ]
         },
@@ -59,20 +205,74 @@
             "name": "DevOps",
             "talents": [
                 {
-                    "name": "React Developer",
+                    "role": "AWS DevOps Engineer",
                     "minContract": "1 month",
-                    "description": "Expert in React.js and Redux",
+                    "description": "Expert in AWS cloud services and CI/CD pipelines",
                     "seniority": "Senior",
-                    "dailyRate": 400,
-                    "pricePerDay": 450
+                    "dailyRate": "400€ (Iva esclusa)",
+                    "pricePerDay": "450€ (Iva esclusa)",
+                    "skills": [
+                        "AWS",
+                        "CI/CD",
+                        "Jenkins",
+                        "Docker",
+                        "Kubernetes",
+                        "Terraform",
+                        "Ansible",
+                        "Git / GitHub"
+                    ],
+                    "frameworks_libraries": [
+                        "Terraform",
+                        "Ansible",
+                        "Docker"
+                    ],
+                    "tools": [
+                        "VS Code",
+                        "Jenkins",
+                        "Jira",
+                        "Trello",
+                        "Confluence"
+                    ],
+                    "languages_spoken": {
+                        "English": "C1 - Advanced",
+                        "French": "B2 - Intermediate",
+                        "Spanish": "B1 - Intermediate"
+                    }
                 },
                 {
-                    "name": "Angular Developer",
+                    "role": "Azure DevOps Engineer",
                     "minContract": "2 months",
-                    "description": "Experienced in Angular and RxJS",
+                    "description": "Experienced in Azure cloud services and infrastructure automation",
                     "seniority": "Mid",
-                    "dailyRate": 350,
-                    "pricePerDay": 400
+                    "dailyRate": "350€ (Iva esclusa)",
+                    "pricePerDay": "400€ (Iva esclusa)",
+                    "skills": [
+                        "Azure",
+                        "CI/CD",
+                        "Jenkins",
+                        "Docker",
+                        "Kubernetes",
+                        "Terraform",
+                        "Ansible",
+                        "Git / GitHub"
+                    ],
+                    "frameworks_libraries": [
+                        "Terraform",
+                        "Ansible",
+                        "Docker"
+                    ],
+                    "tools": [
+                        "VS Code",
+                        "Jenkins",
+                        "Jira",
+                        "Trello",
+                        "Confluence"
+                    ],
+                    "languages_spoken": {
+                        "English": "C1 - Advanced",
+                        "French": "B2 - Intermediate",
+                        "Spanish": "B1 - Intermediate"
+                    }
                 }
             ]
         },
@@ -80,20 +280,72 @@
             "name": "Functional Analyst",
             "talents": [
                 {
-                    "name": "React Developer",
+                    "role": "Business Analyst",
                     "minContract": "1 month",
-                    "description": "Expert in React.js and Redux",
+                    "description": "Expert in business process analysis and requirements gathering",
                     "seniority": "Senior",
-                    "dailyRate": 400,
-                    "pricePerDay": 450
+                    "dailyRate": "400€ (Iva esclusa)",
+                    "pricePerDay": "450€ (Iva esclusa)",
+                    "skills": [
+                        "Business Process Analysis",
+                        "Requirements Gathering",
+                        "Project Management",
+                        "Agile",
+                        "Scrum",
+                        "JIRA",
+                        "Confluence",
+                        "Git / GitHub"
+                    ],
+                    "frameworks_libraries": [
+                        "Scrum",
+                        "Agile"
+                    ],
+                    "tools": [
+                        "JIRA",
+                        "Confluence",
+                        "Trello",
+                        "MS Project",
+                        "VS Code"
+                    ],
+                    "languages_spoken": {
+                        "English": "C1 - Advanced",
+                        "French": "B2 - Intermediate",
+                        "Spanish": "B1 - Intermediate"
+                    }
                 },
                 {
-                    "name": "Angular Developer",
+                    "role": "System Analyst",
                     "minContract": "2 months",
-                    "description": "Experienced in Angular and RxJS",
+                    "description": "Experienced in system analysis and design",
                     "seniority": "Mid",
-                    "dailyRate": 350,
-                    "pricePerDay": 400
+                    "dailyRate": "350€ (Iva esclusa)",
+                    "pricePerDay": "400€ (Iva esclusa)",
+                    "skills": [
+                        "System Analysis",
+                        "System Design",
+                        "UML",
+                        "ERD",
+                        "SQL",
+                        "Agile",
+                        "Scrum",
+                        "Git / GitHub"
+                    ],
+                    "frameworks_libraries": [
+                        "Scrum",
+                        "Agile"
+                    ],
+                    "tools": [
+                        "JIRA",
+                        "Confluence",
+                        "Trello",
+                        "MS Project",
+                        "VS Code"
+                    ],
+                    "languages_spoken": {
+                        "English": "C1 - Advanced",
+                        "French": "B2 - Intermediate",
+                        "Spanish": "B1 - Intermediate"
+                    }
                 }
             ]
         },
@@ -101,20 +353,72 @@
             "name": "Data Engineer",
             "talents": [
                 {
-                    "name": "React Developer",
+                    "role": "Big Data Engineer",
                     "minContract": "1 month",
-                    "description": "Expert in React.js and Redux",
+                    "description": "Expert in big data technologies and data pipeline development",
                     "seniority": "Senior",
-                    "dailyRate": 400,
-                    "pricePerDay": 450
+                    "dailyRate": "400€ (Iva esclusa)",
+                    "pricePerDay": "450€ (Iva esclusa)",
+                    "skills": [
+                        "Big Data",
+                        "Hadoop",
+                        "Spark",
+                        "Kafka",
+                        "Python",
+                        "SQL",
+                        "NoSQL",
+                        "Git / GitHub"
+                    ],
+                    "frameworks_libraries": [
+                        "Hadoop",
+                        "Spark",
+                        "Kafka"
+                    ],
+                    "tools": [
+                        "VS Code",
+                        "Jenkins",
+                        "Jira",
+                        "Trello",
+                        "Confluence"
+                    ],
+                    "languages_spoken": {
+                        "English": "C1 - Advanced",
+                        "French": "B2 - Intermediate",
+                        "Spanish": "B1 - Intermediate"
+                    }
                 },
                 {
-                    "name": "Angular Developer",
+                    "role": "ETL Developer",
                     "minContract": "2 months",
-                    "description": "Experienced in Angular and RxJS",
+                    "description": "Experienced in ETL processes and data integration",
                     "seniority": "Mid",
-                    "dailyRate": 350,
-                    "pricePerDay": 400
+                    "dailyRate": "350€ (Iva esclusa)",
+                    "pricePerDay": "400€ (Iva esclusa)",
+                    "skills": [
+                        "ETL",
+                        "Data Integration",
+                        "SQL",
+                        "Python",
+                        "Informatica",
+                        "Talend",
+                        "Git / GitHub"
+                    ],
+                    "frameworks_libraries": [
+                        "Informatica",
+                        "Talend"
+                    ],
+                    "tools": [
+                        "VS Code",
+                        "Jenkins",
+                        "Jira",
+                        "Trello",
+                        "Confluence"
+                    ],
+                    "languages_spoken": {
+                        "English": "C1 - Advanced",
+                        "French": "B2 - Intermediate",
+                        "Spanish": "B1 - Intermediate"
+                    }
                 }
             ]
         },
@@ -122,20 +426,75 @@
             "name": "Data Scientist",
             "talents": [
                 {
-                    "name": "React Developer",
+                    "role": "Machine Learning Engineer",
                     "minContract": "1 month",
-                    "description": "Expert in React.js and Redux",
+                    "description": "Expert in machine learning algorithms and model deployment",
                     "seniority": "Senior",
-                    "dailyRate": 400,
-                    "pricePerDay": 450
+                    "dailyRate": "400€ (Iva esclusa)",
+                    "pricePerDay": "450€ (Iva esclusa)",
+                    "skills": [
+                        "Machine Learning",
+                        "Python",
+                        "R",
+                        "TensorFlow",
+                        "Keras",
+                        "Scikit-Learn",
+                        "SQL",
+                        "Git / GitHub"
+                    ],
+                    "frameworks_libraries": [
+                        "TensorFlow",
+                        "Keras",
+                        "Scikit-Learn"
+                    ],
+                    "tools": [
+                        "VS Code",
+                        "Jupyter",
+                        "Jenkins",
+                        "Jira",
+                        "Trello",
+                        "Confluence"
+                    ],
+                    "languages_spoken": {
+                        "English": "C1 - Advanced",
+                        "French": "B2 - Intermediate",
+                        "Spanish": "B1 - Intermediate"
+                    }
                 },
                 {
-                    "name": "Angular Developer",
+                    "role": "Data Analyst",
                     "minContract": "2 months",
-                    "description": "Experienced in Angular and RxJS",
+                    "description": "Experienced in data analysis and visualization",
                     "seniority": "Mid",
-                    "dailyRate": 350,
-                    "pricePerDay": 400
+                    "dailyRate": "350€ (Iva esclusa)",
+                    "pricePerDay": "400€ (Iva esclusa)",
+                    "skills": [
+                        "Data Analysis",
+                        "Data Visualization",
+                        "SQL",
+                        "Python",
+                        "R",
+                        "Tableau",
+                        "Power BI",
+                        "Git / GitHub"
+                    ],
+                    "frameworks_libraries": [
+                        "Tableau",
+                        "Power BI"
+                    ],
+                    "tools": [
+                        "VS Code",
+                        "Jupyter",
+                        "Jenkins",
+                        "Jira",
+                        "Trello",
+                        "Confluence"
+                    ],
+                    "languages_spoken": {
+                        "English": "C1 - Advanced",
+                        "French": "B2 - Intermediate",
+                        "Spanish": "B1 - Intermediate"
+                    }
                 }
             ]
         },
@@ -143,20 +502,70 @@
             "name": "QA Tester",
             "talents": [
                 {
-                    "name": "React Developer",
+                    "role": "Automation Tester",
                     "minContract": "1 month",
-                    "description": "Expert in React.js and Redux",
+                    "description": "Expert in test automation frameworks and scripting",
                     "seniority": "Senior",
-                    "dailyRate": 400,
-                    "pricePerDay": 450
+                    "dailyRate": "400€ (Iva esclusa)",
+                    "pricePerDay": "450€ (Iva esclusa)",
+                    "skills": [
+                        "Test Automation",
+                        "Selenium",
+                        "JUnit",
+                        "TestNG",
+                        "Python",
+                        "Java",
+                        "Git / GitHub"
+                    ],
+                    "frameworks_libraries": [
+                        "Selenium",
+                        "JUnit",
+                        "TestNG"
+                    ],
+                    "tools": [
+                        "VS Code",
+                        "Jenkins",
+                        "Jira",
+                        "Trello",
+                        "Confluence"
+                    ],
+                    "languages_spoken": {
+                        "English": "C1 - Advanced",
+                        "French": "B2 - Intermediate",
+                        "Spanish": "B1 - Intermediate"
+                    }
                 },
                 {
-                    "name": "Angular Developer",
+                    "role": "Manual Tester",
                     "minContract": "2 months",
-                    "description": "Experienced in Angular and RxJS",
+                    "description": "Experienced in manual testing and test case development",
                     "seniority": "Mid",
-                    "dailyRate": 350,
-                    "pricePerDay": 400
+                    "dailyRate": "350€ (Iva esclusa)",
+                    "pricePerDay": "400€ (Iva esclusa)",
+                    "skills": [
+                        "Manual Testing",
+                        "Test Case Development",
+                        "Bug Tracking",
+                        "JIRA",
+                        "Confluence",
+                        "Git / GitHub"
+                    ],
+                    "frameworks_libraries": [
+                        "JIRA",
+                        "Confluence"
+                    ],
+                    "tools": [
+                        "VS Code",
+                        "Jenkins",
+                        "Jira",
+                        "Trello",
+                        "Confluence"
+                    ],
+                    "languages_spoken": {
+                        "English": "C1 - Advanced",
+                        "French": "B2 - Intermediate",
+                        "Spanish": "B1 - Intermediate"
+                    }
                 }
             ]
         },
@@ -164,20 +573,75 @@
             "name": "Design UI/UX",
             "talents": [
                 {
-                    "name": "React Developer",
+                    "role": "UI Designer",
                     "minContract": "1 month",
-                    "description": "Expert in React.js and Redux",
+                    "description": "Expert in user interface design and prototyping",
                     "seniority": "Senior",
-                    "dailyRate": 400,
-                    "pricePerDay": 450
+                    "dailyRate": "400€ (Iva esclusa)",
+                    "pricePerDay": "450€ (Iva esclusa)",
+                    "skills": [
+                        "UI Design",
+                        "Prototyping",
+                        "Sketch",
+                        "Figma",
+                        "Adobe XD",
+                        "Photoshop",
+                        "Illustrator",
+                        "Git / GitHub"
+                    ],
+                    "frameworks_libraries": [
+                        "Sketch",
+                        "Figma",
+                        "Adobe XD"
+                    ],
+                    "tools": [
+                        "Photoshop",
+                        "Illustrator",
+                        "VS Code",
+                        "Jira",
+                        "Trello",
+                        "Confluence"
+                    ],
+                    "languages_spoken": {
+                        "English": "C1 - Advanced",
+                        "French": "B2 - Intermediate",
+                        "Spanish": "B1 - Intermediate"
+                    }
                 },
                 {
-                    "name": "Angular Developer",
+                    "role": "UX Researcher",
                     "minContract": "2 months",
-                    "description": "Experienced in Angular and RxJS",
+                    "description": "Experienced in user experience research and usability testing",
                     "seniority": "Mid",
-                    "dailyRate": 350,
-                    "pricePerDay": 400
+                    "dailyRate": "350€ (Iva esclusa)",
+                    "pricePerDay": "400€ (Iva esclusa)",
+                    "skills": [
+                        "UX Research",
+                        "Usability Testing",
+                        "User Interviews",
+                        "Surveys",
+                        "Prototyping",
+                        "Sketch",
+                        "Figma",
+                        "Git / GitHub"
+                    ],
+                    "frameworks_libraries": [
+                        "Sketch",
+                        "Figma"
+                    ],
+                    "tools": [
+                        "Photoshop",
+                        "Illustrator",
+                        "VS Code",
+                        "Jira",
+                        "Trello",
+                        "Confluence"
+                    ],
+                    "languages_spoken": {
+                        "English": "C1 - Advanced",
+                        "French": "B2 - Intermediate",
+                        "Spanish": "B1 - Intermediate"
+                    }
                 }
             ]
         }

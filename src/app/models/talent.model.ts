@@ -1,10 +1,15 @@
 export interface Talent {
-    name: string;
+    role: string;
     minContract: string;
-    description: string;
     seniority: string;
-    dailyRate: number;
-    pricePerDay: number; // Add the pricePerDay property
+    dailyRate: string; // Cambiato da number a string
+    pricePerDay: string; // Cambiato da number a string
+    skills: string[];
+    frameworks_libraries: string[];
+    tools: string[];
+    languages_spoken: {
+        [language: string]: string;
+    };
 }
 
 export interface Category {

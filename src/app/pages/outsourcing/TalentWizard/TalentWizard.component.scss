@@ -28,6 +28,22 @@
         color: $text-color-dark;
         font-size: 12px; // Riduci la dimensione del font
     }
+
+    ul {
+        font-size: 15px; // Riduci la dimensione del font delle liste
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 5px;
+    }
+
+    .price {
+        font-size: 16px;
+        color: $primary-color;
+        font-weight: bold;
+        margin-top: 10px;
+    }
 }
 
 .talent-info {
