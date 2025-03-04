@@ -7,6 +7,7 @@
                     "role": "React Developer",
                     "minContract": "1 month",
                     "seniority": "Senior",
+                    "workType": "Full remote",
                     "dailyRate": {
                         "1_month": "400 € (Iva esclusa)",
                         "3_months": "380 € (Iva esclusa)",
@@ -84,6 +85,7 @@
                     "minContract": "1 month",
                     "description": "Experienced in Angular and RxJS",
                     "seniority": "Senior",
+                    "workType": "Full remote",
                     "dailyRate": {
                         "1_month": "400 € (Iva esclusa)",
                         "3_months": "380 € (Iva esclusa)",
@@ -156,6 +158,7 @@
                     "minContract": "1 month",
                     "description": "Proficient in Swift and iOS SDK",
                     "seniority": "Senior",
+                    "workType": "Full remote",
                     "dailyRate": {
                         "1_month": "450€ (Iva esclusa)",
                         "3_months": "430€ (Iva esclusa)",
@@ -217,6 +220,7 @@
                     "minContract": "3 months",
                     "description": "Proficient in Kotlin and Android SDK",
                     "seniority": "Senior",
+                    "workType": "Full remote",
                     "dailyRate": {
                         "1_month": "450€ (Iva esclusa)",
                         "3_months": "430€ (Iva esclusa)",
@@ -277,6 +281,7 @@
                     "minContract": "3 months",
                     "description": "Proficient in React Native and mobile app development",
                     "seniority": "Senior",
+                    "workType": "Full remote",
                     "dailyRate": {
                         "1_month": "410€ (Iva esclusa)",
                         "3_months": "390€ (Iva esclusa)",
@@ -345,6 +350,7 @@
                     "minContract": "1 month",
                     "description": "Expert in AWS cloud services and CI/CD pipelines",
                     "seniority": "Senior",
+                    "workType": "Full remote",
                     "dailyRate": {
                         "1_month": "400€ (Iva esclusa)",
                         "3_months": "380€ (Iva esclusa)",
@@ -406,6 +412,7 @@
                     "minContract": "2 months",
                     "description": "Experienced in Azure cloud services and infrastructure automation",
                     "seniority": "Senior",
+                    "workType": "Full remote",
                     "dailyRate": {
                         "1_month": "400 € (Iva esclusa)",
                         "3_months": "380€ (Iva esclusa)",
@@ -472,6 +479,7 @@
                     "minContract": "1 month",
                     "description": "Expert in big data technologies and data pipeline development",
                     "seniority": "Senior",
+                    "workType": "Full remote",
                     "dailyRate": {
                         "1_month": "400€ (Iva esclusa)",
                         "3_months": "380€ (Iva esclusa)",
@@ -533,6 +541,7 @@
                     "minContract": "2 months",
                     "description": "Experienced in ETL processes and data integration",
                     "seniority": "Senior",
+                    "workType": "Full remote",
                     "dailyRate": {
                         "1_month": "400€ (Iva esclusa)",
                         "3_months": "380€ (Iva esclusa)",
@@ -589,6 +598,7 @@
                     "minContract": "1 month",
                     "description": "Esperto nella rappresentazione visiva dei dati per facilitare l'interpretazione e il processo decisionale.",
                     "seniority": "Senior",
+                    "workType": "Full remote",
                     "dailyRate": {
                         "1_month": "390€ (Iva esclusa)",
                         "3_months": "380€ (Iva esclusa)",
@@ -667,6 +677,7 @@
                     "minContract": "1 month",
                     "description": "Expert in machine learning algorithms and model deployment",
                     "seniority": "Senior",
+                    "workType": "Full remote",
                     "dailyRate": {
                         "1_month": "380€ (Iva esclusa)",
                         "3_months": "360€ (Iva esclusa)",
@@ -737,6 +748,7 @@
                     "minContract": "1 month",
                     "description": "Expert in test automation frameworks and scripting",
                     "seniority": "Senior",
+                    "workType": "Full remote",
                     "dailyRate": {
                         "1_month": "380€ (Iva esclusa)",
                         "3_months": "360€ (Iva esclusa)",
@@ -797,6 +809,7 @@
                     "minContract": "2 months",
                     "description": "Experienced in manual testing and test case development",
                     "seniority": "Senior",
+                    "workType": "Full remote",
                     "dailyRate": {
                         "1_month": "320€ (Iva esclusa)",
                         "3_months": "300€ (Iva esclusa)",
@@ -857,6 +870,7 @@
                     "minContract": "1 month",
                     "description": "Esperto nella ricerca sull'esperienza utente e nella progettazione di interfacce intuitive e accattivanti.",
                     "seniority": "Senior",
+                    "workType": "Full remote",
                     "dailyRate": {
                         "1_month": "400€ (Iva esclusa)",
                         "3_months": "380€ (Iva esclusa)",
@@ -930,6 +944,7 @@
                     "role": "Node.js Developer",
                     "minContract": "1 month",
                     "seniority": "Senior",
+                    "workType": "Full remote",
                     "dailyRate": {
                         "1_month": "400€ (Iva esclusa)",
                         "3_months": "390€ (Iva esclusa)",
@@ -996,6 +1011,7 @@
                     "role": ".NET Developer",
                     "minContract": "1 month",
                     "seniority": "Senior",
+                    "workType": "Full remote",
                     "dailyRate": {
                         "1_month": "360€ (Iva esclusa)",
                         "3_months": "350€ (Iva esclusa)",
@@ -1062,6 +1078,7 @@
                     "role": "Java Developer",
                     "minContract": "1 month",
                     "seniority": "Senior",
+                    "workType": "Full remote",
                     "dailyRate": {
                         "1_month": "360€ (Iva esclusa)",
                         "3_months": "350€ (Iva esclusa)",
@@ -1128,6 +1145,7 @@
                     "role": "Python Developer",
                     "minContract": "1 month",
                     "seniority": "Senior",
+                    "workType": "Full remote",
                     "dailyRate": {
                         "1_month": "350€ (Iva esclusa)",
                         "3_months": "330€ (Iva esclusa)",
@@ -1199,6 +1217,7 @@
                     "role": "Project Manager",
                     "minContract": "1 month",
                     "seniority": "Senior",
+                    "workType": "Full remote",
                     "dailyRate": {
                         "1_month": "400€ (Iva esclusa)",
                         "3_months": "390€ (Iva esclusa)",
@@ -1261,6 +1280,7 @@
                     "role": "Scrum Master",
                     "minContract": "1 month",
                     "seniority": "Senior",
+                    "workType": "Full remote",
                     "dailyRate": {
                         "1_month": "450€ (Iva esclusa)",
                         "3_months": "430€ (Iva esclusa)",
@@ -1327,6 +1347,7 @@
                     "role": "Java/Angular Developer",
                     "minContract": "1 month",
                     "seniority": "Senior",
+                    "workType": "Full remote",
                     "dailyRate": {
                         "1_month": "400€ (Iva esclusa)",
                         "3_months": "370€ (Iva esclusa)",
@@ -1396,6 +1417,7 @@
                     "role": "Node.js/ReactJS Developer",
                     "minContract": "1 month",
                     "seniority": "Senior",
+                    "workType": "Full remote",
                     "dailyRate": {
                         "1_month": "400€ (Iva esclusa)",
                         "3_months": "390€ (Iva esclusa)",
@@ -1465,6 +1487,7 @@
                     "role": ".NET/Angular Developer",
                     "minContract": "1 month",
                     "seniority": "Senior",
+                    "workType": "Full remote",
                     "dailyRate": {
                         "1_month": "400€ (Iva esclusa)",
                         "3_months": "390€ (Iva esclusa)",
@@ -1539,6 +1562,7 @@
                     "role": ".NET/React Developer",
                     "minContract": "1 month",
                     "seniority": "Senior",
+                    "workType": "Full remote",
                     "dailyRate": {
                         "1_month": "400€ (Iva esclusa)",
                         "3_months": "390€ (Iva esclusa)",

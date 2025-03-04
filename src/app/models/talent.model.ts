@@ -13,13 +13,14 @@ export interface Talent {
     languages_spoken: {
         [language: string]: string;
     };
+    workType: string; // Aggiungi questa linea
     expanded?: boolean;
     expandedSkills?: boolean;
     expandedFrameworks?: boolean;
     expandedTools?: boolean;
     expandedLanguages?: boolean;
     selectedRate?: string;
-    selectedRateIndex?: number; // Aggiungi questa linea
+    selectedRateIndex?: number;
 }
 
 export interface Category {

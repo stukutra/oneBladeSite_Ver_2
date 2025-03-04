@@ -267,7 +267,8 @@
         "DESCRIPTION": "Descripción",
         "SENIORITY": "Antigüedad",
         "DAILY_RATE": "Tarifa Diaria",
-        "PRICE_PER_DAY": "Tarifa Diaria"
+        "PRICE_PER_DAY": "Tarifa Diaria",
+        "WORK_TYPE": "Tipo de trabajo"
     },
     "STEP": {
         "CATEGORY": "Categoría",

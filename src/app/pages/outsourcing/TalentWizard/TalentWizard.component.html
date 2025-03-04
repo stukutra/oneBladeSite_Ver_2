@@ -1,26 +1,26 @@
 <app-image-carousel></app-image-carousel>
 
-<div class="container mt-5">
+<div class="container mt-5 mb-5">
 
 
     <!-- Testo esplicativo -->
     <div class="explanatory-text">
         <div *ngIf="step === Step.Step1">
             <h3 class="step-explanation"><strong>Step 1: </strong></h3> <span
-                    [innerHTML]="'STEP.EXPLANATION_STEP_1' | translate"></span>
+                [innerHTML]="'STEP.EXPLANATION_STEP_1' | translate"></span>
 
         </div>
 
         <div *ngIf="step === Step.Step2">
             <h3 class="step-explanation"><strong>Step 2: </strong></h3> <span
-                    [innerHTML]="'STEP.EXPLANATION_STEP_2' | translate"></span>
-            
+                [innerHTML]="'STEP.EXPLANATION_STEP_2' | translate"></span>
+
         </div>
 
         <div *ngIf="step === Step.Step3">
             <h3 class="step-explanation"><strong>Step 3: </strong></h3><span
-                    [innerHTML]="'STEP.EXPLANATION_STEP_3' | translate"></span>
-            
+                [innerHTML]="'STEP.EXPLANATION_STEP_3' | translate"></span>
+
         </div>
 
         <div *ngIf="step === Step.Step4">
@@ -73,6 +73,8 @@
                             }}:</strong> {{ talent.minContract }}</p>
                     <p><strong><i class="bi bi-person-badge"></i> {{ 'TALENT_LIST.SENIORITY' | translate }}:</strong> {{
                         talent.seniority }}</p>
+                    <p><strong><i class="bi bi-geo-alt"></i> {{ 'TALENT_LIST.WORK_TYPE' | translate }}:</strong> {{
+                        talent.workType }}</p>
                     <p><strong><i class="bi bi-tools"></i> Skills:</strong></p>
                     <ul class="skills-list" [class.expanded]="talent.expandedSkills"
                         [class.no-more]="talent.skills.length <= 2">
@@ -119,6 +121,7 @@
                         (click)="talent.expandedLanguages = !talent.expandedLanguages">
                         {{ talent.expandedLanguages ? 'Mostra meno' : 'Mostra di più' }}
                     </button>
+
                     <p class="price"><strong><i class="bi bi-currency-euro"></i> {{ 'TALENT_LIST.PRICE_PER_DAY' |
                             translate }}:</strong><br>
                         <span class="price-value">
@@ -126,7 +129,7 @@
                                 mese</span>
                             <span *ngIf="talent.selectedRateIndex === 2">{{ talent.dailyRate['3_months'] }} 3
                                 mesi</span>
-                            <span *ngIf="talent.selectedRateIndex === 3">{{ talent.dailyRate['6_months'] }} da 6 
+                            <span *ngIf="talent.selectedRateIndex === 3">{{ talent.dailyRate['6_months'] }} da 6
                                 mesi</span>
                         </span>
                     </p>
@@ -197,6 +200,8 @@
                         (click)="selectedTalent.expandedLanguages = !selectedTalent.expandedLanguages">
                         {{ selectedTalent.expandedLanguages ? 'Mostra meno' : 'Mostra di più' }}
                     </button>
+                    <p><strong><i class="bi bi-geo-alt"></i> {{ 'TALENT_LIST.WORK_TYPE' | translate }}:</strong> {{
+                        selectedTalent.workType }}</p>
                     <p class="price"><strong><i class="bi bi-currency-euro"></i> {{ 'TALENT_LIST.PRICE_PER_DAY' |
                             translate }}:</strong><br>
                         <span class="price-value">

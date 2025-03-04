@@ -263,7 +263,8 @@
     "DESCRIPTION": "Descrizione",
     "SENIORITY": "Anzianità",
     "DAILY_RATE": "Tariffa Giornaliera",
-    "PRICE_PER_DAY": "Tariffa Giornaliera"
+    "PRICE_PER_DAY": "Tariffa Giornaliera",
+    "WORK_TYPE": "Tipologia di lavoro"
   },
   "STEP": {
     "CATEGORY": "Categoria",
