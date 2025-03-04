@@ -12,12 +12,10 @@ import { TalentService } from '../../../service/talent.service';
 })
 export class TalentWizardComponent implements OnInit {
     categories: Category[] = [];
-    filteredTalents: Talent[] = [];
     selectedCategory: Category | null = null;
     selectedTalent: Talent | null = null;
     step: Step = Step.Step1; // Use the enum for the step
     Step = Step; // Make the enum available in the template
-    searchQuery: string = '';
 
     constructor(private talentService: TalentService, private http: HttpClient) { }
 
@@ -84,18 +82,5 @@ export class TalentWizardComponent implements OnInit {
 
     getLanguagesString(languages: { [language: string]: string } | undefined): string {
         return languages ? Object.keys(languages).map(lang => `${lang}: ${languages[lang]}`).join(', ') : '';
-    }
-
-    searchTalents() {
-        this.filteredTalents = [];
-        this.categories.forEach(category => {
-            category.talents.forEach(talent => {
-                if (talent.skills.some(skill => skill.toLowerCase().includes(this.searchQuery.toLowerCase())) ||
-                    talent.frameworks_libraries.some(framework => framework.name.toLowerCase().includes(this.searchQuery.toLowerCase()))) {
-                    this.filteredTalents.push(talent);
-                }
-            });
-        });
-        this.step = Step.Step2;
     }
 }

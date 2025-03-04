@@ -1,13 +1,7 @@
 <app-image-carousel></app-image-carousel>
 
 <div class="container mt-5">
-    <!-- Search Input -->
-    <div class="search-container text-center mb-5">
-        <input type="text" class="search-input" [(ngModel)]="searchQuery" placeholder="Search for skills or frameworks...">
-        <button class="search-button" (click)="searchTalents()">
-            <i class="bi bi-search"></i>
-        </button>
-    </div>
+
 
     <!-- Testo esplicativo -->
     <div class="explanatory-text">
@@ -87,7 +81,7 @@
     <div *ngIf="step === Step.Step2">
         <h2 class="mt-5 mb-5 text-center">{{ selectedCategory?.name || '' | translate }}</h2>
         <div class="row">
-            <div *ngFor="let talent of filteredTalents.length ? filteredTalents : selectedCategory?.talents" class="col-md-4 mb-3">
+            <div *ngFor="let talent of selectedCategory?.talents" class="col-md-4 mb-3">
                 <div class="talent-box p-4" style="text-align: left;">
                     <h3>{{ talent.role | translate }}</h3>
                     <p><strong><i class="bi bi-file-earmark-text"></i> {{ 'TALENT_LIST.MIN_CONTRACT' | translate
