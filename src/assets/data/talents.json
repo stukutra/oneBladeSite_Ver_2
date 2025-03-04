@@ -532,7 +532,6 @@
                         }
                     ],
                     "languages_spoken": {
-                        "Italian": "C2 - Advanced",
                         "English": "C1 - Advanced"
                     }
                 },
@@ -588,8 +587,7 @@
                             "link": "https://www.atlassian.com/software/confluence"
                         }
                     ],
-                    "languages_spoken": {
-                        "Italian": "C2 - Advanced",
+                    "languages_spoken": {                        
                         "English": "C1 - Advanced"
                     }
                 },
