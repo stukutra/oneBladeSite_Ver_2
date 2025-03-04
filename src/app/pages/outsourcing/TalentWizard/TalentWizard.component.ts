@@ -30,7 +30,7 @@ export class TalentWizardComponent implements OnInit {
                     expandedFrameworks: false,
                     expandedTools: false,
                     expandedLanguages: false,
-                    selectedRateIndex: 1
+                    selectedRateIndex: 3 // Set default value to 3
                 }))
             }));
         });

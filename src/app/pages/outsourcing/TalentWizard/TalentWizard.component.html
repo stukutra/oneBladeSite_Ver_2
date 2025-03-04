@@ -6,40 +6,25 @@
     <!-- Testo esplicativo -->
     <div class="explanatory-text">
         <div *ngIf="step === Step.Step1">
-            <h3 class="step-explanation"><strong>Step 1:</strong> <span
-                    [innerHTML]="'STEP.EXPLANATION_STEP_1' | translate"></span></h3>
-            <p>Scegli la categoria più adatta alle tue esigenze. Ogni talento è classificato in base alla sua area di
-                competenza,
-                come <strong>sviluppo software</strong>, <strong>design</strong>, <strong>marketing digitale</strong>,
-                <strong>consulenza IT</strong> e molte altre.
-                Questa selezione ti aiuterà a trovare rapidamente i professionisti specializzati nel settore di tuo
-                interesse.
-            </p>
+            <h3 class="step-explanation"><strong>Step 1: </strong></h3> <span
+                    [innerHTML]="'STEP.EXPLANATION_STEP_1' | translate"></span>
+
         </div>
 
         <div *ngIf="step === Step.Step2">
-            <h3 class="step-explanation"><strong>Step 2:</strong> <span
-                    [innerHTML]="'STEP.EXPLANATION_STEP_2' | translate"></span></h3>
-            <p>Consulta l’elenco dei talenti disponibili e scegli quello che meglio risponde ai tuoi bisogni.
-                Ogni talento ha una breve descrizione delle sue <strong>competenze principali</strong>, del
-                <strong>livello di esperienza</strong>
-                e della <strong>tipologia di servizi offerti</strong>. Seleziona il professionista che ritieni più
-                adatto al tuo progetto.
-            </p>
+            <h3 class="step-explanation"><strong>Step 2: </strong></h3> <span
+                    [innerHTML]="'STEP.EXPLANATION_STEP_2' | translate"></span>
+            
         </div>
 
         <div *ngIf="step === Step.Step3">
-            <h3 class="step-explanation"><strong>Step 3:</strong> <span
-                    [innerHTML]="'STEP.EXPLANATION_STEP_3' | translate"></span></h3>
-            <p>Dopo aver scelto il talento giusto, inserisci i tuoi dati e i dettagli della richiesta nel modulo di
-                contatto.
-                Specifica le tue esigenze, il tipo di <strong>collaborazione desiderata</strong> e qualsiasi altra
-                informazione utile
-                per ricevere un riscontro rapido e personalizzato.</p>
+            <h3 class="step-explanation"><strong>Step 3: </strong></h3><span
+                    [innerHTML]="'STEP.EXPLANATION_STEP_3' | translate"></span>
+            
         </div>
 
         <div *ngIf="step === Step.Step4">
-            <h3 class="step-explanation"><strong>Step 4:</strong> <span
+            <h3 class="step-explanation"><strong>Step 4: </strong> <span
                     [innerHTML]="'STEP.EXPLANATION_STEP_4' | translate"></span></h3>
         </div>
     </div>
@@ -137,11 +122,11 @@
                     <p class="price"><strong><i class="bi bi-currency-euro"></i> {{ 'TALENT_LIST.PRICE_PER_DAY' |
                             translate }}:</strong><br>
                         <span class="price-value">
-                            <span *ngIf="talent.selectedRateIndex === 1">{{ talent.dailyRate['1_month'] }} / 1
+                            <span *ngIf="talent.selectedRateIndex === 1">{{ talent.dailyRate['1_month'] }} 1
                                 mese</span>
-                            <span *ngIf="talent.selectedRateIndex === 2">{{ talent.dailyRate['3_months'] }} / 3
+                            <span *ngIf="talent.selectedRateIndex === 2">{{ talent.dailyRate['3_months'] }} 3
                                 mesi</span>
-                            <span *ngIf="talent.selectedRateIndex === 3">{{ talent.dailyRate['6_months'] }} / 6
+                            <span *ngIf="talent.selectedRateIndex === 3">{{ talent.dailyRate['6_months'] }} da 6 
                                 mesi</span>
                         </span>
                     </p>
@@ -216,11 +201,11 @@
                             translate }}:</strong><br>
                         <span class="price-value">
                             <span *ngIf="selectedTalent.selectedRateIndex === 1">{{ selectedTalent.dailyRate['1_month']
-                                }} / 1 mese</span>
+                                }} 1 mese</span>
                             <span *ngIf="selectedTalent.selectedRateIndex === 2">{{ selectedTalent.dailyRate['3_months']
-                                }} / 3 mesi</span>
+                                }} 3 mesi</span>
                             <span *ngIf="selectedTalent.selectedRateIndex === 3">{{ selectedTalent.dailyRate['6_months']
-                                }} / 6 mesi</span>
+                                }} da 6 mesi</span>
                         </span>
                     </p>
                     <div class="price-slider">

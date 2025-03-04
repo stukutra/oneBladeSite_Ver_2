@@ -15,6 +15,7 @@
                     "skills": [
                         "React.js",
                         "Redux",
+                        "Remix",
                         "TypeScript",
                         "Node.js",
                         "MySQL",
@@ -82,11 +83,11 @@
                     "role": "Angular Developer",
                     "minContract": "1 month",
                     "description": "Experienced in Angular and RxJS",
-                    "seniority": "Mid",
+                    "seniority": "Senior",
                     "dailyRate": {
-                        "1_month": "350€ (Iva esclusa)",
-                        "3_months": "330€ (Iva esclusa)",
-                        "6_months": "310€ (Iva esclusa)"
+                        "1_month": "400 € (Iva esclusa)",
+                        "3_months": "380 € (Iva esclusa)",
+                        "6_months": "360 € (Iva esclusa)"
                     },
                     "skills": [
                         "Angular",
@@ -277,9 +278,9 @@
                     "description": "Proficient in React Native and mobile app development",
                     "seniority": "Senior",
                     "dailyRate": {
-                        "1_month": "450€ (Iva esclusa)",
-                        "3_months": "430€ (Iva esclusa)",
-                        "6_months": "410€ (Iva esclusa)"
+                        "1_month": "410€ (Iva esclusa)",
+                        "3_months": "390€ (Iva esclusa)",
+                        "6_months": "370€ (Iva esclusa)"
                     },
                     "skills": [
                         "React Native",
@@ -404,11 +405,11 @@
                     "role": "Azure DevOps Engineer",
                     "minContract": "2 months",
                     "description": "Experienced in Azure cloud services and infrastructure automation",
-                    "seniority": "Mid",
+                    "seniority": "Senior",
                     "dailyRate": {
-                        "1_month": "350€ (Iva esclusa)",
-                        "3_months": "330€ (Iva esclusa)",
-                        "6_months": "310€ (Iva esclusa)"
+                        "1_month": "400 € (Iva esclusa)",
+                        "3_months": "380€ (Iva esclusa)",
+                        "6_months": "360€ (Iva esclusa)"
                     },
                     "skills": [
                         "Azure",
@@ -531,11 +532,11 @@
                     "role": "ETL Developer",
                     "minContract": "2 months",
                     "description": "Experienced in ETL processes and data integration",
-                    "seniority": "Mid",
+                    "seniority": "Senior",
                     "dailyRate": {
-                        "1_month": "350€ (Iva esclusa)",
-                        "3_months": "330€ (Iva esclusa)",
-                        "6_months": "310€ (Iva esclusa)"
+                        "1_month": "400€ (Iva esclusa)",
+                        "3_months": "380€ (Iva esclusa)",
+                        "6_months": "360€ (Iva esclusa)"
                     },
                     "skills": [
                         "ETL",
@@ -582,6 +583,79 @@
                         "Italian": "C2 - Advanced",
                         "English": "C1 - Advanced"
                     }
+                },
+                {
+                    "role": "Data Visualization Specialist",
+                    "minContract": "1 month",
+                    "description": "Esperto nella rappresentazione visiva dei dati per facilitare l'interpretazione e il processo decisionale.",
+                    "seniority": "Senior",
+                    "dailyRate": {
+                        "1_month": "390€ (Iva esclusa)",
+                        "3_months": "380€ (Iva esclusa)",
+                        "6_months": "350€ (Iva esclusa)"
+                    },
+                    "skills": [
+                        "Data Visualization",
+                        "Data Analysis",
+                        "Statistics",
+                        "UX/UI Design",
+                        "Storytelling",
+                        "Critical Thinking",
+                        "Attention to Detail",
+                        "Effective Communication"
+                    ],
+                    "frameworks_libraries": [
+                        {
+                            "name": "D3.js",
+                            "link": "https://d3js.org/"
+                        },
+                        {
+                            "name": "Tableau",
+                            "link": "https://www.tableau.com/"
+                        },
+                        {
+                            "name": "Power BI",
+                            "link": "https://powerbi.microsoft.com/"
+                        },
+                        {
+                            "name": "Chart.js",
+                            "link": "https://www.chartjs.org/"
+                        },
+                        {
+                            "name": "Plotly",
+                            "link": "https://plotly.com/"
+                        },
+                        {
+                            "name": "Qlik Sense",
+                            "link": "https://www.qlik.com/us/products/qlik-sense"
+                        },
+                        {
+                            "name": "QlikView",
+                            "link": "https://www.qlik.com/us/products/qlikview"
+                        }
+                    ],
+                    "tools": [
+                        {
+                            "name": "VS Code",
+                            "link": "https://code.visualstudio.com/"
+                        },
+                        {
+                            "name": "Jira",
+                            "link": "https://www.atlassian.com/software/jira"
+                        },
+                        {
+                            "name": "Trello",
+                            "link": "https://trello.com/"
+                        },
+                        {
+                            "name": "Confluence",
+                            "link": "https://www.atlassian.com/software/confluence"
+                        }
+                    ],
+                    "languages_spoken": {
+                        "Italian": "C2 - Avanzato",
+                        "English": "C1 - Avanzato"
+                    }
                 }
             ]
         },
@@ -594,9 +668,9 @@
                     "description": "Expert in machine learning algorithms and model deployment",
                     "seniority": "Senior",
                     "dailyRate": {
-                        "1_month": "400€ (Iva esclusa)",
-                        "3_months": "380€ (Iva esclusa)",
-                        "6_months": "360€ (Iva esclusa)"
+                        "1_month": "380€ (Iva esclusa)",
+                        "3_months": "360€ (Iva esclusa)",
+                        "6_months": "340€ (Iva esclusa)"
                     },
                     "skills": [
                         "Machine Learning",
@@ -652,67 +726,6 @@
                         "Italian": "C2 - Advanced",
                         "English": "C1 - Advanced"
                     }
-                },
-                {
-                    "role": "Data Analyst",
-                    "minContract": "2 months",
-                    "description": "Experienced in data analysis and visualization",
-                    "seniority": "Mid",
-                    "dailyRate": {
-                        "1_month": "350€ (Iva esclusa)",
-                        "3_months": "330€ (Iva esclusa)",
-                        "6_months": "310€ (Iva esclusa)"
-                    },
-                    "skills": [
-                        "Data Analysis",
-                        "Data Visualization",
-                        "SQL",
-                        "Python",
-                        "R",
-                        "Tableau",
-                        "Power BI",
-                        "Git / GitHub"
-                    ],
-                    "frameworks_libraries": [
-                        {
-                            "name": "Tableau",
-                            "link": "https://www.tableau.com/"
-                        },
-                        {
-                            "name": "Power BI",
-                            "link": "https://powerbi.microsoft.com/"
-                        }
-                    ],
-                    "tools": [
-                        {
-                            "name": "VS Code",
-                            "link": "https://code.visualstudio.com/"
-                        },
-                        {
-                            "name": "Jupyter",
-                            "link": "https://jupyter.org/"
-                        },
-                        {
-                            "name": "Jenkins",
-                            "link": "https://www.jenkins.io/"
-                        },
-                        {
-                            "name": "Jira",
-                            "link": "https://www.atlassian.com/software/jira"
-                        },
-                        {
-                            "name": "Trello",
-                            "link": "https://trello.com/"
-                        },
-                        {
-                            "name": "Confluence",
-                            "link": "https://www.atlassian.com/software/confluence"
-                        }
-                    ],
-                    "languages_spoken": {
-                        "Italian": "C2 - Advanced",
-                        "English": "C1 - Advanced"
-                    }
                 }
             ]
         },
@@ -725,9 +738,9 @@
                     "description": "Expert in test automation frameworks and scripting",
                     "seniority": "Senior",
                     "dailyRate": {
-                        "1_month": "400€ (Iva esclusa)",
-                        "3_months": "380€ (Iva esclusa)",
-                        "6_months": "360€ (Iva esclusa)"
+                        "1_month": "380€ (Iva esclusa)",
+                        "3_months": "360€ (Iva esclusa)",
+                        "6_months": "340€ (Iva esclusa)"
                     },
                     "skills": [
                         "Test Automation",
@@ -783,11 +796,11 @@
                     "role": "Manual Tester",
                     "minContract": "2 months",
                     "description": "Experienced in manual testing and test case development",
-                    "seniority": "Mid",
+                    "seniority": "Senior",
                     "dailyRate": {
-                        "1_month": "350€ (Iva esclusa)",
-                        "3_months": "330€ (Iva esclusa)",
-                        "6_months": "310€ (Iva esclusa)"
+                        "1_month": "320€ (Iva esclusa)",
+                        "3_months": "300€ (Iva esclusa)",
+                        "6_months": "290€ (Iva esclusa)"
                     },
                     "skills": [
                         "Manual Testing",
@@ -840,9 +853,9 @@
             "name": "Design UI/UX",
             "talents": [
                 {
-                    "role": "UI Designer",
+                    "role": "UX/UI Designer",
                     "minContract": "1 month",
-                    "description": "Expert in user interface design and prototyping",
+                    "description": "Esperto nella ricerca sull'esperienza utente e nella progettazione di interfacce intuitive e accattivanti.",
                     "seniority": "Senior",
                     "dailyRate": {
                         "1_month": "400€ (Iva esclusa)",
@@ -850,6 +863,10 @@
                         "6_months": "360€ (Iva esclusa)"
                     },
                     "skills": [
+                        "UX Research",
+                        "Usability Testing",
+                        "User Interviews",
+                        "Surveys",
                         "UI Design",
                         "Prototyping",
                         "Sketch",
@@ -900,69 +917,8 @@
                         }
                     ],
                     "languages_spoken": {
-                        "Italian": "C2 - Advanced",
-                        "English": "C1 - Advanced"
-                    }
-                },
-                {
-                    "role": "UX Researcher",
-                    "minContract": "2 months",
-                    "description": "Experienced in user experience research and usability testing",
-                    "seniority": "Mid",
-                    "dailyRate": {
-                        "1_month": "350€ (Iva esclusa)",
-                        "3_months": "330€ (Iva esclusa)",
-                        "6_months": "310€ (Iva esclusa)"
-                    },
-                    "skills": [
-                        "UX Research",
-                        "Usability Testing",
-                        "User Interviews",
-                        "Surveys",
-                        "Prototyping",
-                        "Sketch",
-                        "Figma",
-                        "Git / GitHub"
-                    ],
-                    "frameworks_libraries": [
-                        {
-                            "name": "Sketch",
-                            "link": "https://www.sketch.com/"
-                        },
-                        {
-                            "name": "Figma",
-                            "link": "https://www.figma.com/"
-                        }
-                    ],
-                    "tools": [
-                        {
-                            "name": "Photoshop",
-                            "link": "https://www.adobe.com/products/photoshop.html"
-                        },
-                        {
-                            "name": "Illustrator",
-                            "link": "https://www.adobe.com/products/illustrator.html"
-                        },
-                        {
-                            "name": "VS Code",
-                            "link": "https://code.visualstudio.com/"
-                        },
-                        {
-                            "name": "Jira",
-                            "link": "https://www.atlassian.com/software/jira"
-                        },
-                        {
-                            "name": "Trello",
-                            "link": "https://trello.com/"
-                        },
-                        {
-                            "name": "Confluence",
-                            "link": "https://www.atlassian.com/software/confluence"
-                        }
-                    ],
-                    "languages_spoken": {
-                        "Italian": "C2 - Advanced",
-                        "English": "C1 - Advanced"
+                        "Italian": "C2 - Avanzato",
+                        "English": "C1 - Avanzato"
                     }
                 }
             ]
@@ -976,8 +932,8 @@
                     "seniority": "Senior",
                     "dailyRate": {
                         "1_month": "400€ (Iva esclusa)",
-                        "3_months": "380€ (Iva esclusa)",
-                        "6_months": "360€ (Iva esclusa)"
+                        "3_months": "390€ (Iva esclusa)",
+                        "6_months": "370€ (Iva esclusa)"
                     },
                     "skills": [
                         "Node.js",
@@ -1041,9 +997,9 @@
                     "minContract": "1 month",
                     "seniority": "Senior",
                     "dailyRate": {
-                        "1_month": "450€ (Iva esclusa)",
-                        "3_months": "430€ (Iva esclusa)",
-                        "6_months": "410€ (Iva esclusa)"
+                        "1_month": "360€ (Iva esclusa)",
+                        "3_months": "350€ (Iva esclusa)",
+                        "6_months": "330€ (Iva esclusa)"
                     },
                     "skills": [
                         ".NET Core",
@@ -1107,9 +1063,9 @@
                     "minContract": "1 month",
                     "seniority": "Senior",
                     "dailyRate": {
-                        "1_month": "400€ (Iva esclusa)",
-                        "3_months": "380€ (Iva esclusa)",
-                        "6_months": "360€ (Iva esclusa)"
+                        "1_month": "360€ (Iva esclusa)",
+                        "3_months": "350€ (Iva esclusa)",
+                        "6_months": "330€ (Iva esclusa)"
                     },
                     "skills": [
                         "Java",
@@ -1173,9 +1129,9 @@
                     "minContract": "1 month",
                     "seniority": "Senior",
                     "dailyRate": {
-                        "1_month": "400€ (Iva esclusa)",
-                        "3_months": "380€ (Iva esclusa)",
-                        "6_months": "360€ (Iva esclusa)"
+                        "1_month": "350€ (Iva esclusa)",
+                        "3_months": "330€ (Iva esclusa)",
+                        "6_months": "320€ (Iva esclusa)"
                     },
                     "skills": [
                         "Python",
@@ -1244,9 +1200,9 @@
                     "minContract": "1 month",
                     "seniority": "Senior",
                     "dailyRate": {
-                        "1_month": "500€ (Iva esclusa)",
-                        "3_months": "480€ (Iva esclusa)",
-                        "6_months": "460€ (Iva esclusa)"
+                        "1_month": "400€ (Iva esclusa)",
+                        "3_months": "390€ (Iva esclusa)",
+                        "6_months": "380€ (Iva esclusa)"
                     },
                     "skills": [
                         "Project Management",
@@ -1372,9 +1328,9 @@
                     "minContract": "1 month",
                     "seniority": "Senior",
                     "dailyRate": {
-                        "1_month": "450€ (Iva esclusa)",
-                        "3_months": "430€ (Iva esclusa)",
-                        "6_months": "410€ (Iva esclusa)"
+                        "1_month": "400€ (Iva esclusa)",
+                        "3_months": "370€ (Iva esclusa)",
+                        "6_months": "35€ (Iva esclusa)"
                     },
                     "skills": [
                         "Java",
@@ -1441,9 +1397,9 @@
                     "minContract": "1 month",
                     "seniority": "Senior",
                     "dailyRate": {
-                        "1_month": "450€ (Iva esclusa)",
-                        "3_months": "430€ (Iva esclusa)",
-                        "6_months": "410€ (Iva esclusa)"
+                        "1_month": "400€ (Iva esclusa)",
+                        "3_months": "390€ (Iva esclusa)",
+                        "6_months": "380€ (Iva esclusa)"
                     },
                     "skills": [
                         "Node.js",
@@ -1510,9 +1466,9 @@
                     "minContract": "1 month",
                     "seniority": "Senior",
                     "dailyRate": {
-                        "1_month": "450€ (Iva esclusa)",
-                        "3_months": "430€ (Iva esclusa)",
-                        "6_months": "410€ (Iva esclusa)"
+                        "1_month": "400€ (Iva esclusa)",
+                        "3_months": "390€ (Iva esclusa)",
+                        "6_months": "380€ (Iva esclusa)"
                     },
                     "skills": [
                         ".NET Core",
@@ -1584,9 +1540,9 @@
                     "minContract": "1 month",
                     "seniority": "Senior",
                     "dailyRate": {
-                        "1_month": "450€ (Iva esclusa)",
-                        "3_months": "430€ (Iva esclusa)",
-                        "6_months": "410€ (Iva esclusa)"
+                        "1_month": "400€ (Iva esclusa)",
+                        "3_months": "390€ (Iva esclusa)",
+                        "6_months": "380€ (Iva esclusa)"
                     },
                     "skills": [
                         ".NET Core",
