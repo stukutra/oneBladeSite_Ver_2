@@ -275,9 +275,9 @@
         "CONTACT": "Contacto",
         "THANK_YOU": "Gracias",
         "EXPLANATION": "Sigue los pasos para completar el proceso. Puedes retroceder y modificar tus elecciones en cualquier momento.",
-        "EXPLANATION_STEP_1": "Selecciona la categoría de interés para encontrar los talentos más adecuados a tus necesidades.",
-        "EXPLANATION_STEP_2": "Selecciona el talento que corresponde a tus necesidades. Puedes ver los detalles de cada talento para tomar una decisión informada.",
-        "EXPLANATION_STEP_3": "Completa el formulario de contacto con tu información para proceder con la solicitud.",
+        "EXPLANATION_STEP_1": "Elige la categoría más adecuada a tus necesidades. Cada talento está clasificado según su área de competencia, como <strong>desarrollo de software</strong>, <strong>diseño</strong>, <strong>marketing digital</strong>, <strong>consultoría IT</strong> y muchas más. Esta selección te ayudará a encontrar rápidamente a los profesionales especializados en el sector de tu interés.",
+        "EXPLANATION_STEP_2": "Consulta la lista de talentos disponibles y elige el que mejor se adapte a tus necesidades. Cada talento tiene una breve descripción de sus <strong>principales habilidades</strong>, del <strong>nivel de experiencia</strong> y del <strong>tipo de servicios ofrecidos</strong>. Selecciona al profesional que consideres más adecuado para tu proyecto.",
+        "EXPLANATION_STEP_3": "Después de elegir el talento adecuado, ingresa tus datos y los detalles de la solicitud en el formulario de contacto. Especifica tus necesidades, el tipo de <strong>colaboración deseada</strong> y cualquier otra información útil para recibir una respuesta rápida y personalizada.",
         "EXPLANATION_STEP_4": "Gracias por completar el proceso. Nos pondremos en contacto contigo pronto para más detalles."
     }
 }

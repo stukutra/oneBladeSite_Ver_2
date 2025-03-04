@@ -272,9 +272,9 @@
     "CONTACT": "Contact",
     "THANK_YOU": "Thank You",
     "EXPLANATION": "Follow the steps to complete the process. You can go back and modify your choices at any time.",
-    "EXPLANATION_STEP_1": "Select the category of interest to find the most suitable talents for your needs.",
-    "EXPLANATION_STEP_2": "Select the talent that matches your requirements. You can view the details of each talent to make an informed choice.",
-    "EXPLANATION_STEP_3": "Fill out the contact form with your information to proceed with the request.",
+    "EXPLANATION_STEP_1": "Choose the category that best suits your needs. Each talent is classified based on their area of expertise, such as <strong>software development</strong>, <strong>design</strong>, <strong>digital marketing</strong>, <strong>IT consulting</strong>, and many more. This selection will help you quickly find professionals specialized in your area of interest.",
+    "EXPLANATION_STEP_2": "Browse the list of available talents and choose the one that best meets your needs. Each talent has a brief description of their <strong>main skills</strong>, <strong>experience level</strong>, and <strong>type of services offered</strong>. Select the professional you think is most suitable for your project.",
+    "EXPLANATION_STEP_3": "After selecting the right talent, enter your details and request information in the contact form. Specify your needs, the type of <strong>collaboration desired</strong>, and any other useful information to receive a quick and personalized response.",
     "EXPLANATION_STEP_4": "Thank you for completing the process. We will contact you shortly for further details."
   }
 }
