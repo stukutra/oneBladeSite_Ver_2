@@ -133,7 +133,8 @@
     "NO_TITLES": "We do not issue titles, because the most important title is the acquired competence. We do not make promises of jobs or guarantees of placement, because we do not believe in illusions. Our goal is to truly train people who want to follow and pursue knowledge.",
     "MISSION": "Our mission is not limited to students: we firmly believe that the selection of teachers is also a fundamental aspect. We choose only professionals who share our philosophy, who believe in the value of authentic training and in the power of knowledge as a tool for personal and professional growth.",
     "READY": "If you are ready to build your future with determination and commitment, then we are here to guide you step by step towards your goal. 🚀",
-    "LOADING": "Loading..."
+    "LOADING": "Loading...",
+    "TOPICS": "Guide Topics"
   },
   "TOP_BAR": {
     "ABOUT_US": "About oneBlade",
@@ -220,7 +221,8 @@
     "PARAGRAPH_1": "Today, programming has become an essential skill, just like the ability to use a smartphone or computer was in recent decades. With technological evolution and increasing digitalization, acquiring skills in the IT sector is crucial to remain competitive in the market.",
     "PARAGRAPH_2": "Companies are constantly looking for qualified professionals, but the supply of talent fails to meet the demand: in Italy alone, there are estimated to be over 200,000 open positions in the tech field.",
     "PARAGRAPH_3": "Regardless of the area you wish to specialize in, it is crucial to build a solid knowledge base. Our guides are designed for those who want to approach the world of web development, providing practical and concrete tools to start programming and discover the opportunities offered by this profession.",
-    "LOADING": "Loading..."
+    "LOADING": "Loading...",
+    "TOPICS": "Guide Topics"
   },
   "FAQ": {
     "TITLE": "Frequently Asked Questions (FAQ)",

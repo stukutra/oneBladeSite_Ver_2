@@ -132,7 +132,8 @@
     "BELIEF": "Crediamo che la conoscenza e la passione siano più importanti di qualsiasi certificazione. Le certificazioni possono essere un valore aggiunto, ma ciò che conta davvero è l’apprendimento reale, la pratica e la comprensione delle metodologie.",
     "NO_TITLES": "Noi non rilasciamo titoli, perché il titolo più importante è la competenza acquisita. Non facciamo promesse di posti di lavoro o garanzie di inserimento, perché non crediamo nelle illusioni. Il nostro obiettivo è formare realmente le persone che vogliono seguire ed inseguire la conoscenza.",
     "MISSION": "La nostra missione non si limita agli studenti: crediamo fermamente che anche la selezione dei docenti sia un aspetto fondamentale. Scegliamo solo professionisti che condividono la nostra filosofia, che credono nel valore della formazione autentica e nel potere della conoscenza come strumento di crescita personale e professionale.",
-    "READY": "Se sei pronto a costruire il tuo futuro con determinazione e impegno, allora siamo qui per guidarti passo dopo passo verso il tuo obiettivo. 🚀"
+    "READY": "Se sei pronto a costruire il tuo futuro con determinazione e impegno, allora siamo qui per guidarti passo dopo passo verso il tuo obiettivo. 🚀",
+    "TOPICS": "Argomenti delle guide"
   },
   "TOP_BAR": {
     "ABOUT_US": "Chi è oneBlade",
@@ -219,7 +220,8 @@
     "PARAGRAPH_1": "Oggi la programmazione è diventata una competenza essenziale, proprio come la capacità di usare uno smartphone o un computer lo è stata negli ultimi decenni. Con l’evoluzione tecnologica e la crescente digitalizzazione, acquisire abilità nel settore informatico è fondamentale per restare competitivi nel mercato.",
     "PARAGRAPH_2": "Le aziende cercano costantemente professionisti qualificati, ma l’offerta di talenti non riesce a soddisfare la domanda: solo in Italia, si stimano oltre 200.000 posizioni aperte in ambito tech.",
     "PARAGRAPH_3": "Indipendentemente dall’area in cui si desidera specializzarsi, è cruciale costruire solide basi di conoscenza. Le nostre guide sono pensate per chi vuole avvicinarsi al mondo dello sviluppo web, fornendo strumenti pratici e concreti per iniziare a programmare e scoprire le opportunità offerte da questa professione.",
-    "LOADING": "Caricamento..."
+    "LOADING": "Caricamento...",
+    "TOPICS": "Argomenti delle guide"
   },
   "FAQ": {
     "TITLE": "Domande Frequenti (FAQ)",
