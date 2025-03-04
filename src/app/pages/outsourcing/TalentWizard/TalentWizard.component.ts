@@ -43,6 +43,7 @@ export class TalentWizardComponent implements OnInit {
 
     selectTalent(talent: Talent) {
         this.selectedTalent = talent;
+        this.updateRate(talent); // Assicurati che il rate sia aggiornato
         this.step = Step.Step3; // Use the enum for the step
     }
 

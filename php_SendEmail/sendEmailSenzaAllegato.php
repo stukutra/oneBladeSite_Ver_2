@@ -43,12 +43,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $message .= "Ruolo: " . $selectedTalent['role'] . "\n";
         $message .= "Contratto Minimo: " . $selectedTalent['minContract'] . "\n";
         $message .= "Anzianità: " . $selectedTalent['seniority'] . "\n";
-        $message .= "Tariffa Giornaliera (1 mese): " . $selectedTalent['dailyRate']['1_month'] . "\n";
-        $message .= "Tariffa Giornaliera (3 mesi): " . $selectedTalent['dailyRate']['3_months'] . "\n";
-        $message .= "Tariffa Giornaliera (6 mesi): " . $selectedTalent['dailyRate']['6_months'] . "\n";
+        $message .= "Tipologia di lavoro: " . $selectedTalent['workType'] . "\n"; // Aggiungi questa linea
+        $message .= "Tariffa Giornaliera (" . $selectedTalent['selectedRate'] . "): " . $selectedTalent['dailyRate'][$selectedTalent['selectedRate']] . "\n"; // Correggi questa linea
         $message .= "Competenze: " . implode(", ", $selectedTalent['skills']) . "\n";
-        $message .= "Frameworks/Libraries: " . implode(", ", $selectedTalent['frameworks_libraries']) . "\n";
-        $message .= "Tools: " . implode(", ", $selectedTalent['tools']) . "\n";
+        $message .= "Frameworks/Libraries: " . implode(", ", array_column($selectedTalent['frameworks_libraries'], 'name')) . "\n"; // Correggi questa linea
+        $message .= "Tools: " . implode(", ", array_column($selectedTalent['tools'], 'name')) . "\n"; // Correggi questa linea
         $message .= "Lingue Parlate: " . implode(", ", array_map(function($lang, $level) {
             return "$lang: $level";
         }, array_keys($selectedTalent['languages_spoken']), $selectedTalent['languages_spoken'])) . "\n";

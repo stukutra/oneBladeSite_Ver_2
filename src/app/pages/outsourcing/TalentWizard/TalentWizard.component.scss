@@ -1,41 +1,41 @@
 @import '../../../style/_variabiles.scss';
-@import '~bootstrap-icons/font/bootstrap-icons.css';
+
 
 .category-box,
 .talent-box {
     border: 1px solid $input-border-color;
     padding: $padding-base;
     margin-bottom: $gap;
-    border-radius: 12px; // Aumenta il raggio di curvatura per un aspetto più morbido
+    border-radius: 12px;
     background-color: $background-light;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); // Aumenta l'ombra per un effetto più pronunciato
-    transition: box-shadow 0.3s ease, transform 0.3s ease; // Aggiungi una transizione per l'ombra e la trasformazione
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
     cursor: pointer;
-    text-align: center; // Centra le scritte
-    width: 100%; // Aumenta la larghezza dei box
+    text-align: center;
+    width: 100%;
 
     &:hover {
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); // Aumenta l'ombra al passaggio del mouse
-        transform: translateY(-4px); // Aggiungi un effetto di sollevamento al passaggio del mouse
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        transform: translateY(-4px);
     }
 
     h3 {
         margin-top: 0;
         color: $text-color-oneblade;
-        font-size: 16px; // Aumenta la dimensione del font
-        font-weight: 600; // Rendi il testo in grassetto
+        font-size: 16px;
+        font-weight: 600;
     }
 
     p {
         margin: 0.5rem 0;
         color: $text-color-dark;
-        font-size: 14px; // Aumenta la dimensione del font
+        font-size: 14px;
     }
 
     ul {
-        font-size: 14px; // Mantieni la dimensione del font delle liste
+        font-size: 14px;
         padding-left: 20px;
-        text-align: left; // Allinea il testo a sinistra
+        text-align: left;
     }
 
     li {
@@ -43,33 +43,33 @@
     }
 
     .price {
-        font-size: 20px; // Aumenta la dimensione del font
+        font-size: 20px;
         color: $primary-color;
         margin-top: 10px;
-        font-weight: bold; // Rendi il testo in grassetto
-        text-align: center; // Centra il testo
+        font-weight: bold;
+        text-align: center;
     }
 
     .btn-link {
-        color: $primary-color; // Colore del pulsante "Mostra di più"
+        color: $primary-color;
 
         &:hover {
-            color: darken($primary-color, 10%); // Colore del pulsante "Mostra di più" al passaggio del mouse
+            color: darken($primary-color, 10%);
         }
     }
 
     .btn-primary {
-        width: 100%; // Larghezza intera
-        border: 1px solid $primary-color; // Bordo del colore primario
-        background-color: $primary-color; // Sfondo pieno
-        color: $font-color-white; // Testo bianco
-        transition: background-color $transition-speed, color $transition-speed; // Transizione per hover
-        margin-top: 20px; // Aggiungi margine superiore per distanziare dal prezzo
-        border-radius: 8px; // Aggiungi un raggio di curvatura ai pulsanti
+        width: 100%;
+        border: 1px solid $primary-color;
+        background-color: $primary-color;
+        color: $font-color-white;
+        transition: background-color $transition-speed, color $transition-speed;
+        margin-top: 20px;
+        border-radius: 8px;
 
         &:hover {
-            background-color: darken($primary-color, 10%); // Sfondo più scuro al passaggio del mouse
-            color: $font-color-white; // Testo bianco al passaggio del mouse
+            background-color: darken($primary-color, 10%);
+            color: $font-color-white;
         }
     }
 
@@ -106,51 +106,18 @@
     }
 }
 
-.talent-box h3 {
-    font-size: 24px; // Increase the font size
-    color: $text-color-oneblade; // Define the color for the role title
-}
-
-.frameworks-list a,
-.tools-list a {
-    color: $text-color-oneblade; // Use the same color as the role title
-    text-decoration: none; // Remove the underline from the links
-
-    &:hover {
-        text-decoration: underline; // Add underline on hover
-    }
-}
-
 .skills-list,
 .frameworks-list,
 .tools-list,
 .languages-list {
     position: relative;
-    max-height: 3.6em; // Altezza per mostrare solo due voci
+    max-height: 3.6em;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    cursor: pointer; // Aggiungi il cursore pointer
+    cursor: pointer;
 
     &.expanded {
         max-height: none;
-    }
-
-    &::after {
-        content: '...';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 1.2em;
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), $background-light);
-        display: block;
-        text-align: left; // Allinea i tre puntini a sinistra
-        color: $primary-color; // Colore dei puntini
-        padding-left: 5px; // Aggiungi spazio tra il testo e i puntini
-    }
-
-    &.expanded::after {
-        display: none;
     }
 
     li.hidden {
@@ -159,42 +126,6 @@
 
     &.expanded li.hidden {
         display: list-item;
-    }
-
-    &:not(.expanded) {
-        &::after {
-            display: none;
-        }
-    }
-}
-
-.talent-info {
-    border: 1px solid $input-border-color;
-    padding: $padding-base;
-    margin-top: $gap;
-    border-radius: $border-radius;
-    background-color: $background-light;
-    box-shadow: $box-shadow;
-
-    .price {
-        font-size: 18px; // Aumenta la dimensione del font
-        color: $primary-color;
-        margin-top: 10px;
-        font-weight: bold; // Rendi il testo in grassetto
-        text-align: center; // Centra il testo
-    }
-}
-
-.thank-you-message {
-    text-align: center;
-    margin-top: $gap;
-
-    h2 {
-        color: $text-color-oneblade;
-    }
-
-    p {
-        color: $text-color-dark;
     }
 }
 
@@ -216,18 +147,6 @@
     background-color: $input-border-color;
     z-index: 0;
     transform: translateY(-50%);
-
-    &::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 20px;
-        right: 20px;
-        height: 4px;
-        background-color: $input-border-color;
-        z-index: 0;
-        transform: translateY(-50%);
-    }
 
     .step-tick {
         position: absolute;
@@ -267,7 +186,6 @@
     justify-content: center;
     font-weight: bold;
     color: $font-color-white;
-    flex-direction: column; // Aggiungi questa linea per posizionare la scritta sotto al punto
 
     .circle {
         display: flex;
@@ -279,7 +197,7 @@
         background-color: $input-border-color;
         color: $font-color-white;
         font-weight: bold;
-        line-height: 40px; // Assicurati che il numero sia centrato verticalmente
+        line-height: 40px;
     }
 
     &.completed {
@@ -295,66 +213,19 @@
     background-color: $primary-color;
 }
 
-.step.current .circle {
-    background-color: $primary-color;
-}
-
 .step-explanation {
-    color: $primary-color; // Colore dei punti di step
+    color: $primary-color;
 }
 
-.step-label {
+.thank-you-message {
     text-align: center;
-    color: $primary-color; // Colore dei punti di step
-    margin-top: 10px; // Aggiungi un margine superiore per distanziare la scritta dal punto
-}
+    margin-top: $gap;
 
-.search-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-
-    .search-input {
-        width: 50%;
-        padding: 10px 20px;
-        border: 1px solid $input-border-color;
-        border-radius: 25px;
-        font-size: 16px;
-        outline: none;
-        transition: box-shadow 0.3s ease;
-
-        &:focus {
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+    h2 {
+        color: $text-color-oneblade;
     }
 
-    .search-button {
-        background-color: $primary-color;
-        border: none;
-        color: $font-color-white;
-        padding: 10px 20px;
-        margin-left: -40px;
-        border-radius: 25px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-
-        &:hover {
-            background-color: darken($primary-color, 10%);
-        }
-
-        i {
-            font-size: 20px;
-        }
-    }
-}
-
-@media (max-width: 768px) {
-    .accordion-button {
-        font-size: 14px;
-    }
-
-    .accordion-body {
-        font-size: 12px;
+    p {
+        color: $text-color-dark;
     }
 }
