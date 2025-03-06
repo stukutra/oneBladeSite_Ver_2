@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { AcademyDetailsComponent } from './pages/academy/academyDetails/academyDetails.component';
 import { AcademyFAQComponent } from './pages/academy/academyFAQ/academyFAQ.component';
 import { AcademyonebladeComponent } from './pages/academy/academyoneblade/academyoneblade.component';
+import { BlogCategoriesComponent } from './blog/blog-categories.component';
+import { BlogComponent } from './blog/blog.component';
 import { CompanyAboutUsComponent } from './pages/company/companyAboutUs/companyAboutUs.component';
 import { GuideAccademyDetailsComponent } from './pages/guide/guideAcademyDetails/guideAcademyDetails.component';
 import { GuideaccademyComponent } from './pages/guide/guideaccademy/guideaccademy.component';
@@ -34,6 +36,8 @@ const routes: Routes = [
   { path: 'talent', component: TalentListComponent },
   { path: 'talentWizard', component: TalentWizardComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
+  { path: 'blog', component: BlogCategoriesComponent },
+  { path: 'blog/:category', component: BlogComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 

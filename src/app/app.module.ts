@@ -16,6 +16,8 @@ import { AgencyDetailsComponent } from './pages/agencyDetails/agencyDetails.comp
 // Layout Components
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { BlogCategoriesComponent } from './blog/blog-categories.component';
+import { BlogComponent } from './blog/blog.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { CompanyAboutUsComponent } from './pages/company/companyAboutUs/companyAboutUs.component';
@@ -58,7 +60,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     HomeComponent,
     TopBarComponent,
@@ -95,8 +97,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     RegisterComponent,
     TalentListComponent,
     ContactFormAziendaComponent,
-    TalentWizardComponent
-  ],
+    TalentWizardComponent,
+    BlogComponent,
+    BlogCategoriesComponent
+   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

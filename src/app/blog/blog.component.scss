@@ -1,0 +1,71 @@
+@import '../style/_variabiles.scss';
+
+.blog-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: $background-light;
+    color: $text-dark;
+}
+
+.main-article {
+    flex: 3;
+    margin-right: 20px;
+    padding: $padding-box;
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
+    background-color: $background-color_2;
+}
+
+.sidebar {
+    flex: 1;
+    padding: $padding-box;
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
+    background-color: $background-color_2;
+}
+
+.related-articles ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.related-articles li {
+    cursor: pointer;
+    color: $primary-color;
+    text-decoration: underline;
+}
+
+.card {
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
+}
+
+.card-title {
+    color: $primary-color;
+}
+
+.list-group-item {
+    cursor: pointer;
+
+    &:hover {
+        background-color: $hover-color;
+    }
+}
+
+.badge {
+    font-size: $font-size-xs;
+}
+
+@media (max-width: 768px) {
+
+    .main-article,
+    .sidebar {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.list-inline-item {
+    font-size: $font-size-xs;
+    color: $text-dark;
+}

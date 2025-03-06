@@ -1,0 +1,17 @@
+
+<app-image-carousel></app-image-carousel>
+<div class="container mt-4">
+  
+
+    <div class="row">
+        <div class="col-12">
+            <h1>Blog Categories</h1>
+            <div class="list-group">
+                <a *ngFor="let category of categories" class="list-group-item list-group-item-action"
+                    (click)="selectCategory(category)">
+                    {{ category.name }}
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

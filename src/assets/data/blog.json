@@ -1,0 +1,24 @@
+{
+    "categories": [
+        {
+            "name": "Technology",
+            "articles": [
+                {
+                    "title": "<p>L'Impatto dell'Intelligenza Artificiale nel Mondo Aziendale: Automazione, Integrazione e Aspetti Sociali</p>",
+                    "contentPath": "assets/Blog/Technology/Blg01.html",
+                    "creationDate": "2023-10-01",
+                    "author": "John Doe",
+                    "authorPhoto": "assets/accademy/docenti/user-icon-512.png",
+                    "authorLinkedIn": "https://www.linkedin.com/in/john-doe",
+                    "description": "Ho trasformato l’intero articolo in una stringa HTML mantenendo la formattazione con i tag appropriati. Se hai bisogno di ulteriori modifiche o integrazioni, fammelo sapere!",
+                    "readingTime": 5,
+                    "tags": [
+                        "AI",
+                        "Technology",
+                        "Future"
+                    ]
+                }
+            ]
+        }
+    ]
+}
