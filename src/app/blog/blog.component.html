@@ -5,6 +5,8 @@
     <div class="col-lg-8 col-md-12">
       <div class="card mb-4">
         <div class="card-body">
+          <img *ngIf="selectedArticle?.image" [src]="selectedArticle?.image" alt="{{ selectedArticle?.title }}"
+            class="img-fluid mb-3">
           <h1 class="card-title" [innerHTML]="selectedArticle?.title"></h1>
           <div [innerHTML]="selectedArticle?.content"></div>
         </div>
@@ -25,7 +27,8 @@
         <div class="card-body">
           <p class="card-text"><strong>By:</strong> {{ author?.firstName }} {{ author?.lastName }} |
             <strong>Date:</strong> {{
-            selectedArticle?.creationDate }}</p>
+            selectedArticle?.creationDate }}
+          </p>
           <div class="d-flex align-items-center mb-3">
             <img [src]="author?.photo" alt="{{ author?.firstName }} {{ author?.lastName }}"
               class="img-fluid rounded-circle me-2" width="50">
