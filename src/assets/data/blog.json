@@ -4,7 +4,8 @@
             "name": "Technology",
             "articles": [
                 {
-                    "title": "",
+                    "code": "tech-001",
+                    "title": "The Future of AI",
                     "contentPaths": {
                         "it": "assets/Blog/Technology/Blg01_it.html",
                         "en": "assets/Blog/Technology/Blg01_en.html",
@@ -12,13 +13,14 @@
                     },
                     "creationDate": "2023-10-01",
                     "authorCode": "JD01",
-                    "description": "",
+                    "description": "An in-depth look at the future of artificial intelligence.",
                     "readingTime": 5,
                     "tags": [
                         "AI",
                         "Technology",
                         "Future"
-                    ]
+                    ],
+                    "image": "assets/Blog/Technology/Blg01.jpg"
                 }
             ]
         }

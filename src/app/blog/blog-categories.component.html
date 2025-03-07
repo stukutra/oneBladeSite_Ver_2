@@ -5,9 +5,9 @@
         <div class="col-12">
             <h1>Articoli in evidenza</h1>
             <div class="list-group">
-                <a *ngFor="let category of categories" class="list-group-item list-group-item-action"
-                    (click)="selectCategory(category)">
-                    {{ category.name }}
+                <a *ngFor="let article of articles" class="list-group-item list-group-item-action"
+                    (click)="selectArticle(article)">
+                    {{ article.title }}
                 </a>
             </div>
         </div>

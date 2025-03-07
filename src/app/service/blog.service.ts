@@ -30,18 +30,43 @@ export class BlogService {
                     const articleObservables = category.articles.map(article => {
                         const contentPath = article.contentPaths[lang] || article.contentPaths['en'];
                         return this.http.get(contentPath, { responseType: 'text' }).pipe(
-                            map(content => ({ ...article, content }))
+                            map(content => ({ ...article, content, code: article.code }))
                         );
                     });
                     forkJoin(articleObservables).subscribe(
                         articles => {
-                            observer.next(articles);
+                            observer.next(articles.map(article => ({ ...article, code: article.code })));
                             observer.complete();
                         },
                         error => observer.error(error)
                     );
                 } else {
                     observer.error('Category not found');
+                    observer.complete();
+                }
+            });
+        });
+    }
+
+    getArticleByCode(articleCode: string): Observable<Article | undefined> {
+        return new Observable(observer => {
+            this.getBlogData().subscribe(categories => {
+                const articles = categories.flatMap(category => category.articles);
+                const article = articles.find(a => a.code === articleCode);
+                if (article) {
+                    console.log('Article found in service:', article);
+                    const lang = this.translate.currentLang;
+                    const contentPath = article.contentPaths[lang] || article.contentPaths['en'];
+                    this.http.get(contentPath, { responseType: 'text' }).subscribe(
+                        content => {
+                            observer.next({ ...article, content });
+                            observer.complete();
+                        },
+                        error => observer.error(error)
+                    );
+                } else {
+                    console.error('Article not found in service');
+                    observer.error('Article not found');
                     observer.complete();
                 }
             });

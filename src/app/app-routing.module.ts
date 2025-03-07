@@ -37,7 +37,7 @@ const routes: Routes = [
   { path: 'talentWizard', component: TalentWizardComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
   { path: 'blog', component: BlogCategoriesComponent },
-  { path: 'blog/:category', component: BlogComponent },
+  { path: 'blog/:code', component: BlogComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 

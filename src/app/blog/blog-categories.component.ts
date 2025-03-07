@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { BlogService } from '../service/blog.service';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-blog-categories',
@@ -13,12 +14,18 @@ export class BlogCategoriesComponent implements OnInit {
     categories: Category[] = [];
     articles: Article[] = [];
 
-    constructor(private blogService: BlogService, private router: Router) { }
+    constructor(
+        private blogService: BlogService,
+        private router: Router,
+        private translateService: TranslateService
+    ) { }
 
     ngOnInit() {
         this.blogService.getBlogData().subscribe(data => {
-            this.categories = data;
-            this.articles = this.categories.flatMap(category => category.articles);
+            this.categories = data || [];
+            this.articles = this.categories.flatMap((category: Category) => {
+                return category.articles.map(article => ({ ...article, categoryName: category.name })) || [];
+            });
         });
     }
 
@@ -27,6 +34,15 @@ export class BlogCategoriesComponent implements OnInit {
     }
 
     selectArticle(article: Article) {
-        this.router.navigate(['/blog', article.title]);
+        if (article.code) {
+            console.log('Navigating to article with code:', article.code);
+            this.router.navigate(['/blog', article.code]);
+        } else {
+            console.error('Article is missing code');
+        }
+    }
+
+    getCurrentLanguage(): string {
+        return this.translateService.currentLang;
     }
 }
