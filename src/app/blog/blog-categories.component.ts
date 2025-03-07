@@ -19,6 +19,7 @@ export class BlogCategoriesComponent implements OnInit {
     currentPage: number = 1;
     articlesPerPage: number = 6;
     authors: Teacher[] = [];
+    isLoading: boolean = true;
 
     constructor(
         private blogService: BlogService,
@@ -40,6 +41,7 @@ export class BlogCategoriesComponent implements OnInit {
                     })) || [];
                 });
                 this.updatePaginatedArticles();
+                this.isLoading = false;
             });
         });
     }
@@ -73,7 +75,9 @@ export class BlogCategoriesComponent implements OnInit {
 
     goToPage(page: number) {
         this.currentPage = page;
+        this.isLoading = true;
         this.updatePaginatedArticles();
+        this.isLoading = false;
     }
 
     get totalPages(): number {

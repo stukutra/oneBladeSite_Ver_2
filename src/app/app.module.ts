@@ -37,6 +37,7 @@ import { GuideaccademyComponent } from './pages/guide/guideaccademy/guideaccadem
 import { HomeComponent } from './layout/home/home.component';
 import { ImageCarouselComponent } from './pages/image-carousel/image-carousel.component';
 import { InfooneBladeComponent } from './pages/infooneBlade/infooneBlade.component';
+import { ItalianDatePipe } from './pipes/italian-date.pipe';
 import { LoginComponent } from './auth/login/login.component';
 import { MyInformationComponent } from './pages/myInformation/myInformation.component';
 // Outsourcing Components
@@ -60,7 +61,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
     HomeComponent,
     TopBarComponent,
@@ -99,8 +100,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactFormAziendaComponent,
     TalentWizardComponent,
     BlogComponent,
-    BlogCategoriesComponent
-   ],
+    BlogCategoriesComponent,
+    ItalianDatePipe
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

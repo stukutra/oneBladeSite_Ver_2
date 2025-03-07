@@ -1,39 +1,58 @@
 @import '../style/_variabiles.scss';
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 .card {
-    box-shadow: $box-shadow;
-    border-radius: $border-radius;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
     overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
 }
 
 .card-img-top {
     height: 200px;
     object-fit: cover;
+    border-bottom: 1px solid #ddd;
 }
 
 .card-body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 20px;
 }
 
 .card-title {
     color: $primary-color;
-}
-
-.card-text {
-    flex-grow: 1;
+    font-size: 1.25em;
+    margin-bottom: 10px;
 }
 
 .card-category {
     font-size: 0.9em;
     color: $text-color-dark;
+    margin-bottom: 5px;
 }
 
 .card-author,
 .card-date {
     font-size: 0.8em;
     color: $text-color-dark;
+    margin-bottom: 5px;
+}
+
+.card-text {
+    flex-grow: 1;
+    margin-bottom: 15px;
 }
 
 .btn-primary {
@@ -42,6 +61,9 @@
     color: $primary-color;
     transition: background-color $transition-speed, color $transition-speed;
     cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.9em;
 
     &:hover {
         background-color: $primary-color;
@@ -56,6 +78,8 @@
             border: 1px solid $primary-color;
             transition: background-color $transition-speed, color $transition-speed;
             cursor: pointer;
+            padding: 10px 15px;
+            margin: 0 5px;
 
             &:hover {
                 background-color: $primary-color;

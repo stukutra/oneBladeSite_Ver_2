@@ -3,7 +3,7 @@ export interface Article {
     title: string;
     contentPaths: { [key: string]: string };
     content?: string;
-    creationDate: string;
+    creationDate: Date;
     authorCode: string;
     description: string;
     readingTime: number;

@@ -17,7 +17,13 @@ export class BlogService {
 
     getBlogData(): Observable<Category[]> {
         return this.http.get<{ categories: Category[] }>(this.baseJsonUrl).pipe(
-            map(response => response.categories)
+            map(response => response.categories.map(category => ({
+                ...category,
+                articles: category.articles.map(article => ({
+                    ...article,
+                    creationDate: new Date(article.creationDate) // Parse creationDate as Date
+                }))
+            })))
         );
     }
 
