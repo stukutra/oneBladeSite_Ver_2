@@ -13,6 +13,9 @@ import { TranslateService } from '@ngx-translate/core';
 export class BlogCategoriesComponent implements OnInit {
     categories: Category[] = [];
     articles: Article[] = [];
+    paginatedArticles: Article[] = [];
+    currentPage: number = 1;
+    articlesPerPage: number = 6;
 
     constructor(
         private blogService: BlogService,
@@ -26,7 +29,14 @@ export class BlogCategoriesComponent implements OnInit {
             this.articles = this.categories.flatMap((category: Category) => {
                 return category.articles.map(article => ({ ...article, categoryName: category.name })) || [];
             });
+            this.updatePaginatedArticles();
         });
+    }
+
+    updatePaginatedArticles() {
+        const startIndex = (this.currentPage - 1) * this.articlesPerPage;
+        const endIndex = startIndex + this.articlesPerPage;
+        this.paginatedArticles = this.articles.slice(startIndex, endIndex);
     }
 
     selectCategory(category: Category) {
@@ -43,5 +53,14 @@ export class BlogCategoriesComponent implements OnInit {
 
     getCurrentLanguage(): string {
         return this.translateService.currentLang;
+    }
+
+    goToPage(page: number) {
+        this.currentPage = page;
+        this.updatePaginatedArticles();
+    }
+
+    get totalPages(): number {
+        return Math.ceil(this.articles.length / this.articlesPerPage);
     }
 }
