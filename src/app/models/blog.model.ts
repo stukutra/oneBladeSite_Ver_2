@@ -1,6 +1,6 @@
 export interface Article {
     title: string;
-    contentPath: string;
+    contentPaths: { [key: string]: string };
     content?: string;
     creationDate: string;
     author: string;

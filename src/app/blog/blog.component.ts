@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Article } from '../models/blog.model';
 import { BlogService } from '../service/blog.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-blog',
@@ -14,17 +15,26 @@ export class BlogComponent implements OnInit {
   selectedArticle: Article | null = null;
   relatedArticles: Article[] = [];
 
-  constructor(private blogService: BlogService, private route: ActivatedRoute) { }
+  constructor(private blogService: BlogService, private route: ActivatedRoute, private translate: TranslateService) { }
 
   ngOnInit() {
     this.route.params.subscribe(params => {
       const categoryName = params['category'];
-      this.blogService.getArticlesByCategory(categoryName).subscribe(data => {
-        this.articles = data;
-        if (this.articles.length > 0) {
-          this.selectArticle(this.articles[0]);
-        }
-      });
+      this.loadArticles(categoryName);
+    });
+
+    this.translate.onLangChange.subscribe(() => {
+      const categoryName = this.route.snapshot.params['category'];
+      this.loadArticles(categoryName);
+    });
+  }
+
+  loadArticles(categoryName: string) {
+    this.blogService.getArticlesByCategory(categoryName).subscribe(data => {
+      this.articles = data;
+      if (this.articles.length > 0) {
+        this.selectArticle(this.articles[0]);
+      }
     });
   }
 
