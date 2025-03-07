@@ -4,13 +4,15 @@
     <div class="row">
         <div class="col-12">
             <h1 class="text-center">Articoli in evidenza</h1>
-            <div class="list-group">
-                <div *ngFor="let category of categories">
-                    <h2>{{ category.name }}</h2>
-                    <a *ngFor="let article of category.articles" class="list-group-item list-group-item-action"
-                        (click)="selectArticle(article)">
-                        {{ article.title }}
-                    </a>
+            <div class="row">
+                <div *ngFor="let article of articles" class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img [src]="article.image" class="card-img-top" alt="{{ article.title }}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ article.title }}</h5>                            
+                            <button class="btn btn-primary" (click)="selectArticle(article)">Leggi tutto</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
