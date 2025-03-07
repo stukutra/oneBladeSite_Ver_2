@@ -6,20 +6,6 @@
       <div class="card mb-4">
         <div class="card-body">
           <h1 class="card-title" [innerHTML]="selectedArticle?.title"></h1>
-          <p class="card-text"><strong>By:</strong> {{ selectedArticle?.author }} | <strong>Date:</strong> {{
-            selectedArticle?.creationDate }}</p>
-          <p class="card-text"><strong>Reading Time:</strong> {{ selectedArticle?.readingTime }} minutes</p>
-          <p class="card-text">{{ selectedArticle?.description }}</p>
-          <div class="d-flex align-items-center mb-3">
-            <img [src]="selectedArticle?.authorPhoto" alt="{{ selectedArticle?.author }}"
-              class="img-fluid rounded-circle me-2" width="50">
-            <div>
-              <p class="mb-0">{{ selectedArticle?.author }}</p>
-              <a [href]="selectedArticle?.authorLinkedIn" target="_blank">
-                <i class="bi bi-linkedin"></i> LinkedIn Profile
-              </a>
-            </div>
-          </div>
           <div [innerHTML]="selectedArticle?.content"></div>
         </div>
       </div>
@@ -37,9 +23,21 @@
     <div class="col-lg-4 col-md-12">
       <div class="card mb-4">
         <div class="card-body">
+          <p class="card-text"><strong>By:</strong> {{ selectedArticle?.author }} | <strong>Date:</strong> {{
+            selectedArticle?.creationDate }}</p>
+          <div class="d-flex align-items-center mb-3">
+            <img [src]="selectedArticle?.authorPhoto" alt="{{ selectedArticle?.author }}"
+              class="img-fluid rounded-circle me-2" width="50">
+            <div>
+              <p class="mb-0">{{ selectedArticle?.author }}</p>
+              <a [href]="selectedArticle?.authorLinkedIn" target="_blank">
+                <i class="bi bi-linkedin"></i> LinkedIn Profile
+              </a>
+            </div>
+          </div>
           <h3 class="card-title">Tags</h3>
           <ul class="list-inline">
-            <li class="list-inline-item" *ngFor="let tag of selectedArticle?.tags">
+            <li class="list-inline-item" *ngFor="let tag of selectedArticle?.tags" style="font-size: 0.8em;">
               #{{ tag }}
             </li>
           </ul>
