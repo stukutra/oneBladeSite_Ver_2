@@ -23,13 +23,11 @@ export class BlogComponent implements OnInit {
   ngOnInit() {
     this.route.params.subscribe(params => {
       const articleCode = params['code'];
-      console.log('Loading article with code:', articleCode);
       this.loadArticles(articleCode);
     });
 
     this.translate.onLangChange.subscribe(() => {
       const articleCode = this.route.snapshot.params['code'];
-      console.log('Language changed, reloading article with code:', articleCode);
       this.loadArticles(articleCode);
     });
   }
@@ -38,7 +36,6 @@ export class BlogComponent implements OnInit {
     if (articleCode) {
       this.blogService.getArticleByCode(articleCode).subscribe(article => {
         if (article) {
-          console.log('Article found:', article);
           this.articles = [article];
           this.selectArticle(article);
         } else {
@@ -50,13 +47,11 @@ export class BlogComponent implements OnInit {
 
   selectArticle(article: Article) {
     this.selectedArticle = article;
-    console.log('Selected article:', article);
     this.relatedArticles = this.articles.filter(a => a !== article && a.tags.some(tag => article.tags.includes(tag)));
     this.teacherService.getTeacherByCode(article.authorCode).subscribe(teacher => {
       this.author = teacher;
     });
     if (article.code) {
-      console.log('Navigating to article with code:', article.code);
       this.router.navigate(['/blog', article.code]);
     } else {
       console.error('Article code is missing');

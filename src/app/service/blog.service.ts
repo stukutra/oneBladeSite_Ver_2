@@ -54,7 +54,6 @@ export class BlogService {
                 const articles = categories.flatMap(category => category.articles);
                 const article = articles.find(a => a.code === articleCode);
                 if (article) {
-                    console.log('Article found in service:', article);
                     const lang = this.translate.currentLang;
                     const contentPath = article.contentPaths[lang] || article.contentPaths['en'];
                     this.http.get(contentPath, { responseType: 'text' }).subscribe(
@@ -65,7 +64,6 @@ export class BlogService {
                         error => observer.error(error)
                     );
                 } else {
-                    console.error('Article not found in service');
                     observer.error('Article not found');
                     observer.complete();
                 }

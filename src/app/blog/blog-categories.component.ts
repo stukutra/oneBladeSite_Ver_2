@@ -35,7 +35,6 @@ export class BlogCategoriesComponent implements OnInit {
 
     selectArticle(article: Article) {
         if (article.code) {
-            console.log('Navigating to article with code:', article.code);
             this.router.navigate(['/blog', article.code]);
         } else {
             console.error('Article is missing code');
