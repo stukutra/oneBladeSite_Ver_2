@@ -26,6 +26,13 @@
 }
 
 .btn-primary {
-    background-color: $primary-color;
+    background-color: transparent;
     border-color: $primary-color;
+    color: $primary-color;
+    transition: background-color $transition-speed, color $transition-speed;
+
+    &:hover {
+        background-color: $primary-color;
+        color: $text-color;
+    }
 }
