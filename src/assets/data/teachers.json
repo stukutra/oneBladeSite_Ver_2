@@ -5,7 +5,7 @@
             "name": "John Doe",
             "firstName": "John",
             "lastName": "Doe",
-            "photo": "assets/photos/john_doe.jpg",
+            "photo": "assets/Accademy/docenti/user-icon-512.png",
             "linkedIn": "https://www.linkedin.com/in/johndoe"
         },
         {
@@ -13,7 +13,7 @@
             "name": "Jane Smith",
             "firstName": "Jane",
             "lastName": "Smith",
-            "photo": "assets/photos/jane_smith.jpg",
+            "photo": "assets/Accademy/docenti/user-icon-512.png",
             "linkedIn": "https://www.linkedin.com/in/janesmith"
         }
     ]

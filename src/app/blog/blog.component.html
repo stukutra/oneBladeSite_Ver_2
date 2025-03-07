@@ -25,10 +25,10 @@
     <div class="col-lg-4 col-md-12">
       <div class="card mb-4">
         <div class="card-body">
-          <p class="card-text"><strong>By:</strong> {{ author?.firstName }} {{ author?.lastName }} |
-            <strong>Date:</strong> {{
-            selectedArticle?.creationDate }}
-          </p>
+          <p class="card-text"><i class="bi bi-person"></i> <strong>By:</strong> {{ author?.firstName }} {{
+            author?.lastName }}</p>
+          <p class="card-text"><i class="bi bi-calendar"></i> <strong>Date:</strong> {{ selectedArticle?.creationDate |
+            italianDate }}</p>
           <div class="d-flex align-items-center mb-3">
             <img [src]="author?.photo" alt="{{ author?.firstName }} {{ author?.lastName }}"
               class="img-fluid rounded-circle me-2" width="50">
@@ -41,7 +41,7 @@
           </div>
           <h3 class="card-title">Tags</h3>
           <ul class="list-inline">
-            <li class="list-inline-item" *ngFor="let tag of selectedArticle?.tags" style="font-size: 0.8em;">
+            <li class="list-inline-item" *ngFor="let tag of selectedArticle?.tags">
               #{{ tag }}
             </li>
           </ul>
