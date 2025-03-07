@@ -2,10 +2,19 @@
     "teachers": [
         {
             "code": "JD01",
+            "name": "John Doe",
             "firstName": "John",
             "lastName": "Doe",
-            "photo": "assets/accademy/docenti/user-icon-512.png",
-            "linkedIn": "https://www.linkedin.com/in/john-doe"
+            "photo": "assets/photos/john_doe.jpg",
+            "linkedIn": "https://www.linkedin.com/in/johndoe"
+        },
+        {
+            "code": "JS02",
+            "name": "Jane Smith",
+            "firstName": "Jane",
+            "lastName": "Smith",
+            "photo": "assets/photos/jane_smith.jpg",
+            "linkedIn": "https://www.linkedin.com/in/janesmith"
         }
     ]
 }

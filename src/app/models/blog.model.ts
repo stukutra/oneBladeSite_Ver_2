@@ -9,6 +9,8 @@ export interface Article {
     readingTime: number;
     tags: string[];
     image: string;
+    categoryName?: string;
+    authorName?: string;
 }
 
 export interface Category {

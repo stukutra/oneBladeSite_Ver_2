@@ -25,6 +25,17 @@
     flex-grow: 1;
 }
 
+.card-category {
+    font-size: 0.9em;
+    color: $text-color-dark;
+}
+
+.card-author,
+.card-date {
+    font-size: 0.8em;
+    color: $text-color-dark;
+}
+
 .btn-primary {
     background-color: transparent;
     border-color: $primary-color;

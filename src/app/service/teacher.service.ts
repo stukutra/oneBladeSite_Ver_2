@@ -12,14 +12,14 @@ export class TeacherService {
 
     constructor(private http: HttpClient) { }
 
-    getTeacherData(): Observable<Teacher[]> {
+    getTeachers(): Observable<Teacher[]> {
         return this.http.get<{ teachers: Teacher[] }>(this.baseJsonUrl).pipe(
             map(response => response.teachers)
         );
     }
 
     getTeacherByCode(code: string): Observable<Teacher | undefined> {
-        return this.getTeacherData().pipe(
+        return this.getTeachers().pipe(
             map(teachers => teachers.find(teacher => teacher.code === code))
         );
     }

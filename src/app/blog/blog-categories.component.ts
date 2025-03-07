@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 
 import { BlogService } from '../service/blog.service';
 import { Router } from '@angular/router';
+import { Teacher } from '../models/teacher.model';
+import { TeacherService } from '../service/teacher.service';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -16,21 +18,35 @@ export class BlogCategoriesComponent implements OnInit {
     paginatedArticles: Article[] = [];
     currentPage: number = 1;
     articlesPerPage: number = 6;
+    authors: Teacher[] = [];
 
     constructor(
         private blogService: BlogService,
         private router: Router,
-        private translateService: TranslateService
+        private translateService: TranslateService,
+        private teacherService: TeacherService
     ) { }
 
     ngOnInit() {
-        this.blogService.getBlogData().subscribe(data => {
-            this.categories = data || [];
-            this.articles = this.categories.flatMap((category: Category) => {
-                return category.articles.map(article => ({ ...article, categoryName: category.name })) || [];
+        this.teacherService.getTeachers().subscribe((teachers: Teacher[]) => {
+            this.authors = teachers;
+            this.blogService.getBlogData().subscribe(data => {
+                this.categories = data || [];
+                this.articles = this.categories.flatMap((category: Category) => {
+                    return category.articles.map(article => ({
+                        ...article,
+                        categoryName: category.name,
+                        authorName: this.getAuthorName(article.authorCode)
+                    })) || [];
+                });
+                this.updatePaginatedArticles();
             });
-            this.updatePaginatedArticles();
         });
+    }
+
+    getAuthorName(authorCode: string): string {
+        const author = this.authors.find(teacher => teacher.code === authorCode);
+        return author ? author.name : 'Unknown';
     }
 
     updatePaginatedArticles() {
