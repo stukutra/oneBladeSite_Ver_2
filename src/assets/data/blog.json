@@ -11,9 +11,7 @@
                         "es": "assets/Blog/Technology/Blg01_es.html"
                     },
                     "creationDate": "2023-10-01",
-                    "author": "John Doe",
-                    "authorPhoto": "assets/accademy/docenti/user-icon-512.png",
-                    "authorLinkedIn": "https://www.linkedin.com/in/john-doe",
+                    "authorCode": "JD01",
                     "description": "",
                     "readingTime": 5,
                     "tags": [

@@ -23,14 +23,15 @@
     <div class="col-lg-4 col-md-12">
       <div class="card mb-4">
         <div class="card-body">
-          <p class="card-text"><strong>By:</strong> {{ selectedArticle?.author }} | <strong>Date:</strong> {{
+          <p class="card-text"><strong>By:</strong> {{ author?.firstName }} {{ author?.lastName }} |
+            <strong>Date:</strong> {{
             selectedArticle?.creationDate }}</p>
           <div class="d-flex align-items-center mb-3">
-            <img [src]="selectedArticle?.authorPhoto" alt="{{ selectedArticle?.author }}"
+            <img [src]="author?.photo" alt="{{ author?.firstName }} {{ author?.lastName }}"
               class="img-fluid rounded-circle me-2" width="50">
             <div>
-              <p class="mb-0">{{ selectedArticle?.author }}</p>
-              <a [href]="selectedArticle?.authorLinkedIn" target="_blank">
+              <p class="mb-0">{{ author?.firstName }} {{ author?.lastName }}</p>
+              <a [href]="author?.linkedIn" target="_blank">
                 <i class="bi bi-linkedin"></i> LinkedIn Profile
               </a>
             </div>

@@ -1,0 +1,11 @@
+{
+    "teachers": [
+        {
+            "code": "JD01",
+            "firstName": "John",
+            "lastName": "Doe",
+            "photo": "assets/accademy/docenti/user-icon-512.png",
+            "linkedIn": "https://www.linkedin.com/in/john-doe"
+        }
+    ]
+}

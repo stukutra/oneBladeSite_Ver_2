@@ -3,6 +3,7 @@ import { Observable, forkJoin } from 'rxjs';
 
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { TeacherService } from './teacher.service';
 import { TranslateService } from '@ngx-translate/core';
 import { map } from 'rxjs/operators';
 
@@ -12,7 +13,7 @@ import { map } from 'rxjs/operators';
 export class BlogService {
     private baseJsonUrl = 'assets/data/blog.json';
 
-    constructor(private http: HttpClient, private translate: TranslateService) { }
+    constructor(private http: HttpClient, private translate: TranslateService, private teacherService: TeacherService) { }
 
     getBlogData(): Observable<Category[]> {
         return this.http.get<{ categories: Category[] }>(this.baseJsonUrl).pipe(
