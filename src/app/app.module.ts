@@ -40,7 +40,6 @@ import { QuestionnaireComponent } from './pages/questionnaire/questionnaire.comp
 import { RegisterComponent } from './auth/register/register.component';
 import { RegistrationFormUserComponent } from './user/registrationFormUser/registrationFormUser.component';
 import { SoftwareHouseComponent } from './pages/softwareHouse/softwareHouse.component';
-import { TalentListComponent } from './pages/outsourcing/TalentList/TalentList.component';
 import { TalentWizardComponent } from './pages/outsourcing/TalentWizard/TalentWizard.component';
 import { TopBarComponent } from './layout/top-bar/top-bar.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -88,7 +87,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     AcademyFundingComponent,
     LoginComponent,
     RegisterComponent,
-    TalentListComponent,
     ContactFormAziendaComponent,
     TalentWizardComponent,
     WhyoneBladeComponent,
