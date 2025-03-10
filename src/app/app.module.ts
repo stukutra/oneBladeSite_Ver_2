@@ -44,6 +44,7 @@ import { TalentListComponent } from './pages/outsourcing/TalentList/TalentList.c
 import { TalentWizardComponent } from './pages/outsourcing/TalentWizard/TalentWizard.component';
 import { TopBarComponent } from './layout/top-bar/top-bar.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { WhyoneBladeBannerComponent } from './pages/outsourcing/whyoneBladeBanner/whyoneBladeBanner.component';
 import { WhyoneBladeComponent } from './pages/outsourcing/whyoneBlade/whyoneBlade.component';
 
 // Funzione per caricare i file di traduzione
@@ -90,7 +91,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     TalentListComponent,
     ContactFormAziendaComponent,
     TalentWizardComponent,
-    WhyoneBladeComponent
+    WhyoneBladeComponent,
+    WhyoneBladeBannerComponent
   ],
   imports: [
     BrowserModule,
