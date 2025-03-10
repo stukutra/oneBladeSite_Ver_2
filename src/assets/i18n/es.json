@@ -157,6 +157,7 @@
         "NO_DATES_MESSAGE": "Programación del calendario en curso. Escribe para obtener más detalles."
     },
     "ACADEMY_ONEBLADE": {
+    "ACADEMY_ONEBLADE": {
         "TITLE": "Encuentra tu camino, estamos a tu lado.",
         "INTRO": "Cada viaje comienza con una elección: descubrir, aprender, ponerse a prueba. Nuestros cursos están diseñados para aquellos que realmente quieren comprender este mundo, para aquellos que están impulsados por la curiosidad y el deseo de adquirir habilidades concretas.",
         "BELIEF": "Creemos que el conocimiento y la pasión son más importantes que cualquier certificación. Las certificaciones pueden ser un valor añadido, pero lo que realmente importa es el aprendizaje real, la práctica y la comprensión de las metodologías.",
@@ -209,6 +210,7 @@
         "SERVICE_2": "Academia de Formación: Ofrecemos cursos avanzados de programación y desarrollo de software, dirigidos tanto a principiantes como a profesionales que deseen actualizar sus habilidades. Nuestros programas de formación están estructurados para garantizar un aprendizaje práctico y aplicable de inmediato en el mundo laboral.",
         "SERVICE_3": "Adquisición de Talento: Apoyamos a las empresas en la búsqueda y selección de profesionales altamente especializados en el sector de TI, garantizando un proceso de reclutamiento eficiente y enfocado.",
         "WHY_CHOOSE_TITLE": "Por Qué Elegir oneBlade",
+        "WHY_CHOOSE_DESCRIPTION": "Descubre cómo reducir los tiempos y costos de búsqueda",
         "WHY_CHOOSE_1": "Experiencia y Competencia: Nuestro equipo está compuesto por profesionales con años de experiencia en el sector tecnológico y de formación.",
         "WHY_CHOOSE_2": "Enfoque Personalizado: Cada proyecto es único; por eso ofrecemos soluciones a medida que responden a las necesidades específicas de cada cliente.",
         "WHY_CHOOSE_3": "Innovación Continua: Estamos constantemente actualizados sobre las últimas tendencias y tecnologías, garantizando a nuestros clientes soluciones de vanguardia.",
