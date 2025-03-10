@@ -54,7 +54,6 @@ $file-button-hover-bg-color: darken($topbar-color, 10%); // Colore di sfondo al 
 $button-disabled-bg-color: #d3d3d3; // Sfondo pulsante disabilitato
 $button-disabled-text-color: #6c757d; // Testo pulsante disabilitato
 
-
 $carousel-item-padding: 20px;
 $logo-item-padding: 15px;
 $button-height: 60px;
@@ -81,3 +80,11 @@ $transition-duration: 0.3s;
 $progress-background-color: #ddd;
 $text-color-error: #dc3545;
 $button-hover-darken: 10%;
+
+// Apple-style theme variables
+$apple-background-color: #f5f5f7;
+$apple-text-color: #1d1d1f;
+$apple-border-color: #d2d2d7;
+$apple-highlight-color: #0071e3;
+$apple-low-cost-color: #ff3b30;
+$apple-premium-color: #34c759;

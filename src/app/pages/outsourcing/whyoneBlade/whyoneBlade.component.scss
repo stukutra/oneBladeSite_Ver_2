@@ -1,0 +1,47 @@
+@use "../../../style/_variabiles.scss" as var;
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    background-color: var.$apple-background-color;
+    color: var.$apple-text-color;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 12px;
+    border: 1px solid var.$apple-border-color;
+    text-align: center;
+}
+
+.comparison-table th {
+    background-color: lighten(var.$apple-background-color, 10%);
+    color: var.$apple-text-color;
+    font-weight: bold;
+}
+
+.comparison-table td {
+    background-color: var.$apple-background-color;
+}
+
+.comparison-table .highlight {
+    background-color: lighten(var.$apple-highlight-color, 40%);
+    font-weight: bold;
+    color: var.$apple-highlight-color;
+}
+
+.comparison-table .low-cost {
+    background-color: lighten(var.$apple-low-cost-color, 40%);
+    color: var.$apple-low-cost-color;
+}
+
+.comparison-table .premium {
+    background-color: lighten(var.$apple-premium-color, 40%);
+    color: var.$apple-premium-color;
+}
+
+h1 {
+    color: var.$primary-color;
+}

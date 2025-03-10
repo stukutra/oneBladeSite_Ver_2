@@ -16,6 +16,7 @@ import { RegisterComponent } from './auth/register/register.component';
 import { SoftwareHouseComponent } from './pages/softwareHouse/softwareHouse.component';
 import { TalentListComponent } from './pages/outsourcing/TalentList/TalentList.component';
 import { TalentWizardComponent } from './pages/outsourcing/TalentWizard/TalentWizard.component';
+import { WhyoneBladeComponent } from './pages/outsourcing/whyoneBlade/whyoneBlade.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, data: { animation: 'Home' } },
@@ -34,6 +35,7 @@ const routes: Routes = [
   { path: 'talent', component: TalentListComponent },
   { path: 'talentWizard', component: TalentWizardComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
+  { path: 'whyoneBlade', component: WhyoneBladeComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
