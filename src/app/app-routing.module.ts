@@ -16,8 +16,8 @@ import { PrivacyPolicyComponent } from './pages/privacy_policy/privacy_policy.co
 import { QuestionnaireComponent } from './pages/questionnaire/questionnaire.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { SoftwareHouseComponent } from './pages/softwareHouse/softwareHouse.component';
-import { TalentListComponent } from './pages/outsourcing/TalentList/TalentList.component';
 import { TalentWizardComponent } from './pages/outsourcing/TalentWizard/TalentWizard.component';
+import { WhyoneBladeComponent } from './pages/outsourcing/whyoneBlade/whyoneBlade.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, data: { animation: 'Home' } },
@@ -33,11 +33,11 @@ const routes: Routes = [
   { path: 'academyFAQ', component: AcademyFAQComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'talent', component: TalentListComponent },
   { path: 'talentWizard', component: TalentWizardComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
   { path: 'blog', component: BlogCategoriesComponent },
   { path: 'blog/:code', component: BlogComponent },
+  { path: 'whyoneBlade', component: WhyoneBladeComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 

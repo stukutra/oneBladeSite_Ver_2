@@ -1,31 +1,28 @@
 <app-image-carousel></app-image-carousel>
 
 <div class="container mt-5 mb-5">
-
-
     <!-- Testo esplicativo -->
     <div class="explanatory-text">
         <div *ngIf="step === Step.Step1">
-            <h3 class="step-explanation"><strong>Step 1: </strong></h3> <span
-                [innerHTML]="'STEP.EXPLANATION_STEP_1' | translate"></span>
-
+            <h3 class="step-explanation"><strong>Step 1: </strong></h3>
+            <span [innerHTML]="'STEP.EXPLANATION_STEP_1' | translate"></span>
         </div>
 
         <div *ngIf="step === Step.Step2">
-            <h3 class="step-explanation"><strong>Step 2: </strong></h3> <span
-                [innerHTML]="'STEP.EXPLANATION_STEP_2' | translate"></span>
-
+            <h3 class="step-explanation"><strong>Step 2: </strong></h3>
+            <span [innerHTML]="'STEP.EXPLANATION_STEP_2' | translate"></span>
         </div>
 
         <div *ngIf="step === Step.Step3">
-            <h3 class="step-explanation"><strong>Step 3: </strong></h3><span
-                [innerHTML]="'STEP.EXPLANATION_STEP_3' | translate"></span>
-
+            <h3 class="step-explanation"><strong>Step 3: </strong></h3>
+            <span [innerHTML]="'STEP.EXPLANATION_STEP_3' | translate"></span>
         </div>
 
         <div *ngIf="step === Step.Step4">
-            <h3 class="step-explanation"><strong>Step 4: </strong> <span
-                    [innerHTML]="'STEP.EXPLANATION_STEP_4' | translate"></span></h3>
+            <h3 class="step-explanation">
+                <strong>Step 4: </strong>
+                <span [innerHTML]="'STEP.EXPLANATION_STEP_4' | translate"></span>
+            </h3>
         </div>
     </div>
 
@@ -53,10 +50,10 @@
     </div>
 
     <div *ngIf="step === Step.Step1">
-        <h2 class="text-center mt-5 mb-5">{{ 'TALENT_LIST.TITLE' | translate }}</h2>
+        <h2 class="text-center mt-5 mb-5">{{ "TALENT_LIST.TITLE" | translate }}</h2>
         <div class="row">
-            <div *ngFor="let category of categories" class="col-md-4 mb-3">
-                <div class="category-box p-3" (click)="selectCategory(category)">
+            <div *ngFor="let category of categories" class="col-md-4 mb-3 d-flex">
+                <div class="category-box p-3 d-flex align-items-center justify-content-center" (click)="selectCategory(category)">
                     <h3 class="text-secondary">{{ category.name | translate }}</h3>
                 </div>
             </div>
@@ -64,40 +61,66 @@
     </div>
 
     <div *ngIf="step === Step.Step2">
-        <h2 class="mt-5 mb-5 text-center">{{ selectedCategory?.name || '' | translate }}</h2>
+        <h2 class="mt-5 mb-5 text-center">
+            {{ selectedCategory?.name || "" | translate }}
+        </h2>
         <div class="row">
-            <div *ngFor="let talent of selectedCategory?.talents" class="col-md-4 mb-3">
-                <div class="talent-box p-4" style="text-align: left;">
+            <div *ngFor="let talent of selectedCategory?.talents" class="col-md-4 mb-3 d-flex">
+                <div class="talent-box p-4" style="text-align: left">
                     <h3>{{ talent.role | translate }}</h3>
-                    <p><strong><i class="bi bi-file-earmark-text"></i> {{ 'TALENT_LIST.MIN_CONTRACT' | translate
-                            }}:</strong> {{ talent.minContract }}</p>
-                    <p><strong><i class="bi bi-person-badge"></i> {{ 'TALENT_LIST.SENIORITY' | translate }}:</strong> {{
-                        talent.seniority }}</p>
-                    <p><strong><i class="bi bi-geo-alt"></i> {{ 'TALENT_LIST.WORK_TYPE' | translate }}:</strong> {{
-                        talent.workType }}</p>
-                    <p><strong><i class="bi bi-tools"></i> Skills:</strong></p>
+                    <span class="value-badge">
+                        <i class="bi bi-award"></i> Senior verificato
+                    </span>
+                    <p>
+                        <strong><i class="bi bi-file-earmark-text"></i>
+                            {{ "TALENT_LIST.MIN_CONTRACT" | translate }}:</strong>
+                        {{ talent.minContract }}
+                    </p>
+                    <p>
+                        <strong><i class="bi bi-person-badge"></i>
+                            {{ "TALENT_LIST.SENIORITY" | translate }}:</strong>
+                        {{ talent.seniority }}
+                    </p>
+                    <p>
+                        <strong><i class="bi bi-geo-alt"></i>
+                            {{ "TALENT_LIST.WORK_TYPE" | translate }}:</strong>
+                        {{ talent.workType }}
+                    </p>
+                    <p>
+                        <strong><i class="bi bi-tools"></i> Skills:</strong>
+                    </p>
                     <ul class="skills-list" [class.expanded]="talent.expandedSkills"
                         [class.no-more]="talent.skills.length <= 2">
                         <li *ngFor="let skill of talent.skills; let i = index"
-                            [class.hidden]="i >= 2 && !talent.expandedSkills">{{ skill }}</li>
+                            [class.hidden]="i >= 2 && !talent.expandedSkills">
+                            {{ skill }}
+                        </li>
                     </ul>
                     <button *ngIf="talent.skills.length > 2" class="btn btn-link p-0"
                         (click)="talent.expandedSkills = !talent.expandedSkills">
-                        {{ talent.expandedSkills ? 'Mostra meno' : 'Mostra di più' }}
+                        <i class="bi" [ngClass]="talent.expandedSkills ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
                     </button>
-                    <p><strong><i class="bi bi-diagram-3"></i> Frameworks/Libraries:</strong></p>
+                    <p>
+                        <strong><i class="bi bi-diagram-3"></i> Frameworks/Libraries:</strong>
+                    </p>
                     <ul class="frameworks-list" [class.expanded]="talent.expandedFrameworks"
                         [class.no-more]="talent.frameworks_libraries.length <= 2">
-                        <li *ngFor="let framework of talent.frameworks_libraries; let i = index"
-                            [class.hidden]="i >= 2 && !talent.expandedFrameworks">
-                            <a [href]="framework.link" target="_blank">{{ framework.name }}</a>
+                        <li *ngFor="
+                let framework of talent.frameworks_libraries;
+                let i = index
+              " [class.hidden]="i >= 2 && !talent.expandedFrameworks">
+                            <a [href]="framework.link" target="_blank">{{
+                                framework.name
+                                }}</a>
                         </li>
                     </ul>
                     <button *ngIf="talent.frameworks_libraries.length > 2" class="btn btn-link p-0"
                         (click)="talent.expandedFrameworks = !talent.expandedFrameworks">
-                        {{ talent.expandedFrameworks ? 'Mostra meno' : 'Mostra di più' }}
+                        <i class="bi" [ngClass]="talent.expandedFrameworks ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
                     </button>
-                    <p><strong><i class="bi bi-wrench"></i> Tools:</strong></p>
+                    <p>
+                        <strong><i class="bi bi-wrench"></i> Tools:</strong>
+                    </p>
                     <ul class="tools-list" [class.expanded]="talent.expandedTools"
                         [class.no-more]="talent.tools.length <= 2">
                         <li *ngFor="let tool of talent.tools; let i = index"
@@ -107,76 +130,96 @@
                     </ul>
                     <button *ngIf="talent.tools.length > 2" class="btn btn-link p-0"
                         (click)="talent.expandedTools = !talent.expandedTools">
-                        {{ talent.expandedTools ? 'Mostra meno' : 'Mostra di più' }}
+                        <i class="bi" [ngClass]="talent.expandedTools ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
                     </button>
-                    <p><strong><i class="bi bi-translate"></i> Languages:</strong></p>
+                    <p>
+                        <strong><i class="bi bi-translate"></i> Languages:</strong>
+                    </p>
                     <ul class="languages-list" [class.expanded]="talent.expandedLanguages"
                         [class.no-more]="getLanguages(talent.languages_spoken).length <= 2">
-                        <li *ngFor="let language of getLanguages(talent.languages_spoken); let i = index"
-                            [class.hidden]="i >= 2 && !talent.expandedLanguages">
+                        <li *ngFor="
+                let language of getLanguages(talent.languages_spoken);
+                let i = index
+              " [class.hidden]="i >= 2 && !talent.expandedLanguages">
                             {{ language }}: {{ talent.languages_spoken[language] }}
                         </li>
                     </ul>
                     <button *ngIf="getLanguages(talent.languages_spoken).length > 2" class="btn btn-link p-0"
                         (click)="talent.expandedLanguages = !talent.expandedLanguages">
-                        {{ talent.expandedLanguages ? 'Mostra meno' : 'Mostra di più' }}
+                        <i class="bi" [ngClass]="talent.expandedLanguages ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
                     </button>
 
-                    <p class="price"><strong><i class="bi bi-currency-euro"></i> {{ 'TALENT_LIST.PRICE_PER_DAY' |
-                            translate }}:</strong><br>
-                        <span class="price-value">
-                            <span *ngIf="talent.selectedRateIndex === 1">{{ talent.dailyRate['1_month'] }} 1
-                                mese</span>
-                            <span *ngIf="talent.selectedRateIndex === 2">{{ talent.dailyRate['3_months'] }} 3
-                                mesi</span>
-                            <span *ngIf="talent.selectedRateIndex === 3">{{ talent.dailyRate['6_months'] }} da 6
-                                mesi</span>
-                        </span>
+                    <p class="investment">
+                        Investimento per un software scalabile e sicuro: 
+                        <span *ngIf="talent.selectedRateIndex === 1">{{ talent.dailyRate["1_month"] }}/giorno</span>
+                        <span *ngIf="talent.selectedRateIndex === 2">{{ talent.dailyRate["3_months"] }}/giorno</span>
+                        <span *ngIf="talent.selectedRateIndex === 3">{{ talent.dailyRate["6_months"] }}/giorno</span>
                     </p>
                     <div class="price-slider">
                         <input type="range" class="form-range" min="1" max="3" step="1"
-                            [(ngModel)]="talent.selectedRateIndex" (change)="updateRate(talent)">
+                            [(ngModel)]="talent.selectedRateIndex" (change)="updateRate(talent)" />
                     </div>
-                    <button class="btn btn-primary mt-3" (click)="selectTalent(talent)">Scegli</button>
+                    <button class="btn btn-primary mt-3" (click)="selectTalent(talent)">
+                        Scegli
+                    </button>
                 </div>
             </div>
         </div>
     </div>
 
     <div *ngIf="step === Step.Step3 && selectedTalent">
-        <h2 class="mt-5 mb-5 text-center">{{ selectedCategory?.name || '' | translate }}</h2>
+        <h2 class="mt-5 mb-5 text-center">
+            {{ selectedCategory?.name || "" | translate }}
+        </h2>
         <div class="row">
             <div class="col-md-6 mb-3">
-                <div class="talent-box p-4" style="text-align: left;">
+                <div class="talent-box p-4" style="text-align: left">
                     <h3>{{ selectedTalent.role | translate }}</h3>
-                    <p><strong><i class="bi bi-file-earmark-text"></i> {{ 'TALENT_LIST.MIN_CONTRACT' | translate
-                            }}:</strong> {{ selectedTalent.minContract }}
+                    <span class="value-badge">
+                        <i class="bi bi-award"></i> Senior verificato
+                    </span>
+                    <p>
+                        <strong><i class="bi bi-file-earmark-text"></i>
+                            {{ "TALENT_LIST.MIN_CONTRACT" | translate }}:</strong>
+                        {{ selectedTalent.minContract }}
                     </p>
-                    <p><strong><i class="bi bi-person-badge"></i> {{ 'TALENT_LIST.SENIORITY' | translate }}:</strong> {{
-                        selectedTalent.seniority }}</p>
-                    <p><strong><i class="bi bi-tools"></i> Skills:</strong></p>
+                    <p>
+                        <strong><i class="bi bi-person-badge"></i>
+                            {{ "TALENT_LIST.SENIORITY" | translate }}:</strong>
+                        {{ selectedTalent.seniority }}
+                    </p>
+                    <p>
+                        <strong><i class="bi bi-tools"></i> Skills:</strong>
+                    </p>
                     <ul class="skills-list" [class.expanded]="selectedTalent.expandedSkills"
                         [class.no-more]="selectedTalent.skills.length <= 2">
                         <li *ngFor="let skill of selectedTalent.skills; let i = index"
-                            [class.hidden]="i >= 2 && !selectedTalent.expandedSkills">{{ skill }}</li>
+                            [class.hidden]="i >= 2 && !selectedTalent.expandedSkills">
+                            {{ skill }}
+                        </li>
                     </ul>
                     <button *ngIf="selectedTalent.skills.length > 2" class="btn btn-link p-0"
                         (click)="selectedTalent.expandedSkills = !selectedTalent.expandedSkills">
-                        {{ selectedTalent.expandedSkills ? 'Mostra meno' : 'Mostra di più' }}
+                        <i class="bi" [ngClass]="selectedTalent.expandedSkills ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
                     </button>
-                    <p><strong><i class="bi bi-diagram-3"></i> Frameworks/Libraries:</strong></p>
+                    <p>
+                        <strong><i class="bi bi-diagram-3"></i> Frameworks/Libraries:</strong>
+                    </p>
                     <ul class="frameworks-list" [class.expanded]="selectedTalent.expandedFrameworks"
                         [class.no-more]="selectedTalent.frameworks_libraries.length <= 2">
-                        <li *ngFor="let framework of selectedTalent.frameworks_libraries; let i = index"
-                            [class.hidden]="i >= 2 && !selectedTalent.expandedFrameworks">
-                            <a [href]="framework.link" target="_blank">{{ framework.name }}</a>
+                        <li *ngFor=" let framework of selectedTalent.frameworks_libraries;let i = index" [class.hidden]="i >= 2 && !selectedTalent.expandedFrameworks">
+                            <a [href]="framework.link" target="_blank">{{
+                                framework.name
+                                }}</a>
                         </li>
                     </ul>
                     <button *ngIf="selectedTalent.frameworks_libraries.length > 2" class="btn btn-link p-0"
                         (click)="selectedTalent.expandedFrameworks = !selectedTalent.expandedFrameworks">
-                        {{ selectedTalent.expandedFrameworks ? 'Mostra meno' : 'Mostra di più' }}
+                        <i class="bi" [ngClass]="selectedTalent.expandedFrameworks ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
                     </button>
-                    <p><strong><i class="bi bi-wrench"></i> Tools:</strong></p>
+                    <p>
+                        <strong><i class="bi bi-wrench"></i> Tools:</strong>
+                    </p>
                     <ul class="tools-list" [class.expanded]="selectedTalent.expandedTools"
                         [class.no-more]="selectedTalent.tools.length <= 2">
                         <li *ngFor="let tool of selectedTalent.tools; let i = index"
@@ -186,52 +229,56 @@
                     </ul>
                     <button *ngIf="selectedTalent.tools.length > 2" class="btn btn-link p-0"
                         (click)="selectedTalent.expandedTools = !selectedTalent.expandedTools">
-                        {{ selectedTalent.expandedTools ? 'Mostra meno' : 'Mostra di più' }}
+                        <i class="bi" [ngClass]="selectedTalent.expandedTools ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
                     </button>
-                    <p><strong><i class="bi bi-translate"></i> Languages:</strong></p>
-                    <ul class="languages-list" [class.expanded]="selectedTalent.expandedLanguages"
-                        [class.no-more]="getLanguages(selectedTalent.languages_spoken).length <= 2">
-                        <li *ngFor="let language of getLanguages(selectedTalent.languages_spoken); let i = index"
-                            [class.hidden]="i >= 2 && !selectedTalent.expandedLanguages">
+                    <p>
+                        <strong><i class="bi bi-translate"></i> Languages:</strong>
+                    </p>
+                    <ul class="languages-list" [class.expanded]="selectedTalent.expandedLanguages" [class.no-more]="
+              getLanguages(selectedTalent.languages_spoken).length <= 2
+            ">
+                        <li *ngFor="
+                let language of getLanguages(selectedTalent.languages_spoken);
+                let i = index
+              " [class.hidden]="i >= 2 && !selectedTalent.expandedLanguages">
                             {{ language }}: {{ selectedTalent.languages_spoken[language] }}
                         </li>
                     </ul>
                     <button *ngIf="getLanguages(selectedTalent.languages_spoken).length > 2" class="btn btn-link p-0"
                         (click)="selectedTalent.expandedLanguages = !selectedTalent.expandedLanguages">
-                        {{ selectedTalent.expandedLanguages ? 'Mostra meno' : 'Mostra di più' }}
+                        <i class="bi" [ngClass]="selectedTalent.expandedLanguages ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
                     </button>
-                    <p><strong><i class="bi bi-geo-alt"></i> {{ 'TALENT_LIST.WORK_TYPE' | translate }}:</strong> {{
-                        selectedTalent.workType }}</p>
-                    <p class="price"><strong><i class="bi bi-currency-euro"></i> {{ 'TALENT_LIST.PRICE_PER_DAY' |
-                            translate }}:</strong><br>
-                        <span class="price-value">
-                            <span *ngIf="selectedTalent.selectedRateIndex === 1">{{ selectedTalent.dailyRate['1_month']
-                                }} 1 mese</span>
-                            <span *ngIf="selectedTalent.selectedRateIndex === 2">{{ selectedTalent.dailyRate['3_months']
-                                }} 3 mesi</span>
-                            <span *ngIf="selectedTalent.selectedRateIndex === 3">{{ selectedTalent.dailyRate['6_months']
-                                }} da 6 mesi</span>
-                        </span>
+                    <p>
+                        <strong><i class="bi bi-geo-alt"></i>
+                            {{ "TALENT_LIST.WORK_TYPE" | translate }}:</strong>
+                        {{ selectedTalent.workType }}
+                    </p>
+                    <p class="investment">
+                        Investimento per un software scalabile e sicuro: 
+                        <span *ngIf="selectedTalent.selectedRateIndex === 1">{{ selectedTalent.dailyRate["1_month"] }}/giorno</span>
+                        <span *ngIf="selectedTalent.selectedRateIndex === 2">{{ selectedTalent.dailyRate["3_months"] }}/giorno</span>
+                        <span *ngIf="selectedTalent.selectedRateIndex === 3">{{ selectedTalent.dailyRate["6_months"] }}/giorno</span>
                     </p>
                     <div class="price-slider">
                         <input type="range" class="form-range" min="1" max="3" step="1"
-                            [(ngModel)]="selectedTalent.selectedRateIndex" (change)="updateRate(selectedTalent)">
+                            [(ngModel)]="selectedTalent.selectedRateIndex" (change)="updateRate(selectedTalent)" />
                     </div>
                 </div>
             </div>
             <div class="col-md-6 mb-3">
                 <app-contact-form-azienda [selectedCategory]="selectedCategory?.name || ''"
-                    [selectedTalent]="selectedTalent"
-                    [customTitle]="'Compila la form per poterti aiutare per la scelta del consulente fatta.'"
-                    [customSubtitle]="'Inviandoci la tua richiesta verrai contattato da un nostro responsabile che potrà aiutarti.'"
-                    (emailSent)="handleEmailSent($event)"></app-contact-form-azienda>
+                    [selectedTalent]="selectedTalent" [customTitle]="
+            'Compila la form per poterti aiutare per la scelta del consulente fatta.'
+          " [customSubtitle]="
+            'Inviandoci la tua richiesta verrai contattato da un nostro responsabile che potrà aiutarti.'
+          " (emailSent)="handleEmailSent($event)"></app-contact-form-azienda>
             </div>
         </div>
     </div>
 
     <div *ngIf="step === Step.Step4" class="thank-you-message">
-        <h2>{{ 'FORM.SUCCESS_MESSAGE' | translate }}</h2>
-        <p>{{ 'FORM.THANK_YOU_MESSAGE' | translate }}</p>
+        <h2>{{ "FORM.SUCCESS_MESSAGE" | translate }}</h2>
+        <p>{{ "FORM.THANK_YOU_MESSAGE" | translate }}</p>
     </div>
 </div>
 

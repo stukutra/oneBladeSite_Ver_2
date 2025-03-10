@@ -1,6 +1,5 @@
 @import '../../../style/_variabiles.scss';
 
-
 .category-box,
 .talent-box {
     border: 1px solid $input-border-color;
@@ -13,6 +12,11 @@
     cursor: pointer;
     text-align: center;
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
 
     &:hover {
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
@@ -43,9 +47,28 @@
     }
 
     .price {
-        font-size: 20px;
-        color: $primary-color;
+        font-size: 16px;
+        color: $text-color-dark;
         margin-top: 10px;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    .value-badge {
+        background-color: transparent;
+        color: $primary-color;
+        padding: 0.5rem 1rem; // Make the badge slightly larger
+        font-size: 14px; // Increase font size
+        margin-top: 5px;
+        display: inline-block;
+        border-radius: 8px;
+        border: 2px solid $primary-color; // Add border with primary color
+    }
+
+    .investment {
+        font-size: 14px;
+        color: $text-color-dark;
+        margin-top: 5px;
         font-weight: bold;
         text-align: center;
     }
@@ -78,6 +101,7 @@
 
         input[type="range"] {
             -webkit-appearance: none;
+            appearance: none;
             width: 100%;
             height: 8px;
             background: $input-border-color;
@@ -104,6 +128,13 @@
             }
         }
     }
+}
+
+.category-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .skills-list,
