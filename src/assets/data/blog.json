@@ -5,13 +5,13 @@
             "articles": [
                 {
                     "code": "tech-001",
-                    "title": "The Future of AI",
+                    "title": "The Impact of Artificial Intelligence in the Business World: Automation, Integration, and Social Aspects",
                     "contentPaths": {
                         "it": "assets/Blog/Technology/Blg01_it.html",
                         "en": "assets/Blog/Technology/Blg01_en.html",
                         "es": "assets/Blog/Technology/Blg01_es.html"
                     },
-                    "creationDate": "2023-10-01T00:00:00Z",
+                    "creationDate": "2025-10-03T00:00:00Z",
                     "authorCode": "JD01",
                     "description": "An in-depth look at the future of artificial intelligence.",
                     "readingTime": 5,
@@ -20,7 +20,7 @@
                         "Technology",
                         "Future"
                     ],
-                    "image": "assets/BodyRental.jpg"
+                    "image": "assets/Blog/Technology/image/AI.jpg"
                 },
                 {
                     "code": "tech-002",
@@ -30,7 +30,7 @@
                         "en": "assets/Blog/Technology/Blg02_en.html",
                         "es": "assets/Blog/Technology/Blg02_es.html"
                     },
-                    "creationDate": "2023-10-01T00:00:00Z",
+                    "creationDate": "2025-10-03T00:00:00Z",
                     "authorCode": "JD01",
                     "description": "An in-depth look at the future of artificial intelligence.",
                     "readingTime": 5,
@@ -39,7 +39,7 @@
                         "Technology",
                         "Future"
                     ],
-                    "image": "assets/BodyRental.jpg"
+                    "image": "assets/Blog/Technology/image/ArtificialInteligence.jpg"
                 }
             ]
         },
@@ -54,7 +54,7 @@
                         "en": "assets/Blog/Sviluppo/Blg03_en.html",
                         "es": "assets/Blog/Sviluppo/Blg03_es.html"
                     },
-                    "creationDate": "2023-10-01T00:00:00Z",
+                    "creationDate": "2025-10-03T00:00:00Z",
                     "authorCode": "JD01",
                     "description": "",
                     "readingTime": 5,
@@ -62,7 +62,7 @@
                         "Angular",
                         "JAvascript"
                     ],
-                    "image": "assets/BodyRental.jpg"
+                    "image": "assets/Blog/Sviluppo/image/Angular.jpg"
                 },
                 {
                     "code": "tech-004",
@@ -72,7 +72,7 @@
                         "en": "assets/Blog/Sviluppo/Blg04_en.html",
                         "es": "assets/Blog/Sviluppo/Blg04_es.html"
                     },
-                    "creationDate": "2023-10-01T00:00:00Z",
+                    "creationDate": "2025-10-03T00:00:00Z",
                     "authorCode": "JD01",
                     "description": "",
                     "readingTime": 5,
@@ -80,7 +80,7 @@
                         "Angular",
                         "JAvascript"
                     ],
-                    "image": "assets/BodyRental.jpg"
+                    "image": "assets/Blog/Sviluppo/image/Scrum.jpg"
                 }
             ]
         }
