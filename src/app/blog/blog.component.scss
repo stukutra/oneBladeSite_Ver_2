@@ -124,3 +124,52 @@ a {
         text-decoration: underline;
     }
 }
+
+.breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 1rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; // Add this line to make breadcrumb responsive
+  font-size: 0.875rem; // Make the breadcrumb more compact
+
+  .breadcrumb-item {
+    display: inline;
+
+    & + .breadcrumb-item::before {
+      content: ">";
+      padding: 0 0.5rem;
+      color: $text-color-dark;
+    }
+
+    &.active {
+      color: $text-color-dark;
+    }
+
+    .breadcrumb-link {
+      color: $primary-color;
+      text-decoration: none;
+      cursor: pointer;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .breadcrumb .breadcrumb-link {
+    max-width: 100px; // Truncate title on smaller devices
+  }
+}
+
+@media (min-width: 769px) {
+  .breadcrumb .breadcrumb-link {
+    max-width: none; // Display full title on desktop
+  }
+}

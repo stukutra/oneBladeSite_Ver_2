@@ -3,6 +3,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 
 import { Article } from '../models/blog.model';
 import { BlogService } from '../service/blog.service';
+import { Location } from '@angular/common';
 import { Teacher } from '../models/teacher.model';
 import { TeacherService } from '../service/teacher.service';
 import { TranslateService } from '@ngx-translate/core';
@@ -18,8 +19,9 @@ export class BlogComponent implements OnInit, OnDestroy {
   relatedArticles: Article[] = [];
   author: Teacher | undefined;
   private langChangeSubscription: any;
+  breadcrumb: string[] = [];
 
-  constructor(private blogService: BlogService, private route: ActivatedRoute, private translate: TranslateService, private teacherService: TeacherService, private router: Router) {
+  constructor(private blogService: BlogService, private route: ActivatedRoute, private translate: TranslateService, private teacherService: TeacherService, private router: Router, private location: Location) {
     this.translate.onLangChange.subscribe(() => {
       console.log('Language changed to:', this.translate.currentLang);
     });
@@ -34,6 +36,7 @@ export class BlogComponent implements OnInit, OnDestroy {
     this.route.params.subscribe(params => {
       const articleCode = params['code'];
       this.loadArticles(articleCode);
+      this.updateBreadcrumb(articleCode);
     });
 
     this.langChangeSubscription = this.translate.onLangChange.subscribe(() => {
@@ -87,5 +90,23 @@ export class BlogComponent implements OnInit, OnDestroy {
     } else {
       console.error('Article code is missing');
     }
+  }
+
+  updateBreadcrumb(articleCode?: string) {
+    if (articleCode) {
+      this.blogService.getArticleByCode(articleCode).subscribe(article => {
+        if (article) {
+          this.breadcrumb = ['Home', 'Blog', article.title];
+        } else {
+          this.breadcrumb = ['Home', 'Blog'];
+        }
+      });
+    } else {
+      this.breadcrumb = ['Home', 'Blog'];
+    }
+  }
+
+  goBack() {
+    this.location.back();
   }
 }
