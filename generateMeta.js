@@ -34,6 +34,7 @@ function generateMetaTags() {
     const metaTags = files.map(file => extractMeta(path.join(blogDir, file)));
     updateIndexHtml(metaTags);
     console.log('Meta tags generated successfully.');
+    console.log('Updated meta tags:', metaTags);
 }
 
 generateMetaTags();
