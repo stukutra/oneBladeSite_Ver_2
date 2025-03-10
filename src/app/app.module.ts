@@ -33,6 +33,8 @@ import { HomeComponent } from './layout/home/home.component';
 import { ImageCarouselComponent } from './pages/image-carousel/image-carousel.component';
 import { InfooneBladeComponent } from './pages/infooneBlade/infooneBlade.component';
 import { ItalianDatePipe } from './pipes/italian-date.pipe';
+import { LoadingComponent } from './components/loading.component';
+import { LoadingService } from './components/loading.service';
 import { LoginComponent } from './auth/login/login.component';
 import { MyInformationComponent } from './pages/myInformation/myInformation.component';
 import { OutsourcingBannerComponent } from './pages/outsourcing/outsourcingBanner/outsourcingBanner.component';
@@ -96,7 +98,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     BlogCategoriesComponent,
     ItalianDatePipe,
     WhyoneBladeComponent,
-    WhyoneBladeBannerComponent
+    WhyoneBladeBannerComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
@@ -113,7 +116,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     })
   ],
   schemas: [NO_ERRORS_SCHEMA],
-  providers: [],
+  providers: [LoadingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

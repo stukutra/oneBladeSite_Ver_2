@@ -1,6 +1,7 @@
+import { AfterViewInit, Component } from '@angular/core';
 import { animate, style, transition, trigger } from '@angular/animations';
 
-import { Component } from '@angular/core';
+import { LoadingService } from './components/loading.service';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -20,10 +21,32 @@ import { RouterOutlet } from '@angular/router';
     ])
   ]
 })
-
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
   title = 'oneBlade';
+
+  constructor(public loadingService: LoadingService) {}
+
+  ngAfterViewInit() {
+    this.showLoadingUntilPageLoad();
+  }
+
+  private showLoadingUntilPageLoad() {
+    this.loadingService.show();
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        this.loadingService.hide();
+      }, 500); // Aggiungi un piccolo ritardo per garantire che il caricamento sia visibile
+    });
+  }
+
   getRouteAnimationState(outlet: RouterOutlet) {
     return outlet.isActivated ? outlet.activatedRouteData['animation'] : '';
+  }
+
+  // Esempio di utilizzo del servizio di caricamento
+  someMethod() {
+    this.loadingService.show();
+    // ...esegui qualche operazione...
+    this.loadingService.hide();
   }
 }
