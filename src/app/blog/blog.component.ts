@@ -19,7 +19,16 @@ export class BlogComponent implements OnInit, OnDestroy {
   author: Teacher | undefined;
   private langChangeSubscription: any;
 
-  constructor(private blogService: BlogService, private route: ActivatedRoute, private translate: TranslateService, private teacherService: TeacherService, private router: Router) { }
+  constructor(private blogService: BlogService, private route: ActivatedRoute, private translate: TranslateService, private teacherService: TeacherService, private router: Router) {
+    this.translate.onLangChange.subscribe(() => {
+      console.log('Language changed to:', this.translate.currentLang);
+    });
+    if (!this.translate.currentLang) {
+      this.translate.setDefaultLang('it');
+      this.translate.use('it');
+    }
+    console.log('Initial language:', this.translate.currentLang);
+  }
 
   ngOnInit() {
     this.route.params.subscribe(params => {
@@ -28,6 +37,7 @@ export class BlogComponent implements OnInit, OnDestroy {
     });
 
     this.langChangeSubscription = this.translate.onLangChange.subscribe(() => {
+      console.log('Language changed:', this.translate.currentLang);
       this.loadAllArticles();
     });
   }
@@ -40,6 +50,7 @@ export class BlogComponent implements OnInit, OnDestroy {
 
   loadAllArticles() {
     this.blogService.getAllArticles().subscribe(articles => {
+      console.log('Loaded articles:', articles);
       this.articles = articles;
       const articleCode = this.route.snapshot.params['code'];
       if (articleCode) {
@@ -55,6 +66,7 @@ export class BlogComponent implements OnInit, OnDestroy {
     if (articleCode) {
       this.blogService.getArticleByCode(articleCode).subscribe(article => {
         if (article) {
+          console.log('Loaded article:', article);
           this.articles = [article];
           this.selectArticle(article);
         } else {

@@ -1,11 +1,11 @@
 import { Article, Category } from '../models/blog.model';
-import { Observable, forkJoin } from 'rxjs';
+import { Observable, forkJoin, of } from 'rxjs';
+import { catchError, map } from 'rxjs/operators';
 
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { TeacherService } from './teacher.service';
 import { TranslateService } from '@ngx-translate/core';
-import { map } from 'rxjs/operators';
 
 @Injectable({
     providedIn: 'root'
@@ -13,7 +13,16 @@ import { map } from 'rxjs/operators';
 export class BlogService {
     private baseJsonUrl = 'assets/data/blog.json';
 
-    constructor(private http: HttpClient, private translate: TranslateService, private teacherService: TeacherService) { }
+    constructor(private http: HttpClient, private translate: TranslateService, private teacherService: TeacherService) {
+        this.translate.onLangChange.subscribe(() => {
+            console.log('Language changed to:', this.translate.currentLang);
+        });
+        if (!this.translate.currentLang) {
+            this.translate.setDefaultLang('it');
+            this.translate.use('it');
+        }
+        console.log('Initial language:', this.translate.currentLang);
+    }
 
     getBlogData(): Observable<Category[]> {
         return this.http.get<{ categories: Category[] }>(this.baseJsonUrl).pipe(
@@ -59,10 +68,16 @@ export class BlogService {
             this.getBlogData().subscribe(categories => {
                 const articles = categories.flatMap(category => category.articles);
                 const lang = this.translate.currentLang;
+                console.log('Current language:', lang);
                 const articleObservables = articles.map(article => {
                     const contentPath = article.contentPaths[lang] || article.contentPaths['en'];
+                    console.log('Loading content from:', contentPath);
                     return this.http.get(contentPath, { responseType: 'text' }).pipe(
-                        map(content => ({ ...article, content, code: article.code }))
+                        map(content => ({ ...article, content, code: article.code })),
+                        catchError(error => {
+                            console.error(`Error loading content from ${contentPath}:`, error);
+                            return of({ ...article, content: 'Error loading content', code: article.code });
+                        })
                     );
                 });
                 forkJoin(articleObservables).subscribe(
@@ -83,13 +98,18 @@ export class BlogService {
                 const article = articles.find(a => a.code === articleCode);
                 if (article) {
                     const lang = this.translate.currentLang;
+                    console.log('Current language:', lang);
                     const contentPath = article.contentPaths[lang] || article.contentPaths['en'];
+                    console.log('Loading content from:', contentPath);
                     this.http.get(contentPath, { responseType: 'text' }).subscribe(
                         content => {
                             observer.next({ ...article, content });
                             observer.complete();
                         },
-                        error => observer.error(error)
+                        error => {
+                            console.error(`Error loading content from ${contentPath}:`, error);
+                            observer.error(error);
+                        }
                     );
                 } else {
                     observer.error('Article not found');

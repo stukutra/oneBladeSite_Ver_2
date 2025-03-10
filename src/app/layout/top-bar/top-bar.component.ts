@@ -19,6 +19,7 @@ export class TopBarComponent {
   constructor(private router: Router, private translate: TranslateService, private coursesService: CoursesService) {
     this.translate.addLangs(['en', 'it', 'es']);
     this.translate.setDefaultLang('it');
+    this.translate.use('it'); // Ensure the initial language is set to Italian
   }
 
   @HostListener('document:click', ['$event'])
