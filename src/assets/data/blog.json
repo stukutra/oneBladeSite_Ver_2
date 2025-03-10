@@ -40,6 +40,25 @@
                         "Future"
                     ],
                     "image": "assets/Blog/Technology/image/ArtificialInteligence.jpg"
+                },
+                {
+                    "code": "tech-005",
+                    "title": "Response Times in Recruitment and Talent Acquisition: A Key Factor for Business Success",
+                    "contentPaths": {
+                        "it": "assets/Blog/Technology/Blg05_it.html",
+                        "en": "assets/Blog/Technology/Blg05_en.html",
+                        "es": "assets/Blog/Technology/Blg05_es.html"
+                    },
+                    "creationDate": "2025-10-03T00:00:00Z",
+                    "authorCode": "JS02",
+                    "description": "",
+                    "readingTime": 5,
+                    "tags": [
+                        "AI",
+                        "Technology",
+                        "Future"
+                    ],
+                    "image": "assets/Blog/Technology/image/HrBlog05.jpg"
                 }
             ]
         },

@@ -62,6 +62,7 @@ export class BlogComponent implements OnInit, OnDestroy {
           this.selectArticle(selectedArticle);
         }
       }
+      this.updateRelatedArticles();
     });
   }
 
@@ -72,6 +73,7 @@ export class BlogComponent implements OnInit, OnDestroy {
           console.log('Loaded article:', article);
           this.articles = [article];
           this.selectArticle(article);
+          this.updateRelatedArticles();
         } else {
           console.error('Article not found');
         }
@@ -81,7 +83,7 @@ export class BlogComponent implements OnInit, OnDestroy {
 
   selectArticle(article: Article) {
     this.selectedArticle = article;
-    this.relatedArticles = this.articles.filter(a => a !== article && a.tags.some(tag => article.tags.includes(tag)));
+    this.updateRelatedArticles();
     this.teacherService.getTeacherByCode(article.authorCode).subscribe(teacher => {
       this.author = teacher;
     });
@@ -89,6 +91,12 @@ export class BlogComponent implements OnInit, OnDestroy {
       this.router.navigate(['/blog', article.code]);
     } else {
       console.error('Article code is missing');
+    }
+  }
+
+  updateRelatedArticles() {
+    if (this.selectedArticle) {
+      this.relatedArticles = this.articles.filter(a => a !== this.selectedArticle && a.tags.some(tag => this.selectedArticle!.tags.includes(tag)));
     }
   }
 

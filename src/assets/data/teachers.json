@@ -10,10 +10,10 @@
         },
         {
             "code": "JS02",
-            "name": "Jane Smith",
-            "firstName": "Jane",
-            "lastName": "Smith",
-            "photo": "assets/Accademy/docenti/user-icon-512.png",
+            "name": "Serena D'Angelo",
+            "firstName": "Serena",
+            "lastName": "D'Angelo",
+            "photo": "assets/team/SerenaDangelo.jpeg",
             "linkedIn": "https://www.linkedin.com/in/janesmith"
         }
     ]
