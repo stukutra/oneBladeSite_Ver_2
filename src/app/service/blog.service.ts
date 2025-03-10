@@ -54,6 +54,28 @@ export class BlogService {
         });
     }
 
+    getAllArticles(): Observable<Article[]> {
+        return new Observable(observer => {
+            this.getBlogData().subscribe(categories => {
+                const articles = categories.flatMap(category => category.articles);
+                const lang = this.translate.currentLang;
+                const articleObservables = articles.map(article => {
+                    const contentPath = article.contentPaths[lang] || article.contentPaths['en'];
+                    return this.http.get(contentPath, { responseType: 'text' }).pipe(
+                        map(content => ({ ...article, content, code: article.code }))
+                    );
+                });
+                forkJoin(articleObservables).subscribe(
+                    articles => {
+                        observer.next(articles.map(article => ({ ...article, code: article.code })));
+                        observer.complete();
+                    },
+                    error => observer.error(error)
+                );
+            });
+        });
+    }
+
     getArticleByCode(articleCode: string): Observable<Article | undefined> {
         return new Observable(observer => {
             this.getBlogData().subscribe(categories => {

@@ -28,7 +28,12 @@ export class BlogCategoriesComponent implements OnInit {
         private teacherService: TeacherService
     ) { }
 
-    ngOnInit() {
+    ngOnInit() {       
+        this.loadBlogData();
+    }
+
+    loadBlogData() {
+        this.isLoading = true;
         this.teacherService.getTeachers().subscribe((teachers: Teacher[]) => {
             this.authors = teachers;
             this.blogService.getBlogData().subscribe(data => {

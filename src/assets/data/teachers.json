@@ -2,11 +2,11 @@
     "teachers": [
         {
             "code": "JD01",
-            "name": "John Doe",
-            "firstName": "John",
-            "lastName": "Doe",
-            "photo": "assets/Accademy/docenti/user-icon-512.png",
-            "linkedIn": "https://www.linkedin.com/in/johndoe"
+            "name": "Guido Salzano",
+            "firstName": "Guido",
+            "lastName": "Salzano",
+            "photo": "assets/team/Guido_Salzano_CEO.jpeg",
+            "linkedIn": "https://www.linkedin.com/in/guidosalzano/"
         },
         {
             "code": "JS02",

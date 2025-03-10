@@ -1,5 +1,5 @@
 import { ActivatedRoute, Router } from '@angular/router';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 
 import { Article } from '../models/blog.model';
 import { BlogService } from '../service/blog.service';
@@ -12,11 +12,12 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: './blog.component.html',
   styleUrls: ['./blog.component.scss']
 })
-export class BlogComponent implements OnInit {
+export class BlogComponent implements OnInit, OnDestroy {
   articles: Article[] = [];
   selectedArticle: Article | null = null;
   relatedArticles: Article[] = [];
   author: Teacher | undefined;
+  private langChangeSubscription: any;
 
   constructor(private blogService: BlogService, private route: ActivatedRoute, private translate: TranslateService, private teacherService: TeacherService, private router: Router) { }
 
@@ -26,9 +27,27 @@ export class BlogComponent implements OnInit {
       this.loadArticles(articleCode);
     });
 
-    this.translate.onLangChange.subscribe(() => {
+    this.langChangeSubscription = this.translate.onLangChange.subscribe(() => {
+      this.loadAllArticles();
+    });
+  }
+
+  ngOnDestroy() {
+    if (this.langChangeSubscription) {
+      this.langChangeSubscription.unsubscribe();
+    }
+  }
+
+  loadAllArticles() {
+    this.blogService.getAllArticles().subscribe(articles => {
+      this.articles = articles;
       const articleCode = this.route.snapshot.params['code'];
-      this.loadArticles(articleCode);
+      if (articleCode) {
+        const selectedArticle = this.articles.find(article => article.code === articleCode);
+        if (selectedArticle) {
+          this.selectArticle(selectedArticle);
+        }
+      }
     });
   }
 
