@@ -45,3 +45,48 @@
 h1 {
     color: var.$primary-color;
 }
+
+.oneblade-highlight {
+    color: var.$primary-color;
+    font-weight: bold;
+}
+
+.slogan {
+    font-size: var.$font-size-md;
+    color: var.$secondary-color;
+    margin-top: 0.5rem;
+}
+
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: var.$primary-color;
+    padding: 1rem;
+    border: 1px solid var.$primary-color;
+    border-radius: var.$border-radius;
+    box-shadow: var.$box-shadow;
+    text-align: center;
+    margin: 2rem 0;
+    font-size: var.$font-size-lg;
+    cursor: pointer;
+    transition: background-color var.$transition-speed, color var.$transition-speed;
+
+    &:hover {
+        background-color: var.$primary-color;
+        color: var.$font-color-white;
+    }
+}
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 768px) {
+    .comparison-table th,
+    .comparison-table td {
+        white-space: nowrap;
+    }
+}
