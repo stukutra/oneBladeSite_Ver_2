@@ -282,5 +282,57 @@
     "EXPLANATION_STEP_2": "Browse the list of available talents and choose the one that best meets your needs. Each talent has a brief description of their <strong>main skills</strong>, <strong>experience level</strong>, and <strong>type of services offered</strong>. Select the professional you think is most suitable for your project.",
     "EXPLANATION_STEP_3": "After selecting the right talent, enter your details and request information in the contact form. Specify your needs, the type of <strong>collaboration desired</strong>, and any other useful information to receive a quick and personalized response.",
     "EXPLANATION_STEP_4": "Thank you for completing the process. We will contact you shortly for further details."
+  },
+  "WHY_ONEBLADE": {
+    "TITLE": "Why choose oneBlade",
+    "SLOGAN": "Cost is relative, value is absolute.",
+    "INTRO": "oneBlade is the ideal solution for those looking for a reliable and professional partner for web and mobile project development. With oneBlade, you will have access to a team of highly qualified senior developers specialized in various technologies, ready to support you at every stage of the project. Discover the benefits of collaborating with oneBlade and why choosing quality always pays off.",
+    "NOTE": "Note: The table below is an example and the amounts should be taken as a reference.",
+    "TABLE": {
+      "HEADER": {
+        "ASPECT": "Aspect",
+        "FREELANCE": "Low-Cost Freelance (€150/day)",
+        "ONEBLADE": "Senior oneBlade (€380/day)",
+        "ADVANTAGE": "oneBlade Advantage"
+      },
+      "ROWS": {
+        "DAILY_RATE": {
+          "ASPECT": "Daily rate",
+          "FREELANCE": "€150",
+          "ONEBLADE": "€380",
+          "ADVANTAGE": "-"
+        },
+        "TIME_COMPLEX_PROJECT": {
+          "ASPECT": "Average time to complete a complex project",
+          "FREELANCE": "120 days",
+          "ONEBLADE": "80 days",
+          "ADVANTAGE": "40 days less"
+        },
+        "CODE_QUALITY": {
+          "ASPECT": "Code quality",
+          "FREELANCE": "Low, code with many patches",
+          "ONEBLADE": "High, scalable and secure code",
+          "ADVANTAGE": "Better quality and lower risk"
+        },
+        "POST_RELEASE_COST": {
+          "ASPECT": "Cost of post-release fixes and bugs",
+          "FREELANCE": "€10,000 in fixes and debugging",
+          "ONEBLADE": "€2,000 for potential optimizations",
+          "ADVANTAGE": "€8,000 savings on fixes"
+        },
+        "RELIABILITY": {
+          "ASPECT": "Reliability and meeting deadlines",
+          "FREELANCE": "High probability of delays",
+          "ONEBLADE": "Guaranteed punctuality",
+          "ADVANTAGE": "Time savings and less stress"
+        },
+        "POST_RELEASE_SUPPORT": {
+          "ASPECT": "Post-release support",
+          "FREELANCE": "Absent or extra charge",
+          "ONEBLADE": "Included in the price",
+          "ADVANTAGE": "Continuous support without additional costs"
+        }
+      }
+    }
   }
 }

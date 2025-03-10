@@ -157,7 +157,6 @@
         "NO_DATES_MESSAGE": "Programación del calendario en curso. Escribe para obtener más detalles."
     },
     "ACADEMY_ONEBLADE": {
-    "ACADEMY_ONEBLADE": {
         "TITLE": "Encuentra tu camino, estamos a tu lado.",
         "INTRO": "Cada viaje comienza con una elección: descubrir, aprender, ponerse a prueba. Nuestros cursos están diseñados para aquellos que realmente quieren comprender este mundo, para aquellos que están impulsados por la curiosidad y el deseo de adquirir habilidades concretas.",
         "BELIEF": "Creemos que el conocimiento y la pasión son más importantes que cualquier certificación. Las certificaciones pueden ser un valor añadido, pero lo que realmente importa es el aprendizaje real, la práctica y la comprensión de las metodologías.",
@@ -283,5 +282,57 @@
         "EXPLANATION_STEP_2": "Consulta la lista de talentos disponibles y elige el que mejor se adapte a tus necesidades. Cada talento tiene una breve descripción de sus <strong>principales habilidades</strong>, del <strong>nivel de experiencia</strong> y del <strong>tipo de servicios ofrecidos</strong>. Selecciona al profesional que consideres más adecuado para tu proyecto.",
         "EXPLANATION_STEP_3": "Después de elegir el talento adecuado, ingresa tus datos y los detalles de la solicitud en el formulario de contacto. Especifica tus necesidades, el tipo de <strong>colaboración deseada</strong> y cualquier otra información útil para recibir una respuesta rápida y personalizada.",
         "EXPLANATION_STEP_4": "Gracias por completar el proceso. Nos pondremos en contacto contigo pronto para más detalles."
+    },
+    "WHY_ONEBLADE": {
+        "TITLE": "Por qué elegir oneBlade",
+        "SLOGAN": "El costo es relativo, el valor es absoluto.",
+        "INTRO": "oneBlade es la solución ideal para quienes buscan un socio confiable y profesional para el desarrollo de proyectos web y móviles. Con oneBlade, tendrás acceso a un equipo de desarrolladores senior altamente calificados y especializados en diversas tecnologías, listos para apoyarte en cada etapa del proyecto. Descubre los beneficios de colaborar con oneBlade y por qué elegir calidad siempre vale la pena.",
+        "NOTE": "Nota: La tabla a continuación es un ejemplo y los montos deben tomarse como referencia.",
+        "TABLE": {
+            "HEADER": {
+                "ASPECT": "Aspecto",
+                "FREELANCE": "Freelance de bajo costo (€150/día)",
+                "ONEBLADE": "Senior oneBlade (€380/día)",
+                "ADVANTAGE": "Ventaja de oneBlade"
+            },
+            "ROWS": {
+                "DAILY_RATE": {
+                    "ASPECT": "Tarifa diaria",
+                    "FREELANCE": "€150",
+                    "ONEBLADE": "€380",
+                    "ADVANTAGE": "-"
+                },
+                "TIME_COMPLEX_PROJECT": {
+                    "ASPECT": "Tiempo promedio para completar un proyecto complejo",
+                    "FREELANCE": "120 días",
+                    "ONEBLADE": "80 días",
+                    "ADVANTAGE": "40 días menos"
+                },
+                "CODE_QUALITY": {
+                    "ASPECT": "Calidad del código",
+                    "FREELANCE": "Baja, código con muchos parches",
+                    "ONEBLADE": "Alta, código escalable y seguro",
+                    "ADVANTAGE": "Mejor calidad y menor riesgo"
+                },
+                "POST_RELEASE_COST": {
+                    "ASPECT": "Costo de correcciones y errores post-lanzamiento",
+                    "FREELANCE": "€10,000 en correcciones y depuración",
+                    "ONEBLADE": "€2,000 para posibles optimizaciones",
+                    "ADVANTAGE": "Ahorro de €8,000 en correcciones"
+                },
+                "RELIABILITY": {
+                    "ASPECT": "Fiabilidad y cumplimiento de plazos",
+                    "FREELANCE": "Alta probabilidad de retrasos",
+                    "ONEBLADE": "Puntualidad garantizada",
+                    "ADVANTAGE": "Ahorro de tiempo y menos estrés"
+                },
+                "POST_RELEASE_SUPPORT": {
+                    "ASPECT": "Soporte post-lanzamiento",
+                    "FREELANCE": "Ausente o con cargo extra",
+                    "ONEBLADE": "Incluido en el precio",
+                    "ADVANTAGE": "Soporte continuo sin costos adicionales"
+                }
+            }
+        }
     }
 }
