@@ -9,6 +9,8 @@ function extractMeta(filePath) {
     const titleMatch = content.match(/<h1>(.*?)<\/h1>/);
     const descriptionMatch = content.match(/<p>(.*?)<\/p>/);
 
+    console.log(`Extracted meta from ${filePath}: title="${titleMatch ? titleMatch[1] : 'Default Title'}", description="${descriptionMatch ? descriptionMatch[1] : 'Default Description'}"`);
+
     return {
         title: titleMatch ? titleMatch[1] : 'Default Title',
         description: descriptionMatch ? descriptionMatch[1] : 'Default Description'
@@ -24,6 +26,7 @@ function updateIndexHtml(metaTags) {
 
     indexContent = indexContent.replace(/<!-- Meta Tags Start -->[\s\S]*<!-- Meta Tags End -->/, `<!-- Meta Tags Start -->${metaTagString}<!-- Meta Tags End -->`);
     fs.writeFileSync(indexPath, indexContent, 'utf-8');
+    console.log('index.html updated with new meta tags.');
 }
 
 function generateMetaTags() {
