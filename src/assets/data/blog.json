@@ -63,6 +63,24 @@
                         "JAvascript"
                     ],
                     "image": "assets/BodyRental.jpg"
+                },
+                {
+                    "code": "tech-004",
+                    "title": "Working in Agile Mode: Best Practices and the Role of the Scrum Master",
+                    "contentPaths": {
+                        "it": "assets/Blog/Sviluppo/Blg04_it.html",
+                        "en": "assets/Blog/Sviluppo/Blg04_en.html",
+                        "es": "assets/Blog/Sviluppo/Blg04_es.html"
+                    },
+                    "creationDate": "2023-10-01T00:00:00Z",
+                    "authorCode": "JD01",
+                    "description": "",
+                    "readingTime": 5,
+                    "tags": [
+                        "Angular",
+                        "JAvascript"
+                    ],
+                    "image": "assets/BodyRental.jpg"
                 }
             ]
         }

@@ -7,7 +7,7 @@
             <div *ngIf="isLoading" class="text-center">
                 <p>Caricamento in corso...</p>
             </div>
-            <div *ngIf="!isLoading" class="row">
+            <div *ngIf="!isLoading" class="row mt-5">
                 <div *ngFor="let article of paginatedArticles" class="col-md-4 mb-4">
                     <div class="card h-100">
                         <img [src]="article.image" class="card-img-top" alt="{{ article.title }}">
