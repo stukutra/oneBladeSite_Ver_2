@@ -16,3 +16,4 @@ ${urls.map(url => `
 
 fs.writeFileSync(path.join(__dirname, 'sitemap.xml'), sitemap);
 console.log('Sitemap generated successfully.');
+console.log('Sitemap generated successfully.');
