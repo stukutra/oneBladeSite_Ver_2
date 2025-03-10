@@ -55,12 +55,14 @@
     }
 
     .value-badge {
-        background-color: $primary-color;
-        color: $font-color-white;
-        padding: 0.25rem 0.5rem;
-        font-size: 12px;
+        background-color: transparent;
+        color: $primary-color;
+        padding: 0.5rem 1rem; // Make the badge slightly larger
+        font-size: 14px; // Increase font size
         margin-top: 5px;
         display: inline-block;
+        border-radius: 8px;
+        border: 2px solid $primary-color; // Add border with primary color
     }
 
     .investment {

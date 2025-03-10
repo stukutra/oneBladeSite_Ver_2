@@ -68,7 +68,9 @@
             <div *ngFor="let talent of selectedCategory?.talents" class="col-md-4 mb-3 d-flex">
                 <div class="talent-box p-4" style="text-align: left">
                     <h3>{{ talent.role | translate }}</h3>
-                    <span class="value-badge">Senior verificato</span>
+                    <span class="value-badge">
+                        <i class="bi bi-award"></i> Senior verificato
+                    </span>
                     <p>
                         <strong><i class="bi bi-file-earmark-text"></i>
                             {{ "TALENT_LIST.MIN_CONTRACT" | translate }}:</strong>
@@ -147,17 +149,6 @@
                         <i class="bi" [ngClass]="talent.expandedLanguages ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
                     </button>
 
-                    <p class="price">
-                        <strong><i class="bi bi-currency-euro"></i>
-                            {{ "TALENT_LIST.PRICE_PER_DAY" | translate }}:</strong><br />
-                        <span class="price-value">
-                            <span *ngIf="talent.selectedRateIndex === 1">{{ talent.dailyRate["1_month"] }} 1 mese</span>
-                            <span *ngIf="talent.selectedRateIndex === 2">{{ talent.dailyRate["3_months"] }} 3
-                                mesi</span>
-                            <span *ngIf="talent.selectedRateIndex === 3">{{ talent.dailyRate["6_months"] }} da 6
-                                mesi</span>
-                        </span>
-                    </p>
                     <p class="investment">
                         Investimento per un software scalabile e sicuro: 
                         <span *ngIf="talent.selectedRateIndex === 1">{{ talent.dailyRate["1_month"] }}/giorno</span>
@@ -184,7 +175,9 @@
             <div class="col-md-6 mb-3">
                 <div class="talent-box p-4" style="text-align: left">
                     <h3>{{ selectedTalent.role | translate }}</h3>
-                    <span class="value-badge">Senior verificato</span>
+                    <span class="value-badge">
+                        <i class="bi bi-award"></i> Senior verificato
+                    </span>
                     <p>
                         <strong><i class="bi bi-file-earmark-text"></i>
                             {{ "TALENT_LIST.MIN_CONTRACT" | translate }}:</strong>
@@ -259,18 +252,6 @@
                         <strong><i class="bi bi-geo-alt"></i>
                             {{ "TALENT_LIST.WORK_TYPE" | translate }}:</strong>
                         {{ selectedTalent.workType }}
-                    </p>
-                    <p class="price">
-                        <strong>
-                            {{ "TALENT_LIST.PRICE_PER_DAY" | translate }}:</strong><br />
-                        <span class="price-value">
-                            <span *ngIf="selectedTalent.selectedRateIndex === 1">{{ selectedTalent.dailyRate["1_month"]
-                                }} 1 mese</span>
-                            <span *ngIf="selectedTalent.selectedRateIndex === 2">{{ selectedTalent.dailyRate["3_months"]
-                                }} 3 mesi</span>
-                            <span *ngIf="selectedTalent.selectedRateIndex === 3">{{ selectedTalent.dailyRate["6_months"]
-                                }} da 6 mesi</span>
-                        </span>
                     </p>
                     <p class="investment">
                         Investimento per un software scalabile e sicuro: 
