@@ -3,8 +3,6 @@ header('Content-Type: application/json');
 header("Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With");
 header("Access-Control-Allow-Origin: *"); // Aggiungi questa riga per consentire esperimenti temporanei
 
-
-
 // Impostazioni email
 $to = "info@oneblade.it";
 $subject = "Invio dati per richiesta di programmatori o figure professionali";
@@ -60,8 +58,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers .= "Reply-To: " . $email . "\r\n";
     $headers .= "Content-Type: text/plain; charset=ISO-8859-1\r\n";
 
-    // Invia email
+    // Invia email principale
     if (mail($to, $subject, $message, $headers)) {
+        // Invia email di cortesia all'utente
+        $courtesy_subject = "Grazie per averci contattato";
+        $courtesy_message = "Gentile $name,\n\n";
+        $courtesy_message .= "Grazie per averci contattato. Ti ricontatteremo a breve.\n\n";
+        $courtesy_message .= "Distinti saluti,\n";
+        $courtesy_message .= "oneBlade\n\n";
+        $courtesy_message .= "Riepilogo dei dati inviati:\n";
+        $courtesy_message .= $message;
+
+        $courtesy_headers = "From: info@oneblade.it\r\n";
+        $courtesy_headers .= "Reply-To: info@oneblade.it\r\n";
+        $courtesy_headers .= "Content-Type: text/plain; charset=ISO-8859-1\r\n";
+
+        mail($email, $courtesy_subject, $courtesy_message, $courtesy_headers);
+
         echo json_encode(["status" => "success", "message" => "Email inviata con successo!"]);
     } else {
         echo json_encode(["status" => "error", "message" => "Errore nell'invio dell'email."]);
