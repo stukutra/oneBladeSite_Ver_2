@@ -40,10 +40,15 @@ export class ImageCarouselComponent implements OnInit {
     this.coursesService.getCoursesActive().subscribe((data: any) => {
       data.forEach((category: any) => {
         category.courses.forEach((course: any) => {
+          let subtitle = course.nature;
+          if (subtitle.length > 60) {
+            const index = subtitle.lastIndexOf(' ', 60);
+            subtitle = subtitle.substring(0, index) + '<br>' + subtitle.substring(index + 1);
+          }
           this.slides.push({
             title: "Corso di " + course.title,
-            subtitle: course.nature,
-            image: './assets/slide/Slide_1.jpg', // Use a default image or course-specific image if available
+            subtitle: subtitle,
+            image: './assets/slide/Academy3_OneBlade.jpg',
             alt: `Description of ${course.title}`,
             link: `AcademyDetails/${course.idCourse}`
           });

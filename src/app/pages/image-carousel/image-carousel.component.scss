@@ -25,7 +25,7 @@
       height: auto;
       object-fit: cover;
       position: relative;
-      min-height: 330px;
+      min-height: 360px; // Increased by 30px
     }
 
     .carousel-caption-overlay {
@@ -44,6 +44,7 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); // Add text shadow
       }
 
       p.carousel-subtitle {
@@ -51,6 +52,7 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); // Add text shadow
       }
     }
   }
@@ -106,7 +108,7 @@
   }
 
   .carousel-item img {
-    max-height: 70vh;
+    max-height: 73vh; // Increased by 3vh
   }
 
   .carousel-caption-overlay {
@@ -126,7 +128,7 @@
   }
 
   .carousel-item img {
-    max-height: 65vh;
+    max-height: 68vh; // Increased by 3vh
   }
 
   .carousel-caption-overlay {
