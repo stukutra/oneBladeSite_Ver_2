@@ -31,6 +31,8 @@ export class ContactFormAziendaComponent implements OnInit, OnChanges {
   successMessage: string | null = null;
   errorMessage: string | null = null;
   isModalVisible: boolean = false;
+  isContactFormAzienda: boolean = true;
+  step: number = 1;
 
   constructor(private http: HttpClient, private translate: TranslateService, private talentService: TalentService) { }
 
@@ -83,6 +85,11 @@ export class ContactFormAziendaComponent implements OnInit, OnChanges {
           this.errorMessage = null;
           this.fileError = null;  // Cancella il messaggio di errore del file
           this.resetForm(form);  // Resetta il form
+          this.step = 4;  // Passa allo step 4
+          if (this.isContactFormAzienda && this.step !== 4) {
+            // Prevent the success modal from showing
+            return;
+          }
           this.showModal('successModal');  // Mostra la modale di successo
           this.emailSent.emit(true); // Emetti l'evento di successo
         } else {
