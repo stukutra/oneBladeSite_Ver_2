@@ -153,12 +153,12 @@ a {
 
 @media (max-width: 768px) {
     .breadcrumb .breadcrumb-link {
-        max-width: 100px; // Truncate title on smaller devices
+        max-width: 100px;
     }
 }
 
 @media (min-width: 769px) {
     .breadcrumb .breadcrumb-link {
-        max-width: none; // Display full title on desktop
+        max-width: none;
     }
 }
