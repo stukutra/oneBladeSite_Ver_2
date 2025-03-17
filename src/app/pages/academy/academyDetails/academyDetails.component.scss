@@ -31,6 +31,31 @@
     }
 }
 
+/* Breadcrumb navigation styles */
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 1rem;
+
+    .breadcrumb-item+.breadcrumb-item::before {
+        content: ">";
+        color: var.$primary-color;
+    }
+
+    .breadcrumb-item a {
+        color: var.$primary-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .breadcrumb-item.active {
+        color: var.$secondary-color;
+    }
+}
+
 /* Sezione corsi */
 .course-section {
     .category {

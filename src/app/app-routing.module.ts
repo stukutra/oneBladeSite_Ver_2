@@ -23,7 +23,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent, data: { animation: 'Home' } },
   { path: 'home', component: HomeComponent },
   { path: 'questionario', component: QuestionnaireComponent },
-  { path: 'accademy', component: AcademyonebladeComponent },
+  { path: 'academy', component: AcademyonebladeComponent },
   { path: 'AcademyDetails/:id', component: AcademyDetailsComponent },
   { path: 'guideAccademy', component: GuideaccademyComponent },
   { path: 'guideAccademy/:title', component: GuideAccademyDetailsComponent },
