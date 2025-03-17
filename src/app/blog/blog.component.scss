@@ -1,27 +1,27 @@
-@import '../style/_variabiles.scss';
+@use '../style/variabiles' as var;
 
 .blog-container {
     display: flex;
     justify-content: space-between;
-    background-color: $background-light;
-    color: $text-dark;
+    background-color: var.$background-light;
+    color: var.$text-dark;
 }
 
 .main-article {
     flex: 3;
     margin-right: 20px;
-    padding: $padding-box;
-    box-shadow: $box-shadow;
-    border-radius: $border-radius;
-    background-color: $background-color_2;
+    padding: var.$padding-box;
+    box-shadow: var.$box-shadow;
+    border-radius: var.$border-radius;
+    background-color: var.$background-color_2;
 }
 
 .sidebar {
     flex: 1;
-    padding: $padding-box;
-    box-shadow: $box-shadow;
-    border-radius: $border-radius;
-    background-color: $background-color_2;
+    padding: var.$padding-box;
+    box-shadow: var.$box-shadow;
+    border-radius: var.$border-radius;
+    background-color: var.$background-color_2;
 }
 
 .related-articles ul {
@@ -31,17 +31,17 @@
 
 .related-articles li {
     cursor: pointer;
-    color: $primary-color;
+    color: var.$primary-color;
     text-decoration: underline;
 }
 
 .card {
-    box-shadow: $box-shadow;
-    border-radius: $border-radius;
+    box-shadow: var.$box-shadow;
+    border-radius: var.$border-radius;
 }
 
 .card-title {
-    color: $primary-color;
+    color: var.$primary-color;
     font-size: 1.5em;
     margin-bottom: 15px;
 }
@@ -52,7 +52,7 @@
 
 .card-text {
     font-size: 1em;
-    color: $text-color-dark;
+    color: var.$text-color-dark;
     margin-bottom: 15px;
 }
 
@@ -93,12 +93,12 @@
     cursor: pointer;
 
     &:hover {
-        background-color: $hover-color;
+        background-color: var.$hover-color;
     }
 }
 
 .badge {
-    font-size: $font-size-xs;
+    font-size: var.$font-size-xs;
 }
 
 @media (max-width: 768px) {
@@ -112,12 +112,12 @@
 
 .list-inline-item {
     font-size: 0.8em;
-    color: $primary-color;
+    color: var.$primary-color;
     margin-right: 10px;
 }
 
 a {
-    color: $primary-color;
+    color: var.$primary-color;
     text-decoration: none;
 
     &:hover {
@@ -125,51 +125,40 @@ a {
     }
 }
 
+/* Breadcrumb navigation styles */
 .breadcrumb {
-  background-color: transparent;
-  padding: 0;
-  margin-bottom: 1rem;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap; // Add this line to make breadcrumb responsive
-  font-size: 0.875rem; // Make the breadcrumb more compact
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 1rem;
 
-  .breadcrumb-item {
-    display: inline;
-
-    & + .breadcrumb-item::before {
-      content: ">";
-      padding: 0 0.5rem;
-      color: $text-color-dark;
+    .breadcrumb-item+.breadcrumb-item::before {
+        content: ">";
+        color: var.$primary-color;
     }
 
-    &.active {
-      color: $text-color-dark;
+    .breadcrumb-item a {
+        color: var.$primary-color;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
-    .breadcrumb-link {
-      color: $primary-color;
-      text-decoration: none;
-      cursor: pointer;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-
-      &:hover {
-        text-decoration: underline;
-      }
+    .breadcrumb-item.active {
+        color: var.$secondary-color;
     }
-  }
 }
 
 @media (max-width: 768px) {
-  .breadcrumb .breadcrumb-link {
-    max-width: 100px; // Truncate title on smaller devices
-  }
+    .breadcrumb .breadcrumb-link {
+        max-width: 100px; // Truncate title on smaller devices
+    }
 }
 
 @media (min-width: 769px) {
-  .breadcrumb .breadcrumb-link {
-    max-width: none; // Display full title on desktop
-  }
+    .breadcrumb .breadcrumb-link {
+        max-width: none; // Display full title on desktop
+    }
 }
