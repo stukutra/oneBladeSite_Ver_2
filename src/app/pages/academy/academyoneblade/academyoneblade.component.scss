@@ -1,4 +1,4 @@
-@import '../../../style/variabiles';
+@use '../../../style/variabiles' as var;
 
 /* Immagini */
 img {
@@ -16,30 +16,30 @@ img {
 }
 
 .textBannerAccademy {
-    color: $text-color;
+    color: var.$text-color;
 }
 
 /* Box generico */
 .box {
-    background-color: $background-color;
-    color: $text-color;
-    border-radius: $border-radius;
+    background-color: var.$background-color;
+    color: var.$text-color;
+    border-radius: var.$border-radius;
     text-align: center;
-    padding: $padding-base;
+    padding: var.$padding-base;
     min-height: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: $box-shadow;
-    transition: transform $transition-speed, box-shadow $transition-speed;
+    box-shadow: var.$box-shadow;
+    transition: transform var.$transition-speed, box-shadow var.$transition-speed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
     &:hover {
         transform: translateY(-0.3125rem);
-        box-shadow: 0 0.5rem 1rem $hover-color;
+        box-shadow: 0 0.5rem 1rem var.$hover-color;
     }
 
     h2 {
@@ -57,17 +57,17 @@ img {
         margin-bottom: 4rem;
 
         .category-title {
-            font-size: $font-size-lg;
+            font-size: var.$font-size-lg;
             font-weight: bold;
-            margin-bottom: $gap;
+            margin-bottom: var.$gap;
             text-align: left;
-            color: $primary-color;
+            color: var.$primary-color;
         }
 
         .course-list {
             display: flex;
             justify-content: left;
-            gap: $gap;
+            gap: var.$gap;
             flex-wrap: wrap;
         }
 
@@ -144,5 +144,30 @@ img {
 
     .category-title {
         font-size: 1.2rem;
+    }
+}
+
+/* Breadcrumb navigation styles */
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 1rem;
+
+    .breadcrumb-item+.breadcrumb-item::before {
+        content: ">";
+        color: var.$primary-color;
+    }
+
+    .breadcrumb-item a {
+        color: var.$primary-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .breadcrumb-item.active {
+        color: var.$secondary-color;
     }
 }
