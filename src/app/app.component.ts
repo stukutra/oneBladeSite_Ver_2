@@ -1,4 +1,4 @@
-import { AfterViewInit, ChangeDetectorRef, Component, NgZone, OnInit } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 import { animate, style, transition, trigger } from '@angular/animations';
 
 import { LoadingService } from './components/loading.service';
@@ -21,27 +21,21 @@ import { RouterOutlet } from '@angular/router';
     ])
   ]
 })
-export class AppComponent implements AfterViewInit, OnInit {
+export class AppComponent implements AfterViewInit {
   title = 'oneBlade';
 
-  constructor(public loadingService: LoadingService, private cdr: ChangeDetectorRef, private ngZone: NgZone) { }
+  constructor(public loadingService: LoadingService) {}
 
   ngAfterViewInit() {
     this.showLoadingUntilPageLoad();
-    this.cdr.detectChanges();
-  }
-
-  ngOnInit(): void {
-    console.log("Benvenuto! Sappiamo che stai dando un'occhiata al nostro codice. Buona esplorazione!");
   }
 
   private showLoadingUntilPageLoad() {
     this.loadingService.show();
     window.addEventListener('load', () => {
-      this.ngZone.run(() => {
+      setTimeout(() => {
         this.loadingService.hide();
-        this.cdr.detectChanges();
-      });
+      }, 500); // Aggiungi un piccolo ritardo per garantire che il caricamento sia visibile
     });
   }
 
@@ -52,9 +46,7 @@ export class AppComponent implements AfterViewInit, OnInit {
   // Esempio di utilizzo del servizio di caricamento
   someMethod() {
     this.loadingService.show();
-    this.ngZone.run(() => {
-      this.loadingService.hide();
-      this.cdr.detectChanges();
-    });
+    // ...esegui qualche operazione...
+    this.loadingService.hide();
   }
 }

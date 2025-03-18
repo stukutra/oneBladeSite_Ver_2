@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import versionData from '../../../assets/data/version.json'; // Importa il default export
 
 @Component({
   selector: 'app-footer',
@@ -10,12 +9,10 @@ import versionData from '../../../assets/data/version.json'; // Importa il defau
 
 export class FooterComponent {
   public currentYear: number;
-  public isopenPrivacyPolicyModalModalVisible: boolean = false;
-  public version: string; // Aggiungi la proprietà versione
+  public isopenPrivacyPolicyModalModalVisible: boolean=false;
 
   constructor(private router: Router) {
     this.currentYear = new Date().getFullYear(); // Ottieni l'anno corrente dinamicamente
-    this.version = versionData.version; // Inizializza la versione
   }
 
   public openPrivacyPolicyModal() {
