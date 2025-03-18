@@ -1,4 +1,4 @@
-import { AfterViewInit, ChangeDetectorRef, Component, NgZone } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, NgZone, OnInit } from '@angular/core';
 import { animate, style, transition, trigger } from '@angular/animations';
 
 import { LoadingService } from './components/loading.service';
@@ -21,7 +21,7 @@ import { RouterOutlet } from '@angular/router';
     ])
   ]
 })
-export class AppComponent implements AfterViewInit {
+export class AppComponent implements AfterViewInit, OnInit {
   title = 'oneBlade';
 
   constructor(public loadingService: LoadingService, private cdr: ChangeDetectorRef, private ngZone: NgZone) { }
@@ -29,6 +29,10 @@ export class AppComponent implements AfterViewInit {
   ngAfterViewInit() {
     this.showLoadingUntilPageLoad();
     this.cdr.detectChanges();
+  }
+
+  ngOnInit(): void {
+    console.log("Benvenuto! Sappiamo che stai dando un'occhiata al nostro codice. Buona esplorazione!");
   }
 
   private showLoadingUntilPageLoad() {
