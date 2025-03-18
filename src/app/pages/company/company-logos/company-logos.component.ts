@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-company-logos',
@@ -36,10 +36,16 @@ export class CompanyLogosComponent implements OnInit {
   logosPerSlide: number = 4;
   currentSlideIndex: number = 0;
   slides: any[][] = [];
+  slideInterval: number = 5000; // Time in milliseconds between slides
+  intervalId: any;
+
+  constructor(private renderer: Renderer2) { }
 
   ngOnInit(): void {
     this.setLogosPerSlide();
     this.slides = this.getSlides();
+    this.setActiveSlide(0); // Set the first slide as active initially
+    this.startSlideShow();
   }
 
   getSlides(): any[][] {
@@ -51,11 +57,11 @@ export class CompanyLogosComponent implements OnInit {
   }
 
   nextSlide() {
-    this.currentSlideIndex = (this.currentSlideIndex + 1) % this.slides.length;
+    this.setActiveSlide((this.currentSlideIndex + 1) % this.slides.length);
   }
 
   prevSlide() {
-    this.currentSlideIndex = (this.currentSlideIndex - 1 + this.slides.length) % this.slides.length;
+    this.setActiveSlide((this.currentSlideIndex - 1 + this.slides.length) % this.slides.length);
   }
 
   @HostListener('window:resize', ['$event'])
@@ -75,6 +81,51 @@ export class CompanyLogosComponent implements OnInit {
       this.logosPerSlide = 2;
     } else {
       this.logosPerSlide = 1;
+    }
+  }
+
+  private setActiveSlide(index: number) {
+    const carouselItems = document.querySelectorAll('.carousel-item');
+    carouselItems.forEach((item, i) => {
+      if (i === index) {
+        this.renderer.addClass(item, 'active');
+      } else {
+        this.renderer.removeClass(item, 'active');
+      }
+    });
+    this.currentSlideIndex = index;
+    this.resetProgressBar();
+  }
+
+  private startSlideShow() {
+    this.intervalId = setInterval(() => {
+      this.nextSlide();
+    }, this.slideInterval);
+    this.startProgressBar();
+  }
+
+  private startProgressBar() {
+    const progressBar = document.querySelector('.progress-bar');
+    if (progressBar) {
+      this.renderer.setStyle(progressBar, 'transition', `width ${this.slideInterval}ms linear`);
+      this.renderer.setStyle(progressBar, 'width', '100%');
+    }
+  }
+
+  private resetProgressBar() {
+    const progressBar = document.querySelector('.progress-bar');
+    if (progressBar) {
+      this.renderer.setStyle(progressBar, 'transition', 'none');
+      this.renderer.setStyle(progressBar, 'width', '0');
+      setTimeout(() => {
+        this.startProgressBar();
+      }, 50); // Small delay to allow the reset to take effect
+    }
+  }
+
+  ngOnDestroy() {
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
     }
   }
 }

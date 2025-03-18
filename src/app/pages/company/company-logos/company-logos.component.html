@@ -4,19 +4,12 @@
     <div class="carousel-inner">
       <div *ngFor="let slide of slides; let i = index" class="carousel-item" [class.active]="i === currentSlideIndex">
         <div class="logo-item" *ngFor="let logo of slide">
-          <img [src]="logo.src" [alt]="logo.alt" class="d-block w-100" alt="" />
+          <img [src]="logo.src" [alt]="logo.alt ? logo.alt : ''" class="d-block w-100" />
         </div>
       </div>
     </div>
-    <!--
-    <a class="carousel-control-prev" role="button" (click)="prevSlide()">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </a>
-    <a class="carousel-control-next" role="button" (click)="nextSlide()">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </a>
-    -->
+    <div class="progress-bar-container">
+      <div class="progress-bar"></div>
+    </div>
   </div>
 </div>
