@@ -1,20 +1,22 @@
+@use '../../style/_variabiles' as *;
+
 // Variabili
 $footer-bg-gradient-color-1: rgba(79, 107, 243, 0.2); // Blu chiaro con trasparenza
 $footer-bg-gradient-color-2: rgba(62, 60, 207, 0.5); // Blu scuro con trasparenza
 $footer-bg-gradient-color-3: rgba(155, 52, 177, 0.21); // Viola con trasparenza
 $footer-bg-gradient-color-4: rgba(207, 44, 148, 0.76); // Magenta con trasparenza
-$footer-bg-gradient-color-5: #ffffff; // Bianco
+$footer-bg-gradient-color-5: $background-color_2; // Bianco
 $footer-box-shadow-color-1: rgba(247, 247, 247, 0.841); // Ombra leggera bianca
-$footer-box-shadow-color-2: rgba(194, 194, 194, 0.295); // Ombra scura verso l'alto
-$footer-text-color: #dadada; // Colore del testo
+$footer-box-shadow-color-2: $box-shadow-color; // Ombra scura verso l'alto
+$footer-text-color: $text-color; // Colore del testo
 $footer-logo-max-width: 150px; // Larghezza massima del logo
 $footer-margin-bottom: 15px; // Spazio sotto il logo e testo
-$footer-font-size: 16px; // Dimensione del font
-$footer-link-color: #fbfbfb; // Colore dei link
+$footer-font-size: $font-size-base; // Dimensione del font
+$footer-link-color: $text-light; // Colore dei link
 $footer-link-hover-color: rgba(255, 255, 255, 0.8); // Colore dei link al passaggio del mouse
 $footer-link-spacing: 0 15px; // Spazio tra i link
-$footer-link-transition: 0.3s ease; // Transizione per i link
-$footer-linkedin-color: #0077b5; // Colore dell'icona LinkedIn
+$footer-link-transition: $transition-duration ease; // Transizione per i link
+$footer-linkedin-color: $linkedin-color; // Colore dell'icona LinkedIn
 
 // Stili
 .footer-wrapper {
