@@ -7,6 +7,7 @@
           <h5 class="card-title">{{ item.title }}</h5>
           <h6 class="card-subtitle mb-2 text-muted">{{ item.date | italianDate }}</h6>
           <p class="card-text">{{ item.body }}</p>
+          <button class="btn btn-link read-more text-end d-block" (click)="openModal(item.id)">Leggi di più</button>
         </div>
       </div>
     </div>
@@ -17,5 +18,25 @@
         {{ i + 1 }}
       </button>
     </ng-container>
+  </div>
+</div>
+
+<!-- Bootstrap Modal -->
+<div class="modal fade" id="newsModal" tabindex="-1" aria-labelledby="newsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="newsModalLabel">{{ selectedNews?.title }}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="text-muted">{{ selectedNews?.date | italianDate }}</h6>
+        <p>{{ selectedNews?.body }}</p>
+        <a *ngIf="selectedNews?.link" [href]="selectedNews?.link || '#'" target="_blank" class="btn btn-primary">Vai al link</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+      </div>
+    </div>
   </div>
 </div>

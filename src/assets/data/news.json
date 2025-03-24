@@ -1,52 +1,72 @@
 [
     {
+        "id": 1,
         "date": "2023-10-01",
         "title": "News Title 1",
-        "body": "This is the body of the first news item."
+        "body": "This is the body of the first news item.",
+        "link": "https://example.com/news1"
     },
     {
+        "id": 2,
         "date": "2023-09-25",
         "title": "News Title 2",
-        "body": "This is the body of the second news item."
+        "body": "This is the body of the second news item.",
+        "link": "https://example.com/news2"
     },
     {
+        "id": 3,
         "date": "2023-09-20",
         "title": "News Title 3",
-        "body": "This is the body of the third news item."
+        "body": "This is the body of the third news item.",
+        "link": "https://example.com/news3"
     },
     {
+        "id": 4,
         "date": "2023-09-20",
-        "title": "News Title 3",
-        "body": "This is the body of the third news item."
+        "title": "News Title 4",
+        "body": "This is the body of the fourth news item.",
+        "link": "https://example.com/news4"
     },
     {
+        "id": 5,
         "date": "2023-09-20",
-        "title": "News Title 3",
-        "body": "This is the body of the third news item."
+        "title": "News Title 5",
+        "body": "This is the body of the fifth news item.",
+        "link": "https://example.com/news5"
     },
     {
+        "id": 6,
         "date": "2023-09-20",
-        "title": "News Title 3",
-        "body": "This is the body of the third news item."
+        "title": "News Title 6",
+        "body": "This is the body of the sixth news item.",
+        "link": "https://example.com/news6"
     },
     {
+        "id": 7,
         "date": "2023-09-20",
-        "title": "News Title 3",
-        "body": "This is the body of the third news item."
+        "title": "News Title 7",
+        "body": "This is the body of the seventh news item.",
+        "link": "https://example.com/news7"
     },
     {
+        "id": 8,
         "date": "2023-09-20",
-        "title": "News Title 3",
-        "body": "This is the body of the third news item."
+        "title": "News Title 8",
+        "body": "This is the body of the eighth news item.",
+        "link": "https://example.com/news8"
     },
     {
+        "id": 9,
         "date": "2023-09-20",
-        "title": "News Title 3",
-        "body": "This is the body of the third news item."
+        "title": "News Title 9",
+        "body": "This is the body of the ninth news item.",
+        "link": "https://example.com/news9"
     },
     {
+        "id": 10,
         "date": "2023-09-20",
-        "title": "News Title 3",
-        "body": "This is the body of the third news item."
+        "title": "News Title 10",
+        "body": "This is the body of the tenth news item.",
+        "link": "https://example.com/news10"
     }
 ]

@@ -1,5 +1,8 @@
 @use '../style/_variabiles.scss' as *;
 
+// Ensure $font-color is defined in _variabiles.scss or define it here
+$font-color: #333; // Define a fallback font color if not imported
+
 // Removed .news-container and .news-item as they are no longer used
 .pagination {
     display: flex;
@@ -48,9 +51,53 @@
         text-align: left; // Align the title to the left
     }
 
+    a {
+        color: $topbar-color; // Match the link color to the title color
+        text-decoration: none; // Remove underline
+        transition: color $transition-speed;
+
+        &:hover {
+            text-decoration: underline; // Add underline on hover
+        }
+
+        &:visited {
+            color: $topbar-color; // Ensure visited links have the same color
+        }
+    }
+
+    a.read-more {
+        color: $topbar-color; // Match the link color to the title color
+        text-decoration: none; // Remove underline
+        font-weight: bold; // Make the text bold
+        text-align: right; // Align text to the right
+        display: block; // Ensure it behaves as a block element
+        transition: color $transition-speed;
+
+        &:hover {
+            text-decoration: underline; // Add underline on hover
+        }
+
+        &:visited {
+            color: $topbar-color; // Ensure visited links have the same color
+        }
+    }
+
     .card-subtitle {
         font-style: italic; // Display the date in italic
     }
+}
+
+.modal-header {
+    background-color: $topbar-color; // Use the site's topbar color
+    color: $font-color-white; // White text for the header
+}
+
+.modal-footer {
+    border-top: 1px solid $topbar-color; // Match the border color to the topbar
+}
+
+.modal-body {
+    color: $font-color; // Use the site's font color
 }
 
 @media (max-width: 576px) {

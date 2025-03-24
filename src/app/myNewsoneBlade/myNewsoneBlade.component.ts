@@ -1,7 +1,12 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-
 import { News } from '../models/news.model';
 import { NewsService } from '../service/news.service';
+
+declare global {
+  interface Window {
+    bootstrap: any; // Declare bootstrap on the window object
+  }
+}
 
 @Component({
   selector: 'app-myNewsoneBlade',
@@ -12,6 +17,7 @@ export class MyNewsoneBladeComponent implements OnInit {
   news: News[] = [];
   currentPage: number = 1;
   newsPerPage: number = 3; // Default to 3 items per page
+  selectedNews: News | null = null;
 
   constructor(private newsService: NewsService) { }
 
@@ -61,5 +67,20 @@ export class MyNewsoneBladeComponent implements OnInit {
     if (this.currentPage > 1) {
       this.currentPage--;
     }
+  }
+
+  openModal(newsId: number) {
+    this.newsService.getNewsById(newsId).subscribe((news) => {
+      this.selectedNews = news;
+      setTimeout(() => { // Ensure the modal is in the DOM before initializing
+        const modalElement = document.getElementById('newsModal');
+        if (modalElement) {
+          const bootstrapModal = new window.bootstrap.Modal(modalElement); // Use Bootstrap's Modal
+          bootstrapModal.show();
+        } else {
+          console.error('Modal element not found');
+        }
+      });
+    });
   }
 }
