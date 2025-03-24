@@ -100,6 +100,20 @@ $font-color: #333; // Define a fallback font color if not imported
     color: $font-color; // Use the site's font color
 }
 
+.modal-dialog {
+    display: flex;
+    align-items: center; // Vertically center the modal
+    justify-content: center; // Horizontally center the modal
+    min-height: 100vh; // Ensure the modal takes the full height of the viewport
+    margin: 0 auto; // Center the modal horizontally
+}
+
+.modal-content {
+    margin: auto; // Center the modal content
+    max-width: 90%; // Optional: Limit the modal width on smaller screens
+    box-shadow: $box-shadow; // Add shadow for better visibility
+}
+
 @media (max-width: 576px) {
     .pagination {
         flex-wrap: wrap; // Allow pagination buttons to wrap on smaller screens
