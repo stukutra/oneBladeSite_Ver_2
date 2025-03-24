@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+
 import { News } from '../models/news.model';
 import { NewsService } from '../service/news.service';
 
@@ -53,12 +54,21 @@ export class MyNewsoneBladeComponent implements OnInit {
     return Array(Math.ceil(this.news.length / this.newsPerPage)).fill(0).map((_, i) => i + 1);
   }
 
+  get visiblePages(): number[] {
+    const maxVisible = 3; // Show 3 pages at a time
+    const total = this.totalPages.length;
+    const start = Math.max(1, this.currentPage - Math.floor(maxVisible / 2));
+    const end = Math.min(total, start + maxVisible - 1);
+
+    return Array.from({ length: end - start + 1 }, (_, i) => start + i);
+  }
+
   goToPage(page: number) {
     this.currentPage = page;
   }
 
   nextPage() {
-    if (this.currentPage * this.newsPerPage < this.news.length) {
+    if (this.currentPage < this.totalPages.length) {
       this.currentPage++;
     }
   }

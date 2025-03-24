@@ -34,6 +34,12 @@ $font-color: #333; // Define a fallback font color if not imported
             border-color: $topbar-color; // Border matches background
         }
     }
+
+    @media (max-width: 576px) {
+        button {
+            min-width: 2.5rem; // Ensure buttons are large enough for touch
+        }
+    }
 }
 
 .card {
@@ -142,21 +148,21 @@ $font-color: #333; // Define a fallback font color if not imported
         gap: $gap-size; // Add spacing between buttons
     }
 
-    .row > [class*="col-"] {
+    .row>[class*="col-"] {
         flex: 0 0 100%; // Full width for small screens
         max-width: 100%;
     }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
-    .row > [class*="col-"] {
+    .row>[class*="col-"] {
         flex: 0 0 50%; // Half width for medium screens
         max-width: 50%;
     }
 }
 
 @media (min-width: 769px) {
-    .row > [class*="col-"] {
+    .row>[class*="col-"] {
         flex: 0 0 33.33%; // One-third width for large screens
         max-width: 33.33%;
     }

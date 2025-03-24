@@ -15,11 +15,17 @@
     </div>
   </div>
   <div class="d-flex justify-content-center mt-3">
-    <ng-container *ngFor="let page of totalPages; let i = index">
-      <button class="btn mx-1" [class.active]="currentPage === i + 1" (click)="goToPage(i + 1)">
-        {{ i + 1 }}
+    <button class="btn mx-1" [disabled]="currentPage === 1" (click)="prevPage()">
+      &laquo;
+    </button>
+    <ng-container *ngFor="let page of visiblePages">
+      <button class="btn mx-1" [class.active]="currentPage === page" (click)="goToPage(page)">
+        {{ page }}
       </button>
     </ng-container>
+    <button class="btn mx-1" [disabled]="currentPage === totalPages.length" (click)="nextPage()">
+      &raquo;
+    </button>
   </div>
 </div>
 
