@@ -87,6 +87,22 @@ $font-color: #333; // Define a fallback font color if not imported
     }
 }
 
+.read-more-link {
+    color: $topbar-color; // Match the link color to the site's theme
+    text-decoration: none; // Remove underline
+    font-weight: bold; // Make the text bold
+    cursor: pointer; // Show pointer cursor on hover
+    transition: color $transition-speed;
+
+    &:hover {
+        text-decoration: underline; // Add underline on hover
+    }
+
+    &:visited {
+        color: $topbar-color; // Ensure visited links have the same color
+    }
+}
+
 .modal-header {
     background-color: $topbar-color; // Use the site's topbar color
     color: $font-color-white; // White text for the header
@@ -98,6 +114,12 @@ $font-color: #333; // Define a fallback font color if not imported
 
 .modal-body {
     color: $font-color; // Use the site's font color
+
+    a.btn-primary {
+        display: inline-block; // Ensure the button behaves as an inline-block element
+        text-align: left; // Align the button to the left
+        margin: 0; // Remove any extra margin
+    }
 }
 
 .modal-dialog {

@@ -32,7 +32,7 @@
       <div class="modal-body">
         <h6 class="text-muted">{{ selectedNews?.date | italianDate }}</h6>
         <p>{{ selectedNews?.body }}</p>
-        <a *ngIf="selectedNews?.link" [href]="selectedNews?.link || '#'" target="_blank" class="btn btn-primary">Vai al link</a>
+        <a *ngIf="selectedNews?.link" [href]="selectedNews?.link || '#'" target="_blank" class="read-more-link">Vai al link</a>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
