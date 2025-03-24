@@ -7,7 +7,9 @@
           <h5 class="card-title">{{ item.title }}</h5>
           <h6 class="card-subtitle mb-2 text-muted">{{ item.date | italianDate }}</h6>
           <p class="card-text">{{ item.body }}</p>
-          <button class="btn btn-link read-more text-end d-block" (click)="openModal(item.id)">Leggi di più</button>
+          <span class="read-more-link text-end d-block" (click)="openModal(item.id)">
+            <i class="bi bi-newspaper me-1"></i> Leggi di più
+          </span>
         </div>
       </div>
     </div>
@@ -32,7 +34,6 @@
       <div class="modal-body">
         <h6 class="text-muted">{{ selectedNews?.date | italianDate }}</h6>
         <p>{{ selectedNews?.body }}</p>
-        <a *ngIf="selectedNews?.link" [href]="selectedNews?.link || '#'" target="_blank" class="read-more-link">Vai al link</a>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
