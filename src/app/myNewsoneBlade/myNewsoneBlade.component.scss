@@ -35,7 +35,6 @@
 
 .card {
     width: 100%; // Ensure the card takes full width of its column
-    max-width: $card-width; // Optional: Limit the maximum width
     margin: 0 auto; // Center the card horizontally if smaller than column
     box-shadow: $box-shadow; // Add shadow to the news containers
     transition: box-shadow $transition-speed;
@@ -58,6 +57,25 @@
     .pagination {
         flex-wrap: wrap; // Allow pagination buttons to wrap on smaller screens
         gap: $gap-size; // Add spacing between buttons
+    }
+
+    .row > [class*="col-"] {
+        flex: 0 0 100%; // Full width for small screens
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .row > [class*="col-"] {
+        flex: 0 0 50%; // Half width for medium screens
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 769px) {
+    .row > [class*="col-"] {
+        flex: 0 0 33.33%; // One-third width for large screens
+        max-width: 33.33%;
     }
 }
 
