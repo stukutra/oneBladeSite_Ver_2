@@ -3,21 +3,20 @@
 // Removed .news-container and .news-item as they are no longer used
 .pagination {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: $gap;
 
     button {
-        background-color: $apple-background-color; // Apple-style background
-        color: $apple-text-color; // Apple-style text color
-        border: 1px solid $apple-border-color; // Apple-style border
+        background-color: transparent; // Transparent background for inactive pages
+        color: $topbar-color; // Match title color
+        border: 1px solid $topbar-color; // Border matches title color
         padding: $gap-size;
         border-radius: $border-radius;
-        transition: background-color $transition-speed, box-shadow $transition-speed;
+        transition: background-color $transition-speed, color $transition-speed;
 
         &:hover {
-            background-color: $apple-highlight-color; // Apple-style hover background
+            background-color: $topbar-color; // Filled background on hover
             color: $font-color-white; // White text on hover
-            box-shadow: $box-shadow-hover; // Subtle shadow on hover
         }
 
         &:disabled {
@@ -25,20 +24,45 @@
             color: $button-disabled-text-color; // Disabled text color
             cursor: not-allowed;
         }
-    }
 
-    button.active {
-        background-color: $apple-highlight-color; // Highlight active page
-        color: $font-color-white;
-        border-color: $apple-highlight-color;
+        &.active {
+            background-color: $topbar-color; // Filled background for active page
+            color: $font-color-white; // White text for active page
+            border-color: $topbar-color; // Border matches background
+        }
     }
 }
 
 .card {
+    width: 100%; // Ensure the card takes full width of its column
+    max-width: $card-width; // Optional: Limit the maximum width
+    margin: 0 auto; // Center the card horizontally if smaller than column
     box-shadow: $box-shadow; // Add shadow to the news containers
     transition: box-shadow $transition-speed;
 
     &:hover {
         box-shadow: $box-shadow-hover; // Enhance shadow on hover
     }
+
+    .card-title {
+        color: $topbar-color; // Use the site's title color
+        text-align: left; // Align the title to the left
+    }
+
+    .card-subtitle {
+        font-style: italic; // Display the date in italic
+    }
+}
+
+@media (max-width: 576px) {
+    .pagination {
+        flex-wrap: wrap; // Allow pagination buttons to wrap on smaller screens
+        gap: $gap-size; // Add spacing between buttons
+    }
+}
+
+h1 {
+    color: $topbar-color; // Match the site's title color
+    font-size: $font-size-xl; // Use a large font size
+    margin-bottom: $gap; // Add spacing below the title
 }
