@@ -48,6 +48,14 @@ export class TopBarComponent {
   }
 
   toggleDropdown(dropdownId: string): void {
+    // Close all other dropdowns
+    Object.keys(this.isDropdownOpen).forEach(key => {
+      if (key !== dropdownId) {
+        this.isDropdownOpen[key] = false;
+      }
+    });
+
+    // Toggle the current dropdown
     this.isDropdownOpen[dropdownId] = !this.isDropdownOpen[dropdownId];
   }
 
