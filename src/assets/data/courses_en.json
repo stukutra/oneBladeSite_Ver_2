@@ -7,7 +7,7 @@
                     "active": true,
                     "idCourse": "CODBlade08",
                     "title": "Web Fundamentals",
-                    "duration": "40 hours",
+                    "duration": "20 hours",
                     "mode": "Online",
                     "description": {
                         "it": "<p><strong>Scopri come creare pagine web moderne e interattive</strong> partendo dalle basi! Questo corso ti guiderà nell’apprendimento di <strong>HTML, CSS e JavaScript</strong>, i tre pilastri fondamentali del web development. Imparerai a <em>costruire pagine ben strutturate</em> con <strong>HTML</strong>, a <em>renderle esteticamente accattivanti</em> con <strong>CSS</strong> e a <em>renderle dinamiche e interattive</em> grazie a <strong>JavaScript</strong>. Perfetto per chi vuole avvicinarsi alla programmazione web, <strong>sia per hobby che per lavoro</strong>. Alla fine del corso, sarai in grado di <strong>realizzare siti web responsivi e funzionali</strong>, pronti per essere pubblicati online!</p>",
@@ -40,7 +40,7 @@
                     "active": true,
                     "idCourse": "CODBlade03",
                     "title": "Generative AI",
-                    "duration": "40 hours",
+                    "duration": "20 hours",
                     "mode": "Online",
                     "description": {
                         "it": "Comprendere i modelli di AI Generativa, le loro applicazioni aziendali e le implicazioni etiche e di sicurezza.",
@@ -73,7 +73,7 @@
                     "active": true,
                     "idCourse": "CODBlade04",
                     "title": "Cyber Security (CompTIA Security+)",
-                    "duration": "40 hours",
+                    "duration": "20 hours",
                     "mode": "Online",
                     "description": {
                         "it": "Acquisisci le competenze essenziali della sicurezza informatica per proteggere reti e dati da minacce esterne, imparando strategie efficaci di difesa e prevenzione degli attacchi.",
@@ -134,7 +134,7 @@
                     "active": true,
                     "idCourse": "CODBlade02",
                     "title": "Design Thinking, Digital Transformation",
-                    "duration": "9 hours",
+                    "duration": "20 hours",
                     "mode": "Online",
                     "description": {
                         "it": "Scopri i segreti dell’Intelligenza Artificiale e dei sistemi che ti permetteranno di proiettarti direttamente nel futuro",
@@ -167,7 +167,7 @@
                     "active": true,
                     "idCourse": "CODBlade09",
                     "title": "SQL",
-                    "duration": "40 hours",
+                    "duration": "20 hours",
                     "mode": "Online",
                     "description": {
                         "it": "Acquisire competenze nell’uso del linguaggio SQL per gestire, interrogare e manipolare database relazionali in modo efficiente ed efficace.",
@@ -195,7 +195,7 @@
                     "active": true,
                     "idCourse": "CODBlade10",
                     "title": "Data Warehousing",
-                    "duration": "40 hours",
+                    "duration": "20 hours",
                     "mode": "Online",
                     "description": {
                         "it": "Approfondire i concetti di Data Warehousing, dalla progettazione alla gestione, ottimizzazione e sicurezza.",
