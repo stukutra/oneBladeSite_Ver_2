@@ -10,6 +10,7 @@ import { GuideAccademyDetailsComponent } from './pages/guide/guideAcademyDetails
 import { GuideaccademyComponent } from './pages/guide/guideaccademy/guideaccademy.component';
 import { HomeComponent } from './layout/home/home.component';
 import { LoginComponent } from './auth/login/login.component';
+import { MyNewsoneBladeComponent } from './myNewsoneBlade/myNewsoneBlade.component';
 import { NgModule } from '@angular/core';
 import { OutsourcingInfoComponent } from './pages/outsourcing/outsourcingInfo/outsourcingInfo.component';
 import { PrivacyPolicyComponent } from './pages/privacy_policy/privacy_policy.component';
@@ -38,6 +39,7 @@ const routes: Routes = [
   { path: 'blog', component: BlogCategoriesComponent },
   { path: 'blog/:code', component: BlogComponent },
   { path: 'whyoneBlade', component: WhyoneBladeComponent },
+  { path: 'myNews', component: MyNewsoneBladeComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 

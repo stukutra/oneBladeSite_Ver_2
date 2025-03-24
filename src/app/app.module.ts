@@ -37,6 +37,7 @@ import { LoadingComponent } from './components/loading.component';
 import { LoadingService } from './components/loading.service';
 import { LoginComponent } from './auth/login/login.component';
 import { MyInformationComponent } from './pages/myInformation/myInformation.component';
+import { MyNewsoneBladeComponent } from './myNewsoneBlade/myNewsoneBlade.component';
 import { OutsourcingBannerComponent } from './pages/outsourcing/outsourcingBanner/outsourcingBanner.component';
 import { OutsourcingInfoComponent } from './pages/outsourcing/outsourcingInfo/outsourcingInfo.component';
 import { ParallaxComponent } from './pages/parallax/parallax.component';
@@ -99,7 +100,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ItalianDatePipe,
     WhyoneBladeComponent,
     WhyoneBladeBannerComponent,
-    LoadingComponent
+    LoadingComponent,
+    MyNewsoneBladeComponent
   ],
   imports: [
     BrowserModule,

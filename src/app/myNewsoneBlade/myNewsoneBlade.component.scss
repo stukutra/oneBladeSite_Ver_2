@@ -1,0 +1,44 @@
+@use '../style/_variabiles.scss' as *;
+
+// Removed .news-container and .news-item as they are no longer used
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: $gap;
+
+    button {
+        background-color: $apple-background-color; // Apple-style background
+        color: $apple-text-color; // Apple-style text color
+        border: 1px solid $apple-border-color; // Apple-style border
+        padding: $gap-size;
+        border-radius: $border-radius;
+        transition: background-color $transition-speed, box-shadow $transition-speed;
+
+        &:hover {
+            background-color: $apple-highlight-color; // Apple-style hover background
+            color: $font-color-white; // White text on hover
+            box-shadow: $box-shadow-hover; // Subtle shadow on hover
+        }
+
+        &:disabled {
+            background-color: $button-disabled-bg-color; // Disabled background
+            color: $button-disabled-text-color; // Disabled text color
+            cursor: not-allowed;
+        }
+    }
+
+    button.active {
+        background-color: $apple-highlight-color; // Highlight active page
+        color: $font-color-white;
+        border-color: $apple-highlight-color;
+    }
+}
+
+.card {
+    box-shadow: $box-shadow; // Add shadow to the news containers
+    transition: box-shadow $transition-speed;
+
+    &:hover {
+        box-shadow: $box-shadow-hover; // Enhance shadow on hover
+    }
+}
