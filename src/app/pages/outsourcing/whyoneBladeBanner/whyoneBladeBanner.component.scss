@@ -21,6 +21,31 @@
     cursor: pointer;
 }
 
+.boxCustomSoftware {
+    position: relative;
+    text-align: center;
+    min-height: 590px;
+    /* Altezza minima adattabile */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+}
+
 /* Effetto hover */
 .box:hover {
     transform: scale(1.02);
@@ -53,6 +78,20 @@
 
 .Talent {
     background-image: url('../../../../assets/sviluppoSoftwareOneBlade.jpg');
+}
+
+.CustomSoftware {
+    background-image: url('../../../../assets/CustomSoftware/CustomSoftware_oneBlade.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+    }
 }
 
 @keyframes lightReflection {
@@ -94,6 +133,18 @@
     .box p {
         font-size: 1rem;
     }
+
+    .boxCustomSoftware {
+        min-height: 300px;
+        padding: 12px;
+        font-size: 1.2rem;
+    }
+
+    .Talent {
+        min-height: 250px;
+        padding: 12px;
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 576px) {
@@ -109,5 +160,31 @@
 
     .box p {
         font-size: 0.9rem;
+    }
+
+    .boxCustomSoftware {
+        min-height: 250px;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .Talent {
+        min-height: 200px;
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .boxCustomSoftware {
+        min-height: 400px;
+        padding: 15px;
+        font-size: 1.3rem;
+    }
+
+    .Talent {
+        min-height: 300px;
+        padding: 15px;
+        font-size: 1.3rem;
     }
 }

@@ -22,6 +22,7 @@ import { CompanyDescriptionComponent } from './pages/company/company-description
 import { CompanyLogosComponent } from './pages/company/company-logos/company-logos.component';
 import { ContactFormAziendaComponent } from './pages/contact-form-azienda/contact-form-azienda.component';
 import { ContactFormComponent } from './pages/contact-form/contact-form.component';
+import { CustomSoftwareComponent } from './pages/customSoftware/customSoftware.component';
 import { FissaUnaCallComponent } from './pages/FissaUnaCall/FissaUnaCall.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { FormsModule } from '@angular/forms';
@@ -58,7 +59,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     HomeComponent,
     TopBarComponent,
@@ -101,8 +102,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     WhyoneBladeComponent,
     WhyoneBladeBannerComponent,
     LoadingComponent,
-    MyNewsoneBladeComponent
-  ],
+    MyNewsoneBladeComponent,
+    CustomSoftwareComponent
+   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

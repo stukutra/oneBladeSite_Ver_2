@@ -1,0 +1,353 @@
+@use '../../style/_variabiles.scss' as vars;
+
+.custom-software-section {
+    background-color: vars.$background-light;
+    color: vars.$text-dark;
+    padding: vars.$padding-box;
+
+    h2 {
+        color: vars.$topbar-color; // Applica lo stesso colore dei titoli
+    }
+
+    .title {
+        font-size: vars.$font-size-title;
+        color: vars.$topbar-color;
+        margin-bottom: vars.$gap;
+    }
+
+    .description {
+        font-size: vars.$font-size-md; // Usa una dimensione del font media
+        line-height: 1.8; // Aumenta la spaziatura tra le righe
+        color: vars.$text-dark; // Assicura un buon contrasto
+        margin-bottom: vars.$gap * 1.5; // Aggiungi più spazio sotto il paragrafo
+    }
+
+    .advantages {
+        list-style: none;
+        padding: 0;
+        margin-bottom: vars.$gap * 2;
+        display: flex;
+        flex-direction: column;
+        gap: vars.$gap * 1.5;
+
+        li {
+            font-size: vars.$font-size-md; // Riduci ulteriormente la dimensione del font
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            padding: 0;
+            background-color: transparent;
+            border: none;
+            box-shadow: none;
+            transition: none;
+
+            &:hover {
+                transform: none;
+                box-shadow: none;
+            }
+
+            &::before {
+                content: '✔️';
+                font-size: vars.$font-size-xl;
+                color: vars.$topbar-color; // Cambia il colore per abbinarlo alla classe .title
+            }
+        }
+    }
+
+    .divider {
+        border: none;
+        border-top: 1px solid vars.$apple-border-color;
+        margin: vars.$gap 0;
+    }
+
+    .steps {
+        list-style: decimal;
+        padding-left: 2rem;
+        margin-bottom: vars.$gap;
+        font-size: vars.$font-size-lg;
+        line-height: 1.8;
+
+        li {
+            margin-bottom: vars.$gap-size * 2;
+            font-size: vars.$font-size-text;
+
+            strong {
+                color: vars.$topbar-color;
+                font-size: vars.$font-size-xl;
+            }
+        }
+
+        background-color: vars.$apple-background-color;
+        padding: vars.$padding-box;
+        border-radius: vars.$border-radius;
+        box-shadow: vars.$box-shadow-hover;
+
+        .step {
+            margin-bottom: vars.$gap * 2;
+            padding: vars.$padding-base;
+            border: 1px solid vars.$apple-border-color;
+            border-radius: vars.$border-radius;
+            background-color: vars.$background-light;
+
+            h3 {
+                font-size: vars.$font-size-xl;
+                color: vars.$text-color-oneblade;
+                margin-bottom: vars.$gap;
+            }
+
+            p {
+                font-size: vars.$font-size-md;
+                color: vars.$text-dark;
+                line-height: 1.6;
+            }
+        }
+
+        .step:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .steps-horizontal {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        margin-top: vars.$gap * 2;
+        padding: 0 vars.$gap;
+
+        &::before {
+            content: none;
+        }
+
+        .step {
+            position: relative;
+            text-align: center;
+            z-index: 2;
+
+            .step-point {
+                width: 50px;
+                height: 50px;
+                margin: 0 auto;
+                background-color: vars.$topbar-color;
+                color: vars.$text-light;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: vars.$font-size-md;
+                font-weight: bold;
+                position: relative;
+                z-index: 2;
+            }
+
+            h3 {
+                font-size: vars.$font-size-lg;
+                color: vars.$text-dark;
+                margin-top: vars.$gap / 2;
+            }
+
+            p {
+                font-size: vars.$font-size-text;
+                color: vars.$text-dark;
+                line-height: 1.6;
+                margin-top: vars.$gap / 4;
+            }
+        }
+    }
+
+    .step-container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: vars.$gap * 2;
+        padding: 0 vars.$gap;
+
+        .progress-bar {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            right: 20px;
+            height: 4px;
+            background-color: vars.$input-border-color;
+            z-index: 0;
+
+            .step-tick {
+                position: absolute;
+                top: 50%;
+                width: 2px;
+                height: 10px;
+                background-color: vars.$primary-color;
+                transform: translateY(-50%);
+            }
+
+            .step-tick:nth-child(1) {
+                left: calc(20px + (100% - 40px) / 3 * 0);
+            }
+
+            .step-tick:nth-child(2) {
+                left: calc(20px + (100% - 40px) / 3 * 1);
+            }
+
+            .step-tick:nth-child(3) {
+                left: calc(20px + (100% - 40px) / 3 * 2);
+            }
+
+            .step-tick:nth-child(4) {
+                left: calc(20px + (100% - 40px) / 3 * 3);
+            }
+        }
+
+        .step {
+            position: relative;
+            z-index: 1;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: vars.$input-border-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: vars.$font-color-white;
+
+            .circle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: vars.$input-border-color;
+                color: vars.$font-color-white;
+                font-weight: bold;
+                line-height: 40px;
+            }
+
+            &.completed .circle {
+                background-color: vars.$primary-color;
+            }
+        }
+    }
+
+    .steps-boxes {
+        display: flex;
+        justify-content: space-between;
+        gap: vars.$gap;
+        margin-top: vars.$gap * 2;
+
+        .step-box {
+            flex: 1;
+            padding: vars.$padding-box;
+            background-color: vars.$background-light;
+            border: 1px solid vars.$apple-border-color;
+            border-radius: vars.$border-radius;
+            box-shadow: vars.$box-shadow-hover;
+            text-align: center;
+            transition: transform vars.$transition-speed, box-shadow vars.$transition-speed;
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+
+            h3 {
+                font-size: vars.$font-size-lg;
+                color: vars.$text-color-oneblade;
+                margin-bottom: vars.$gap / 2;
+            }
+
+            p {
+                font-size: vars.$font-size-text;
+                color: vars.$text-dark;
+                line-height: 1.6;
+            }
+        }
+    }
+
+    // Media queries for responsiveness
+    @media (max-width: 1200px) {
+        .steps-boxes {
+            gap: vars.$gap / 2;
+        }
+
+        .step-box {
+            padding: vars.$padding-box / 1.5;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .steps-boxes {
+            flex-wrap: wrap;
+            gap: vars.$gap;
+        }
+
+        .step-box {
+            flex: 0 0 calc(50% - vars.$gap);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .steps-boxes {
+            flex-direction: column;
+            gap: vars.$gap;
+        }
+
+        .step-box {
+            flex: 1;
+        }
+
+        .title {
+            font-size: vars.$font-size-lg;
+        }
+
+        .description {
+            font-size: vars.$font-size-md;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .custom-software-image {
+            height: 300px; // Riduci l'altezza dell'immagine per schermi piccoli
+        }
+
+        .title {
+            font-size: vars.$font-size-md; // Usa il prefisso del modulo
+        }
+
+        .description {
+            font-size: vars.$font-size-sm; // Usa il prefisso del modulo
+        }
+
+        .advantages li {
+            font-size: vars.$font-size-sm; // Usa il prefisso del modulo
+        }
+
+        .steps-boxes {
+            gap: vars.$gap / 2;
+        }
+
+        .step-box {
+            padding: vars.$padding-box / 2;
+        }
+    }
+
+    .cta {
+        font-size: vars.$font-size-subtitle;
+        line-height: 1.6;
+
+        strong {
+            color: vars.$topbar-color;
+        }
+    }
+}
+
+.custom-software-image {
+    background-image: url('../../../assets/CustomSoftware/CustomSoftware_oneBlade.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 554px;
+    border-radius: 0;
+    box-shadow: none;
+}

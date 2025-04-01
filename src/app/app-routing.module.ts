@@ -6,6 +6,7 @@ import { AcademyonebladeComponent } from './pages/academy/academyoneblade/academ
 import { BlogCategoriesComponent } from './blog/blog-categories.component';
 import { BlogComponent } from './blog/blog.component';
 import { CompanyAboutUsComponent } from './pages/company/companyAboutUs/companyAboutUs.component';
+import { CustomSoftwareComponent } from './pages/customSoftware/customSoftware.component';
 import { GuideAccademyDetailsComponent } from './pages/guide/guideAcademyDetails/guideAcademyDetails.component';
 import { GuideaccademyComponent } from './pages/guide/guideaccademy/guideaccademy.component';
 import { HomeComponent } from './layout/home/home.component';
@@ -40,6 +41,7 @@ const routes: Routes = [
   { path: 'blog/:code', component: BlogComponent },
   { path: 'whyoneBlade', component: WhyoneBladeComponent },
   { path: 'myNews', component: MyNewsoneBladeComponent },
+  { path: 'customSoftware', component: CustomSoftwareComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
