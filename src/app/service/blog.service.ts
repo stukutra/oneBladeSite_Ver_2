@@ -25,7 +25,9 @@ export class BlogService {
     }
 
     getBlogData(): Observable<Category[]> {
-        return this.http.get<{ categories: Category[] }>(this.baseJsonUrl).pipe(
+        const cacheBuster = `cb=${new Date().getTime()}`;
+        const freshUrl = `${this.baseJsonUrl}?${cacheBuster}`;
+        return this.http.get<{ categories: Category[] }>(freshUrl).pipe(
             map(response => response.categories.map(category => ({
                 ...category,
                 articles: category.articles.map(article => ({

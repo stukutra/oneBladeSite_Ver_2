@@ -1,4 +1,7 @@
+declare var gtag: Function;
+
 import { AfterViewInit, ChangeDetectorRef, Component, NgZone, OnInit } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 import { animate, style, transition, trigger } from '@angular/animations';
 
 import { LoadingService } from './components/loading.service';
@@ -24,7 +27,12 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent implements AfterViewInit, OnInit {
   title = 'oneBlade';
 
-  constructor(public loadingService: LoadingService, private cdr: ChangeDetectorRef, private ngZone: NgZone) { }
+  constructor(
+    public loadingService: LoadingService,
+    private cdr: ChangeDetectorRef,
+    private ngZone: NgZone,
+    private router: Router
+  ) { }
 
   ngAfterViewInit() {
     this.showLoadingUntilPageLoad();
@@ -33,6 +41,18 @@ export class AppComponent implements AfterViewInit, OnInit {
 
   ngOnInit(): void {
     console.log("Benvenuto! Sappiamo che stai dando un'occhiata al nostro codice. Buona esplorazione!");
+
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        const url = event.urlAfterRedirects;
+        console.log('Navigated to:', url);
+
+        // Traccia la pagina in Google Analytics
+        if (typeof gtag === 'function') {
+          gtag('config', 'GA_TRACKING_ID', { page_path: url });
+        }
+      }
+    });
   }
 
   private showLoadingUntilPageLoad() {
