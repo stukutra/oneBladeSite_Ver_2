@@ -1,4 +1,5 @@
 @use '../../style/_variabiles.scss' as vars;
+@use 'sass:math';
 
 .custom-software-section {
     background-color: vars.$background-light;
@@ -19,16 +20,16 @@
         font-size: vars.$font-size-md; // Usa una dimensione del font media
         line-height: 1.8; // Aumenta la spaziatura tra le righe
         color: vars.$text-dark; // Assicura un buon contrasto
-        margin-bottom: vars.$gap * 1.5; // Aggiungi più spazio sotto il paragrafo
+        margin-bottom: math.div(vars.$gap, 1.5); // Aggiungi più spazio sotto il paragrafo
     }
 
     .advantages {
         list-style: none;
         padding: 0;
-        margin-bottom: vars.$gap * 2;
+        margin-bottom: math.div(vars.$gap, 0.5);
         display: flex;
         flex-direction: column;
-        gap: vars.$gap * 1.5;
+        gap: math.div(vars.$gap, 1.5);
 
         li {
             font-size: vars.$font-size-md; // Riduci ulteriormente la dimensione del font
@@ -57,7 +58,7 @@
     .divider {
         border: none;
         border-top: 1px solid vars.$apple-border-color;
-        margin: vars.$gap 0;
+        margin: math.div(vars.$gap, 0.5) 0;
     }
 
     .steps {
@@ -68,7 +69,7 @@
         line-height: 1.8;
 
         li {
-            margin-bottom: vars.$gap-size * 2;
+            margin-bottom: math.div(vars.$gap-size, 2);
             font-size: vars.$font-size-text;
 
             strong {
@@ -83,7 +84,7 @@
         box-shadow: vars.$box-shadow-hover;
 
         .step {
-            margin-bottom: vars.$gap * 2;
+            margin-bottom: math.div(vars.$gap, 2);
             padding: vars.$padding-base;
             border: 1px solid vars.$apple-border-color;
             border-radius: vars.$border-radius;
@@ -112,8 +113,8 @@
         justify-content: space-between;
         align-items: center;
         position: relative;
-        margin-top: vars.$gap * 2;
-        padding: 0 vars.$gap;
+        margin-top: math.div(vars.$gap, 2);
+        padding: 0 math.div(vars.$gap, 0.5);
 
         &::before {
             content: none;
@@ -143,14 +144,14 @@
             h3 {
                 font-size: vars.$font-size-lg;
                 color: vars.$text-dark;
-                margin-top: vars.$gap / 2;
+                margin-top: math.div(vars.$gap, 2);
             }
 
             p {
                 font-size: vars.$font-size-text;
                 color: vars.$text-dark;
                 line-height: 1.6;
-                margin-top: vars.$gap / 4;
+                margin-top: math.div(vars.$gap, 4);
             }
         }
     }
@@ -160,8 +161,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: vars.$gap * 2;
-        padding: 0 vars.$gap;
+        margin-bottom: math.div(vars.$gap, 2);
+        padding: 0 math.div(vars.$gap, 0.5);
 
         .progress-bar {
             position: absolute;
@@ -179,22 +180,22 @@
                 height: 10px;
                 background-color: vars.$primary-color;
                 transform: translateY(-50%);
-            }
 
-            .step-tick:nth-child(1) {
-                left: calc(20px + (100% - 40px) / 3 * 0);
-            }
+                &:nth-child(1) {
+                    left: calc(20px + ((100% - 40px) / 3) * 0);
+                }
 
-            .step-tick:nth-child(2) {
-                left: calc(20px + (100% - 40px) / 3 * 1);
-            }
+                &:nth-child(2) {
+                    left: calc(20px + ((100% - 40px) / 3) * 1);
+                }
 
-            .step-tick:nth-child(3) {
-                left: calc(20px + (100% - 40px) / 3 * 2);
-            }
+                &:nth-child(3) {
+                    left: calc(20px + ((100% - 40px) / 3) * 2);
+                }
 
-            .step-tick:nth-child(4) {
-                left: calc(20px + (100% - 40px) / 3 * 3);
+                &:nth-child(4) {
+                    left: calc(20px + ((100% - 40px) / 3) * 3);
+                }
             }
         }
 
@@ -233,8 +234,8 @@
     .steps-boxes {
         display: flex;
         justify-content: space-between;
-        gap: vars.$gap;
-        margin-top: vars.$gap * 2;
+        gap: math.div(vars.$gap, 0.5);
+        margin-top: math.div(vars.$gap, 2);
 
         .step-box {
             flex: 1;
@@ -254,7 +255,7 @@
             h3 {
                 font-size: vars.$font-size-lg;
                 color: vars.$text-color-oneblade;
-                margin-bottom: vars.$gap / 2;
+                margin-bottom: math.div(vars.$gap, 2);
             }
 
             p {
@@ -268,11 +269,11 @@
     // Media queries for responsiveness
     @media (max-width: 1200px) {
         .steps-boxes {
-            gap: vars.$gap / 2;
+            gap: math.div(vars.$gap, 2);
         }
 
         .step-box {
-            padding: vars.$padding-box / 1.5;
+            padding: math.div(vars.$padding-box, 1.5);
         }
     }
 
@@ -324,11 +325,11 @@
         }
 
         .steps-boxes {
-            gap: vars.$gap / 2;
+            gap: math.div(vars.$gap, 2);
         }
 
         .step-box {
-            padding: vars.$padding-box / 2;
+            padding: math.div(vars.$padding-box, 2);
         }
     }
 
