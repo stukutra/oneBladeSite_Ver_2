@@ -20,7 +20,7 @@ $padding-box: 20px;
 $image-size: 85px;
 $linkedin-color: #0077B5;
 $font-size-base: 1rem;
-$font-size-sm:0.9rem;
+$font-size-sm: 0.9rem;
 $font-size-lg: 1.8rem;
 $font-size-xs: 1.2rem;
 $font-size-xl: 2.5rem;
@@ -82,7 +82,6 @@ $progress-background-color: #ddd;
 $text-color-error: #dc3545;
 $button-hover-darken: 10%;
 
-
 // Apple-style theme variables
 $apple-background-color: #f5f5f7;
 $apple-text-color: #1d1d1f;
@@ -90,3 +89,11 @@ $apple-border-color: #d2d2d7;
 $apple-highlight-color: #0071e3;
 $apple-low-cost-color: #ff3b30;
 $apple-premium-color: #34c759;
+
+// Fun Button variables
+$fun-button-bg-color: $custom-btn-bg-color;
+$fun-button-hover-bg-color: $custom-btn-hover-bg-color;
+$fun-button-text-color: $button-text-color;
+$fun-button-border-radius: 50%;
+$fun-button-size: 100px;
+$fun-button-animation-duration: 0.5s;

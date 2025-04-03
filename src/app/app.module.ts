@@ -26,6 +26,7 @@ import { CustomSoftwareComponent } from './pages/customSoftware/customSoftware.c
 import { FissaUnaCallComponent } from './pages/FissaUnaCall/FissaUnaCall.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { FormsModule } from '@angular/forms';
+import { FunButtonComponent } from './components/fun-button/fun-button.component';
 import { GuideAccademyDetailsComponent } from './pages/guide/guideAcademyDetails/guideAcademyDetails.component';
 import { GuideBannerTopComponent } from './pages/guide/guideBannerTop/guideBannerTop.component';
 import { GuideListComponent } from './pages/guide/guideList/guideList.component';
@@ -59,7 +60,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
     HomeComponent,
     TopBarComponent,
@@ -103,8 +104,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     WhyoneBladeBannerComponent,
     LoadingComponent,
     MyNewsoneBladeComponent,
-    CustomSoftwareComponent
-   ],
+    CustomSoftwareComponent,
+    FunButtonComponent
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
