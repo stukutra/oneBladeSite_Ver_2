@@ -1,25 +1,30 @@
 <div class="footer-wrapper">
   <div class="footer-content">
-    <img src="../../assets/logo.png" alt="Logo" class="footer-logo" alt="Logo oneBlade">
-    <p>©2018-{{ currentYear }} oneBlade srl <br> via di Valle Lupara, 10 - 00148 Roma (RM) Italia
-      <br>Tutti i diritti sono riservati così come tutti i marchi presenti sono dei legittimi proprietari.<br>
-      Capitale sociale 10.000&euro; I.V.- P.IVA/C.F. 16510411008 - REA RM1571017
-    </p>
-    <div class="footer-links">
-      <a href="https://www.linkedin.com/company/oneblade/?viewAsMember=true" class="footer-link" target="_blank"
-        aria-label="LinkedIn">
-        <i class="bi bi-linkedin"></i> LinkedIn
-      </a>
-      <div class="footer-link cursorPrivacy" (click)="navigateToPrivacyPolicy()">
-        <i class="">&nbsp;Privacy Policy </i>
+    <div class="footer-top">
+      <img src="../../assets/logo.png" alt="Logo oneBlade" class="footer-logo">
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/company/oneblade/?viewAsMember=true" class="footer-link" target="_blank"
+          aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://wa.me/393317904483" class="footer-link" target="_blank" aria-label="WhatsApp">
+          <i class="bi bi-whatsapp"></i> WhatsApp
+        </a>
+        <span class="footer-link cursorPrivacy" (click)="openPrivacyPolicyModal()">Privacy Policy</span>
       </div>
     </div>
-    <p class="footer-version mt-2">oneBlade webAPP ver. {{ version }}</p>
+    <div class="footer-bottom">
+      <p>©2018-{{ currentYear }} oneBlade srl<br>
+        via di Valle Lupara, 10 - 00148 Roma (RM) Italia<br>
+        Tutti i diritti riservati. Capitale sociale 10.000&euro; I.V.<br>
+        P.IVA/C.F. 16510411008 - REA RM1571017
+      </p>
+      <p class="footer-version">oneBlade webAPP ver. {{ version }}</p>
+    </div>
   </div>
 </div>
 
-
-<!-- Modale della privacy Policy -->
+<!-- Privacy Policy Modal -->
 <div class="custom-modal" *ngIf="isopenPrivacyPolicyModalModalVisible">
   <div class="custom-modal-content">
     <span class="custom-modal-close" (click)="closePrivacyPolicyModal()">&times;</span>

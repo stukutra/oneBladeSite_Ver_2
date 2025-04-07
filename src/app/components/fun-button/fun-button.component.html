@@ -1,5 +1,5 @@
 <div class="fun-button-container">
-    <button class="fun-button" (click)="onButtonClick()">Premi!</button>
+    <button class="fun-button" (click)="onButtonClick()">Hey!</button>
     <div class="fun-output" *ngIf="output" [ngClass]="{ 'fade-out': fadeOut }">
         <ng-container [ngSwitch]="output.type">
             <p *ngSwitchCase="'quote'">{{ output.value }}</p>
