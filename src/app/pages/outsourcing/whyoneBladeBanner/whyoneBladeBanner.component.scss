@@ -5,7 +5,7 @@
     border-radius: 12px;
     text-align: center;
     padding: 20px;
-    min-height: 180px;
+    min-height: 350px;
     /* Altezza minima adattabile */
     display: flex;
     flex-direction: column;
@@ -145,6 +145,13 @@
         padding: 12px;
         font-size: 1.2rem;
     }
+
+    .CustomSoftware,
+    .Talent {
+        min-height: 250px;
+        padding: 12px;
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 576px) {
@@ -173,6 +180,13 @@
         padding: 10px;
         font-size: 1rem;
     }
+
+    .CustomSoftware,
+    .Talent {
+        min-height: 200px;
+        padding: 10px;
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 992px) {
@@ -182,6 +196,13 @@
         font-size: 1.3rem;
     }
 
+    .Talent {
+        min-height: 300px;
+        padding: 15px;
+        font-size: 1.3rem;
+    }
+
+    .CustomSoftware,
     .Talent {
         min-height: 300px;
         padding: 15px;

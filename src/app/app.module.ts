@@ -53,6 +53,7 @@ import { TopBarComponent } from './layout/top-bar/top-bar.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { WhyoneBladeBannerComponent } from './pages/outsourcing/whyoneBladeBanner/whyoneBladeBanner.component';
 import { WhyoneBladeComponent } from './pages/outsourcing/whyoneBlade/whyoneBlade.component';
+import { OneBladeVideoComponent } from './oneBladeVideo/oneBladeVideo.component';
 
 // Funzione per caricare i file di traduzione
 export function HttpLoaderFactory(http: HttpClient) {
@@ -60,7 +61,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     HomeComponent,
     TopBarComponent,
@@ -105,8 +106,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     LoadingComponent,
     MyNewsoneBladeComponent,
     CustomSoftwareComponent,
-    FunButtonComponent
-  ],
+    FunButtonComponent,
+      OneBladeVideoComponent
+   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
