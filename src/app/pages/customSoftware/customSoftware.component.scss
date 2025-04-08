@@ -347,8 +347,28 @@
     background-image: url('../../../assets/CustomSoftware/CustomSoftware_oneBlade.jpeg');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover; // Rende l'immagine responsiva
     width: 100%;
-    height: 554px;
+    height: 730px;
     border-radius: 0;
     box-shadow: none;
+}
+
+// Media queries per rendere l'immagine responsiva su schermi più piccoli
+@media (max-width: 992px) {
+    .custom-software-image {
+        height: 400px; // Riduce l'altezza per schermi medi
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-software-image {
+        height: 300px; // Riduce ulteriormente l'altezza per schermi piccoli
+    }
+}
+
+@media (max-width: 576px) {
+    .custom-software-image {
+        height: 200px; // Altezza minima per schermi molto piccoli
+    }
 }
