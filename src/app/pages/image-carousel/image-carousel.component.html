@@ -1,6 +1,13 @@
 <div id="customCarousel" class="carousel slide">
   <div class="carousel-inner">
-    <div *ngFor="let slide of slides; let i = index" [class.active]="i === currentSlide" class="carousel-item">
+    <div *ngIf="slides.length === 0" class="carousel-item active">
+      <img src="./assets/slide/placeholder.jpg" class="d-block w-100" alt="Loading...">
+      <div class="carousel-caption-overlay">
+        <h2 class="carousel-title">Loading...</h2>
+        <p class="carousel-subtitle">Please wait while the slides load.</p>
+      </div>
+    </div>
+    <div *ngFor="let slide of slides; let i = index" [class.active]="i === 0" class="carousel-item">
       <img [src]="slide.image" class="d-block w-100" alt="{{ slide.alt }}">
       <div class="carousel-caption-overlay">
         <h2 class="carousel-title">{{ slide.title | translate }}</h2>

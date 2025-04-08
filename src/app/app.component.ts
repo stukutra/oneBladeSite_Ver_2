@@ -45,11 +45,11 @@ export class AppComponent implements AfterViewInit, OnInit {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         const url = event.urlAfterRedirects;
-        console.log('Navigated to:', url);
+        //console.log(`Navigated to: ${url}`); // Debug
 
-        // Traccia la pagina in Google Analytics
+        // Invia il percorso aggiornato a Google Analytics
         if (typeof gtag === 'function') {
-          gtag('config', 'GA_TRACKING_ID', { page_path: url });
+          gtag('config', 'G-67PMJZ4ZRH', { page_path: url });
         }
       }
     });
