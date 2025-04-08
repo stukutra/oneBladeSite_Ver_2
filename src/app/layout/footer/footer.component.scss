@@ -34,10 +34,17 @@ $footer-linkedin-color: $linkedin-color; // Colore dell'icona LinkedIn
 
 .footer-top {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; // Centra il contenuto orizzontalmente
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 20px;
+}
+
+.footer-logo-container {
+  flex: 1 1 100%; // Occupare l'intera larghezza
+  display: flex;
+  justify-content: center; // Centrare il logo orizzontalmente
+  margin-bottom: 15px;
 }
 
 .footer-logo {
@@ -45,7 +52,9 @@ $footer-linkedin-color: $linkedin-color; // Colore dell'icona LinkedIn
 }
 
 .footer-links {
+  flex: 1 1 auto; // Adatta la larghezza dei link
   display: flex;
+  justify-content: center; // Centrare i link orizzontalmente
   gap: 15px;
 }
 
