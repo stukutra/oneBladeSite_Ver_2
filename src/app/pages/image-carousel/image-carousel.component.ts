@@ -19,7 +19,7 @@ export class ImageCarouselComponent implements OnInit, OnDestroy {
   currentSlide = 0;
   private carouselInterval: any; // Store the interval reference
   slides: Slide[] = [
-    { title: 'Loading...', subtitle: 'Please wait while the slides load.', image: './assets/slide/placeholder.jpg', alt: 'Loading...' }
+    { title: 'Loading...', subtitle: 'Please wait while the slides load.', image: './assets/slide/Slide_1.jpg', alt: 'Loading...' }
   ];
 
   constructor(private coursesService: CoursesService, private cdr: ChangeDetectorRef) { }
