@@ -1,7 +1,7 @@
 declare var gtag: Function;
 
 import { AfterViewInit, ChangeDetectorRef, Component, NgZone, OnInit } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
+import { Event, NavigationEnd, Router } from '@angular/router';
 import { animate, style, transition, trigger } from '@angular/animations';
 
 import { LoadingService } from './components/loading.service';
@@ -32,7 +32,13 @@ export class AppComponent implements AfterViewInit, OnInit {
     private cdr: ChangeDetectorRef,
     private ngZone: NgZone,
     private router: Router
-  ) { }
+  ) {
+    this.router.events.subscribe((event: Event) => {
+      if (event instanceof NavigationEnd) {
+        window.scrollTo({ top: 0, left: 0, behavior: 'auto' }); // Scroll immediato senza animazione
+      }
+    });
+  }
 
   ngAfterViewInit() {
     this.showLoadingUntilPageLoad();
