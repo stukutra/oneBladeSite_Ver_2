@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-oneBladeVideo',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./oneBladeVideo.component.scss']
 })
 export class OneBladeVideoComponent implements OnInit {
+  @Input() videoPath: string = ''; // Aggiunto parametro di input
 
   constructor() { }
 
