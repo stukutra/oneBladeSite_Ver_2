@@ -1,6 +1,6 @@
 .box {
     position: relative;
-    background-color: rgb(83, 62, 133);
+    //background-color: rgb(83, 62, 133);
     color: white;
     border-radius: 12px;
     text-align: center;
@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-size: cover;
     background-position: center;
@@ -49,7 +49,7 @@
 /* Effetto hover */
 .box:hover {
     transform: scale(1.02);
-    box-shadow: 0px 6px 15px rgba(27, 25, 25, 0.2);
+    //box-shadow: 0px 6px 15px rgba(27, 25, 25, 0.2);
 }
 
 /* Overlay semi-trasparente */
@@ -60,7 +60,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    //background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
@@ -82,14 +82,14 @@
 
 .CustomSoftware {
     background-image: url('../../../../assets/CustomSoftware/CustomSoftware_oneBlade.jpeg');
-    background-size: cover;
+    background-size: contain; // Ensure the image fits within the container
     background-position: center;
     background-repeat: no-repeat;
 
     img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        width: 100%; // Ensure the image does not exceed the container width
+        height: auto; // Maintain aspect ratio
+        object-fit: contain; // Ensure the image fits within the container
         border-radius: 12px;
     }
 }
@@ -119,6 +119,153 @@
 }
 
 /* --- RESPONSIVITÀ --- */
+@media (max-width: 992px) {
+    .boxCustomSoftware {
+        min-height: 400px;
+        padding: 15px;
+        font-size: 1.3rem;
+    }
+
+    .Talent {
+        min-height: 300px;
+        padding: 15px;
+        font-size: 1.3rem;
+    }
+
+    .CustomSoftware,
+    .Talent {
+        min-height: 390px;
+        padding: 15px;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 1024px) and (min-height: 768px) {
+    .box {
+        min-height: 300px;
+        /* Adjust height for better visibility */
+        padding: 18px;
+        /* Adjust padding */
+        font-size: 1.4rem;
+        /* Adjust font size */
+    }
+
+    .box h2 {
+        font-size: 1.3rem;
+        /* Adjust heading size */
+    }
+
+    .box p {
+        font-size: 1.1rem;
+        /* Adjust paragraph size */
+    }
+
+    .boxCustomSoftware {
+        min-height: 450px;
+        /* Adjust height for custom software box */
+        padding: 16px;
+        /* Adjust padding */
+        font-size: 1.3rem;
+        /* Adjust font size */
+    }
+
+    .Talent {
+        min-height: 350px;
+        /* Adjust height for talent box */
+        padding: 16px;
+        /* Adjust padding */
+        font-size: 1.3rem;
+        /* Adjust font size */
+    }
+
+    .CustomSoftware,
+    .Talent {
+        min-height: 504px;
+        /* Ensure consistent height */
+        padding: 16px;
+        /* Adjust padding */
+        font-size: 1.3rem;
+        /* Adjust font size */
+    }
+}
+
+@media (max-width: 1180px) and (min-height: 820px) {
+    .row.justify-content-center>.col-12 {
+        flex: 0 0 100%;
+        /* Make each box occupy the full width */
+        max-width: 100%;
+        /* Ensure full width */
+    }
+
+    .box {
+        min-height: 300px;
+        /* Adjust height for better visibility */
+        padding: 16px;
+        /* Adjust padding */
+        font-size: 1.3rem;
+        /* Adjust font size */
+    }
+
+    .boxCustomSoftware {
+        min-height: 400px;
+        /* Adjust height for custom software box */
+    }
+
+    .Talent {
+        min-height: 350px;
+        /* Adjust height for talent box */
+    }
+}
+
+@media (max-width: 820px) and (min-height: 1180px) {
+    .box {
+        min-height: 280px !important;
+        /* Adjust height for better visibility */
+        padding: 16px;
+        /* Adjust padding */
+        font-size: 1.3rem;
+        /* Adjust font size */
+    }
+
+    .box h2 {
+        font-size: 1.2rem;
+        /* Adjust heading size */
+    }
+
+    .box p {
+        font-size: 1rem;
+        /* Adjust paragraph size */
+    }
+
+    .boxCustomSoftware {
+        min-height: 400px;
+        /* Adjust height for custom software box */
+        padding: 14px;
+        /* Adjust padding */
+        font-size: 1.2rem;
+        /* Adjust font size */
+    }
+
+    .Talent {
+        min-height: 320px;
+        /* Adjust height for talent box */
+        padding: 14px;
+        /* Adjust padding */
+        font-size: 1.2rem;
+        /* Adjust font size */
+    }
+
+    .CustomSoftware,
+    .Talent {
+        min-height: 370px;
+        /* Ensure consistent height */
+        padding: 14px;
+        /* Adjust padding */
+        font-size: 1.2rem;
+        /* Adjust font size */
+    }
+}
+
 @media (max-width: 768px) {
     .box {
         min-height: 160px;
@@ -148,7 +295,7 @@
 
     .CustomSoftware,
     .Talent {
-        min-height: 250px;
+        min-height: 395px;
         padding: 12px;
         font-size: 1.2rem;
     }
@@ -189,23 +336,59 @@
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 480px) {
     .boxCustomSoftware {
-        min-height: 400px;
-        padding: 15px;
-        font-size: 1.3rem;
+        min-height: 200px;
+        padding: 8px;
+        font-size: 0.9rem;
     }
 
     .Talent {
-        min-height: 300px;
-        padding: 15px;
-        font-size: 1.3rem;
+        min-height: 180px;
+        padding: 8px;
+        font-size: 0.9rem;
     }
 
     .CustomSoftware,
     .Talent {
-        min-height: 300px;
-        padding: 15px;
-        font-size: 1.3rem;
+        min-height: 200px;
+        padding: 8px;
+        font-size: 0.9rem;
     }
+}
+
+@media (max-width: 360px) {
+    .boxCustomSoftware {
+        min-height: 180px;
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+
+    .Talent {
+        min-height: 204px;
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+
+    .CustomSoftware,
+    .Talent {
+        min-height: 160px;
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 1080px) {
+
+    .boxCustomSoftware,
+    .Talent {
+        min-height: 350px;
+        /* Adjust height for better alignment */
+        padding: 20px;
+        /* Ensure consistent padding */
+        font-size: 1.5rem;
+        /* Maintain font size */
+    }
+
+    
 }
