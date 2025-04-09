@@ -19,11 +19,26 @@ $footer-link-transition: $transition-duration ease; // Transizione per i link
 $footer-linkedin-color: $linkedin-color; // Colore dell'icona LinkedIn
 
 // Stili
+html,
+body {
+  height: 100%; // Ensure the body takes up the full height of the viewport
+  margin: 0; // Remove default margin
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; // Ensure the container takes up the full height of the viewport
+}
+
 .footer-wrapper {
   background: linear-gradient(to bottom, $footer-bg-gradient-color-1, $footer-bg-gradient-color-2);
   color: $footer-text-color;
   padding: 20px 0;
   text-align: center;
+  margin-top: auto; // Push the footer to the bottom of the page
+  position: relative; // Ensure proper stacking context
+  z-index: 1;
 }
 
 .footer-content {

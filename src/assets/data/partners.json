@@ -3,7 +3,7 @@
     {
         "logo": "assets/Partners_Logo/Hyntelo.png",
         "description": "",
-        "link": "https://devknights.it",
+        "link": "https://hyntelo.com/",
         "visible": true
     },
     {
@@ -15,7 +15,7 @@
     {
         "logo": "assets/Partners_Logo/Biters.png",
         "description": "",
-        "link": "https://www.nigelfrank.com/it",
+        "link": "https://biters.it/",
         "visible": true
     },
     {
@@ -25,9 +25,9 @@
         "visible": true
     },
     {
-        "logo": "assets/Partners_Logo/k2ps.webp",
+        "logo": "assets/Partners_Logo/k2ps-logo.png",
         "description": "",
-        "link": "https://biters.it/",
+        "link": "https://k2partnering.com/it/",
         "visible": true
     },
     {
