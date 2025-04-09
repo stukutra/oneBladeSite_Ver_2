@@ -13,9 +13,21 @@
         "visible": true
     },
     {
-        "logo": "assets/Partners_Logo/k2ps.webp",
+        "logo": "assets/Partners_Logo/Biters.png",
         "description": "",
         "link": "https://www.nigelfrank.com/it",
+        "visible": true
+    },
+    {
+        "logo": "assets/Partners_Logo/appload.png",
+        "description": "",
+        "link": "https://appload.studio/",
+        "visible": true
+    },
+    {
+        "logo": "assets/Partners_Logo/k2ps.webp",
+        "description": "",
+        "link": "https://biters.it/",
         "visible": true
     },
     {
