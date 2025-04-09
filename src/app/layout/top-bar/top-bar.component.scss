@@ -88,6 +88,14 @@ $gradient-color-5: #ffffff;
   cursor: pointer;
   transition: font-weight 0.3s ease;
   margin-right: $nav-item-margin-left;
+
+  &.partners-link {
+    color: $nav-link-color;
+
+    &:hover {
+      color: $nav-link-hover-color;
+    }
+  }
 }
 
 .navbar-nav .nav-link i {

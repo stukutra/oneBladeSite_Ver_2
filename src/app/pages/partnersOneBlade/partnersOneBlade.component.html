@@ -1,0 +1,26 @@
+<app-image-carousel></app-image-carousel>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1 class="text-center text-oneblade-title mt-5">I nostri Partner</h1>
+      <p class="text-center">
+        Scopri i nostri partner strategici che collaborano con noi per offrire soluzioni innovative e di alta qualità.
+        Ogni partner è selezionato con cura per garantire il massimo valore ai nostri clienti.
+      </p>
+    </div>
+  </div>
+
+  <div class="row g-4"> <!-- Add g-4 for spacing between rows and columns -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center" *ngFor="let partner of partners">
+      <div class="partner mb-5">
+        <a [href]="partner.link" target="_blank" rel="noopener noreferrer">
+          <img [src]="partner.logo" alt="Partner Logo" class="partner-logo">
+        </a>
+        <div class="partner-details">
+          <p class="partner-description" [innerHTML]="partner.description"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -40,9 +40,11 @@ import { LoadingService } from './components/loading.service';
 import { LoginComponent } from './auth/login/login.component';
 import { MyInformationComponent } from './pages/myInformation/myInformation.component';
 import { MyNewsoneBladeComponent } from './myNewsoneBlade/myNewsoneBlade.component';
+import { OneBladeVideoComponent } from './components/oneBladeVideo/oneBladeVideo.component';
 import { OutsourcingBannerComponent } from './pages/outsourcing/outsourcingBanner/outsourcingBanner.component';
 import { OutsourcingInfoComponent } from './pages/outsourcing/outsourcingInfo/outsourcingInfo.component';
 import { ParallaxComponent } from './pages/parallax/parallax.component';
+import { PartnersOneBladeComponent } from './pages/partnersOneBlade/partnersOneBlade.component';
 import { PrivacyPolicyComponent } from './pages/privacy_policy/privacy_policy.component';
 import { QuestionnaireComponent } from './pages/questionnaire/questionnaire.component';
 import { RegisterComponent } from './auth/register/register.component';
@@ -53,7 +55,6 @@ import { TopBarComponent } from './layout/top-bar/top-bar.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { WhyoneBladeBannerComponent } from './pages/outsourcing/whyoneBladeBanner/whyoneBladeBanner.component';
 import { WhyoneBladeComponent } from './pages/outsourcing/whyoneBlade/whyoneBlade.component';
-import { OneBladeVideoComponent } from './oneBladeVideo/oneBladeVideo.component';
 
 // Funzione per caricare i file di traduzione
 export function HttpLoaderFactory(http: HttpClient) {
@@ -107,7 +108,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     MyNewsoneBladeComponent,
     CustomSoftwareComponent,
     FunButtonComponent,
-      OneBladeVideoComponent
+      OneBladeVideoComponent,
+      PartnersOneBladeComponent
    ],
   imports: [
     BrowserModule,

@@ -14,6 +14,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { MyNewsoneBladeComponent } from './myNewsoneBlade/myNewsoneBlade.component';
 import { NgModule } from '@angular/core';
 import { OutsourcingInfoComponent } from './pages/outsourcing/outsourcingInfo/outsourcingInfo.component';
+import { PartnersOneBladeComponent } from './pages/partnersOneBlade/partnersOneBlade.component';
 import { PrivacyPolicyComponent } from './pages/privacy_policy/privacy_policy.component';
 import { QuestionnaireComponent } from './pages/questionnaire/questionnaire.component';
 import { RegisterComponent } from './auth/register/register.component';
@@ -42,6 +43,7 @@ const routes: Routes = [
   { path: 'whyoneBlade', component: WhyoneBladeComponent },
   { path: 'myNews', component: MyNewsoneBladeComponent },
   { path: 'customSoftware', component: CustomSoftwareComponent },
+  { path: 'partnersOneBlade', component: PartnersOneBladeComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
