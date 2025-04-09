@@ -11,16 +11,13 @@
     </div>
   </div>
 
-  <div class="row g-4"> <!-- Add g-4 for spacing between rows and columns -->
+  <div class="row g-4">
     <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center" *ngFor="let partner of partners">
-      <div class="partner mb-5">
-        <a [href]="partner.link" target="_blank" rel="noopener noreferrer">
-          <img [src]="partner.logo" alt="Partner Logo" class="partner-logo">
-        </a>
-        <div class="partner-details">
-          <p class="partner-description" [innerHTML]="partner.description"></p>
-        </div>
-      </div>
+      <a *ngIf="partner.link" [href]="partner.link" target="_blank" rel="noopener noreferrer">
+        <img [src]="partner.logo" alt="Partner Logo" class="partner-logo">
+      </a>
+      <img *ngIf="!partner.link" [src]="partner.logo" alt="Partner Logo" class="partner-logo">
+      <p class="partner-description" *ngIf="partner.description" [innerHTML]="partner.description"></p>
     </div>
   </div>
 </div>

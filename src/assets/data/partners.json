@@ -1,20 +1,33 @@
 [
+
     {
-        "logo": "assets/Partners_Logo/infyair.png",
-        "description": "<p class='standard-text'>AI & Machine Learning</p><p class='standard-text'>Soluzioni per la Supply Chain</p><p class='standard-text'>Servizi Cloud</p>",
-        "link": "https://partner1.com",
+        "logo": "assets/Partners_Logo/Nigel_Frank.png",
+        "description": "",
+        "link": "https://www.nigelfrank.com/it",
+        "visible": true
+    },
+    {
+        "logo": "assets/Partners_Logo/AssistDigital.png",
+        "description": "",
+        "link": "https://assistdigital.com/it",
         "visible": true
     },
     {
         "logo": "assets/Partners_Logo/infyair.png",
-        "description": "<strong>Partner 2</strong> description with <u>HTML tags</u>",
-        "link": "https://partner2.com",
+        "description": "",
+        "link": "https://www.infyair.com/",
         "visible": true
     },
     {
-        "logo": "assets/Partners_Logo/infyair.png",
-        "description": "<i>Partner 3</i> description with <span style='color:blue;'>styled text</span>",
-        "link": "https://partner3.com",
+        "logo": "assets/Partners_Logo/kappas.png",
+        "description": "",
+        "link": "https://kappas.it/",
+        "visible": true
+    },
+    {
+        "logo": "assets/Partners_Logo/devknights.png",
+        "description": "",
+        "link": "https://devknights.it",
         "visible": true
     }
 ]

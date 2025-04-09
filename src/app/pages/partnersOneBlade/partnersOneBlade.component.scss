@@ -19,21 +19,6 @@
     }
 }
 
-.partner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: vars.$gap-size;
-    border: 1px solid vars.$box-shadow-color;
-    padding: vars.$padding-box;
-    border-radius: vars.$border-radius;
-    box-shadow: vars.$box-shadow-hover;
-    background-color: vars.$background-light;
-    width: 100%; // Ensure the box takes full width of the column
-    max-width: 300px; // Limit the maximum width for better layout
-}
-
 .partner-logo {
     width: vars.$image-size * 2.5; // Increase the size of the image
     height: auto;
@@ -45,18 +30,9 @@
     }
 }
 
-.partner-details {
-    flex: 1;
-
-    .partner-description {
-        font-size: vars.$font-size-base;
-        color: vars.$font-color-dark;
-        text-align: center; // Center-align the text inside the box
-    }
-
-    .standard-text {
-        font-size: vars.$font-size-base; // Use the standard text size from variables
-        color: vars.$font-color-dark;
-        margin: 0 0 vars.$gap-size 0; // Add spacing between lines
-    }
+.partner-description {
+    font-size: vars.$font-size-base;
+    color: vars.$font-color-dark;
+    text-align: center; // Center-align the text
+    margin-top: vars.$gap-size;
 }
