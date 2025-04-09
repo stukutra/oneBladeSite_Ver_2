@@ -181,7 +181,8 @@
         "LOGIN": "Iniciar sesión",
         "REGISTER": "Registrarse",
         "OUTSOURCING": "Externalización",
-        "TALENT_WIZARD": "Elige tu talento"
+        "TALENT_WIZARD": "Elige tu talento",
+        "PARTNERS": "Partners"
     },
     "CALL_SECTION": {
         "TITLE": "Programa una llamada"

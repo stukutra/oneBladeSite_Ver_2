@@ -152,7 +152,8 @@
     "LOGIN": "Login",
     "REGISTER": "Register",
     "OUTSOURCING": "Outsourcing",
-    "TALENT_WIZARD": "Choose your talent"
+    "TALENT_WIZARD": "Choose your talent",
+    "PARTNERS": "Partners"
   },
   "CALL_SECTION": {
     "TITLE": "Schedule a Call"

@@ -151,7 +151,8 @@
     "REGISTER": "Registrati",
     "OUTSOURCING": "Talent",
     "BODY_RENTAL": "Body Rental",
-    "TALENT_WIZARD": "Scegli il tuo talento"
+    "TALENT_WIZARD": "Scegli il tuo talento",
+    "PARTNERS": "Partners"
   },
   "CALL_SECTION": {
     "TITLE": "Fissa una Call"

@@ -11,7 +11,7 @@
     </div>
   </div>
 
-  <div class="row g-4">
+  <div class="row g-4 mb-5">
     <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center" *ngFor="let partner of partners">
       <a *ngIf="partner.link" [href]="partner.link" target="_blank" rel="noopener noreferrer">
         <img [src]="partner.logo" alt="Partner Logo" class="partner-logo">
@@ -21,3 +21,8 @@
     </div>
   </div>
 </div>
+<app-FissaUnaCall></app-FissaUnaCall>
+<app-parallax>
+  <h1>{{ 'PARALLAX.TITLE' | translate }}</h1>
+  <p>{{ 'PARALLAX.SUBTITLE' | translate }}</p>
+</app-parallax>

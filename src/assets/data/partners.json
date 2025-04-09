@@ -1,7 +1,19 @@
 [
-
+    
+    {
+        "logo": "assets/Partners_Logo/Hyntelo.png",
+        "description": "",
+        "link": "https://devknights.it",
+        "visible": true
+    },
     {
         "logo": "assets/Partners_Logo/Nigel_Frank.png",
+        "description": "",
+        "link": "https://www.nigelfrank.com/it",
+        "visible": true
+    },
+    {
+        "logo": "assets/Partners_Logo/k2ps.webp",
         "description": "",
         "link": "https://www.nigelfrank.com/it",
         "visible": true

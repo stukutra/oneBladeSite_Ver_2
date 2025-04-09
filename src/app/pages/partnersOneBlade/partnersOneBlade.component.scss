@@ -20,8 +20,9 @@
 }
 
 .partner-logo {
-    width: vars.$image-size * 2.5; // Increase the size of the image
-    height: auto;
+    width: 150px; // Set a fixed width
+    height: 150px; // Set a fixed height
+    object-fit: contain; // Ensure the image fits within the dimensions
     filter: grayscale(100%); // Apply grayscale filter
     transition: filter 0.3s ease; // Smooth transition for hover effect
 
