@@ -335,5 +335,10 @@
         }
       }
     }
+  },
+  "PARTNERS": {
+    "DESCRIPTION_1": "We collaborate with <strong>leaders in their fields</strong>, carefully selected to ensure <strong>reliability</strong>, <strong>innovation</strong>, and <strong>stability</strong> for our clients. Thanks to these <em>strategic partnerships</em>, we are able to offer <strong>highly customized</strong> and <strong>superior quality solutions</strong>, addressing the most <em>complex</em> and <em>ambitious</em> market needs.",
+    "DESCRIPTION_2": "Each partner we have chosen represents a <strong>guarantee of excellence</strong>, significantly contributing to the <strong>success</strong> of our clients' projects. Together, we build a <em>strong</em>, <em>stable</em>, and growth-oriented <strong>ecosystem</strong>.",
+    "DESCRIPTION_3": "Our partner network demonstrates our <strong>constant commitment</strong> to providing <strong>cutting-edge services</strong> and <strong>solutions</strong> that create <em>real added value</em> for your business."
   }
 }

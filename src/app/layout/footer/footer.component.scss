@@ -75,6 +75,14 @@ $footer-linkedin-color: $linkedin-color; // Colore dell'icona LinkedIn
   &:hover i.bi-whatsapp {
     color: rgba(255, 255, 255, 0.8); // Slightly lighter white on hover
   }
+
+  i.bi-envelope {
+    color: #ffffff; // Change email icon color to white
+  }
+
+  &:hover i.bi-envelope {
+    color: rgba(255, 255, 255, 0.8); // Slightly lighter white on hover
+  }
 }
 
 .footer-bottom {
