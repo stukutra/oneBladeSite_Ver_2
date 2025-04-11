@@ -1,0 +1,19 @@
+@import '../../style/_variabiles.scss';
+
+.card {
+    border: none; // Remove the box around the images
+    background: none; // Remove card background
+    box-shadow: none; // Remove shadow
+    text-align: center;
+
+    .card-img-top {
+        width: 150px; // Set a fixed width
+        height: 150px; // Set a fixed height
+        object-fit: contain; // Ensure the entire image is visible
+        transition: transform $transition-speed;
+
+        &:hover {
+            transform: scale(1.05); // Slight zoom effect on hover
+        }
+    }
+}

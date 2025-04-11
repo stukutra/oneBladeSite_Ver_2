@@ -1,0 +1,96 @@
+{
+    "images": [
+        {
+            "name": "image1",
+            "path": "../assets/Stack/01_android.BMO7rmtb.png"
+        },
+        {
+            "name": "image2",
+            "path":"../assets/Stack/02_app-store.PQmBCkZe.png"
+        },
+        {
+            "name": "image1",
+            "path": "../assets/Stack/03_aws.FTppidMl.png"
+        },
+        {
+            "name": "image1",
+            "path": "../assets/Stack/03_restful.CSDhLDp5.png"
+        },
+        {
+            "name": "image1",
+            "path": "../assets/Stack/04_Bitbucket.Botq4Iv_.png"
+        },
+        {
+            "name": "image1",
+            "path": "../assets/Stack/10_git.rgAD2X6s.png"
+        },
+        {
+            "name": "image1",
+            "path": "../assets/Stack/10_git.rgAD2X6s.png"
+        },
+        {
+            "name": "image1",
+            "path": "../assets/Stack/11_HTML.BUHSkk5P.png"
+        },
+        {
+            "name": "image1",
+            "path": "../assets/Stack/12_IntelliJ.QNqMIod2.png"
+        },
+        {
+            "name": "image1",
+            "path": "../assets/Stack/13_iOS.mSeh4F-c.png"
+        },
+        {
+            "name": "image1",
+            "path": "../assets/Stack/14_Java.BvePHOCb.png"
+        },
+        {
+            "name": "image1",
+            "path": "../assets/Stack/15_Javascript.Dm1B2jcd.png"
+        },
+        {
+            "name": "image1",
+            "path": "../assets/Stack/16_Jira.BYhCgkRz.png"
+        },
+        {
+            "name": "image1",
+            "path": "../assets/Stack/19_Kotlin.BjAzMGTS.png"
+        },
+        {
+            "name": "image1",
+            "path": "../assets/Stack/25_MySQL.Cpp4_3xv.png"
+        },
+        {
+            "name": "image1",
+            "path": "../assets/Stack/29_scrum.97abm80Q.png"
+        },
+        {
+            "name": "image1",
+            "path": "../assets/Stack/30_spring.DFn3Mz1b.png"
+        },
+        {
+            "name": "image1",
+            "path": "../assets/Stack/31_Swift.DXwsR624.png"
+        },
+        {
+            "name": "image1",
+            "path": "../assets/Stack/34_trello.DH8zSfaQ.png"
+        },
+        {
+            "name": "image1",
+            "path": "../assets/Stack/35_TypeScript.C5NCdqLJ.png"
+        },
+        {
+            "name": "image1",
+            "path": "../assets/Stack/36_vue.DkT8jFSv.png"
+        },
+        {
+            "name": "image1",
+            "path": "../assets/Stack/37__Xcode.CYC2UwUC.png"
+        },
+        {
+            "name": "image1",
+            "path": "../assets/Stack/38_uikit.u8wjCsrI.png"
+        }
+    ]
+}

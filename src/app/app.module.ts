@@ -50,6 +50,7 @@ import { QuestionnaireComponent } from './pages/questionnaire/questionnaire.comp
 import { RegisterComponent } from './auth/register/register.component';
 import { RegistrationFormUserComponent } from './user/registrationFormUser/registrationFormUser.component';
 import { SoftwareHouseComponent } from './pages/softwareHouse/softwareHouse.component';
+import { StacksComponent } from './pages/stacks/stacks.component';
 import { TalentWizardComponent } from './pages/outsourcing/TalentWizard/TalentWizard.component';
 import { TopBarComponent } from './layout/top-bar/top-bar.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -109,7 +110,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     CustomSoftwareComponent,
     FunButtonComponent,
       OneBladeVideoComponent,
-      PartnersOneBladeComponent
+      PartnersOneBladeComponent,
+      StacksComponent
    ],
   imports: [
     BrowserModule,
