@@ -7,9 +7,9 @@
     text-align: center;
 
     .card-img-top {
-        width: 150px; // Set a fixed width
-        height: 150px; // Set a fixed height
-        object-fit: contain; // Ensure the entire image is visible
+        height: 100px; // Set a fixed height for all logos
+        object-fit: contain; // Ensure the entire logo is visible
+        width: 100%; // Allow the width to adjust responsively
         filter: grayscale(100%); // Apply a monochrome filter
         transition: filter $transition-speed, transform $transition-speed;
 
@@ -18,4 +18,15 @@
             transform: scale(1.05); // Slight zoom effect on hover
         }
     }
+}
+
+.row {
+    gap: 2rem; // Add spacing between rows and columns
+}
+
+.col-6,
+.col-sm-4,
+.col-md-3,
+.col-lg-2 {
+    padding: 1.5rem; // Increase padding for grid items
 }
