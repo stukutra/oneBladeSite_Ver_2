@@ -11,7 +11,7 @@ import { StackService } from '../../service/stack.service';
 export class StacksComponent implements OnInit {
     stacks: Stack[] = [];
 
-    constructor(private stackService: StackService) {}
+    constructor(private stackService: StackService) { }
 
     ngOnInit(): void {
         this.loadStacks();

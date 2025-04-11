@@ -10,9 +10,11 @@
         width: 150px; // Set a fixed width
         height: 150px; // Set a fixed height
         object-fit: contain; // Ensure the entire image is visible
-        transition: transform $transition-speed;
+        filter: grayscale(100%); // Apply a monochrome filter
+        transition: filter $transition-speed, transform $transition-speed;
 
         &:hover {
+            filter: none; // Remove the filter to show natural colors on hover
             transform: scale(1.05); // Slight zoom effect on hover
         }
     }
