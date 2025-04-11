@@ -15,8 +15,8 @@ h2 {
     text-align: center;
 
     .card-img-top {
-        width: 80px; // Reduce the width
-        height: 80px; // Reduce the height
+        width: 100px; // Reduce the width
+        height: 100px; // Reduce the height
         object-fit: contain; // Ensure the entire image is visible
         filter: grayscale(100%); // Apply a monochrome filter
         transition: filter $transition-speed, transform $transition-speed;
