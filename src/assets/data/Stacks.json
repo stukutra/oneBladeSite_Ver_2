@@ -87,6 +87,14 @@
         {
             "name": "image1",
             "path": "../assets/Stack/38_uikit.u8wjCsrI.png"
+        },
+        {
+            "name": "image1",
+            "path": "../assets/Stack/Microsoft_.NET_logo.png"
+        },
+        {
+            "name": "image1",
+            "path": "../assets/Stack/Angular_full_color_logo.svg.png"
         }
     ]
 }
