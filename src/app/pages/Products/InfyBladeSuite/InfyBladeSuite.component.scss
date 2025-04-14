@@ -17,6 +17,18 @@
     .carousel-indicators .active {
         background-color: darken(vars.$text-color-oneblade, 10%);
     }
+
+    img {
+        width: 300px; // Maintain consistent width
+        height: 300px; // Maintain consistent height
+        object-fit: cover; // Default behavior for all images
+    }
+
+    img[src*="InfyBladeSuiteOK.png"] {
+        width: 306px; // Explicitly set the size for this image
+        height: 306px; // Explicitly set the size for this image
+        object-fit: contain; // Ensure the entire image is visible without cropping
+    }
 }
 
 .demo-button {
