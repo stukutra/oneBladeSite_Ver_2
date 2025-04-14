@@ -18,3 +18,72 @@
         background-color: darken(vars.$text-color-oneblade, 10%);
     }
 }
+
+.demo-button {
+    display: inline-block; // Ensure the button is displayed correctly
+    border: 2px solid vars.$topbar-color; // Use the site's primary color for the border
+    background-color: transparent;
+    color: vars.$topbar-color; // Use the site's primary color for the text
+    padding: 0.75rem 2rem; // Increase padding for better proportions
+    font-size: vars.$font-size-md;
+    border-radius: vars.$border-radius;
+    cursor: pointer;
+    text-align: center; // Center the text inside the button
+    transition: background-color vars.$transition-speed, color vars.$transition-speed;
+    margin-top: 2rem; // Add spacing above the button
+
+    &:hover {
+        background-color: vars.$topbar-color; // Fill with the site's primary color on hover
+        color: vars.$text-light; // Change text to white on hover
+    }
+}
+
+section.text-center {
+    margin-top: 3rem; // Add spacing above the button section
+}
+
+.infyblade-comparison {
+    .card {
+        border: 1px solid vars.$apple-border-color; // 1px gray border
+        border-radius: vars.$border-radius; // Rounded corners
+        box-shadow: vars.$box-shadow; // Subtle shadow underneath
+        transition: transform vars.$transition-speed, box-shadow vars.$transition-speed;
+
+        &:hover {
+            transform: scale(1.05); // Slight zoom effect on hover
+            box-shadow: vars.$box-shadow-hover; // Enhanced shadow on hover
+        }
+
+        .card-header {
+            background-color: vars.$background-light; // White background for titles
+            color: vars.$text-color-oneblade; // Standard title color
+            padding: vars.$padding-base;
+            font-size: vars.$font-size-md; // Smaller font size for titles
+            border-top-left-radius: vars.$border-radius; // Rounded corners for the header
+            border-top-right-radius: vars.$border-radius;
+        }
+
+        .card-body {
+            padding: vars.$padding-base;
+
+            ul {
+                padding: 0;
+                list-style: none;
+
+                li {
+                    margin-bottom: vars.$gap-size;
+                    font-size: vars.$font-size-sm; // Smaller font size for text
+                }
+            }
+        }
+
+        .card-footer {
+            background-color: vars.$topbar-color; // Toolbar background color
+            color: vars.$text-light; // White text for the toolbar
+            padding: vars.$padding-box;
+            font-size: vars.$font-size-md; // Font size for the price
+            border-bottom-left-radius: vars.$border-radius; // Rounded corners for the footer
+            border-bottom-right-radius: vars.$border-radius;
+        }
+    }
+}
