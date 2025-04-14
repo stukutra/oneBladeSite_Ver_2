@@ -1,0 +1,118 @@
+@import '../../style/_variabiles.scss';
+
+.product-highlight-box {
+    background-color: $background-light;
+    border: 1px solid $apple-border-color;
+    border-radius: $border-radius;
+    padding: $padding-box;
+    box-shadow: $box-shadow; // Default shadow
+    transition: transform $transition-speed, box-shadow $transition-speed;
+    cursor: pointer; // Change cursor to pointer to indicate clickability
+    position: relative;
+    overflow: hidden; // Ensure the pseudo-element stays within the box
+
+    &:hover {
+        transform: scale(1.02); // Reduced zoom effect
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); // Stronger shadow on hover
+    }
+
+    &:hover::before {
+        content: '';
+        position: absolute;
+        top: -100%;
+        left: -100%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(
+            120deg,
+            rgba(255, 255, 255, 0.2) 0%,
+            rgba(255, 255, 255, 0.8) 50%,
+            rgba(255, 255, 255, 0.2) 100%
+        );
+        transform: rotate(25deg);
+        animation: light-sweep 1s ease-in-out forwards; // Add 'forwards' to stop the animation after it completes
+        pointer-events: none; // Ensure it doesn't interfere with clicks
+    }
+
+    @keyframes light-sweep {
+        0% {
+            top: -100%;
+            left: -100%;
+        }
+        100% {
+            top: 100%;
+            left: 100%;
+        }
+    }
+
+    h2 {
+        color: $text-color-oneblade; // Match the color of other h2 elements
+        font-size: $font-size-xl;
+        margin-bottom: $gap-size;
+    }
+
+    p {
+        color: $text-dark;
+        font-size: $font-size-md;
+        margin-bottom: $gap-size;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: $gap-size;
+
+        li {
+            color: $text-dark;
+            font-size: $font-size-sm;
+            margin-bottom: $gap-size;
+        }
+    }
+
+    .click-for-details {
+        position: absolute;
+        bottom: calc(#{$gap-size} + 5px); // Move slightly higher
+        right: calc(#{$gap-size} + 20px); // Move slightly to the left
+        font-size: $font-size-sm;
+        color: $text-color-oneblade;
+        font-weight: bold;
+        text-decoration: none; // Remove underline
+    }
+
+    .box-footer {
+        position: relative; // Ensure it stays below the content
+        margin-top: $gap-size; // Add spacing above the footer
+        width: 100%;
+        padding: $gap-size;
+        display: flex; // Use flexbox for alignment
+        align-items: center; // Center content vertically
+        justify-content: space-between; // Space between logos and "Scopri di più"
+        background-color: transparent; // Transparent background
+        border-top: 1px solid $apple-border-color; // Add a top border to distinguish the toolbar
+        border-bottom-left-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+
+        .footer-logos {
+            display: flex;
+            align-items: center;
+            gap: $gap-size; // Add spacing between logos and separator
+
+            .footer-logo {
+                height: 39px; // 30% larger than the previous 30px
+                width: auto; // Maintain aspect ratio
+            }
+
+            .logo-separator {
+                font-size: $font-size-lg; // Make the "+" symbol prominent
+                color: $text-color-oneblade; // Match the title color
+                font-weight: bold;
+            }
+        }
+
+        .highlight {
+            color: $text-color-oneblade;
+            font-weight: bold;
+            font-size: $font-size-sm;
+        }
+    }
+}

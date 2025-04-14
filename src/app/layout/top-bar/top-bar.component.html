@@ -18,6 +18,19 @@
       </li>
 
       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="ProductsoneBladeComponent" role="button"
+          (click)="toggleDropdown('ProductsoneBladeComponent')" [attr.aria-expanded]="isDropdownOpen['ProductsoneBladeComponent']">
+         Prodotti
+        </a>
+        <ul class="dropdown-menu" [class.show]="isDropdownOpen['ProductsoneBladeComponent']" aria-labelledby="ProductsoneBladeComponent">
+          <li>
+            <a class="dropdown-item" routerLink="/ProductsoneBladeComponent" (click)="closeMenu()">InfySuiteBlade 365</a>
+          </li>
+        </ul>
+      </li>
+
+
+      <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="accademyDropdown" role="button"
           (click)="toggleDropdown('accademyDropdown')" [attr.aria-expanded]="isDropdownOpen['accademyDropdown']">
           {{ 'TOP_BAR.ONEBLADE_LAB' | translate }}

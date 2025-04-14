@@ -46,6 +46,7 @@ import { OutsourcingInfoComponent } from './pages/outsourcing/outsourcingInfo/ou
 import { ParallaxComponent } from './pages/parallax/parallax.component';
 import { PartnersOneBladeComponent } from './pages/partnersOneBlade/partnersOneBlade.component';
 import { PrivacyPolicyComponent } from './pages/privacy_policy/privacy_policy.component';
+import { ProductsoneBladeComponent } from './pages/productsoneBlade/productsoneBlade.component';
 import { QuestionnaireComponent } from './pages/questionnaire/questionnaire.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { RegistrationFormUserComponent } from './user/registrationFormUser/registrationFormUser.component';
@@ -63,7 +64,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
     HomeComponent,
     TopBarComponent,
@@ -109,10 +110,11 @@ export function HttpLoaderFactory(http: HttpClient) {
     MyNewsoneBladeComponent,
     CustomSoftwareComponent,
     FunButtonComponent,
-      OneBladeVideoComponent,
-      PartnersOneBladeComponent,
-      StacksComponent
-   ],
+    OneBladeVideoComponent,
+    PartnersOneBladeComponent,
+    StacksComponent,
+    ProductsoneBladeComponent
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

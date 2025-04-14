@@ -18,6 +18,7 @@ export class TopBarComponent {
 
   isDropdownOpen: { [key: string]: boolean } = {};
 
+
   constructor(private router: Router, private translate: TranslateService, private coursesService: CoursesService) {
     this.translate.addLangs(['en', 'it', 'es']);
     this.translate.setDefaultLang('it');
