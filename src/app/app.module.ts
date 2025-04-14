@@ -15,6 +15,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BlogCategoriesComponent } from './blog/blog-categories.component';
 import { BlogComponent } from './blog/blog.component';
+import { BoxProductComponent } from './components/boxProduct/boxProduct.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { CompanyAboutUsComponent } from './pages/company/companyAboutUs/companyAboutUs.component';
@@ -113,7 +114,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     OneBladeVideoComponent,
     PartnersOneBladeComponent,
     StacksComponent,
-    ProductsoneBladeComponent
+    ProductsoneBladeComponent,
+    BoxProductComponent
   ],
   imports: [
     BrowserModule,
