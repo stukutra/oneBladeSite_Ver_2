@@ -10,6 +10,7 @@ import { CustomSoftwareComponent } from './pages/customSoftware/customSoftware.c
 import { GuideAccademyDetailsComponent } from './pages/guide/guideAcademyDetails/guideAcademyDetails.component';
 import { GuideaccademyComponent } from './pages/guide/guideaccademy/guideaccademy.component';
 import { HomeComponent } from './layout/home/home.component';
+import { InfyBladeSuiteComponent } from './pages/Products/InfyBladeSuite/InfyBladeSuite.component';
 import { LoginComponent } from './auth/login/login.component';
 import { MyNewsoneBladeComponent } from './myNewsoneBlade/myNewsoneBlade.component';
 import { NgModule } from '@angular/core';
@@ -46,6 +47,7 @@ const routes: Routes = [
   { path: 'customSoftware', component: CustomSoftwareComponent },
   { path: 'partnersOneBlade', component: PartnersOneBladeComponent },
   { path: 'ProductsoneBladeComponent', component: ProductsoneBladeComponent },
+  { path: 'InfyBladeSuiteComponent', component: InfyBladeSuiteComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 

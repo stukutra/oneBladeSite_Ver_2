@@ -1,0 +1,20 @@
+@use '../../../style/_variabiles.scss' as vars;
+
+.infyblade-suite {
+    .divider {
+        border: none;
+        border-top: 1px solid vars.$box-shadow-color;
+    }
+
+    .text-oneblade-title {
+        color: vars.$text-color-oneblade;
+    }
+
+    .carousel-indicators button {
+        background-color: vars.$text-color-oneblade;
+    }
+
+    .carousel-indicators .active {
+        background-color: darken(vars.$text-color-oneblade, 10%);
+    }
+}

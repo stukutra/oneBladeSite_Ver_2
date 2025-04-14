@@ -35,6 +35,7 @@ import { GuideaccademyComponent } from './pages/guide/guideaccademy/guideaccadem
 import { HomeComponent } from './layout/home/home.component';
 import { ImageCarouselComponent } from './pages/image-carousel/image-carousel.component';
 import { InfooneBladeComponent } from './pages/infooneBlade/infooneBlade.component';
+import { InfyBladeSuiteComponent } from './pages/Products/InfyBladeSuite/InfyBladeSuite.component';
 import { ItalianDatePipe } from './pipes/italian-date.pipe';
 import { LoadingComponent } from './components/loading.component';
 import { LoadingService } from './components/loading.service';
@@ -115,7 +116,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     PartnersOneBladeComponent,
     StacksComponent,
     ProductsoneBladeComponent,
-    BoxProductComponent
+    BoxProductComponent,
+    InfyBladeSuiteComponent
   ],
   imports: [
     BrowserModule,
