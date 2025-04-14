@@ -17,17 +17,14 @@
         </a>
       </li>
 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="ProductsoneBladeComponent" role="button"
-          (click)="toggleDropdown('ProductsoneBladeComponent')" [attr.aria-expanded]="isDropdownOpen['ProductsoneBladeComponent']">
+
+      <li class="nav-item d-flex align-items-center">
+        <a class="nav-link" routerLink="/ProductsoneBladeComponent" (click)="closeMenu()">
          Prodotti
         </a>
-        <ul class="dropdown-menu" [class.show]="isDropdownOpen['ProductsoneBladeComponent']" aria-labelledby="ProductsoneBladeComponent">
-          <li>
-            <a class="dropdown-item" routerLink="/ProductsoneBladeComponent" (click)="closeMenu()">InfySuiteBlade 365</a>
-          </li>
-        </ul>
       </li>
+
+  
 
 
       <li class="nav-item dropdown">

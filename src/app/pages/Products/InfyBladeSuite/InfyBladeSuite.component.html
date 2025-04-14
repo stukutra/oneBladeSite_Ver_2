@@ -1,141 +1,193 @@
 <app-image-carousel></app-image-carousel>
 
-<section class="infyblade-suite container py-5">
-  <header class="infyblade-header text-center mb-4">
-    <h1 class="infyblade-title display-4 text-oneblade-title">InfySuiteBlade</h1>
-    <p class="infyblade-subtitle lead text-secondary">La suite gestionale intelligente per le PMI</p>
-  </header>
+<header class="infyblade-header text-center mb-2 mt-5">
+  <h1 class="infyblade-title display-4 text-oneblade-title">InfySuiteBlade</h1>
+  <p class="infyblade-subtitle lead text-secondary">La <strong>suite gestionale intelligente</strong> per le PMI</p>
+</header>
 
-  <div id="infybladeCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <section class="infyblade-features mb-5">
-          <div class="row align-items-center">
-            <div class="col-md-4">
-              <img src="../../../assets/Products/InfyBladeSuite/InfyBladeSuiteWhy.png" alt="InfySuiteBlade"
-                class="img-fluid my-3" />
+<div class="infyblade-tabs container py-2">
+  <ul class="nav nav-tabs" id="infybladeTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="suite-tab" data-bs-toggle="tab" data-bs-target="#suite" type="button"
+        role="tab" aria-controls="suite" aria-selected="true">
+        Caratteristiche
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="comparison-tab" data-bs-toggle="tab" data-bs-target="#comparison" type="button"
+        role="tab" aria-controls="comparison" aria-selected="false">
+        Confronta i piani
+      </button>
+    </li>
+  </ul>
+  <div class="tab-content" id="infybladeTabsContent">
+    <div class="tab-pane fade show active" id="suite" role="tabpanel" aria-labelledby="suite-tab">
+      <section class="infyblade-suite container py-5">
+        <div id="infybladeCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <section class="infyblade-features mb-5">
+                <div class="row align-items-center">
+                  <div class="col-md-4">
+                    <img src="../../../assets/Products/InfyBladeSuite/InfyBladeSuiteWhy.png" alt="InfySuiteBlade"
+                      class="img-fluid my-3" />
+                  </div>
+                  <div class="col-md-8">
+                    <h2 class="h4 text-oneblade-title">Cosa puoi fare con <strong>InfySuiteBlade</strong>:</h2>
+                    <ul class="list-unstyled">
+                      <li class="mb-2"><strong>Gestire</strong> vendite, marketing, assistenza clienti e operation in
+                        un’unica
+                        interfaccia</li>
+                      <li class="mb-2"><strong>Controllare</strong> magazzino, acquisti, produzione, contabilità e
+                        fatturazione</li>
+                      <li class="mb-2"><strong>Monitorare</strong> le performance aziendali in tempo reale con Power BI
+                      </li>
+                      <li class="mb-2"><strong>Digitalizzare</strong> i flussi documentali con integrazione SharePoint
+                      </li>
+                      <li class="mb-2"><strong>Automatizzare</strong> processi grazie a moduli personalizzati e
+                        intelligenza
+                        artificiale</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
             </div>
-            <div class="col-md-8">
-              <h2 class="h4 text-oneblade-title">Cosa puoi fare con InfySuiteBlade:</h2>
-              <ul class="list-unstyled">
-                <li class="mb-2">Gestire vendite, marketing, assistenza clienti e operation in un’unica interfaccia</li>
-                <li class="mb-2">Controllare magazzino, acquisti, produzione, contabilità e fatturazione</li>
-                <li class="mb-2">Monitorare le performance aziendali in tempo reale con Power BI</li>
-                <li class="mb-2">Digitalizzare i flussi documentali con integrazione SharePoint</li>
-                <li class="mb-2">Automatizzare processi grazie a moduli personalizzati e intelligenza artificiale</li>
-              </ul>
+            <div class="carousel-item">
+              <section class="infyblade-addons mb-5">
+                <div class="row align-items-center">
+                  <div class="col-md-4">
+                    <img src="../../../assets/Products/InfyBladeSuite/InfyBladeSuiteAddOn.png" alt="InfySuiteBlade"
+                      class="img-fluid my-3" />
+                  </div>
+                  <div class="col-md-8">
+                    <h2 class="h4 text-oneblade-title">Add-on <strong>esclusivi integrati</strong>:</h2>
+                    <ul class="list-unstyled">
+                      <li class="mb-2"><strong>Quality Control Management:</strong> controllo qualità a 360°</li>
+                      <li class="mb-2"><strong>Requisition Management:</strong> gestione intelligente delle richieste
+                        interne
+                      </li>
+                      <li class="mb-2"><strong>Dealer & Trading System:</strong> gestione multifornitore e rete
+                        commerciale
+                      </li>
+                      <li class="mb-2"><strong>SharePoint Plug-In:</strong> gestione documentale avanzata</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="infyblade-services mb-5">
+                <div class="row align-items-center">
+                  <div class="col-md-4">
+                    <img src="../../../assets/Products/InfyBladeSuite/InfyBladeSuiteConsulenza.png" alt="InfySuiteBlade"
+                      class="img-fluid my-3" />
+                  </div>
+                  <div class="col-md-8">
+                    <h2 class="h4 text-oneblade-title">Servizi <strong>inclusi</strong>:</h2>
+                    <ul class="list-unstyled">
+                      <li class="mb-2"><strong>Consulenza</strong>, analisi e mappatura dei processi</li>
+                      <li class="mb-2">Licenze <strong>Microsoft CSP</strong> e <strong>SAP B1</strong></li>
+                      <li class="mb-2"><strong>Integrazione completa</strong> e migrazione dati</li>
+                      <li class="mb-2"><strong>Formazione operativa</strong> per il personale</li>
+                      <li class="mb-2"><strong>Supporto tecnico</strong> e aggiornamenti</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
             </div>
           </div>
-        </section>
-      </div>
-      <div class="carousel-item">
-        <section class="infyblade-addons mb-5">
-          <div class="row align-items-center">
-            <div class="col-md-4">
-              <img src="../../../assets/Products/InfyBladeSuite/InfyBladeSuiteAddOn.png" alt="InfySuiteBlade"
-                class="img-fluid my-3" />
-            </div>
-            <div class="col-md-8">
-              <h2 class="h4 text-oneblade-title">Add-on esclusivi integrati:</h2>
-              <ul class="list-unstyled">
-                <li class="mb-2"><strong>Quality Control Management:</strong> controllo qualità a 360°</li>
-                <li class="mb-2"><strong>Requisition Management:</strong> gestione intelligente delle richieste interne
-                </li>
-                <li class="mb-2"><strong>Dealer & Trading System:</strong> gestione multifornitore e rete commerciale
-                </li>
-                <li class="mb-2"><strong>SharePoint Plug-In:</strong> gestione documentale avanzata</li>
-              </ul>
-            </div>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#infybladeCarousel" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#infybladeCarousel" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#infybladeCarousel" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
           </div>
-        </section>
-      </div>
-      <div class="carousel-item">
-        <section class="infyblade-services mb-5">
-          <div class="row align-items-center">
-            <div class="col-md-4">
-              <img src="../../../assets/Products/InfyBladeSuite/InfyBladeSuiteConsulenza.png" alt="InfySuiteBlade"
-                class="img-fluid my-3" />
-            </div>
-            <div class="col-md-8">
-              <h2 class="h4 text-oneblade-title">Servizi inclusi:</h2>
-              <ul class="list-unstyled">
-                <li class="mb-2">Consulenza, analisi e mappatura dei processi</li>
-                <li class="mb-2">Licenze Microsoft CSP e SAP B1</li>
-                <li class="mb-2">Integrazione completa e migrazione dati</li>
-                <li class="mb-2">Formazione operativa per il personale</li>
-                <li class="mb-2">Supporto tecnico e aggiornamenti</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </div>
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#infybladeCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-        aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#infybladeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#infybladeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div class="tab-pane fade" id="comparison" role="tabpanel" aria-labelledby="comparison-tab">
+      <section class="infyblade-comparison container py-3">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+          <!-- Basic Plan -->
+          <div class="col">
+            <div class="card text-center border-oneblade">
+              <div class="card-header bg-white text-oneblade-title">
+                <h3><strong>Basic</strong></h3>
+              </div>
+              <div class="card-body">
+                <ul class="list-unstyled">
+                  <li class="mb-2"><strong>Gestione vendite</strong></li>
+                  <li class="mb-2"><strong>Controllo magazzino</strong></li>
+                  <li class="mb-2"><strong>Report base</strong></li>
+                </ul>
+              </div>
+              <div class="card-footer bg-oneblade text-light">
+                <h4><strong>€99/mese</strong></h4>
+              </div>
+            </div>
+          </div>
+          <!-- Gold Plan -->
+          <div class="col">
+            <div class="card text-center border-oneblade">
+              <div class="card-header bg-white text-oneblade-title">
+                <h3><strong>Gold</strong></h3>
+              </div>
+              <div class="card-body">
+                <ul class="list-unstyled">
+                  <li class="mb-2">Tutte le funzionalità <strong>Basic</strong></li>
+                  <li class="mb-2"><strong>Integrazione</strong> con Power BI</li>
+                  <li class="mb-2"><strong>Supporto premium</strong></li>
+                </ul>
+              </div>
+              <div class="card-footer bg-oneblade text-light">
+                <h4><strong>€199/mese</strong></h4>
+              </div>
+            </div>
+          </div>
+          <!-- Premium Plan -->
+          <div class="col">
+            <div class="card text-center border-oneblade">
+              <div class="card-header bg-white text-oneblade-title">
+                <h3><strong>Premium</strong></h3>
+              </div>
+              <div class="card-body">
+                <ul class="list-unstyled">
+                  <li class="mb-2">Tutte le funzionalità <strong>Gold</strong></li>
+                  <li class="mb-2"><strong>Automazione avanzata</strong></li>
+                  <li class="mb-2"><strong>Consulenza dedicata</strong></li>
+                </ul>
+              </div>
+              <div class="card-footer bg-oneblade text-light">
+                <h4><strong>€299/mese</strong></h4>
+              </div>
+            </div>
+          </div>
+          <!-- Personalizzato Plan -->
+          <div class="col">
+            <div class="card text-center border-oneblade">
+              <div class="card-header bg-white text-oneblade-title">
+                <h3><strong>Personalizzato</strong></h3>
+              </div>
+              <div class="card-body">
+                <ul class="list-unstyled">
+                  <li class="mb-2">Soluzioni su misura per le tue esigenze</li>
+                  <li class="mb-2">Integrazione avanzata e personalizzazioni</li>
+                  <li class="mb-2">Supporto dedicato</li>
+                </ul>
+              </div>
+              <div class="card-footer bg-oneblade text-light">
+                <a href="#" class="btn btn-light text-oneblade-title">Clicca qui</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
-</section>
-
-<section class="infyblade-comparison container py-3">
-  <h2 class="text-center text-oneblade-title mb-4">Confronta le versioni</h2>
-  <div class="row">
-    <div class="col-md-4">
-      <div class="card text-center border-oneblade">
-        <div class="card-header bg-white text-oneblade-title">
-          <h3>Basic</h3>
-        </div>
-        <div class="card-body">
-          <ul class="list-unstyled">
-            <li class="mb-2">Gestione vendite</li>
-            <li class="mb-2">Controllo magazzino</li>
-            <li class="mb-2">Report base</li>
-          </ul>
-        </div>
-        <div class="card-footer bg-oneblade text-light">
-          <h4>€99/mese</h4>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card text-center border-oneblade">
-        <div class="card-header bg-white text-oneblade-title">
-          <h3>Gold</h3>
-        </div>
-        <div class="card-body">
-          <ul class="list-unstyled">
-            <li class="mb-2">Tutte le funzionalità Basic</li>
-            <li class="mb-2">Integrazione con Power BI</li>
-            <li class="mb-2">Supporto premium</li>
-          </ul>
-        </div>
-        <div class="card-footer bg-oneblade text-light">
-          <h4>€199/mese</h4>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card text-center border-oneblade">
-        <div class="card-header bg-white text-oneblade-title">
-          <h3>Premium</h3>
-        </div>
-        <div class="card-body">
-          <ul class="list-unstyled">
-            <li class="mb-2">Tutte le funzionalità Gold</li>
-            <li class="mb-2">Automazione avanzata</li>
-            <li class="mb-2">Consulenza dedicata</li>
-          </ul>
-        </div>
-        <div class="card-footer bg-oneblade text-light">
-          <h4>€299/mese</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+</div>
 
 <section class="text-center mt-2 mb-5">
-  <button class="demo-button">Vuoi vedere una demo del prodotto?</button>
+  <button class="demo-button"><strong>Vuoi vedere una demo del prodotto?</strong></button>
 </section>

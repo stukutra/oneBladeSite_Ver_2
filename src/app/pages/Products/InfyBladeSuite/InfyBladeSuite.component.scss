@@ -21,7 +21,7 @@
 
 .demo-button {
     display: inline-block; // Ensure the button is displayed correctly
-    border: 2px solid vars.$topbar-color; // Use the site's primary color for the border
+    border: 1px solid vars.$topbar-color; // Use the site's primary color for the border
     background-color: transparent;
     color: vars.$topbar-color; // Use the site's primary color for the text
     padding: 0.75rem 2rem; // Increase padding for better proportions
@@ -31,6 +31,7 @@
     text-align: center; // Center the text inside the button
     transition: background-color vars.$transition-speed, color vars.$transition-speed;
     margin-top: 2rem; // Add spacing above the button
+    font-weight: 200; // Adjust font weight to make the text less bold
 
     &:hover {
         background-color: vars.$topbar-color; // Fill with the site's primary color on hover
@@ -44,27 +45,43 @@ section.text-center {
 
 .infyblade-comparison {
     .card {
-        border: 1px solid vars.$apple-border-color; // 1px gray border
+        border: 1px solid vars.$apple-border-color; // Subtle gray border
         border-radius: vars.$border-radius; // Rounded corners
-        box-shadow: vars.$box-shadow; // Subtle shadow underneath
-        transition: transform vars.$transition-speed, box-shadow vars.$transition-speed;
+        box-shadow: none; // Remove shadow for a lighter appearance
+        transition: transform vars.$transition-speed, background-color vars.$transition-speed;
+        height: vars.$card-min-height; // Ensure all cards have the same height
+        display: flex;
+        flex-direction: column;
 
         &:hover {
-            transform: scale(1.05); // Slight zoom effect on hover
-            box-shadow: vars.$box-shadow-hover; // Enhanced shadow on hover
+            transform: scale(1.02); // Slight zoom effect on hover
+            background-color: lighten(vars.$background-light, 5%); // Subtle background change on hover
         }
 
         .card-header {
-            background-color: vars.$background-light; // White background for titles
-            color: vars.$text-color-oneblade; // Standard title color
+            background-color: lighten(vars.$background-light, 10%); // Softer header background
+            color: vars.$text-color-oneblade; // Keep the title color
             padding: vars.$padding-base;
-            font-size: vars.$font-size-md; // Smaller font size for titles
+            font-size: vars.$font-size-md; // Maintain font size
             border-top-left-radius: vars.$border-radius; // Rounded corners for the header
             border-top-right-radius: vars.$border-radius;
         }
 
         .card-body {
             padding: vars.$padding-base;
+            overflow-y: auto; // Enable vertical scrolling if content exceeds height
+            flex-grow: 1; // Allow the body to take up available space
+            scrollbar-width: thin; // Thin scrollbar for Firefox
+            scrollbar-color: vars.$text-color-oneblade vars.$background-light; // Scrollbar colors
+
+            &::-webkit-scrollbar {
+                width: 6px; // Thin scrollbar for WebKit browsers
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: vars.$text-color-oneblade; // Scrollbar thumb color
+                border-radius: vars.$border-radius; // Rounded scrollbar thumb
+            }
 
             ul {
                 padding: 0;
@@ -72,18 +89,73 @@ section.text-center {
 
                 li {
                     margin-bottom: vars.$gap-size;
-                    font-size: vars.$font-size-sm; // Smaller font size for text
+                    font-size: vars.$font-size-sm; // Maintain smaller font size
+                    color: vars.$text-color-dark; // Use a softer text color
                 }
             }
         }
 
         .card-footer {
-            background-color: vars.$topbar-color; // Toolbar background color
-            color: vars.$text-light; // White text for the toolbar
+            background-color: lighten(vars.$topbar-color, 20%); // Softer footer background
+            color: vars.$text-light; // Keep white text for contrast
             padding: vars.$padding-box;
-            font-size: vars.$font-size-md; // Font size for the price
+            font-size: vars.$font-size-md; // Maintain font size
             border-bottom-left-radius: vars.$border-radius; // Rounded corners for the footer
             border-bottom-right-radius: vars.$border-radius;
         }
+    }
+}
+
+.infyblade-tabs {
+    // Remove the box shadow and border radius
+    box-shadow: none;
+    border-radius: 0;
+
+    .nav-tabs {
+        border-bottom: none; // Remove the default bottom border for the tabs
+        box-shadow: none; // Remove the shadow directly on the tabs
+
+        .nav-link {
+            color: lighten(vars.$text-color-oneblade, 40%); // Faded version of the active tab's text color
+            background-color: vars.$background-light; // Ensure inactive tabs have a white background
+            border: 1px solid lighten(vars.$tab-border-color, 40%); // Faded version of the active tab's border color
+            border-bottom: none; // Remove the bottom border from the tab links
+            padding: 0.5rem 1rem; // Reduce padding to make tabs smaller in height
+            font-size: vars.$font-size-base;
+            transition: background-color vars.$transition-speed, color vars.$transition-speed, border-color vars.$transition-speed, transform vars.$transition-speed;
+
+            &:hover {
+                background-color: vars.$tab-hover-bg;
+                color: lighten(vars.$text-color-oneblade, 20%); // Slightly less faded on hover
+                border-color: lighten(vars.$tab-border-color, 20%); // Slightly less faded border on hover
+                transform: translateY(-2px); // Move the tab slightly upwards
+            }
+
+            &:focus {
+                color: vars.$text-color-oneblade; // Match the active tab color when focused
+                border-color: vars.$tab-border-color; // Match the active tab border color when focused
+            }
+
+            &.active {
+                color: vars.$text-color-oneblade; // Keep the title color for the active tab
+                background-color: vars.$tab-active-bg;
+                border-color: vars.$tab-border-color vars.$tab-border-color transparent;
+                border-bottom: none; // Remove the bottom border for the active tab
+                padding: 0.5rem 1rem; // Ensure active tab height matches inactive tabs
+            }
+        }
+    }
+
+    .tab-content {
+        border: 1px solid vars.$tab-border-color;
+        border-top: 1px solid vars.$tab-border-color; // Add the top border for the tab body
+        border-left: 1px solid vars.$tab-border-color; // Keep left border
+        border-right: 1px solid vars.$tab-border-color; // Keep right border
+        border-bottom: 1px solid vars.$tab-border-color; // Keep bottom border
+        border-radius: 0 0 vars.$border-radius vars.$border-radius; // Only keep bottom corners rounded
+        padding: vars.$padding-base;
+        background-color: vars.$background-light;
+        position: relative; // Ensure the tab body is below the active tab
+        z-index: 1; // Place the tab body below the active tab
     }
 }
