@@ -8,7 +8,7 @@
             <p [innerHTML]="content"></p>
         </div>
     </div>
-    <div class="box-footer">
+    <div class="box-footer" *ngIf="logos.length > 1">
         <div class="footer-logos mt-3">
             <ng-container *ngFor="let logo of logos.slice(1); let i = index">
                 <img [src]="logo.src" alt="" class="footer-logo">
