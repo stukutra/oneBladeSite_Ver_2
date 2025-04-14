@@ -78,16 +78,32 @@
         text-decoration: none; // Remove underline
     }
 
+    .box-topbar {
+        background-color: transparent; // Make the background transparent
+        border-bottom: 1px solid variabiles.$apple-border-color; // Add bottom border
+        text-align: left; // Align the title to the left
+        position: relative;
+
+        h2 {
+            color: variabiles.$text-color-oneblade; // Use the predefined title color
+            font-size: variabiles.$font-size-xl;
+            margin: 0;
+            position: relative;
+            top: -5px; // Move the title slightly up
+            margin-bottom: variabiles.$gap-size; // Add spacing from the bottom border
+        }
+    }
+
     .box-footer {
         position: relative; // Ensure it stays below the content
         margin-top: variabiles.$gap-size; // Add spacing above the footer
         width: 100%;
+        border-top: 1px solid variabiles.$apple-border-color; // Add top border
         padding: variabiles.$gap-size;
         display: flex; // Use flexbox for alignment
         align-items: center; // Center content vertically
         justify-content: space-between; // Space between logos and "Scopri di più"
         background-color: transparent; // Transparent background
-        border-top: 1px solid variabiles.$apple-border-color; // Add a top border to distinguish the toolbar
         border-bottom-left-radius: variabiles.$border-radius;
         border-bottom-right-radius: variabiles.$border-radius;
 
