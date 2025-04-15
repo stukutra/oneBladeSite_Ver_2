@@ -148,6 +148,8 @@ h6 {
     background-color: $background-light;
     box-shadow: $box-shadow-hover;
     border-radius: $border-radius;
+    padding: $padding-box;
+    text-align: center;
     transition: transform $transition-speed;
 
     &:hover {
@@ -164,4 +166,18 @@ h6 {
     font-size: $font-size-base;
     color: $text-dark;
     line-height: 1.6;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    color: $text-light;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: $font-size-base;
+    border-radius: $border-radius;
+    transition: background-color $transition-speed;
+
+    &:hover {
+        background-color: darken($primary-color, 10%);
+    }
 }
