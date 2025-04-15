@@ -25,9 +25,6 @@
         display: block; // Ensure the image is treated as a block element
         margin: 0 auto; // Center the image horizontally
     }
-
-   
-  
 }
 
 .demo-button {
@@ -115,6 +112,8 @@ section.text-center {
             border-bottom-right-radius: vars.$border-radius;
         }
     }
+
+   
 }
 
 .infyblade-tabs {
@@ -171,7 +170,7 @@ section.text-center {
     }
 }
 
-.imgReduce{
+.imgReduce {
     width: 80%; // Set all images to 50% width
     height: auto; // Maintain aspect ratio
     object-fit: cover; // Default behavior for all images
@@ -179,4 +178,8 @@ section.text-center {
     margin: 0 auto; // Center the image horizontally
 }
 
-
+.card-fixed-height {
+    height: 550px; // Set a fixed height for all cards
+    display: flex;
+    flex-direction: column;
+}
