@@ -19,16 +19,15 @@
     }
 
     img {
-        width: 300px; // Maintain consistent width
-        height: 300px; // Maintain consistent height
+        //width: 50%; // Set all images to 50% width
+        height: auto; // Maintain aspect ratio
         object-fit: cover; // Default behavior for all images
+        display: block; // Ensure the image is treated as a block element
+        margin: 0 auto; // Center the image horizontally
     }
 
-    img[src*="InfyBladeSuiteOK.png"] {
-        width: 306px; // Explicitly set the size for this image
-        height: 306px; // Explicitly set the size for this image
-        object-fit: contain; // Ensure the entire image is visible without cropping
-    }
+   
+  
 }
 
 .demo-button {
@@ -171,3 +170,13 @@ section.text-center {
         z-index: 1; // Place the tab body below the active tab
     }
 }
+
+.imgReduce{
+    width: 80%; // Set all images to 50% width
+    height: auto; // Maintain aspect ratio
+    object-fit: cover; // Default behavior for all images
+    display: block; // Ensure the image is treated as a block element
+    margin: 0 auto; // Center the image horizontally
+}
+
+
