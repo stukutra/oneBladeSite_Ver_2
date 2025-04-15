@@ -168,6 +168,13 @@ h6 {
     line-height: 1.6;
 }
 
+.payment-note {
+    font-size: $font-size-sm;
+    color: $text-dark;
+    line-height: 1.5;
+    text-align: center;
+}
+
 .btn-primary {
     background-color: $primary-color;
     color: $text-light;
