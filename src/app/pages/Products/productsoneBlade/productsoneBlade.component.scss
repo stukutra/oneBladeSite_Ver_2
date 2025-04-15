@@ -1,4 +1,5 @@
-@import '../../style/_variabiles.scss';
+@use 'sass:math';
+@import '../../../style/_variabiles.scss';
 
 .product-highlight-box {
     background-color: $background-light;
@@ -70,8 +71,8 @@
 
     .click-for-details {
         position: absolute;
-        bottom: calc(#{$gap-size} + 5px); // Move slightly higher
-        right: calc(#{$gap-size} + 20px); // Move slightly to the left
+        bottom: calc(#{math.div($gap-size, 1)} + 5px); // Move slightly higher
+        right: calc(#{math.div($gap-size, 1)} + 20px); // Move slightly to the left
         font-size: $font-size-sm;
         color: $text-color-oneblade;
         font-weight: bold;
@@ -151,8 +152,12 @@
 }
 
 .breadcrumb-separator {
-    margin: 0 $gap-size / 2; // Reduce spacing around the separator
-    padding: 0 $gap-size / 2; // Reduce padding to the left and right of the separator
+    margin: 0 math.div($gap-size, 2); // Reduce spacing around the separator
+    padding: 0 math.div($gap-size, 2); // Reduce padding to the left and right of the separator
     color: $text-color-oneblade; // Match the color of breadcrumb text
     font-weight: bold; // Make the separator prominent
+}
+
+.some-class {
+    margin: math.div($gap-size, 2); // Usa math.div() per la divisione
 }

@@ -1,0 +1,51 @@
+@import '../../../style/_variabiles.scss';
+
+.think-and-build {
+    padding: $padding-base;
+    background-color: $background-light;
+    color: $text-dark;
+
+    .title {
+        font-size: $font-size-xl;
+        color: $text-color-oneblade;
+        margin-bottom: $gap;
+    }
+
+    .subtitle {
+        font-size: $font-size-md;
+        color: $text-dark;
+        margin-bottom: $gap;
+    }
+
+    .section-title {
+        font-size: $font-size-lg;
+        color: $accent-color;
+        margin-bottom: $gap-size;
+    }
+
+    .text {
+        font-size: $font-size-base;
+        line-height: 1.6;
+        margin-bottom: $gap;
+    }
+
+    .list {
+        list-style-type: disc;
+        padding-left: 1.5rem;
+        margin-bottom: $gap;
+
+        li {
+            font-size: $font-size-base;
+            margin-bottom: $gap-size;
+        }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $primary-color; // Applica il colore primario alle intestazioni nella sezione think-and-build
+    }
+}

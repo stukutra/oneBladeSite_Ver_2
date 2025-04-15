@@ -17,11 +17,12 @@ import { NgModule } from '@angular/core';
 import { OutsourcingInfoComponent } from './pages/outsourcing/outsourcingInfo/outsourcingInfo.component';
 import { PartnersOneBladeComponent } from './pages/partnersOneBlade/partnersOneBlade.component';
 import { PrivacyPolicyComponent } from './pages/privacy_policy/privacy_policy.component';
-import { ProductsoneBladeComponent } from './pages/productsoneBlade/productsoneBlade.component';
+import { ProductsoneBladeComponent } from './pages/Products/productsoneBlade/productsoneBlade.component';
 import { QuestionnaireComponent } from './pages/questionnaire/questionnaire.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { SoftwareHouseComponent } from './pages/softwareHouse/softwareHouse.component';
 import { TalentWizardComponent } from './pages/outsourcing/TalentWizard/TalentWizard.component';
+import { ThinkAndBuildComponent } from './pages/Products/ThinkAndBuild/ThinkAndBuild.component';
 import { WhyoneBladeComponent } from './pages/outsourcing/whyoneBlade/whyoneBlade.component';
 
 const routes: Routes = [
@@ -47,13 +48,14 @@ const routes: Routes = [
   { path: 'customSoftware', component: CustomSoftwareComponent },
   { path: 'partnersOneBlade', component: PartnersOneBladeComponent },
   { path: 'ProductsoneBladeComponent', component: ProductsoneBladeComponent },
-  { path: 'InfyBladeSuiteComponent', component: InfyBladeSuiteComponent },
+  { path: 'ProductsoneBladeComponent', component: ProductsoneBladeComponent },
+  { path: 'ThinkAndBuildComponent', component: ThinkAndBuildComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { 
-    useHash: true, 
+  imports: [RouterModule.forRoot(routes, {
+    useHash: true,
     scrollPositionRestoration: 'enabled' // Ripristina la posizione dello scroll in cima
   })],
   exports: [RouterModule]

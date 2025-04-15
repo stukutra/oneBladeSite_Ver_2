@@ -48,13 +48,14 @@ import { OutsourcingInfoComponent } from './pages/outsourcing/outsourcingInfo/ou
 import { ParallaxComponent } from './pages/parallax/parallax.component';
 import { PartnersOneBladeComponent } from './pages/partnersOneBlade/partnersOneBlade.component';
 import { PrivacyPolicyComponent } from './pages/privacy_policy/privacy_policy.component';
-import { ProductsoneBladeComponent } from './pages/productsoneBlade/productsoneBlade.component';
+import { ProductsoneBladeComponent } from './pages/Products/productsoneBlade/productsoneBlade.component';
 import { QuestionnaireComponent } from './pages/questionnaire/questionnaire.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { RegistrationFormUserComponent } from './user/registrationFormUser/registrationFormUser.component';
 import { SoftwareHouseComponent } from './pages/softwareHouse/softwareHouse.component';
 import { StacksComponent } from './pages/stacks/stacks.component';
 import { TalentWizardComponent } from './pages/outsourcing/TalentWizard/TalentWizard.component';
+import { ThinkAndBuildComponent } from './pages/Products/ThinkAndBuild/ThinkAndBuild.component';
 import { TopBarComponent } from './layout/top-bar/top-bar.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { WhyoneBladeBannerComponent } from './pages/outsourcing/whyoneBladeBanner/whyoneBladeBanner.component';
@@ -117,7 +118,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     StacksComponent,
     ProductsoneBladeComponent,
     BoxProductComponent,
-    InfyBladeSuiteComponent
+    InfyBladeSuiteComponent,
+    ThinkAndBuildComponent
   ],
   imports: [
     BrowserModule,

@@ -102,3 +102,46 @@ $fun-button-animation-duration: 0.5s;
 .text-oneblade-title {
     color: $text-color-oneblade; // Use the title color variable
 }
+
+
+
+.step-box {
+    background-color: $background-light;
+    box-shadow: $box-shadow-hover;
+    transition: transform $transition-speed;
+    height: 100%; // Imposta l'altezza al 100% per uniformare i box
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+.step-title {
+    font-size: $font-size-lg;
+    color: $accent-color;
+}
+
+.step-description {
+    font-size: $font-size-base;
+    color: $text-dark;
+}
+
+.rounded {
+    border-radius: $border-radius; // Usa la variabile esistente per arrotondare i bordi
+}
+
+.shadow {
+    box-shadow: $box-shadow; // Usa la variabile esistente per l'ombra
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $primary-color; // Applica il colore primario a tutte le intestazioni
+}
