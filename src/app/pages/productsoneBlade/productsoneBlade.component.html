@@ -1,6 +1,22 @@
 <app-image-carousel></app-image-carousel>
 
-<div class="container mt-5 mb-5">
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <nav aria-label="breadcrumb" class="mt-4">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a routerLink="/">Home</a>
+          </li>
+          <li class="breadcrumb-separator">></li>
+          <li class="breadcrumb-item active" aria-current="page">Prodotti</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-3 mb-5">
   <div class="row justify-content-center">
     <div class="col-12 col-md-10">
       <app-box-product [title]="'InfyBladeSuite'"
@@ -14,3 +30,5 @@
     </div>
   </div>
 </div>
+
+<app-infooneBlade></app-infooneBlade>

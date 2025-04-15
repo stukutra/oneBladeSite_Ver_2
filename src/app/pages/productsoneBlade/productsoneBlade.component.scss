@@ -115,3 +115,44 @@
         }
     }
 }
+
+.text-title {
+    color: $text-color-oneblade; // Match the color of other titles
+    font-size: $font-size-xl;
+    font-weight: bold;
+    margin-bottom: $gap-size;
+}
+
+.text-presentation {
+    color: $text-dark;
+    font-size: $font-size-md;
+    margin-bottom: $gap-size;
+    line-height: 1.6; // Improve readability
+}
+
+.breadcrumb {
+    background-color: transparent; // Transparent background
+    padding: 0; // Remove padding
+    margin-bottom: $gap-size; // Add spacing below breadcrumb
+    font-size: $font-size-sm; // Use small font size
+    display: flex; // Ensure items are aligned horizontally
+    align-items: center; // Center items vertically
+}
+
+.breadcrumb-item a,
+.breadcrumb-item.active {
+    color: $text-color-oneblade; // Make all breadcrumb text the same color as "Home"
+    text-decoration: none; // Remove underline
+    transition: color $transition-speed; // Smooth transition for hover effect
+
+    &:hover {
+        color: darken($text-color-oneblade, 10%); // Darken color on hover
+    }
+}
+
+.breadcrumb-separator {
+    margin: 0 $gap-size / 2; // Reduce spacing around the separator
+    padding: 0 $gap-size / 2; // Reduce padding to the left and right of the separator
+    color: $text-color-oneblade; // Match the color of breadcrumb text
+    font-weight: bold; // Make the separator prominent
+}
