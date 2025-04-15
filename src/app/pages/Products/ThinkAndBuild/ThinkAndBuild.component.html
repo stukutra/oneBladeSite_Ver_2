@@ -1,6 +1,9 @@
 <app-image-carousel></app-image-carousel>
 
-<section class="think-and-build container py-5 mt-3">
+
+
+
+<div class="container mt-5">
   <div class="row">
     <div class="col">
       <h1 class="title mb-4">Hai un'idea per un software, un'app o un servizio?</h1>
@@ -10,6 +13,16 @@
       </p>
     </div>
   </div>
+  <div class="row">
+    <div class="col">
+      <app-oneBladeVideo videoPath="../../assets/Video/Think_Build.mp4"></app-oneBladeVideo>
+    </div>
+  </div>
+</div>
+
+
+<section class="think-and-build container py-5">
+ 
   <div class="row align-items-center">
     <div class="col-md-4 mt-2 mb-3">
       <img src="../../../assets/ThinkAndBuild/thinkAndBuildInfo.png" alt="Think & Build"
@@ -87,19 +100,14 @@
           <em>Successivamente al pagamento, verrà emessa regolare fattura per il servizio. La data e l'orario della call
             saranno concordati con il nostro staff, che provvederà a contattarti per definire tutti i dettagli.</em>
         </p>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-          <input type="hidden" name="cmd" value="_xclick">
-          <input type="hidden" name="business" value="your-paypal-email@example.com">
-          <input type="hidden" name="item_name" value="Consulenza 1 ora">
-          <input type="hidden" name="amount" value="150.00">
-          <input type="hidden" name="currency_code" value="EUR">
-          <button type="submit" class="btn btn-primary">
-            <i class="bi bi-paypal"></i> Paga € 150,00 + IVA con PayPal
-          </button>
-        </form>
+        <a href="https://www.paypal.com/ncp/payment/P4RHJAUSW7YKA" target="_blank" class="btn btn-primary btn-lg px-5 py-3">
+          <i class="bi bi-paypal"></i> Paga € 150,00 + IVA con PayPal
+        </a>
+
       </div>
     </div>
   </div>
+
 </section>
 
 <app-infooneBlade></app-infooneBlade>
