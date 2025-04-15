@@ -24,6 +24,26 @@
         object-fit: cover; // Default behavior for all images
         display: block; // Ensure the image is treated as a block element
         margin: 0 auto; // Center the image horizontally
+        max-width: 100%; // Ensure images don't overflow on smaller screens
+    }
+
+    @media (max-width: 768px) {
+        .carousel-inner {
+            text-align: center; // Center-align content for smaller screens
+        }
+
+        .row {
+            flex-direction: column; // Stack columns vertically on smaller screens
+        }
+
+        .col-md-4,
+        .col-md-8 {
+            width: 100%; // Ensure columns take full width on mobile
+        }
+
+        .card {
+            height: auto; // Allow cards to adjust height on smaller screens
+        }
     }
 }
 
@@ -44,6 +64,11 @@
     &:hover {
         background-color: vars.$topbar-color; // Fill with the site's primary color on hover
         color: vars.$text-light; // Change text to white on hover
+    }
+
+    @media (max-width: 768px) {
+        padding: 0.5rem 1.5rem; // Adjust padding for smaller screens
+        font-size: vars.$font-size-sm; // Use smaller font size
     }
 }
 
@@ -113,7 +138,17 @@ section.text-center {
         }
     }
 
-   
+    @media (max-width: 768px) {
+        .card {
+            flex-direction: column; // Stack card content vertically
+        }
+
+        .card-header,
+        .card-body,
+        .card-footer {
+            text-align: center; // Center-align text for smaller screens
+        }
+    }
 }
 
 .infyblade-tabs {
@@ -168,6 +203,16 @@ section.text-center {
         position: relative; // Ensure the tab body is below the active tab
         z-index: 1; // Place the tab body below the active tab
     }
+
+    @media (max-width: 768px) {
+        .nav-tabs {
+            flex-wrap: wrap; // Allow tabs to wrap on smaller screens
+        }
+
+        .nav-link {
+            font-size: vars.$font-size-sm; // Use smaller font size
+        }
+    }
 }
 
 .imgReduce {
@@ -182,4 +227,8 @@ section.text-center {
     height: 550px; // Set a fixed height for all cards
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 768px) {
+        height: auto; // Allow cards to adjust height on smaller screens
+    }
 }
