@@ -43,14 +43,7 @@
         }
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        color: $primary-color; // Applica il colore primario alle intestazioni nella sezione think-and-build
-    }
+
 }
 
 
@@ -80,4 +73,30 @@
     padding: 0 math.div($gap-size, 2); // Reduce padding to the left and right of the separator
     color: $text-color-oneblade; // Match the color of breadcrumb text
     font-weight: bold; // Make the separator prominent
+}
+
+.step-line .step-box {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* Allinea il contenuto in alto */
+    text-align: center;
+
+    .step-title {
+        margin-bottom: 0.5rem;
+        /* Riduci il margine inferiore */
+    }
+
+    .step-description {
+        margin: 0;
+        /* Rimuovi margini */
+        padding: 0;
+        /* Rimuovi padding */
+        text-align: left;
+        /* Allinea il testo a sinistra */
+        width: 100%;
+        /* Assicura che il paragrafo occupi tutta la larghezza */
+    }
 }
