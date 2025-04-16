@@ -98,6 +98,9 @@
     }
 }
 
+
+
+
 .sharedBoxStyles {
     background-size: contain; // Ensure the image fits within the container
     background-position: center;
@@ -138,7 +141,39 @@
     background-image: url('../../../../assets/CustomSoftware/CustomSoftware_oneBlade.jpg');
 }
 
+.ThinkAndBuildContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Add transition for hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Initial shadow */
 
+    &:hover {
+        transform: scale(1.02);
+        /* Slight zoom on hover */
+        box-shadow: 0 6px 15px rgba(27, 25, 25, 0.2);
+        /* Enhanced shadow on hover */
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 12px;
+        transition: transform 0.3s ease;
+        /* Smooth zoom effect */
+    }
+
+    &:hover img {
+        transform: scale(1.02);
+        /* Zoom effect for the image */
+    }
+}
 
 @keyframes lightReflection {
     0% {
@@ -437,4 +472,26 @@
     }
 
 
+}
+
+
+.borderRadius {
+    border-radius: 12px !important;
+}
+
+img.borderRadius {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Add transition for hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Initial shadow */
+    border-radius: 12px;
+
+    &:hover {
+        transform: scale(1.02);
+        /* Slight zoom on hover */
+        box-shadow: 0 6px 15px rgba(27, 25, 25, 0.2);
+        /* Enhanced shadow on hover */
+        cursor: pointer;
+        /* Add pointer cursor on hover */
+    }
 }
