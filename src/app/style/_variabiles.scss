@@ -135,14 +135,7 @@ $fun-button-animation-duration: 0.5s;
     box-shadow: $box-shadow; // Usa la variabile esistente per l'ombra
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: $primary-color; // Applica il colore primario a tutte le intestazioni
-}
+
 
 .payment-box {
     background-color: $background-light;

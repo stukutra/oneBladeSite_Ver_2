@@ -78,21 +78,67 @@
 
 .Talent {
     background-image: url('../../../../assets/sviluppoSoftwareOneBlade.jpg');
+    display: flex;
+    /* Enable flexbox */
+    flex-direction: column;
+    /* Ensure content stacks vertically */
+    justify-content: center;
+    /* Center content vertically */
+    align-items: center;
+    /* Center content horizontally */
+
+    img {
+        max-width: 100%;
+        /* Ensure the image does not exceed the container width */
+        max-height: 100%;
+        /* Ensure the image does not exceed the container height */
+        object-fit: contain;
+        /* Maintain aspect ratio and fit within the container */
+        border-radius: 50px;
+    }
 }
 
-.CustomSoftware {
-    background-image: url('../../../../assets/CustomSoftware/CustomSoftware_oneBlade.jpeg');
+.sharedBoxStyles {
     background-size: contain; // Ensure the image fits within the container
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+    height: 100%;
+    /* Ensure it takes the full height of the container */
 
     img {
-        width: 100%; // Ensure the image does not exceed the container width
-        height: auto; // Maintain aspect ratio
-        object-fit: contain; // Ensure the image fits within the container
-        border-radius: 12px;
+        max-width: 100%;
+        /* Ensure the image does not exceed the container width */
+        max-height: 100%;
+        /* Ensure the image does not exceed the container height */
+        object-fit: contain;
+        /* Maintain aspect ratio and fit within the container */
+        border-radius: 50px;
+        /* Add rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        /* Add shadow for better appearance */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        /* Add transition for zoom effect */
+    }
+
+    &:hover img {
+        transform: scale(1.02);
+        /* Zoom effect */
+        box-shadow: 0 6px 15px rgba(27, 25, 25, 0.2);
+        /* Enhanced shadow on hover */
     }
 }
+
+.CustomSoftware {
+    @extend .sharedBoxStyles;
+    background-image: url('../../../../assets/CustomSoftware/CustomSoftware_oneBlade.jpg');
+}
+
+
 
 @keyframes lightReflection {
     0% {
@@ -390,5 +436,5 @@
         /* Maintain font size */
     }
 
-    
+
 }

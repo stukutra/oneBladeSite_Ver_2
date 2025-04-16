@@ -148,6 +148,7 @@
 
     &:hover {
         color: darken($text-color-oneblade, 10%); // Darken color on hover
+        cursor: pointer; // Add pointer cursor
     }
 }
 

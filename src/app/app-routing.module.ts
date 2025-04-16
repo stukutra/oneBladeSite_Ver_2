@@ -48,7 +48,6 @@ const routes: Routes = [
   { path: 'customSoftware', component: CustomSoftwareComponent },
   { path: 'partnersOneBlade', component: PartnersOneBladeComponent },
   { path: 'ProductsoneBladeComponent', component: ProductsoneBladeComponent },
-  { path: 'ProductsoneBladeComponent', component: ProductsoneBladeComponent },
   { path: 'ThinkAndBuildComponent', component: ThinkAndBuildComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
