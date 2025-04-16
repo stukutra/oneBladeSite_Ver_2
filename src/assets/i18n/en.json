@@ -345,5 +345,39 @@
   "STACKS": {
     "TITLE": "Stacks",
     "DESCRIPTION": "A collection of my favorite stacks and tools I use in my projects."
+  },
+  "THINK_AND_BUILD": {
+    "TITLE": "Do you have an idea for software, an app, or a service?",
+    "SUBTITLE": "Book a 1-hour consultation with our team of experts to find out if your idea is feasible.",
+    "VIDEO_ALT": "Think & Build",
+    "OFFER_TITLE": "What we offer",
+    "OFFER_BODY": "During the consultation, <strong>we will analyze your idea together</strong>, assess its <strong>technical feasibility</strong>, and provide you with concrete guidance on how to turn it into reality. Whether it's software, an app, or a digital service, we are here to help.",
+    "HOW_IT_WORKS_TITLE": "How it works",
+    "HOW_IT_WORKS_LIST": [
+      "<strong>Share your idea</strong> or project with us.",
+      "<strong>Join a 1-hour call</strong> with our experts.",
+      "<strong>Receive clear feedback</strong> and professional advice on feasibility and next steps."
+    ],
+    "BOOK_NOW_TITLE": "Book now",
+    "BOOK_NOW_BODY": "It doesn't matter if you're just starting or already have a project underway. Our consultation is designed to give you clarity and support. <strong>Contact us today</strong> to book your session.",
+    "STEP_LINE_TITLE": "Call Step Line",
+    "STEPS": [
+      {
+        "TITLE": "1. Welcome",
+        "DESCRIPTION": "We will welcome your request and ask you to describe what you want to achieve."
+      },
+      {
+        "TITLE": "2. Questions",
+        "DESCRIPTION": "We will ask questions related to your project and what outcome you want to achieve in terms of development and time."
+      },
+      {
+        "TITLE": "3. Consultation",
+        "DESCRIPTION": "We will have a chat with you and provide our personal consultation based on our experience in software development."
+      }
+    ],
+    "PAYMENT_INFO_TITLE": "Cost and payment method",
+    "PAYMENT_INFO_BODY": "The call costs <strong>€150 + VAT</strong>, which includes one hour of personalized consultation with our experts.",
+    "PAYMENT_NOTE": "After payment, a regular invoice for the service will be issued. The date and time of the call will be agreed upon with our staff, who will contact you to define all the details.",
+    "PAY_BUTTON": "Pay € 150.00 + VAT with PayPal"
   }
 }

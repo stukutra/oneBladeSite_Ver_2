@@ -342,5 +342,39 @@
   "STACKS": {
     "TITLE": "Stack",
     "DESCRIPTION": "Una raccolta dei miei stack e strumenti preferiti che utilizzo nei miei progetti."
+  },
+  "THINK_AND_BUILD": {
+    "TITLE": "Hai un'idea per un software, un'app o un servizio?",
+    "SUBTITLE": "Prenota una consulenza di 1 ora con il nostro team di esperti per scoprire se la tua idea è realizzabile.",
+    "VIDEO_ALT": "Think & Build",
+    "OFFER_TITLE": "Cosa offriamo",
+    "OFFER_BODY": "Durante la consulenza, <strong>analizzeremo insieme la tua idea</strong>, valuteremo la <strong>fattibilità tecnica</strong> e ti forniremo indicazioni concrete su come trasformarla in realtà. Che si tratti di un software, un'app o un servizio digitale, siamo qui per aiutarti.",
+    "HOW_IT_WORKS_TITLE": "Come funziona",
+    "HOW_IT_WORKS_LIST": [
+      "<strong>Condividi con noi</strong> la tua idea o il tuo progetto.",
+      "<strong>Partecipa a una call di 1 ora</strong> con i nostri esperti.",
+      "<strong>Ricevi un feedback chiaro</strong> e professionale sulla fattibilità e i prossimi passi."
+    ],
+    "BOOK_NOW_TITLE": "Prenota ora",
+    "BOOK_NOW_BODY": "Non importa se sei all'inizio o hai già un progetto in corso. La nostra consulenza è pensata per darti chiarezza e supporto. <strong>Contattaci oggi stesso</strong> per prenotare la tua sessione.",
+    "STEP_LINE_TITLE": "Step Line della Call",
+    "STEPS": [
+      {
+        "TITLE": "1. Accoglienza",
+        "DESCRIPTION": "Accoglieremo la tua richiesta e ci faremo descrivere da te cosa vuoi realizzare."
+      },
+      {
+        "TITLE": "2. Domande",
+        "DESCRIPTION": "Faremo delle domande relative al tuo progetto e qual è il risultato che vuoi ottenere in ordine di sviluppo e tempo."
+      },
+      {
+        "TITLE": "3. Consulenza",
+        "DESCRIPTION": "Faremo insieme una chiacchierata e ti daremo la nostra consulenza personale dettata dalla nostra esperienza nello sviluppo software."
+      }
+    ],
+    "PAYMENT_INFO_TITLE": "Costo e modalità di pagamento",
+    "PAYMENT_INFO_BODY": "La call ha un costo di <strong>€150 + IVA</strong>, che include un'ora di consulenza personalizzata con i nostri esperti.",
+    "PAYMENT_NOTE": "Successivamente al pagamento, verrà emessa regolare fattura per il servizio. La data e l'orario della call saranno concordati con il nostro staff, che provvederà a contattarti per definire tutti i dettagli.",
+    "PAY_BUTTON": "Paga € 150,00 + IVA con PayPal"
   }
 }

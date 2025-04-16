@@ -345,5 +345,39 @@
     "STACKS": {
         "TITLE": "Stacks",
         "DESCRIPTION": "Una colección de mis stacks y herramientas favoritas que utilizo en mis proyectos."
+    },
+    "THINK_AND_BUILD": {
+        "TITLE": "¿Tienes una idea para un software, una app o un servicio?",
+        "SUBTITLE": "Reserva una consulta de 1 hora con nuestro equipo de expertos para descubrir si tu idea es viable.",
+        "VIDEO_ALT": "Think & Build",
+        "OFFER_TITLE": "Qué ofrecemos",
+        "OFFER_BODY": "Durante la consulta, <strong>analizaremos juntos tu idea</strong>, evaluaremos la <strong>viabilidad técnica</strong> y te proporcionaremos indicaciones concretas sobre cómo convertirla en realidad. Ya sea un software, una app o un servicio digital, estamos aquí para ayudarte.",
+        "HOW_IT_WORKS_TITLE": "Cómo funciona",
+        "HOW_IT_WORKS_LIST": [
+            "<strong>Comparte con nosotros</strong> tu idea o proyecto.",
+            "<strong>Participa en una llamada de 1 hora</strong> con nuestros expertos.",
+            "<strong>Recibe un feedback claro</strong> y profesional sobre la viabilidad y los próximos pasos."
+        ],
+        "BOOK_NOW_TITLE": "Reserva ahora",
+        "BOOK_NOW_BODY": "No importa si estás comenzando o ya tienes un proyecto en marcha. Nuestra consulta está diseñada para darte claridad y apoyo. <strong>Contáctanos hoy mismo</strong> para reservar tu sesión.",
+        "STEP_LINE_TITLE": "Línea de pasos de la llamada",
+        "STEPS": [
+            {
+                "TITLE": "1. Bienvenida",
+                "DESCRIPTION": "Recibiremos tu solicitud y te pediremos que nos describas lo que quieres realizar."
+            },
+            {
+                "TITLE": "2. Preguntas",
+                "DESCRIPTION": "Haremos preguntas relacionadas con tu proyecto y qué resultado deseas obtener en términos de desarrollo y tiempo."
+            },
+            {
+                "TITLE": "3. Consulta",
+                "DESCRIPTION": "Tendremos una charla contigo y te daremos nuestra consulta personal basada en nuestra experiencia en desarrollo de software."
+            }
+        ],
+        "PAYMENT_INFO_TITLE": "Costo y método de pago",
+        "PAYMENT_INFO_BODY": "La llamada tiene un costo de <strong>€150 + IVA</strong>, que incluye una hora de consulta personalizada con nuestros expertos.",
+        "PAYMENT_NOTE": "Después del pago, se emitirá una factura regular por el servicio. La fecha y hora de la llamada se acordarán con nuestro personal, que se pondrá en contacto contigo para definir todos los detalles.",
+        "PAY_BUTTON": "Paga € 150,00 + IVA con PayPal"
     }
 }
