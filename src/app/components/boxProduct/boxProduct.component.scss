@@ -7,13 +7,13 @@
     padding: variabiles.$padding-box;
     box-shadow: variabiles.$box-shadow; // Default shadow
     transition: transform variabiles.$transition-speed, box-shadow variabiles.$transition-speed;
-    cursor: pointer; // Change cursor to pointer to indicate clickability
+    cursor: default; // Rimuovo il pointer dal contenitore principale
     position: relative;
     overflow: hidden; // Ensure the pseudo-element stays within the box
 
     &:hover {
-        transform: scale(1.02); // Reduced zoom effect
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); // Stronger shadow on hover
+        transform: scale(1.03); // Slightly stronger hover effect
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); // Softer shadow
     }
 
     &:hover::before {
@@ -91,6 +91,14 @@
             position: relative;
             top: -5px; // Move the title slightly up
             margin-bottom: variabiles.$gap-size; // Add spacing from the bottom border
+            display: flex;
+            align-items: center;
+            gap: 10px; // Space between icon and title
+
+            .icon {
+                font-size: 1.5rem; // Adjust icon size
+                color: variabiles.$text-color-oneblade; // Match title color
+            }
         }
     }
 
@@ -115,6 +123,7 @@
             .footer-logo {
                 height: 39px; // 30% larger than the previous 30px
                 width: auto; // Maintain aspect ratio
+                border-radius: 0; // Rimuovo l'arrotondamento delle immagini
             }
 
             .logo-separator {
@@ -128,6 +137,39 @@
             color: variabiles.$text-color-oneblade;
             font-weight: bold;
             font-size: variabiles.$font-size-sm;
+        }
+
+        .highlight-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: transparent; // Vuoto di default
+            color: variabiles.$primary-color; // Colore del testo uguale al colore primario
+            border: 1px solid variabiles.$primary-color; // Ridimensiono il bordo a 1px
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease; // Transizione per colore e sfondo
+            cursor: pointer;
+
+            &:hover {
+                background-color: variabiles.$primary-color; // Si riempie con il colore primario
+                color: #fff; // Testo bianco sull'hover
+            }
+        }
+    }
+
+    img {
+        border-radius: 15px; // Arrotondo i bordi delle immagini a 15px
+    }
+}
+
+.col-md-8 {
+    p {
+        font-size: variabiles.$font-size-base; // Imposto una dimensione intermedia
+
+        strong {
+            color: variabiles.$text-color-oneblade; // Colore uguale al titolo
+            font-weight: bold; // Mantengo il testo in grassetto
         }
     }
 }

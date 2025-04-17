@@ -1,6 +1,9 @@
 <div class="product-highlight-box">
     <div class="box-topbar">
-        <h2>{{ title }}</h2>
+        <h2>
+            <span *ngIf="icon" class="icon" [innerHTML]="icon"></span>
+            {{ title }}
+        </h2>
     </div>
     <div class="row align-items-center">
         <div class="col-md-4 text-center mt-3 mb-3">
@@ -17,6 +20,6 @@
                 <span *ngIf="i < logos.slice(1).length - 1" class="logo-separator">+</span>
             </ng-container>
         </div>
-        <a [routerLink]="link" class="highlight mt-3">Scopri di più</a>
+        <a [routerLink]="link" class="highlight-button mt-3">Scopri di più</a>
     </div>
 </div>

@@ -10,4 +10,5 @@ export class BoxProductComponent {
     @Input() content: string = '';
     @Input() logos: { src: string; alt: string }[] = [];
     @Input() link: string = '';
+    @Input() icon: string = ''; // Optional icon HTML
 }
