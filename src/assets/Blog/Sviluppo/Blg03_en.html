@@ -1,0 +1,386 @@
+<!-- Main title of the article -->
+<h1>Effective Design of a Website in Angular</h1>
+
+<!-- Introductory section -->
+<p>
+  Here is a detailed article on how to effectively design a
+  website entirely based on Angular, including the tools to
+  use, the fundamental steps, and useful tips to create a
+  solid and maintainable structure.
+</p>
+
+<!-- Section: Why choose Angular -->
+<h2>1. Why choose Angular</h2>
+<p>
+  Angular is a front-end framework developed and maintained by Google. Its
+  solid and modular structure, combined with TypeScript support, makes it ideal
+  for medium to large-sized web applications. Here are some main advantages:
+</p>
+<ul>
+  <li>
+    <strong>TypeScript</strong>: Adds static typing and simplifies
+    long-term code maintenance.
+  </li>
+  <li>
+    <strong>Component structure</strong>: Each part of the UI is divided into
+    components, facilitating reuse and organization.
+  </li>
+  <li>
+    <strong>Official CLI</strong>: The Angular CLI (Command Line Interface)
+    speeds up the creation of components, services, and more.
+  </li>
+  <li>
+    <strong>Active community</strong>: Millions of developers contribute
+    with libraries, packages, and tutorials.
+  </li>
+</ul>
+
+<!-- Section: Essential tools -->
+<h2>2. Essential tools</h2>
+
+<h3>2.1 Angular CLI</h3>
+<ul>
+  <li>
+    <strong>Installation:</strong> open the terminal and type:
+    <pre><code>npm install -g @angular/cli</code></pre>
+    Using the Angular CLI allows you to quickly generate components, services,
+    modules, and manage builds and tests.
+  </li>
+  <li>
+    <strong>Creating a new project:</strong>
+    <pre><code>ng new project-name</code></pre>
+    A folder structure with preconfigured files for
+    TypeScript, tests, and build configurations will be created.
+  </li>
+</ul>
+
+<h3>2.2 Editor and IDE</h3>
+<ul>
+  <li>
+    <strong>Visual Studio Code</strong>: A popular choice thanks
+    to its integration with TypeScript and Angular extensions.
+  </li>
+  <li>
+    <strong>WebStorm</strong>: Offers advanced features for TypeScript and
+    Angular natively integrated.
+  </li>
+</ul>
+
+<h3>2.3 Common libraries and dependencies</h3>
+<ul>
+  <li>
+    <strong>RxJS</strong>: The heart of Angular's reactive management, useful for
+    data flows and asynchronous events.
+  </li>
+  <li>
+    <strong>Angular Material</strong> (optional): Official UI component library
+    for a consistent and responsive design.
+  </li>
+  <li>
+    <strong>Bootstrap</strong> (optional): If a classic approach
+    to styling is preferred.
+  </li>
+</ul>
+
+<!-- Section: Project structure -->
+<h2>3. Project structure</h2>
+<p>
+  With Angular CLI, the typical structure of a project looks like this:
+</p>
+<pre><code>project-name/
+├─ e2e/
+├─ src/
+│  ├─ app/
+│  │  ├─ components/
+│  │  ├─ services/
+│  │  ├─ models/
+│  │  ├─ shared/
+│  │  ├─ app.module.ts
+│  │  └─ app.component.ts
+│  ├─ assets/
+│  ├─ environments/
+│  ├─ index.html
+│  └─ main.ts
+├─ angular.json
+├─ package.json
+└─ tsconfig.json
+</code></pre>
+
+<p><strong>Key points:</strong></p>
+<ol>
+  <li>
+    <strong>Folder <code>app/</code></strong>
+    <ul>
+      <li>
+        <code>components/</code>: all the components that form the parts
+        of the interface.
+      </li>
+      <li>
+        <code>services/</code>: services that manage business logic or
+        HTTP calls.
+      </li>
+      <li>
+        <code>models/</code>: TypeScript interfaces or classes to represent
+        data.
+      </li>
+      <li>
+        <code>shared/</code>: reusable directives, pipes, and components.
+      </li>
+      <li>
+        <code>app.module.ts</code>: defines the main module that encapsulates
+        the Angular application.
+      </li>
+      <li>
+        <code>app.component.ts</code>: the "root" component of the application,
+        the entry point of the interface.
+      </li>
+    </ul>
+  </li>
+  <li>
+    <strong>Folder <code>assets/</code></strong>
+    <p>Contains images, JSON files, or other static resources.</p>
+  </li>
+  <li>
+    <strong>Folder <code>environments/</code></strong>
+    <p>
+      Usually contains <code>environment.ts</code> and
+      <code>environment.prod.ts</code> to separate development configurations
+      from production ones.
+    </p>
+  </li>
+  <li>
+    <strong
+      >Configuration files (<code>angular.json</code>,
+      <code>package.json</code>, <code>tsconfig.json</code>)</strong
+    >
+    <ul>
+      <li>
+        <code>angular.json</code>: defines build, test options, and
+        CLI-specific configurations.
+      </li>
+      <li><code>package.json</code>: manages the project's dependencies.</li>
+      <li>
+        <code>tsconfig.json</code>: contains the TypeScript configuration.
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<!-- Section: Fundamental steps -->
+<h2>4. Fundamental steps in creating an Angular site</h2>
+
+<h3>4.1 Initial setup</h3>
+<ol>
+  <li>
+    <strong>Create the project:</strong>
+    <pre><code>ng new project-name</code></pre>
+  </li>
+  <li>
+    <strong>Choose the style</strong> (CSS, SCSS, SASS, Less) during
+    project generation based on preferences.
+  </li>
+  <li>
+    <strong>Start the development server:</strong>
+    <pre><code>cd project-name
+ng serve
+</code></pre>
+    <p>
+      The application will be accessible at <code>http://localhost:4200</code>.
+    </p>
+  </li>
+</ol>
+
+<h3>4.2 Creating components</h3>
+<ol>
+  <li>
+    <strong>Generate a component:</strong>
+    <pre><code>ng generate component components/component-name</code></pre>
+  </li>
+  <li>
+    <strong>File structure</strong>
+    <ul>
+      <li><code>component-name.component.ts</code>: TypeScript logic.</li>
+      <li><code>component-name.component.html</code>: HTML template.</li>
+      <li>
+        <code>component-name.component.css</code> or <code>.scss</code>: component style.
+      </li>
+      <li><code>component-name.component.spec.ts</code>: test file.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>@Component decorator</strong>
+    <p>
+      Defines metadata such as <code>selector</code>, <code>templateUrl</code>, and
+      <code>styleUrls</code>. The <code>selector</code> (e.g.,
+      <code>app-component-name</code>) is used to include the component
+      in other templates.
+    </p>
+  </li>
+</ol>
+
+<h3>4.3 Services and API communication</h3>
+<ol>
+  <li>
+    <strong>Create a service:</strong>
+    <pre><code>ng generate service services/service-name</code></pre>
+  </li>
+  <li>
+    <strong>Dependency injection</strong>
+    <ul>
+      <li>
+        In the <code>@Injectable()</code> decorator, define the service's availability
+        (root, module, etc.).
+      </li>
+      <li>
+        Services are injected into components through the constructor:
+        <pre><code>constructor(private serviceName: ServiceName) {}</code></pre>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <strong>HTTP management</strong>
+    <ul>
+      <li>
+        Import <code>HttpClientModule</code> in <code>app.module.ts</code>.
+      </li>
+      <li>
+        Use <code>HttpClient</code> in services for GET/POST/PUT/DELETE requests.
+      </li>
+      <li>
+        Leverage <code>RxJS</code> to handle responses asynchronously and
+        reactively.
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<h3>4.4 Routing and navigation</h3>
+<ol>
+  <li>
+    <strong>Configure Routing</strong>
+    <pre><code>const routes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
+  // other routes...
+];
+</code></pre>
+  </li>
+  <li>
+    <strong>Import <code>RouterModule</code></strong>
+    <pre><code>@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule {}</code></pre>
+  </li>
+  <li>
+    <strong>Using <code>&lt;router-outlet&gt;</code></strong>
+    <p>
+      In the <code>app.component.html</code> template, insert
+      <code>&lt;router-outlet&gt;&lt;/router-outlet&gt;</code> to provide
+      a dynamic rendering area for components.
+    </p>
+  </li>
+</ol>
+
+<h3>4.5 Optimization and final build</h3>
+<ol>
+  <li>
+    <strong>Environment management</strong>
+    <p>
+      <code>environment.ts</code> file for development and
+      <code>environment.prod.ts</code> for production.
+    </p>
+  </li>
+  <li>
+    <strong>Production build</strong>
+    <pre><code>ng build --prod</code></pre>
+    <p>
+      A <code>dist/project-name</code> folder with minified files
+      for deployment will be created.
+    </p>
+  </li>
+  <li>
+    <strong>Optimizations</strong>
+    <ul>
+      <li>
+        <strong>Lazy Loading</strong>: load modules on demand to
+        reduce the initial bundle.
+      </li>
+      <li>
+        <strong>Image optimization</strong>: compression and
+        responsive loading.
+      </li>
+      <li>
+        <strong>Caching</strong>: configure the
+        <code>Cache-Control</code> header or use a service worker (PWA).
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<!-- Section: Best practices -->
+<h2>5. Best practices for a scalable structure</h2>
+<ul>
+  <li>
+    <strong>Organize components into modules</strong>: Create dedicated modules
+    (<em>SharedModule</em>, <em>AuthModule</em>, <em>AdminModule</em>) to
+    group components and services.
+  </li>
+  <li>
+    <strong>Consistent naming</strong>: Use consistent conventions
+    for files, folders, and classes.
+  </li>
+  <li>
+    <strong
+      >Use <code>CoreModule</code> and
+      <code>SharedModule</code></strong
+    >:
+    <ul>
+      <li>
+        <strong>CoreModule</strong>: global services, components used only once.
+      </li>
+      <li>
+        <strong>SharedModule</strong>: common components, pipes, and directives
+        reusable in multiple modules.
+      </li>
+    </ul>
+  </li>
+  <li>
+    <strong>Separate logic</strong>: Keep business logic in
+    services (or in the store, e.g., NgRx) and keep components lightweight.
+  </li>
+  <li>
+    <strong>Test components and services</strong>: Angular CLI provides
+    Karma and Jasmine for unit tests. Cover the most relevant cases.
+  </li>
+</ul>
+
+<!-- Section: Practical tips and Conclusion -->
+<h2>6. Practical tips and conclusion</h2>
+<ul>
+  <li></li>
+    <strong>Use linting tools</strong>: ESLint or TSLint to follow
+    style rules and keep the code organized.
+  </li>
+  <li>
+    <strong>Document the code</strong>: Comments and inline documentation
+    make the project more understandable.
+  </li>
+  <li>
+    <strong>Manage versions and dependencies carefully</strong>: Regularly
+    update Angular and dependencies.
+  </li>
+  <li>
+    <strong>Leverage the community</strong>: Angular is supported by numerous
+    online resources; if you encounter a problem, it is likely that there is already a
+    solution.
+  </li>
+</ul>
+
+<p>
+  By following these steps, you will be able to create a website entirely
+  based on Angular efficiently and organized. A good initial structure
+  and the use of the right tools are essential to work productively and keep the project
+  scalable over time. Good luck!
+</p>

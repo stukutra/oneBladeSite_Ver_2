@@ -1,112 +1,185 @@
+@use '../../style/_variabiles' as *;
+
 // Variabili
 $footer-bg-gradient-color-1: rgba(79, 107, 243, 0.2); // Blu chiaro con trasparenza
 $footer-bg-gradient-color-2: rgba(62, 60, 207, 0.5); // Blu scuro con trasparenza
 $footer-bg-gradient-color-3: rgba(155, 52, 177, 0.21); // Viola con trasparenza
 $footer-bg-gradient-color-4: rgba(207, 44, 148, 0.76); // Magenta con trasparenza
-$footer-bg-gradient-color-5: #ffffff; // Bianco
+$footer-bg-gradient-color-5: $background-color_2; // Bianco
 $footer-box-shadow-color-1: rgba(247, 247, 247, 0.841); // Ombra leggera bianca
-$footer-box-shadow-color-2: rgba(194, 194, 194, 0.295); // Ombra scura verso l'alto
-$footer-text-color: #dadada; // Colore del testo
+$footer-box-shadow-color-2: $box-shadow-color; // Ombra scura verso l'alto
+$footer-text-color: $text-color; // Colore del testo
 $footer-logo-max-width: 150px; // Larghezza massima del logo
 $footer-margin-bottom: 15px; // Spazio sotto il logo e testo
-$footer-font-size: 16px; // Dimensione del font
-$footer-link-color: #fbfbfb; // Colore dei link
+$footer-font-size: $font-size-base; // Dimensione del font
+$footer-link-color: $text-light; // Colore dei link
 $footer-link-hover-color: rgba(255, 255, 255, 0.8); // Colore dei link al passaggio del mouse
 $footer-link-spacing: 0 15px; // Spazio tra i link
-$footer-link-transition: 0.3s ease; // Transizione per i link
-$footer-linkedin-color: #0077b5; // Colore dell'icona LinkedIn
+$footer-link-transition: $transition-duration ease; // Transizione per i link
+$footer-linkedin-color: $linkedin-color; // Colore dell'icona LinkedIn
+
+// Stili
+html,
+body {
+  height: 100%; // Ensure the body takes up the full height of the viewport
+  margin: 0; // Remove default margin
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; // Ensure the container takes up the full height of the viewport
+}
 
 .footer-wrapper {
-  position: relative;
-  width: 100%;
-  //background: linear-gradient(45deg, $footer-bg-gradient-color-1, $footer-bg-gradient-color-2, $footer-bg-gradient-color-3, $footer-bg-gradient-color-4, $footer-bg-gradient-color-5);
-  box-shadow: 0 4px 6px $footer-box-shadow-color-1;
-  //color: $footer-text-color; /* Colore del testo */
+  background: linear-gradient(to bottom, $footer-bg-gradient-color-1, $footer-bg-gradient-color-2);
+  color: $footer-text-color;
+  padding: 20px 0;
   text-align: center;
-  padding: 0; /* Rimuove il padding predefinito */
-  height: 400px; /* Altezza fissa del footer */
-  box-shadow: 0 -4px 8px $footer-box-shadow-color-2; /* Ombra che va verso l'alto */
-  display: flex; /* Usa Flexbox per un layout flessibile */
-  flex-direction: column; /* Colonna per gli elementi del footer */
-  align-items: center; /* Allinea gli elementi al centro orizzontalmente */
-  justify-content: center; /* Centra verticalmente il contenuto */
-}
-
-.footer-wrapper::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  //background: url('../../../assets/sfumature.png') no-repeat center center;
-  background-size: cover; /* Assicura che l'immagine copra il contenitore */
-  transform: scaleX(-1); /* Mirroring orizzontale dell'immagine */
-  z-index: -1; /* Porta il pseudo-elemento dietro gli altri contenuti */
-  pointer-events: none; /* Rende l'elemento non interattivo */
-}
-
-.footer-logo {
-  max-width: $footer-logo-max-width; /* Imposta una larghezza massima per il logo */
-  margin-bottom: $footer-margin-bottom; /* Spazio tra il logo e il testo */
-  filter: drop-shadow(0 0 60px rgba(255, 255, 255, 1)); /* Effetto glow bianco */
+  margin-top: auto; // Push the footer to the bottom of the page
+  position: relative; // Ensure proper stacking context
+  z-index: 1;
 }
 
 .footer-content {
-  z-index: 10;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-.footer-content p {
-  margin: 0;
-  font-size: $footer-font-size; /* Dimensione del font aumentata per una migliore leggibilità */
-  margin-bottom: $footer-margin-bottom; /* Spazio tra il testo e i link */
+.footer-top {
+  display: flex;
+  justify-content: center; // Centra il contenuto orizzontalmente
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-logo-container {
+  flex: 1 1 100%; // Occupare l'intera larghezza
+  display: flex;
+  justify-content: center; // Centrare il logo orizzontalmente
+  margin-bottom: 15px;
+}
+
+.footer-logo {
+  max-width: $footer-logo-max-width;
+}
+
+.footer-links {
+  flex: 1 1 auto; // Adatta la larghezza dei link
+  display: flex;
+  justify-content: center; // Centrare i link orizzontalmente
+  gap: 15px;
 }
 
 .footer-link {
-  margin-top: $footer-margin-bottom; /* Spazio sopra i link */
-  transition: font-weight $footer-link-transition;
-  //color: $footer-link-color; /* Colore dei link */
-  text-decoration: none; /* Rimuove la sottolineatura dai link */
-  margin: $footer-link-spacing; /* Spazio tra i link */
-  font-size: $footer-font-size; /* Dimensione del font dei link aumentata */
-  display: inline-block;
-  transition: color $footer-link-transition; /* Transizione del colore al passaggio del mouse */
-}
+  color: $footer-link-color;
+  text-decoration: none;
+  font-size: $footer-font-size;
+  transition: color $footer-link-transition;
 
-// .footer-link:hover {
-//   color: $footer-link-hover-color; /* Colore dei link al passaggio del mouse */
-// }
-
-.footer-link.active {
-  font-weight: bold; /* Evidenzia il testo del menu attivo */
-}
-
-/* Stile specifico per il link LinkedIn */
-.footer-link i.bi-linkedin {
-  color: $footer-linkedin-color; /* Colore dell'icona LinkedIn */
-}
-
-.footer-link:hover i.bi-linkedin {
-  color: darken($footer-linkedin-color, 10%); /* Colore più scuro al passaggio del mouse */
-}
-
-
-@media (max-width: 768px) {
-  .footer-content p {
-    font-size: 0.9rem; // Riduce la dimensione del testo per tablet
+  &:hover {
+    color: $footer-link-hover-color;
   }
 
-  .footer-link {
-    font-size: 0.9rem; // Riduce la dimensione dei link per tablet
+  i.bi-whatsapp {
+    color: #ffffff; // Change WhatsApp icon color to white
+  }
+
+  &:hover i.bi-whatsapp {
+    color: rgba(255, 255, 255, 0.8); // Slightly lighter white on hover
+  }
+
+  i.bi-envelope {
+    color: #ffffff; // Change email icon color to white
+  }
+
+  &:hover i.bi-envelope {
+    color: rgba(255, 255, 255, 0.8); // Slightly lighter white on hover
   }
 }
 
-@media (max-width: 576px) {
-  .footer-content p {
-    font-size: 0.8rem; // Ancora più piccolo per smartphone
+.footer-bottom {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: $footer-text-color;
+}
+
+.footer-version {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #ffffff; // Change color to white
+}
+
+.custom-modal {
+  display: block;
+  /* Visibile quando necessario */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* Assicura lo scrolling della finestra */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Sfondo semitrasparente */
+}
+
+/* Contenuto della modale */
+.custom-modal-content {
+  position: relative;
+  background-color: #fff;
+  margin: auto;
+  /* Per centrare orizzontalmente */
+  top: 50%;
+  /* Posizione verticale */
+  transform: translateY(-50%);
+  /* Centrare verticalmente */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 50%;
+  /* Limita la larghezza al 50% */
+  max-height: 80%;
+  /* Limita l'altezza al 80% della finestra */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  /* Abilita lo scrolling del contenuto */
+  animation: fadeIn 0.3s;
+}
+
+/* Pulsante di chiusura */
+.custom-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.custom-modal-close:hover,
+.custom-modal-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Animazione di apertura */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
 
-  .footer-link {
-    font-size: 0.8rem; // Riduce ulteriormente la dimensione dei link per smartphone
+  to {
+    opacity: 1;
   }
+}
+
+.cursorPrivacy {
+  cursor: pointer;
 }

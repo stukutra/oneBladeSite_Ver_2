@@ -1,0 +1,68 @@
+@import '../../style/variabiles';
+
+/* Variabili principali */
+
+.topCallToAction {
+    cursor: pointer; // Indica che è cliccabile
+    background-color: $background-color;
+    color: $text-color;
+    font-size: $font-size-xs;
+    height: 70px;
+    display: flex;
+    justify-content: center; // Centra il testo orizzontalmente
+    align-items: center; // Centra il testo verticalmente
+    text-align: center;
+    font-weight: bold;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    margin: 20px 0; // Spazio sopra e sotto
+}
+
+.call-section {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa; // Colore di sfondo neutro
+}
+
+.call-container {
+    max-width: 1200px; // Imposta una larghezza massima per il contenuto
+    width: 100%;
+}
+
+.iframe-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.iframe-container.active {
+    max-height: 700px;
+    /* Altezza piena */
+    opacity: 1;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.title {
+    font-size: $font-size-md;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #6a1b9a;
+}
+
+.subtitle {
+    font-size: $font-size-xs;
+    color: #9c2ea6;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.subtitle_1 {
+    font-size: $font-size-xs;
+    color: $text-color-dark;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}

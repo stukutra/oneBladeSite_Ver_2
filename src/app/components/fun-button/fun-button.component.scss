@@ -1,0 +1,89 @@
+@import '../../style/_variabiles.scss';
+
+.fun-button-container {
+    position: fixed;
+    bottom: 2rem; // Spostato 10px più in alto (1rem + 10px)
+    right: 2rem; // Spostato 10px più distante dalla destra (1rem + 10px)
+    z-index: 1000;
+
+    @media (max-width: 768px) {
+        display: none; // Assicuriamoci che questa regola non venga applicata su desktop
+    }
+}
+
+.fun-button {
+    background: linear-gradient(to bottom, lighten($fun-button-bg-color, 15%), $fun-button-bg-color);
+    color: $fun-button-text-color;
+    border: none;
+    border-radius: 50%; // Forma circolare per effetto caramella
+    width: $fun-button-size;
+    height: $fun-button-size;
+    font-size: $font-size-lg;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), inset 0 -3px 6px rgba(0, 0, 0, 0.3);
+
+    &:hover {
+        background: linear-gradient(to bottom, lighten($fun-button-hover-bg-color, 15%), $fun-button-hover-bg-color);
+        transform: scale(1.1); // Effetto di ingrandimento al passaggio del mouse
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3), inset 0 -4px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    &:active {
+        transform: scale(0.95); // Effetto di pressione
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), inset 0 -2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    // Assicuriamoci che il pulsante sia visibile
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fun-output {
+    position: absolute;
+    bottom: calc(100% + 1.5rem);
+    right: 0;
+    background: $background-light;
+    border: 2px solid rgba(51, 51, 51, 0.5); // Bordo meno nero e trasparente
+    border-radius: 1rem;
+    padding: $padding-base;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    opacity: 0.8; // Opacità ridotta a 0.8
+    transition: opacity 0.5s ease, transform 0.3s ease;
+    transform: scale(1);
+    width: 250px; // Larghezza fissa impostata a 250px
+    text-align: center;
+    font-family: inherit; // Usa il font standard del sito
+
+    &.fade-out {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        right: 30px; // Spostato per adattarsi al box più largo
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px;
+        border-color: rgba(51, 51, 51, 0.5) transparent transparent transparent; // Bordo del triangolo
+        background: transparent;
+
+        /* Inner triangle for background */
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        transform: translateY(2px);
+        /* Adjust for border alignment */
+    }
+
+    .color-box {
+        width: 100px;
+        height: 100px;
+        border: 1px solid $font-color-dark;
+    }
+}

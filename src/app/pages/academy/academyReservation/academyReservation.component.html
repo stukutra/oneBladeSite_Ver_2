@@ -1,0 +1,76 @@
+<div class="description-box mt-4">
+  <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" novalidate class="contact-form">
+    <div class="mb-3 form-group">
+      <input type="text" id="name" name="name" class="form-control" [(ngModel)]="model.name" #name="ngModel" required
+        placeholder="{{ 'FORM.PLACEHOLDERS.NAME' | translate }}" />
+      <div *ngIf="name.invalid && (name.dirty || name.touched)" class="text-danger">
+        <div *ngIf="name.errors?.['required']">{{ 'FORM.VALIDATION.NAME_REQUIRED' | translate }}</div>
+      </div>
+    </div>
+
+    <div class="mb-3 form-group">
+      <input type="text" id="telephone" name="telephone" class="form-control" [(ngModel)]="model.telephone"
+        #telephone="ngModel" required placeholder="{{ 'FORM.PLACEHOLDERS.TELEPHONE' | translate }}" />
+      <div *ngIf="telephone.invalid && (telephone.dirty || telephone.touched)" class="text-danger">
+        <div *ngIf="telephone.errors?.['required']">{{ 'FORM.VALIDATION.TELEPHONE_REQUIRED' | translate }}</div>
+      </div>
+    </div>
+
+    <div class="mb-3 form-group">
+      <input type="email" id="email" name="email" class="form-control" [(ngModel)]="model.email" #email="ngModel"
+        required email placeholder="{{ 'FORM.PLACEHOLDERS.EMAIL' | translate }}" />
+      <div *ngIf="email.invalid && (email.dirty || email.touched)" class="text-danger">
+        <div *ngIf="email.errors?.['required']">{{ 'FORM.VALIDATION.EMAIL_REQUIRED' | translate }}</div>
+        <div *ngIf="email.errors?.['email']">{{ 'FORM.VALIDATION.EMAIL_INVALID' | translate }}</div>
+      </div>
+    </div>
+
+    <div class="mb-3 form-group">
+      <select id="region" name="region" class="form-control" [(ngModel)]="model.region" #region="ngModel" required
+        (change)="onRegionChange()">
+        <option value="" disabled [selected]="!model.region">{{ 'FORM.PLACEHOLDERS.REGION' | translate }}</option>
+        <option *ngFor="let region of regions" [value]="region.id">{{ region.nome }}</option>
+      </select>
+      <div *ngIf="region.invalid && (region.dirty || region.touched)" class="text-danger">
+        <div *ngIf="region.errors?.['required']">{{ 'FORM.VALIDATION.REGION_REQUIRED' | translate }}</div>
+      </div>
+    </div>
+
+    <!-- Checkbox Privacy 1 (Obbligatorio) -->
+    <div class="form-check">
+      <input type="checkbox" id="privacy1" name="privacy1" class="form-check-input" [(ngModel)]="model.privacy1"
+        #privacy1="ngModel" required [checked]="model.privacy1" />
+      <label for="privacy1" class="form-check-label">
+        Autorizzo al trattamento dei dati personali per finalità connesse allo svolgimento delle attività istituzionali
+      </label>
+      <div *ngIf="privacy1.invalid && (privacy1.dirty || privacy1.touched)" class="text-danger">
+        Devi accettare questa condizione per procedere.
+      </div>
+    </div>
+
+    <!-- Checkbox Privacy 2 (Facoltativo) -->
+    <div class="form-check">
+      <input type="checkbox" id="privacy2" name="privacy2" class="form-check-input" [(ngModel)]="model.privacy2"
+        [checked]="model.privacy2" />
+      <label for="privacy2" class="form-check-label">
+        Autorizzo al trattamento dei dati per tutte le altre finalità specificate nell’Informativa
+      </label>
+    </div>
+
+    <div class="button-row">
+      <button type="submit" class="btn btn-primary submit-btn" [disabled]="contactForm.invalid">
+        {{ 'FORM.BUTTON_RESERVATIONACADEMY' | translate }}
+      </button>
+    </div>
+  </form>
+</div>
+
+<!-- Modale personalizzata di Errore/Successo -->
+<div class="custom-modal" *ngIf="isModalVisible">
+  <div class="custom-modal-content">
+    <span class="custom-modal-close" (click)="closeModal()">&times;</span>
+    <h5>{{ modalTitle }}</h5>
+    <p>{{ modalMessage }}</p>
+    <button class="btn btn-primary custom-btn" (click)="closeModal()">{{ 'FORM.MODAL.CLOSE' | translate }}</button>
+  </div>
+</div>

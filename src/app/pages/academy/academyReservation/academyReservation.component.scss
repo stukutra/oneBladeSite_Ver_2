@@ -1,0 +1,246 @@
+@import '../../../style/variabiles';// Variabili generali
+
+// Stile generale del form
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .form-group {
+        position: relative;
+    }
+
+    .form-control {
+        border: none;
+        border-bottom: 2px solid $input-border-color;
+        border-radius: 0;
+        font-size: 15px;
+        box-shadow: none;
+        transition: border-color 0.3s ease;
+
+        &:focus {
+            border-color: $input-focus-border-color;
+            outline: none;
+        }
+    }
+
+    .text-danger {
+        font-size: 0.75rem;
+        color: $error-text-color;
+    }
+
+    
+
+    // Modifica il pulsante per farlo occupare tutto lo spazio
+.btn-primary {
+    background-color: transparent;
+    border: 2px solid $button-border-color;
+    color: $button-border-color;
+    width: 100%; // Occupa tutta la larghezza disponibile
+    padding: 15px 0; // Rende il pulsante più alto
+    font-size: 18px; // Ingrandisce il testo
+    font-weight: bold; // Rende il testo più leggibile
+    border-radius: 8px; // Rende i bordi più morbidi
+
+    &:hover {
+        background-color: $button-hover-bg-color;
+        color: $button-hover-text-color;
+    }
+}
+
+// Modifica il contenitore dei pulsanti per allinearli correttamente
+.button-row {
+    display: flex;
+    justify-content: center; // Centra il bottone
+    width: 100%;
+}
+}
+
+// Stile personalizzato per i checkbox
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    position: relative;
+
+    input[type="checkbox"] {
+        appearance: none;
+        width: 18px;
+        height: 18px;
+        border: 2px solid $checkbox-border;
+        border-radius: 4px;
+        position: relative;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        display: inline-block;
+        background-color: #fff;
+
+        &:hover {
+            border-color: $checkbox-hover-border;
+        }
+
+        &:checked {
+            background-color: $checkbox-active-bg;
+            border-color: $checkbox-active-bg;
+        }
+
+        &:checked::before {
+            content: "✔";
+            font-size: 12px;
+            color: white;
+            font-weight: bold;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba($checkbox-active-bg, 0.5);
+        }
+
+        &:disabled {
+            background-color: $checkbox-disabled-bg;
+            border-color: darken($checkbox-disabled-bg, 10%);
+            cursor: not-allowed;
+        }
+    }
+
+    label {
+        cursor: pointer;
+        font-size: 14px;
+        user-select: none;
+    }
+}
+
+// Pulsante personalizzato
+.custom-btn {
+    background-color: $custom-btn-bg-color;
+    color: $button-text-color;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: $custom-btn-hover-bg-color;
+    }
+
+    &:focus {
+        box-shadow: 0 0 5px $custom-btn-focus-shadow-color;
+    }
+}
+
+// Modal personalizzata
+.custom-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    &-content {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
+        animation: fadeIn 0.3s ease-out;
+    }
+
+    &-close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        color: #aaa;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+
+        &:hover {
+            color: #000;
+        }
+    }
+}
+
+.custom-modal {
+    display: block;
+    /* Visibile quando necessario */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* Assicura lo scrolling della finestra */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Sfondo semitrasparente */
+}
+
+/* Contenuto della modale */
+.custom-modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: auto;
+    /* Per centrare orizzontalmente */
+    top: 50%;
+    /* Posizione verticale */
+    transform: translateY(-50%);
+    /* Centrare verticalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 50%;
+    /* Limita la larghezza al 50% */
+    max-height: 80%;
+    /* Limita l'altezza al 80% della finestra */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    /* Abilita lo scrolling del contenuto */
+    animation: fadeIn 0.3s;
+    font-size: 20px;
+}
+
+/* Pulsante di chiusura */
+.custom-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.custom-modal-close:hover,
+.custom-modal-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Animazione di apertura */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.description-box {
+    padding: 0px !important;
+    margin: 0px !important;
+}

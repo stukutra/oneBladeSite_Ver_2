@@ -1,19 +1,8 @@
-// Variabili riutilizzabili
-$background-color: #ffffff;
-$primary-color: #9339bb;
-$secondary-color: #a163bc;
-$shadow-color: rgba(0, 0, 0, 0.1);
-$border-radius: 8px;
-$font-color-white: #ffffff;
-$font-color-dark: #333;
-$transition-duration: 0.3s;
-$progress-background-color: #ddd;
-$text-color-error: #dc3545;
-$button-hover-darken: 10%;
+@import '../../style/variabiles';
 
 // Box di descrizione
 .description-box {
-    background-color: $background-color;
+    background-color: $background-color_2;
     padding: 20px;
     border-radius: $border-radius;
     max-width: 800px;
@@ -143,7 +132,7 @@ $button-hover-darken: 10%;
     transform: translate(-50%, -50%);
 }
 
-.form-check-input:checked + .form-check-label {
+.form-check-input:checked+.form-check-label {
     color: $primary-color;
 }
 
@@ -172,6 +161,7 @@ $button-hover-darken: 10%;
     .text-success {
         color: $secondary-color;
     }
+
     .text-danger {
         color: $text-color-error;
     }

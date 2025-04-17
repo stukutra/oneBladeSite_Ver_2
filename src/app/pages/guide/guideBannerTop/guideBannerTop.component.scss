@@ -1,0 +1,49 @@
+@import '../../../style/variabiles';
+
+/* 📌 Banner */
+.color-accademy-banner {
+    background-color: $background-dark;
+}
+
+.textBannerAccademy {
+    color: $text-color;
+}
+
+/* 📌 Accademy Banner */
+.accademyBanner1 {
+    background-image: url('../../../../assets/accademy/oneBladeLab.jpg');
+    background-size:contain;
+}
+
+
+/* 📌 Box Generico */
+.box {
+    background-color: $secondary-color;
+    color: $text-color;
+    border-radius: $border-radius;
+    text-align: center;
+    padding: $padding-base;
+    min-height: 15.625rem; /* 250px */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: $box-shadow;
+    transition: transform $transition-speed, box-shadow $transition-speed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:hover {
+        transform: translateY(-0.3125rem); /* -5px */
+        box-shadow: 0 0.5rem 1rem $hover-color;
+    }
+
+    h2 {
+        margin-bottom: 0.625rem; /* 10px */
+    }
+
+    p {
+        margin: 0;
+    }
+}

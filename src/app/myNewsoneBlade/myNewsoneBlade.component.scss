@@ -1,0 +1,175 @@
+@use '../style/_variabiles.scss' as *;
+
+// Ensure $font-color is defined in _variabiles.scss or define it here
+$font-color: #333; // Define a fallback font color if not imported
+
+// Removed .news-container and .news-item as they are no longer used
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: $gap;
+
+    button {
+        background-color: transparent; // Transparent background for inactive pages
+        color: $topbar-color; // Match title color
+        border: 1px solid $topbar-color; // Border matches title color
+        padding: $gap-size;
+        border-radius: $border-radius;
+        transition: background-color $transition-speed, color $transition-speed;
+
+        &:hover {
+            background-color: $topbar-color; // Filled background on hover
+            color: $font-color-white; // White text on hover
+        }
+
+        &:disabled {
+            background-color: $button-disabled-bg-color; // Disabled background
+            color: $button-disabled-text-color; // Disabled text color
+            cursor: not-allowed;
+        }
+
+        &.active {
+            background-color: $topbar-color; // Filled background for active page
+            color: $font-color-white; // White text for active page
+            border-color: $topbar-color; // Border matches background
+        }
+    }
+
+    @media (max-width: 576px) {
+        button {
+            min-width: 2.5rem; // Ensure buttons are large enough for touch
+        }
+    }
+}
+
+.card {
+    width: 100%; // Ensure the card takes full width of its column
+    margin: 0 auto; // Center the card horizontally if smaller than column
+    box-shadow: $box-shadow; // Add shadow to the news containers
+    transition: box-shadow $transition-speed;
+
+    &:hover {
+        box-shadow: $box-shadow-hover; // Enhance shadow on hover
+    }
+
+    .card-title {
+        color: $topbar-color; // Use the site's title color
+        text-align: left; // Align the title to the left
+    }
+
+    a {
+        color: $topbar-color; // Match the link color to the title color
+        text-decoration: none; // Remove underline
+        transition: color $transition-speed;
+
+        &:hover {
+            text-decoration: underline; // Add underline on hover
+        }
+
+        &:visited {
+            color: $topbar-color; // Ensure visited links have the same color
+        }
+    }
+
+    a.read-more {
+        color: $topbar-color; // Match the link color to the title color
+        text-decoration: none; // Remove underline
+        font-weight: bold; // Make the text bold
+        text-align: right; // Align text to the right
+        display: block; // Ensure it behaves as a block element
+        transition: color $transition-speed;
+
+        &:hover {
+            text-decoration: underline; // Add underline on hover
+        }
+
+        &:visited {
+            color: $topbar-color; // Ensure visited links have the same color
+        }
+    }
+
+    .card-subtitle {
+        font-style: italic; // Display the date in italic
+    }
+}
+
+.read-more-link {
+    color: $topbar-color; // Match the link color to the site's theme
+    text-decoration: none; // Remove underline
+    font-weight: bold; // Make the text bold
+    cursor: pointer; // Show pointer cursor on hover
+    transition: color $transition-speed;
+
+    &:hover {
+        text-decoration: underline; // Add underline on hover
+    }
+
+    &:visited {
+        color: $topbar-color; // Ensure visited links have the same color
+    }
+}
+
+.modal-header {
+    background-color: $topbar-color; // Use the site's topbar color
+    color: $font-color-white; // White text for the header
+}
+
+.modal-footer {
+    border-top: 1px solid $topbar-color; // Match the border color to the topbar
+}
+
+.modal-body {
+    color: $font-color; // Use the site's font color
+
+    a.btn-primary {
+        display: inline-block; // Ensure the button behaves as an inline-block element
+        text-align: left; // Align the button to the left
+        margin: 0; // Remove any extra margin
+    }
+}
+
+.modal-dialog {
+    display: flex;
+    align-items: center; // Vertically center the modal
+    justify-content: center; // Horizontally center the modal
+    min-height: 100vh; // Ensure the modal takes the full height of the viewport
+    margin: 0 auto; // Center the modal horizontally
+}
+
+.modal-content {
+    margin: auto; // Center the modal content
+    max-width: 90%; // Optional: Limit the modal width on smaller screens
+    box-shadow: $box-shadow; // Add shadow for better visibility
+}
+
+@media (max-width: 576px) {
+    .pagination {
+        flex-wrap: wrap; // Allow pagination buttons to wrap on smaller screens
+        gap: $gap-size; // Add spacing between buttons
+    }
+
+    .row>[class*="col-"] {
+        flex: 0 0 100%; // Full width for small screens
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .row>[class*="col-"] {
+        flex: 0 0 50%; // Half width for medium screens
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 769px) {
+    .row>[class*="col-"] {
+        flex: 0 0 33.33%; // One-third width for large screens
+        max-width: 33.33%;
+    }
+}
+
+h1 {
+    color: $topbar-color; // Match the site's title color
+    font-size: $font-size-xl; // Use a large font size
+    margin-bottom: $gap; // Add spacing below the title
+}

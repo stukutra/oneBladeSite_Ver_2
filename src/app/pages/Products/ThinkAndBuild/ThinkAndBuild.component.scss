@@ -1,0 +1,102 @@
+@use 'sass:math';
+@import '../../../style/_variabiles.scss';
+
+
+
+.think-and-build {
+    padding: $padding-base;
+    background-color: $background-light;
+    color: $text-dark;
+
+    .title {
+        font-size: $font-size-xl;
+        color: $text-color-oneblade;
+        margin-bottom: $gap;
+    }
+
+    .subtitle {
+        font-size: $font-size-md;
+        color: $text-dark;
+        margin-bottom: $gap;
+    }
+
+    .section-title {
+        font-size: $font-size-lg;
+        color: $accent-color;
+        margin-bottom: $gap-size;
+    }
+
+    .text {
+        font-size: $font-size-base;
+        line-height: 1.6;
+        margin-bottom: $gap;
+    }
+
+    .list {
+        list-style-type: disc;
+        padding-left: 1.5rem;
+        margin-bottom: $gap;
+
+        li {
+            font-size: $font-size-base;
+            margin-bottom: $gap-size;
+        }
+    }
+
+
+}
+
+
+.breadcrumb {
+    background-color: transparent; // Transparent background
+    padding: 0; // Remove padding
+    margin-bottom: $gap-size; // Add spacing below breadcrumb
+    font-size: $font-size-sm; // Use small font size
+    display: flex; // Ensure items are aligned horizontally
+    align-items: center; // Center items vertically
+}
+
+.breadcrumb-item a,
+.breadcrumb-item.active {
+    color: $text-color-oneblade; // Make all breadcrumb text the same color as "Home"
+    text-decoration: none; // Remove underline
+    transition: color $transition-speed; // Smooth transition for hover effect
+
+    &:hover {
+        color: darken($text-color-oneblade, 10%); // Darken color on hover
+        cursor: pointer; // Add pointer cursor
+    }
+}
+
+.breadcrumb-separator {
+    margin: 0 math.div($gap-size, 2); // Reduce spacing around the separator
+    padding: 0 math.div($gap-size, 2); // Reduce padding to the left and right of the separator
+    color: $text-color-oneblade; // Match the color of breadcrumb text
+    font-weight: bold; // Make the separator prominent
+}
+
+.step-line .step-box {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* Allinea il contenuto in alto */
+    text-align: center;
+
+    .step-title {
+        margin-bottom: 0.5rem;
+        /* Riduci il margine inferiore */
+    }
+
+    .step-description {
+        margin: 0;
+        /* Rimuovi margini */
+        padding: 0;
+        /* Rimuovi padding */
+        text-align: left;
+        /* Allinea il testo a sinistra */
+        width: 100%;
+        /* Assicura che il paragrafo occupi tutta la larghezza */
+    }
+}

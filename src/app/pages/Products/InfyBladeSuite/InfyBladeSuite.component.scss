@@ -1,0 +1,234 @@
+@use '../../../style/_variabiles.scss' as vars;
+
+.infyblade-suite {
+    .divider {
+        border: none;
+        border-top: 1px solid vars.$box-shadow-color;
+    }
+
+    .text-oneblade-title {
+        color: vars.$text-color-oneblade;
+    }
+
+    .carousel-indicators button {
+        background-color: vars.$text-color-oneblade;
+    }
+
+    .carousel-indicators .active {
+        background-color: darken(vars.$text-color-oneblade, 10%);
+    }
+
+    img {
+        //width: 50%; // Set all images to 50% width
+        height: auto; // Maintain aspect ratio
+        object-fit: cover; // Default behavior for all images
+        display: block; // Ensure the image is treated as a block element
+        margin: 0 auto; // Center the image horizontally
+        max-width: 100%; // Ensure images don't overflow on smaller screens
+    }
+
+    @media (max-width: 768px) {
+        .carousel-inner {
+            text-align: center; // Center-align content for smaller screens
+        }
+
+        .row {
+            flex-direction: column; // Stack columns vertically on smaller screens
+        }
+
+        .col-md-4,
+        .col-md-8 {
+            width: 100%; // Ensure columns take full width on mobile
+        }
+
+        .card {
+            height: auto; // Allow cards to adjust height on smaller screens
+        }
+    }
+}
+
+.demo-button {
+    display: inline-block; // Ensure the button is displayed correctly
+    border: 1px solid vars.$topbar-color; // Use the site's primary color for the border
+    background-color: transparent;
+    color: vars.$topbar-color; // Use the site's primary color for the text
+    padding: 0.75rem 2rem; // Increase padding for better proportions
+    font-size: vars.$font-size-md;
+    border-radius: vars.$border-radius;
+    cursor: pointer;
+    text-align: center; // Center the text inside the button
+    transition: background-color vars.$transition-speed, color vars.$transition-speed;
+    margin-top: 2rem; // Add spacing above the button
+    font-weight: 200; // Adjust font weight to make the text less bold
+
+    &:hover {
+        background-color: vars.$topbar-color; // Fill with the site's primary color on hover
+        color: vars.$text-light; // Change text to white on hover
+    }
+
+    @media (max-width: 768px) {
+        padding: 0.5rem 1.5rem; // Adjust padding for smaller screens
+        font-size: vars.$font-size-sm; // Use smaller font size
+    }
+}
+
+section.text-center {
+    margin-top: 3rem; // Add spacing above the button section
+}
+
+.infyblade-comparison {
+    .card {
+        border: 1px solid vars.$apple-border-color; // Subtle gray border
+        border-radius: vars.$border-radius; // Rounded corners
+        box-shadow: none; // Remove shadow for a lighter appearance
+        transition: transform vars.$transition-speed, background-color vars.$transition-speed;
+        height: vars.$card-min-height; // Ensure all cards have the same height
+        display: flex;
+        flex-direction: column;
+
+        &:hover {
+            transform: scale(1.02); // Slight zoom effect on hover
+            background-color: lighten(vars.$background-light, 5%); // Subtle background change on hover
+        }
+
+        .card-header {
+            background-color: lighten(vars.$background-light, 10%); // Softer header background
+            color: vars.$text-color-oneblade; // Keep the title color
+            padding: vars.$padding-base;
+            font-size: vars.$font-size-md; // Maintain font size
+            border-top-left-radius: vars.$border-radius; // Rounded corners for the header
+            border-top-right-radius: vars.$border-radius;
+        }
+
+        .card-body {
+            padding: vars.$padding-base;
+            overflow-y: auto; // Enable vertical scrolling if content exceeds height
+            flex-grow: 1; // Allow the body to take up available space
+            scrollbar-width: thin; // Thin scrollbar for Firefox
+            scrollbar-color: vars.$text-color-oneblade vars.$background-light; // Scrollbar colors
+
+            &::-webkit-scrollbar {
+                width: 6px; // Thin scrollbar for WebKit browsers
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: vars.$text-color-oneblade; // Scrollbar thumb color
+                border-radius: vars.$border-radius; // Rounded scrollbar thumb
+            }
+
+            ul {
+                padding: 0;
+                list-style: none;
+
+                li {
+                    margin-bottom: vars.$gap-size;
+                    font-size: vars.$font-size-sm; // Maintain smaller font size
+                    color: vars.$text-color-dark; // Use a softer text color
+                }
+            }
+        }
+
+        .card-footer {
+            background-color: lighten(vars.$topbar-color, 20%); // Softer footer background
+            color: vars.$text-light; // Keep white text for contrast
+            padding: vars.$padding-box;
+            font-size: vars.$font-size-md; // Maintain font size
+            border-bottom-left-radius: vars.$border-radius; // Rounded corners for the footer
+            border-bottom-right-radius: vars.$border-radius;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .card {
+            flex-direction: column; // Stack card content vertically
+        }
+
+        .card-header,
+        .card-body,
+        .card-footer {
+            text-align: center; // Center-align text for smaller screens
+        }
+    }
+}
+
+.infyblade-tabs {
+    // Remove the box shadow and border radius
+    box-shadow: none;
+    border-radius: 0;
+
+    .nav-tabs {
+        border-bottom: none; // Remove the default bottom border for the tabs
+        box-shadow: none; // Remove the shadow directly on the tabs
+
+        .nav-link {
+            color: lighten(vars.$text-color-oneblade, 40%); // Faded version of the active tab's text color
+            background-color: vars.$background-light; // Ensure inactive tabs have a white background
+            border: 1px solid lighten(vars.$tab-border-color, 40%); // Faded version of the active tab's border color
+            border-bottom: none; // Remove the bottom border from the tab links
+            padding: 0.5rem 1rem; // Reduce padding to make tabs smaller in height
+            font-size: vars.$font-size-base;
+            transition: background-color vars.$transition-speed, color vars.$transition-speed, border-color vars.$transition-speed, transform vars.$transition-speed;
+
+            &:hover {
+                background-color: vars.$tab-hover-bg;
+                color: lighten(vars.$text-color-oneblade, 20%); // Slightly less faded on hover
+                border-color: lighten(vars.$tab-border-color, 20%); // Slightly less faded border on hover
+                transform: translateY(-2px); // Move the tab slightly upwards
+            }
+
+            &:focus {
+                color: vars.$text-color-oneblade; // Match the active tab color when focused
+                border-color: vars.$tab-border-color; // Match the active tab border color when focused
+            }
+
+            &.active {
+                color: vars.$text-color-oneblade; // Keep the title color for the active tab
+                background-color: vars.$tab-active-bg;
+                border-color: vars.$tab-border-color vars.$tab-border-color transparent;
+                border-bottom: none; // Remove the bottom border for the active tab
+                padding: 0.5rem 1rem; // Ensure active tab height matches inactive tabs
+            }
+        }
+    }
+
+    .tab-content {
+        border: 1px solid vars.$tab-border-color;
+        border-top: 1px solid vars.$tab-border-color; // Add the top border for the tab body
+        border-left: 1px solid vars.$tab-border-color; // Keep left border
+        border-right: 1px solid vars.$tab-border-color; // Keep right border
+        border-bottom: 1px solid vars.$tab-border-color; // Keep bottom border
+        border-radius: 0 0 vars.$border-radius vars.$border-radius; // Only keep bottom corners rounded
+        padding: vars.$padding-base;
+        background-color: vars.$background-light;
+        position: relative; // Ensure the tab body is below the active tab
+        z-index: 1; // Place the tab body below the active tab
+    }
+
+    @media (max-width: 768px) {
+        .nav-tabs {
+            flex-wrap: wrap; // Allow tabs to wrap on smaller screens
+        }
+
+        .nav-link {
+            font-size: vars.$font-size-sm; // Use smaller font size
+        }
+    }
+}
+
+.imgReduce {
+    width: 80%; // Set all images to 50% width
+    height: auto; // Maintain aspect ratio
+    object-fit: cover; // Default behavior for all images
+    display: block; // Ensure the image is treated as a block element
+    margin: 0 auto; // Center the image horizontally
+}
+
+.card-fixed-height {
+    height: 550px; // Set a fixed height for all cards
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+        height: auto; // Allow cards to adjust height on smaller screens
+    }
+}

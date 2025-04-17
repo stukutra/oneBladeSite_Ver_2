@@ -1,0 +1,12 @@
+<div class="guides-container mt-5 mb-5">
+  <h1>{{ 'GUIDE_LIST.TITLE' | translate }}</h1>
+  <p>{{ 'GUIDE_LIST.DESCRIPTION' | translate }}</p>
+  <div class="guide-list">
+    <div *ngFor="let guide of guides" class="guide-card" (click)="openGuide(guide)">
+      <img [src]="guide.image" alt="{{ guide.title }}" />
+      <h2>{{ guide.title }}</h2>
+      <p>{{ guide.description }}</p>
+      <button>{{ 'GUIDE_LIST.BUTTON' | translate }}</button>
+    </div>
+  </div>
+</div>

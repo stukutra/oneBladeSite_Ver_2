@@ -1,0 +1,497 @@
+.box {
+    position: relative;
+    //background-color: rgb(83, 62, 133);
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+    padding: 20px;
+    min-height: 350px;
+    /* Altezza minima adattabile */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.boxCustomSoftware {
+    position: relative;
+    text-align: center;
+    min-height: 590px;
+    /* Altezza minima adattabile */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+}
+
+/* Effetto hover */
+.box:hover {
+    transform: scale(1.02);
+    //box-shadow: 0px 6px 15px rgba(27, 25, 25, 0.2);
+}
+
+/* Overlay semi-trasparente */
+.box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    //background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Assicura che il testo rimanga visibile sopra l'overlay */
+.box h2,
+.box p {
+    position: relative;
+    z-index: 2;
+}
+
+/* Imposta l'immagine di sfondo */
+.outsourcing {
+    background-image: url('../../../../assets/BodyRental.jpg');
+}
+
+.Talent {
+    background-image: url('../../../../assets/sviluppoSoftwareOneBlade.jpg');
+    display: flex;
+    /* Enable flexbox */
+    flex-direction: column;
+    /* Ensure content stacks vertically */
+    justify-content: center;
+    /* Center content vertically */
+    align-items: center;
+    /* Center content horizontally */
+
+    img {
+        max-width: 100%;
+        /* Ensure the image does not exceed the container width */
+        max-height: 100%;
+        /* Ensure the image does not exceed the container height */
+        object-fit: contain;
+        /* Maintain aspect ratio and fit within the container */
+        border-radius: 50px;
+    }
+}
+
+
+
+
+.sharedBoxStyles {
+    background-size: contain; // Ensure the image fits within the container
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+    height: 100%;
+    /* Ensure it takes the full height of the container */
+
+    img {
+        max-width: 100%;
+        /* Ensure the image does not exceed the container width */
+        max-height: 100%;
+        /* Ensure the image does not exceed the container height */
+        object-fit: contain;
+        /* Maintain aspect ratio and fit within the container */
+        border-radius: 50px;
+        /* Add rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        /* Add shadow for better appearance */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        /* Add transition for zoom effect */
+    }
+
+    &:hover img {
+        transform: scale(1.02);
+        /* Zoom effect */
+        box-shadow: 0 6px 15px rgba(27, 25, 25, 0.2);
+        /* Enhanced shadow on hover */
+    }
+}
+
+.CustomSoftware {
+    @extend .sharedBoxStyles;
+    background-image: url('../../../../assets/CustomSoftware/CustomSoftware_oneBlade.jpg');
+}
+
+.ThinkAndBuildContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Add transition for hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Initial shadow */
+
+    &:hover {
+        transform: scale(1.02);
+        /* Slight zoom on hover */
+        box-shadow: 0 6px 15px rgba(27, 25, 25, 0.2);
+        /* Enhanced shadow on hover */
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 12px;
+        transition: transform 0.3s ease;
+        /* Smooth zoom effect */
+    }
+
+    &:hover img {
+        transform: scale(1.02);
+        /* Zoom effect for the image */
+    }
+}
+
+@keyframes lightReflection {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.05) 100%);
+    background-size: 200% 100%;
+    animation: lightReflection 3s infinite;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* --- RESPONSIVITÀ --- */
+@media (max-width: 992px) {
+    .boxCustomSoftware {
+        min-height: 400px;
+        padding: 15px;
+        font-size: 1.3rem;
+    }
+
+    .Talent {
+        min-height: 300px;
+        padding: 15px;
+        font-size: 1.3rem;
+    }
+
+    .CustomSoftware,
+    .Talent {
+        min-height: 390px;
+        padding: 15px;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 1024px) and (min-height: 768px) {
+    .box {
+        min-height: 300px;
+        /* Adjust height for better visibility */
+        padding: 18px;
+        /* Adjust padding */
+        font-size: 1.4rem;
+        /* Adjust font size */
+    }
+
+    .box h2 {
+        font-size: 1.3rem;
+        /* Adjust heading size */
+    }
+
+    .box p {
+        font-size: 1.1rem;
+        /* Adjust paragraph size */
+    }
+
+    .boxCustomSoftware {
+        min-height: 450px;
+        /* Adjust height for custom software box */
+        padding: 16px;
+        /* Adjust padding */
+        font-size: 1.3rem;
+        /* Adjust font size */
+    }
+
+    .Talent {
+        min-height: 350px;
+        /* Adjust height for talent box */
+        padding: 16px;
+        /* Adjust padding */
+        font-size: 1.3rem;
+        /* Adjust font size */
+    }
+
+    .CustomSoftware,
+    .Talent {
+        min-height: 504px;
+        /* Ensure consistent height */
+        padding: 16px;
+        /* Adjust padding */
+        font-size: 1.3rem;
+        /* Adjust font size */
+    }
+}
+
+@media (max-width: 1180px) and (min-height: 820px) {
+    .row.justify-content-center>.col-12 {
+        flex: 0 0 100%;
+        /* Make each box occupy the full width */
+        max-width: 100%;
+        /* Ensure full width */
+    }
+
+    .box {
+        min-height: 300px;
+        /* Adjust height for better visibility */
+        padding: 16px;
+        /* Adjust padding */
+        font-size: 1.3rem;
+        /* Adjust font size */
+    }
+
+    .boxCustomSoftware {
+        min-height: 400px;
+        /* Adjust height for custom software box */
+    }
+
+    .Talent {
+        min-height: 350px;
+        /* Adjust height for talent box */
+    }
+}
+
+@media (max-width: 820px) and (min-height: 1180px) {
+    .box {
+        min-height: 280px !important;
+        /* Adjust height for better visibility */
+        padding: 16px;
+        /* Adjust padding */
+        font-size: 1.3rem;
+        /* Adjust font size */
+    }
+
+    .box h2 {
+        font-size: 1.2rem;
+        /* Adjust heading size */
+    }
+
+    .box p {
+        font-size: 1rem;
+        /* Adjust paragraph size */
+    }
+
+    .boxCustomSoftware {
+        min-height: 400px;
+        /* Adjust height for custom software box */
+        padding: 14px;
+        /* Adjust padding */
+        font-size: 1.2rem;
+        /* Adjust font size */
+    }
+
+    .Talent {
+        min-height: 320px;
+        /* Adjust height for talent box */
+        padding: 14px;
+        /* Adjust padding */
+        font-size: 1.2rem;
+        /* Adjust font size */
+    }
+
+    .CustomSoftware,
+    .Talent {
+        min-height: 370px;
+        /* Ensure consistent height */
+        padding: 14px;
+        /* Adjust padding */
+        font-size: 1.2rem;
+        /* Adjust font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        min-height: 160px;
+        padding: 15px;
+        font-size: 1.3rem;
+    }
+
+    .box h2 {
+        font-size: 1.2rem;
+    }
+
+    .box p {
+        font-size: 1rem;
+    }
+
+    .boxCustomSoftware {
+        min-height: 300px;
+        padding: 12px;
+        font-size: 1.2rem;
+    }
+
+    .Talent {
+        min-height: 250px;
+        padding: 12px;
+        font-size: 1.2rem;
+    }
+
+    .CustomSoftware,
+    .Talent {
+        min-height: 395px;
+        padding: 12px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .box {
+        min-height: 140px;
+        padding: 12px;
+        font-size: 1.2rem;
+    }
+
+    .box h2 {
+        font-size: 1rem;
+    }
+
+    .box p {
+        font-size: 0.9rem;
+    }
+
+    .boxCustomSoftware {
+        min-height: 250px;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .Talent {
+        min-height: 200px;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .CustomSoftware,
+    .Talent {
+        min-height: 200px;
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .boxCustomSoftware {
+        min-height: 200px;
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .Talent {
+        min-height: 180px;
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .CustomSoftware,
+    .Talent {
+        min-height: 200px;
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .boxCustomSoftware {
+        min-height: 180px;
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+
+    .Talent {
+        min-height: 204px;
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+
+    .CustomSoftware,
+    .Talent {
+        min-height: 160px;
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 1080px) {
+
+    .boxCustomSoftware,
+    .Talent {
+        min-height: 350px;
+        /* Adjust height for better alignment */
+        padding: 20px;
+        /* Ensure consistent padding */
+        font-size: 1.5rem;
+        /* Maintain font size */
+    }
+
+
+}
+
+
+.borderRadius {
+    border-radius: 12px !important;
+}
+
+img.borderRadius {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Add transition for hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Initial shadow */
+    border-radius: 12px;
+
+    &:hover {
+        transform: scale(1.02);
+        /* Slight zoom on hover */
+        box-shadow: 0 6px 15px rgba(27, 25, 25, 0.2);
+        /* Enhanced shadow on hover */
+        cursor: pointer;
+        /* Add pointer cursor on hover */
+    }
+}

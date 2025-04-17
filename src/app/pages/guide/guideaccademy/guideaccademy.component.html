@@ -1,0 +1,40 @@
+<!-- <app-guideBannerTop></app-guideBannerTop> -->
+<app-image-carousel></app-image-carousel>
+
+<div class="container p-4 mt-5 titleGuide">
+
+  <div class="row">
+    <div class="col">
+      <h1>{{ 'GUIDE_ACCADEMY.TITLE' | translate }}</h1>
+    </div>
+  </div>
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <img src="../../../../assets/accademy/Guide_oneBlade.png" alt="Guide oneBlade" class="full-width-img">
+    </div>
+    <div class="col-md-6 text-standard-oneblade">
+      <p>
+        <strong>{{ 'GUIDE_ACCADEMY.PARAGRAPH_1' | translate }}</strong>
+      </p>
+      <p>
+        {{ 'GUIDE_ACCADEMY.PARAGRAPH_2' | translate }}
+      </p>
+      <p>
+        {{ 'GUIDE_ACCADEMY.PARAGRAPH_3' | translate }}
+      </p>
+    </div>
+  </div>
+</div>
+
+<app-guideList></app-guideList>
+<app-accademyBanner></app-accademyBanner>
+<app-FissaUnaCall></app-FissaUnaCall>
+
+<div class="container">
+  <div class="row">
+    <div class="col"><app-contact-form></app-contact-form></div>
+    <div class="col"> <app-contact-form-azienda></app-contact-form-azienda></div>
+  </div>
+</div>
+
+<app-infooneBlade></app-infooneBlade>

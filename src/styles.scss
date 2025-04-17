@@ -1,5 +1,7 @@
 // Definizione dei colori principali
 $primary-color: #9339bb;
+$secondary-color: #9c2ea6;
+$background-color: #a380bc;
 $scrollbar-track-color: #f1f1f1;
 $scrollbar-thumb-color: $primary-color;
 $scrollbar-thumb-hover-color: darken($primary-color, 10%);
@@ -97,4 +99,23 @@ body {
 // Stile di utilità per testo centrato
 .text-center {
   text-align: center;
+}
+
+.accordion-button {
+  background-color: $background-color !important;
+  color: white !important;
+  border: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: $secondary-color !important;
+  color: white !important;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(156, 46, 166, 0.5) !important;
+}
+
+.accordion-body {
+  border-top: 1px solid $secondary-color;
 }

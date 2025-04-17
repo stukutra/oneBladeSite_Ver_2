@@ -1,0 +1,164 @@
+@use '../style/variabiles' as var;
+
+.blog-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var.$background-light;
+    color: var.$text-dark;
+}
+
+.main-article {
+    flex: 3;
+    margin-right: 20px;
+    padding: var.$padding-box;
+    box-shadow: var.$box-shadow;
+    border-radius: var.$border-radius;
+    background-color: var.$background-color_2;
+}
+
+.sidebar {
+    flex: 1;
+    padding: var.$padding-box;
+    box-shadow: var.$box-shadow;
+    border-radius: var.$border-radius;
+    background-color: var.$background-color_2;
+}
+
+.related-articles ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.related-articles li {
+    cursor: pointer;
+    color: var.$primary-color;
+    text-decoration: underline;
+}
+
+.card {
+    box-shadow: var.$box-shadow;
+    border-radius: var.$border-radius;
+}
+
+.card-title {
+    color: var.$primary-color;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-text {
+    font-size: 1em;
+    color: var.$text-color-dark;
+    margin-bottom: 15px;
+}
+
+.card-text i {
+    margin-right: 5px;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover; // Add this line to maintain aspect ratio
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+.me-2 {
+    margin-right: 0.5rem;
+}
+
+.list-group-item {
+    cursor: pointer;
+
+    &:hover {
+        background-color: var.$hover-color;
+    }
+}
+
+.badge {
+    font-size: var.$font-size-xs;
+}
+
+@media (max-width: 768px) {
+
+    .main-article,
+    .sidebar {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.list-inline-item {
+    font-size: 0.8em;
+    color: var.$primary-color;
+    margin-right: 10px;
+}
+
+a {
+    color: var.$primary-color;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+/* Breadcrumb navigation styles */
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 1rem;
+
+    .breadcrumb-item+.breadcrumb-item::before {
+        content: ">";
+        color: var.$primary-color;
+    }
+
+    .breadcrumb-item a {
+        color: var.$primary-color;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .breadcrumb-item.active {
+        color: var.$secondary-color;
+    }
+}
+
+@media (max-width: 768px) {
+    .breadcrumb .breadcrumb-link {
+        max-width: 100px;
+    }
+}
+
+@media (min-width: 769px) {
+    .breadcrumb .breadcrumb-link {
+        max-width: none;
+    }
+}

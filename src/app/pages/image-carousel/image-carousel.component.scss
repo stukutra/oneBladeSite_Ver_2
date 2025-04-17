@@ -9,16 +9,16 @@
     width: 100%;
   }
 
-
   .carousel-item {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: opacity 500ms ease-in-out, transform 1s cubic-bezier(0.4, 0.2, 0.8, 0.5);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
     opacity: 0;
 
     &.active {
       opacity: 1;
+      transition: none; // Disable transition for the initial active slide
     }
 
     img {
@@ -26,7 +26,11 @@
       height: auto;
       object-fit: cover;
       position: relative;
-      min-height: 225px;
+      min-height: 360px; // Increased by 30px
+
+      &.placeholder {
+        filter: blur(5px); // Add a blur effect to indicate loading
+      }
     }
 
     .carousel-caption-overlay {
@@ -42,10 +46,18 @@
         font-size: 1.4rem;
         margin-bottom: 0.1rem;
         font-weight: bold;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); // Add text shadow
       }
 
       p.carousel-subtitle {
         font-size: 1.1rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); // Add text shadow
       }
     }
   }
@@ -80,10 +92,15 @@
 
 // Media Queries per schermi di diverse dimensioni
 @media (max-width: 991px) {
+  .carousel {
+    margin-top: -60px; // Further reduce the top margin to bring the carousel closer to the top
+  }
+
   .carousel-caption-overlay {
     h2.carousel-title {
       font-size: 1.75rem;
     }
+
     p.carousel-subtitle {
       font-size: 1.1rem;
     }
@@ -96,13 +113,14 @@
   }
 
   .carousel-item img {
-    max-height: 70vh;
+    max-height: 73vh; // Increased by 3vh
   }
 
   .carousel-caption-overlay {
     h2.carousel-title {
       font-size: 1.5rem;
     }
+
     p.carousel-subtitle {
       font-size: 1rem;
     }
@@ -115,15 +133,22 @@
   }
 
   .carousel-item img {
-    max-height: 65vh;
+    max-height: 68vh; // Increased by 3vh
   }
 
   .carousel-caption-overlay {
     h2.carousel-title {
       font-size: 1.3rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
+
     p.carousel-subtitle {
       font-size: 0.9rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 }

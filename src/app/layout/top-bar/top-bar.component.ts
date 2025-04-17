@@ -1,4 +1,7 @@
 import { Component, HostListener } from '@angular/core';
+import { Course, Language } from '../../models/course.model';
+
+import { CoursesService } from 'src/app/service/Courses.service';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -11,9 +14,15 @@ export class TopBarComponent {
 
   isMenuOpen: boolean = false;
 
-  constructor(private router: Router, private translate: TranslateService) {
+  isChristmasModalVisible: boolean = false;
+
+  isDropdownOpen: { [key: string]: boolean } = {};
+
+
+  constructor(private router: Router, private translate: TranslateService, private coursesService: CoursesService) {
     this.translate.addLangs(['en', 'it', 'es']);
     this.translate.setDefaultLang('it');
+    this.translate.use('it'); // Ensure the initial language is set to Italian
   }
 
   @HostListener('document:click', ['$event'])
@@ -30,17 +39,37 @@ export class TopBarComponent {
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
-  }
-
-
-  closeMenu(): void {
-    const navbarToggler = document.querySelector('.navbar-toggler') as HTMLElement;
     const navbarCollapse = document.querySelector('.navbar-collapse') as HTMLElement;
 
-    if (navbarToggler && navbarCollapse.classList.contains('show')) {
-      navbarToggler.click();
+    if (this.isMenuOpen) {
+      navbarCollapse.classList.add('show'); // Forza l'apertura del menu
+    } else {
+      navbarCollapse.classList.remove('show'); // Forza la chiusura del menu
+    }
+  }
+
+  toggleDropdown(dropdownId: string): void {
+    // Close all other dropdowns
+    Object.keys(this.isDropdownOpen).forEach(key => {
+      if (key !== dropdownId) {
+        this.isDropdownOpen[key] = false;
+      }
+    });
+
+    // Toggle the current dropdown
+    this.isDropdownOpen[dropdownId] = !this.isDropdownOpen[dropdownId];
+  }
+
+  closeMenu(): void {
+    const navbarCollapse = document.querySelector('.navbar-collapse') as HTMLElement;
+
+    if (navbarCollapse.classList.contains('show')) {
+      navbarCollapse.classList.remove('show'); // Assicura la chiusura del menu
       this.isMenuOpen = false;
     }
+
+    // Chiudi tutti i dropdown
+    this.isDropdownOpen = {};
   }
 
   navigateTo(route: string): void {
@@ -52,7 +81,23 @@ export class TopBarComponent {
   changeLanguage(event: Event) {
     const selectElement = event.target as HTMLSelectElement;
     const lang = selectElement.value;
-    this.translate.use(lang);
+    this.translate.use(lang).subscribe(() => {
+      this.coursesService.getCoursesALL().subscribe(); // Reload courses data
+    });
     this.closeMenu();
+  }
+
+  openChristmasModal(event: Event): void {
+    event.preventDefault(); // Previene il comportamento predefinito del link
+    this.isChristmasModalVisible = true; // Mostra la modale
+  }
+
+  closeChristmasModal(): void {
+    this.isChristmasModalVisible = false; // Nasconde la modale
+  }
+
+  getDescription(course: Course): string {
+    const lang = this.translate.currentLang;
+    return course.description[lang as Language];
   }
 }

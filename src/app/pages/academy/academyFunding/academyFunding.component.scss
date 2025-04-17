@@ -1,0 +1,39 @@
+@use '../../../style/variabiles' as var;
+
+.funding-box {
+  background-color: var.$background-color_2;
+  color: var.$text-color-dark;
+  border-radius: var.$border-radius;
+  padding: var.$padding-base;
+  box-shadow: var.$box-shadow;
+  margin-top: var.$gap;
+  text-align: left;
+  font-size: var.$font-size-base;
+
+  h2 {
+    font-size: var.$font-size-lg;
+    color: var.$primary-color;
+    font-weight: bold;
+    margin-bottom: var.$gap;
+  }
+
+  p {
+    font-size: var.$font-size-base;
+    margin-bottom: var.$gap;
+
+    strong {
+      color: var.$secondary-color;
+      font-weight: 600;
+    }
+  }
+
+  a {
+    color: var.$primary-color;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

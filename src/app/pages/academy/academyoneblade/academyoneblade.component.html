@@ -1,0 +1,82 @@
+<app-guideBannerTop></app-guideBannerTop>
+
+<div class="container mt-4">
+  <div class="row">
+    <!-- Breadcrumb navigation -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a [routerLink]="['/']">{{ 'HOME' | translate }}</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ 'ACADEMY_ONEBLADE.TITLE' | translate }}</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+
+<div class="accademy-banner mt-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-8">
+        <div class="text-content">
+          <h1>{{ 'ACADEMY_ONEBLADE.TITLE' | translate }}</h1>
+
+          <p>
+            <strong>{{ 'ACADEMY_ONEBLADE.INTRO' | translate }}</strong>
+          </p>
+
+          <p>
+            {{ 'ACADEMY_ONEBLADE.BELIEF' | translate }}
+          </p>
+
+          <p>
+            {{ 'ACADEMY_ONEBLADE.NO_TITLES' | translate }}
+          </p>
+
+          <p>
+            {{ 'ACADEMY_ONEBLADE.MISSION' | translate }}
+          </p>
+
+          <p>
+            {{ 'ACADEMY_ONEBLADE.READY' | translate }}
+          </p>
+
+        </div>
+      </div>
+      <div class="col-12 col-md-4 text-center">
+        <div class="image-content">
+          <img src="../../../../assets/accademy/bussola.png" alt="BussolaoneBlade">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="course-section mt-3">
+        <div *ngFor="let category of categories" class="category">
+          <h3 class="category-title">{{ category.title }}</h3>
+          <div class="course-list">
+            <div *ngFor="let course of category.courses" class="course-card">
+              <div [routerLink]="['/AcademyDetails', course.idCourse]">
+                <h3>{{ course.title }}</h3>
+                <div class="course-content">
+                  <p>{{ course.nature }}</p>
+                  <p><strong>Durata:</strong> {{ course.duration }}</p>
+                  <p><strong>Modalità del corso:</strong> {{ course.mode }}</p>
+                  <p><strong>Livello:</strong> {{ course.level }}</p>
+                  <p><strong>Dettaglio:</strong> {{ course.overview }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-whyoneBladeBanner></app-whyoneBladeBanner>
+<app-infooneBlade></app-infooneBlade>
+<app-guideList></app-guideList>

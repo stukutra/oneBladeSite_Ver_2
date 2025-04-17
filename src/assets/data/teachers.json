@@ -1,0 +1,20 @@
+{
+    "teachers": [
+        {
+            "code": "JD01",
+            "name": "Guido Salzano",
+            "firstName": "Guido",
+            "lastName": "Salzano",
+            "photo": "assets/team/Guido_Salzano_CEO.jpeg",
+            "linkedIn": "https://www.linkedin.com/in/guidosalzano/"
+        },
+        {
+            "code": "JS02",
+            "name": "Serena D'Angelo",
+            "firstName": "Serena",
+            "lastName": "D'Angelo",
+            "photo": "assets/team/SerenaDangelo.jpeg",
+            "linkedIn": "https://www.linkedin.com/in/janesmith"
+        }
+    ]
+}

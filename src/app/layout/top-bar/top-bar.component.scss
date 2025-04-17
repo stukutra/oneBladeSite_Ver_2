@@ -40,7 +40,7 @@ $gradient-color-5: #ffffff;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;  
+  height: 100%;
   //background: linear-gradient(45deg, $gradient-color-1, $gradient-color-2, $gradient-color-3, $gradient-color-4, $gradient-color-5);
   background-size: cover;
   transform: scaleX(-1);
@@ -72,18 +72,7 @@ $gradient-color-5: #ffffff;
   z-index: 1;
 }
 
-// .hover-logo {
-//   opacity: 0;
-//   z-index: 2;
-// }
 
-// .logo-container:hover .default-logo {
-//   opacity: 0;
-// }
-
-// .logo-container:hover .hover-logo {
-//   opacity: 1;
-// }
 
 .navbar-nav {
   margin-left: auto;
@@ -99,6 +88,14 @@ $gradient-color-5: #ffffff;
   cursor: pointer;
   transition: font-weight 0.3s ease;
   margin-right: $nav-item-margin-left;
+
+  &.partners-link {
+    color: $nav-link-color;
+
+    &:hover {
+      color: $nav-link-hover-color;
+    }
+  }
 }
 
 .navbar-nav .nav-link i {
@@ -130,6 +127,7 @@ $gradient-color-5: #ffffff;
   .language-icon {
     color: $navbar-collapse-link-color; // Cambia colore in modalità mobile
   }
+
   .language-select {
     color: $navbar-collapse-link-color;
     background: none;
@@ -175,6 +173,12 @@ $gradient-color-5: #ffffff;
 
   .navbar-nav {
     margin-right: 0;
+    align-items: flex-start; // Align items to the left
+  }
+
+  .navbar-nav .nav-link {
+    text-align: left; // Align text to the left
+    width: 100%; // Make the link take the full width
   }
 
   // Stile per il selettore di lingua in modalità mobile
@@ -189,6 +193,82 @@ $gradient-color-5: #ffffff;
   .language-select option {
     color: black;
   }
+
+  .navbar {
+    height: 80px; // Reduce the height for mobile view
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .logo-container {
+    height: 80px; // Adjust the logo container height
+  }
+
+  .logo {
+    height: 80px; // Adjust the logo height
+    top: 30px; // Move the logo slightly lower
+    transform: translateY(0); // Reset the transform property
+  }
+
+  .navbar-nav .dropdown-menu {
+    position: relative; // Ensure dropdown stays within the parent container
+    left: 0; // Align dropdown to the left
+    right: 0; // Ensure it doesn't overflow to the right
+    width: 100%; // Make the dropdown take the full width of the container
+    box-shadow: none; // Remove the box shadow
+    border: none; // Remove the border
+    padding: 0; // Remove extra padding
+    background-color: transparent; // Make background transparent
+  }
+
+  .navbar-nav .dropdown-item {
+    white-space: normal; // Allow text wrapping to prevent overflow
+    word-wrap: break-word; // Break long words if necessary
+    padding: 10px 15px; // Adjust padding for better spacing
+    color: $navbar-collapse-link-color; // Match link color
+  }
+
+  .navbar-nav .dropdown-item:hover {
+    color: $navbar-collapse-link-hover-color; // Match hover color
+    background-color: transparent; // Remove hover background
+  }
+
+  .navbar-nav .dropdown-menu {
+    position: relative; // Ensure dropdown stays within the parent container
+    left: 0; // Align dropdown to the left
+    right: 0; // Ensure it doesn't overflow to the right
+    width: auto; // Adjust width to fit content
+    box-shadow: none; // Remove the box shadow
+    border: none; // Remove the border
+    padding: 0; // Remove extra padding
+    background-color: transparent; // Make background transparent
+  }
+
+  .navbar-nav .dropdown-item {
+    padding: 10px 15px; // Adjust padding for better spacing
+    color: $navbar-collapse-link-color; // Match link color
+  }
+
+  .navbar-nav .dropdown-item:hover {
+    color: $navbar-collapse-link-hover-color; // Match hover color
+    background-color: transparent; // Remove hover background
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 14px; // Reduce font size for links
+  }
+
+  .navbar-nav .dropdown-item {
+    font-size: 14px; // Reduce font size for dropdown items
+  }
+
+  .language-select {
+    font-size: 14px; // Reduce font size for language selector
+  }
+
+  .christmas-link {
+    font-size: 13px; // Slightly smaller font for Christmas link
+  }
 }
 
 
@@ -202,9 +282,11 @@ $gradient-color-5: #ffffff;
     transform: translateX(-100%); // Parte fuori schermo a sinistra
     opacity: 0; // Invisibile all'inizio
   }
+
   50% {
     opacity: 1; // Gradualmente diventa visibile
   }
+
   100% {
     transform: translateX(0); // Posizione finale
     opacity: 1; // Completamente visibile
@@ -212,9 +294,12 @@ $gradient-color-5: #ffffff;
 }
 
 @keyframes lightEffect {
-  0%, 100% {
+
+  0%,
+  100% {
     filter: brightness(1);
   }
+
   50% {
     filter: brightness(1.7); // Effetto di luce delicato
   }
@@ -226,22 +311,107 @@ $gradient-color-5: #ffffff;
 
   .default-logo {
     z-index: 1;
-    animation: slideIn 1.5s ease-out forwards; 
+    animation: slideIn 1.5s ease-out forwards;
     // Prima l'animazione di slideIn, poi quella di lightEffect dopo 1.5s
   }
-
-  // .hover-logo {
-  //   opacity: 0;
-  //   z-index: 2;
-  //   transition: opacity 0.5s ease;
-  // }
-
-  // &:hover .default-logo {
-  //   opacity: 0;
-  // }
-
-  // &:hover .hover-logo {
-  //   opacity: 1;
-  // }
 }
 
+
+
+
+.custom-modal-natale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Sfondo semitrasparente */
+}
+
+.custom-modal-content-natale {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  height: 50%;
+  /* Imposta l'altezza automatica per adattarsi al contenuto */
+  max-width: 70%;
+  max-height: 90%;
+  /* Limita l'altezza massima */
+  text-align: center;
+  animation: fadeIn 0.3s ease-out;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* Imposta i contenuti in colonna */
+  overflow: auto;
+  /* Aggiunge una barra di scorrimento se il contenuto supera l'altezza */
+}
+
+.custom-modal-content-natale iframe {
+  flex: 1;
+  /* L'iframe occupa lo spazio disponibile */
+  width: 100%;
+  /* Si adatta alla larghezza del contenitore */
+  height: 100%;
+  /* Si adatta all'altezza del contenitore */
+  border: none;
+}
+
+.custom-modal-close-natale {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.custom-modal-close-natale:hover {
+  color: #000;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+// Stile sobrio per il link "Buon Natale"
+.christmas-link {
+  font-size: 16px; // Dimensione standard
+  font-weight: bold; // Testo in grassetto
+  color: #9339bb; // Colore primario del sito (adatto al design generale)
+  padding: 5px 10px; // Spaziatura interna
+  border: none; // Nessun bordo
+  background: none; // Nessuno sfondo
+  text-decoration: none; // Rimuove la sottolineatura
+  cursor: pointer;
+  display: flex; // Permette di centrare le icone con il testo
+  align-items: center;
+  gap: 5px; // Spaziatura tra le icone e il testo
+  transition: color 0.3s ease; // Transizione fluida per il colore
+
+  &:hover {
+    color: #712a91; // Colore leggermente più scuro al passaggio del mouse
+  }
+}
+
+// Stile per adattare il layout in dispositivi piccoli
+@media (max-width: 991.98px) {
+  .christmas-link {
+    font-size: 14px; // Riduci leggermente il testo su dispositivi mobili
+    padding: 5px; // Spaziatura più compatta
+  }
+}

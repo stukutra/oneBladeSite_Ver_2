@@ -67,7 +67,8 @@
       </div>
 
       <div class="button-row">
-        <button type="button" class="btn btn-primary open-questionnaire-btn" [disabled]="contactForm.invalid || !model.file" (click)="openQuestionnaireModal()">
+        <button type="button" class="btn btn-primary open-questionnaire-btn"
+          [disabled]="contactForm.invalid || !model.file" (click)="openQuestionnaireModal()">
           {{ 'FORM.QUESTIONARIE.TITLE' | translate }}</button>
         <button type="submit" class="btn btn-primary submit-btn" [disabled]="contactForm.invalid || !model.file">{{
           'FORM.BUTTON_SUBMIT' | translate }}</button>

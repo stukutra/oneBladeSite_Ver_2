@@ -1,0 +1,33 @@
+<app-image-carousel></app-image-carousel>
+
+<div class="container">
+    <div class="description-box">
+        <h5 class="box-title">{{ 'LOGIN.TITLE' | translate }}</h5>
+        <form #loginForm="ngForm" (ngSubmit)="login()" novalidate class="contact-form">
+            <div class="mb-3 form-group">
+                <input type="email" id="email" name="email" class="form-control" [(ngModel)]="email"
+                    #emailModel="ngModel" required placeholder="{{ 'LOGIN.EMAIL' | translate }}" />
+                <div *ngIf="emailModel.invalid && (emailModel.dirty || emailModel.touched)" class="text-danger">
+                    <div *ngIf="emailModel.errors?.['required']">{{ 'FORM.VALIDATION.EMAIL_REQUIRED' | translate }}
+                    </div>
+                    <div *ngIf="emailModel.errors?.['email']">{{ 'FORM.VALIDATION.EMAIL_INVALID' | translate }}</div>
+                </div>
+            </div>
+
+            <div class="mb-3 form-group">
+                <input type="password" id="password" name="password" class="form-control" [(ngModel)]="password"
+                    #passwordModel="ngModel" required placeholder="{{ 'LOGIN.PASSWORD' | translate }}" />
+                <div *ngIf="passwordModel.invalid && (passwordModel.dirty || passwordModel.touched)"
+                    class="text-danger">
+                    <div *ngIf="passwordModel.errors?.['required']">{{ 'FORM.VALIDATION.PASSWORD_REQUIRED' | translate
+                        }}</div>
+                </div>
+            </div>
+
+            <div class="button-row">
+                <button type="submit" class="btn btn-primary submit-btn" [disabled]="loginForm.invalid">{{
+                    'LOGIN.BUTTON' | translate }}</button>
+            </div>
+        </form>
+    </div>
+</div>

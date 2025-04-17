@@ -1,0 +1,203 @@
+@use '../../../style/variabiles' as var;
+
+.box {
+    background-color: var.$background-color;
+    color: var.$text-color;
+    border-radius: var.$border-radius;
+    text-align: center;
+    padding: var.$padding-base;
+    min-height: 15.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var.$box-shadow;
+    transition: transform var.$transition-speed, box-shadow var.$transition-speed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:hover {
+        transform: translateY(-0.3125rem);
+        box-shadow: 0 0.5rem 1rem var.$hover-color;
+    }
+
+    h2 {
+        margin-bottom: 0.625rem;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+/* Breadcrumb navigation styles */
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 1rem;
+
+    .breadcrumb-item+.breadcrumb-item::before {
+        content: ">";
+        color: var.$primary-color;
+    }
+
+    .breadcrumb-item a {
+        color: var.$primary-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .breadcrumb-item.active {
+        color: var.$secondary-color;
+    }
+}
+
+/* Sezione corsi */
+.course-section {
+    .category {
+        margin-bottom: 6rem;
+
+        .category-title {
+            font-size: var.$font-size-lg;
+            font-weight: bold;
+            margin-bottom: var.$gap;
+            text-align: left;
+            color: var.$primary-color;
+        }
+
+        .course-list {
+            display: flex;
+            justify-content: left;
+            gap: var.$gap;
+            flex-wrap: wrap;
+        }
+
+        .course-card {
+            background-color: var.$text-color;
+            color: var.$text-color-dark;
+            padding: var.$padding-base;
+            border-radius: var.$border-radius;
+            box-shadow: var.$box-shadow;
+            text-align: left;
+            font-size: var.$font-size-base;
+            width: 33rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+
+            &:hover {
+                transform: scale(1);
+                box-shadow: 0 0.75rem 1.5rem var.$hover-color;
+                cursor: pointer;
+            }
+
+            h3 {
+                font-size: 1.4rem;
+                font-weight: bold;
+                margin-bottom: 0.625rem;
+                color: var.$primary-color;
+            }
+
+            p {
+                margin: 0.3125rem 0;
+                font-size: 1.3rem;
+            }
+
+            .course-details {
+                margin-top: 0.625rem;
+                font-size: 1.8rem;
+                color: var.$secondary-color;
+            }
+        }
+    }
+}
+
+.course-info-box {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 0.75rem;
+    padding: 1.2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    margin-top: 1.5rem;
+    text-align: left;
+    font-size: var.$font-size-md;
+
+    h3 {
+        font-size: var.$font-size-xs;
+        color: var.$primary-color;
+        font-weight: bold;
+        margin-bottom: 0.8rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+        margin-bottom: 0.4rem;
+
+        strong {
+            color: var.$secondary-color;
+            font-weight: 600;
+        }
+    }
+
+    .course-price {
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: var.$secondary-color;
+        background-color: rgba(255, 87, 34, 0.1); // Non c'è una variabile per questo colore
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        display: inline-block;
+        margin-top: 0.5rem;
+        margin-left: 10px;
+    }
+}
+
+.btn-booking {
+    background-color: transparent;
+    color: var.$primary-color;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    border: 2px solid var.$primary-color;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    margin-top: 1rem;
+    width: 100%;
+
+    &:hover {
+        background-color: var.$primary-color;
+        color: white;
+        transform: scale(1.05);
+    }
+}
+
+h1,
+h2 {
+    color: var.$primary-color;
+}
+
+/* Sezione corsi correlati */
+.related-courses {
+    h1 {
+        color: var.$primary-color;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0px;
+
+        li {
+            a {
+                font-size: var.$font-size-base;
+                color: var.$primary-color;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

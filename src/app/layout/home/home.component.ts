@@ -16,7 +16,6 @@ export class HomeComponent {
     { src: 'assets/logo1.png', alt: 'Logo 1' },
     { src: 'assets/logo2.png', alt: 'Logo 2' },
     { src: 'assets/logo3.png', alt: 'Logo 3' },
-    // Aggiungi altri loghi qui
   ];
 
 

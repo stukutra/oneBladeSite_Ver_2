@@ -1,0 +1,112 @@
+@import '../../../style/variabiles';
+
+h2 {
+    color: $primary-color;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600;
+}
+
+// Contenitore centrato e con larghezza ridotta
+.tech-section {
+    max-width: 100%; // Riduzione della larghezza
+    margin: 0 auto; // Centratura
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+// Stile per ogni categoria
+.category {
+    margin-bottom: 40px; // Spazio tra le categorie
+}
+
+h4 {
+    margin-bottom: 15px; // Spazio sotto il titolo della categoria
+    font-weight: 600;
+    color: #333;
+    border-bottom: 1px solid #e0e0e0; // Sottolineatura leggera per evidenziare le categorie
+    padding-bottom: 5px;
+}
+
+.tech-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.tech-item:hover {
+    transform: translateY(-5px);
+}
+
+.custom-progress {
+    height: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px; // Spazio tra le progress bar
+
+    .progress-bar {
+        background-color: #007aff !important;
+        font-weight: bold;
+        font-size: 14px;
+        text-align: center;
+        transition: width 0.6s ease-in-out;
+    }
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center; // Centra le card orizzontalmente
+    gap: 20px; // Spazio tra le card
+    flex-wrap: wrap; // Se non ci sta su schermi piccoli, va a capo
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 400px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 1; // Adatta le card per stare in una riga
+    min-width: 350px; // Previene che diventino troppo piccole
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.profile-info {
+    h3 {
+        margin: 0;
+        font-size: 22px;
+        color: #333;
+        font-weight: 600;
+    }
+
+    p {
+        margin: 0;
+        font-style: italic;
+        color: #666;
+    }
+}
+
+.linkedin-icon {
+    font-size: 24px;
+    color: #007aff;
+    margin-top: 10px;
+    transition: transform 0.3s;
+}
+
+.linkedin-icon:hover {
+    transform: scale(1.1);
+    color: #0056b3;
+}

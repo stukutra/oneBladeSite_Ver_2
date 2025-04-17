@@ -1,0 +1,129 @@
+@use '../style/variabiles' as var;
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.card-title {
+    color: var.$primary-color;
+    font-size: 1.25em;
+    margin-bottom: 10px;
+}
+
+.card-category {
+    font-size: 0.9em;
+    color: var.$text-color-dark;
+    margin-bottom: 5px;
+}
+
+.card-author,
+.card-date {
+    font-size: 0.8em;
+    color: var.$text-color-dark;
+    margin-bottom: 5px;
+}
+
+.card-text {
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: transparent;
+    border-color: var.$primary-color;
+    color: var.$primary-color;
+    transition: background-color var.$transition-speed, color var.$transition-speed;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.9em;
+
+    &:hover {
+        background-color: var.$primary-color;
+        color: var.$text-color;
+    }
+}
+
+.pagination {
+    .page-item {
+        .page-link {
+            color: var.$primary-color;
+            border: 1px solid var.$primary-color;
+            transition: background-color var.$transition-speed, color var.$transition-speed;
+            cursor: pointer;
+            padding: 10px 15px;
+            margin: 0 5px;
+
+            &:hover {
+                background-color: var.$primary-color;
+                color: var.$text-color;
+            }
+        }
+
+        &.active .page-link {
+            background-color: var.$primary-color;
+            border-color: var.$primary-color;
+            color: var.$text-color;
+        }
+
+        &.disabled .page-link {
+            color: var.$text-color-dark;
+            pointer-events: none;
+            background-color: var.$background-color_2;
+            border-color: var.$background-color_2;
+        }
+    }
+}
+
+
+/* Breadcrumb navigation styles */
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 1rem;
+
+    .breadcrumb-item+.breadcrumb-item::before {
+        content: ">";
+        color: var.$primary-color;
+    }
+
+    .breadcrumb-item a {
+        color: var.$primary-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .breadcrumb-item.active {
+        color: var.$secondary-color;
+    }
+}

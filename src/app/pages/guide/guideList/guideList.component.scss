@@ -1,0 +1,107 @@
+
+@import '../../../style/variabiles';
+/* 📌 Contenitore Guide */
+.guides-container {
+    text-align: center;
+    padding: 2rem;
+
+    h1 {
+        font-size: $font-size-title;
+        color: $primary-color;
+    }
+
+    p {
+        font-size: $font-size-subtitle;
+        margin-bottom: 2rem;
+    }
+
+    .guide-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .guide-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background: $background-light;
+        padding: 1.5rem;
+        border-radius: $border-radius;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: $card-width;
+        height: 100%;
+        min-height: $card-min-height;
+        transition: transform $transition-speed ease;
+        cursor: pointer;
+        justify-content: space-between; // Mantiene il pulsante in basso
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: $box-shadow-hover;
+        }
+
+        img {
+            width: auto;
+            height: $image-height;
+            object-fit: contain;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: $font-size-subtitle;
+            font-weight: bold;
+            color: $primary-color;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: $font-size-text;
+            flex-grow: 1; // Espande il testo per bilanciare la card
+            margin-bottom: 1rem;
+        }
+
+        button {
+            background: $primary-color;
+            color: $text-color;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-size: $font-size-button;
+            font-weight: bold;
+            width: 100%;
+            max-width: 180px;
+            height: $button-height;
+            cursor: pointer;
+            transition: background $transition-speed ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: auto; // Fissa il pulsante in basso
+
+            &:hover {
+                background: $accent-color;
+            }
+        }
+    }
+}
+
+/* 📌 Banner */
+.color-accademy-banner {
+    background-color: $background-dark;
+}
+
+.textBannerAccademy {
+    color: $text-color;
+}
+
+
+/* 📌 Titolo Guide */
+.titleGuide {
+    h1 {
+        font-size: $font-size-title;
+        color: $primary-color;
+    }
+}

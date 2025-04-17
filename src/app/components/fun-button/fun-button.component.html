@@ -1,0 +1,11 @@
+<div class="fun-button-container">
+    <button class="fun-button" (click)="onButtonClick()">Hey!</button>
+    <div class="fun-output" *ngIf="output" [ngClass]="{ 'fade-out': fadeOut }">
+        <ng-container [ngSwitch]="output.type">
+            <p *ngSwitchCase="'quote'">{{ output.value }}</p>
+            <img *ngSwitchCase="'image'" [src]="output.value" alt="Random Image" />
+            <audio *ngSwitchCase="'sound'" [src]="output.value" autoplay></audio>
+            <div *ngSwitchCase="'color'" [style.background]="output.value" class="color-box"></div>
+        </ng-container>
+    </div>
+</div>

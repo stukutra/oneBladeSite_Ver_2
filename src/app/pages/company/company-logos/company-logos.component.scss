@@ -1,0 +1,78 @@
+@import '../../../style/variabiles';
+
+.carousel-inner {
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-item {
+  display: grid;
+  gap: $logo-item-padding; // Spaziatura tra i loghi
+  padding: $carousel-item-padding;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: scale(0.95);
+}
+
+.carousel-item.active {
+  opacity: 1;
+  position: relative; // Porta in primo piano l'elemento attivo
+  z-index: 1;
+  transform: scale(1);
+}
+
+// Numero di loghi per riga basato sulla larghezza dello schermo
+@media (min-width: 1200px) {
+  .carousel-item {
+    grid-template-columns: repeat(4, 1fr); // 4 loghi per slide su schermi grandi
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .carousel-item {
+    grid-template-columns: repeat(3, 1fr); // 3 loghi per slide su tablet
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .carousel-item {
+    grid-template-columns: repeat(2, 1fr); // 2 loghi per slide su schermi piccoli
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-item {
+    grid-template-columns: 1fr; // 1 logo per slide su schermi molto piccoli
+  }
+}
+
+.logo-item img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black; // Change the color to make the arrows visible
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.progress-bar-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px; // Make the progress bar thinner
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background-color: $primary-color; // Use the site's primary color
+}

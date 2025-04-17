@@ -1,0 +1,262 @@
+@import '../../../style/_variabiles.scss';
+
+.category-box,
+.talent-box {
+    border: 1px solid $input-border-color;
+    padding: $padding-base;
+    margin-bottom: $gap;
+    border-radius: 12px;
+    background-color: $background-light;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    &:hover {
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        transform: translateY(-4px);
+    }
+
+    h3 {
+        margin-top: 0;
+        color: $text-color-oneblade;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    p {
+        margin: 0.5rem 0;
+        color: $text-color-dark;
+        font-size: 14px;
+    }
+
+    ul {
+        font-size: 14px;
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    li {
+        margin-bottom: 5px;
+    }
+
+    .price {
+        font-size: 16px;
+        color: $text-color-dark;
+        margin-top: 10px;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    .value-badge {
+        background-color: transparent;
+        color: $primary-color;
+        padding: 0.5rem 1rem; // Make the badge slightly larger
+        font-size: 14px; // Increase font size
+        margin-top: 5px;
+        display: inline-block;
+        border-radius: 8px;
+        border: 2px solid $primary-color; // Add border with primary color
+    }
+
+    .investment {
+        font-size: 14px;
+        color: $text-color-dark;
+        margin-top: 5px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .btn-link {
+        color: $primary-color;
+
+        &:hover {
+            color: darken($primary-color, 10%);
+        }
+    }
+
+    .btn-primary {
+        width: 100%;
+        border: 1px solid $primary-color;
+        background-color: $primary-color;
+        color: $font-color-white;
+        transition: background-color $transition-speed, color $transition-speed;
+        margin-top: 20px;
+        border-radius: 8px;
+
+        &:hover {
+            background-color: darken($primary-color, 10%);
+            color: $font-color-white;
+        }
+    }
+
+    .price-slider {
+        position: relative;
+
+        input[type="range"] {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 8px;
+            background: $input-border-color;
+            outline: none;
+            opacity: 0.9;
+            transition: opacity 0.2s;
+
+            &::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 20px;
+                height: 20px;
+                background: $primary-color;
+                cursor: pointer;
+                border-radius: 50%;
+            }
+
+            &::-moz-range-thumb {
+                width: 20px;
+                height: 20px;
+                background: $primary-color;
+                cursor: pointer;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.category-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.skills-list,
+.frameworks-list,
+.tools-list,
+.languages-list {
+    position: relative;
+    max-height: 3.6em;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    cursor: pointer;
+
+    &.expanded {
+        max-height: none;
+    }
+
+    li.hidden {
+        display: none;
+    }
+
+    &.expanded li.hidden {
+        display: list-item;
+    }
+}
+
+.step-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.progress-bar {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    height: 4px;
+    background-color: $input-border-color;
+    z-index: 0;
+    transform: translateY(-50%);
+
+    .step-tick {
+        position: absolute;
+        top: 50%;
+        width: 2px;
+        height: 10px;
+        background-color: $primary-color;
+        transform: translateY(-50%);
+    }
+
+    .step-tick:nth-child(1) {
+        left: calc(20px + (100% - 40px) / 3 * 0);
+    }
+
+    .step-tick:nth-child(2) {
+        left: calc(20px + (100% - 40px) / 3 * 1);
+    }
+
+    .step-tick:nth-child(3) {
+        left: calc(20px + (100% - 40px) / 3 * 2);
+    }
+
+    .step-tick:nth-child(4) {
+        left: calc(20px + (100% - 40px) / 3 * 3);
+    }
+}
+
+.step {
+    position: relative;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $input-border-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: $font-color-white;
+
+    .circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $input-border-color;
+        color: $font-color-white;
+        font-weight: bold;
+        line-height: 40px;
+    }
+
+    &.completed {
+        cursor: pointer;
+    }
+
+    &.disabled {
+        cursor: not-allowed;
+    }
+}
+
+.step.completed .circle {
+    background-color: $primary-color;
+}
+
+.step-explanation {
+    color: $primary-color;
+}
+
+.thank-you-message {
+    text-align: center;
+    margin-top: $gap;
+
+    h2 {
+        color: $text-color-oneblade;
+    }
+
+    p {
+        color: $text-color-dark;
+    }
+}

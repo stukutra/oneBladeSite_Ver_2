@@ -1,0 +1,15 @@
+<div class="container">
+  <div id="companyCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000"
+    data-bs-pause="false">
+    <div class="carousel-inner">
+      <div *ngFor="let slide of slides; let i = index" class="carousel-item" [class.active]="i === currentSlideIndex">
+        <div class="logo-item" *ngFor="let logo of slide">
+          <img [src]="logo.src" [alt]="logo.alt ? logo.alt : ''" class="d-block w-100" />
+        </div>
+      </div>
+    </div>
+    <div class="progress-bar-container">
+      <div class="progress-bar"></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,77 @@
+<app-image-carousel></app-image-carousel>
+
+<div class="custom-container">
+    <div class="description-box">
+        <h5 class="box-title">{{ 'REGISTER.TITLE' | translate }}</h5>
+        <form #registerForm="ngForm" (ngSubmit)="register()" novalidate class="contact-form">
+            <div class="form-group">
+                <input type="text" id="nome" name="nome" class="form-control" [(ngModel)]="user.nome" #nome="ngModel"
+                    required placeholder="{{ 'REGISTER.NOME' | translate }}" />
+                <div *ngIf="nome.invalid && (nome.dirty || nome.touched)" class="text-danger">
+                    <div *ngIf="nome.errors?.['required']">{{ 'FORM.VALIDATION.NAME_REQUIRED' | translate }}</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="text" id="cognome" name="cognome" class="form-control" [(ngModel)]="user.cognome"
+                    #cognome="ngModel" required placeholder="{{ 'REGISTER.COGNOME' | translate }}" />
+                <div *ngIf="cognome.invalid && (cognome.dirty || cognome.touched)" class="text-danger">
+                    <div *ngIf="cognome.errors?.['required']">{{ 'FORM.VALIDATION.COGNOME_REQUIRED' | translate }}</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="email" id="email" name="email" class="form-control" [(ngModel)]="user.email"
+                    #email="ngModel" required placeholder="{{ 'REGISTER.EMAIL' | translate }}" />
+                <div *ngIf="email.invalid && (email.dirty || email.touched)" class="text-danger">
+                    <div *ngIf="email.errors?.['required']">{{ 'FORM.VALIDATION.EMAIL_REQUIRED' | translate }}</div>
+                    <div *ngIf="email.errors?.['email']">{{ 'FORM.VALIDATION.EMAIL_INVALID' | translate }}</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="text" id="cellulare" name="cellulare" class="form-control" [(ngModel)]="user.cellulare"
+                    #cellulare="ngModel" required placeholder="{{ 'REGISTER.CELLULARE' | translate }}" />
+                <div *ngIf="cellulare.invalid && (cellulare.dirty || cellulare.touched)" class="text-danger">
+                    <div *ngIf="cellulare.errors?.['required']">{{ 'FORM.VALIDATION.CELLULARE_REQUIRED' | translate }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="password" id="password" name="password" class="form-control" [(ngModel)]="user.password"
+                    #password="ngModel" required placeholder="{{ 'REGISTER.PASSWORD' | translate }}"
+                    (input)="checkPasswordComplexity()" (focus)="passwordFocused=true" (blur)="passwordFocused=false" />
+                <div *ngIf="password.invalid && (password.dirty || password.touched)" class="text-danger">
+                    <div *ngIf="password.errors?.['required']">{{ 'FORM.VALIDATION.PASSWORD_REQUIRED' | translate }}
+                    </div>
+                </div>
+                <div *ngIf="passwordFocused" class="text-info">{{ passwordComplexityMessage }}</div>
+                <ul *ngIf="passwordFocused" class="password-requirements">
+                    <li [class.text-success]="passwordHasUppercase">{{ 'PASSWORD_REQUIREMENTS.UPPERCASE' | translate }}</li>
+                    <li [class.text-success]="passwordHasLowercase">{{ 'PASSWORD_REQUIREMENTS.LOWERCASE' | translate }}</li>
+                    <li [class.text-success]="passwordHasNumber">{{ 'PASSWORD_REQUIREMENTS.NUMBER' | translate }}</li>
+                    <li [class.text-success]="passwordHasSpecialChar">{{ 'PASSWORD_REQUIREMENTS.SPECIAL_CHAR' | translate }}</li>
+                    <li [class.text-success]="passwordHasMinLength">{{ 'PASSWORD_REQUIREMENTS.MIN_LENGTH' | translate }}</li>
+                </ul>
+            </div>
+
+            <div class="form-group">
+                <input type="password" id="confirmPassword" name="confirmPassword" class="form-control"
+                    [(ngModel)]="user.confirmPassword" #confirmPassword="ngModel" required
+                    placeholder="{{ 'REGISTER.CONFIRM_PASSWORD' | translate }}" />
+                <div *ngIf="confirmPassword.invalid && (confirmPassword.dirty || confirmPassword.touched)"
+                    class="text-danger">
+                    <div *ngIf="confirmPassword.errors?.['required']">{{ 'FORM.VALIDATION.CONFIRM_PASSWORD_REQUIRED' |
+                        translate }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-row">
+                <button type="submit" class="btn btn-primary submit-btn w-100" [disabled]="registerForm.invalid">{{
+                    'REGISTER.BUTTON' | translate }}</button>
+            </div>
+        </form>
+    </div>
+</div>

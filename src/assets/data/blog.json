@@ -1,0 +1,146 @@
+{
+    "categories": [
+        {
+            "name": "Technology",
+            "articles": [
+
+                {
+                    "code": "tech-005",
+                    "title": "L’adozione dell’Intelligenza Artificiale Generativa rivoluzione lo sviluppo software",
+                    "contentPaths": {
+                        "it": "assets/Blog/Technology/Blg06_it.html",
+                        "en": "assets/Blog/Technology/Blg06_en.html",
+                        "es": "assets/Blog/Technology/Blg06_es.html"
+                    },
+                    "creationDate": "2025-04-01T00:00:00Z",
+                    "authorCode": "JD01",
+                    "description": "",
+                    "readingTime": 5,
+                    "tags": [
+                        "AI Generativa",
+                        "Sviluppo Software",
+                        "Automazione",
+                        "Efficienza",
+                        "Progetti",
+                        "ScritturadiCodice",
+                        "StrumentiAvanzati",
+                        "Programmazione",
+                        "Innovazione",
+                        "Tecnologia",
+                        "Futuro",
+                        "Sviluppo",
+                        "Software",
+                        "Programmatore",
+                        "Automatizzazione",
+                        "Scrum",
+                        "Agile",
+                        "ScrumMaster",
+                        "MetodologieAgile",
+                        "GestioneProgetti",
+                        "TeamdiSviluppo"    
+                    ],
+                    "image": "assets/Blog/Technology/image/Ai_GEnerativa_VibesCoding.jpg"
+                },
+                {
+                    
+                    "code": "tech-001",
+                    "title": "The Impact of Artificial Intelligence in the Business World: Automation, Integration, and Social Aspects",
+                    "contentPaths": {
+                        "it": "assets/Blog/Technology/Blg01_it.html",
+                        "en": "assets/Blog/Technology/Blg01_en.html",
+                        "es": "assets/Blog/Technology/Blg01_es.html"
+                    },
+                    "creationDate": "2025-10-03T00:00:00Z",
+                    "authorCode": "JD01",
+                    "description": "An in-depth look at the future of artificial intelligence.",
+                    "readingTime": 5,
+                    "tags": [
+                        "AI",
+                        "Technology",
+                        "Future"
+                    ],
+                    "image": "assets/Blog/Technology/image/AI.jpg"
+                },
+                {
+                    "code": "tech-002",
+                    "title": "How to Design an Effective Artificial Intelligence for Your Business",
+                    "contentPaths": {
+                        "it": "assets/Blog/Technology/Blg02_it.html",
+                        "en": "assets/Blog/Technology/Blg02_en.html",
+                        "es": "assets/Blog/Technology/Blg02_es.html"
+                    },
+                    "creationDate": "2025-10-03T00:00:00Z",
+                    "authorCode": "JD01",
+                    "description": "An in-depth look at the future of artificial intelligence.",
+                    "readingTime": 5,
+                    "tags": [
+                        "AI",
+                        "Technology",
+                        "Future"
+                    ],
+                    "image": "assets/Blog/Technology/image/ArtificialInteligence.jpg"
+                },
+                {
+                    "code": "tech-005",
+                    "title": "Response Times in Recruitment and Talent Acquisition: A Key Factor for Business Success",
+                    "contentPaths": {
+                        "it": "assets/Blog/Technology/Blg05_it.html",
+                        "en": "assets/Blog/Technology/Blg05_en.html",
+                        "es": "assets/Blog/Technology/Blg05_es.html"
+                    },
+                    "creationDate": "2025-10-03T00:00:00Z",
+                    "authorCode": "JS02",
+                    "description": "",
+                    "readingTime": 5,
+                    "tags": [
+                        "AI",
+                        "Technology",
+                        "Future"
+                    ],
+                    "image": "assets/Blog/Technology/image/HrBlog05.jpg"
+                }
+            ]
+        },
+        {
+            "name": "Develop",
+            "articles": [
+                {
+                    "code": "tech-003",
+                    "title": "Effective Web Design in Angular",
+                    "contentPaths": {
+                        "it": "assets/Blog/Sviluppo/Blg03_it.html",
+                        "en": "assets/Blog/Sviluppo/Blg03_en.html",
+                        "es": "assets/Blog/Sviluppo/Blg03_es.html"
+                    },
+                    "creationDate": "2025-10-03T00:00:00Z",
+                    "authorCode": "JD01",
+                    "description": "",
+                    "readingTime": 5,
+                    "tags": [
+                        "Angular",
+                        "JAvascript"
+                    ],
+                    "image": "assets/Blog/Sviluppo/image/Angular.jpg"
+                },
+                {
+                    "code": "tech-004",
+                    "title": "Working in Agile Mode: Best Practices and the Role of the Scrum Master",
+                    "contentPaths": {
+                        "it": "assets/Blog/Sviluppo/Blg04_it.html",
+                        "en": "assets/Blog/Sviluppo/Blg04_en.html",
+                        "es": "assets/Blog/Sviluppo/Blg04_es.html"
+                    },
+                    "creationDate": "2025-10-03T00:00:00Z",
+                    "authorCode": "JD01",
+                    "description": "",
+                    "readingTime": 5,
+                    "tags": [
+                        "Angular",
+                        "JAvascript"
+                    ],
+                    "image": "assets/Blog/Sviluppo/image/Scrum.jpg"
+                }
+            ]
+        }
+    ]
+}

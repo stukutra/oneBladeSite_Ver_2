@@ -6,11 +6,11 @@
   "CONTENT": {
     "DEVELOPMENT": {
       "TITLE": "We develop your software",
-      "INTRO": "We are here to help you create fully customized software projects tailored to your specific needs and strategic goals. Our mission is to build highly skilled and dedicated teams capable of handling medium and large projects with expertise and professionalism.",
+      "INTRO": "<strong>OneBlade</strong> creates <strong>custom software solutions</strong> to enhance and optimize your business. We are a team of <strong>developers</strong>, <strong>designers</strong>, and <strong>software architects</strong>, specialized in <strong>designing</strong> and <strong>creating customized applications</strong>, aimed at effectively and innovatively meeting the needs of our clients and partners. We handle the entire <strong>development cycle</strong>, from <strong>ideation</strong> and <strong>design</strong> to <strong>implementation</strong>, ensuring <strong>high-quality</strong> products perfectly integrated into <strong>business processes</strong>.",
       "SUBTITLE_DEVELOPERS": "Developers and professionals",
-      "BODY_DEVELOPERS": "To achieve this goal, we carefully assemble groups of experts selected over the years. Each team member is a specialized consultant with a proven background and extensive experience in the field. We have invested time and resources in selecting and training these professionals to ensure they meet your technical and functional needs.",
+      "BODY_DEVELOPERS": "<p>To achieve this goal, we carefully assemble groups of <strong>experts selected over the years</strong>. Each team member is a <strong>specialized consultant</strong> with a <strong>proven background</strong> and <strong>extensive experience</strong> in the field. We have invested <strong>time and resources</strong> in selecting and training these professionals to ensure they meet your <strong>technical and functional needs</strong>.</p>",
       "SUBTITLE_APPROACH": "Our approach",
-      "BODY_APPROACH": "Our approach is based on a detailed understanding of your needs and goals. We work closely with you to define project requirements and design solutions that align perfectly with your expectations. The teams we form work with commitment and dedication, ensuring a smooth and seamless development process.",
+      "BODY_APPROACH": "<p>Our approach is based on a <strong>detailed understanding</strong> of your needs and goals. We work closely with you to <strong>define project requirements</strong> and <strong>design solutions</strong> that align perfectly with your expectations. The teams we form work with <strong>commitment and dedication</strong>, ensuring a <strong>smooth and seamless development process</strong>.</p>",
       "SUBTITLE_REMOTE": "Fully remote",
       "BODY_REMOTE": "Additionally, we are able to manage the entire software development process remotely, offering unparalleled operational flexibility. This mode of work not only allows us to adapt quickly to changes and new needs but also gives you access to the best global talents without geographical limitations.",
       "SUMMARY": "In short, our service offers you an integrated and customized solution, with highly qualified expert teams working together to ensure high-quality results and a smooth and adaptable project management experience. Our ability to operate fully remotely gives you the freedom to focus on your strategic priorities, knowing that your software project is in the hands of dedicated and experienced professionals."
@@ -33,7 +33,8 @@
       "EMAIL": "Email",
       "VAT": "VAT Number",
       "APPLICATION_TYPE": "Select a role",
-      "FILE": "File must not exceed 2MB"
+      "FILE": "File must not exceed 2MB",
+      "REGION": "Select a region"
     },
     "VALIDATION": {
       "NAME_REQUIRED": "Name is a required field",
@@ -43,9 +44,15 @@
       "VAT_REQUIRED": "VAT number is a required field",
       "VAT_INVALID": "Invalid VAT number",
       "ROLE_REQUIRED": "Role is a required field",
-      "FILE_REQUIRED": "File is required"
+      "FILE_REQUIRED": "File is required",
+      "REGION_REQUIRED": "Region is a required field",
+      "PASSWORD_REQUIRED": "Password is a required field",
+      "CELLULARE_REQUIRED": "Phone is a required field",
+      "COGNOME_REQUIRED": "Last name is a required field",
+      "CONFIRM_PASSWORD_REQUIRED": "Confirm password is a required field"
     },
     "BUTTON_SUBMIT": "Submit your application",
+    "BUTTON_RESERVATIONACADEMY": "Enroll in the Course",
     "MODAL": {
       "TITLE_SUCCESS": "Submission Successful",
       "TITLE_ERROR": "Submission Error",
@@ -57,7 +64,22 @@
       "TITLE": "Do you want to send us a short test?"
     },
     "TITLESOFTWARE": "Rely on us for comprehensive support in application development",
-    "SUBTITLESOFTWARE": "Does your team need a partner to accelerate software development?"
+    "SUBTITLESOFTWARE": "Does your team need a partner to accelerate software development?",
+    "VALIDATION_ERROR": "Please fill in all required fields and upload a valid file.",
+    "SUBMISSION_ERROR": "An error occurred during the submission of your request",
+    "SERVER_ERROR": "An error occurred while communicating with the server.",
+    "SUCCESS_MESSAGE": "Your request has been successfully sent. We will contact you shortly!",
+    "PRIVACY_ERROR": "You must authorize the processing of personal data to proceed.",
+    "FILE_TOO_LARGE": "The file exceeds the size of 3 MB.",
+    "NO_REPORT": "No report available",
+    "PASSWORD_REQUIREMENTS": {
+      "UPPERCASE": "Password must contain at least one uppercase letter",
+      "LOWERCASE": "Password must contain at least one lowercase letter",
+      "NUMBER": "Password must contain at least one number",
+      "SPECIAL_CHAR": "Password must contain at least one special character",
+      "MIN_LENGTH": "Password must be at least 8 characters long"
+    },
+    "THANK_YOU_MESSAGE": "Thank you for submitting your application. We will contact you shortly!"
   },
   "CAROUSEL": {
     "SLIDE_1": {
@@ -76,5 +98,306 @@
   "PARALLAX": {
     "TITLE": "Outstanding Talent, Exceptional Software",
     "SUBTITLE": "We connect the best professionals to software that drives change."
+  },
+  "INFOCOMPANY": {
+    "TITLE": "Would you like to work on-site?",
+    "SUBTITLE": "We are located at Via Di Valle Lupara 10, 00148 Rome (RM).",
+    "FULLREMOTETITLE": "FULL-Remote",
+    "FULLREMOTESUBTITLE": "Work from wherever you want: your workstation is wherever you choose to be!"
+  },
+  "ACADEMY_BANNER": {
+    "LAB_TITLE": "oneBlade Lab",
+    "LAB_DESCRIPTION": "Choose your path, we guide you",
+    "GUIDE_TITLE": "Guides",
+    "GUIDE_DESCRIPTION": "for aspiring programmers"
+  },
+  "ACADEMY_DETAILS": {
+    "COURSE_CONTENTS_TITLE": "Course Contents:",
+    "REQUIREMENTS_TITLE": "Requirements",
+    "RELATED_COURSES_TITLE": "Other interesting courses",
+    "COURSE_DETAILS_TITLE": "Course Details",
+    "COURSE_CODE": "Code:",
+    "COURSE_DURATION": "Duration:",
+    "COURSE_MODE": "Mode:",
+    "COURSE_LESSONS": "Lessons:",
+    "COURSE_TIME": "Time:",
+    "COURSE_LEVEL": "Level:",
+    "FORM_DESCRIPTION": "By filling out the form present, you will not directly purchase the course, but you will send a contact request. Our team will contact you as soon as possible to provide you with all the necessary information, answer your questions, and guide you through the enrollment process. We are at your disposal for any clarification! 😊",
+    "NEXT_CLASSES_TITLE": "Next starting classes",
+    "NO_DATES_MESSAGE": "Calendar scheduling in progress. Write for more details."
+  },
+  "ACADEMY_ONEBLADE": {
+    "TITLE": "Find your path, we are by your side.",
+    "INTRO": "Every journey begins with a choice: to discover, to learn, to challenge oneself. Our courses are designed for those who truly want to understand this world, for those driven by curiosity and the desire to acquire concrete skills.",
+    "BELIEF": "We believe that knowledge and passion are more important than any certification. Certifications can be an added value, but what really matters is real learning, practice, and understanding of methodologies.",
+    "NO_TITLES": "We do not issue titles, because the most important title is the acquired competence. We do not make promises of jobs or guarantees of placement, because we do not believe in illusions. Our goal is to truly train people who want to follow and pursue knowledge.",
+    "MISSION": "Our mission is not limited to students: we firmly believe that the selection of teachers is also a fundamental aspect. We choose only professionals who share our philosophy, who believe in the value of authentic training and in the power of knowledge as a tool for personal and professional growth.",
+    "READY": "If you are ready to build your future with determination and commitment, then we are here to guide you step by step towards your goal. 🚀",
+    "LOADING": "Loading...",
+    "TOPICS": "Guide Topics"
+  },
+  "TOP_BAR": {
+    "ABOUT_US": "About oneBlade",
+    "BODY_RENTAL": "Body rental",
+    "ONEBLADE_LAB": "oneBlade LAB",
+    "CHOOSE_COURSE": "Choose the course",
+    "GUIDES": "Guides",
+    "FAQ": "FAQ",
+    "SELECT_LANGUAGE": "Select language",
+    "ITALIAN": "Italian",
+    "ENGLISH": "English",
+    "SPANISH": "Spanish",
+    "CHRISTMAS_GAME": "Play with me!",
+    "ACCOUNT": "Account",
+    "LOGIN": "Login",
+    "REGISTER": "Register",
+    "OUTSOURCING": "Outsourcing",
+    "TALENT_WIZARD": "Choose your talent",
+    "PARTNERS": "Partners"
+  },
+  "CALL_SECTION": {
+    "TITLE": "Schedule a Call"
+  },
+  "OUTSOURCING_BANNER": {
+    "TITLE": "Body Rental",
+    "DESCRIPTION": "Why choose body rental for your projects? Find out!"
+  },
+  "OUTSOURCING_INFO": {
+    "TITLE": "The 9 Advantages of Outsourcing Developers",
+    "SUBTITLE": "Why choose body rental for your projects",
+    "INTRO_1": "In recent years, the IT sector has seen a growing interest in body rental, a model that allows companies to utilize highly qualified developers without having to handle direct hiring.",
+    "INTRO_2": "Previously, we talked about Time & Material for IT personnel; now we delve into the developer outsourcing service, a strategic option for companies of all sizes.",
+    "SECTION_TITLE_1": "What is body rental for developers?",
+    "BODY_1": "Body rental is an outsourcing service that allows companies to integrate highly specialized developers into their teams without having to hire them directly. This model is ideal for short and long-term projects, ensuring maximum flexibility and reduced operational costs.",
+    "SECTION_TITLE_2": "The 9 advantages of body rental for companies",
+    "BENEFIT_1": "Time and cost savings in personnel search – Avoid the long and costly selection process between ads and employment agencies.",
+    "BENEFIT_2": "Savings in the skills evaluation process – Developers are already selected and evaluated for the specific project.",
+    "BENEFIT_3": "Savings in training costs – The provided personnel are already trained and ready to work.",
+    "BENEFIT_4": "Immediate integration into the company team – Our developers can be immediately integrated into projects, with specific training if necessary.",
+    "BENEFIT_5": "No direct responsibility for hiring – The company does not have to worry about long-term contracts or administrative management.",
+    "BENEFIT_6": "Quality assurance and continuous support – We offer qualified personnel with internal support for mentoring and advising.",
+    "BENEFIT_7": "Professional growth of the company team – Collaborating with experienced developers helps improve the company's internal skills.",
+    "BENEFIT_8": "Work continuity guarantee – Ability to quickly scale the team and handle work peaks without interruptions.",
+    "SECTION_TITLE_3": "Our approach",
+    "BODY_2": "We offer a service structured according to company needs:",
+    "APPROACH_1": "Personalized analysis: we study the company's needs and provide suitable developers.",
+    "APPROACH_2": "Accurate selection: we choose the best talents with specific skills for each project.",
+    "APPROACH_3": "Continuous support: we provide assistance and mentoring to ensure maximum efficiency.",
+    "APPROACH_4": "Contractual flexibility: ability to scale the team according to project needs.",
+    "SECTION_TITLE_4": "Conclusion",
+    "CONCLUSION": "Body rental represents a strategic solution for IT companies, offering economic savings, flexibility, and highly qualified personnel without the complexities of direct hiring.",
+    "CONTACT": "If you want to find out how we can support your company with our developer outsourcing service, contact us today and schedule an appointment!",
+    "WHY_CHOOSE_TITLE": "Why Choose oneBlade",
+    "WHY_CHOOSE_DESCRIPTION": "Discover how to reduce search time and costs"
+  },
+  "GUIDE_BANNER_TOP": {
+    "TITLE": "Simple, practical, effective: your tech path",
+    "SUBTITLE": "Develop your tech skills with online courses focused on practice. Start from scratch and learn quickly and practically."
+  },
+  "COMPANY_ABOUT_US": {
+    "TITLE": "About Us",
+    "INTRO": "Founded with the goal of bridging the gap between the demand and supply of technological skills in the Italian market, oneBlade stands out for its ability to offer integrated services ranging from the creation of customized software to the training of highly qualified professionals. Our main office is located in Italy, and we operate throughout the national territory to meet the needs of a diverse clientele.",
+    "CEO_NAME": "Guido Salzano",
+    "CEO_TITLE": "CEO oneBlade",
+    "HR_NAME": "Serena D'Angelo",
+    "HR_TITLE": "HR Manager & Co-Founder oneBlade",
+    "MISSION_TITLE": "Mission",
+    "MISSION_BODY": "The mission of oneBlade is to promote technological innovation in Italy through the development of cutting-edge software solutions and the training of talents capable of facing the challenges of the modern market. We are committed to providing companies with the necessary tools to grow and compete in a global context, while offering professionals the development and growth opportunities they deserve.",
+    "SERVICES_TITLE": "Services Offered",
+    "SERVICE_1": "Customized Software Development: We design and develop tailor-made software applications, adapted to the specific needs of our clients, using the most modern and reliable technologies.",
+    "SERVICE_2": "Training Academy: We offer advanced programming and software development courses, aimed at both beginners and professionals wishing to update their skills. Our training programs are structured to ensure practical learning that is immediately applicable in the workplace.",
+    "SERVICE_3": "Talent Acquisition: We support companies in the search and selection of highly specialized IT professionals, ensuring an efficient and targeted recruiting process.",
+    "WHY_CHOOSE_TITLE": "Why Choose oneBlade",
+    "WHY_CHOOSE_DESCRIPTION": "Discover how to reduce search time and costs",
+    "WHY_CHOOSE_1": "Experience and Competence: Our team is composed of professionals with years of experience in the technology and training sector.",
+    "WHY_CHOOSE_2": "Personalized Approach: Every project is unique; that's why we offer tailor-made solutions that respond to the specific needs of each client.",
+    "WHY_CHOOSE_3": "Continuous Innovation: We are constantly updated on the latest trends and technologies, ensuring cutting-edge solutions for our clients.",
+    "WHY_CHOOSE_4": "Talent Network: Thanks to our academy and talent acquisition services, we have a vast network of qualified professionals ready to meet market needs.",
+    "TECHNOLOGIES_TITLE": "Technologies"
+  },
+  "GUIDE_LIST": {
+    "TITLE": "Introductory Guides",
+    "DESCRIPTION": "Discover all the technical guides on web development.",
+    "BUTTON": "Learn more →"
+  },
+  "GUIDE_ACCADEMY": {
+    "TITLE": "Guides for aspiring programmers",
+    "PARAGRAPH_1": "Today, programming has become an essential skill, just like the ability to use a smartphone or computer was in recent decades. With technological evolution and increasing digitalization, acquiring skills in the IT sector is crucial to remain competitive in the market.",
+    "PARAGRAPH_2": "Companies are constantly looking for qualified professionals, but the supply of talent fails to meet the demand: in Italy alone, there are estimated to be over 200,000 open positions in the tech field.",
+    "PARAGRAPH_3": "Regardless of the area you wish to specialize in, it is crucial to build a solid knowledge base. Our guides are designed for those who want to approach the world of web development, providing practical and concrete tools to start programming and discover the opportunities offered by this profession.",
+    "LOADING": "Loading...",
+    "TOPICS": "Guide Topics"
+  },
+  "FAQ": {
+    "TITLE": "Frequently Asked Questions (FAQ)",
+    "QUESTION_1": "Are the courses available online?",
+    "ANSWER_1": "Yes, all our courses are delivered <strong>online</strong>, allowing participants to easily access them from anywhere. After registration, you will receive all the necessary information to access the lessons and educational materials.",
+    "QUESTION_2": "How will I receive information about the course dates and organization?",
+    "ANSWER_2": "After booking, you will receive all communications related to the course via email, including the <strong>dates of the lessons, times, and access methods</strong>. Our team will always be available to support you at every stage.",
+    "QUESTION_3": "What happens if I can't attend on the agreed date?",
+    "ANSWER_3": "Don't worry! If for any reason you cannot attend on the agreed date, <strong>you will be automatically moved to the next session</strong>. OneBlade guarantees flexibility in participation to ensure that all students can complete their course without problems.",
+    "QUESTION_4": "Who can participate in the courses?",
+    "ANSWER_4": "<strong>Everyone can participate in our courses!</strong> Whether you are a curious beginner, a student looking for practical skills, or a professional wanting to update your knowledge, you will find the right course for your needs. <strong>Training is an investment in the future</strong>, and our courses are designed to provide you with concrete skills that can be immediately applied in the workplace.",
+    "QUESTION_5": "What do you learn during your courses?",
+    "ANSWER_5": "In our courses, <strong>you don't just study theory</strong>, but you develop <strong>practical skills</strong> that will allow you to face real scenarios. Imagine participating in a <strong>Cyber Security</strong> course: in addition to learning about cyber threats, you will learn to <strong>defend systems and networks with concrete strategies</strong>. If you are interested in <strong>Generative AI</strong>, you will explore the most advanced technologies and discover how to integrate them into business. <strong>Each course is designed to provide you with a set of skills that you can immediately apply in the professional world!</strong>",
+    "QUESTION_6": "Do you issue a certificate at the end of the course?",
+    "ANSWER_6": "<strong>Yes!</strong> At the end of the course, you will receive a <strong>certificate of participation issued by OneBlade</strong>, provided that you have attended at least <strong>70% of the lessons</strong>. This certificate represents an added value for your resume and demonstrates your preparation in the field.",
+    "QUESTION_7": "Can I follow the course while working or studying?",
+    "ANSWER_7": "<strong>Yes!</strong> All our courses are organized in the evening, <strong>after 6:00 PM</strong>, to allow those who work or study to follow them without difficulty. We know how important it is to balance training with daily commitments, and that is why we offer flexibility and support to help you achieve your professional goals."
+  },
+  "LOGIN": {
+    "TITLE": "Login",
+    "EMAIL": "Email",
+    "PASSWORD": "Password",
+    "BUTTON": "Login",
+    "ERROR": "Login failed"
+  },
+  "REGISTER": {
+    "TITLE": "Register",
+    "NOME": "First Name",
+    "COGNOME": "Last Name",
+    "EMAIL": "Email",
+    "CELLULARE": "Phone",
+    "PASSWORD": "Password",
+    "CONFIRM_PASSWORD": "Confirm Password",
+    "BUTTON": "Register",
+    "SUCCESS": "Registration successful",
+    "ERROR": "Registration failed"
+  },
+  "TALENT_LIST": {
+    "TITLE": "Talent List",
+    "MIN_CONTRACT": "Min Contract",
+    "DESCRIPTION": "Description",
+    "SENIORITY": "Seniority",
+    "DAILY_RATE": "Daily Rate",
+    "PRICE_PER_DAY": "Daily Rate",
+    "WORK_TYPE": "Work Type"
+  },
+  "STEP": {
+    "CATEGORY": "Category",
+    "TALENT": "Talent",
+    "CONTACT": "Contact",
+    "THANK_YOU": "Thank You",
+    "EXPLANATION": "Follow the steps to complete the process. You can go back and modify your choices at any time.",
+    "EXPLANATION_STEP_1": "Choose the category that best suits your needs. Each talent is classified based on their area of expertise, such as <strong>software development</strong>, <strong>design</strong>, <strong>digital marketing</strong>, <strong>IT consulting</strong>, and many more. This selection will help you quickly find professionals specialized in your area of interest.",
+    "EXPLANATION_STEP_2": "Browse the list of available talents and choose the one that best meets your needs. Each talent has a brief description of their <strong>main skills</strong>, <strong>experience level</strong>, and <strong>type of services offered</strong>. Select the professional you think is most suitable for your project.",
+    "EXPLANATION_STEP_3": "After selecting the right talent, enter your details and request information in the contact form. Specify your needs, the type of <strong>collaboration desired</strong>, and any other useful information to receive a quick and personalized response.",
+    "EXPLANATION_STEP_4": "Thank you for completing the process. We will contact you shortly for further details."
+  },
+  "WHY_ONEBLADE": {
+    "TITLE": "Why choose oneBlade",
+    "SLOGAN": "Cost is relative, value is absolute.",
+    "INTRO": "oneBlade is the ideal solution for those looking for a reliable and professional partner for web and mobile project development. With oneBlade, you will have access to a team of highly qualified senior developers specialized in various technologies, ready to support you at every stage of the project. Discover the benefits of collaborating with oneBlade and why choosing quality always pays off.",
+    "NOTE": "Note: The table below is an example and the amounts should be taken as a reference.",
+    "TABLE": {
+      "HEADER": {
+        "ASPECT": "Aspect",
+        "FREELANCE": "Low-Cost Freelance (€150/day)",
+        "ONEBLADE": "Senior oneBlade (€380/day)",
+        "ADVANTAGE": "oneBlade Advantage"
+      },
+      "ROWS": {
+        "DAILY_RATE": {
+          "ASPECT": "Daily rate",
+          "FREELANCE": "€150",
+          "ONEBLADE": "€380",
+          "ADVANTAGE": "-"
+        },
+        "TIME_COMPLEX_PROJECT": {
+          "ASPECT": "Average time to complete a complex project",
+          "FREELANCE": "120 days",
+          "ONEBLADE": "80 days",
+          "ADVANTAGE": "40 days less"
+        },
+        "CODE_QUALITY": {
+          "ASPECT": "Code quality",
+          "FREELANCE": "Low, code with many patches",
+          "ONEBLADE": "High, scalable and secure code",
+          "ADVANTAGE": "Better quality and lower risk"
+        },
+        "POST_RELEASE_COST": {
+          "ASPECT": "Cost of post-release fixes and bugs",
+          "FREELANCE": "€10,000 in fixes and debugging",
+          "ONEBLADE": "€2,000 for potential optimizations",
+          "ADVANTAGE": "€8,000 savings on fixes"
+        },
+        "RELIABILITY": {
+          "ASPECT": "Reliability and meeting deadlines",
+          "FREELANCE": "High probability of delays",
+          "ONEBLADE": "Guaranteed punctuality",
+          "ADVANTAGE": "Time savings and less stress"
+        },
+        "POST_RELEASE_SUPPORT": {
+          "ASPECT": "Post-release support",
+          "FREELANCE": "Absent or extra charge",
+          "ONEBLADE": "Included in the price",
+          "ADVANTAGE": "Continuous support without additional costs"
+        }
+      }
+    }
+  },
+  "PARTNERS": {
+    "TITLE": "Our Partners",
+    "DESCRIPTION_1": "We collaborate with <strong>leaders in their fields</strong>, carefully selected to ensure <strong>reliability</strong>, <strong>innovation</strong>, and <strong>stability</strong> for our clients. Thanks to these <em>strategic partnerships</em>, we are able to offer <strong>highly customized</strong> and <strong>superior quality solutions</strong>, addressing the most <em>complex</em> and <em>ambitious</em> market needs.",
+    "DESCRIPTION_2": "Each partner we have chosen represents a <strong>guarantee of excellence</strong>, significantly contributing to the <strong>success</strong> of our clients' projects. Together, we build a <em>strong</em>, <em>stable</em>, and growth-oriented <strong>ecosystem</strong>.",
+    "DESCRIPTION_3": "Our partner network demonstrates our <strong>constant commitment</strong> to providing <strong>cutting-edge services</strong> and <strong>solutions</strong> that create <em>real added value</em> for your business."
+  },
+  "STACKS": {
+    "TITLE": "Stacks",
+    "DESCRIPTION": "A collection of my favorite stacks and tools I use in my projects."
+  },
+  "THINK_AND_BUILD": {
+    "TITLE": "Do you have an idea for software, an app, or a service?",
+    "SUBTITLE": "Book a 1-hour consultation with our team of experts to find out if your idea is feasible.",
+    "VIDEO_ALT": "Think & Build",
+    "OFFER_TITLE": "What we offer",
+    "OFFER_BODY": "During the consultation, <strong>we will analyze your idea together</strong>, assess its <strong>technical feasibility</strong>, and provide you with concrete guidance on how to turn it into reality. Whether it's software, an app, or a digital service, we are here to help.",
+    "HOW_IT_WORKS_TITLE": "How it works",
+    "HOW_IT_WORKS_LIST": [
+      "<strong>Share your idea</strong> or project with us.",
+      "<strong>Join a 1-hour call</strong> with our experts.",
+      "<strong>Receive clear feedback</strong> and professional advice on feasibility and next steps."
+    ],
+    "BOOK_NOW_TITLE": "Book now",
+    "BOOK_NOW_BODY": "It doesn't matter if you're just starting or already have a project underway. Our consultation is designed to give you clarity and support. <strong>Contact us today</strong> to book your session.",
+    "STEP_LINE_TITLE": "Call Step Line",
+    "STEPS": [
+      {
+        "TITLE": "1. Welcome",
+        "DESCRIPTION": "We will welcome your request and ask you to describe what you want to achieve."
+      },
+      {
+        "TITLE": "2. Questions",
+        "DESCRIPTION": "We will ask questions related to your project and what outcome you want to achieve in terms of development and time."
+      },
+      {
+        "TITLE": "3. Consultation",
+        "DESCRIPTION": "We will have a chat with you and provide our personal consultation based on our experience in software development."
+      }
+    ],
+    "PAYMENT_INFO_TITLE": "Cost and payment method",
+    "PAYMENT_INFO_BODY": "The call costs <strong>€150 + VAT</strong>, which includes one hour of personalized consultation with our experts.",
+    "PAYMENT_NOTE": "After payment, a regular invoice for the service will be issued. The date and time of the call will be agreed upon with our staff, who will contact you to define all the details.",
+    "PAY_BUTTON": "Pay € 150.00 + VAT with PayPal"
+  },
+  "CUSTOM_SOFTWARE": {
+    "TITLE": "Custom software, starting from a real mockup",
+    "DESCRIPTION": "Do you have an idea but don't know how it will take shape? At <strong>oneBlade</strong>, we transform your intuitions into <strong>interactive mockups</strong> that show you in advance what your software will look like, even before writing a single line of code.",
+    "BENEFITS": {
+      "NO_SURPRISES": "No surprises: see the result before starting",
+      "SAVE_TIME_MONEY": "Save time and money with a minimal initial investment",
+      "MORE_CONTROL": "More control over the final product",
+      "CLEAR_COMMUNICATION": "Clear communication between you and our technical team"
+    },
+    "HOW_IT_WORKS": {
+      "TITLE": "How does it work?",
+      "STEPS": {
+        "STEP_1": "Contact us and together we will gather the requirements for the software you want to develop.",
+        "STEP_2": "We estimate the time needed to create the functional mockup and define the minimum cost.",
+        "STEP_3": "We assign you a dedicated designer who will create your prototype and make it functional in the defined parts.",
+        "STEP_4": "If you like the prototype, we can develop it for you."
+      }
+    },
+    "CTA": "💬 <strong>Curious to see your project take shape?</strong> <br /> <strong>Contact us today, no obligation.</strong> We will guide you step by step towards the <strong>perfect software</strong> for you."
   }
 }

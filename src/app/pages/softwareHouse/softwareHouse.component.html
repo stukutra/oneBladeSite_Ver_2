@@ -1,0 +1,56 @@
+<app-image-carousel></app-image-carousel>
+
+<div class="container mt-5">
+  <div class="row align-items-center">
+    <!-- Colonna immagine -->
+    <div class="col-12 col-md-6 text-center text-md-start mb-4 mb-md-0">
+      <img src="../../../assets/sviluppoSoftwareOneBlade.jpg" class="img-fluid faded-image" alt="Immagine Esempio">
+    </div>
+
+    <!-- Colonna testo centrata verticalmente -->
+    <div class="col-12 col-md-6 d-flex align-items-center">
+      <div>
+        <p class="subtitle_1">
+          <span [innerHTML]="'CONTENT.DEVELOPMENT.INTRO' | translate"></span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sezione Servizi -->
+<div class="custom-container text-center text-md-start mt-5">
+  <div class="container mt-5">
+    <h2 class="title text-center" [innerHTML]="'CONTENT.DEVELOPMENT.TITLE' | translate"></h2>
+    <p class="subtitle_1 text-center" [innerHTML]="'CONTENT.DEVELOPMENT.SUMMARY' | translate"></p>
+    <div class="row justify-content-center g-4">
+      <!-- Box Sviluppo Software -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+        <div class="service-box">
+          <div class="service-content">
+            <img src="../../../assets/speedSoftwareOneBlade.jpg" alt="Sviluppo Software"
+              class="service-icon service-image service-image-software">
+            <h3 [innerHTML]="'CONTENT.DEVELOPMENT.SUBTITLE_DEVELOPERS' | translate"></h3>
+            <p [innerHTML]="'CONTENT.DEVELOPMENT.BODY_DEVELOPERS' | translate"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Box Collaborazioni -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+        <div class="service-box">
+          <div class="service-content" routerLink="/outsourcinginfo">
+            <img src="../../../assets/BodyRentalServiceOneBlade.jpg" alt="Collaborazioni"
+              class="service-icon service-image service-image-collaborations">
+            <h3 [innerHTML]="'CONTENT.TALENT.TITLE' | translate"></h3>
+            <p [innerHTML]="'CONTENT.TALENT.INTRO' | translate"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-FissaUnaCall></app-FissaUnaCall>
+<app-whyoneBladeBanner></app-whyoneBladeBanner>
+<app-academyBanner></app-academyBanner>
+<app-infooneBlade></app-infooneBlade>

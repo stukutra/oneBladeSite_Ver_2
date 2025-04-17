@@ -1,0 +1,24 @@
+@use '../../style/_variabiles.scss' as *;
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: $background-light;
+
+    .video-wrapper {
+        position: relative;
+        width: 100%;
+        border: 1px solid $apple-border-color;
+        border-radius: $border-radius;
+        overflow: hidden;
+        box-shadow: $box-shadow-hover;
+
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+}

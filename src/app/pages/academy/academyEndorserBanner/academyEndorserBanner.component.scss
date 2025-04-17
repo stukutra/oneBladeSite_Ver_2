@@ -1,0 +1,140 @@
+@import '../../../style/variabiles';
+
+.docenti-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.docenti-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.docenti-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+
+    .slider-container {
+        overflow: hidden;
+        width: 85%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider {
+        display: flex;
+        gap: $gap-size;
+        justify-content: center;
+        transition: opacity 0.8s ease-in-out;
+        position: relative;
+        flex-wrap: nowrap;
+    }
+
+    .fade {
+        opacity: 0;
+    }
+
+    .docente-box {
+        flex: 1 1 calc(25% - #{$gap-size}); // Aumentata la larghezza
+        padding: $padding-box;
+        text-align: center;
+        background: $background-color_2;
+        border-radius: $border-radius;
+        box-shadow: 0px 3px 5px $box-shadow-color;
+        transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out;
+        margin: 5px;
+        max-width: 250px; // Aumentata la larghezza massima
+        position: relative;
+        min-height: 280px; // Aggiunto più spazio interno
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &:hover {
+            transform: scale(1.05);
+            z-index: 2;
+        }
+
+        .docente-img {
+            width: $image-size;
+            height: $image-size;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            margin: auto;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+                opacity: 1;
+                z-index: 10;
+            }
+        }
+
+        .docente-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 8px;
+
+            h3 {
+                font-size: 1rem; // Aumentato per migliorare leggibilità
+                color: #333;
+                margin-bottom: 5px;
+            }
+
+            p {
+                font-size: 0.9rem; // Aumentato leggermente il testo
+                color: #666;
+                text-align: center;
+            }
+        }
+
+        .linkedin-icon {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 24px;
+            color: $linkedin-color;
+            transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+
+            &:hover {
+                transform: translateX(-50%) scale(1.2);
+                color: darken($linkedin-color, 10%);
+            }
+        }
+    }
+
+    // 🌍 Responsive Design
+    @media (max-width: 1280px) {
+        .docente-box {
+            flex: 0 0 calc(35% - #{$gap-size});
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .docente-box {
+            flex: 0 0 calc(50% - #{$gap-size});
+        }
+    }
+
+    @media (max-width: 768px) {
+        .docente-box {
+            flex: 0 0 calc(90% - #{$gap-size});
+        }
+    }
+}
