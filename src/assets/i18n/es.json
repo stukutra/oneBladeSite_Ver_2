@@ -379,5 +379,25 @@
         "PAYMENT_INFO_BODY": "La llamada tiene un costo de <strong>€150 + IVA</strong>, que incluye una hora de consulta personalizada con nuestros expertos.",
         "PAYMENT_NOTE": "Después del pago, se emitirá una factura regular por el servicio. La fecha y hora de la llamada se acordarán con nuestro personal, que se pondrá en contacto contigo para definir todos los detalles.",
         "PAY_BUTTON": "Paga € 150,00 + IVA con PayPal"
+    },
+    "CUSTOM_SOFTWARE": {
+        "TITLE": "Software a medida, comenzando con un mockup real",
+        "DESCRIPTION": "¿Tienes una idea pero no sabes cómo tomará forma? En <strong>oneBlade</strong> transformamos tus intuiciones en <strong>mockups interactivos</strong> que te muestran de antemano cómo será tu software, incluso antes de escribir una línea de código.",
+        "BENEFITS": {
+            "NO_SURPRISES": "Sin sorpresas: ves el resultado antes de comenzar",
+            "SAVE_TIME_MONEY": "Ahorro de tiempo y dinero con una inversión inicial mínima",
+            "MORE_CONTROL": "Mayor control sobre el producto final",
+            "CLEAR_COMMUNICATION": "Comunicación clara entre tú y nuestro equipo técnico"
+        },
+        "HOW_IT_WORKS": {
+            "TITLE": "¿Cómo funciona?",
+            "STEPS": {
+                "STEP_1": "Contáctanos y recopilamos juntos los requisitos del software que deseas desarrollar.",
+                "STEP_2": "Hacemos una estimación del tiempo necesario para realizar el mockup funcional y definimos el costo mínimo.",
+                "STEP_3": "Te asignamos un diseñador dedicado que realizará tu prototipo y lo hará funcional en las partes definidas.",
+                "STEP_4": "Si te gusta el prototipo, podemos desarrollarlo para ti."
+            }
+        },
+        "CTA": "💬 <strong>¿Curioso por ver cómo toma forma tu proyecto?</strong> <br /> <strong>Contáctanos hoy, sin compromiso.</strong> Te guiaremos paso a paso hacia el <strong>software perfecto</strong> para ti."
     }
 }

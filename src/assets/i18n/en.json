@@ -379,5 +379,25 @@
     "PAYMENT_INFO_BODY": "The call costs <strong>€150 + VAT</strong>, which includes one hour of personalized consultation with our experts.",
     "PAYMENT_NOTE": "After payment, a regular invoice for the service will be issued. The date and time of the call will be agreed upon with our staff, who will contact you to define all the details.",
     "PAY_BUTTON": "Pay € 150.00 + VAT with PayPal"
+  },
+  "CUSTOM_SOFTWARE": {
+    "TITLE": "Custom software, starting from a real mockup",
+    "DESCRIPTION": "Do you have an idea but don't know how it will take shape? At <strong>oneBlade</strong>, we transform your intuitions into <strong>interactive mockups</strong> that show you in advance what your software will look like, even before writing a single line of code.",
+    "BENEFITS": {
+      "NO_SURPRISES": "No surprises: see the result before starting",
+      "SAVE_TIME_MONEY": "Save time and money with a minimal initial investment",
+      "MORE_CONTROL": "More control over the final product",
+      "CLEAR_COMMUNICATION": "Clear communication between you and our technical team"
+    },
+    "HOW_IT_WORKS": {
+      "TITLE": "How does it work?",
+      "STEPS": {
+        "STEP_1": "Contact us and together we will gather the requirements for the software you want to develop.",
+        "STEP_2": "We estimate the time needed to create the functional mockup and define the minimum cost.",
+        "STEP_3": "We assign you a dedicated designer who will create your prototype and make it functional in the defined parts.",
+        "STEP_4": "If you like the prototype, we can develop it for you."
+      }
+    },
+    "CTA": "💬 <strong>Curious to see your project take shape?</strong> <br /> <strong>Contact us today, no obligation.</strong> We will guide you step by step towards the <strong>perfect software</strong> for you."
   }
 }

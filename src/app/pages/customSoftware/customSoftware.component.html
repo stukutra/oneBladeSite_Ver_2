@@ -4,7 +4,6 @@
   <div class="row">
     <div class="col-12">
       <app-oneBladeVideo videoPath="../../assets/Video/MockUp_oneblade.mp4"></app-oneBladeVideo>
-      <!-- <div class="custom-software-image"></div> -->
     </div>
   </div>
 </div>
@@ -12,60 +11,45 @@
 <section class="custom-software-section container">
   <div class="row">
     <div class="col-12">
-      <h1 class="title text-center">Software su misura, partendo da un <strong>mockup reale</strong></h1>
+      <h1 class="title text-center">{{ 'CUSTOM_SOFTWARE.TITLE' | translate }}</h1>
     </div>
     <div class="col-12">
-      <p class="description">
-        Hai un’idea ma non sai come prenderà forma? <br />
-        Noi di <strong>oneBlade</strong> trasformiamo le tue intuizioni in <strong>mockup interattivi</strong> che ti
-        mostrano in anteprima come sarà il
-        tuo software, ancora prima di scrivere una riga di codice.
-      </p>
+      <p class="description" [innerHTML]="'CUSTOM_SOFTWARE.DESCRIPTION' | translate"></p>
     </div>
     <div class="col-12">
       <ul>
-        <li><strong>Nessuna sorpresa</strong> vedi il risultato prima di partire</li>
-        <li><strong>Risparmio di tempo e denaro</strong> con un investimento minimo iniziale</li>
-        <li><strong>Maggiore controllo</strong> sul prodotto finale</li>
-        <li><strong>Comunicazione chiara</strong> tra te e il nostro team tecnico</li>
+        <li>{{ 'CUSTOM_SOFTWARE.BENEFITS.NO_SURPRISES' | translate }}</li>
+        <li>{{ 'CUSTOM_SOFTWARE.BENEFITS.SAVE_TIME_MONEY' | translate }}</li>
+        <li>{{ 'CUSTOM_SOFTWARE.BENEFITS.MORE_CONTROL' | translate }}</li>
+        <li>{{ 'CUSTOM_SOFTWARE.BENEFITS.CLEAR_COMMUNICATION' | translate }}</li>
       </ul>
     </div>
     <div class="col-12">
       <hr class="divider" />
     </div>
     <div class="col-12">
-      <h2 class="text-center">Come funziona?</h2>
+      <h2 class="text-center">{{ 'CUSTOM_SOFTWARE.HOW_IT_WORKS.TITLE' | translate }}</h2>
       <div class="steps-boxes">
         <div class="step-box">
           <h3>Step 1</h3>
-          <p><strong>Contattaci</strong> e raccogliamo insieme i <strong>requisiti</strong> del software che vuoi
-            sviluppare.</p>
+          <p>{{ 'CUSTOM_SOFTWARE.HOW_IT_WORKS.STEPS.STEP_1' | translate }}</p>
         </div>
         <div class="step-box">
           <h3>Step 2</h3>
-          <p>Facciamo una <strong>stima del tempo</strong> necessario per realizzare il <strong>mockup
-              funzionante</strong> e definiamo
-            il <strong>costo minimo</strong>.</p>
+          <p>{{ 'CUSTOM_SOFTWARE.HOW_IT_WORKS.STEPS.STEP_2' | translate }}</p>
         </div>
         <div class="step-box">
           <h3>Step 3</h3>
-          <p>Ti affianchiamo un <strong>designer dedicato</strong> che realizzerà il tuo <strong>prototipo</strong> e lo
-            renderà
-            funzionante nelle parti definite.</p>
+          <p>{{ 'CUSTOM_SOFTWARE.HOW_IT_WORKS.STEPS.STEP_3' | translate }}</p>
         </div>
         <div class="step-box">
           <h3>Step 4</h3>
-          <p>Se il prototipo ti piace, possiamo <strong>realizzarlo noi per te</strong>.</p>
+          <p>{{ 'CUSTOM_SOFTWARE.HOW_IT_WORKS.STEPS.STEP_4' | translate }}</p>
         </div>
       </div>
     </div>
     <div class="col-12 mt-5">
-      <p class="cta text-center">
-        💬 <strong>Curioso di vedere il tuo progetto prendere forma?</strong> <br />
-        <strong>Contattaci oggi, senza impegno.</strong> Ti guideremo passo dopo passo verso il <strong>software
-          perfetto</strong> per
-        te.
-      </p>
+      <p class="cta text-center" [innerHTML]="'CUSTOM_SOFTWARE.CTA' | translate"></p>
     </div>
   </div>
 </section>
