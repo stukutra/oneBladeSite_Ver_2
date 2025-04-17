@@ -1,6 +1,6 @@
 <app-image-carousel></app-image-carousel>
 
-<div class="container mt-4">
+<div class="container mt-5">
   <div class="row">
     <div class="col-12">
       <app-oneBladeVideo videoPath="../../assets/Video/MockUp_oneblade.mp4"></app-oneBladeVideo>
@@ -10,26 +10,38 @@
 
 <section class="custom-software-section container">
   <div class="row">
-    <div class="col-12">
-      <h1 class="title text-center">{{ 'CUSTOM_SOFTWARE.TITLE' | translate }}</h1>
+
+    <div class="col-4">
+      <img src="../../../assets/CustomSoftware/CustomSoftware_oneBlade.jpg" alt="OneBlade Mockup" class="img-fluid" />
     </div>
-    <div class="col-12">
-      <p class="description" [innerHTML]="'CUSTOM_SOFTWARE.DESCRIPTION' | translate"></p>
+
+
+    <div class="col-8">
+      <div class="col-12">
+        <h1 class="title text-center">{{ 'CUSTOM_SOFTWARE.TITLE' | translate }}</h1>
+      </div>
+      <div class="col-12">
+        <p class="description" [innerHTML]="'CUSTOM_SOFTWARE.DESCRIPTION' | translate"></p>
+      </div>
+      <div class="col-12">
+        <ul>
+          <li>{{ 'CUSTOM_SOFTWARE.BENEFITS.NO_SURPRISES' | translate }}</li>
+          <li>{{ 'CUSTOM_SOFTWARE.BENEFITS.SAVE_TIME_MONEY' | translate }}</li>
+          <li>{{ 'CUSTOM_SOFTWARE.BENEFITS.MORE_CONTROL' | translate }}</li>
+          <li>{{ 'CUSTOM_SOFTWARE.BENEFITS.CLEAR_COMMUNICATION' | translate }}</li>
+        </ul>
+      </div>
     </div>
-    <div class="col-12">
-      <ul>
-        <li>{{ 'CUSTOM_SOFTWARE.BENEFITS.NO_SURPRISES' | translate }}</li>
-        <li>{{ 'CUSTOM_SOFTWARE.BENEFITS.SAVE_TIME_MONEY' | translate }}</li>
-        <li>{{ 'CUSTOM_SOFTWARE.BENEFITS.MORE_CONTROL' | translate }}</li>
-        <li>{{ 'CUSTOM_SOFTWARE.BENEFITS.CLEAR_COMMUNICATION' | translate }}</li>
-      </ul>
-    </div>
+
+
     <div class="col-12">
       <hr class="divider" />
     </div>
+
+    
     <div class="col-12">
       <h2 class="text-center">{{ 'CUSTOM_SOFTWARE.HOW_IT_WORKS.TITLE' | translate }}</h2>
-      <div class="steps-boxes">
+      <div class="steps-boxes mt-5">
         <div class="step-box">
           <h3>Step 1</h3>
           <p>{{ 'CUSTOM_SOFTWARE.HOW_IT_WORKS.STEPS.STEP_1' | translate }}</p>

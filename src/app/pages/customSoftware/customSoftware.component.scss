@@ -239,13 +239,18 @@
 
         .step-box {
             flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; // Allinea il contenuto verso l'alto
+            align-items: flex-start;
             padding: vars.$padding-box;
             background-color: vars.$background-light;
             border: 1px solid vars.$apple-border-color;
             border-radius: vars.$border-radius;
             box-shadow: vars.$box-shadow-hover;
-            text-align: center;
+            text-align: left;
             transition: transform vars.$transition-speed, box-shadow vars.$transition-speed;
+            height: 200px;
 
             &:hover {
                 transform: translateY(-5px);
@@ -262,6 +267,7 @@
                 font-size: vars.$font-size-text;
                 color: vars.$text-dark;
                 line-height: 1.6;
+                margin-top: 0; // Rimuovi margine superiore per partire dall'alto
             }
         }
     }
