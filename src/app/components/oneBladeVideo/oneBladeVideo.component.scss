@@ -1,0 +1,29 @@
+@use '../../style/_variabiles.scss' as *;
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: $background-light;
+    border-radius: 15px; // Arrotonda i bordi del contenitore
+    overflow: hidden; // Assicura che il contenuto rispetti i bordi arrotondati
+    position: relative;
+
+    .video-wrapper {
+        position: relative;
+        width: 100%;
+        border: 1px solid $apple-border-color;
+        border-radius: 15px; // Arrotonda i bordi del riquadro
+        overflow: hidden; // Assicura che il contenuto rispetti i bordi arrotondati
+        box-shadow: $box-shadow-hover;
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; // Adatta il video al contenitore
+            display: block;
+            border-radius: 15px; // Arrotonda i bordi del video
+        }
+    }
+}

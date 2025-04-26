@@ -151,7 +151,8 @@
     "REGISTER": "Registrati",
     "OUTSOURCING": "Talent",
     "BODY_RENTAL": "Body Rental",
-    "TALENT_WIZARD": "Scegli il tuo talento"
+    "TALENT_WIZARD": "Scegli il tuo talento",
+    "PARTNERS": "Partners"
   },
   "CALL_SECTION": {
     "TITLE": "Fissa una Call"
@@ -331,5 +332,69 @@
         }
       }
     }
+  },
+  "PARTNERS": {
+    "TITLE": "I nostri partner",
+    "DESCRIPTION_1": "Collaboriamo con partner <strong>leader nei loro settori</strong>, selezionati con cura per garantire <strong>affidabilità</strong>, <strong>innovazione</strong> e <strong>solidità</strong> ai nostri clienti. Grazie a queste <em>partnership strategiche</em>, siamo in grado di offrire <strong>soluzioni altamente personalizzate</strong> e di <strong>qualità superiore</strong>, rispondendo alle esigenze più <em>complesse</em> e <em>ambiziose</em> del mercato.",
+    "DESCRIPTION_2": "Ogni partner che abbiamo scelto rappresenta una <strong>garanzia di eccellenza</strong>, contribuendo significativamente al <strong>successo</strong> dei progetti dei nostri clienti. Insieme, costruiamo un <em>ecosistema forte</em>, <em>stabile</em> e orientato alla <strong>crescita continua</strong>.",
+    "DESCRIPTION_3": "La nostra rete di partner testimonia l'<strong>impegno costante</strong> nel fornire <strong>servizi all'avanguardia</strong> e <strong>soluzioni</strong> che creano <em>reale valore aggiunto</em> per il tuo business."
+  },
+  "STACKS": {
+    "TITLE": "Stack",
+    "DESCRIPTION": "Una raccolta dei miei stack e strumenti preferiti che utilizzo nei miei progetti."
+  },
+  "THINK_AND_BUILD": {
+    "TITLE": "Hai un'idea per un software, un'app o un servizio?",
+    "SUBTITLE": "Prenota una consulenza di 1 ora con il nostro team di esperti per scoprire se la tua idea è realizzabile.",
+    "VIDEO_ALT": "Think & Build",
+    "OFFER_TITLE": "Cosa offriamo",
+    "OFFER_BODY": "Durante la consulenza, <strong>analizzeremo insieme la tua idea</strong>, valuteremo la <strong>fattibilità tecnica</strong> e ti forniremo indicazioni concrete su come trasformarla in realtà. Che si tratti di un software, un'app o un servizio digitale, siamo qui per aiutarti.",
+    "HOW_IT_WORKS_TITLE": "Come funziona",
+    "HOW_IT_WORKS_LIST": [
+      "<strong>Condividi con noi</strong> la tua idea o il tuo progetto.",
+      "<strong>Partecipa a una call di 1 ora</strong> con i nostri esperti.",
+      "<strong>Ricevi un feedback chiaro</strong> e professionale sulla fattibilità e i prossimi passi."
+    ],
+    "BOOK_NOW_TITLE": "Prenota ora",
+    "BOOK_NOW_BODY": "Non importa se sei all'inizio o hai già un progetto in corso. La nostra consulenza è pensata per darti chiarezza e supporto. <strong>Contattaci oggi stesso</strong> per prenotare la tua sessione.",
+    "STEP_LINE_TITLE": "Step Line della Call",
+    "STEPS": [
+      {
+        "TITLE": "1. Accoglienza",
+        "DESCRIPTION": "Accoglieremo la tua richiesta e ci faremo descrivere da te cosa vuoi realizzare."
+      },
+      {
+        "TITLE": "2. Domande",
+        "DESCRIPTION": "Faremo delle domande relative al tuo progetto e qual è il risultato che vuoi ottenere in ordine di sviluppo e tempo."
+      },
+      {
+        "TITLE": "3. Consulenza",
+        "DESCRIPTION": "Faremo insieme una chiacchierata e ti daremo la nostra consulenza personale dettata dalla nostra esperienza nello sviluppo software."
+      }
+    ],
+    "PAYMENT_INFO_TITLE": "Costo e modalità di pagamento",
+    "PAYMENT_INFO_BODY": "La call ha un costo di <strong>€150 + IVA</strong>, che include un'ora di consulenza personalizzata con i nostri esperti.",
+    "PAYMENT_NOTE": "Successivamente al pagamento, verrà emessa regolare fattura per il servizio. La data e l'orario della call saranno concordati con il nostro staff, che provvederà a contattarti per definire tutti i dettagli.",
+    "PAY_BUTTON": "Paga € 150,00 + IVA con PayPal"
+  },
+  "CUSTOM_SOFTWARE": {
+    "TITLE": "Software su misura, partendo da un mockup reale",
+    "DESCRIPTION": "Hai un’idea ma non sai come prenderà forma? Noi di <strong>oneBlade</strong> trasformiamo le tue intuizioni in <strong>mockup interattivi</strong> che ti mostrano in anteprima come sarà il tuo software, ancora prima di scrivere una riga di codice.",
+    "BENEFITS": {
+      "NO_SURPRISES": "Nessuna sorpresa: vedi il risultato prima di partire",
+      "SAVE_TIME_MONEY": "Risparmio di tempo e denaro con un investimento minimo iniziale",
+      "MORE_CONTROL": "Maggiore controllo sul prodotto finale",
+      "CLEAR_COMMUNICATION": "Comunicazione chiara tra te e il nostro team tecnico"
+    },
+    "HOW_IT_WORKS": {
+      "TITLE": "Come funziona?",
+      "STEPS": {
+        "STEP_1": "Contattaci e raccogliamo insieme i requisiti del software che vuoi sviluppare.",
+        "STEP_2": "Facciamo una stima del tempo necessario per realizzare il mockup funzionante e definiamo il costo minimo.",
+        "STEP_3": "Ti affianchiamo un designer dedicato che realizzerà il tuo prototipo e lo renderà funzionante nelle parti definite.",
+        "STEP_4": "Se il prototipo ti piace, possiamo realizzarlo noi per te."
+      }
+    },
+    "CTA": "💬 <strong>Curioso di vedere il tuo progetto prendere forma?</strong> <br /> <strong>Contattaci oggi, senza impegno.</strong> Ti guideremo passo dopo passo verso il <strong>software perfetto</strong> per te."
   }
 }

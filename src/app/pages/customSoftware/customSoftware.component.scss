@@ -1,0 +1,466 @@
+@use '../../style/_variabiles.scss' as vars;
+@use 'sass:math';
+
+.custom-software-section {
+    background-color: vars.$background-light;
+    color: vars.$text-dark;
+    padding: vars.$padding-box;
+
+    h2 {
+        color: vars.$topbar-color; // Applica lo stesso colore dei titoli
+    }
+
+    .title {
+        font-size: vars.$font-size-title;
+        color: vars.$topbar-color;
+        margin-bottom: vars.$gap;
+    }
+
+    .description {
+        font-size: vars.$font-size-md; // Usa una dimensione del font media
+        line-height: 1.8; // Aumenta la spaziatura tra le righe
+        color: vars.$text-dark; // Assicura un buon contrasto
+        margin-bottom: math.div(vars.$gap, 1.5); // Aggiungi più spazio sotto il paragrafo
+    }
+
+    .advantages {
+        list-style: none;
+        padding: 0;
+        margin-bottom: math.div(vars.$gap, 0.5);
+        display: flex;
+        flex-direction: column;
+        gap: math.div(vars.$gap, 1.5);
+
+        li {
+            font-size: vars.$font-size-md; // Riduci ulteriormente la dimensione del font
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            padding: 0;
+            background-color: transparent;
+            border: none;
+            box-shadow: none;
+            transition: none;
+
+            &:hover {
+                transform: none;
+                box-shadow: none;
+            }
+
+            &::before {
+                content: '✔️';
+                font-size: vars.$font-size-xl;
+                color: vars.$topbar-color; // Cambia il colore per abbinarlo alla classe .title
+            }
+        }
+    }
+
+    .divider {
+        border: none;
+        border-top: 1px solid vars.$apple-border-color;
+        margin: math.div(vars.$gap, 0.5) 0;
+    }
+
+    .steps {
+        list-style: decimal;
+        padding-left: 2rem;
+        margin-bottom: vars.$gap;
+        font-size: vars.$font-size-lg;
+        line-height: 1.8;
+
+        li {
+            margin-bottom: math.div(vars.$gap-size, 2);
+            font-size: vars.$font-size-text;
+
+            strong {
+                color: vars.$topbar-color;
+                font-size: vars.$font-size-xl;
+            }
+        }
+
+        background-color: vars.$apple-background-color;
+        padding: vars.$padding-box;
+        border-radius: vars.$border-radius;
+        box-shadow: vars.$box-shadow-hover;
+
+        .step {
+            margin-bottom: math.div(vars.$gap, 2);
+            padding: vars.$padding-base;
+            border: 1px solid vars.$apple-border-color;
+            border-radius: vars.$border-radius;
+            background-color: vars.$background-light;
+
+            h3 {
+                font-size: vars.$font-size-xl;
+                color: vars.$text-color-oneblade;
+                margin-bottom: vars.$gap;
+            }
+
+            p {
+                font-size: vars.$font-size-md;
+                color: vars.$text-dark;
+                line-height: 1.6;
+            }
+        }
+
+        .step:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .steps-horizontal {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        margin-top: math.div(vars.$gap, 2);
+        padding: 0 math.div(vars.$gap, 0.5);
+
+        &::before {
+            content: none;
+        }
+
+        .step {
+            position: relative;
+            text-align: center;
+            z-index: 2;
+
+            .step-point {
+                width: 50px;
+                height: 50px;
+                margin: 0 auto;
+                background-color: vars.$topbar-color;
+                color: vars.$text-light;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: vars.$font-size-md;
+                font-weight: bold;
+                position: relative;
+                z-index: 2;
+            }
+
+            h3 {
+                font-size: vars.$font-size-lg;
+                color: vars.$text-dark;
+                margin-top: math.div(vars.$gap, 2);
+            }
+
+            p {
+                font-size: vars.$font-size-text;
+                color: vars.$text-dark;
+                line-height: 1.6;
+                margin-top: math.div(vars.$gap, 4);
+            }
+        }
+    }
+
+    .step-container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: math.div(vars.$gap, 2);
+        padding: 0 math.div(vars.$gap, 0.5);
+
+        .progress-bar {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            right: 20px;
+            height: 4px;
+            background-color: vars.$input-border-color;
+            z-index: 0;
+
+            .step-tick {
+                position: absolute;
+                top: 50%;
+                width: 2px;
+                height: 10px;
+                background-color: vars.$primary-color;
+                transform: translateY(-50%);
+
+                &:nth-child(1) {
+                    left: calc(20px + ((100% - 40px) / 3) * 0);
+                }
+
+                &:nth-child(2) {
+                    left: calc(20px + ((100% - 40px) / 3) * 1);
+                }
+
+                &:nth-child(3) {
+                    left: calc(20px + ((100% - 40px) / 3) * 2);
+                }
+
+                &:nth-child(4) {
+                    left: calc(20px + ((100% - 40px) / 3) * 3);
+                }
+            }
+        }
+
+        .step {
+            position: relative;
+            z-index: 1;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: vars.$input-border-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: vars.$font-color-white;
+
+            .circle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: vars.$input-border-color;
+                color: vars.$font-color-white;
+                font-weight: bold;
+                line-height: 40px;
+            }
+
+            &.completed .circle {
+                background-color: vars.$primary-color;
+            }
+        }
+    }
+
+    .steps-boxes {
+        display: flex;
+        justify-content: space-between;
+        gap: math.div(vars.$gap, 0.5);
+        margin-top: math.div(vars.$gap, 2);
+
+        .step-box {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; // Allinea il contenuto verso l'alto
+            align-items: flex-start;
+            padding: vars.$padding-box;
+            background-color: vars.$background-light;
+            border: 1px solid vars.$apple-border-color;
+            border-radius: vars.$border-radius;
+            box-shadow: vars.$box-shadow-hover;
+            text-align: left;
+            transition: transform vars.$transition-speed, box-shadow vars.$transition-speed;
+            height: 200px;
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+
+            h3 {
+                font-size: vars.$font-size-lg;
+                color: vars.$text-color-oneblade;
+                margin-bottom: math.div(vars.$gap, 2);
+            }
+
+            p {
+                font-size: vars.$font-size-text;
+                color: vars.$text-dark;
+                line-height: 1.6;
+                margin-top: 0; // Rimuovi margine superiore per partire dall'alto
+            }
+        }
+    }
+
+    img {
+        border-radius: 15px;
+    }
+
+    // Media queries for responsiveness
+    @media (max-width: 1200px) {
+        .steps-boxes {
+            gap: math.div(vars.$gap, 2);
+        }
+
+        .step-box {
+            padding: math.div(vars.$padding-box, 1.5);
+        }
+    }
+
+    @media (max-width: 992px) {
+        .steps-boxes {
+            flex-wrap: wrap;
+            gap: vars.$gap;
+        }
+
+        .step-box {
+            flex: 0 0 calc(50% - vars.$gap);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .steps-boxes {
+            flex-direction: column;
+            gap: vars.$gap;
+        }
+
+        .step-box {
+            flex: 1;
+        }
+
+        .title {
+            font-size: vars.$font-size-lg;
+        }
+
+        .description {
+            font-size: vars.$font-size-md;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .custom-software-image {
+            height: 300px; // Riduci l'altezza dell'immagine per schermi piccoli
+        }
+
+        .title {
+            font-size: vars.$font-size-md; // Usa il prefisso del modulo
+        }
+
+        .description {
+            font-size: vars.$font-size-sm; // Usa il prefisso del modulo
+        }
+
+        .advantages li {
+            font-size: vars.$font-size-sm; // Usa il prefisso del modulo
+        }
+
+        .steps-boxes {
+            gap: math.div(vars.$gap, 2);
+        }
+
+        .step-box {
+            padding: math.div(vars.$padding-box, 2);
+        }
+    }
+
+    .cta {
+        font-size: vars.$font-size-subtitle;
+        line-height: 1.6;
+
+        strong {
+            color: vars.$topbar-color;
+        }
+    }
+}
+
+.custom-software-image {
+    background-image: url('../../../assets/CustomSoftware/CustomSoftware_oneBlade.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; // Rende l'immagine responsiva
+    width: 100%;
+    height: 700px;
+    border-radius: 15px;
+
+    // Media query for 1366x1024 resolution
+    @media (max-width: 1366px) and (max-height: 1024px) {
+        height: 600px; // Adjust height for 1366x1024 resolution
+    }
+
+    // Media query for 1368x912 resolution
+    @media (max-width: 1368px) and (max-height: 912px) {
+        height: 605px; // Adjust height for 1368x912 resolution
+    }
+
+    // Media query for 1180x820 resolution
+    @media (max-width: 1180px) and (max-height: 820px) {
+        height: 550px; // Adjust height for 1180x820 resolution
+    }
+
+    // Media query for 1024x1366 resolution
+    @media (max-width: 1024px) and (max-height: 1366px) {
+        height: 537px; // Adjust height for 1024x1366 resolution
+    }
+
+    // Media queries for mobile resolutions
+    @media (max-width: 992px) and (orientation: portrait) {
+        height: 400px; // Adjust height for medium screens in portrait mode
+    }
+
+    @media (max-width: 992px) and (orientation: landscape) {
+        height: 300px; // Adjust height for medium screens in landscape mode
+    }
+
+    @media (max-width: 768px) and (orientation: portrait) {
+        height: 300px; // Further reduce height for small screens in portrait mode
+    }
+
+    @media (max-width: 768px) and (orientation: landscape) {
+        height: 250px; // Further reduce height for small screens in landscape mode
+    }
+
+    // Media query for 768x1024 resolution
+    @media (max-width: 768px) and (max-height: 1024px) {
+        height: 350px; // Adjust height for 768x1024 resolution
+    }
+
+    @media (max-width: 576px) and (orientation: portrait) {
+        height: 200px; // Minimum height for very small screens in portrait mode
+    }
+
+    @media (max-width: 576px) and (orientation: landscape) {
+        height: 150px; // Minimum height for very small screens in landscape mode
+    }
+
+    // Media query for 540x720 resolution
+    @media (max-width: 540px) and (max-height: 720px) {
+        height: 289px; // Adjust height for 540x720 resolution
+    }
+
+    // Media query for 720x540 resolution
+    @media (max-width: 720px) and (max-height: 540px) {
+        height: 277px; // Adjust height for 720x540 resolution
+    }
+
+    // Media query for 375x667 resolution
+    @media (max-width: 375px) and (max-height: 667px) {
+        height: 190px !important; // Adjust height for 375x667 resolution
+    }
+
+    // Media query for 667x375 resolution
+    @media (max-width: 667px) and (max-height: 375px) {
+        margin-top: 50px;
+        height: 295px !important; // Adjust height for 667x375 resolution
+    }
+
+    // Media query for 896x414 resolution
+    @media (max-width: 896px) and (max-height: 414px) {
+        height: 370px; // Adjust height for 896x414 resolution
+    }
+
+    // Media query for 430x932 resolution
+    @media (max-width: 430px) and (max-height: 932px) {
+        height: 220px; // Adjust height for 430x932 resolution
+    }
+
+    // Media query for 932x430 resolution
+    @media (max-width: 932px) and (max-height: 430px) {
+        height: 390px; // Adjust height for 932x430 resolution
+    }
+
+    // Media query for 360x740 resolution
+    @media (max-width: 360px) and (max-height: 740px) {
+        height: 180px; // Adjust height for 360x740 resolution
+    }
+
+    // Media query for 740x360 resolution
+    @media (max-width: 740px) and (max-height: 360px) {
+        margin-top: 50px;
+        height: 294px; // Adjust height for 740x360 resolution
+    }
+
+    // Media query for 344x882 resolution
+    @media (max-width: 344px) and (max-height: 882px) {
+        height: 170px; // Adjust height for 344x882 resolution
+    }
+}

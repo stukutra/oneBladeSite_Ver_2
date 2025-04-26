@@ -88,6 +88,14 @@ $gradient-color-5: #ffffff;
   cursor: pointer;
   transition: font-weight 0.3s ease;
   margin-right: $nav-item-margin-left;
+
+  &.partners-link {
+    color: $nav-link-color;
+
+    &:hover {
+      color: $nav-link-hover-color;
+    }
+  }
 }
 
 .navbar-nav .nav-link i {
@@ -200,6 +208,66 @@ $gradient-color-5: #ffffff;
     height: 80px; // Adjust the logo height
     top: 30px; // Move the logo slightly lower
     transform: translateY(0); // Reset the transform property
+  }
+
+  .navbar-nav .dropdown-menu {
+    position: relative; // Ensure dropdown stays within the parent container
+    left: 0; // Align dropdown to the left
+    right: 0; // Ensure it doesn't overflow to the right
+    width: 100%; // Make the dropdown take the full width of the container
+    box-shadow: none; // Remove the box shadow
+    border: none; // Remove the border
+    padding: 0; // Remove extra padding
+    background-color: transparent; // Make background transparent
+  }
+
+  .navbar-nav .dropdown-item {
+    white-space: normal; // Allow text wrapping to prevent overflow
+    word-wrap: break-word; // Break long words if necessary
+    padding: 10px 15px; // Adjust padding for better spacing
+    color: $navbar-collapse-link-color; // Match link color
+  }
+
+  .navbar-nav .dropdown-item:hover {
+    color: $navbar-collapse-link-hover-color; // Match hover color
+    background-color: transparent; // Remove hover background
+  }
+
+  .navbar-nav .dropdown-menu {
+    position: relative; // Ensure dropdown stays within the parent container
+    left: 0; // Align dropdown to the left
+    right: 0; // Ensure it doesn't overflow to the right
+    width: auto; // Adjust width to fit content
+    box-shadow: none; // Remove the box shadow
+    border: none; // Remove the border
+    padding: 0; // Remove extra padding
+    background-color: transparent; // Make background transparent
+  }
+
+  .navbar-nav .dropdown-item {
+    padding: 10px 15px; // Adjust padding for better spacing
+    color: $navbar-collapse-link-color; // Match link color
+  }
+
+  .navbar-nav .dropdown-item:hover {
+    color: $navbar-collapse-link-hover-color; // Match hover color
+    background-color: transparent; // Remove hover background
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 14px; // Reduce font size for links
+  }
+
+  .navbar-nav .dropdown-item {
+    font-size: 14px; // Reduce font size for dropdown items
+  }
+
+  .language-select {
+    font-size: 14px; // Reduce font size for language selector
+  }
+
+  .christmas-link {
+    font-size: 13px; // Slightly smaller font for Christmas link
   }
 }
 

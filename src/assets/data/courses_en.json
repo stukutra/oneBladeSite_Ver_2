@@ -73,7 +73,7 @@
                     "active": true,
                     "idCourse": "CODBlade04",
                     "title": "Cyber Security (CompTIA Security+)",
-                    "duration": "20 hours",
+                    "duration": "20  hours",
                     "mode": "Online",
                     "description": {
                         "it": "Acquisisci le competenze essenziali della sicurezza informatica per proteggere reti e dati da minacce esterne, imparando strategie efficaci di difesa e prevenzione degli attacchi.",
@@ -167,7 +167,7 @@
                     "active": true,
                     "idCourse": "CODBlade09",
                     "title": "SQL",
-                    "duration": "20 hours",
+                    "duration": "20  hours",
                     "mode": "Online",
                     "description": {
                         "it": "Acquisire competenze nell’uso del linguaggio SQL per gestire, interrogare e manipolare database relazionali in modo efficiente ed efficace.",
@@ -195,7 +195,7 @@
                     "active": true,
                     "idCourse": "CODBlade10",
                     "title": "Data Warehousing",
-                    "duration": "20 hours",
+                    "duration": "20  hours",
                     "mode": "Online",
                     "description": {
                         "it": "Approfondire i concetti di Data Warehousing, dalla progettazione alla gestione, ottimizzazione e sicurezza.",

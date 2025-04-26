@@ -17,106 +17,97 @@ $footer-link-transition: 0.3s ease; // Transizione per i link
 $footer-linkedin-color: #0077b5; // Colore dell'icona LinkedIn
 
 // Stili
-.footer-wrapper {
-  position: relative;
-  width: 100%;
-  box-shadow: 0 4px 6px $footer-box-shadow-color-1;
-  height: 400px;
-  /* Altezza fissa del footer */
-  box-shadow: 0 -4px 8px $footer-box-shadow-color-2;
-  /* Ombra che va verso l'alto */
-  display: flex;
-  /* Usa Flexbox per un layout flessibile */
-  flex-direction: column;
-  /* Colonna per gli elementi del footer */
-  align-items: center;
-  /* Allinea gli elementi al centro orizzontalmente */
-  justify-content: center;
-  /* Centra verticalmente il contenuto */
-  text-align: center;
-  padding: 0;
-  /* Rimuove il padding predefinito */
+html,
+body {
+  height: 100%; // Ensure the body takes up the full height of the viewport
+  margin: 0; // Remove default margin
 }
 
-.footer-wrapper::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  /* Assicura che l'immagine copra il contenitore */
-  transform: scaleX(-1);
-  /* Mirroring orizzontale dell'immagine */
-  z-index: -1;
-  /* Porta il pseudo-elemento dietro gli altri contenuti */
-  pointer-events: none;
-  /* Rende l'elemento non interattivo */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; // Ensure the container takes up the full height of the viewport
+}
+
+.footer-wrapper {
+  background: linear-gradient(to bottom, $footer-bg-gradient-color-1, $footer-bg-gradient-color-2);
+  color: $footer-text-color;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto; // Push the footer to the bottom of the page
+  position: relative; // Ensure proper stacking context
+  z-index: 1;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: center; // Centra il contenuto orizzontalmente
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-logo-container {
+  flex: 1 1 100%; // Occupare l'intera larghezza
+  display: flex;
+  justify-content: center; // Centrare il logo orizzontalmente
+  margin-bottom: 15px;
 }
 
 .footer-logo {
   max-width: $footer-logo-max-width;
-  margin-bottom: $footer-margin-bottom;
-  filter: drop-shadow(0 0 60px rgba(255, 255, 255, 1));
-  /* Effetto glow bianco */
 }
 
-.footer-content {
-  z-index: 10;
-}
-
-.footer-content p {
-  margin: 0;
-  font-size: $footer-font-size;
-  margin-bottom: $footer-margin-bottom;
+.footer-links {
+  flex: 1 1 auto; // Adatta la larghezza dei link
+  display: flex;
+  justify-content: center; // Centrare i link orizzontalmente
+  gap: 15px;
 }
 
 .footer-link {
-  margin-top: $footer-margin-bottom;
-  transition: font-weight $footer-link-transition;
+  color: $footer-link-color;
   text-decoration: none;
-  margin: $footer-link-spacing;
   font-size: $footer-font-size;
-  display: inline-block;
   transition: color $footer-link-transition;
-}
 
-.footer-link.active {
-  font-weight: bold;
-}
-
-/* Stile specifico per il link LinkedIn */
-.footer-link i.bi-linkedin {
-  color: $footer-linkedin-color;
-}
-
-.footer-link:hover i.bi-linkedin {
-  color: darken($footer-linkedin-color, 10%);
-}
-
-@media (max-width: 768px) {
-  .footer-content p {
-    font-size: 0.9rem;
-    /* Riduce la dimensione del testo per tablet */
+  &:hover {
+    color: $footer-link-hover-color;
   }
 
-  .footer-link {
-    font-size: 0.9rem;
-    /* Riduce la dimensione dei link per tablet */
+  i.bi-whatsapp {
+    color: #ffffff; // Change WhatsApp icon color to white
+  }
+
+  &:hover i.bi-whatsapp {
+    color: rgba(255, 255, 255, 0.8); // Slightly lighter white on hover
+  }
+
+  i.bi-envelope {
+    color: #ffffff; // Change email icon color to white
+  }
+
+  &:hover i.bi-envelope {
+    color: rgba(255, 255, 255, 0.8); // Slightly lighter white on hover
   }
 }
 
-@media (max-width: 576px) {
-  .footer-content p {
-    font-size: 0.8rem;
-    /* Ancora più piccolo per smartphone */
-  }
+.footer-bottom {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: $footer-text-color;
+}
 
-  .footer-link {
-    font-size: 0.8rem;
-    /* Riduce ulteriormente la dimensione dei link per smartphone */
-  }
+.footer-version {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #ffffff; // Change color to white
 }
 
 .custom-modal {

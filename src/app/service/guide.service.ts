@@ -16,7 +16,9 @@ export class GuideService {
   getGuides(): Observable<Guide[]> {
     const lang = this.translate.currentLang || this.translate.defaultLang;
     const url = `assets/data/guides_${lang}.json`;
-    return this.http.get<{ guides: Guide[] }>(url).pipe(
+    const cacheBuster = `cb=${new Date().getTime()}`;
+    const freshUrl = `${url}?${cacheBuster}`;
+    return this.http.get<{ guides: Guide[] }>(freshUrl).pipe(
       map((response: { guides: any; }) => response.guides)
     );
   }

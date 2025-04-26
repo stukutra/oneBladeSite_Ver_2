@@ -1,0 +1,175 @@
+@use '../../style/_variabiles.scss' as variabiles;
+
+.product-highlight-box {
+    background-color: variabiles.$background-light;
+    border: 1px solid variabiles.$apple-border-color;
+    border-radius: variabiles.$border-radius;
+    padding: variabiles.$padding-box;
+    box-shadow: variabiles.$box-shadow; // Default shadow
+    transition: transform variabiles.$transition-speed, box-shadow variabiles.$transition-speed;
+    cursor: default; // Rimuovo il pointer dal contenitore principale
+    position: relative;
+    overflow: hidden; // Ensure the pseudo-element stays within the box
+
+    &:hover {
+        transform: scale(1.03); // Slightly stronger hover effect
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); // Softer shadow
+    }
+
+    &:hover::before {
+        content: '';
+        position: absolute;
+        top: -100%;
+        left: -100%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(120deg,
+                rgba(255, 255, 255, 0.2) 0%,
+                rgba(255, 255, 255, 0.8) 50%,
+                rgba(255, 255, 255, 0.2) 100%);
+        transform: rotate(25deg);
+        animation: light-sweep 1s ease-in-out forwards; // Add 'forwards' to stop the animation after it completes
+        pointer-events: none; // Ensure it doesn't interfere with clicks
+    }
+
+    @keyframes light-sweep {
+        0% {
+            top: -100%;
+            left: -100%;
+        }
+
+        100% {
+            top: 100%;
+            left: 100%;
+        }
+    }
+
+    h2 {
+        color: variabiles.$text-color-oneblade; // Match the color of other h2 elements
+        font-size: variabiles.$font-size-xl;
+        margin-bottom: variabiles.$gap-size;
+    }
+
+    p {
+        color: variabiles.$text-dark;
+        font-size: variabiles.$font-size-md;
+        margin-bottom: variabiles.$gap-size;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: variabiles.$gap-size;
+
+        li {
+            color: variabiles.$text-dark;
+            font-size: variabiles.$font-size-sm;
+            margin-bottom: variabiles.$gap-size;
+        }
+    }
+
+    .click-for-details {
+        position: absolute;
+        bottom: calc(#{variabiles.$gap-size} + 5px); // Move slightly higher
+        right: calc(#{variabiles.$gap-size} + 20px); // Move slightly to the left
+        font-size: variabiles.$font-size-sm;
+        color: variabiles.$text-color-oneblade;
+        font-weight: bold;
+        text-decoration: none; // Remove underline
+    }
+
+    .box-topbar {
+        background-color: transparent; // Make the background transparent
+        border-bottom: 1px solid variabiles.$apple-border-color; // Add bottom border
+        text-align: left; // Align the title to the left
+        position: relative;
+
+        h2 {
+            color: variabiles.$text-color-oneblade; // Use the predefined title color
+            font-size: variabiles.$font-size-xl;
+            margin: 0;
+            position: relative;
+            top: -5px; // Move the title slightly up
+            margin-bottom: variabiles.$gap-size; // Add spacing from the bottom border
+            display: flex;
+            align-items: center;
+            gap: 10px; // Space between icon and title
+
+            .icon {
+                font-size: 1.5rem; // Adjust icon size
+                color: variabiles.$text-color-oneblade; // Match title color
+            }
+        }
+    }
+
+    .box-footer {
+        position: relative; // Ensure it stays below the content
+        margin-top: variabiles.$gap-size; // Add spacing above the footer
+        width: 100%;
+        border-top: 1px solid variabiles.$apple-border-color; // Add top border
+        padding: variabiles.$gap-size;
+        display: flex; // Use flexbox for alignment
+        align-items: center; // Center content vertically
+        justify-content: space-between; // Space between logos and "Scopri di più"
+        background-color: transparent; // Transparent background
+        border-bottom-left-radius: variabiles.$border-radius;
+        border-bottom-right-radius: variabiles.$border-radius;
+
+        .footer-logos {
+            display: flex;
+            align-items: center;
+            gap: variabiles.$gap-size; // Add spacing between logos and separator
+
+            .footer-logo {
+                height: 39px; // 30% larger than the previous 30px
+                width: auto; // Maintain aspect ratio
+                border-radius: 0; // Rimuovo l'arrotondamento delle immagini
+            }
+
+            .logo-separator {
+                font-size: variabiles.$font-size-lg; // Make the "+" symbol prominent
+                color: variabiles.$text-color-oneblade; // Match the title color
+                font-weight: bold;
+            }
+        }
+
+        .highlight {
+            color: variabiles.$text-color-oneblade;
+            font-weight: bold;
+            font-size: variabiles.$font-size-sm;
+        }
+
+        .highlight-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: transparent; // Vuoto di default
+            color: variabiles.$primary-color; // Colore del testo uguale al colore primario
+            border: 1px solid variabiles.$primary-color; // Ridimensiono il bordo a 1px
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease; // Transizione per colore e sfondo
+            cursor: pointer;
+
+            &:hover {
+                background-color: variabiles.$primary-color; // Si riempie con il colore primario
+                color: #fff; // Testo bianco sull'hover
+            }
+        }
+    }
+
+    img {
+        border-radius: 15px; // Arrotondo i bordi delle immagini a 15px
+    }
+}
+
+.col-md-8 {
+    p {
+        font-size: variabiles.$font-size-base; // Imposto una dimensione intermedia
+
+        strong {
+            color: variabiles.$text-color-oneblade; // Colore uguale al titolo
+            font-weight: bold; // Mantengo il testo in grassetto
+        }
+    }
+}

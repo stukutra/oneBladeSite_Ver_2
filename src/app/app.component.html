@@ -1,10 +1,11 @@
 <div class="app-container">
   <app-loading></app-loading>
-  <div *ngIf="!(loadingService.loading$ | async)">
+  <div class="content" *ngIf="!(loadingService.loading$ | async)">
     <app-top-bar></app-top-bar>
-    <div class="content" [@fadeAnimation]="getRouteAnimationState(outlet)">
+    <div class="main-content" [@fadeAnimation]="getRouteAnimationState(outlet)">
       <router-outlet #outlet="outlet"></router-outlet>
     </div>
     <app-footer></app-footer>
+    <app-fun-button></app-fun-button>
   </div>
 </div>

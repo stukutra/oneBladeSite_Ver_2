@@ -1,0 +1,49 @@
+<div class="container mt-4">
+  <h1 class="text-center mb-4">News</h1>
+  <div class="row">
+    <div *ngFor="let item of paginatedNews" class="col-12 col-sm-6 col-md-4 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">{{ item.title }}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{ item.date | italianDate }}</h6>
+          <p class="card-text">{{ item.body }}</p>
+          <span class="read-more-link text-end d-block" (click)="openModal(item.id)">
+            <i class="bi bi-newspaper me-1"></i> Leggi di più
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center mt-3">
+    <button class="btn mx-1" [disabled]="currentPage === 1" (click)="prevPage()">
+      &laquo;
+    </button>
+    <ng-container *ngFor="let page of visiblePages">
+      <button class="btn mx-1" [class.active]="currentPage === page" (click)="goToPage(page)">
+        {{ page }}
+      </button>
+    </ng-container>
+    <button class="btn mx-1" [disabled]="currentPage === totalPages.length" (click)="nextPage()">
+      &raquo;
+    </button>
+  </div>
+</div>
+
+<!-- Bootstrap Modal -->
+<div class="modal fade" id="newsModal" tabindex="-1" aria-labelledby="newsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="newsModalLabel">{{ selectedNews?.title }}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="text-muted">{{ selectedNews?.date | italianDate }}</h6>
+        <p>{{ selectedNews?.body }}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -5,8 +5,7 @@
     </div>
   </a>
 
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMenu()">
+  <button class="navbar-toggler" type="button" (click)="toggleMenu()">
     <i class="bi bi-list"></i>
   </button>
 
@@ -18,14 +17,24 @@
         </a>
       </li>
 
+
+      <li class="nav-item d-flex align-items-center">
+        <a class="nav-link" routerLink="/ProductsoneBladeComponent" (click)="closeMenu()">
+         Prodotti
+        </a>
+      </li>
+
+  
+
+
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="accademyDropdown" role="button" data-bs-toggle="dropdown"
-          aria-expanded="false">
+        <a class="nav-link dropdown-toggle" id="accademyDropdown" role="button"
+          (click)="toggleDropdown('accademyDropdown')" [attr.aria-expanded]="isDropdownOpen['accademyDropdown']">
           {{ 'TOP_BAR.ONEBLADE_LAB' | translate }}
         </a>
-        <ul class="dropdown-menu" aria-labelledby="accademyDropdown">
+        <ul class="dropdown-menu" [class.show]="isDropdownOpen['accademyDropdown']" aria-labelledby="accademyDropdown">
           <li>
-            <a class="dropdown-item" routerLink="/accademy" (click)="closeMenu()">{{ 'TOP_BAR.CHOOSE_COURSE' | translate
+            <a class="dropdown-item" routerLink="/academy" (click)="closeMenu()">{{ 'TOP_BAR.CHOOSE_COURSE' | translate
               }}</a>
           </li>
           <li>
@@ -37,14 +46,14 @@
           </li>
         </ul>
       </li>
-      
 
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="outsourcingDropdown" role="button" data-bs-toggle="dropdown"
-          aria-expanded="false">
+        <a class="nav-link dropdown-toggle" id="outsourcingDropdown" role="button"
+          (click)="toggleDropdown('outsourcingDropdown')" [attr.aria-expanded]="isDropdownOpen['outsourcingDropdown']">
           {{ 'TOP_BAR.OUTSOURCING' | translate }}
         </a>
-        <ul class="dropdown-menu" aria-labelledby="outsourcingDropdown">
+        <ul class="dropdown-menu" [class.show]="isDropdownOpen['outsourcingDropdown']"
+          aria-labelledby="outsourcingDropdown">
           <li>
             <a class="dropdown-item" routerLink="/whyoneBlade" (click)="closeMenu()">Perchè scegliere oneBlade</a>
           </li>
@@ -61,6 +70,11 @@
       <li class="nav-item d-flex align-items-center">
         <a class="nav-link" routerLink="/blog" (click)="closeMenu()">
           Blog
+        </a>
+      </li>
+      <li class="nav-item d-flex align-items-center">
+        <a class="nav-link" routerLink="/partnersOneBlade" (click)="closeMenu()">
+          {{ 'TOP_BAR.PARTNERS' | translate }}
         </a>
       </li>
       <!-- <li class="nav-item dropdown">

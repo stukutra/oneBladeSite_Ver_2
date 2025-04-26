@@ -1,0 +1,53 @@
+<app-image-carousel></app-image-carousel>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <nav aria-label="breadcrumb" class="mt-4">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a routerLink="/">Home</a>
+          </li>
+          <li class="breadcrumb-separator">></li>
+          <li class="breadcrumb-item active" aria-current="page">Prodotti</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+</div>
+<div class="container mt-3 mb-5">
+ 
+
+  <div class="row justify-content-center mt-3 mb-5">
+    <div class="col-12 col-md-10">
+      <app-box-product [title]="'Think & Build'" [content]="thinkAndBuildContent" [logos]="[
+          { src: '../../../assets/ThinkAndBuild/thinkAndBuildInfo.png', alt: 'Think & build Logo' },
+          { src: '../../../assets/oneBlade.png', alt: 'OneBlade Logo' },
+        ]" [link]="'/ThinkAndBuildComponent'">
+      </app-box-product>
+    </div>
+  </div>
+
+  <div class="row justify-content-center mt-3 mb-5">
+    <div class="col-12 col-md-10">
+      <app-box-product [title]="'Click & Test'" [content]="clickAndTestContent" [logos]="[
+          { src: '../../../assets/CustomSoftware/CustomSoftware_oneBlade.jpg', alt: 'Think & build Logo' },
+          { src: '../../../assets/oneBlade.png', alt: 'OneBlade Logo' },
+        ]" [link]="'/customSoftware'">
+      </app-box-product>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-10">
+      <app-box-product [title]="'InfyBladeSuite'" style="display:none" [content]="infyBladeSuiteContent" [logos]="[
+          { src: '../../../assets/Products/InfyBladeSuite/InfyBladeSuite.png', alt: 'InfyBladeSuite Logo' },
+          { src: '../../../assets/oneBlade.png', alt: 'OneBlade Logo' },
+          { src: '../../../assets/Partners_Logo/infyair.png', alt: 'InfyAir Logo' }
+        ]" [link]="'/InfyBladeSuiteComponent'">
+      </app-box-product>
+    </div>
+  </div>
+</div>
+
+<app-infooneBlade></app-infooneBlade>

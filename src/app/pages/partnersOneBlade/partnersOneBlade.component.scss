@@ -1,0 +1,39 @@
+@use 'src/app/style/variabiles' as vars;
+
+.page-description {
+    text-align: center; // Keep the title centered
+    margin-bottom: vars.$gap-size * 2;
+
+    h1 {
+        font-size: vars.$font-size-xl;
+        color: vars.$text-color-oneblade; // Use the title color from _variabiles.scss
+        margin-bottom: vars.$gap-size;
+    }
+
+    p {
+        text-align: left; // Align the description text to the left
+        font-size: vars.$font-size-base;
+        color: vars.$font-color-dark;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+.partner-logo {
+    width: 150px; // Set a fixed width
+    height: 150px; // Set a fixed height
+    object-fit: contain; // Ensure the image fits within the dimensions
+    filter: grayscale(100%); // Apply grayscale filter
+    transition: filter 0.3s ease; // Smooth transition for hover effect
+
+    &:hover {
+        filter: none; // Remove grayscale on hover
+    }
+}
+
+.partner-description {
+    font-size: vars.$font-size-base;
+    color: vars.$font-color-dark;
+    text-align: center; // Center-align the text
+    margin-top: vars.$gap-size;
+}

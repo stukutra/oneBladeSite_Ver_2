@@ -1,0 +1,57 @@
+[
+    
+    {
+        "logo": "assets/Partners_Logo/Hyntelo.png",
+        "description": "",
+        "link": "https://hyntelo.com/",
+        "visible": true
+    },
+    {
+        "logo": "assets/Partners_Logo/Nigel_Frank.png",
+        "description": "",
+        "link": "https://www.nigelfrank.com/it",
+        "visible": true
+    },
+    {
+        "logo": "assets/Partners_Logo/Biters.png",
+        "description": "",
+        "link": "https://biters.it/",
+        "visible": true
+    },
+    {
+        "logo": "assets/Partners_Logo/appload.png",
+        "description": "",
+        "link": "https://appload.studio/",
+        "visible": true
+    },
+    {
+        "logo": "assets/Partners_Logo/k2ps-logo.png",
+        "description": "",
+        "link": "https://k2partnering.com/it/",
+        "visible": true
+    },
+    {
+        "logo": "assets/Partners_Logo/AssistDigital.png",
+        "description": "",
+        "link": "https://assistdigital.com/it",
+        "visible": true
+    },
+    {
+        "logo": "assets/Partners_Logo/infyair.png",
+        "description": "",
+        "link": "https://www.infyair.com/",
+        "visible": true
+    },
+    {
+        "logo": "assets/Partners_Logo/kappas.png",
+        "description": "",
+        "link": "https://kappas.it/",
+        "visible": true
+    },
+    {
+        "logo": "assets/Partners_Logo/devknights.png",
+        "description": "",
+        "link": "https://devknights.it",
+        "visible": true
+    }
+]

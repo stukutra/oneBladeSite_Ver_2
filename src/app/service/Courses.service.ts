@@ -15,7 +15,9 @@ export class CoursesService {
 
   private getJsonUrl(): string {
     const lang = this.translate.currentLang || this.translate.defaultLang;
-    return `${this.baseJsonUrl}_${lang}.json`;
+    const url = `${this.baseJsonUrl}_${lang}.json`;
+    const cacheBuster = `cb=${new Date().getTime()}`;
+    return `${url}?${cacheBuster}`;
   }
 
   private getMonthIndex(): { [key: string]: number } {

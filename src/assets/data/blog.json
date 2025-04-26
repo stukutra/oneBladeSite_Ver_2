@@ -3,7 +3,46 @@
         {
             "name": "Technology",
             "articles": [
+
                 {
+                    "code": "tech-005",
+                    "title": "L’adozione dell’Intelligenza Artificiale Generativa rivoluzione lo sviluppo software",
+                    "contentPaths": {
+                        "it": "assets/Blog/Technology/Blg06_it.html",
+                        "en": "assets/Blog/Technology/Blg06_en.html",
+                        "es": "assets/Blog/Technology/Blg06_es.html"
+                    },
+                    "creationDate": "2025-04-01T00:00:00Z",
+                    "authorCode": "JD01",
+                    "description": "",
+                    "readingTime": 5,
+                    "tags": [
+                        "AI Generativa",
+                        "Sviluppo Software",
+                        "Automazione",
+                        "Efficienza",
+                        "Progetti",
+                        "ScritturadiCodice",
+                        "StrumentiAvanzati",
+                        "Programmazione",
+                        "Innovazione",
+                        "Tecnologia",
+                        "Futuro",
+                        "Sviluppo",
+                        "Software",
+                        "Programmatore",
+                        "Automatizzazione",
+                        "Scrum",
+                        "Agile",
+                        "ScrumMaster",
+                        "MetodologieAgile",
+                        "GestioneProgetti",
+                        "TeamdiSviluppo"    
+                    ],
+                    "image": "assets/Blog/Technology/image/Ai_GEnerativa_VibesCoding.jpg"
+                },
+                {
+                    
                     "code": "tech-001",
                     "title": "The Impact of Artificial Intelligence in the Business World: Automation, Integration, and Social Aspects",
                     "contentPaths": {

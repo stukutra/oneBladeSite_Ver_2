@@ -16,6 +16,9 @@ export class TopBarComponent {
 
   isChristmasModalVisible: boolean = false;
 
+  isDropdownOpen: { [key: string]: boolean } = {};
+
+
   constructor(private router: Router, private translate: TranslateService, private coursesService: CoursesService) {
     this.translate.addLangs(['en', 'it', 'es']);
     this.translate.setDefaultLang('it');
@@ -36,16 +39,37 @@ export class TopBarComponent {
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
+    const navbarCollapse = document.querySelector('.navbar-collapse') as HTMLElement;
+
+    if (this.isMenuOpen) {
+      navbarCollapse.classList.add('show'); // Forza l'apertura del menu
+    } else {
+      navbarCollapse.classList.remove('show'); // Forza la chiusura del menu
+    }
+  }
+
+  toggleDropdown(dropdownId: string): void {
+    // Close all other dropdowns
+    Object.keys(this.isDropdownOpen).forEach(key => {
+      if (key !== dropdownId) {
+        this.isDropdownOpen[key] = false;
+      }
+    });
+
+    // Toggle the current dropdown
+    this.isDropdownOpen[dropdownId] = !this.isDropdownOpen[dropdownId];
   }
 
   closeMenu(): void {
-    const navbarToggler = document.querySelector('.navbar-toggler') as HTMLElement;
     const navbarCollapse = document.querySelector('.navbar-collapse') as HTMLElement;
 
-    if (navbarToggler && navbarCollapse.classList.contains('show')) {
-      navbarToggler.click();
+    if (navbarCollapse.classList.contains('show')) {
+      navbarCollapse.classList.remove('show'); // Assicura la chiusura del menu
       this.isMenuOpen = false;
     }
+
+    // Chiudi tutti i dropdown
+    this.isDropdownOpen = {};
   }
 
   navigateTo(route: string): void {

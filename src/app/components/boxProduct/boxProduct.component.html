@@ -1,0 +1,25 @@
+<div class="product-highlight-box">
+    <div class="box-topbar">
+        <h2>
+            <span *ngIf="icon" class="icon" [innerHTML]="icon"></span>
+            {{ title }}
+        </h2>
+    </div>
+    <div class="row align-items-center">
+        <div class="col-md-4 text-center mt-3 mb-3">
+            <img [src]="logos[0].src" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-8">
+            <p [innerHTML]="content"></p>
+        </div>
+    </div>
+    <div class="box-footer" *ngIf="logos.length > 1">
+        <div class="footer-logos mt-3">
+            <ng-container *ngFor="let logo of logos.slice(1); let i = index">
+                <img [src]="logo.src" alt="" class="footer-logo">
+                <span *ngIf="i < logos.slice(1).length - 1" class="logo-separator">+</span>
+            </ng-container>
+        </div>
+        <a [routerLink]="link" class="highlight-button mt-3">Scopri di più</a>
+    </div>
+</div>
