@@ -391,3 +391,17 @@
     color: vars.$text-color-oneblade; // Match the color of breadcrumb text
     font-weight: bold; // Make the separator prominent
 }
+
+.pricing-section {
+    .section-title {
+        color: vars.$topbar-color; // Apply the same color as "Come funziona?"
+    }
+}
+
+.pricing-table {
+
+    th.text-right,
+    td.text-right {
+        text-align: right; // Ensure right alignment for the "Prezzo a partire da" column
+    }
+}
