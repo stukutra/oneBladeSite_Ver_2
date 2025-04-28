@@ -40,6 +40,7 @@ export class CompanyLogosComponent implements OnInit {
   ngOnInit(): void {
     this.setLogosPerSlide();
     this.slides = this.getSlides();
+    this.startAutoSlide();
   }
 
   getSlides(): any[][] {
@@ -54,15 +55,11 @@ export class CompanyLogosComponent implements OnInit {
     this.currentSlideIndex = (this.currentSlideIndex + 1) % this.slides.length;
   }
 
-  prevSlide() {
-    this.currentSlideIndex = (this.currentSlideIndex - 1 + this.slides.length) % this.slides.length;
-  }
-
   @HostListener('window:resize', ['$event'])
-  onResize(event: any) {
+  onResize() {
     this.setLogosPerSlide();
     this.slides = this.getSlides();
-    this.currentSlideIndex = 0; // Reset to the first slide on resize
+    this.currentSlideIndex = 0; // Reset alla prima slide al ridimensionamento
   }
 
   private setLogosPerSlide() {
@@ -76,5 +73,11 @@ export class CompanyLogosComponent implements OnInit {
     } else {
       this.logosPerSlide = 1;
     }
+  }
+
+  private startAutoSlide() {
+    setInterval(() => {
+      this.nextSlide();
+    }, 5000); // Cambia slide ogni 5 secondi
   }
 }
