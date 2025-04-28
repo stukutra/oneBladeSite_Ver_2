@@ -63,15 +63,15 @@
 }
 
 .progress-bar-container {
-  height: 5px;
+  height: 2px; // Altezza ridotta a 2px
   background-color: #e0e0e0; // Colore di sfondo della barra
   position: relative;
   margin-top: 10px;
 }
 
 .progress-bar {
-  height: 100%;
-  background-color: #9339bb; // Cambiato il colore della barra di avanzamento
+  height: 100%; // L'altezza della barra si adatta al contenitore
+  background-color: #9339bb; // Colore della barra di avanzamento
   width: 0%; // Inizialmente a 0%
   transition: width 0.1s linear; // Transizione fluida per l'animazione
 }

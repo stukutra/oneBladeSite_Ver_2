@@ -98,10 +98,14 @@ export class CompanyLogosComponent implements OnInit {
   }
 
   private startSlideShow() {
+    this.resetProgressBar(); // Reset iniziale della progress bar
+    setTimeout(() => {
+      this.startProgressBar(); // Avvia l'animazione della progress bar dopo il reset
+    }, 50); // Ritardo per consentire il reset
+
     this.intervalId = setInterval(() => {
       this.nextSlide();
     }, this.slideInterval);
-    this.startProgressBar();
   }
 
   private startProgressBar() {
