@@ -124,4 +124,91 @@
     </div>
   </div>
 </div>
+
+
+
+<section class="container my-5">
+  <div class="row">
+    <div class="col">
+      <h2 class="section-title text-center mb-4">Listino Indicativo UX & Flow</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="table-responsive rounded shadow">
+        <table class="table table-bordered table-striped align-middle">
+          <thead class="table-light">
+            <tr>
+              <th scope="col">Servizio</th>
+              <th scope="col">Descrizione</th>
+              <th scope="col" class="text-end">Prezzo a partire da</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-bs-toggle="modal" data-bs-target="#detailsModal"
+              (click)="openModal(phases[0].title, phases[0].content)">
+              <td>Analisi UX & UI</td>
+              <td>Analisi dei bisogni utenti, mappatura dei percorsi, definizione delle personas</td>
+              <td class="text-end"><strong>€ 500,00</strong></td>
+            </tr>
+            <tr data-bs-toggle="modal" data-bs-target="#detailsModal"
+              (click)="openModal(phases[1].title, phases[1].content)">
+              <td>Mappatura dei percorsi</td>
+              <td>Rappresentazione visiva dell’esperienza utente</td>
+              <td class="text-end"><strong>€ 700,00</strong></td>
+            </tr>
+            <tr data-bs-toggle="modal" data-bs-target="#detailsModal"
+              (click)="openModal(phases[2].title, phases[2].content)">
+              <td>Definizione delle Personas</td>
+              <td>Creazione di profili utente ideali</td>
+              <td class="text-end"><strong>€ 600,00</strong></td>
+            </tr>
+            <tr data-bs-toggle="modal" data-bs-target="#detailsModal"
+              (click)="openModal(phases[3].title, phases[3].content)">
+              <td>Accessibilità & Inclusività</td>
+              <td>Analisi accessibilità e suggerimenti per inclusività digitale</td>
+              <td class="text-end"><strong>€ 400,00</strong></td>
+            </tr>
+            <tr data-bs-toggle="modal" data-bs-target="#detailsModal"
+              (click)="openModal(phases[4].title, phases[4].content)">
+              <td>Workshop Collaborativo Online</td>
+              <td>Sessione di progettazione condivisa con il team cliente (2 ore)</td>
+              <td class="text-end"><strong>€ 300,00</strong></td>
+            </tr>
+            <tr data-bs-toggle="modal" data-bs-target="#detailsModal"
+              (click)="openModal(phases[5].title, phases[5].content)">
+              <td>Report Completo + Prototipo Interattivo</td>
+              <td>Consegna documentazione dettagliata e prototipi interattivi</td>
+              <td class="text-end"><strong>€ 800,00</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-center mt-3 section-content">
+        <small><em>I prezzi sono indicativi e possono variare in base alla complessità del progetto. Contattaci per un
+            preventivo su misura.</em></small>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Modale gestita da Bootstrap -->
+<div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="detailsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="detailsModalLabel">{{ modalTitle }}</h5>
+      
+      
+      </div>
+      <div class="modal-body">
+        <p [innerHTML]="modalContent"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <app-infooneBlade></app-infooneBlade>

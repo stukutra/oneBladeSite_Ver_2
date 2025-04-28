@@ -94,3 +94,70 @@
     color: vars.$text-color-oneblade; // Match the color of breadcrumb text
     font-weight: bold; // Make the separator prominent
 }
+
+.modal-content {
+    background-color: vars.$background-light; // Colore di sfondo della modale
+    color: vars.$text-dark; // Colore del testo
+    border-radius: vars.$border-radius; // Angoli arrotondati
+    box-shadow: vars.$box-shadow-hover; // Ombra per la modale
+}
+
+.modal-header {
+    background-color: vars.$background-light; // Sfondo bianco per l'intestazione
+    color: vars.$primary-color; // Colore del testo uguale al colore predominante del sito
+    border-bottom: none; // Rimuovi il bordo inferiore
+}
+
+.modal-title {
+    font-size: vars.$font-size-lg; // Dimensione del titolo
+    font-weight: bold; // Grassetto per il titolo
+    color: vars.$primary-color; // Colore del testo del titolo
+}
+
+.btn-close {
+    color: vars.$primary-color; // Colore del testo del pulsante
+    background-color: transparent; // Sfondo trasparente
+    border: 2px solid vars.$primary-color; // Bordo del colore predominante
+    border-radius: 50%; // Forma circolare
+    width: 1.5rem; // Larghezza del pulsante
+    height: 1.5rem; // Altezza del pulsante
+    display: flex; // Centrare il contenuto
+    justify-content: center; // Centrare orizzontalmente
+    align-items: center; // Centrare verticalmente
+    transition: background-color vars.$transition-speed, color vars.$transition-speed; // Transizione per colore e sfondo
+
+    &:hover {
+        background-color: vars.$primary-color; // Riempie il pulsante al passaggio del mouse
+        color: vars.$text-light; // Cambia il colore del testo
+    }
+}
+
+.modal-footer {
+    background-color: vars.$background-light; // Colore di sfondo del footer
+    border-top: none; // Rimuovi il bordo superiore
+}
+
+.btn-secondary {
+    color: vars.$primary-color; // Colore del testo del pulsante
+    background-color: transparent; // Sfondo trasparente
+    border: 2px solid vars.$primary-color; // Bordo del colore predominante
+    border-radius: vars.$border-radius; // Angoli arrotondati
+    padding: 0.5rem 1rem; // Spaziatura interna
+    transition: background-color vars.$transition-speed, color vars.$transition-speed; // Transizione per colore e sfondo
+
+    &:hover {
+        background-color: vars.$primary-color; // Riempie il pulsante al passaggio del mouse
+        color: vars.$text-light; // Cambia il colore del testo
+    }
+}
+
+.table tbody tr td:nth-child(2) {
+    // Seleziona la colonna "Descrizione"
+    color: #9c2ea6; // Colore specificato
+    cursor: pointer; // Mostra il puntatore del mouse
+    transition: color vars.$transition-speed; // Transizione per il colore
+
+    &:hover {
+        color: darken(#9c2ea6, 10%); // Scurisci il colore al passaggio del mouse
+    }
+}
