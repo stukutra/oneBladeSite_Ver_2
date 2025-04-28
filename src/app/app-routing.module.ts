@@ -23,6 +23,7 @@ import { RegisterComponent } from './auth/register/register.component';
 import { SoftwareHouseComponent } from './pages/softwareHouse/softwareHouse.component';
 import { TalentWizardComponent } from './pages/outsourcing/TalentWizard/TalentWizard.component';
 import { ThinkAndBuildComponent } from './pages/Products/ThinkAndBuild/ThinkAndBuild.component';
+import { UXFlowComponent } from './pages/Products/UXFlow/UXFlow.component';
 import { WhyoneBladeComponent } from './pages/outsourcing/whyoneBlade/whyoneBlade.component';
 
 const routes: Routes = [
@@ -49,6 +50,7 @@ const routes: Routes = [
   { path: 'partnersOneBlade', component: PartnersOneBladeComponent },
   { path: 'ProductsoneBladeComponent', component: ProductsoneBladeComponent },
   { path: 'ThinkAndBuildComponent', component: ThinkAndBuildComponent },
+  { path: 'UXFlow', component: UXFlowComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 

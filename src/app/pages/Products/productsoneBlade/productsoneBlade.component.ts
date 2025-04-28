@@ -22,11 +22,22 @@ export class ProductsoneBladeComponent implements OnInit {
     `grazie a un team multidisciplinare specializzato in <strong>analisi, design, sviluppo e lancio</strong>.</p>` +
     `<p><strong>📞 Chiedi una consulenza di 1 ora</strong></p>`;
 
-    clickAndTestContent = 
+  clickAndTestContent =
     `<p><strong>Software su misura</strong>: trasformiamo la tua <em>idea</em> in un ` +
     `<strong><u>mockup interattivo</u></strong>, per mostrarti in anteprima il tuo ` +
     `<strong><em>software completo</em></strong>, ancora prima di scrivere una sola riga di codice.</p>` +
     `<p><strong>oneBlade</strong> dà forma concreta alle intuizioni, guidandoti passo dopo passo.</p>`;
+
+
+
+  UXFlow =
+    `<p><strong>Migliora l'esperienza utente, guida il successo del tuo prodotto</strong></p>` +
+    `<p><strong>Descrizione del Servizio</strong></p>` +
+    `<p><strong>UX & Flow</strong> è il servizio di <strong>oneBlade</strong> pensato per ottimizzare ` +
+    `l'<strong>esperienza utente</strong> e il <strong>design dell'interfaccia</strong> dei tuoi prodotti digitali. ` +
+    `Attraverso un approccio <strong>analitico</strong> e <strong>creativo</strong>, ti aiutiamo a progettare ` +
+    `percorsi <strong>intuitivi</strong>, <strong>accessibili</strong> e <strong>piacevoli</strong> per i tuoi utenti, ` +
+    `aumentando il <strong>tasso di conversione</strong> e la <strong>soddisfazione del cliente</strong>.</p>`;
 
   constructor() { }
 

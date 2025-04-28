@@ -58,6 +58,7 @@ import { TalentWizardComponent } from './pages/outsourcing/TalentWizard/TalentWi
 import { ThinkAndBuildComponent } from './pages/Products/ThinkAndBuild/ThinkAndBuild.component';
 import { TopBarComponent } from './layout/top-bar/top-bar.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { UXFlowComponent } from './pages/Products/UXFlow/UXFlow.component';
 import { WhyoneBladeBannerComponent } from './pages/outsourcing/whyoneBladeBanner/whyoneBladeBanner.component';
 import { WhyoneBladeComponent } from './pages/outsourcing/whyoneBlade/whyoneBlade.component';
 
@@ -119,7 +120,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ProductsoneBladeComponent,
     BoxProductComponent,
     InfyBladeSuiteComponent,
-    ThinkAndBuildComponent
+    ThinkAndBuildComponent,
+    UXFlowComponent
   ],
   imports: [
     BrowserModule,

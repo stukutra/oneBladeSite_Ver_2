@@ -1,0 +1,83 @@
+@use '../../../style/_variabiles.scss' as vars;
+@use 'sass:math';
+
+
+.page-title {
+    font-size: vars.$font-size-xl;
+    color: vars.$primary-color;
+    margin-bottom: vars.$gap;
+    text-align: center;
+}
+
+.section-title {
+    font-size: vars.$font-size-lg;
+    color: vars.$accent-color;
+    margin-top: vars.$gap;
+    margin-bottom: vars.$gap;
+}
+
+.section-content {
+    font-size: vars.$font-size-base;
+    color: vars.$text-dark;
+    line-height: 1.6;
+    margin-bottom: vars.$gap;
+}
+
+.list-item {
+    font-size: vars.$font-size-base;
+    color: vars.$text-dark;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+
+    &::before {
+        content: '•';
+        color: vars.$accent-color;
+        position: absolute;
+        left: 0;
+    }
+}
+
+.highlight {
+    color: vars.$primary-color;
+    font-weight: bold;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: vars.$gap;
+
+    .btn-primary {
+        @extend .btn-primary;
+        padding: 0.5rem 1rem;
+    }
+}
+
+
+.breadcrumb {
+    background-color: transparent; // Transparent background
+    padding: 0; // Remove padding
+    margin-bottom: vars.$gap-size; // Add spacing below breadcrumb
+    font-size: vars.$font-size-sm; // Use small font size
+    display: flex; // Ensure items are aligned horizontally
+    align-items: center; // Center items vertically
+}
+
+.breadcrumb-item a,
+.breadcrumb-item.active {
+    color: vars.$text-color-oneblade; // Make all breadcrumb text the same color as "Home"
+    text-decoration: none; // Remove underline
+    transition: color vars.$transition-speed; // Smooth transition for hover effect
+
+    &:hover {
+        color: darken(vars.$text-color-oneblade, 10%); // Darken color on hover
+        cursor: pointer; // Add pointer cursor
+    }
+}
+
+.breadcrumb-separator {
+    margin: 0 math.div(vars.$gap-size, 2); // Reduce spacing around the separator
+    padding: 0 math.div(vars.$gap-size, 2); // Reduce padding to the left and right of the separator
+    color: vars.$text-color-oneblade; // Match the color of breadcrumb text
+    font-weight: bold; // Make the separator prominent
+}
