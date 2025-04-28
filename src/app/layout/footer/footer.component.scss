@@ -30,8 +30,8 @@ body {
 }
 
 .footer-wrapper {
-  background: linear-gradient(to bottom, $footer-bg-gradient-color-1, $footer-bg-gradient-color-2);
-  color: $footer-text-color;
+  background: linear-gradient(to bottom, #f0f4f8, #d9e2ec); // Light gradient for a clean and readable look
+  color: #333333; // Darker text color for contrast
   padding: 20px 0;
   text-align: center;
   margin-top: auto; // Push the footer to the bottom of the page
@@ -47,17 +47,26 @@ body {
 
 .footer-top {
   display: flex;
-  justify-content: center; // Centra il contenuto orizzontalmente
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column; // Stack items vertically on smaller screens
+    text-align: center; // Center-align text
+  }
 }
 
 .footer-logo-container {
-  flex: 1 1 100%; // Occupare l'intera larghezza
+  flex: 1 1 100%;
   display: flex;
-  justify-content: center; // Centrare il logo orizzontalmente
+  justify-content: center;
   margin-bottom: 15px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 10px; // Reduce spacing for smaller screens
+  }
 }
 
 .footer-logo {
@@ -65,49 +74,47 @@ body {
 }
 
 .footer-links {
-  flex: 1 1 auto; // Adatta la larghezza dei link
+  flex: 1 1 auto;
   display: flex;
-  justify-content: center; // Centrare i link orizzontalmente
+  justify-content: center;
   gap: 15px;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap; // Allow links to wrap
+    gap: 10px; // Reduce gap between links
+  }
 }
 
 .footer-link {
-  color: $footer-link-color;
+  color: #0056b3; // Blue link color for better visibility on light background
   text-decoration: none;
   font-size: $footer-font-size;
   transition: color $footer-link-transition;
 
   &:hover {
-    color: $footer-link-hover-color;
-  }
-
-  i.bi-whatsapp {
-    color: #ffffff; // Change WhatsApp icon color to white
-  }
-
-  &:hover i.bi-whatsapp {
-    color: rgba(255, 255, 255, 0.8); // Slightly lighter white on hover
-  }
-
-  i.bi-envelope {
-    color: #ffffff; // Change email icon color to white
-  }
-
-  &:hover i.bi-envelope {
-    color: rgba(255, 255, 255, 0.8); // Slightly lighter white on hover
+    color: #003d80; // Darker blue on hover
   }
 }
 
 .footer-bottom {
   font-size: 0.9rem;
   line-height: 1.5;
-  color: $footer-text-color;
+  color: #555555; // Medium gray for better readability
+
+  @media (max-width: 768px) {
+    font-size: 0.8rem; // Reduce font size for smaller screens
+    line-height: 1.3; // Adjust line height
+  }
 }
 
 .footer-version {
   margin-top: 10px;
   font-size: 0.8rem;
-  color: #ffffff; // Change color to white
+  color: #333333; // Ensure version text is clearly visible
+
+  @media (max-width: 768px) {
+    font-size: 0.7rem; // Reduce font size for smaller screens
+  }
 }
 
 .custom-modal {
