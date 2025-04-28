@@ -81,7 +81,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // **Send confirmation to the user**
     $customer_subject = "Course reservation confirmation - $course";
     $customer_body = "Dear $name,\n\n";
-    $customer_body .= "Thank you for reserving the course \"$course\" on OneBladeLAB.\n\n";
+    $customer_body .= "Thank you for reserving the course \"$course\" on oneBladeLAB.\n\n";
     $customer_body .= "You will be contacted shortly to receive all the details regarding your participation.\n";
     $customer_body .= "If you have any questions, please do not hesitate to contact us.\n\n";
     $customer_body .= "🔐 **Provided privacy consents:**\n";

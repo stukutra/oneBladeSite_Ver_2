@@ -84,8 +84,8 @@ class Database {
         
         if ($stmt->execute()) {
             // Invia email con la nuova password utilizzando il metodo generico
-            $subject = "Recupero Password - OneBlade";
-            $body = "Ciao,\n\nAbbiamo ricevuto una richiesta di recupero password per il tuo account OneBlade.\n\nLa tua nuova password è: " . $new_password . "\n\nTi consigliamo di accedere e modificarla subito per garantire la sicurezza del tuo account.\n\nSe non hai richiesto il recupero password, ignora questa email.\n\nGrazie,\nIl Team OneBlade";
+            $subject = "Recupero Password - oneBlade";
+            $body = "Ciao,\n\nAbbiamo ricevuto una richiesta di recupero password per il tuo account oneBlade.\n\nLa tua nuova password è: " . $new_password . "\n\nTi consigliamo di accedere e modificarla subito per garantire la sicurezza del tuo account.\n\nSe non hai richiesto il recupero password, ignora questa email.\n\nGrazie,\nIl Team OneBlade";
             
             return $this->sendEmail($email, $subject, $body);
         }
